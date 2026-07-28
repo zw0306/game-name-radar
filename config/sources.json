@@ -20,18 +20,18 @@
   {
     "id": "itch-jam-newest-html5",
     "name": "itch.io Game Jam 最新HTML5",
-    "url": "https://itch.io/games/newest/html5/in-jam",
+    "url": "https://itch.io/games/newest/html5/in-jam.xml",
     "kind": "itch-jam-new",
-    "fetchKind": "itch-listing",
+    "fetchKind": "feed",
     "enabled": true,
     "baselineOnly": false
   },
   {
     "id": "itch-jam-popular-html5",
     "name": "itch.io Game Jam 热门HTML5",
-    "url": "https://itch.io/games/new-and-popular/html5/in-jam",
+    "url": "https://itch.io/games/new-and-popular/html5/in-jam.xml",
     "kind": "itch-jam-popular",
-    "fetchKind": "itch-listing",
+    "fetchKind": "feed",
     "enabled": true,
     "baselineOnly": false
   },
