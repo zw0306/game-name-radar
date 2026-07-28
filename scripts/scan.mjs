@@ -12,21 +12,23 @@ const sourcesPath=path.join(root,'config','sources.json');
 const statePath=path.join(root,'data','state.json');
 const candidatesPath=path.join(root,'data','candidates.json');
 const reportPath=path.join(root,'data','latest-report.json');
-const VERIFY_LIMIT=Math.max(1,Math.min(40,Number(process.env.SEO_VERIFY_LIMIT||22)));
-const TREND_LIMIT=Math.max(1,Math.min(8,Number(process.env.TRENDS_VERIFY_LIMIT||3)));
-const VERIFY_MAX_AGE=7*86400000;
-const TREND_MAX_AGE=3*86400000;
-const TREND_ERROR_RETRY=2*3600000;
-const TREND_BATCH_INTERVAL=2*3600000;
-const RISING_DISCOVERY_INTERVAL=6*3600000;
+const VERIFY_LIMIT=Math.max(1,Math.min(50,Number(process.env.SEO_VERIFY_LIMIT||30)));
+const TREND_LIMIT=Math.max(1,Math.min(10,Number(process.env.TRENDS_VERIFY_LIMIT||6)));
+const VERIFY_MAX_AGE=3*86400000;
+const TREND_MAX_AGE=86400000;
+const TREND_ERROR_RETRY=3600000;
+const TREND_BATCH_INTERVAL=30*60000;
+const RISING_DISCOVERY_INTERVAL=3*3600000;
 const SEO_MODEL_VERSION=3;
 const TREND_MODEL_VERSION=3;
 const sleep=(ms)=>new Promise(resolve=>setTimeout(resolve,ms));
 
 async function readJson(file,fallback){try{return JSON.parse(await fs.readFile(file,'utf8'))}catch{return fallback}}
 
+function sourceKinds(candidate){return new Set((candidate.sources||[]).map(source=>source.kind))}
+
 function updateDiscovery(candidate){
-  const kinds=new Set((candidate.sources||[]).map(source=>source.kind));
+  const kinds=sourceKinds(candidate);
   let score=calculateCandidateScore(candidate);
   if(kinds.has('trends-rising-7d'))score+=8;
   if(kinds.has('trends-rising-30d'))score+=6;
@@ -99,29 +101,47 @@ function needsSeoCheck(candidate){
 }
 
 function shouldAutoVerify(candidate){
-  const kinds=new Set((candidate.sources||[]).map(source=>source.kind));
+  const kinds=sourceKinds(candidate);
   const risk=estimateNameRisk(candidate.gameName);
   return kinds.has('trends-rising-7d')||kinds.has('trends-rising-30d')||kinds.has('steam-popular-new')||
     candidate.sources?.length>=2||kinds.has('itch-featured')||kinds.has('itch-popular')||kinds.has('itch-jam-popular')||
-    (kinds.has('itch-new')&&risk<=12)||((candidate.discoveryScore||0)>=6&&risk<=20);
+    kinds.has('newgrounds-top')||(kinds.has('steam-new')&&risk<=12)||(kinds.has('itch-new')&&risk<=12)||
+    ((candidate.discoveryScore||0)>=7&&risk<=16);
 }
 
 function verifyPriority(candidate){
-  const kinds=new Set((candidate.sources||[]).map(source=>source.kind));
+  const kinds=sourceKinds(candidate);
   let score=(candidate.discoveryScore||0)+(30-estimateNameRisk(candidate.gameName));
-  if(kinds.has('trends-rising-7d'))score+=28;
-  if(kinds.has('trends-rising-30d'))score+=20;
-  if(kinds.has('itch-featured'))score+=14;
-  if(kinds.has('itch-popular'))score+=10;
-  if(kinds.has('itch-jam-popular'))score+=9;
-  if(kinds.has('steam-popular-new'))score+=8;
+  if(kinds.has('trends-rising-7d'))score+=35;
+  if(kinds.has('trends-rising-30d'))score+=25;
+  if(kinds.has('itch-featured'))score+=16;
+  if(kinds.has('itch-popular'))score+=12;
+  if(kinds.has('newgrounds-top'))score+=10;
+  if(kinds.has('steam-popular-new'))score+=10;
   if(kinds.has('itch-new'))score+=4;
-  if((candidate.sources||[]).length>=2)score+=8;
+  if((candidate.sources||[]).length>=2)score+=10;
   return score;
 }
 
+function hasStrongDiscoverySignal(candidate){
+  const kinds=sourceKinds(candidate);
+  const risk=Number(candidate.seo?.nameRisk??estimateNameRisk(candidate.gameName));
+  const seoScore=Number(candidate.seo?.score||0);
+  if(kinds.has('trends-rising-7d')||kinds.has('trends-rising-30d'))return true;
+  if(kinds.has('itch-featured')||kinds.has('itch-popular')||kinds.has('newgrounds-top')||kinds.has('steam-popular-new'))return risk<=14;
+  if((candidate.sources||[]).length>=2)return risk<=14;
+  return (candidate.discoveryScore||0)>=7&&risk<=8&&seoScore>=60;
+}
+
+function isTrendEligible(candidate){
+  if(!['independent','page'].includes(candidate.seo?.classification))return false;
+  if(Number(candidate.seo?.score||0)<42)return false;
+  if(Number(candidate.seo?.nameRisk??30)>14)return false;
+  return hasStrongDiscoverySignal(candidate);
+}
+
 function needsTrendCheck(candidate){
-  if(!['independent','page','watch'].includes(candidate.seo?.classification))return false;
+  if(!isTrendEligible(candidate))return false;
   if(candidate.trend?.modelVersion!==TREND_MODEL_VERSION)return true;
   const checked=Date.parse(candidate.trend?.checkedAt||'');
   if(!Number.isFinite(checked))return true;
@@ -130,12 +150,19 @@ function needsTrendCheck(candidate){
 }
 
 function trendPriority(candidate){
-  const kinds=new Set((candidate.sources||[]).map(source=>source.kind));
-  let score=(candidate.seo?.score||0)+(candidate.discoveryScore||0);
-  if(kinds.has('trends-rising-7d'))score+=35;
-  if(kinds.has('trends-rising-30d'))score+=25;
-  if(candidate.seo?.classification==='independent')score+=20;
-  if((candidate.sources||[]).length>=2)score+=8;
+  const kinds=sourceKinds(candidate);
+  let score=(candidate.seo?.score||0)+(candidate.discoveryScore||0)*2;
+  if(kinds.has('trends-rising-7d'))score+=45;
+  if(kinds.has('trends-rising-30d'))score+=32;
+  if(kinds.has('itch-featured'))score+=18;
+  if(kinds.has('itch-popular'))score+=14;
+  if(kinds.has('newgrounds-top'))score+=12;
+  if(kinds.has('steam-popular-new'))score+=10;
+  if(candidate.seo?.classification==='independent')score+=18;
+  if((candidate.sources||[]).length>=2)score+=12;
+  const age=Date.now()-Date.parse(candidate.firstSeen||0);
+  if(Number.isFinite(age)&&age<2*86400000)score+=8;
+  score-=Number(candidate.seo?.nameRisk||0)*1.5;
   return score;
 }
 
@@ -150,6 +177,7 @@ function applyFinalRecommendation(candidate){
   if(seoClass==='error')recommendation='error';
   else if(seoClass==='reject')recommendation='reject';
   else if(seoClass==='pending')recommendation='pending';
+  else if(!isTrendEligible(candidate))recommendation='reject';
   else if(demandClass==='error'||demandClass==='pending')recommendation='pending';
   else if(demandClass==='none')recommendation='reject';
   else if(demandClass==='weak')recommendation='watch';
@@ -242,12 +270,16 @@ for(const candidate of candidates){
   if(!candidate.seo)candidate.seo={modelVersion:SEO_MODEL_VERSION,status:'pending',classification:'pending',score:0,reasons:['等待自动搜索意图验证']};
 }
 
-let trendsVerified=0,trendErrors=0,trendBatchRan=false;
+const trendEligibleBefore=candidates.filter(isTrendEligible);
+const urgentModelUpgrade=trendEligibleBefore.some(candidate=>candidate.trend?.modelVersion!==TREND_MODEL_VERSION);
+let trendsVerified=0,trendErrors=0,trendBatchRan=false,trendQueueSize=0;
 const lastTrendBatch=Date.parse(radarState.lastTrendBatch||'');
-const trendBatchDue=!Number.isFinite(lastTrendBatch)||Date.now()-lastTrendBatch>=TREND_BATCH_INTERVAL;
-if(trendBatchDue&&!risingDiscoveryRan){
+const trendBatchDue=urgentModelUpgrade||!Number.isFinite(lastTrendBatch)||Date.now()-lastTrendBatch>=TREND_BATCH_INTERVAL;
+if(trendBatchDue){
   trendBatchRan=true;
-  const trendQueue=candidates.filter(needsTrendCheck).sort((a,b)=>trendPriority(b)-trendPriority(a)||Date.parse(b.firstSeen)-Date.parse(a.firstSeen)).slice(0,TREND_LIMIT);
+  const limit=risingDiscoveryRan?Math.min(2,TREND_LIMIT):TREND_LIMIT;
+  const trendQueue=candidates.filter(needsTrendCheck).sort((a,b)=>trendPriority(b)-trendPriority(a)||Date.parse(b.firstSeen)-Date.parse(a.firstSeen)).slice(0,limit);
+  trendQueueSize=trendQueue.length;
   for(const candidate of trendQueue){
     const previousTrend=candidate.trend;
     try{
@@ -264,13 +296,13 @@ if(trendBatchDue&&!risingDiscoveryRan){
       trendErrors+=1;
       console.error(`Trends verify failed: ${candidate.gameName}: ${error.message}`);
     }
-    await sleep(8000);
+    await sleep(12000);
   }
-  radarState.lastTrendBatch=now;
+  if(trendQueue.length)radarState.lastTrendBatch=now;
 }
 
 for(const candidate of candidates){
-  if(['independent','page','watch'].includes(candidate.seo?.classification)&&!candidate.trend){
+  if(isTrendEligible(candidate)&&!candidate.trend){
     candidate.trend={modelVersion:TREND_MODEL_VERSION,status:'pending',classification:'pending',score:0,reasons:['等待Google Trends需求验证']};
   }
   applyFinalRecommendation(candidate);
@@ -281,8 +313,13 @@ if(candidates.length>3000)candidates.length=3000;
 
 const recommendationCounts={independent:0,page:0,watch:0,reject:0,pending:0,error:0};
 for(const candidate of candidates)recommendationCounts[candidate.recommendation||'pending']=(recommendationCounts[candidate.recommendation||'pending']||0)+1;
+const seoPassedCount=candidates.filter(candidate=>['independent','page'].includes(candidate.seo?.classification)).length;
+const trendEligibleCount=candidates.filter(isTrendEligible).length;
+const trendPendingCount=candidates.filter(candidate=>isTrendEligible(candidate)&&needsTrendCheck(candidate)).length;
+const trendValidatedCount=candidates.filter(candidate=>isTrendEligible(candidate)&&candidate.trend?.modelVersion===TREND_MODEL_VERSION&&!['pending','error'].includes(candidate.trend?.classification)).length;
+const risingCount=candidates.filter(candidate=>['rising','breakout'].includes(candidate.trend?.classification)).length;
 radarState.lastScan=now;
 await fs.writeFile(statePath,JSON.stringify(radarState,null,2)+'\n');
 await fs.writeFile(candidatesPath,JSON.stringify({updatedAt:now,candidates},null,2)+'\n');
-await fs.writeFile(reportPath,JSON.stringify({scannedAt:now,totalAdded,sources:logs,seoVerified,seoErrors,trendsVerified,trendErrors,trendBatchRan,risingDiscoveryRan,seoModelVersion:SEO_MODEL_VERSION,trendModelVersion:TREND_MODEL_VERSION,recommendationCounts},null,2)+'\n');
-console.log(`Scan complete. ${totalAdded} names added; ${seoVerified} SEO checks; ${trendsVerified} Trends checks.`);
+await fs.writeFile(reportPath,JSON.stringify({scannedAt:now,totalAdded,sources:logs,seoVerified,seoErrors,trendsVerified,trendErrors,trendBatchRan,trendQueueSize,risingDiscoveryRan,seoModelVersion:SEO_MODEL_VERSION,trendModelVersion:TREND_MODEL_VERSION,seoPassedCount,trendEligibleCount,trendPendingCount,trendValidatedCount,risingCount,recommendationCounts},null,2)+'\n');
+console.log(`Scan complete. ${totalAdded} names added; ${seoVerified} SEO checks; ${trendsVerified} Trends checks; ${trendPendingCount} trend candidates pending.`);
