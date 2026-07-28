@@ -3,18 +3,18 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <meta name="description" content="自动发现新游戏名，并同时验证搜索意图和Google Trends需求强度。" />
+  <meta name="description" content="自动发现近7天或30天明显上涨的新游戏名，并验证搜索意图和趋势持续性。" />
   <meta name="theme-color" content="#080b12" />
-  <title>Game Name Radar · 流量验证结果</title>
+  <title>Game Name Radar · 上涨游戏词</title>
   <link rel="stylesheet" href="/styles.css" />
 </head>
 <body>
   <main class="page">
     <header class="hero">
       <div>
-        <p class="eyebrow"><span class="live-dot"></span> TRAFFIC-VERIFIED GAME RADAR</p>
-        <h1>真正值得做站的游戏词</h1>
-        <p class="subtitle">游戏平台只负责发现候选；搜索意图和Google Trends需求都通过后，才会进入推荐结果。</p>
+        <p class="eyebrow"><span class="live-dot"></span> RISING GAME KEYWORD RADAR</p>
+        <h1>近7天／30天明显上涨的游戏词</h1>
+        <p class="subtitle">多来源发现候选，再排除新闻、普通词和孤立尖峰。默认只展示持续上涨或Breakout的独立站机会。</p>
       </div>
       <div class="update-box">
         <span>最近自动扫描</span>
@@ -24,10 +24,10 @@
     </header>
 
     <section class="stats" aria-label="筛选统计">
-      <article><span>监控入口</span><strong id="sourceCount">0</strong><small>游戏平台和公开Feed</small></article>
+      <article><span>监控入口</span><strong id="sourceCount">0</strong><small>榜单、RSS、Steam、趋势等</small></article>
       <article><span>本轮新发现</span><strong id="newCount">0</strong><small>尚未代表有流量</small></article>
-      <article class="accent"><span>适合独立站</span><strong id="independentCount">0</strong><small>意图与需求均通过</small></article>
-      <article><span>适合站内页</span><strong id="pageCount">0</strong><small>需求中等或主词较弱</small></article>
+      <article class="accent"><span>明显上涨推荐</span><strong id="independentCount">0</strong><small>7天或30天持续上涨</small></article>
+      <article><span>稳定需求候选</span><strong id="pageCount">0</strong><small>有需求但没有明显上涨</small></article>
     </section>
 
     <section class="source-health">
@@ -41,16 +41,16 @@
     <section class="results">
       <div class="section-title">
         <div>
-          <p class="eyebrow">TRAFFIC VERIFIED RESULTS</p>
+          <p class="eyebrow">RISING VERIFIED RESULTS</p>
           <h2>游戏关键词结果</h2>
-          <p>综合分由搜索意图和趋势需求共同计算。趋势过弱的词不会再推荐购买域名。</p>
+          <p>独立站推荐必须同时满足：游戏搜索意图明确、名称歧义低、7天或30天持续上涨/Breakout。</p>
         </div>
         <div class="filters">
           <input id="searchInput" type="search" placeholder="搜索游戏名或来源" />
           <select id="recommendationFilter">
-            <option value="recommended">推荐结果</option>
-            <option value="independent">适合独立站</option>
-            <option value="page">仅适合站内页</option>
+            <option value="recommended">明显上涨推荐</option>
+            <option value="independent">明显上涨·适合独立站</option>
+            <option value="page">稳定需求·仅适合站内页</option>
             <option value="watch">趋势较弱／观察中</option>
             <option value="reject">不建议做</option>
             <option value="pending">等待自动验证</option>
@@ -69,18 +69,18 @@
       <div class="table-card">
         <div class="table-scroll">
           <table>
-            <thead><tr><th>综合分</th><th>游戏名</th><th>建站建议</th><th>搜索意图</th><th>趋势需求</th><th>来源</th><th>操作</th></tr></thead>
+            <thead><tr><th>综合分</th><th>游戏名</th><th>建站建议</th><th>搜索意图</th><th>7天／30天趋势</th><th>发现来源</th><th>操作</th></tr></thead>
             <tbody id="resultBody"></tbody>
           </table>
         </div>
         <div id="emptyState" class="empty" hidden>
-          <strong>当前没有同时通过意图和趋势筛选的结果</strong>
-          <span>这比推荐没有需求的词更可靠。可切换到“观察中”查看趋势偏弱的候选。</span>
+          <strong>当前没有通过“明显上涨”筛选的结果</strong>
+          <span>这属于正常情况。宁可等待真正上涨的游戏，也不推荐平稳但流量不足的词。</span>
         </div>
       </div>
     </section>
 
-    <footer>Game Name Radar · Trends为相对热度，推荐结果仍应人工确认7天、30天曲线和SERP后再购买域名。</footer>
+    <footer>Game Name Radar · Google Trends是相对热度；购买域名前仍需人工检查曲线、SERP和iframe可用性。</footer>
   </main>
   <div id="toast" class="toast" role="status"></div>
   <script type="module" src="/app.js"></script>
