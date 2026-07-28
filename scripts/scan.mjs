@@ -29,6 +29,7 @@ const sleep=(ms)=>new Promise(resolve=>setTimeout(resolve,ms));
 
 async function readJson(file,fallback){try{return JSON.parse(await fs.readFile(file,'utf8'))}catch{return fallback}}
 function sourceKinds(candidate){return new Set((candidate.sources||[]).map(source=>source.kind))}
+function hasCurrentSeo(candidate){return candidate.seo?.modelVersion===SEO_MODEL_VERSION}
 
 function updateDiscovery(candidate){
   const kinds=sourceKinds(candidate);
@@ -120,7 +121,7 @@ function mergeCandidate(candidates,gameName,source,entry,now){
 }
 
 function needsSeoCheck(candidate){
-  if(candidate.seo?.modelVersion!==SEO_MODEL_VERSION)return true;
+  if(!hasCurrentSeo(candidate))return true;
   const checked=Date.parse(candidate.seo?.checkedAt||'');
   if(!Number.isFinite(checked))return true;
   if(candidate.seo?.status==='error')return Date.now()-checked>12*3600000;
@@ -150,8 +151,9 @@ function verifyPriority(candidate){
   return score;
 }
 
-function isFastPassed(candidate){return candidate.fast?.modelVersion===FAST_MODEL_VERSION&&candidate.fast?.classification==='pass'}
+function isFastPassed(candidate){return hasCurrentSeo(candidate)&&candidate.fast?.modelVersion===FAST_MODEL_VERSION&&candidate.fast?.classification==='pass'}
 function isTrendEligible(candidate){
+  if(!hasCurrentSeo(candidate))return false;
   if(!['independent','page'].includes(candidate.seo?.classification))return false;
   if(Number(candidate.seo?.score||0)<42)return false;
   if(Number(candidate.seo?.nameRisk??30)>14)return false;
@@ -184,7 +186,7 @@ function trendPriority(candidate){
 }
 
 function youtubeNeedsCheck(candidate){
-  if(!YOUTUBE_API_KEY||YOUTUBE_LIMIT<=0)return false;
+  if(!YOUTUBE_API_KEY||YOUTUBE_LIMIT<=0||!hasCurrentSeo(candidate))return false;
   if(!['independent','page'].includes(candidate.seo?.classification))return false;
   if(!['pass','watch'].includes(candidate.fast?.classification))return false;
   const checked=Date.parse(candidate.youtube?.checkedAt||'');
@@ -200,7 +202,8 @@ function applyFinalRecommendation(candidate){
   const entityConflict=Boolean(candidate.seo?.entityConflict||candidate.trend?.entityConflict);
   let recommendation='pending';
 
-  if(seoClass==='error')recommendation='error';
+  if(!hasCurrentSeo(candidate))recommendation='pending';
+  else if(seoClass==='error')recommendation='error';
   else if(seoClass==='reject'||candidate.seo?.entityConflict||fastClass==='reject')recommendation='reject';
   else if(seoClass==='pending'||fastClass==='pending')recommendation='pending';
   else if(fastClass==='weak')recommendation='reject';
@@ -292,7 +295,8 @@ for(const candidate of verifyQueue){
 
 for(const candidate of candidates){
   if(!candidate.seo)candidate.seo={modelVersion:SEO_MODEL_VERSION,status:'pending',classification:'pending',score:0,reasons:['等待自动搜索意图验证']};
-  if(['independent','page','reject','watch'].includes(candidate.seo.classification))candidate.fast=calculateFastSignals(candidate,previousFastById.get(candidate.id)||{});
+  if(hasCurrentSeo(candidate)&&['independent','page','reject','watch'].includes(candidate.seo.classification))candidate.fast=calculateFastSignals(candidate,previousFastById.get(candidate.id)||{});
+  else candidate.fast={modelVersion:FAST_MODEL_VERSION,status:'pending',classification:'pending',score:0,reasons:['等待最新SEO验证后计算快速热度']};
 }
 
 let youtubeVerified=0,youtubeErrors=0;
@@ -340,7 +344,7 @@ if(candidates.length>3000)candidates.length=3000;
 
 const recommendationCounts={independent:0,page:0,watch:0,reject:0,pending:0,error:0};
 for(const candidate of candidates)recommendationCounts[candidate.recommendation||'pending']=(recommendationCounts[candidate.recommendation||'pending']||0)+1;
-const seoPassedCount=candidates.filter(candidate=>['independent','page'].includes(candidate.seo?.classification)).length;
+const seoPassedCount=candidates.filter(candidate=>hasCurrentSeo(candidate)&&['independent','page'].includes(candidate.seo?.classification)).length;
 const fastPassedCount=candidates.filter(candidate=>candidate.fast?.classification==='pass').length;
 const fastWatchCount=candidates.filter(candidate=>candidate.fast?.classification==='watch').length;
 const fastRejectedCount=candidates.filter(candidate=>['weak','reject'].includes(candidate.fast?.classification)).length;
