@@ -23,8 +23,9 @@
     "url": "https://itch.io/games/newest/html5/in-jam.xml",
     "kind": "itch-jam-new",
     "fetchKind": "feed",
-    "enabled": true,
-    "baselineOnly": false
+    "enabled": false,
+    "baselineOnly": false,
+    "disabledReason": "GitHub Actions运行器持续返回403；Jam作品仍由itch.io New Feed和New & Popular覆盖"
   },
   {
     "id": "itch-jam-popular-html5",
@@ -32,8 +33,9 @@
     "url": "https://itch.io/games/new-and-popular/html5/in-jam.xml",
     "kind": "itch-jam-popular",
     "fetchKind": "feed",
-    "enabled": true,
-    "baselineOnly": false
+    "enabled": false,
+    "baselineOnly": false,
+    "disabledReason": "GitHub Actions运行器持续返回403；Jam作品仍由itch.io New Feed和New & Popular覆盖"
   },
   {
     "id": "itch-new-feed",
