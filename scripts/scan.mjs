@@ -6,6 +6,7 @@ import { scanSteamSource } from '../lib/steam-discovery.mjs';
 import { discoverRisingGameQueries } from '../lib/rising-discovery.mjs';
 import { verifyGameKeyword, cleanGameName, estimateNameRisk } from '../lib/seo-verifier.mjs';
 import { verifyTrendDemand } from '../lib/trend-verifier.mjs';
+import { calculateFastSignals, verifyYoutubeSignals, FAST_MODEL_VERSION } from '../lib/fast-signals.mjs';
 
 const root=path.resolve(path.dirname(fileURLToPath(import.meta.url)),'..');
 const sourcesPath=path.join(root,'config','sources.json');
@@ -14,17 +15,19 @@ const candidatesPath=path.join(root,'data','candidates.json');
 const reportPath=path.join(root,'data','latest-report.json');
 const VERIFY_LIMIT=Math.max(1,Math.min(50,Number(process.env.SEO_VERIFY_LIMIT||30)));
 const TREND_LIMIT=Math.max(1,Math.min(10,Number(process.env.TRENDS_VERIFY_LIMIT||6)));
+const YOUTUBE_LIMIT=Math.max(0,Math.min(10,Number(process.env.YOUTUBE_VERIFY_LIMIT||3)));
+const YOUTUBE_API_KEY=process.env.YOUTUBE_API_KEY||'';
 const VERIFY_MAX_AGE=3*86400000;
 const TREND_MAX_AGE=86400000;
 const TREND_ERROR_RETRY=3600000;
 const TREND_BATCH_INTERVAL=30*60000;
 const RISING_DISCOVERY_INTERVAL=3*3600000;
-const SEO_MODEL_VERSION=4;
+const YOUTUBE_MAX_AGE=6*3600000;
+const SEO_MODEL_VERSION=5;
 const TREND_MODEL_VERSION=3;
 const sleep=(ms)=>new Promise(resolve=>setTimeout(resolve,ms));
 
 async function readJson(file,fallback){try{return JSON.parse(await fs.readFile(file,'utf8'))}catch{return fallback}}
-
 function sourceKinds(candidate){return new Set((candidate.sources||[]).map(source=>source.kind))}
 
 function updateDiscovery(candidate){
@@ -45,11 +48,19 @@ function normalizeCandidateName(candidate){
   if(!cleaned)return false;
   const normalized=normalizeGameName(cleaned);
   if(!normalized)return false;
+  candidate.sources=candidate.sources||[];
+  for(const source of candidate.sources){
+    source.firstSeen=source.firstSeen||candidate.firstSeen;
+    source.lastSeen=source.lastSeen||candidate.lastSeen||candidate.firstSeen;
+    if(source.currentRank&&!source.bestRank)source.bestRank=source.currentRank;
+  }
   if(cleaned!==candidate.gameName||normalized!==candidate.normalizedName){
     candidate.gameName=cleaned;
     candidate.normalizedName=normalized;
     delete candidate.seo;
+    delete candidate.fast;
     delete candidate.trend;
+    delete candidate.youtube;
     candidate.score=0;
     candidate.level='pending';
     candidate.recommendation='pending';
@@ -68,7 +79,9 @@ function dedupeCandidates(items){
     if(Date.parse(item.firstSeen)<Date.parse(existing.firstSeen))existing.firstSeen=item.firstSeen;
     if(Date.parse(item.lastSeen)>Date.parse(existing.lastSeen))existing.lastSeen=item.lastSeen;
     if(!existing.seo&&item.seo)existing.seo=item.seo;
+    if(!existing.fast&&item.fast)existing.fast=item.fast;
     if(!existing.trend&&item.trend)existing.trend=item.trend;
+    if(!existing.youtube&&item.youtube)existing.youtube=item.youtube;
   }
   return [...map.values()];
 }
@@ -83,10 +96,24 @@ function mergeCandidate(candidates,gameName,source,entry,now){
     candidates.push(candidate);
   }
   const key=`${source.id}|${entry.url}`;
-  if(!candidate.sources.some(item=>item.key===key))candidate.sources.push({
-    key,sourceId:source.id,name:source.name,kind:source.kind,url:entry.url,date:entry.date||'',
-    growth:entry.growth||'',seed:entry.seed||'',windowDays:entry.windowDays||null,
-  });
+  const rank=Number(entry.rank||0);
+  let sourceRecord=candidate.sources.find(item=>item.key===key);
+  if(!sourceRecord){
+    sourceRecord={
+      key,sourceId:source.id,name:source.name,kind:source.kind,url:entry.url,date:entry.date||'',
+      growth:entry.growth||'',seed:entry.seed||'',windowDays:entry.windowDays||null,
+      firstSeen:now,lastSeen:now,currentRank:rank||null,previousRank:null,bestRank:rank||null,
+    };
+    candidate.sources.push(sourceRecord);
+  }else{
+    sourceRecord.lastSeen=now;
+    sourceRecord.date=entry.date||sourceRecord.date||'';
+    if(rank){
+      sourceRecord.previousRank=sourceRecord.currentRank||rank;
+      sourceRecord.currentRank=rank;
+      sourceRecord.bestRank=Math.min(Number(sourceRecord.bestRank||rank),rank);
+    }
+  }
   candidate.lastSeen=now;
   updateDiscovery(candidate);
   return true;
@@ -123,22 +150,13 @@ function verifyPriority(candidate){
   return score;
 }
 
-function hasStrongDiscoverySignal(candidate){
-  const kinds=sourceKinds(candidate);
-  const risk=Number(candidate.seo?.nameRisk??estimateNameRisk(candidate.gameName));
-  const seoScore=Number(candidate.seo?.score||0);
-  if(kinds.has('trends-rising-7d')||kinds.has('trends-rising-30d'))return true;
-  if(kinds.has('itch-featured')||kinds.has('itch-popular')||kinds.has('newgrounds-top')||kinds.has('steam-popular-new'))return risk<=14;
-  if((candidate.sources||[]).length>=2)return risk<=14;
-  return (candidate.discoveryScore||0)>=7&&risk<=8&&seoScore>=60;
-}
-
+function isFastPassed(candidate){return candidate.fast?.modelVersion===FAST_MODEL_VERSION&&candidate.fast?.classification==='pass'}
 function isTrendEligible(candidate){
   if(!['independent','page'].includes(candidate.seo?.classification))return false;
   if(Number(candidate.seo?.score||0)<42)return false;
   if(Number(candidate.seo?.nameRisk??30)>14)return false;
   if(candidate.seo?.entityConflict)return false;
-  return hasStrongDiscoverySignal(candidate);
+  return isFastPassed(candidate);
 }
 
 function needsTrendCheck(candidate){
@@ -152,7 +170,7 @@ function needsTrendCheck(candidate){
 
 function trendPriority(candidate){
   const kinds=sourceKinds(candidate);
-  let score=(candidate.seo?.score||0)+(candidate.discoveryScore||0)*2;
+  let score=(candidate.seo?.score||0)+(candidate.discoveryScore||0)*2+(candidate.fast?.score||0)*2;
   if(kinds.has('trends-rising-7d'))score+=45;
   if(kinds.has('trends-rising-30d'))score+=32;
   if(kinds.has('itch-featured'))score+=18;
@@ -160,15 +178,22 @@ function trendPriority(candidate){
   if(kinds.has('newgrounds-top'))score+=12;
   if(kinds.has('steam-popular-new'))score+=10;
   if(candidate.seo?.classification==='independent')score+=18;
-  if((candidate.sources||[]).length>=2)score+=12;
   const age=Date.now()-Date.parse(candidate.firstSeen||0);
   if(Number.isFinite(age)&&age<2*86400000)score+=8;
-  score-=Number(candidate.seo?.nameRisk||0)*1.5;
   return score;
+}
+
+function youtubeNeedsCheck(candidate){
+  if(!YOUTUBE_API_KEY||YOUTUBE_LIMIT<=0)return false;
+  if(!['independent','page'].includes(candidate.seo?.classification))return false;
+  if(!['pass','watch'].includes(candidate.fast?.classification))return false;
+  const checked=Date.parse(candidate.youtube?.checkedAt||'');
+  return !Number.isFinite(checked)||Date.now()-checked>YOUTUBE_MAX_AGE;
 }
 
 function applyFinalRecommendation(candidate){
   const seoClass=candidate.seo?.classification||'pending';
+  const fastClass=candidate.fast?.classification||'pending';
   const demandClass=candidate.trend?.classification||'pending';
   const nameRisk=Number(candidate.seo?.nameRisk??30);
   const keywordFreshness=candidate.trend?.keywordFreshness||'unknown';
@@ -176,9 +201,10 @@ function applyFinalRecommendation(candidate){
   let recommendation='pending';
 
   if(seoClass==='error')recommendation='error';
-  else if(seoClass==='reject'||candidate.seo?.entityConflict)recommendation='reject';
-  else if(seoClass==='pending')recommendation='pending';
-  else if(!isTrendEligible(candidate))recommendation='reject';
+  else if(seoClass==='reject'||candidate.seo?.entityConflict||fastClass==='reject')recommendation='reject';
+  else if(seoClass==='pending'||fastClass==='pending')recommendation='pending';
+  else if(fastClass==='weak')recommendation='reject';
+  else if(fastClass==='watch')recommendation='watch';
   else if(demandClass==='error'||demandClass==='pending')recommendation='pending';
   else if(demandClass==='none')recommendation='reject';
   else if(demandClass==='weak')recommendation='watch';
@@ -186,36 +212,34 @@ function applyFinalRecommendation(candidate){
   else if(['independent','page'].includes(seoClass)&&['strong','rising','breakout','moderate'].includes(demandClass))recommendation='page';
   else recommendation='watch';
 
-  const seoScore=Number(candidate.seo?.score||0);
-  const trendScore=Number(candidate.trend?.score||0);
-  let finalScore=Math.round(seoScore*0.48+trendScore*0.52);
+  const seoScore=Number(candidate.seo?.score||0),fastScore=Number(candidate.fast?.score||0),trendScore=Number(candidate.trend?.score||0);
+  let finalScore=Math.round(seoScore*0.32+fastScore*0.28+trendScore*0.40);
   if(['rising','breakout'].includes(demandClass))finalScore=Math.min(100,finalScore+8);
   if(keywordFreshness==='existing'||entityConflict)finalScore=Math.min(finalScore,69);
   if(recommendation==='watch')finalScore=Math.min(finalScore,59);
-  if(recommendation==='reject'||recommendation==='pending'||recommendation==='error')finalScore=0;
+  if(['reject','pending','error'].includes(recommendation))finalScore=0;
   candidate.finalScore=finalScore;
   candidate.score=finalScore;
   candidate.level=recommendation;
   candidate.recommendation=recommendation;
 }
 
-function recommendationRank(candidate){
-  return {independent:6,page:5,watch:4,pending:3,reject:2,error:1}[candidate.recommendation||'pending']||0;
-}
+function recommendationRank(candidate){return {independent:6,page:5,watch:4,pending:3,reject:2,error:1}[candidate.recommendation||'pending']||0}
 
 async function processSourceResult({source,result,candidates,radarState,logs,now}){
   const previous=radarState.snapshots[source.id];
   const previousUrls=new Set(previous?.urls||[]);
   const firstScan=!previous;
-  const newEntries=firstScan&&source.baselineOnly?[]:result.entries.filter(entry=>!previousUrls.has(entry.url));
+  const entries=result.entries.map((entry,index)=>({...entry,rank:entry.rank||index+1}));
+  const newEntries=firstScan&&source.baselineOnly?[]:entries.filter(entry=>!previousUrls.has(entry.url));
   const newUrls=new Set(newEntries.map(entry=>entry.url));
   let added=0;
   if(!(firstScan&&source.baselineOnly)){
-    for(const entry of result.entries){const merged=mergeCandidate(candidates,entry.gameName,source,entry,now);if(merged&&newUrls.has(entry.url))added+=1}
+    for(const entry of entries){const merged=mergeCandidate(candidates,entry.gameName,source,entry,now);if(merged&&newUrls.has(entry.url))added+=1}
   }
-  radarState.snapshots[source.id]={urls:result.entries.map(entry=>entry.url),scannedAt:result.scannedAt||now,detectedType:result.detectedType||source.kind};
-  logs.push({ok:true,sourceId:source.id,sourceName:source.name,total:result.entries.length,added});
-  console.log(`✓ ${source.name}: ${result.entries.length} entries, ${added} new`);
+  radarState.snapshots[source.id]={urls:entries.map(entry=>entry.url),positions:Object.fromEntries(entries.map(entry=>[entry.url,entry.rank])),scannedAt:result.scannedAt||now,detectedType:result.detectedType||source.kind};
+  logs.push({ok:true,sourceId:source.id,sourceName:source.name,total:entries.length,added});
+  console.log(`✓ ${source.name}: ${entries.length} entries, ${added} new`);
   return added;
 }
 
@@ -223,15 +247,14 @@ const sources=(await readJson(sourcesPath,[])).filter(source=>source.enabled!==f
 const radarState=await readJson(statePath,{snapshots:{},lastScan:null,lastRisingDiscovery:null,lastTrendBatch:null});
 const candidatePayload=await readJson(candidatesPath,{candidates:[]});
 let candidates=dedupeCandidates(Array.isArray(candidatePayload)?candidatePayload:candidatePayload.candidates||[]);
+const previousFastById=new Map(candidates.map(candidate=>[candidate.id,candidate.fast||{}]));
 const now=new Date().toISOString();
 const logs=[];
 let totalAdded=0;
 
 for(const source of sources){
   try{
-    const result=source.fetchKind==='steam-listing'
-      ? await scanSteamSource(source)
-      : await scanSource({...source,kind:source.fetchKind||(source.kind?.includes('sitemap')?'sitemap':source.kind?.includes('itch')?'itch-listing':source.kind||'auto')});
+    const result=source.fetchKind==='steam-listing'?await scanSteamSource(source):await scanSource({...source,kind:source.fetchKind||(source.kind?.includes('sitemap')?'sitemap':source.kind?.includes('itch')?'itch-listing':source.kind||'auto')});
     totalAdded+=await processSourceResult({source,result,candidates,radarState,logs,now});
   }catch(error){logs.push({ok:false,sourceId:source.id,sourceName:source.name,error:error.message});console.error(`✗ ${source.name}: ${error.message}`)}
 }
@@ -269,6 +292,18 @@ for(const candidate of verifyQueue){
 
 for(const candidate of candidates){
   if(!candidate.seo)candidate.seo={modelVersion:SEO_MODEL_VERSION,status:'pending',classification:'pending',score:0,reasons:['等待自动搜索意图验证']};
+  if(['independent','page','reject','watch'].includes(candidate.seo.classification))candidate.fast=calculateFastSignals(candidate,previousFastById.get(candidate.id)||{});
+}
+
+let youtubeVerified=0,youtubeErrors=0;
+if(YOUTUBE_API_KEY&&YOUTUBE_LIMIT>0){
+  const youtubeQueue=candidates.filter(youtubeNeedsCheck).sort((a,b)=>(b.fast?.score||0)-(a.fast?.score||0)).slice(0,YOUTUBE_LIMIT);
+  for(const candidate of youtubeQueue){
+    try{candidate.youtube=await verifyYoutubeSignals(candidate.gameName,YOUTUBE_API_KEY);youtubeVerified+=1}
+    catch(error){candidate.youtube={checkedAt:new Date().toISOString(),status:'error',error:error.message};youtubeErrors+=1}
+    candidate.fast=calculateFastSignals(candidate,previousFastById.get(candidate.id)||{});
+    await sleep(500);
+  }
 }
 
 const trendEligibleBefore=candidates.filter(isTrendEligible);
@@ -283,38 +318,32 @@ if(trendBatchDue){
   trendQueueSize=trendQueue.length;
   for(const candidate of trendQueue){
     const previousTrend=candidate.trend;
-    try{
-      console.log(`Trends verify: ${candidate.gameName}`);
-      candidate.trend=await verifyTrendDemand(candidate.gameName);
-      trendsVerified+=1;
-    }catch(error){
+    try{console.log(`Trends verify: ${candidate.gameName}`);candidate.trend=await verifyTrendDemand(candidate.gameName);trendsVerified+=1}
+    catch(error){
       const previousIsValid=previousTrend&&!['error','pending'].includes(previousTrend.classification);
-      if(previousIsValid){
-        candidate.trend={...previousTrend,stale:true,lastError:error.message,lastErrorAt:new Date().toISOString()};
-      }else{
-        candidate.trend={modelVersion:TREND_MODEL_VERSION,checkedAt:new Date().toISOString(),status:'error',classification:'error',score:0,reasons:[`趋势验证失败：${error.message}`]};
-      }
+      candidate.trend=previousIsValid?{...previousTrend,stale:true,lastError:error.message,lastErrorAt:new Date().toISOString()}:{modelVersion:TREND_MODEL_VERSION,checkedAt:new Date().toISOString(),status:'error',classification:'error',score:0,reasons:[`趋势验证失败：${error.message}`]};
       trendErrors+=1;
       console.error(`Trends verify failed: ${candidate.gameName}: ${error.message}`);
     }
-    await sleep(12000);
+    await sleep(8000);
   }
   if(trendQueue.length)radarState.lastTrendBatch=now;
 }
 
 for(const candidate of candidates){
-  if(isTrendEligible(candidate)&&!candidate.trend){
-    candidate.trend={modelVersion:TREND_MODEL_VERSION,status:'pending',classification:'pending',score:0,reasons:['等待Google Trends需求验证']};
-  }
+  if(isTrendEligible(candidate)&&!candidate.trend)candidate.trend={modelVersion:TREND_MODEL_VERSION,status:'pending',classification:'pending',score:0,reasons:['等待Google Trends需求验证']};
   applyFinalRecommendation(candidate);
 }
 
-candidates.sort((a,b)=>recommendationRank(b)-recommendationRank(a)||(b.finalScore||0)-(a.finalScore||0)||(b.trend?.score||0)-(a.trend?.score||0)||(b.seo?.score||0)-(a.seo?.score||0)||(b.discoveryScore||0)-(a.discoveryScore||0)||Date.parse(b.firstSeen)-Date.parse(a.firstSeen));
+candidates.sort((a,b)=>recommendationRank(b)-recommendationRank(a)||(b.finalScore||0)-(a.finalScore||0)||(b.fast?.score||0)-(a.fast?.score||0)||(b.trend?.score||0)-(a.trend?.score||0)||(b.seo?.score||0)-(a.seo?.score||0)||(b.discoveryScore||0)-(a.discoveryScore||0)||Date.parse(b.firstSeen)-Date.parse(a.firstSeen));
 if(candidates.length>3000)candidates.length=3000;
 
 const recommendationCounts={independent:0,page:0,watch:0,reject:0,pending:0,error:0};
 for(const candidate of candidates)recommendationCounts[candidate.recommendation||'pending']=(recommendationCounts[candidate.recommendation||'pending']||0)+1;
 const seoPassedCount=candidates.filter(candidate=>['independent','page'].includes(candidate.seo?.classification)).length;
+const fastPassedCount=candidates.filter(candidate=>candidate.fast?.classification==='pass').length;
+const fastWatchCount=candidates.filter(candidate=>candidate.fast?.classification==='watch').length;
+const fastRejectedCount=candidates.filter(candidate=>['weak','reject'].includes(candidate.fast?.classification)).length;
 const trendEligibleCount=candidates.filter(isTrendEligible).length;
 const trendPendingCount=candidates.filter(candidate=>isTrendEligible(candidate)&&needsTrendCheck(candidate)).length;
 const trendValidatedCount=candidates.filter(candidate=>isTrendEligible(candidate)&&candidate.trend?.modelVersion===TREND_MODEL_VERSION&&!['pending','error'].includes(candidate.trend?.classification)).length;
@@ -322,5 +351,5 @@ const risingCount=candidates.filter(candidate=>['rising','breakout'].includes(ca
 radarState.lastScan=now;
 await fs.writeFile(statePath,JSON.stringify(radarState,null,2)+'\n');
 await fs.writeFile(candidatesPath,JSON.stringify({updatedAt:now,candidates},null,2)+'\n');
-await fs.writeFile(reportPath,JSON.stringify({scannedAt:now,totalAdded,sources:logs,seoVerified,seoErrors,trendsVerified,trendErrors,trendBatchRan,trendQueueSize,risingDiscoveryRan,seoModelVersion:SEO_MODEL_VERSION,trendModelVersion:TREND_MODEL_VERSION,seoPassedCount,trendEligibleCount,trendPendingCount,trendValidatedCount,risingCount,recommendationCounts},null,2)+'\n');
-console.log(`Scan complete. ${totalAdded} names added; ${seoVerified} SEO checks; ${trendsVerified} Trends checks; ${trendPendingCount} trend candidates pending.`);
+await fs.writeFile(reportPath,JSON.stringify({scannedAt:now,totalAdded,sources:logs,seoVerified,seoErrors,fastModelVersion:FAST_MODEL_VERSION,fastPassedCount,fastWatchCount,fastRejectedCount,youtubeEnabled:Boolean(YOUTUBE_API_KEY),youtubeVerified,youtubeErrors,trendsVerified,trendErrors,trendBatchRan,trendQueueSize,risingDiscoveryRan,seoModelVersion:SEO_MODEL_VERSION,trendModelVersion:TREND_MODEL_VERSION,seoPassedCount,trendEligibleCount,trendPendingCount,trendValidatedCount,risingCount,recommendationCounts},null,2)+'\n');
+console.log(`Scan complete. ${totalAdded} names added; ${seoVerified} SEO checks; ${fastPassedCount} fast-pass; ${trendsVerified} Trends checks; ${trendPendingCount} trend candidates pending.`);
