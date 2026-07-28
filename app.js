@@ -1,11 +1,12 @@
 const RAW_BASE='https://raw.githubusercontent.com/foxigaoqian/game-name-radar/main';
 const DATA_URL=`${RAW_BASE}/data/candidates.json`;
 const REPORT_URL=`${RAW_BASE}/data/latest-report.json`;
-const STATUS_KEY='gameRadar.resultStatus.v4';
+const STATUS_KEY='gameRadar.resultStatus.v5';
 const els={lastUpdated:document.querySelector('#lastUpdated'),verifyStatus:document.querySelector('#verifyStatus'),sourceCount:document.querySelector('#sourceCount'),newCount:document.querySelector('#newCount'),independentCount:document.querySelector('#independentCount'),pageCount:document.querySelector('#pageCount'),sourceChips:document.querySelector('#sourceChips'),body:document.querySelector('#resultBody'),empty:document.querySelector('#emptyState'),search:document.querySelector('#searchInput'),recommendation:document.querySelector('#recommendationFilter'),time:document.querySelector('#timeFilter'),refresh:document.querySelector('#refreshBtn'),export:document.querySelector('#exportBtn'),toast:document.querySelector('#toast')};
 let candidates=[];let report={};let statuses=loadStatuses();
-const LABELS={independent:'适合独立站',page:'仅适合站内页',watch:'趋势较弱',reject:'不建议做',pending:'等待验证',error:'验证失败'};
-const TREND_LABELS={strong:'需求较强',rising:'正在上涨',moderate:'需求中等',weak:'需求较弱',none:'无可见需求',pending:'等待趋势验证',error:'趋势验证失败'};
+const LABELS={independent:'明显上涨·适合独立站',page:'稳定需求·站内页',watch:'趋势较弱',reject:'不建议做',pending:'等待验证',error:'验证失败'};
+const TREND_LABELS={breakout:'Breakout爆发',rising:'明显上涨',strong:'需求较强但未上涨',moderate:'需求中等',weak:'需求较弱',none:'无可见需求',pending:'等待趋势验证',error:'趋势验证失败'};
+const TREND_RANK={breakout:6,rising:5,strong:4,moderate:3,weak:2,none:1,pending:0,error:0};
 function loadStatuses(){try{return JSON.parse(localStorage.getItem(STATUS_KEY)||'{}')}catch{return{}}}
 function saveStatuses(){localStorage.setItem(STATUS_KEY,JSON.stringify(statuses))}
 function toast(text){els.toast.textContent=text;els.toast.classList.add('show');clearTimeout(toast.t);toast.t=setTimeout(()=>els.toast.classList.remove('show'),2400)}
@@ -23,12 +24,12 @@ function filtered(){
   const q=els.search.value.trim().toLowerCase(),filter=els.recommendation.value,days=els.time.value==='all'?Infinity:Number(els.time.value);
   return candidates.filter(c=>{
     const cls=classification(c);
-    if(filter==='recommended'&&!['independent','page'].includes(cls))return false;
+    if(filter==='recommended'&&cls!=='independent')return false;
     if(!['all','recommended'].includes(filter)&&cls!==filter)return false;
     if(ageDays(c.firstSeen)>days)return false;
     if(q&&!c.gameName.toLowerCase().includes(q)&&!(c.sources||[]).some(s=>s.name.toLowerCase().includes(q)))return false;
     return statuses[c.id]!=='ignored';
-  }).sort((a,b)=>finalScore(b)-finalScore(a)||seoScore(b)-seoScore(a)||trendScore(b)-trendScore(a)||(b.discoveryScore||0)-(a.discoveryScore||0)||Date.parse(b.firstSeen)-Date.parse(a.firstSeen));
+  }).sort((a,b)=>(TREND_RANK[b.trend?.classification]||0)-(TREND_RANK[a.trend?.classification]||0)||finalScore(b)-finalScore(a)||trendScore(b)-trendScore(a)||seoScore(b)-seoScore(a)||(b.discoveryScore||0)-(a.discoveryScore||0)||Date.parse(b.firstSeen)-Date.parse(a.firstSeen));
 }
 function renderStats(){
   const active=candidates.filter(c=>statuses[c.id]!=='ignored');
@@ -50,15 +51,17 @@ function renderSeo(c){
   const label=document.createElement('span');label.textContent=`SEO意图分 ${seoScore(c)}`;box.append(label);
   const reasons=(seo.reasons||[]).filter(text=>!text.startsWith('适合')&&!text.startsWith('不建议')).slice(0,2);
   for(const text of reasons){const p=document.createElement('small');p.textContent=text;box.append(p)}
-  if(Number.isFinite(seo.exactGameRatio)){const metrics=document.createElement('small');metrics.textContent=`主词游戏 ${Math.round(seo.exactGameRatio*100)}%${seo.exactNewsRatio>0?` · 新闻 ${Math.round(seo.exactNewsRatio*100)}%`:''}`;box.append(metrics)}
+  if(Number.isFinite(seo.exactGameRatio)){const metrics=document.createElement('small');metrics.textContent=`主词游戏 ${Math.round(seo.exactGameRatio*100)}%${seo.exactNewsRatio>0?` · 新闻 ${Math.round(seo.exactNewsRatio*100)}%`:''} · 歧义风险 ${seo.nameRisk??'—'}`;box.append(metrics)}
   return box;
 }
 function renderTrend(c){
   const trend=c.trend||{};const box=document.createElement('div');box.className='judgement trend-judgement';
   const label=document.createElement('span');label.textContent=`${TREND_LABELS[trend.classification]||'等待趋势验证'} · ${trendScore(c)}分`;box.append(label);
-  if(Number.isFinite(trend.ratio7)){const seven=document.createElement('small');seven.textContent=`7天≈${trend.anchor||'itch io'}的 ${(trend.ratio7*100).toFixed(1)}%`;box.append(seven)}
-  if(Number.isFinite(trend.ratio30)){const thirty=document.createElement('small');thirty.textContent=`30天≈${trend.anchor||'itch io'}的 ${(trend.ratio30*100).toFixed(1)}%`;box.append(thirty)}
-  if(!Number.isFinite(trend.ratio7)){const reason=document.createElement('small');reason.textContent=trend.reasons?.[0]||'等待Google Trends需求验证';box.append(reason)}
+  if(Number.isFinite(trend.ratio7)){const seven=document.createElement('small');seven.textContent=`7天≈${trend.anchor||'itch io'}的 ${(trend.ratio7*100).toFixed(1)}% · 动量 ${trend.sevenDay?.momentum??'—'}x`;box.append(seven)}
+  if(Number.isFinite(trend.ratio30)){const thirty=document.createElement('small');thirty.textContent=`30天≈${trend.anchor||'itch io'}的 ${(trend.ratio30*100).toFixed(1)}% · 动量 ${trend.thirtyDay?.momentum??'—'}x`;box.append(thirty)}
+  const signal=(trend.reasons||[]).find(text=>/上涨|Breakout|尖峰/.test(text));
+  if(signal){const reason=document.createElement('small');reason.textContent=signal;box.append(reason)}
+  else if(!Number.isFinite(trend.ratio7)){const reason=document.createElement('small');reason.textContent=trend.reasons?.[0]||'等待Google Trends需求验证';box.append(reason)}
   return box;
 }
 function render(){
@@ -76,5 +79,5 @@ function render(){
   }
 }
 async function load(){els.refresh.disabled=true;try{const stamp=Date.now();const [cRes,rRes]=await Promise.all([fetch(`${DATA_URL}?v=${stamp}`,{cache:'no-store'}),fetch(`${REPORT_URL}?v=${stamp}`,{cache:'no-store'})]);if(!cRes.ok)throw new Error('候选数据读取失败');const cJson=await cRes.json();candidates=Array.isArray(cJson)?cJson:cJson.candidates||[];report=rRes.ok?await rRes.json():{};render()}catch(e){toast(e.message);render()}finally{els.refresh.disabled=false}}
-els.search.addEventListener('input',render);els.recommendation.addEventListener('change',render);els.time.addEventListener('change',render);els.refresh.addEventListener('click',()=>load().then(()=>toast('结果已刷新')));els.export.addEventListener('click',()=>{const rows=[['Game Name','Final Score','Recommendation','SEO Score','Trend Score','7d vs Anchor','30d vs Anchor','Discovery Score','Reasons','Sources','URL'],...filtered().map(c=>[c.gameName,finalScore(c),LABELS[classification(c)]||classification(c),seoScore(c),trendScore(c),c.trend?.ratio7??'',c.trend?.ratio30??'',c.discoveryScore||0,[...(c.seo?.reasons||[]),...(c.trend?.reasons||[])].join(' | '),(c.sources||[]).map(s=>s.name).join(' | '),c.sources?.[0]?.url||''])];const csv='\ufeff'+rows.map(r=>r.map(v=>`"${String(v??'').replaceAll('"','""')}"`).join(',')).join('\n');const a=document.createElement('a');a.href=URL.createObjectURL(new Blob([csv],{type:'text/csv;charset=utf-8'}));a.download=`game-traffic-results-${new Date().toISOString().slice(0,10)}.csv`;a.click();URL.revokeObjectURL(a.href)});
+els.search.addEventListener('input',render);els.recommendation.addEventListener('change',render);els.time.addEventListener('change',render);els.refresh.addEventListener('click',()=>load().then(()=>toast('结果已刷新')));els.export.addEventListener('click',()=>{const rows=[['Game Name','Final Score','Recommendation','SEO Score','Name Risk','Trend Class','Trend Score','7d vs Anchor','7d Momentum','30d vs Anchor','30d Momentum','Discovery Score','Reasons','Sources','URL'],...filtered().map(c=>[c.gameName,finalScore(c),LABELS[classification(c)]||classification(c),seoScore(c),c.seo?.nameRisk??'',c.trend?.classification??'',trendScore(c),c.trend?.ratio7??'',c.trend?.sevenDay?.momentum??'',c.trend?.ratio30??'',c.trend?.thirtyDay?.momentum??'',c.discoveryScore||0,[...(c.seo?.reasons||[]),...(c.trend?.reasons||[])].join(' | '),(c.sources||[]).map(s=>s.name).join(' | '),c.sources?.[0]?.url||''])];const csv='\ufeff'+rows.map(r=>r.map(v=>`"${String(v??'').replaceAll('"','""')}"`).join(',')).join('\n');const a=document.createElement('a');a.href=URL.createObjectURL(new Blob([csv],{type:'text/csv;charset=utf-8'}));a.download=`game-rising-results-${new Date().toISOString().slice(0,10)}.csv`;a.click();URL.revokeObjectURL(a.href)});
 load();setInterval(load,5*60*1000);
