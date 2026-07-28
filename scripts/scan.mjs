@@ -72,10 +72,14 @@ for (const source of sources) {
     const newEntries = firstScan && source.baselineOnly
       ? []
       : result.entries.filter((entry) => !previousUrls.has(entry.url));
+    const newUrls = new Set(newEntries.map((entry) => entry.url));
 
     let added = 0;
-    for (const entry of newEntries) {
-      if (mergeCandidate(candidates, entry.gameName, source, entry, now)) added += 1;
+    if (!(firstScan && source.baselineOnly)) {
+      for (const entry of result.entries) {
+        const merged = mergeCandidate(candidates, entry.gameName, source, entry, now);
+        if (merged && newUrls.has(entry.url)) added += 1;
+      }
     }
     totalAdded += added;
 
@@ -96,7 +100,8 @@ for (const candidate of candidates) {
   candidate.score = calculateCandidateScore(candidate);
   candidate.level = candidateLevel(candidate.score);
 }
-candidates.sort((a, b) => (b.score || 0) - (a.score || 0) || Date.parse(b.firstSeen) - Date.parse(a.firstSeen));
+candidates.sort((a, b) => (b.score || 0) - (a.score || 0) || (b.sources?.length || 0) - (a.sources?.length || 0) || Date.parse(b.firstSeen) - Date.parse(a.firstSeen));
+if (candidates.length > 2500) candidates.length = 2500;
 
 radarState.lastScan = now;
 await fs.writeFile(statePath, JSON.stringify(radarState, null, 2) + '\n');
