@@ -4,6 +4,13 @@ on:
   workflow_dispatch:
   schedule:
     - cron: "17,47 * * * *"
+  push:
+    branches: [main]
+    paths:
+      - "config/sources.json"
+      - "lib/scanner.mjs"
+      - "scripts/scan.mjs"
+      - ".github/workflows/radar.yml"
 
 permissions:
   contents: write
@@ -15,15 +22,15 @@ concurrency:
 jobs:
   scan:
     runs-on: ubuntu-latest
-    timeout-minutes: 10
+    timeout-minutes: 15
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
         with:
           node-version: 22
-      - name: Scan sources
+      - name: Scan public game sources
         run: npm run scan
-      - name: Commit updated radar data
+      - name: Commit updated result data
         run: |
           if git diff --quiet -- data/; then
             echo "No radar changes"
@@ -32,5 +39,5 @@ jobs:
           git config user.name "game-radar-bot"
           git config user.email "game-radar-bot@users.noreply.github.com"
           git add data/
-          git commit -m "chore: update game radar data"
+          git commit -m "chore: update automatic game results"
           git push
