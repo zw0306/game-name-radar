@@ -11,6 +11,7 @@ on:
       - "config/sources.json"
       - "lib/scanner.mjs"
       - "lib/seo-verifier.mjs"
+      - "lib/fast-signals.mjs"
       - "lib/trend-verifier.mjs"
       - "lib/rising-discovery.mjs"
       - "lib/steam-discovery.mjs"
@@ -33,6 +34,8 @@ jobs:
       SEO_VERIFY_LIMIT: 30
       TRENDS_VERIFY_LIMIT: 6
       TRENDS_ANCHOR: itch io
+      YOUTUBE_VERIFY_LIMIT: 3
+      YOUTUBE_API_KEY: ${{ secrets.YOUTUBE_API_KEY }}
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
