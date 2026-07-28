@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <meta name="description" content="自动发现近7天或30天明显上涨的新游戏名，并验证搜索意图、扩散速度、搜索生态和趋势持续性。" />
+  <meta name="description" content="自动发现美国近7天或30天明显上涨的新游戏名，并使用全球趋势作为参考。" />
   <meta name="theme-color" content="#080b12" />
   <title>Game Name Radar · 上涨游戏词</title>
   <link rel="stylesheet" href="/styles.css" />
@@ -12,9 +12,9 @@
   <main class="page">
     <header class="hero">
       <div>
-        <p class="eyebrow"><span class="live-dot"></span> RISING GAME KEYWORD RADAR</p>
+        <p class="eyebrow"><span class="live-dot"></span> US-PRIMARY · WORLDWIDE REFERENCE</p>
         <h1>近7天／30天明显上涨的游戏词</h1>
-        <p class="subtitle">多来源发现后，先用扩散速度、榜单排名、自动补全和SERP增长快速筛选，最后才进入Google Trends。</p>
+        <p class="subtitle">美国趋势决定是否推荐独立站，全球趋势用于发现尚未扩散到美国的观察机会。先通过扩散、榜单、自动补全和SERP快速筛选，最后才进入Trends。</p>
       </div>
       <div class="update-box">
         <span>最近自动扫描</span>
@@ -26,8 +26,8 @@
     <section class="stats" aria-label="筛选统计">
       <article><span>监控入口</span><strong id="sourceCount">0</strong><small>榜单、RSS、Steam、趋势等</small></article>
       <article><span>本轮新发现</span><strong id="newCount">0</strong><small>尚未代表有流量</small></article>
-      <article class="accent"><span>明显上涨推荐</span><strong id="independentCount">0</strong><small>快速层和Trends均通过</small></article>
-      <article><span>快速层通过</span><strong id="pendingCount">0</strong><small>等待或正在进行Trends验证</small></article>
+      <article class="accent"><span>美国上涨推荐</span><strong id="independentCount">0</strong><small>快速层和美国Trends均通过</small></article>
+      <article><span>快速层通过</span><strong id="pendingCount">0</strong><small>等待美国／全球趋势验证</small></article>
     </section>
 
     <section class="source-health">
@@ -43,17 +43,17 @@
         <div>
           <p class="eyebrow">RISING VERIFIED RESULTS</p>
           <h2>游戏关键词结果</h2>
-          <p>独立站推荐必须依次通过：游戏搜索意图、快速热度、关键词历史和7天／30天上涨验证。</p>
+          <p>独立站推荐必须依次通过：美国游戏搜索意图、快速热度、新关键词判断和美国7天／30天上涨验证；全球上涨仅作为参考。</p>
         </div>
         <div class="filters">
           <input id="searchInput" type="search" placeholder="搜索游戏名或来源" />
           <select id="recommendationFilter">
-            <option value="recommended">明显上涨推荐</option>
+            <option value="recommended">美国明显上涨推荐</option>
             <option value="fast-pass">快速层通过</option>
             <option value="trend-pending">等待Trends验证</option>
-            <option value="independent">明显上涨·适合独立站</option>
+            <option value="independent">美国上涨·适合独立站</option>
             <option value="page">稳定需求·仅适合站内页</option>
-            <option value="watch">快速或趋势较弱</option>
+            <option value="watch">全球上涨或继续观察</option>
             <option value="reject">不建议做</option>
             <option value="pending">全部等待验证</option>
             <option value="all">全部</option>
@@ -71,18 +71,18 @@
       <div class="table-card">
         <div class="table-scroll">
           <table>
-            <thead><tr><th>综合分</th><th>游戏名</th><th>建站建议</th><th>搜索意图</th><th>快速热度</th><th>7天／30天趋势</th><th>发现来源</th><th>操作</th></tr></thead>
+            <thead><tr><th>综合分</th><th>游戏名</th><th>建站建议</th><th>美国搜索意图</th><th>快速热度</th><th>美国／全球趋势</th><th>发现来源</th><th>操作</th></tr></thead>
             <tbody id="resultBody"></tbody>
           </table>
         </div>
         <div id="emptyState" class="empty" hidden>
-          <strong>当前没有通过“明显上涨”筛选的结果</strong>
-          <span id="emptyDetail">后台会先完成快速验证，再把少量高质量候选送入Google Trends。</span>
+          <strong>当前没有通过“美国明显上涨”筛选的结果</strong>
+          <span id="emptyDetail">后台会先完成快速验证，再把少量高质量候选送入美国和全球Google Trends。</span>
         </div>
       </div>
     </section>
 
-    <footer>Game Name Radar · 快速热度用于缩小候选池；购买域名前仍需人工检查趋势曲线、SERP和iframe可用性。</footer>
+    <footer>Game Name Radar · 美国优先、全球参考；购买域名前仍需人工检查趋势曲线、SERP和iframe可用性。</footer>
   </main>
   <div id="toast" class="toast" role="status"></div>
   <script type="module" src="/app.js"></script>
