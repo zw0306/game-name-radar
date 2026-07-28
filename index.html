@@ -3,18 +3,18 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <meta name="description" content="自动发现新游戏名，并通过搜索意图验证筛选适合独立站的关键词。" />
+  <meta name="description" content="自动发现新游戏名，并同时验证搜索意图和Google Trends需求强度。" />
   <meta name="theme-color" content="#080b12" />
-  <title>Game Name Radar · SEO筛选结果</title>
+  <title>Game Name Radar · 流量验证结果</title>
   <link rel="stylesheet" href="/styles.css" />
 </head>
 <body>
   <main class="page">
     <header class="hero">
       <div>
-        <p class="eyebrow"><span class="live-dot"></span> SEO GAME KEYWORD RADAR</p>
-        <h1>值得做站的游戏词</h1>
-        <p class="subtitle">先发现新游戏，再自动判断搜索结果是游戏、新闻还是其他意图。默认只展示通过SEO验证的结果。</p>
+        <p class="eyebrow"><span class="live-dot"></span> TRAFFIC-VERIFIED GAME RADAR</p>
+        <h1>真正值得做站的游戏词</h1>
+        <p class="subtitle">游戏平台只负责发现候选；搜索意图和Google Trends需求都通过后，才会进入推荐结果。</p>
       </div>
       <div class="update-box">
         <span>最近自动扫描</span>
@@ -25,14 +25,14 @@
 
     <section class="stats" aria-label="筛选统计">
       <article><span>监控入口</span><strong id="sourceCount">0</strong><small>游戏平台和公开Feed</small></article>
-      <article><span>本轮新发现</span><strong id="newCount">0</strong><small>只代表平台新增</small></article>
-      <article class="accent"><span>适合独立站</span><strong id="independentCount">0</strong><small>主词游戏意图明确</small></article>
-      <article><span>适合站内页</span><strong id="pageCount">0</strong><small>有长尾，但主词不够纯</small></article>
+      <article><span>本轮新发现</span><strong id="newCount">0</strong><small>尚未代表有流量</small></article>
+      <article class="accent"><span>适合独立站</span><strong id="independentCount">0</strong><small>意图与需求均通过</small></article>
+      <article><span>适合站内页</span><strong id="pageCount">0</strong><small>需求中等或主词较弱</small></article>
     </section>
 
     <section class="source-health">
       <div class="section-title compact">
-        <div><p class="eyebrow">SOURCE HEALTH</p><h2>自动任务状态</h2></div>
+        <div><p class="eyebrow">AUTOMATION STATUS</p><h2>自动任务状态</h2></div>
         <button id="refreshBtn" class="button">刷新结果</button>
       </div>
       <div id="sourceChips" class="source-chips"><span class="muted">正在读取扫描报告…</span></div>
@@ -41,9 +41,9 @@
     <section class="results">
       <div class="section-title">
         <div>
-          <p class="eyebrow">SEO VERIFIED RESULTS</p>
+          <p class="eyebrow">TRAFFIC VERIFIED RESULTS</p>
           <h2>游戏关键词结果</h2>
-          <p>SEO分来自搜索结果游戏占比、新闻占比、自动补全和名称歧义，不再等同于平台收录数量。</p>
+          <p>综合分由搜索意图和趋势需求共同计算。趋势过弱的词不会再推荐购买域名。</p>
         </div>
         <div class="filters">
           <input id="searchInput" type="search" placeholder="搜索游戏名或来源" />
@@ -51,7 +51,7 @@
             <option value="recommended">推荐结果</option>
             <option value="independent">适合独立站</option>
             <option value="page">仅适合站内页</option>
-            <option value="watch">观察中</option>
+            <option value="watch">趋势较弱／观察中</option>
             <option value="reject">不建议做</option>
             <option value="pending">等待自动验证</option>
             <option value="all">全部</option>
@@ -69,18 +69,18 @@
       <div class="table-card">
         <div class="table-scroll">
           <table>
-            <thead><tr><th>SEO分</th><th>游戏名</th><th>建站建议</th><th>自动判断</th><th>来源</th><th>首次发现</th><th>操作</th></tr></thead>
+            <thead><tr><th>综合分</th><th>游戏名</th><th>建站建议</th><th>搜索意图</th><th>趋势需求</th><th>来源</th><th>操作</th></tr></thead>
             <tbody id="resultBody"></tbody>
           </table>
         </div>
         <div id="emptyState" class="empty" hidden>
-          <strong>当前没有通过筛选的结果</strong>
-          <span>可以切换到“观察中”或“等待自动验证”查看原始候选。</span>
+          <strong>当前没有同时通过意图和趋势筛选的结果</strong>
+          <span>这比推荐没有需求的词更可靠。可切换到“观察中”查看趋势偏弱的候选。</span>
         </div>
       </div>
     </section>
 
-    <footer>Game Name Radar · 自动判断用于初筛，购买域名前仍建议人工查看 Trends 7天、30天和SERP。</footer>
+    <footer>Game Name Radar · Trends为相对热度，推荐结果仍应人工确认7天、30天曲线和SERP后再购买域名。</footer>
   </main>
   <div id="toast" class="toast" role="status"></div>
   <script type="module" src="/app.js"></script>
