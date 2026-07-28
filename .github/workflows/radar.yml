@@ -12,6 +12,8 @@ on:
       - "lib/scanner.mjs"
       - "lib/seo-verifier.mjs"
       - "lib/trend-verifier.mjs"
+      - "lib/rising-discovery.mjs"
+      - "lib/steam-discovery.mjs"
       - "scripts/scan.mjs"
       - "tests/**"
       - ".github/workflows/radar.yml"
@@ -26,10 +28,10 @@ concurrency:
 jobs:
   scan:
     runs-on: ubuntu-latest
-    timeout-minutes: 30
+    timeout-minutes: 35
     env:
-      SEO_VERIFY_LIMIT: 18
-      TRENDS_VERIFY_LIMIT: 10
+      SEO_VERIFY_LIMIT: 22
+      TRENDS_VERIFY_LIMIT: 12
       TRENDS_ANCHOR: itch io
     steps:
       - uses: actions/checkout@v4
@@ -40,7 +42,7 @@ jobs:
         run: npm install --no-audit --no-fund
       - name: Run parser and scoring tests
         run: npm test
-      - name: Discover games and verify traffic demand
+      - name: Discover games and verify rising demand
         run: npm run scan
       - name: Commit updated result data
         run: |
@@ -51,5 +53,5 @@ jobs:
           git config user.name "game-radar-bot"
           git config user.email "game-radar-bot@users.noreply.github.com"
           git add data/
-          git commit -m "chore: update traffic-verified game results"
+          git commit -m "chore: update multi-source rising game results"
           git push
