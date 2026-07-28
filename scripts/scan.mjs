@@ -19,7 +19,7 @@ const TREND_MAX_AGE=3*86400000;
 const TREND_ERROR_RETRY=2*3600000;
 const TREND_BATCH_INTERVAL=2*3600000;
 const RISING_DISCOVERY_INTERVAL=6*3600000;
-const SEO_MODEL_VERSION=2;
+const SEO_MODEL_VERSION=3;
 const TREND_MODEL_VERSION=2;
 const sleep=(ms)=>new Promise(resolve=>setTimeout(resolve,ms));
 
@@ -142,6 +142,7 @@ function trendPriority(candidate){
 function applyFinalRecommendation(candidate){
   const seoClass=candidate.seo?.classification||'pending';
   const demandClass=candidate.trend?.classification||'pending';
+  const nameRisk=Number(candidate.seo?.nameRisk??30);
   let recommendation='pending';
 
   if(seoClass==='error')recommendation='error';
@@ -150,7 +151,7 @@ function applyFinalRecommendation(candidate){
   else if(demandClass==='error'||demandClass==='pending')recommendation='pending';
   else if(demandClass==='none')recommendation='reject';
   else if(demandClass==='weak')recommendation='watch';
-  else if(seoClass==='independent'&&['strong','rising','breakout'].includes(demandClass))recommendation='independent';
+  else if(seoClass==='independent'&&nameRisk<=12&&['rising','breakout'].includes(demandClass))recommendation='independent';
   else if(['independent','page'].includes(seoClass)&&['strong','rising','breakout','moderate'].includes(demandClass))recommendation='page';
   else recommendation='watch';
 
