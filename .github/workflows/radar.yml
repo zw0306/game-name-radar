@@ -31,10 +31,14 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 45
     env:
-      SEO_VERIFY_LIMIT: 50
-      TRENDS_VERIFY_LIMIT: 6
+      TARGET_MARKET: US_GLOBAL
+      SEO_REGION: US
+      SEO_LANGUAGE: en-US
+      TRENDS_VERIFY_LIMIT: 3
       TRENDS_ANCHOR: itch io
       YOUTUBE_VERIFY_LIMIT: 3
+      YOUTUBE_REGION: US
+      YOUTUBE_LANGUAGE: en
       YOUTUBE_API_KEY: ${{ secrets.YOUTUBE_API_KEY }}
     steps:
       - uses: actions/checkout@v4
