@@ -9,7 +9,9 @@ on:
     paths:
       - "config/sources.json"
       - "lib/scanner.mjs"
+      - "lib/seo-verifier.mjs"
       - "scripts/scan.mjs"
+      - "tests/**"
       - ".github/workflows/radar.yml"
 
 permissions:
@@ -22,13 +24,17 @@ concurrency:
 jobs:
   scan:
     runs-on: ubuntu-latest
-    timeout-minutes: 15
+    timeout-minutes: 20
+    env:
+      SEO_VERIFY_LIMIT: 12
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
         with:
           node-version: 22
-      - name: Scan public game sources
+      - name: Run parser and scoring tests
+        run: npm test
+      - name: Discover games and verify SEO intent
         run: npm run scan
       - name: Commit updated result data
         run: |
@@ -39,5 +45,5 @@ jobs:
           git config user.name "game-radar-bot"
           git config user.email "game-radar-bot@users.noreply.github.com"
           git add data/
-          git commit -m "chore: update automatic game results"
+          git commit -m "chore: update SEO-verified game results"
           git push
