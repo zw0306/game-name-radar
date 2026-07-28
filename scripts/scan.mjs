@@ -18,7 +18,7 @@ const VERIFY_MAX_AGE=7*86400000;
 const TREND_MAX_AGE=3*86400000;
 const RISING_DISCOVERY_INTERVAL=2*3600000;
 const SEO_MODEL_VERSION=2;
-const TREND_MODEL_VERSION=1;
+const TREND_MODEL_VERSION=2;
 const sleep=(ms)=>new Promise(resolve=>setTimeout(resolve,ms));
 
 async function readJson(file,fallback){try{return JSON.parse(await fs.readFile(file,'utf8'))}catch{return fallback}}
