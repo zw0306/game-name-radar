@@ -1,0 +1,210 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="description" content="监控竞争站 Sitemap 和 itch.io 新游戏源，快速发现值得验证的新游戏名。" />
+  <meta name="theme-color" content="#0b1020" />
+  <title>Game Name Radar</title>
+  <link rel="stylesheet" href="/styles.css" />
+</head>
+<body>
+  <div class="app-shell">
+    <aside class="sidebar">
+      <div class="brand">
+        <div class="brand-mark">G</div>
+        <div>
+          <strong>Game Name Radar</strong>
+          <span>新游戏名发现工具</span>
+        </div>
+      </div>
+
+      <nav class="nav" aria-label="页面导航">
+        <button class="nav-item active" data-scroll="dashboard">总览</button>
+        <button class="nav-item" data-scroll="sources">监控源</button>
+        <button class="nav-item" data-scroll="candidates">候选游戏</button>
+        <button class="nav-item" data-scroll="workflow">工作流</button>
+      </nav>
+
+      <div class="sidebar-note">
+        <strong>零数据库模式</strong>
+        <p>扫描快照保存在当前浏览器；GitHub Actions 可定时提交公共结果。</p>
+      </div>
+    </aside>
+
+    <main class="main">
+      <header class="topbar">
+        <div>
+          <p class="eyebrow">SEO DISCOVERY WORKSPACE</p>
+          <h1>发现正在扩散的新游戏名</h1>
+          <p class="subtitle">Sitemap 增量、itch.io 新作与跨来源重复出现，统一进入验证队列。</p>
+        </div>
+        <div class="topbar-actions">
+          <button class="button ghost" id="backupBtn">导出备份</button>
+          <label class="button ghost file-button">导入备份<input id="importInput" type="file" accept="application/json" /></label>
+          <button class="button primary" id="scanBtn"><span class="scan-icon">↻</span>立即扫描</button>
+        </div>
+      </header>
+
+      <section id="dashboard" class="section">
+        <div class="stats-grid">
+          <article class="stat-card">
+            <span>启用监控源</span>
+            <strong id="sourceCount">0</strong>
+            <small>支持 Sitemap、RSS、itch.io 列表</small>
+          </article>
+          <article class="stat-card">
+            <span>本次新增名称</span>
+            <strong id="newCount">0</strong>
+            <small>与上次快照对比得出</small>
+          </article>
+          <article class="stat-card">
+            <span>待验证候选</span>
+            <strong id="candidateCount">0</strong>
+            <small>未标记为忽略或已完成</small>
+          </article>
+          <article class="stat-card highlight">
+            <span>高机会候选</span>
+            <strong id="hotCount">0</strong>
+            <small>评分 ≥ 12，优先查 Trends</small>
+          </article>
+        </div>
+
+        <div class="panel activity-panel">
+          <div class="panel-header">
+            <div>
+              <h2>最近扫描</h2>
+              <p>每个监控源的状态、条目数量和新增数量。</p>
+            </div>
+            <span class="last-scan" id="lastScan">尚未扫描</span>
+          </div>
+          <div id="scanActivity" class="activity-list empty-state">添加监控源后点击“立即扫描”。</div>
+        </div>
+      </section>
+
+      <section id="sources" class="section">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">SOURCE MANAGEMENT</p>
+            <h2>监控源</h2>
+            <p>竞争站 Sitemap 第一次扫描只建立基线，之后才报告新增 URL。</p>
+          </div>
+          <div class="heading-actions">
+            <button class="button ghost" id="addBuiltinsBtn">添加 itch.io 内置源</button>
+            <button class="button secondary" id="openSourceModal">添加监控源</button>
+          </div>
+        </div>
+        <div class="panel table-panel">
+          <div class="table-wrap">
+            <table>
+              <thead>
+                <tr>
+                  <th>状态</th>
+                  <th>名称</th>
+                  <th>类型</th>
+                  <th>URL</th>
+                  <th>快照</th>
+                  <th></th>
+                </tr>
+              </thead>
+              <tbody id="sourceTableBody"></tbody>
+            </table>
+          </div>
+          <div id="sourceEmpty" class="empty-state">还没有监控源。建议先添加竞争网站 Sitemap 和 itch.io 内置源。</div>
+        </div>
+      </section>
+
+      <section id="candidates" class="section">
+        <div class="section-heading candidate-heading">
+          <div>
+            <p class="eyebrow">CANDIDATE QUEUE</p>
+            <h2>候选游戏名</h2>
+            <p>先查 7 天、30 天 Trends，再检查 SERP 和域名。</p>
+          </div>
+          <div class="filters">
+            <input id="candidateSearch" type="search" placeholder="搜索游戏名或来源" />
+            <select id="levelFilter" aria-label="按级别筛选">
+              <option value="all">全部级别</option>
+              <option value="hot">高机会</option>
+              <option value="verify">待验证</option>
+              <option value="watch">观察</option>
+            </select>
+            <select id="statusFilter" aria-label="按状态筛选">
+              <option value="active">未处理</option>
+              <option value="all">全部状态</option>
+              <option value="selected">准备建站</option>
+              <option value="done">已建站</option>
+              <option value="ignored">已忽略</option>
+            </select>
+            <button class="button ghost" id="exportCsvBtn">导出 CSV</button>
+          </div>
+        </div>
+
+        <div class="panel table-panel">
+          <div class="table-wrap candidate-table-wrap">
+            <table class="candidate-table">
+              <thead>
+                <tr>
+                  <th>分数</th>
+                  <th>游戏名</th>
+                  <th>发现来源</th>
+                  <th>首次发现</th>
+                  <th>状态</th>
+                  <th>验证</th>
+                </tr>
+              </thead>
+              <tbody id="candidateTableBody"></tbody>
+            </table>
+          </div>
+          <div id="candidateEmpty" class="empty-state">还没有新增候选。第一次扫描竞争站 Sitemap 会先建立基线。</div>
+        </div>
+      </section>
+
+      <section id="workflow" class="section">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">EXECUTION PIPELINE</p>
+            <h2>从发现到建站</h2>
+          </div>
+        </div>
+        <div class="workflow-grid">
+          <article><span>01</span><h3>发现名称</h3><p>竞争站 Sitemap 增量、itch.io New & Popular 和 Featured。</p></article>
+          <article><span>02</span><h3>验证趋势</h3><p>依次查看美国地区最近 7 天和最近 30 天趋势。</p></article>
+          <article><span>03</span><h3>检查竞争</h3><p>搜索精确游戏名、Play Online 和 Unblocked，判断第一页强度。</p></article>
+          <article><span>04</span><h3>注册并上线</h3><p>购买相关域名，生成纯 HTML，部署 Pages 或 Vercel。</p></article>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <dialog id="sourceModal" class="modal">
+    <form method="dialog" id="sourceForm">
+      <div class="modal-header">
+        <div><p class="eyebrow">NEW SOURCE</p><h2>添加监控源</h2></div>
+        <button type="button" class="icon-button" id="closeSourceModal" aria-label="关闭">×</button>
+      </div>
+      <label>名称<input id="sourceName" required maxlength="80" placeholder="例如：竞争站 A 游戏 Sitemap" /></label>
+      <label>URL<input id="sourceUrl" required type="url" placeholder="https://example.com/game-sitemap.xml" /></label>
+      <label>类型
+        <select id="sourceKind">
+          <option value="competitor-sitemap">竞争站 Sitemap</option>
+          <option value="sitemap">普通 Sitemap</option>
+          <option value="feed">RSS / Atom</option>
+          <option value="itch-new">itch.io 新游戏</option>
+          <option value="itch-popular">itch.io New & Popular</option>
+          <option value="itch-featured">itch.io Featured</option>
+          <option value="auto">自动识别</option>
+        </select>
+      </label>
+      <label class="checkbox-row"><input id="baselineOnly" type="checkbox" checked />第一次扫描仅建立基线，不生成候选</label>
+      <div class="modal-actions">
+        <button type="button" class="button ghost" id="cancelSourceModal">取消</button>
+        <button type="submit" class="button primary">保存监控源</button>
+      </div>
+    </form>
+  </dialog>
+
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+  <script type="module" src="/app.js"></script>
+</body>
+</html>
