@@ -1,8 +1,8 @@
 const RAW_BASE='https://raw.githubusercontent.com/foxigaoqian/game-name-radar/main';
 const DATA_URL=`${RAW_BASE}/data/candidates.json`;
 const REPORT_URL=`${RAW_BASE}/data/latest-report.json`;
-const STATUS_KEY='gameRadar.resultStatus.v5';
-const els={lastUpdated:document.querySelector('#lastUpdated'),verifyStatus:document.querySelector('#verifyStatus'),sourceCount:document.querySelector('#sourceCount'),newCount:document.querySelector('#newCount'),independentCount:document.querySelector('#independentCount'),pageCount:document.querySelector('#pageCount'),sourceChips:document.querySelector('#sourceChips'),body:document.querySelector('#resultBody'),empty:document.querySelector('#emptyState'),search:document.querySelector('#searchInput'),recommendation:document.querySelector('#recommendationFilter'),time:document.querySelector('#timeFilter'),refresh:document.querySelector('#refreshBtn'),export:document.querySelector('#exportBtn'),toast:document.querySelector('#toast')};
+const STATUS_KEY='gameRadar.resultStatus.v6';
+const els={lastUpdated:document.querySelector('#lastUpdated'),verifyStatus:document.querySelector('#verifyStatus'),sourceCount:document.querySelector('#sourceCount'),newCount:document.querySelector('#newCount'),independentCount:document.querySelector('#independentCount'),pendingCount:document.querySelector('#pendingCount'),sourceChips:document.querySelector('#sourceChips'),body:document.querySelector('#resultBody'),empty:document.querySelector('#emptyState'),emptyDetail:document.querySelector('#emptyDetail'),search:document.querySelector('#searchInput'),recommendation:document.querySelector('#recommendationFilter'),time:document.querySelector('#timeFilter'),refresh:document.querySelector('#refreshBtn'),export:document.querySelector('#exportBtn'),toast:document.querySelector('#toast')};
 let candidates=[];let report={};let statuses=loadStatuses();
 const LABELS={independent:'明显上涨·适合独立站',page:'稳定需求·站内页',watch:'趋势较弱',reject:'不建议做',pending:'等待验证',error:'验证失败'};
 const TREND_LABELS={breakout:'Breakout爆发',rising:'明显上涨',strong:'需求较强但未上涨',moderate:'需求中等',weak:'需求较弱',none:'无可见需求',pending:'等待趋势验证',error:'趋势验证失败'};
@@ -18,6 +18,7 @@ function classification(c){return c.recommendation||c.level||'pending'}
 function finalScore(c){return Number.isFinite(c.finalScore)?c.finalScore:Number.isFinite(c.score)?c.score:0}
 function seoScore(c){return Number.isFinite(c.seo?.score)?c.seo.score:0}
 function trendScore(c){return Number.isFinite(c.trend?.score)?c.trend.score:0}
+function isPriorityTrendPending(c){return ['independent','page'].includes(c.seo?.classification)&&Number(c.seo?.score||0)>=42&&Number(c.seo?.nameRisk??30)<=14&&['pending','error',undefined].includes(c.trend?.classification)}
 function trends(name,days){return`https://trends.google.com/trends/explore?date=${encodeURIComponent(days===7?'now 7-d':'today 1-m')}&geo=US&q=${encodeURIComponent(name)}`}
 function serp(name){return`https://www.google.com/search?q=${encodeURIComponent(`"${name}" game play online`)}`}
 function domain(name){return`https://www.namecheap.com/domains/registration/results/?domain=${encodeURIComponent(normalize(name).replaceAll(' ',''))}`}
@@ -26,7 +27,8 @@ function filtered(){
   return candidates.filter(c=>{
     const cls=classification(c);
     if(filter==='recommended'&&cls!=='independent')return false;
-    if(!['all','recommended'].includes(filter)&&cls!==filter)return false;
+    if(filter==='trend-pending'&&!isPriorityTrendPending(c))return false;
+    if(!['all','recommended','trend-pending'].includes(filter)&&cls!==filter)return false;
     if(ageDays(c.firstSeen)>days)return false;
     if(q&&!c.gameName.toLowerCase().includes(q)&&!(c.sources||[]).some(s=>s.name.toLowerCase().includes(q)))return false;
     return statuses[c.id]!=='ignored';
@@ -37,9 +39,10 @@ function renderStats(){
   els.sourceCount.textContent=String(report.sources?.length||0);
   els.newCount.textContent=String(report.totalAdded||0);
   els.independentCount.textContent=String(active.filter(c=>classification(c)==='independent').length);
-  els.pageCount.textContent=String(active.filter(c=>classification(c)==='page').length);
+  els.pendingCount.textContent=String(report.trendPendingCount??active.filter(isPriorityTrendPending).length);
   els.lastUpdated.textContent=report.scannedAt?fmtDate(report.scannedAt):'尚无扫描结果';
-  els.verifyStatus.textContent=`SEO ${report.seoVerified||0} 个 · Trends ${report.trendsVerified||0} 个 · 失败 ${(report.seoErrors||0)+(report.trendErrors||0)} 个`;
+  els.verifyStatus.textContent=`SEO通过 ${report.seoPassedCount||0} · 趋势已验 ${report.trendValidatedCount||0} · 待验 ${report.trendPendingCount||0}`;
+  if(els.emptyDetail)els.emptyDetail.textContent=(report.trendPendingCount||0)>0?`后台还有 ${report.trendPendingCount} 个高质量候选等待趋势验证，可切换到“优先趋势验证队列”查看。`:'当前候选均未达到上涨与新词门槛，后台会继续扫描新数据。';
 }
 function renderSources(){
   const logs=report.sources||[];els.sourceChips.innerHTML='';
