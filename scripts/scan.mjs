@@ -3,6 +3,7 @@ import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { scanSource, normalizeGameName, calculateCandidateScore, candidateLevel } from '../lib/scanner.mjs';
 import { verifyGameKeyword, cleanGameName, estimateNameRisk } from '../lib/seo-verifier.mjs';
+import { verifyTrendDemand } from '../lib/trend-verifier.mjs';
 
 const root=path.resolve(path.dirname(fileURLToPath(import.meta.url)),'..');
 const sourcesPath=path.join(root,'config','sources.json');
@@ -10,8 +11,11 @@ const statePath=path.join(root,'data','state.json');
 const candidatesPath=path.join(root,'data','candidates.json');
 const reportPath=path.join(root,'data','latest-report.json');
 const VERIFY_LIMIT=Math.max(1,Math.min(30,Number(process.env.SEO_VERIFY_LIMIT||18)));
+const TREND_LIMIT=Math.max(1,Math.min(20,Number(process.env.TRENDS_VERIFY_LIMIT||10)));
 const VERIFY_MAX_AGE=7*86400000;
+const TREND_MAX_AGE=3*86400000;
 const SEO_MODEL_VERSION=2;
+const TREND_MODEL_VERSION=1;
 const sleep=(ms)=>new Promise(resolve=>setTimeout(resolve,ms));
 
 async function readJson(file,fallback){try{return JSON.parse(await fs.readFile(file,'utf8'))}catch{return fallback}}
@@ -30,8 +34,10 @@ function normalizeCandidateName(candidate){
     candidate.gameName=cleaned;
     candidate.normalizedName=normalized;
     delete candidate.seo;
+    delete candidate.trend;
     candidate.score=0;
     candidate.level='pending';
+    candidate.recommendation='pending';
   }
   return true;
 }
@@ -47,6 +53,7 @@ function dedupeCandidates(items){
     if(Date.parse(item.firstSeen)<Date.parse(existing.firstSeen))existing.firstSeen=item.firstSeen;
     if(Date.parse(item.lastSeen)>Date.parse(existing.lastSeen))existing.lastSeen=item.lastSeen;
     if(!existing.seo&&item.seo)existing.seo=item.seo;
+    if(!existing.trend&&item.trend)existing.trend=item.trend;
   }
   return [...map.values()];
 }
@@ -57,7 +64,7 @@ function mergeCandidate(candidates,gameName,source,entry,now){
   if(!normalizedName||normalizedName.length<2)return false;
   let candidate=candidates.find(item=>item.normalizedName===normalizedName);
   if(!candidate){
-    candidate={id:`auto-${Buffer.from(normalizedName).toString('base64url').slice(0,24)}`,gameName:cleanedName,normalizedName,firstSeen:now,lastSeen:now,status:'new',sources:[]};
+    candidate={id:`auto-${Buffer.from(normalizedName).toString('base64url').slice(0,24)}`,gameName:cleanedName,normalizedName,firstSeen:now,lastSeen:now,status:'new',sources:[],recommendation:'pending'};
     candidates.push(candidate);
   }
   const key=`${source.id}|${entry.url}`;
@@ -91,8 +98,50 @@ function verifyPriority(candidate){
   return score;
 }
 
+function needsTrendCheck(candidate){
+  if(!['independent','page','watch'].includes(candidate.seo?.classification))return false;
+  if(candidate.trend?.modelVersion!==TREND_MODEL_VERSION)return true;
+  const checked=Date.parse(candidate.trend?.checkedAt||'');
+  if(!Number.isFinite(checked))return true;
+  if(candidate.trend?.status==='error')return Date.now()-checked>12*3600000;
+  return Date.now()-checked>TREND_MAX_AGE;
+}
+
+function trendPriority(candidate){
+  let score=(candidate.seo?.score||0)+(candidate.discoveryScore||0);
+  if(candidate.seo?.classification==='independent')score+=20;
+  if((candidate.sources||[]).length>=2)score+=8;
+  return score;
+}
+
+function applyFinalRecommendation(candidate){
+  const seoClass=candidate.seo?.classification||'pending';
+  const demandClass=candidate.trend?.classification||'pending';
+  let recommendation='pending';
+
+  if(seoClass==='error')recommendation='error';
+  else if(seoClass==='reject')recommendation='reject';
+  else if(seoClass==='pending')recommendation='pending';
+  else if(demandClass==='error'||demandClass==='pending')recommendation='pending';
+  else if(demandClass==='none')recommendation='reject';
+  else if(demandClass==='weak')recommendation='watch';
+  else if(seoClass==='independent'&&['strong','rising'].includes(demandClass))recommendation='independent';
+  else if(['independent','page'].includes(seoClass)&&['strong','rising','moderate'].includes(demandClass))recommendation='page';
+  else recommendation='watch';
+
+  const seoScore=Number(candidate.seo?.score||0);
+  const trendScore=Number(candidate.trend?.score||0);
+  let finalScore=Math.round(seoScore*0.6+trendScore*0.4);
+  if(recommendation==='watch')finalScore=Math.min(finalScore,59);
+  if(recommendation==='reject'||recommendation==='pending'||recommendation==='error')finalScore=0;
+  candidate.finalScore=finalScore;
+  candidate.score=finalScore;
+  candidate.level=recommendation;
+  candidate.recommendation=recommendation;
+}
+
 function recommendationRank(candidate){
-  return {independent:5,page:4,watch:3,pending:2,reject:1,error:0}[candidate.seo?.classification||'pending']||0;
+  return {independent:6,page:5,watch:4,pending:3,reject:2,error:1}[candidate.recommendation||'pending']||0;
 }
 
 const sources=(await readJson(sourcesPath,[])).filter(source=>source.enabled!==false);
@@ -130,27 +179,48 @@ for(const candidate of verifyQueue){
   try{
     console.log(`SEO verify: ${candidate.gameName}`);
     candidate.seo={modelVersion:SEO_MODEL_VERSION,...await verifyGameKeyword(candidate.gameName,candidate.discoveryScore||0)};
-    candidate.score=candidate.seo.score;
-    candidate.level=candidate.seo.classification;
     seoVerified+=1;
   }catch(error){
     candidate.seo={modelVersion:SEO_MODEL_VERSION,checkedAt:new Date().toISOString(),status:'error',classification:'error',score:0,reasons:[`自动验证失败：${error.message}`]};
-    candidate.score=0;candidate.level='error';seoErrors+=1;
+    seoErrors+=1;
     console.error(`SEO verify failed: ${candidate.gameName}: ${error.message}`);
   }
   await sleep(850);
 }
 
 for(const candidate of candidates){
-  if(!candidate.seo){candidate.seo={modelVersion:SEO_MODEL_VERSION,status:'pending',classification:'pending',score:0,reasons:['等待自动搜索意图验证']};candidate.score=0;candidate.level='pending'}
+  if(!candidate.seo)candidate.seo={modelVersion:SEO_MODEL_VERSION,status:'pending',classification:'pending',score:0,reasons:['等待自动搜索意图验证']};
 }
-candidates.sort((a,b)=>recommendationRank(b)-recommendationRank(a)||(b.seo?.score||0)-(a.seo?.score||0)||(b.discoveryScore||0)-(a.discoveryScore||0)||Date.parse(b.firstSeen)-Date.parse(a.firstSeen));
+
+const trendQueue=candidates.filter(needsTrendCheck).sort((a,b)=>trendPriority(b)-trendPriority(a)||Date.parse(b.firstSeen)-Date.parse(a.firstSeen)).slice(0,TREND_LIMIT);
+let trendsVerified=0,trendErrors=0;
+for(const candidate of trendQueue){
+  try{
+    console.log(`Trends verify: ${candidate.gameName}`);
+    candidate.trend=await verifyTrendDemand(candidate.gameName);
+    trendsVerified+=1;
+  }catch(error){
+    candidate.trend={modelVersion:TREND_MODEL_VERSION,checkedAt:new Date().toISOString(),status:'error',classification:'error',score:0,reasons:[`趋势验证失败：${error.message}`]};
+    trendErrors+=1;
+    console.error(`Trends verify failed: ${candidate.gameName}: ${error.message}`);
+  }
+  await sleep(1600);
+}
+
+for(const candidate of candidates){
+  if(['independent','page','watch'].includes(candidate.seo?.classification)&&!candidate.trend){
+    candidate.trend={modelVersion:TREND_MODEL_VERSION,status:'pending',classification:'pending',score:0,reasons:['等待Google Trends需求验证']};
+  }
+  applyFinalRecommendation(candidate);
+}
+
+candidates.sort((a,b)=>recommendationRank(b)-recommendationRank(a)||(b.finalScore||0)-(a.finalScore||0)||(b.seo?.score||0)-(a.seo?.score||0)||(b.discoveryScore||0)-(a.discoveryScore||0)||Date.parse(b.firstSeen)-Date.parse(a.firstSeen));
 if(candidates.length>2500)candidates.length=2500;
 
 const recommendationCounts={independent:0,page:0,watch:0,reject:0,pending:0,error:0};
-for(const candidate of candidates)recommendationCounts[candidate.seo?.classification||'pending']=(recommendationCounts[candidate.seo?.classification||'pending']||0)+1;
+for(const candidate of candidates)recommendationCounts[candidate.recommendation||'pending']=(recommendationCounts[candidate.recommendation||'pending']||0)+1;
 radarState.lastScan=now;
 await fs.writeFile(statePath,JSON.stringify(radarState,null,2)+'\n');
 await fs.writeFile(candidatesPath,JSON.stringify({updatedAt:now,candidates},null,2)+'\n');
-await fs.writeFile(reportPath,JSON.stringify({scannedAt:now,totalAdded,sources:logs,seoVerified,seoErrors,seoModelVersion:SEO_MODEL_VERSION,recommendationCounts},null,2)+'\n');
-console.log(`Scan complete. ${totalAdded} names added; ${seoVerified} SEO checks completed; ${seoErrors} errors.`);
+await fs.writeFile(reportPath,JSON.stringify({scannedAt:now,totalAdded,sources:logs,seoVerified,seoErrors,trendsVerified,trendErrors,seoModelVersion:SEO_MODEL_VERSION,trendModelVersion:TREND_MODEL_VERSION,recommendationCounts},null,2)+'\n');
+console.log(`Scan complete. ${totalAdded} names added; ${seoVerified} SEO checks; ${trendsVerified} Trends checks.`);
