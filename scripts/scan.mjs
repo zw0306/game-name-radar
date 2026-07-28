@@ -2,6 +2,8 @@ import fs from 'node:fs/promises';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { scanSource, normalizeGameName, calculateCandidateScore, candidateLevel } from '../lib/scanner.mjs';
+import { scanSteamSource } from '../lib/steam-discovery.mjs';
+import { discoverRisingGameQueries } from '../lib/rising-discovery.mjs';
 import { verifyGameKeyword, cleanGameName, estimateNameRisk } from '../lib/seo-verifier.mjs';
 import { verifyTrendDemand } from '../lib/trend-verifier.mjs';
 
@@ -10,10 +12,11 @@ const sourcesPath=path.join(root,'config','sources.json');
 const statePath=path.join(root,'data','state.json');
 const candidatesPath=path.join(root,'data','candidates.json');
 const reportPath=path.join(root,'data','latest-report.json');
-const VERIFY_LIMIT=Math.max(1,Math.min(30,Number(process.env.SEO_VERIFY_LIMIT||18)));
-const TREND_LIMIT=Math.max(1,Math.min(20,Number(process.env.TRENDS_VERIFY_LIMIT||10)));
+const VERIFY_LIMIT=Math.max(1,Math.min(40,Number(process.env.SEO_VERIFY_LIMIT||22)));
+const TREND_LIMIT=Math.max(1,Math.min(24,Number(process.env.TRENDS_VERIFY_LIMIT||12)));
 const VERIFY_MAX_AGE=7*86400000;
 const TREND_MAX_AGE=3*86400000;
+const RISING_DISCOVERY_INTERVAL=2*3600000;
 const SEO_MODEL_VERSION=2;
 const TREND_MODEL_VERSION=1;
 const sleep=(ms)=>new Promise(resolve=>setTimeout(resolve,ms));
@@ -21,7 +24,15 @@ const sleep=(ms)=>new Promise(resolve=>setTimeout(resolve,ms));
 async function readJson(file,fallback){try{return JSON.parse(await fs.readFile(file,'utf8'))}catch{return fallback}}
 
 function updateDiscovery(candidate){
-  candidate.discoveryScore=calculateCandidateScore(candidate);
+  const kinds=new Set((candidate.sources||[]).map(source=>source.kind));
+  let score=calculateCandidateScore(candidate);
+  if(kinds.has('trends-rising-7d'))score+=8;
+  if(kinds.has('trends-rising-30d'))score+=6;
+  if(kinds.has('steam-popular-new'))score+=4;
+  if(kinds.has('itch-jam-popular'))score+=4;
+  if(kinds.has('itch-jam-new'))score+=2;
+  if(kinds.has('newgrounds-top'))score+=2;
+  candidate.discoveryScore=Math.min(20,score);
   candidate.discoveryLevel=candidateLevel(candidate.discoveryScore);
 }
 
@@ -68,7 +79,10 @@ function mergeCandidate(candidates,gameName,source,entry,now){
     candidates.push(candidate);
   }
   const key=`${source.id}|${entry.url}`;
-  if(!candidate.sources.some(item=>item.key===key))candidate.sources.push({key,sourceId:source.id,name:source.name,kind:source.kind,url:entry.url,date:entry.date||''});
+  if(!candidate.sources.some(item=>item.key===key))candidate.sources.push({
+    key,sourceId:source.id,name:source.name,kind:source.kind,url:entry.url,date:entry.date||'',
+    growth:entry.growth||'',seed:entry.seed||'',windowDays:entry.windowDays||null,
+  });
   candidate.lastSeen=now;
   updateDiscovery(candidate);
   return true;
@@ -85,14 +99,20 @@ function needsSeoCheck(candidate){
 function shouldAutoVerify(candidate){
   const kinds=new Set((candidate.sources||[]).map(source=>source.kind));
   const risk=estimateNameRisk(candidate.gameName);
-  return candidate.sources?.length>=2||kinds.has('itch-featured')||kinds.has('itch-popular')||(kinds.has('itch-new')&&risk<=12)||((candidate.discoveryScore||0)>=6&&risk<=20);
+  return kinds.has('trends-rising-7d')||kinds.has('trends-rising-30d')||kinds.has('steam-popular-new')||
+    candidate.sources?.length>=2||kinds.has('itch-featured')||kinds.has('itch-popular')||kinds.has('itch-jam-popular')||
+    (kinds.has('itch-new')&&risk<=12)||((candidate.discoveryScore||0)>=6&&risk<=20);
 }
 
 function verifyPriority(candidate){
   const kinds=new Set((candidate.sources||[]).map(source=>source.kind));
   let score=(candidate.discoveryScore||0)+(30-estimateNameRisk(candidate.gameName));
+  if(kinds.has('trends-rising-7d'))score+=28;
+  if(kinds.has('trends-rising-30d'))score+=20;
   if(kinds.has('itch-featured'))score+=14;
   if(kinds.has('itch-popular'))score+=10;
+  if(kinds.has('itch-jam-popular'))score+=9;
+  if(kinds.has('steam-popular-new'))score+=8;
   if(kinds.has('itch-new'))score+=4;
   if((candidate.sources||[]).length>=2)score+=8;
   return score;
@@ -108,7 +128,10 @@ function needsTrendCheck(candidate){
 }
 
 function trendPriority(candidate){
+  const kinds=new Set((candidate.sources||[]).map(source=>source.kind));
   let score=(candidate.seo?.score||0)+(candidate.discoveryScore||0);
+  if(kinds.has('trends-rising-7d'))score+=35;
+  if(kinds.has('trends-rising-30d'))score+=25;
   if(candidate.seo?.classification==='independent')score+=20;
   if((candidate.sources||[]).length>=2)score+=8;
   return score;
@@ -125,13 +148,14 @@ function applyFinalRecommendation(candidate){
   else if(demandClass==='error'||demandClass==='pending')recommendation='pending';
   else if(demandClass==='none')recommendation='reject';
   else if(demandClass==='weak')recommendation='watch';
-  else if(seoClass==='independent'&&['strong','rising'].includes(demandClass))recommendation='independent';
-  else if(['independent','page'].includes(seoClass)&&['strong','rising','moderate'].includes(demandClass))recommendation='page';
+  else if(seoClass==='independent'&&['strong','rising','breakout'].includes(demandClass))recommendation='independent';
+  else if(['independent','page'].includes(seoClass)&&['strong','rising','breakout','moderate'].includes(demandClass))recommendation='page';
   else recommendation='watch';
 
   const seoScore=Number(candidate.seo?.score||0);
   const trendScore=Number(candidate.trend?.score||0);
-  let finalScore=Math.round(seoScore*0.6+trendScore*0.4);
+  let finalScore=Math.round(seoScore*0.48+trendScore*0.52);
+  if(['rising','breakout'].includes(demandClass))finalScore=Math.min(100,finalScore+8);
   if(recommendation==='watch')finalScore=Math.min(finalScore,59);
   if(recommendation==='reject'||recommendation==='pending'||recommendation==='error')finalScore=0;
   candidate.finalScore=finalScore;
@@ -144,8 +168,24 @@ function recommendationRank(candidate){
   return {independent:6,page:5,watch:4,pending:3,reject:2,error:1}[candidate.recommendation||'pending']||0;
 }
 
+async function processSourceResult({source,result,candidates,radarState,logs,now}){
+  const previous=radarState.snapshots[source.id];
+  const previousUrls=new Set(previous?.urls||[]);
+  const firstScan=!previous;
+  const newEntries=firstScan&&source.baselineOnly?[]:result.entries.filter(entry=>!previousUrls.has(entry.url));
+  const newUrls=new Set(newEntries.map(entry=>entry.url));
+  let added=0;
+  if(!(firstScan&&source.baselineOnly)){
+    for(const entry of result.entries){const merged=mergeCandidate(candidates,entry.gameName,source,entry,now);if(merged&&newUrls.has(entry.url))added+=1}
+  }
+  radarState.snapshots[source.id]={urls:result.entries.map(entry=>entry.url),scannedAt:result.scannedAt||now,detectedType:result.detectedType||source.kind};
+  logs.push({ok:true,sourceId:source.id,sourceName:source.name,total:result.entries.length,added});
+  console.log(`✓ ${source.name}: ${result.entries.length} entries, ${added} new`);
+  return added;
+}
+
 const sources=(await readJson(sourcesPath,[])).filter(source=>source.enabled!==false);
-const radarState=await readJson(statePath,{snapshots:{},lastScan:null});
+const radarState=await readJson(statePath,{snapshots:{},lastScan:null,lastRisingDiscovery:null});
 const candidatePayload=await readJson(candidatesPath,{candidates:[]});
 let candidates=dedupeCandidates(Array.isArray(candidatePayload)?candidatePayload:candidatePayload.candidates||[]);
 const now=new Date().toISOString();
@@ -154,21 +194,23 @@ let totalAdded=0;
 
 for(const source of sources){
   try{
-    const result=await scanSource({...source,kind:source.fetchKind||(source.kind?.includes('sitemap')?'sitemap':source.kind?.includes('itch')?'itch-listing':source.kind||'auto')});
-    const previous=radarState.snapshots[source.id];
-    const previousUrls=new Set(previous?.urls||[]);
-    const firstScan=!previous;
-    const newEntries=firstScan&&source.baselineOnly?[]:result.entries.filter(entry=>!previousUrls.has(entry.url));
-    const newUrls=new Set(newEntries.map(entry=>entry.url));
-    let added=0;
-    if(!(firstScan&&source.baselineOnly)){
-      for(const entry of result.entries){const merged=mergeCandidate(candidates,entry.gameName,source,entry,now);if(merged&&newUrls.has(entry.url))added+=1}
-    }
-    totalAdded+=added;
-    radarState.snapshots[source.id]={urls:result.entries.map(entry=>entry.url),scannedAt:result.scannedAt,detectedType:result.detectedType};
-    logs.push({ok:true,sourceId:source.id,sourceName:source.name,total:result.entries.length,added});
-    console.log(`✓ ${source.name}: ${result.entries.length} entries, ${added} new`);
+    const result=source.fetchKind==='steam-listing'
+      ? await scanSteamSource(source)
+      : await scanSource({...source,kind:source.fetchKind||(source.kind?.includes('sitemap')?'sitemap':source.kind?.includes('itch')?'itch-listing':source.kind||'auto')});
+    totalAdded+=await processSourceResult({source,result,candidates,radarState,logs,now});
   }catch(error){logs.push({ok:false,sourceId:source.id,sourceName:source.name,error:error.message});console.error(`✗ ${source.name}: ${error.message}`)}
+}
+
+const lastRising=Date.parse(radarState.lastRisingDiscovery||'');
+if(!Number.isFinite(lastRising)||Date.now()-lastRising>=RISING_DISCOVERY_INTERVAL){
+  const risingResults=await discoverRisingGameQueries();
+  for(const item of risingResults){
+    const source=item.source;
+    if(!item.ok){logs.push({ok:false,sourceId:source.id,sourceName:source.name,error:item.error||'Trends related queries failed'});continue}
+    const result={entries:item.entries.slice(0,30),detectedType:'trends-related-rising',scannedAt:now};
+    totalAdded+=await processSourceResult({source,result,candidates,radarState,logs,now});
+  }
+  radarState.lastRisingDiscovery=now;
 }
 
 candidates=dedupeCandidates(candidates);
@@ -214,8 +256,8 @@ for(const candidate of candidates){
   applyFinalRecommendation(candidate);
 }
 
-candidates.sort((a,b)=>recommendationRank(b)-recommendationRank(a)||(b.finalScore||0)-(a.finalScore||0)||(b.seo?.score||0)-(a.seo?.score||0)||(b.discoveryScore||0)-(a.discoveryScore||0)||Date.parse(b.firstSeen)-Date.parse(a.firstSeen));
-if(candidates.length>2500)candidates.length=2500;
+candidates.sort((a,b)=>recommendationRank(b)-recommendationRank(a)||(b.finalScore||0)-(a.finalScore||0)||(b.trend?.score||0)-(a.trend?.score||0)||(b.seo?.score||0)-(a.seo?.score||0)||(b.discoveryScore||0)-(a.discoveryScore||0)||Date.parse(b.firstSeen)-Date.parse(a.firstSeen));
+if(candidates.length>3000)candidates.length=3000;
 
 const recommendationCounts={independent:0,page:0,watch:0,reject:0,pending:0,error:0};
 for(const candidate of candidates)recommendationCounts[candidate.recommendation||'pending']=(recommendationCounts[candidate.recommendation||'pending']||0)+1;
