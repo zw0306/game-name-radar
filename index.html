@@ -3,36 +3,36 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <meta name="description" content="自动监控大型 HTML5 游戏平台，展示新出现和跨平台重复出现的游戏名称。" />
+  <meta name="description" content="自动发现新游戏名，并通过搜索意图验证筛选适合独立站的关键词。" />
   <meta name="theme-color" content="#080b12" />
-  <title>Game Name Radar · 自动结果</title>
+  <title>Game Name Radar · SEO筛选结果</title>
   <link rel="stylesheet" href="/styles.css" />
 </head>
 <body>
   <main class="page">
     <header class="hero">
       <div>
-        <p class="eyebrow"><span class="live-dot"></span> AUTO GAME DISCOVERY</p>
-        <h1>新游戏名结果雷达</h1>
-        <p class="subtitle">后台自动监控大型游戏站。这里不需要配置，只看值得验证的结果。</p>
+        <p class="eyebrow"><span class="live-dot"></span> SEO GAME KEYWORD RADAR</p>
+        <h1>值得做站的游戏词</h1>
+        <p class="subtitle">先发现新游戏，再自动判断搜索结果是游戏、新闻还是其他意图。默认只展示通过SEO验证的结果。</p>
       </div>
       <div class="update-box">
-        <span>自动更新</span>
+        <span>最近自动扫描</span>
         <strong id="lastUpdated">正在读取…</strong>
-        <small>GitHub Actions 每30分钟扫描</small>
+        <small id="verifyStatus">等待验证报告</small>
       </div>
     </header>
 
-    <section class="stats" aria-label="扫描统计">
-      <article><span>监控平台</span><strong id="sourceCount">0</strong><small>自动数据源</small></article>
-      <article><span>本轮新增</span><strong id="newCount">0</strong><small>与上次快照相比</small></article>
-      <article><span>结果总数</span><strong id="candidateCount">0</strong><small>当前候选词库</small></article>
-      <article class="accent"><span>高机会</span><strong id="hotCount">0</strong><small>跨站重复或强信号</small></article>
+    <section class="stats" aria-label="筛选统计">
+      <article><span>监控入口</span><strong id="sourceCount">0</strong><small>游戏平台和公开Feed</small></article>
+      <article><span>本轮新发现</span><strong id="newCount">0</strong><small>只代表平台新增</small></article>
+      <article class="accent"><span>适合独立站</span><strong id="independentCount">0</strong><small>主词游戏意图明确</small></article>
+      <article><span>适合站内页</span><strong id="pageCount">0</strong><small>有长尾，但主词不够纯</small></article>
     </section>
 
     <section class="source-health">
       <div class="section-title compact">
-        <div><p class="eyebrow">SOURCE HEALTH</p><h2>数据源状态</h2></div>
+        <div><p class="eyebrow">SOURCE HEALTH</p><h2>自动任务状态</h2></div>
         <button id="refreshBtn" class="button">刷新结果</button>
       </div>
       <div id="sourceChips" class="source-chips"><span class="muted">正在读取扫描报告…</span></div>
@@ -41,17 +41,20 @@
     <section class="results">
       <div class="section-title">
         <div>
-          <p class="eyebrow">RESULT QUEUE</p>
-          <h2>候选游戏名</h2>
-          <p>分数越高，说明越值得马上检查 Google Trends 和 SERP。</p>
+          <p class="eyebrow">SEO VERIFIED RESULTS</p>
+          <h2>游戏关键词结果</h2>
+          <p>SEO分来自搜索结果游戏占比、新闻占比、自动补全和名称歧义，不再等同于平台收录数量。</p>
         </div>
         <div class="filters">
           <input id="searchInput" type="search" placeholder="搜索游戏名或来源" />
-          <select id="levelFilter">
-            <option value="all">全部级别</option>
-            <option value="hot">高机会</option>
-            <option value="verify">待验证</option>
-            <option value="watch">观察</option>
+          <select id="recommendationFilter">
+            <option value="recommended">推荐结果</option>
+            <option value="independent">适合独立站</option>
+            <option value="page">仅适合站内页</option>
+            <option value="watch">观察中</option>
+            <option value="reject">不建议做</option>
+            <option value="pending">等待自动验证</option>
+            <option value="all">全部</option>
           </select>
           <select id="timeFilter">
             <option value="all">全部时间</option>
@@ -66,18 +69,18 @@
       <div class="table-card">
         <div class="table-scroll">
           <table>
-            <thead><tr><th>机会</th><th>游戏名</th><th>信号</th><th>发现来源</th><th>首次发现</th><th>操作</th></tr></thead>
+            <thead><tr><th>SEO分</th><th>游戏名</th><th>建站建议</th><th>自动判断</th><th>来源</th><th>首次发现</th><th>操作</th></tr></thead>
             <tbody id="resultBody"></tbody>
           </table>
         </div>
         <div id="emptyState" class="empty" hidden>
-          <strong>暂时没有符合条件的结果</strong>
-          <span>后台完成下一轮扫描后会自动显示。</span>
+          <strong>当前没有通过筛选的结果</strong>
+          <span>可以切换到“观察中”或“等待自动验证”查看原始候选。</span>
         </div>
       </div>
     </section>
 
-    <footer>Game Name Radar · 数据来自公开的新游戏列表与 Feed，仅用于关键词研究。</footer>
+    <footer>Game Name Radar · 自动判断用于初筛，购买域名前仍建议人工查看 Trends 7天、30天和SERP。</footer>
   </main>
   <div id="toast" class="toast" role="status"></div>
   <script type="module" src="/app.js"></script>
