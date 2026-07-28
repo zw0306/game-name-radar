@@ -34,5 +34,50 @@
     "fetchKind": "feed",
     "enabled": true,
     "baselineOnly": false
+  },
+  {
+    "id": "crazygames-new",
+    "name": "CrazyGames 新游戏",
+    "url": "https://www.crazygames.com/new?crawl=true",
+    "kind": "crazygames-new",
+    "fetchKind": "crazygames-listing",
+    "enabled": true,
+    "baselineOnly": false
+  },
+  {
+    "id": "poki-new",
+    "name": "Poki 新游戏",
+    "url": "https://poki.com/en/new",
+    "kind": "poki-new",
+    "fetchKind": "poki-listing",
+    "enabled": true,
+    "baselineOnly": false
+  },
+  {
+    "id": "y8-new",
+    "name": "Y8 新游戏",
+    "url": "https://www.y8.com/new/games",
+    "kind": "y8-new",
+    "fetchKind": "y8-listing",
+    "enabled": true,
+    "baselineOnly": false
+  },
+  {
+    "id": "gamepix-new",
+    "name": "GamePix 新游戏",
+    "url": "https://www.gamepix.com/new",
+    "kind": "gamepix-new",
+    "fetchKind": "gamepix-listing",
+    "enabled": true,
+    "baselineOnly": false
+  },
+  {
+    "id": "lagged-new",
+    "name": "Lagged 新游戏",
+    "url": "https://lagged.com/new-games",
+    "kind": "lagged-new",
+    "fetchKind": "lagged-listing",
+    "enabled": true,
+    "baselineOnly": false
   }
 ]
