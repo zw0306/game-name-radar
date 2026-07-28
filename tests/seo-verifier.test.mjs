@@ -34,3 +34,14 @@ test('recommends unique game name when exact SERP is game-heavy',()=>{
   assert.equal(verdict.classification,'independent');
   assert.ok(verdict.score>=68);
 });
+
+test('downgrades ambiguous generic name even when game results are strong',()=>{
+  const exact=[
+    {url:'https://www.y8.com/games/up_hero',title:'Up Hero Game',snippet:'Play online game'},
+    {url:'https://www.gamepix.com/play/up-hero',title:'Up Hero',snippet:'Browser game'},
+    {url:'https://www.youtube.com/watch?v=2',title:'Up Hero gameplay',snippet:'Game video'}
+  ];
+  const verdict=calculateSeoVerdict({gameName:'Up Hero',exactResults:exact,gameResults:exact,suggestions:['up hero game','up hero bike price'],discoveryScore:12});
+  assert.notEqual(verdict.classification,'independent');
+  assert.ok(verdict.nameRisk>=13);
+});
