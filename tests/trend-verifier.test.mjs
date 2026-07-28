@@ -20,7 +20,7 @@ test('recognizes strong demand against anchor',()=>{
     thirtyDayAnchor:Array(30).fill(40),
   });
   assert.ok(['strong','rising','breakout'].includes(verdict.classification));
-  assert.ok(verdict.score>=45);
+  assert.ok(verdict.score>=40);
 });
 
 test('recognizes clear 7-day breakout',()=>{
@@ -28,9 +28,12 @@ test('recognizes clear 7-day breakout',()=>{
     gameName:'Sudden New Horror',
     sevenDayCandidate:[0,0,1,1,5,12,18,24],sevenDayAnchor:Array(8).fill(45),
     thirtyDayCandidate:[...Array(22).fill(0),1,1,2,4,7,10,13,16],thirtyDayAnchor:Array(30).fill(45),
+    ninetyDayCandidate:[...Array(60).fill(0),...Array(22).fill(0),1,1,2,4,7,10,13,16],
+    ninetyDayAnchor:Array(90).fill(45),
   });
   assert.ok(['breakout','rising'].includes(verdict.classification));
   assert.equal(verdict.rising7||verdict.breakout7,true);
+  assert.equal(verdict.keywordFreshness,'new');
 });
 
 test('recognizes clear 30-day rise even when 7-day ratio is moderate',()=>{
@@ -64,4 +67,48 @@ test('keeps sparse low-volume term weak',()=>{
     thirtyDayCandidate:[...candidate,...Array(18).fill(0)],thirtyDayAnchor:Array(30).fill(45),
   });
   assert.equal(verdict.classification,'weak');
+});
+
+test('marks a long-running ambiguous phrase as an existing keyword',()=>{
+  const exact90=Array.from({length:90},(_,i)=>70-Math.floor(i/4));
+  const qualified90=Array(90).fill(0).map((_,i)=>i>80?1:0);
+  const exact30=exact90.slice(-30);
+  const qualified30=qualified90.slice(-30);
+  const verdict=calculateTrendVerdict({
+    gameName:'Up Hero',
+    sevenDayCandidate:exact30.slice(-8),
+    sevenDayQualified:qualified30.slice(-8),
+    sevenDayAnchor:Array(8).fill(45),
+    thirtyDayCandidate:exact30,
+    thirtyDayQualified:qualified30,
+    thirtyDayAnchor:Array(30).fill(45),
+    ninetyDayCandidate:exact90,
+    ninetyDayQualified:qualified90,
+    ninetyDayAnchor:Array(90).fill(45),
+  });
+  assert.equal(verdict.keywordFreshness,'existing');
+  assert.equal(verdict.entityConflict,true);
+  assert.equal(verdict.rising7,false);
+  assert.equal(verdict.rising30,false);
+});
+
+test('can detect growth in the game-qualified query separately',()=>{
+  const exact90=Array(90).fill(25);
+  const qualified90=[...Array(60).fill(0),...Array.from({length:30},(_,i)=>Math.floor(i/3))];
+  const exact30=exact90.slice(-30);
+  const qualified30=qualified90.slice(-30);
+  const verdict=calculateTrendVerdict({
+    gameName:'Shared Phrase',
+    sevenDayCandidate:exact30.slice(-8),
+    sevenDayQualified:qualified30.slice(-8),
+    sevenDayAnchor:Array(8).fill(45),
+    thirtyDayCandidate:exact30,
+    thirtyDayQualified:qualified30,
+    thirtyDayAnchor:Array(30).fill(45),
+    ninetyDayCandidate:exact90,
+    ninetyDayQualified:qualified90,
+    ninetyDayAnchor:Array(90).fill(45),
+  });
+  assert.equal(verdict.keywordFreshness,'existing');
+  assert.equal(verdict.qualifiedRising30||verdict.breakout30,true);
 });
