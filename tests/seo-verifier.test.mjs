@@ -1,12 +1,18 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import { parseDuckResults, calculateSeoVerdict } from '../lib/seo-verifier.mjs';
+import { parseDuckResults, calculateSeoVerdict, cleanGameName } from '../lib/seo-verifier.mjs';
 
 test('parses DuckDuckGo result blocks',()=>{
   const html=`<div class="result results_links"><h2><a class="result__a" href="//duckduckgo.com/l/?uddg=https%3A%2F%2Fexample.itch.io%2Fnight-room">Night Room by Dev - itch.io</a></h2><a class="result__snippet">Play Night Room, a browser horror game.</a></div></body>`;
   const results=parseDuckResults(html);
   assert.equal(results.length,1);
   assert.match(results[0].url,/example\.itch\.io/);
+});
+
+test('strips itch feed metadata from titles',()=>{
+  assert.equal(cleanGameName('ROLLA [Free] [Action] [Windows]'),'ROLLA');
+  assert.equal(cleanGameName('Midnight Scenes: The Highway [$3.99]'),'Midnight Scenes: The Highway');
+  assert.equal(cleanGameName('The Hive [75% Off] [$4.99] [Strategy]'),'The Hive');
 });
 
 test('rejects news-dominated ambiguous phrase',()=>{
