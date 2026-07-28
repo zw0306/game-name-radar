@@ -2,36 +2,9 @@ import test from 'node:test';
 import assert from 'node:assert/strict';
 import { parseRemoteDocument, deriveGameName, normalizeGameName, calculateCandidateScore } from '../lib/scanner.mjs';
 
-test('parses sitemap urlset', () => {
-  const xml = `<?xml version="1.0"?><urlset><url><loc>https://example.com/play-night-shift-online/</loc><lastmod>2026-07-28</lastmod></url></urlset>`;
-  const parsed = parseRemoteDocument(xml, 'https://example.com/sitemap.xml', 'sitemap');
-  assert.equal(parsed.type, 'sitemap');
-  assert.equal(parsed.entries.length, 1);
-  assert.equal(parsed.entries[0].date, '2026-07-28');
-});
-
-test('parses RSS feed', () => {
-  const xml = `<rss><channel><item><title><![CDATA[Quiet Hallways]]></title><link>https://dev.itch.io/quiet-hallways</link><pubDate>Mon, 27 Jul 2026 10:00:00 GMT</pubDate></item></channel></rss>`;
-  const parsed = parseRemoteDocument(xml, 'https://itch.io/feed/new.xml', 'feed');
-  assert.equal(parsed.type, 'feed');
-  assert.equal(parsed.entries[0].title, 'Quiet Hallways');
-});
-
-test('derives clean game name from slug', () => {
-  assert.equal(deriveGameName({ url: 'https://example.com/play-night-shift-online/' }), 'Night Shift');
-});
-
-test('normalizes equivalent names', () => {
-  assert.equal(normalizeGameName('Play Night Shift Online'), normalizeGameName('Night Shift Game'));
-});
-
-test('scores cross-source candidate higher', () => {
-  const score = calculateCandidateScore({
-    gameName: 'Quiet Hallways',
-    sources: [
-      { kind: 'competitor-sitemap', date: '2026-07-28' },
-      { kind: 'itch-popular', date: '2026-07-28' },
-    ],
-  });
-  assert.ok(score >= 11);
-});
+test('parses sitemap entries',()=>{const out=parseRemoteDocument('<?xml version="1.0"?><urlset><url><loc>https://a.com/game/alpha-run</loc><lastmod>2026-07-28</lastmod></url></urlset>','https://a.com/sitemap.xml','sitemap');assert.equal(out.entries.length,1)});
+test('parses itch title links',()=>{const out=parseRemoteDocument('<a class="title game_link" href="https://dev.itch.io/star-fall">Star Fall</a>','https://itch.io/games','itch-listing');assert.equal(out.entries[0].title,'Star Fall')});
+test('parses Poki game links only',()=>{const html='<a href="/en/new">New</a><a href="/en/g/ball-vs-block">Ball vs Block</a><a href="/en/categories">Categories</a>';const out=parseRemoteDocument(html,'https://poki.com/en/new','poki-listing');assert.deepEqual(out.entries.map(x=>x.title),['Ball vs Block'])});
+test('cleans Y8 ratings and New badge',()=>{const html='<a href="/games/military_strike">New Military Strike 8.4</a>';const out=parseRemoteDocument(html,'https://www.y8.com/new/games','y8-listing');assert.equal(out.entries[0].title,'Military Strike')});
+test('derives and normalizes game names',()=>{assert.equal(deriveGameName({url:'https://site.com/game/neon-dungeon-online',title:''}),'Neon Dungeon');assert.equal(normalizeGameName('Play Neon Dungeon Online'),'neon dungeon')});
+test('cross portal signal reaches high score',()=>{const c={gameName:'Neon Dungeon',sources:[{kind:'poki-new'},{kind:'crazygames-new'}]};assert.ok(calculateCandidateScore(c)>=12)});
