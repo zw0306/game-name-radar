@@ -13,10 +13,12 @@ const statePath=path.join(root,'data','state.json');
 const candidatesPath=path.join(root,'data','candidates.json');
 const reportPath=path.join(root,'data','latest-report.json');
 const VERIFY_LIMIT=Math.max(1,Math.min(40,Number(process.env.SEO_VERIFY_LIMIT||22)));
-const TREND_LIMIT=Math.max(1,Math.min(24,Number(process.env.TRENDS_VERIFY_LIMIT||12)));
+const TREND_LIMIT=Math.max(1,Math.min(8,Number(process.env.TRENDS_VERIFY_LIMIT||3)));
 const VERIFY_MAX_AGE=7*86400000;
 const TREND_MAX_AGE=3*86400000;
-const RISING_DISCOVERY_INTERVAL=2*3600000;
+const TREND_ERROR_RETRY=2*3600000;
+const TREND_BATCH_INTERVAL=2*3600000;
+const RISING_DISCOVERY_INTERVAL=6*3600000;
 const SEO_MODEL_VERSION=2;
 const TREND_MODEL_VERSION=2;
 const sleep=(ms)=>new Promise(resolve=>setTimeout(resolve,ms));
@@ -123,7 +125,7 @@ function needsTrendCheck(candidate){
   if(candidate.trend?.modelVersion!==TREND_MODEL_VERSION)return true;
   const checked=Date.parse(candidate.trend?.checkedAt||'');
   if(!Number.isFinite(checked))return true;
-  if(candidate.trend?.status==='error')return Date.now()-checked>12*3600000;
+  if(candidate.trend?.status==='error')return Date.now()-checked>TREND_ERROR_RETRY;
   return Date.now()-checked>TREND_MAX_AGE;
 }
 
@@ -185,7 +187,7 @@ async function processSourceResult({source,result,candidates,radarState,logs,now
 }
 
 const sources=(await readJson(sourcesPath,[])).filter(source=>source.enabled!==false);
-const radarState=await readJson(statePath,{snapshots:{},lastScan:null,lastRisingDiscovery:null});
+const radarState=await readJson(statePath,{snapshots:{},lastScan:null,lastRisingDiscovery:null,lastTrendBatch:null});
 const candidatePayload=await readJson(candidatesPath,{candidates:[]});
 let candidates=dedupeCandidates(Array.isArray(candidatePayload)?candidatePayload:candidatePayload.candidates||[]);
 const now=new Date().toISOString();
@@ -201,8 +203,10 @@ for(const source of sources){
   }catch(error){logs.push({ok:false,sourceId:source.id,sourceName:source.name,error:error.message});console.error(`✗ ${source.name}: ${error.message}`)}
 }
 
+let risingDiscoveryRan=false;
 const lastRising=Date.parse(radarState.lastRisingDiscovery||'');
 if(!Number.isFinite(lastRising)||Date.now()-lastRising>=RISING_DISCOVERY_INTERVAL){
+  risingDiscoveryRan=true;
   const risingResults=await discoverRisingGameQueries();
   for(const item of risingResults){
     const source=item.source;
@@ -234,19 +238,31 @@ for(const candidate of candidates){
   if(!candidate.seo)candidate.seo={modelVersion:SEO_MODEL_VERSION,status:'pending',classification:'pending',score:0,reasons:['等待自动搜索意图验证']};
 }
 
-const trendQueue=candidates.filter(needsTrendCheck).sort((a,b)=>trendPriority(b)-trendPriority(a)||Date.parse(b.firstSeen)-Date.parse(a.firstSeen)).slice(0,TREND_LIMIT);
-let trendsVerified=0,trendErrors=0;
-for(const candidate of trendQueue){
-  try{
-    console.log(`Trends verify: ${candidate.gameName}`);
-    candidate.trend=await verifyTrendDemand(candidate.gameName);
-    trendsVerified+=1;
-  }catch(error){
-    candidate.trend={modelVersion:TREND_MODEL_VERSION,checkedAt:new Date().toISOString(),status:'error',classification:'error',score:0,reasons:[`趋势验证失败：${error.message}`]};
-    trendErrors+=1;
-    console.error(`Trends verify failed: ${candidate.gameName}: ${error.message}`);
+let trendsVerified=0,trendErrors=0,trendBatchRan=false;
+const lastTrendBatch=Date.parse(radarState.lastTrendBatch||'');
+const trendBatchDue=!Number.isFinite(lastTrendBatch)||Date.now()-lastTrendBatch>=TREND_BATCH_INTERVAL;
+if(trendBatchDue&&!risingDiscoveryRan){
+  trendBatchRan=true;
+  const trendQueue=candidates.filter(needsTrendCheck).sort((a,b)=>trendPriority(b)-trendPriority(a)||Date.parse(b.firstSeen)-Date.parse(a.firstSeen)).slice(0,TREND_LIMIT);
+  for(const candidate of trendQueue){
+    const previousTrend=candidate.trend;
+    try{
+      console.log(`Trends verify: ${candidate.gameName}`);
+      candidate.trend=await verifyTrendDemand(candidate.gameName);
+      trendsVerified+=1;
+    }catch(error){
+      const previousIsValid=previousTrend&&!['error','pending'].includes(previousTrend.classification);
+      if(previousIsValid){
+        candidate.trend={...previousTrend,stale:true,lastError:error.message,lastErrorAt:new Date().toISOString()};
+      }else{
+        candidate.trend={modelVersion:TREND_MODEL_VERSION,checkedAt:new Date().toISOString(),status:'error',classification:'error',score:0,reasons:[`趋势验证失败：${error.message}`]};
+      }
+      trendErrors+=1;
+      console.error(`Trends verify failed: ${candidate.gameName}: ${error.message}`);
+    }
+    await sleep(8000);
   }
-  await sleep(1600);
+  radarState.lastTrendBatch=now;
 }
 
 for(const candidate of candidates){
@@ -264,5 +280,5 @@ for(const candidate of candidates)recommendationCounts[candidate.recommendation|
 radarState.lastScan=now;
 await fs.writeFile(statePath,JSON.stringify(radarState,null,2)+'\n');
 await fs.writeFile(candidatesPath,JSON.stringify({updatedAt:now,candidates},null,2)+'\n');
-await fs.writeFile(reportPath,JSON.stringify({scannedAt:now,totalAdded,sources:logs,seoVerified,seoErrors,trendsVerified,trendErrors,seoModelVersion:SEO_MODEL_VERSION,trendModelVersion:TREND_MODEL_VERSION,recommendationCounts},null,2)+'\n');
+await fs.writeFile(reportPath,JSON.stringify({scannedAt:now,totalAdded,sources:logs,seoVerified,seoErrors,trendsVerified,trendErrors,trendBatchRan,risingDiscoveryRan,seoModelVersion:SEO_MODEL_VERSION,trendModelVersion:TREND_MODEL_VERSION,recommendationCounts},null,2)+'\n');
 console.log(`Scan complete. ${totalAdded} names added; ${seoVerified} SEO checks; ${trendsVerified} Trends checks.`);
