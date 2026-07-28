@@ -18,6 +18,24 @@
     "baselineOnly": false
   },
   {
+    "id": "itch-jam-newest-html5",
+    "name": "itch.io Game Jam 最新HTML5",
+    "url": "https://itch.io/games/newest/html5/in-jam",
+    "kind": "itch-jam-new",
+    "fetchKind": "itch-listing",
+    "enabled": true,
+    "baselineOnly": false
+  },
+  {
+    "id": "itch-jam-popular-html5",
+    "name": "itch.io Game Jam 热门HTML5",
+    "url": "https://itch.io/games/new-and-popular/html5/in-jam",
+    "kind": "itch-jam-popular",
+    "fetchKind": "itch-listing",
+    "enabled": true,
+    "baselineOnly": false
+  },
+  {
     "id": "itch-new-feed",
     "name": "itch.io New Feed",
     "url": "https://itch.io/feed/new.xml",
@@ -31,6 +49,42 @@
     "name": "itch.io Featured Feed",
     "url": "https://itch.io/feed/featured.xml",
     "kind": "itch-featured",
+    "fetchKind": "feed",
+    "enabled": true,
+    "baselineOnly": false
+  },
+  {
+    "id": "steam-popular-new",
+    "name": "Steam 热门新发行",
+    "url": "https://store.steampowered.com/search/?filter=popularnew&sort_by=Released_DESC&ndl=1",
+    "kind": "steam-popular-new",
+    "fetchKind": "steam-listing",
+    "enabled": true,
+    "baselineOnly": false
+  },
+  {
+    "id": "steam-latest-indie",
+    "name": "Steam 最新独立游戏",
+    "url": "https://store.steampowered.com/search/?sort_by=Released_DESC&tags=492&category1=998&ndl=1",
+    "kind": "steam-new",
+    "fetchKind": "steam-listing",
+    "enabled": true,
+    "baselineOnly": false
+  },
+  {
+    "id": "newgrounds-daily-top",
+    "name": "Newgrounds Daily Top Five",
+    "url": "https://rss.ngfiles.com/dailytop5.xml",
+    "kind": "newgrounds-top",
+    "fetchKind": "feed",
+    "enabled": true,
+    "baselineOnly": false
+  },
+  {
+    "id": "newgrounds-latest",
+    "name": "Newgrounds 最新通过作品",
+    "url": "https://rss.ngfiles.com/latestsubmissions.xml",
+    "kind": "newgrounds-new",
     "fetchKind": "feed",
     "enabled": true,
     "baselineOnly": false
