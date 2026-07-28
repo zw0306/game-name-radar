@@ -20,7 +20,7 @@ const TREND_ERROR_RETRY=2*3600000;
 const TREND_BATCH_INTERVAL=2*3600000;
 const RISING_DISCOVERY_INTERVAL=6*3600000;
 const SEO_MODEL_VERSION=3;
-const TREND_MODEL_VERSION=2;
+const TREND_MODEL_VERSION=3;
 const sleep=(ms)=>new Promise(resolve=>setTimeout(resolve,ms));
 
 async function readJson(file,fallback){try{return JSON.parse(await fs.readFile(file,'utf8'))}catch{return fallback}}
@@ -143,6 +143,8 @@ function applyFinalRecommendation(candidate){
   const seoClass=candidate.seo?.classification||'pending';
   const demandClass=candidate.trend?.classification||'pending';
   const nameRisk=Number(candidate.seo?.nameRisk??30);
+  const keywordFreshness=candidate.trend?.keywordFreshness||'unknown';
+  const entityConflict=Boolean(candidate.trend?.entityConflict);
   let recommendation='pending';
 
   if(seoClass==='error')recommendation='error';
@@ -151,7 +153,7 @@ function applyFinalRecommendation(candidate){
   else if(demandClass==='error'||demandClass==='pending')recommendation='pending';
   else if(demandClass==='none')recommendation='reject';
   else if(demandClass==='weak')recommendation='watch';
-  else if(seoClass==='independent'&&nameRisk<=12&&['rising','breakout'].includes(demandClass))recommendation='independent';
+  else if(seoClass==='independent'&&nameRisk<=12&&keywordFreshness!=='existing'&&!entityConflict&&['rising','breakout'].includes(demandClass))recommendation='independent';
   else if(['independent','page'].includes(seoClass)&&['strong','rising','breakout','moderate'].includes(demandClass))recommendation='page';
   else recommendation='watch';
 
@@ -159,6 +161,7 @@ function applyFinalRecommendation(candidate){
   const trendScore=Number(candidate.trend?.score||0);
   let finalScore=Math.round(seoScore*0.48+trendScore*0.52);
   if(['rising','breakout'].includes(demandClass))finalScore=Math.min(100,finalScore+8);
+  if(keywordFreshness==='existing'||entityConflict)finalScore=Math.min(finalScore,69);
   if(recommendation==='watch')finalScore=Math.min(finalScore,59);
   if(recommendation==='reject'||recommendation==='pending'||recommendation==='error')finalScore=0;
   candidate.finalScore=finalScore;
