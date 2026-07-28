@@ -19,7 +19,7 @@ const TREND_MAX_AGE=86400000;
 const TREND_ERROR_RETRY=3600000;
 const TREND_BATCH_INTERVAL=30*60000;
 const RISING_DISCOVERY_INTERVAL=3*3600000;
-const SEO_MODEL_VERSION=3;
+const SEO_MODEL_VERSION=4;
 const TREND_MODEL_VERSION=3;
 const sleep=(ms)=>new Promise(resolve=>setTimeout(resolve,ms));
 
@@ -137,6 +137,7 @@ function isTrendEligible(candidate){
   if(!['independent','page'].includes(candidate.seo?.classification))return false;
   if(Number(candidate.seo?.score||0)<42)return false;
   if(Number(candidate.seo?.nameRisk??30)>14)return false;
+  if(candidate.seo?.entityConflict)return false;
   return hasStrongDiscoverySignal(candidate);
 }
 
@@ -171,11 +172,11 @@ function applyFinalRecommendation(candidate){
   const demandClass=candidate.trend?.classification||'pending';
   const nameRisk=Number(candidate.seo?.nameRisk??30);
   const keywordFreshness=candidate.trend?.keywordFreshness||'unknown';
-  const entityConflict=Boolean(candidate.trend?.entityConflict);
+  const entityConflict=Boolean(candidate.seo?.entityConflict||candidate.trend?.entityConflict);
   let recommendation='pending';
 
   if(seoClass==='error')recommendation='error';
-  else if(seoClass==='reject')recommendation='reject';
+  else if(seoClass==='reject'||candidate.seo?.entityConflict)recommendation='reject';
   else if(seoClass==='pending')recommendation='pending';
   else if(!isTrendEligible(candidate))recommendation='reject';
   else if(demandClass==='error'||demandClass==='pending')recommendation='pending';
