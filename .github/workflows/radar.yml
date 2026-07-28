@@ -28,10 +28,10 @@ concurrency:
 jobs:
   scan:
     runs-on: ubuntu-latest
-    timeout-minutes: 35
+    timeout-minutes: 45
     env:
-      SEO_VERIFY_LIMIT: 22
-      TRENDS_VERIFY_LIMIT: 3
+      SEO_VERIFY_LIMIT: 30
+      TRENDS_VERIFY_LIMIT: 6
       TRENDS_ANCHOR: itch io
     steps:
       - uses: actions/checkout@v4
