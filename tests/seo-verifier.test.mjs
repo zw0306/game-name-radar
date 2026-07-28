@@ -9,11 +9,13 @@ test('parses DuckDuckGo result blocks',()=>{
   assert.match(results[0].url,/example\.itch\.io/);
 });
 
-test('strips itch feed metadata and platform suffixes from titles',()=>{
+test('strips feed metadata, platform suffixes and ranking prefixes from titles',()=>{
   assert.equal(cleanGameName('ROLLA [Free] [Action] [Windows]'),'ROLLA');
   assert.equal(cleanGameName('Midnight Scenes: The Highway [$3.99]'),'Midnight Scenes: The Highway');
   assert.equal(cleanGameName('The Hive [75% Off] [$4.99] [Strategy]'),'The Hive');
   assert.equal(cleanGameName('Seat and Destroy (Web)'),'Seat and Destroy');
+  assert.equal(cleanGameName('2. Never Let You Down!!'),'Never Let You Down!!');
+  assert.equal(cleanGameName('10) Meet Gorgo!'),'Meet Gorgo!');
 });
 
 test('rejects news-dominated ambiguous phrase',()=>{
