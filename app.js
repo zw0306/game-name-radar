@@ -1,5 +1,6 @@
-const DATA_URL='/data/candidates.json';
-const REPORT_URL='/data/latest-report.json';
+const RAW_BASE='https://raw.githubusercontent.com/foxigaoqian/game-name-radar/main';
+const DATA_URL=`${RAW_BASE}/data/candidates.json`;
+const REPORT_URL=`${RAW_BASE}/data/latest-report.json`;
 const STATUS_KEY='gameRadar.resultStatus.v2';
 const els={lastUpdated:document.querySelector('#lastUpdated'),sourceCount:document.querySelector('#sourceCount'),newCount:document.querySelector('#newCount'),candidateCount:document.querySelector('#candidateCount'),hotCount:document.querySelector('#hotCount'),sourceChips:document.querySelector('#sourceChips'),body:document.querySelector('#resultBody'),empty:document.querySelector('#emptyState'),search:document.querySelector('#searchInput'),level:document.querySelector('#levelFilter'),time:document.querySelector('#timeFilter'),refresh:document.querySelector('#refreshBtn'),export:document.querySelector('#exportBtn'),toast:document.querySelector('#toast')};
 let candidates=[];let report={};let statuses=loadStatuses();
