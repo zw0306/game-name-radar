@@ -1,7 +1,8 @@
 const RAW_BASE='https://raw.githubusercontent.com/foxigaoqian/game-name-radar/main';
 const DATA_URL=`${RAW_BASE}/data/candidates.json`;
 const REPORT_URL=`${RAW_BASE}/data/latest-report.json`;
-const STATUS_KEY='gameRadar.resultStatus.v8';
+const STATUS_KEY='gameRadar.resultStatus.v9';
+const LEGACY_STATUS_KEYS=['gameRadar.resultStatus.v8'];
 
 const els={
   lastUpdated:document.querySelector('#lastUpdated'),verifyStatus:document.querySelector('#verifyStatus'),
@@ -22,12 +23,17 @@ const FAST_LABELS={pass:'快速层通过',watch:'快速层观察',weak:'快速�
 const TREND_RANK={breakout:6,rising:5,strong:4,moderate:3,weak:2,none:1,pending:0,error:0};
 const FRESHNESS_LABELS={new:'新关键词',existing:'历史旧词',unknown:'历史待确认'};
 
-function loadStatuses(){try{return JSON.parse(localStorage.getItem(STATUS_KEY)||'{}')}catch{return{}}}
+function readStatusStore(key){try{return JSON.parse(localStorage.getItem(key)||'{}')}catch{return{}}}
+function loadStatuses(){const merged={};for(const key of [...LEGACY_STATUS_KEYS,STATUS_KEY])Object.assign(merged,readStatusStore(key));return merged}
 function saveStatuses(){localStorage.setItem(STATUS_KEY,JSON.stringify(statuses))}
 function toast(text){els.toast.textContent=text;els.toast.classList.add('show');clearTimeout(toast.t);toast.t=setTimeout(()=>els.toast.classList.remove('show'),2400)}
 function fmtDate(value){if(!value)return'—';const d=new Date(value);if(Number.isNaN(d.getTime()))return value;return new Intl.DateTimeFormat('zh-CN',{month:'2-digit',day:'2-digit',hour:'2-digit',minute:'2-digit'}).format(d)}
 function ageDays(value){const t=Date.parse(value||'');return Number.isFinite(t)?(Date.now()-t)/86400000:Infinity}
 function normalize(value=''){return value.toLowerCase().normalize('NFKD').replace(/[^a-z0-9]+/g,' ').trim()}
+function statusKey(c){const key=String(c.normalizedName||normalize(c.gameName)||c.id||'').trim();return`name:${key}`}
+function isIgnored(c){return statuses[statusKey(c)]==='ignored'||statuses[c.id]==='ignored'}
+function ignoreCandidate(c){statuses[statusKey(c)]='ignored';if(c.id)statuses[c.id]='ignored';saveStatuses()}
+function migrateIgnoredStatuses(){let changed=false;for(const c of candidates){if(statuses[c.id]==='ignored'&&statuses[statusKey(c)]!=='ignored'){statuses[statusKey(c)]='ignored';changed=true}}if(changed)saveStatuses()}
 function classification(c){return c.recommendation||c.level||'pending'}
 function siteType(c){return c.siteType?.type||'pending'}
 function finalScore(c){return Number.isFinite(c.finalScore)?c.finalScore:Number.isFinite(c.score)?c.score:0}
@@ -35,6 +41,7 @@ function seoScore(c){return Number.isFinite(c.seo?.score)?c.seo.score:0}
 function fastScore(c){return Number.isFinite(c.fast?.score)?c.fast.score:0}
 function trendScore(c){return Number.isFinite(c.trend?.score)?c.trend.score:0}
 function isFastPassed(c){return c.fast?.classification==='pass'}
+function isTrendRising(c){return['rising','breakout'].includes(c.trend?.classification)}
 function isPriorityTrendPending(c){return isFastPassed(c)&&['pending','error',undefined].includes(c.trend?.classification)}
 function isOpportunity(c){return ['independent','page'].includes(classification(c))}
 function trends(name,days){return`https://trends.google.com/trends/explore?date=${encodeURIComponent(days===7?'now 7-d':'today 1-m')}&geo=US&q=${encodeURIComponent(name)}`}
@@ -49,25 +56,27 @@ function filtered(){
   return candidates.filter(c=>{
     const cls=classification(c),type=siteType(c);
     if(typeFilter!=='all'&&type!==typeFilter)return false;
+    if(filter==='trend-rising'&&!isTrendRising(c))return false;
     if(filter==='recommended'&&cls!=='independent')return false;
     if(filter==='fast-pass'&&!isFastPassed(c))return false;
     if(filter==='trend-pending'&&!isPriorityTrendPending(c))return false;
-    if(!['all','recommended','fast-pass','trend-pending'].includes(filter)&&cls!==filter)return false;
+    if(!['all','trend-rising','recommended','fast-pass','trend-pending'].includes(filter)&&cls!==filter)return false;
     if(ageDays(c.firstSeen)>days)return false;
     if(q&&!c.gameName.toLowerCase().includes(q)&&!(c.sources||[]).some(s=>(s.name||'').toLowerCase().includes(q)))return false;
-    return statuses[c.id]!=='ignored';
+    return !isIgnored(c);
   }).sort((a,b)=>(TREND_RANK[b.trend?.classification]||0)-(TREND_RANK[a.trend?.classification]||0)||finalScore(b)-finalScore(a)||fastScore(b)-fastScore(a)||trendScore(b)-trendScore(a)||seoScore(b)-seoScore(a)||Date.parse(b.firstSeen)-Date.parse(a.firstSeen));
 }
 
 function renderStats(){
-  const active=candidates.filter(c=>statuses[c.id]!=='ignored');
+  const active=candidates.filter(c=>!isIgnored(c));
+  const finalCount=active.filter(c=>classification(c)==='independent').length;
   els.sourceCount.textContent=String(report.sources?.length||0);
   els.newCount.textContent=String(report.totalAdded||0);
   els.onlineCount.textContent=String(active.filter(c=>siteType(c)==='online'&&isOpportunity(c)).length);
   els.wikiCount.textContent=String(active.filter(c=>siteType(c)==='wiki'&&isOpportunity(c)).length);
   els.lastUpdated.textContent=report.scannedAt?fmtDate(report.scannedAt):'尚无扫描结果';
   const yt=report.youtubeEnabled?` · YouTube已验 ${report.youtubeVerified||0}`:' · YouTube未启用';
-  els.verifyStatus.textContent=`SEO通过 ${report.seoPassedCount||0} · 快速通过 ${report.fastPassedCount||0} · Trends已验 ${report.trendValidatedCount||0}${yt}`;
+  els.verifyStatus.textContent=`SEO通过 ${report.seoPassedCount||0} · 快速通过 ${report.fastPassedCount||0} · Trends已验 ${report.trendValidatedCount||0} · 上涨 ${report.risingCount||0} · 最终推荐 ${finalCount}${yt}`;
   if(els.emptyDetail){
     if((report.trendPendingCount||0)>0)els.emptyDetail.textContent=`快速层已有 ${report.fastPassedCount||0} 个通过，仍有 ${report.trendPendingCount} 个等待Trends验证。`;
     else els.emptyDetail.textContent='当前筛选下没有同时满足类型、搜索意图和趋势条件的结果。';
@@ -139,7 +148,7 @@ function render(){
     const fastTd=document.createElement('td');fastTd.append(renderFast(c));
     const trendTd=document.createElement('td');trendTd.append(renderTrend(c));
     const sourceTd=document.createElement('td'),chips=document.createElement('div');chips.className='chips';for(const s of c.sources||[]){const chip=document.createElement('span');chip.className='chip';chip.textContent=s.name;chips.append(chip)}sourceTd.append(chips);
-    const actions=document.createElement('td'),wrap=document.createElement('div');wrap.className='actions';wrap.append(action('Trends 7天',trends(c.gameName,7)),action('30天',trends(c.gameName,30)),action(siteType(c)==='wiki'?'Wiki SERP':'Play SERP',serp(c)));if(cls==='independent')wrap.append(action('域名',domain(c.gameName)));const copy=document.createElement('button');copy.className='action';copy.textContent='复制';copy.onclick=async()=>{await navigator.clipboard.writeText(c.gameName);toast('已复制游戏名')};const ignore=document.createElement('button');ignore.className='action';ignore.textContent='忽略';ignore.onclick=()=>{statuses[c.id]='ignored';saveStatuses();render();toast('已隐藏')};wrap.append(copy,ignore);actions.append(wrap);
+    const actions=document.createElement('td'),wrap=document.createElement('div');wrap.className='actions';wrap.append(action('Trends 7天',trends(c.gameName,7)),action('30天',trends(c.gameName,30)),action(siteType(c)==='wiki'?'Wiki SERP':'Play SERP',serp(c)));if(cls==='independent')wrap.append(action('域名',domain(c.gameName)));const copy=document.createElement('button');copy.className='action';copy.textContent='复制';copy.onclick=async()=>{await navigator.clipboard.writeText(c.gameName);toast('已复制游戏名')};const ignore=document.createElement('button');ignore.className='action';ignore.textContent='忽略';ignore.onclick=()=>{ignoreCandidate(c);render();toast(`已永久隐藏：${c.gameName}`)};wrap.append(copy,ignore);actions.append(wrap);
     tr.append(scoreTd,gameTd,adviceTd,seoTd,fastTd,trendTd,sourceTd,actions);els.body.append(tr);
   }
 }
@@ -150,7 +159,7 @@ async function load(){
     const stamp=Date.now();
     const [cRes,rRes]=await Promise.all([fetch(`${DATA_URL}?v=${stamp}`,{cache:'no-store'}),fetch(`${REPORT_URL}?v=${stamp}`,{cache:'no-store'})]);
     if(!cRes.ok)throw new Error('候选数据读取失败');
-    const cJson=await cRes.json();candidates=Array.isArray(cJson)?cJson:cJson.candidates||[];report=rRes.ok?await rRes.json():{};render();
+    const cJson=await cRes.json();candidates=Array.isArray(cJson)?cJson:cJson.candidates||[];report=rRes.ok?await rRes.json():{};migrateIgnoredStatuses();render();
   }catch(e){toast(e.message);render()}finally{els.refresh.disabled=false}
 }
 
