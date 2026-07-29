@@ -31,10 +31,10 @@ jobs:
       SEO_LANGUAGE: en-US
       SEO_VERIFY_LIMIT: 5
       SEO_EXPAND_LIMIT: 0
-      GOOGLE_CSE_API_KEY: ${{ secrets.GOOGLE_CSE_API_KEY }}
-      GOOGLE_CSE_CX: ${{ secrets.GOOGLE_CSE_CX }}
-      GOOGLE_CSE_API_KEY_2: ${{ secrets.GOOGLE_CSE_API_KEY_2 }}
-      GOOGLE_CSE_CX_2: ${{ secrets.GOOGLE_CSE_CX_2 }}
+      GOOGLE_CSE_API_KEY: ${{ secrets.GOOGLE_CSE_API_KEY || secrets.GOOGLE_CSE_API_KEY_1 || secrets.GOOGLE_SEARCH_API_KEY }}
+      GOOGLE_CSE_CX: ${{ secrets.GOOGLE_CSE_CX || secrets.GOOGLE_CSE_ID || secrets.GOOGLE_SEARCH_CX }}
+      GOOGLE_CSE_API_KEY_2: ${{ secrets.GOOGLE_CSE_API_KEY_2 || secrets.GOOGLE_SEARCH_API_KEY_2 }}
+      GOOGLE_CSE_CX_2: ${{ secrets.GOOGLE_CSE_CX_2 || secrets.GOOGLE_CSE_ID_2 || secrets.GOOGLE_SEARCH_CX_2 || secrets.GOOGLE_CSE_CX || secrets.GOOGLE_CSE_ID || secrets.GOOGLE_SEARCH_CX }}
       GOOGLE_CSE_VERIFY_LIMIT: 180
       GOOGLE_CSE_DAILY_LIMIT: 90
       TRENDS_VERIFY_LIMIT: 3
