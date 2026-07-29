@@ -12,11 +12,11 @@ const reportPath = path.join(root, 'data', 'latest-report.json');
 const usagePath = path.join(root, 'data', 'serper-usage.json');
 const API_KEY = process.env.SERPER_API_KEY || '';
 const TIMEOUT_MS = Math.max(5000, Number(process.env.SERPER_TIMEOUT_MS || 15000));
-const VERIFY_LIMIT = Math.max(0, Math.min(200, Number(process.env.SERPER_VERIFY_LIMIT || 100)));
+const VERIFY_LIMIT = Math.max(0, Math.min(1200, Number(process.env.SERPER_VERIFY_LIMIT || 100)));
 const ONLINE_LIMIT = Math.max(0, Number(process.env.SERPER_ONLINE_LIMIT || Math.round(VERIFY_LIMIT * 0.7)));
 const WIKI_LIMIT = Math.max(0, Number(process.env.SERPER_WIKI_LIMIT || Math.round(VERIFY_LIMIT * 0.3)));
 const TOTAL_LIMIT = Math.max(1, Number(process.env.SERPER_TOTAL_LIMIT || 2400));
-const DAILY_LIMIT = Math.max(1, Number(process.env.SERPER_DAILY_LIMIT || 100));
+const DAILY_LIMIT = Math.max(1, Number(process.env.SERPER_DAILY_LIMIT || TOTAL_LIMIT));
 const COUNTRY = String(process.env.SEO_REGION || 'US').toLowerCase();
 const LANGUAGE = String(process.env.SEO_LANGUAGE || 'en-US').split('-')[0].toLowerCase();
 const DAY = 86400000;
@@ -35,8 +35,8 @@ async function readUsage() {
   return usage;
 }
 async function saveUsage(usage) { usage.updatedAt = new Date().toISOString(); await fs.writeFile(usagePath, JSON.stringify(usage, null, 2) + '\n'); }
-async function usageSummary() { return { enabled: Boolean(API_KEY), ...await readUsage() }; }
-async function ensureQuota() { const usage = await readUsage(); if (usage.totalUsed >= TOTAL_LIMIT || usage.dayUsed >= DAILY_LIMIT) { const error = new Error('Serper安全额度已用完'); error.code = 'SERPER_QUOTA_GUARD'; throw error; } }
+async function usageSummary() { return { enabled: Boolean(API_KEY), rushMode: true, ...await readUsage() }; }
+async function ensureQuota() { const usage = await readUsage(); if (usage.totalUsed >= TOTAL_LIMIT || usage.dayUsed >= DAILY_LIMIT) { const error = new Error('Serper可用额度已用完'); error.code = 'SERPER_QUOTA_GUARD'; throw error; } }
 async function recordSuccess() { const usage = await readUsage(); usage.totalUsed += 1; usage.dayUsed += 1; usage.lastError = null; await saveUsage(usage); }
 async function recordError(message) { const usage = await readUsage(); usage.lastError = String(message || '').slice(0, 300); await saveUsage(usage); }
 function decode(value = '') { return String(value).replace(/<[^>]+>/g, ' ').replace(/&amp;/g, '&').replace(/&quot;/g, '"').replace(/&#39;|&apos;/g, "'").replace(/\s+/g, ' ').trim(); }
@@ -191,5 +191,5 @@ const fastPassedCount = candidates.filter((candidate) => candidate.fast?.classif
 const fastWatchCount = candidates.filter((candidate) => candidate.fast?.classification === 'watch').length;
 const fastRejectedCount = candidates.filter((candidate) => ['weak', 'reject'].includes(candidate.fast?.classification)).length;
 await fs.writeFile(candidatesPath, JSON.stringify({ ...payload, candidates }, null, 2) + '\n');
-await fs.writeFile(reportPath, JSON.stringify({ ...report, seoProvider: API_KEY ? 'serper-google-search' : report.seoProvider, serperConfigured: Boolean(API_KEY), serperUsage: await usageSummary(), serperVerification: { limit: VERIFY_LIMIT, onlineLimit: ONLINE_LIMIT, wikiLimit: WIKI_LIMIT, queueSize: queue.length, verified, verifiedByChannel, errors, quotaStopped, verifiedNames, ranAt: new Date().toISOString() }, seoVerified: Number(report.seoVerified || 0) + verified, seoErrors, seoPassedCount, fastPassedCount, fastWatchCount, fastRejectedCount }, null, 2) + '\n');
-console.log(`Serper typed SEO complete: ${verified} verified (${verifiedByChannel.online} online, ${verifiedByChannel.wiki} wiki), ${errors} errors, quota stopped ${quotaStopped}.`);
+await fs.writeFile(reportPath, JSON.stringify({ ...report, seoProvider: API_KEY ? 'serper-google-search' : report.seoProvider, serperConfigured: Boolean(API_KEY), serperUsage: await usageSummary(), serperVerification: { rushMode: true, limit: VERIFY_LIMIT, onlineLimit: ONLINE_LIMIT, wikiLimit: WIKI_LIMIT, queueSize: queue.length, verified, verifiedByChannel, errors, quotaStopped, verifiedNames, ranAt: new Date().toISOString() }, seoVerified: Number(report.seoVerified || 0) + verified, seoErrors, seoPassedCount, fastPassedCount, fastWatchCount, fastRejectedCount }, null, 2) + '\n');
+console.log(`Serper rush SEO complete: ${verified} verified (${verifiedByChannel.online} online, ${verifiedByChannel.wiki} wiki), ${errors} errors, quota stopped ${quotaStopped}.`);
