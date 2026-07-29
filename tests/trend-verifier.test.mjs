@@ -1,6 +1,16 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import { calculateTrendVerdict } from '../lib/trend-verifier.mjs';
+import { calculateTrendVerdict, parseSerpApiTimeline } from '../lib/trend-verifier.mjs';
+
+test('parses SerpApi interest-over-time values',()=>{
+  const payload={interest_over_time:{timeline_data:[
+    {values:[{extracted_value:12},{value:'7'},{value:'<1'}]},
+    {values:[{value:'18'},{extracted_value:9},{extracted_value:30}]},
+  ]}};
+  assert.deepEqual(parseSerpApiTimeline(payload,0),[12,18]);
+  assert.deepEqual(parseSerpApiTimeline(payload,1),[7,9]);
+  assert.deepEqual(parseSerpApiTimeline(payload,2),[1,30]);
+});
 
 test('rejects all-zero trend demand',()=>{
   const verdict=calculateTrendVerdict({
