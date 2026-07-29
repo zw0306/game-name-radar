@@ -31,6 +31,9 @@ jobs:
       SEO_LANGUAGE: en-US
       SEO_VERIFY_LIMIT: 50
       SEO_EXPAND_LIMIT: 30
+      BRAVE_SEARCH_API_KEY: ${{ secrets.BRAVE_SEARCH_API_KEY }}
+      BRAVE_SEARCH_MONTHLY_LIMIT: 900
+      BRAVE_SEARCH_DAILY_LIMIT: 30
       TRENDS_VERIFY_LIMIT: 3
       TRENDS_ANCHOR: itch io
       SERPAPI_API_KEY: ${{ secrets.SERPAPI_API_KEY }}
@@ -73,5 +76,5 @@ jobs:
           git config user.name "game-radar-bot"
           git config user.email "game-radar-bot@users.noreply.github.com"
           git add data/
-          git commit -m "chore: update expanded SerpApi game opportunities"
+          git commit -m "chore: update expanded game opportunities"
           git push
