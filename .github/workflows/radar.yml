@@ -18,6 +18,7 @@ on:
       - "lib/site-type.mjs"
       - "scripts/scan.mjs"
       - "scripts/classify-site-types.mjs"
+      - "scripts/reset-legacy-trends.mjs"
       - "tests/**"
       - ".github/workflows/radar.yml"
 
@@ -38,6 +39,9 @@ jobs:
       SEO_LANGUAGE: en-US
       TRENDS_VERIFY_LIMIT: 3
       TRENDS_ANCHOR: itch io
+      SERPAPI_API_KEY: ${{ secrets.SERPAPI_API_KEY }}
+      SERPAPI_MONTHLY_LIMIT: 220
+      SERPAPI_DAILY_LIMIT: 8
       YOUTUBE_VERIFY_LIMIT: 3
       YOUTUBE_REGION: US
       YOUTUBE_LANGUAGE: en
@@ -52,6 +56,8 @@ jobs:
       - name: Run parser and scoring tests
         continue-on-error: true
         run: npm test
+      - name: Reset legacy free Trends results
+        run: node scripts/reset-legacy-trends.mjs
       - name: Discover games and verify rising demand
         run: npm run scan
       - name: Classify online and wiki opportunities
@@ -65,5 +71,5 @@ jobs:
           git config user.name "game-radar-bot"
           git config user.email "game-radar-bot@users.noreply.github.com"
           git add data/
-          git commit -m "chore: update typed game opportunities"
+          git commit -m "chore: update SerpApi verified game opportunities"
           git push
