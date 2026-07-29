@@ -9,16 +9,8 @@ on:
     paths:
       - "package.json"
       - "config/sources.json"
-      - "lib/scanner.mjs"
-      - "lib/seo-verifier.mjs"
-      - "lib/fast-signals.mjs"
-      - "lib/trend-verifier.mjs"
-      - "lib/rising-discovery.mjs"
-      - "lib/steam-discovery.mjs"
-      - "lib/site-type.mjs"
-      - "scripts/scan.mjs"
-      - "scripts/classify-site-types.mjs"
-      - "scripts/reset-legacy-trends.mjs"
+      - "lib/**"
+      - "scripts/**"
       - "tests/**"
       - ".github/workflows/radar.yml"
 
@@ -37,11 +29,17 @@ jobs:
       TARGET_MARKET: US_GLOBAL
       SEO_REGION: US
       SEO_LANGUAGE: en-US
+      SEO_VERIFY_LIMIT: 50
+      SEO_EXPAND_LIMIT: 30
       TRENDS_VERIFY_LIMIT: 3
       TRENDS_ANCHOR: itch io
       SERPAPI_API_KEY: ${{ secrets.SERPAPI_API_KEY }}
       SERPAPI_MONTHLY_LIMIT: 220
       SERPAPI_DAILY_LIMIT: 8
+      SERPAPI_FILL_ENABLED: true
+      SERPAPI_TIER1_LIMIT: 3
+      SERPAPI_TIER2_LIMIT: 3
+      SERPAPI_TIER3_LIMIT: 2
       YOUTUBE_VERIFY_LIMIT: 3
       YOUTUBE_REGION: US
       YOUTUBE_LANGUAGE: en
@@ -60,6 +58,10 @@ jobs:
         run: node scripts/reset-legacy-trends.mjs
       - name: Discover games and verify rising demand
         run: npm run scan
+      - name: Expand low-risk SEO candidate verification
+        run: node scripts/expand-seo-queue.mjs
+      - name: Spend spare SerpApi quota on tiered candidates
+        run: node scripts/fill-serpapi-quota.mjs
       - name: Classify online and wiki opportunities
         run: npm run classify
       - name: Commit updated result data
@@ -71,5 +73,5 @@ jobs:
           git config user.name "game-radar-bot"
           git config user.email "game-radar-bot@users.noreply.github.com"
           git add data/
-          git commit -m "chore: update SerpApi verified game opportunities"
+          git commit -m "chore: update expanded SerpApi game opportunities"
           git push
