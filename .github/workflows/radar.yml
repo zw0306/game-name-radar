@@ -12,6 +12,8 @@ on:
       - "lib/**"
       - "scripts/**"
       - "tests/**"
+      - "app.js"
+      - "index.html"
       - ".github/workflows/radar.yml"
 
 permissions:
@@ -33,6 +35,8 @@ jobs:
       SEO_EXPAND_LIMIT: 0
       SERPER_API_KEY: ${{ secrets.SERPER_API_KEY }}
       SERPER_VERIFY_LIMIT: 100
+      SERPER_ONLINE_LIMIT: 70
+      SERPER_WIKI_LIMIT: 30
       SERPER_TOTAL_LIMIT: 2400
       SERPER_DAILY_LIMIT: 100
       GOOGLE_CSE_API_KEY: ${{ secrets.GOOGLE_CSE_API_KEY || secrets.GOOGLE_CSE_API_KEY_1 || secrets.GOOGLE_SEARCH_API_KEY }}
@@ -51,9 +55,9 @@ jobs:
       SERPAPI_MONTHLY_LIMIT: 220
       SERPAPI_DAILY_LIMIT: 8
       SERPAPI_FILL_ENABLED: true
-      SERPAPI_TIER1_LIMIT: 8
-      SERPAPI_TIER2_LIMIT: 8
-      SERPAPI_TIER3_LIMIT: 8
+      SERPAPI_ONLINE_LIMIT: 5
+      SERPAPI_WIKI_LIMIT: 2
+      SERPAPI_FLEX_LIMIT: 1
       YOUTUBE_VERIFY_LIMIT: 3
       YOUTUBE_REGION: US
       YOUTUBE_LANGUAGE: en
@@ -70,15 +74,19 @@ jobs:
         run: npm test
       - name: Reset legacy free Trends results
         run: node scripts/reset-legacy-trends.mjs
-      - name: Discover games and verify rising demand
+      - name: Discover games and build source evidence
         run: npm run scan
-      - name: Verify SEO intent with Serper Google Search
+      - name: Classify online and wiki channels before verification
+        run: npm run classify
+      - name: Verify 70 online and 30 wiki SEO candidates with Serper
         run: node scripts/verify-serper.mjs
-      - name: Verify remaining SEO intent with dual Google CSE accounts
+      - name: Verify remaining SEO intent with Google CSE fallback
         run: node scripts/verify-google-cse.mjs
-      - name: Spend pooled SerpApi quota on all eligible candidates
+      - name: Recalculate typed site classification
+        run: npm run classify
+      - name: Spend pooled SerpApi quota with online priority
         run: node scripts/fill-serpapi-pool.mjs
-      - name: Classify online and wiki opportunities
+      - name: Finalize online and wiki opportunity counts
         run: npm run classify
       - name: Restore pooled SerpApi usage report
         run: node scripts/fill-serpapi-pool.mjs --report-only
@@ -91,5 +99,5 @@ jobs:
           git config user.name "game-radar-bot"
           git config user.email "game-radar-bot@users.noreply.github.com"
           git add data/
-          git commit -m "chore: maximize pooled SerpApi game opportunities"
+          git commit -m "chore: update typed online and wiki game opportunities"
           git push
