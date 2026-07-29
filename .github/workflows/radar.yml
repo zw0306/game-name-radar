@@ -44,6 +44,10 @@ jobs:
       TRENDS_VERIFY_LIMIT: 3
       TRENDS_ANCHOR: itch io
       SERPAPI_API_KEY: ${{ secrets.SERPAPI_API_KEY }}
+      SERPAPI_API_KEY_2: ${{ secrets.SERPAPI_API_KEY_2 }}
+      SERPAPI_API_KEY_3: ${{ secrets.SERPAPI_API_KEY_3 }}
+      SERPAPI_API_KEY_4: ${{ secrets.SERPAPI_API_KEY_4 }}
+      SERPAPI_API_KEY_5: ${{ secrets.SERPAPI_API_KEY_5 }}
       SERPAPI_MONTHLY_LIMIT: 220
       SERPAPI_DAILY_LIMIT: 8
       SERPAPI_FILL_ENABLED: true
@@ -72,10 +76,12 @@ jobs:
         run: node scripts/verify-serper.mjs
       - name: Verify remaining SEO intent with dual Google CSE accounts
         run: node scripts/verify-google-cse.mjs
-      - name: Spend spare SerpApi quota on tiered candidates
-        run: node scripts/fill-serpapi-quota.mjs
+      - name: Spend pooled SerpApi quota on tiered candidates
+        run: node scripts/fill-serpapi-pool.mjs
       - name: Classify online and wiki opportunities
         run: npm run classify
+      - name: Restore pooled SerpApi usage report
+        run: node scripts/fill-serpapi-pool.mjs --report-only
       - name: Commit updated result data
         run: |
           if git diff --quiet -- data/; then
@@ -85,5 +91,5 @@ jobs:
           git config user.name "game-radar-bot"
           git config user.email "game-radar-bot@users.noreply.github.com"
           git add data/
-          git commit -m "chore: update Serper verified game opportunities"
+          git commit -m "chore: update pooled SerpApi game opportunities"
           git push
