@@ -1,0 +1,221 @@
+import fs from 'node:fs/promises';
+import path from 'node:path';
+import { spawn } from 'node:child_process';
+import { fileURLToPath } from 'node:url';
+
+const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
+const dataDir = path.join(root, 'data');
+const reportPath = path.join(dataDir, 'latest-report.json');
+const primaryUsagePath = path.join(dataDir, 'serpapi-usage.json');
+const poolUsagePath = path.join(dataDir, 'serpapi-pool-usage.json');
+const reportOnly = process.argv.includes('--report-only');
+const monthlyLimit = Math.max(1, Number(process.env.SERPAPI_MONTHLY_LIMIT || 220));
+const dailyLimit = Math.max(1, Number(process.env.SERPAPI_DAILY_LIMIT || 8));
+
+const slotDefinitions = [
+  ['1', 'SERPAPI_API_KEY'],
+  ['2', 'SERPAPI_API_KEY_2'],
+  ['3', 'SERPAPI_API_KEY_3'],
+  ['4', 'SERPAPI_API_KEY_4'],
+  ['5', 'SERPAPI_API_KEY_5'],
+];
+
+const slots = slotDefinitions
+  .map(([id, envName]) => ({
+    id,
+    envName,
+    key: String(process.env[envName] || '').trim(),
+    usagePath: id === '1' ? primaryUsagePath : path.join(dataDir, `serpapi-usage-${id}.json`),
+  }))
+  .filter((slot) => slot.key);
+
+async function readJson(file, fallback = {}) {
+  try { return JSON.parse(await fs.readFile(file, 'utf8')); }
+  catch { return fallback; }
+}
+
+async function writeJson(file, value) {
+  await fs.writeFile(file, JSON.stringify(value, null, 2) + '\n');
+}
+
+function currentPeriod() {
+  const now = new Date();
+  return { month: now.toISOString().slice(0, 7), day: now.toISOString().slice(0, 10) };
+}
+
+function normalizeUsage(raw = {}) {
+  const { month, day } = currentPeriod();
+  const sameMonth = raw.month === month;
+  const sameDay = sameMonth && raw.day === day;
+  return {
+    month,
+    monthUsed: sameMonth ? Number(raw.monthUsed || 0) : 0,
+    day,
+    dayUsed: sameDay ? Number(raw.dayUsed || 0) : 0,
+    monthlyLimit,
+    dailyLimit,
+    updatedAt: raw.updatedAt || null,
+  };
+}
+
+async function aggregateUsage() {
+  const { month, day } = currentPeriod();
+  const accountUsage = {};
+  let monthUsed = 0;
+  let dayUsed = 0;
+
+  for (const slot of slots) {
+    const usage = normalizeUsage(await readJson(slot.usagePath, {}));
+    monthUsed += usage.monthUsed;
+    dayUsed += usage.dayUsed;
+    accountUsage[slot.id] = {
+      envName: slot.envName,
+      monthUsed: usage.monthUsed,
+      dayUsed: usage.dayUsed,
+      monthlyLimit,
+      dailyLimit,
+      updatedAt: usage.updatedAt,
+    };
+  }
+
+  return {
+    enabled: slots.length > 0,
+    configuredSlots: slots.length,
+    month,
+    monthUsed,
+    day,
+    dayUsed,
+    monthlyLimit: monthlyLimit * slots.length,
+    dailyLimit: dailyLimit * slots.length,
+    accounts: accountUsage,
+    updatedAt: new Date().toISOString(),
+  };
+}
+
+function runNode(script, env) {
+  return new Promise((resolve) => {
+    const child = spawn(process.execPath, [script], {
+      cwd: root,
+      env,
+      stdio: 'inherit',
+    });
+    child.on('error', (error) => resolve({ ok: false, code: -1, error: error.message }));
+    child.on('exit', (code) => resolve({ ok: code === 0, code: code ?? -1, error: code === 0 ? null : `exit ${code}` }));
+  });
+}
+
+function addCounts(target, source) {
+  for (const key of Object.keys(target)) target[key] += Number(source?.[key] || 0);
+}
+
+async function writePoolReport(runs = []) {
+  const usage = await aggregateUsage();
+  await writeJson(poolUsagePath, usage);
+
+  const report = await readJson(reportPath, {});
+  const tierCounts = { strong: 0, secondary: 0, strategic: 0 };
+  const verifiedNames = [];
+  let verified = 0;
+  let errors = 0;
+  let remainingAtStart = 0;
+  let queueSize = 0;
+  let lastFill = report.serpApiQuotaFill || {};
+
+  for (const run of runs) {
+    const fill = run.fill || {};
+    verified += Number(fill.verified || 0);
+    errors += Number(fill.errors || 0);
+    remainingAtStart += Number(fill.remainingAtStart || 0);
+    queueSize += Number(fill.queueSize || 0);
+    addCounts(tierCounts, fill.tierCounts);
+    verifiedNames.push(...(fill.verifiedNames || []));
+    lastFill = fill;
+  }
+
+  const accountRuns = Object.fromEntries(runs.map((run) => [run.slotId, {
+    envName: run.envName,
+    ok: run.ok,
+    error: run.error,
+    verified: Number(run.fill?.verified || 0),
+    errors: Number(run.fill?.errors || 0),
+    quotaStopped: Boolean(run.fill?.quotaStopped),
+  }]));
+
+  const mergedFill = runs.length ? {
+    enabled: true,
+    configuredSlots: slots.length,
+    remainingAtStart,
+    queueSize,
+    verified,
+    errors,
+    quotaStopped: runs.every((run) => Boolean(run.fill?.quotaStopped)),
+    tierCounts,
+    pendingByTier: lastFill.pendingByTier || { strong: 0, secondary: 0, strategic: 0 },
+    verifiedNames,
+    caps: lastFill.caps || {},
+    accounts: accountRuns,
+    ranAt: new Date().toISOString(),
+  } : {
+    ...lastFill,
+    configuredSlots: slots.length,
+  };
+
+  await writeJson(reportPath, {
+    ...report,
+    trendProvider: slots.length ? 'serpapi' : report.trendProvider,
+    serpApiConfigured: slots.length > 0,
+    serpApiConfiguredSlots: slots.length,
+    serpApiUsage: usage,
+    serpApiPoolUsage: usage,
+    serpApiQuotaFill: mergedFill,
+  });
+
+  return usage;
+}
+
+if (!slots.length) {
+  console.log('No SerpApi keys configured; skipping pooled Trends verification.');
+  await writePoolReport([]);
+  process.exit(0);
+}
+
+if (reportOnly) {
+  const usage = await writePoolReport([]);
+  console.log(`SerpApi pool report: ${usage.configuredSlots} accounts, daily ${usage.dayUsed}/${usage.dailyLimit}.`);
+  process.exit(0);
+}
+
+const runs = [];
+let primaryUsageAfter = null;
+
+for (const slot of slots) {
+  if (slot.id !== '1') {
+    const secondaryUsage = normalizeUsage(await readJson(slot.usagePath, {}));
+    await writeJson(primaryUsagePath, secondaryUsage);
+  }
+
+  console.log(`Running SerpApi Trends pool account ${slot.id}/${slots.length} (${slot.envName}).`);
+  const result = await runNode('scripts/fill-serpapi-quota.mjs', {
+    ...process.env,
+    SERPAPI_API_KEY: slot.key,
+    SERPAPI_MONTHLY_LIMIT: String(monthlyLimit),
+    SERPAPI_DAILY_LIMIT: String(dailyLimit),
+  });
+
+  const activeUsage = normalizeUsage(await readJson(primaryUsagePath, {}));
+  if (slot.id === '1') primaryUsageAfter = activeUsage;
+  else await writeJson(slot.usagePath, activeUsage);
+
+  const report = await readJson(reportPath, {});
+  runs.push({
+    slotId: slot.id,
+    envName: slot.envName,
+    ok: result.ok,
+    error: result.error,
+    fill: report.serpApiQuotaFill || {},
+  });
+}
+
+if (primaryUsageAfter) await writeJson(primaryUsagePath, primaryUsageAfter);
+const usage = await writePoolReport(runs);
+console.log(`SerpApi pool complete: ${slots.length} accounts, daily ${usage.dayUsed}/${usage.dailyLimit}, monthly ${usage.monthUsed}/${usage.monthlyLimit}.`);
