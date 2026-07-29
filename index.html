@@ -43,7 +43,7 @@
         <div>
           <p class="eyebrow">TYPED OPPORTUNITY RESULTS</p>
           <h2>游戏关键词结果</h2>
-          <p>在线游戏型适合iframe或HTML5站；Wiki攻略型适合攻略、角色、地图、联机教程和更新内容。</p>
+          <p>默认显示所有已确认上涨的词；“最终建站推荐”只保留同时通过搜索意图、快速热度、名称歧义和趋势门槛的结果。</p>
         </div>
         <div class="filters">
           <input id="searchInput" type="search" placeholder="搜索游戏名或来源" />
@@ -54,7 +54,8 @@
             <option value="pending">类型待确认</option>
           </select>
           <select id="recommendationFilter">
-            <option value="recommended">明显上涨推荐</option>
+            <option value="trend-rising">全部上涨词</option>
+            <option value="recommended">最终建站推荐</option>
             <option value="fast-pass">快速层通过</option>
             <option value="trend-pending">等待Trends验证</option>
             <option value="independent">美国上涨·适合独立站</option>
@@ -91,6 +92,6 @@
     <footer>Game Name Radar · 在线游戏型仍需人工确认iframe权限；Wiki攻略型需检查精确域名与现有攻略站竞争。</footer>
   </main>
   <div id="toast" class="toast" role="status"></div>
-  <script type="module" src="/app.js"></script>
+  <script type="module" src="/app.js?v=10"></script>
 </body>
 </html>
