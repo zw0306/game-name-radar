@@ -55,15 +55,15 @@ jobs:
       SERPAPI_WIKI_LIMIT: 999
       SERPAPI_FLEX_LIMIT: 999
 
-      # Apify Trends fallback provider. Start with two candidates for runtime validation.
+      # Apify Trends fallback provider. Validate one queued candidate before scaling.
       APIFY_API_TOKEN: ${{ secrets.APIFY_API_TOKEN }}
       APIFY_FAST_TRENDS_ACTOR_ID: data_xplorer~google-trends-fast-scraper
       APIFY_TRENDS_ENABLED: true
-      APIFY_TRENDS_VERIFY_LIMIT: 2
+      APIFY_TRENDS_VERIFY_LIMIT: 1
       APIFY_TRENDS_ONLINE_LIMIT: 1
       APIFY_TRENDS_WIKI_LIMIT: 1
-      APIFY_TRENDS_CONCURRENCY: 2
-      APIFY_TRENDS_TIMEOUT_MS: 60000
+      APIFY_TRENDS_CONCURRENCY: 1
+      APIFY_TRENDS_TIMEOUT_MS: 150000
       APIFY_TRENDS_MONTHLY_CALL_LIMIT: 4000
       APIFY_TRENDS_MAX_CHARGE_USD: 0.05
 
@@ -78,6 +78,11 @@ jobs:
 
       - name: Verify Apify account token without running an Actor
         run: node scripts/check-apify-account.mjs
+
+      - name: Inspect recent lightweight Apify Trends runs without starting an Actor
+        env:
+          APIFY_TRENDS_ACTOR_ID: data_xplorer~google-trends-fast-scraper
+        run: node scripts/inspect-apify-trends-runs.mjs
 
       - name: Persist Apify fallback preflight diagnostics
         run: node scripts/check-apify-fallback-runtime.mjs
@@ -140,5 +145,5 @@ jobs:
           git config user.name "game-radar-bot"
           git config user.email "game-radar-bot@users.noreply.github.com"
           git add data/
-          git commit -m "chore: verify Apify Trends fallback runtime"
+          git commit -m "chore: verify Apify Trends fallback cold start"
           git push
