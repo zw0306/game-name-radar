@@ -22,8 +22,16 @@ function sanitize(value) {
   return out;
 }
 
+function buildTrendsUrl(queries) {
+  const url = new URL('https://trends.google.com/trends/explore');
+  url.searchParams.set('date', 'today 3-m');
+  url.searchParams.set('geo', 'US');
+  url.searchParams.set('q', queries.join(','));
+  return url.toString();
+}
+
 const existing = await readExisting();
-if (existing?.ok && existing?.actorId === actorId) {
+if (existing?.ok && Number(existing?.itemCount || 0) > 0 && existing?.actorId === actorId) {
   console.log('Apify Trends smoke test already completed; skipping.');
   process.exit(0);
 }
@@ -34,13 +42,10 @@ if (!token) {
   process.exit(0);
 }
 
+const queries = ['Shift At Midnight', 'Shift At Midnight wiki', 'Shift At Midnight guide', 'steam'];
 const input = {
-  searchTerms: ['Shift At Midnight,Shift At Midnight wiki,Shift At Midnight guide,steam'],
-  isMultiple: true,
-  timeRange: 'today 3-m',
-  geo: 'US',
+  startUrls: [{ url: buildTrendsUrl(queries) }],
   viewedFrom: 'us',
-  category: '',
   maxItems: 1,
   maxConcurrency: 1,
   maxRequestRetries: 2,
@@ -67,11 +72,12 @@ try {
   result = {
     checkedAt: new Date().toISOString(),
     configured: true,
-    ok: true,
+    ok: items.length > 0,
     actorId,
-    input: { ...input, searchTerms: input.searchTerms },
+    input: { queries, startUrls: input.startUrls },
     itemCount: items.length,
     sample: sanitize(items.slice(0, 2)),
+    error: items.length ? null : 'Actor completed but returned no dataset items',
   };
   console.log(`Apify Trends smoke test completed with ${items.length} dataset item(s).`);
 } catch (error) {
