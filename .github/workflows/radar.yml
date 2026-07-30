@@ -56,6 +56,9 @@ jobs:
       SERPAPI_WIKI_LIMIT: 999
       SERPAPI_FLEX_LIMIT: 999
 
+      # Apify fallback provider. This run only validates the token; no Actor is started yet.
+      APIFY_API_TOKEN: ${{ secrets.APIFY_API_TOKEN }}
+
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
@@ -64,6 +67,9 @@ jobs:
 
       - name: Install scanner dependencies
         run: npm install --no-audit --no-fund
+
+      - name: Verify Apify account token without running an Actor
+        run: node scripts/check-apify-account.mjs
 
       - name: Run parser and scoring tests
         continue-on-error: true
@@ -111,5 +117,5 @@ jobs:
           git config user.name "game-radar-bot"
           git config user.email "game-radar-bot@users.noreply.github.com"
           git add data/
-          git commit -m "chore: inspect SerpApi accounts and verify game opportunities"
+          git commit -m "chore: inspect Apify and verify game opportunities"
           git push
