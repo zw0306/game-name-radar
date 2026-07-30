@@ -34,12 +34,14 @@ async function readUsage() {
   if (usage.day !== today()) { usage.day = today(); usage.dayUsed = 0; usage.updatedAt = now; }
   return usage;
 }
+
 async function saveUsage(usage) { usage.updatedAt = new Date().toISOString(); await fs.writeFile(usagePath, JSON.stringify(usage, null, 2) + '\n'); }
 async function usageSummary() { return { enabled: Boolean(API_KEY), rushMode: true, ...await readUsage() }; }
 async function ensureQuota() { const usage = await readUsage(); if (usage.totalUsed >= TOTAL_LIMIT || usage.dayUsed >= DAILY_LIMIT) { const error = new Error('Serper可用额度已用完'); error.code = 'SERPER_QUOTA_GUARD'; throw error; } }
 async function recordSuccess() { const usage = await readUsage(); usage.totalUsed += 1; usage.dayUsed += 1; usage.lastError = null; await saveUsage(usage); }
 async function recordError(message) { const usage = await readUsage(); usage.lastError = String(message || '').slice(0, 300); await saveUsage(usage); }
 function decode(value = '') { return String(value).replace(/<[^>]+>/g, ' ').replace(/&amp;/g, '&').replace(/&quot;/g, '"').replace(/&#39;|&apos;/g, "'").replace(/\s+/g, ' ').trim(); }
+function safeSerperQuery(value = '') { return String(value).replace(/["'\[\]{}()<>|*~^`]/g, ' ').replace(/\s+/g, ' ').trim().slice(0, 120); }
 
 export function parseSerperResults(payload = {}) {
   return (payload.organic || []).slice(0, 10).map((item) => ({ url: String(item.link || ''), title: decode(item.title || ''), snippet: decode(item.snippet || '') })).filter((item) => item.url);
@@ -50,7 +52,7 @@ async function searchSerper(query) {
   const controller = new AbortController();
   const timer = setTimeout(() => controller.abort(), TIMEOUT_MS);
   try {
-    const response = await fetch('https://google.serper.dev/search', { method: 'POST', headers: { 'X-API-KEY': API_KEY, 'Content-Type': 'application/json' }, body: JSON.stringify({ q: query, gl: COUNTRY, hl: LANGUAGE, num: 10, autocorrect: true }), signal: controller.signal });
+    const response = await fetch('https://google.serper.dev/search', { method: 'POST', headers: { 'X-API-KEY': API_KEY, 'Content-Type': 'application/json' }, body: JSON.stringify({ q: safeSerperQuery(query), gl: COUNTRY, hl: LANGUAGE, num: 10, autocorrect: true }), signal: controller.signal });
     const payload = await response.json().catch(() => ({}));
     if (!response.ok) {
       const message = payload?.message || payload?.error || `Serper returned ${response.status}`;
@@ -170,7 +172,7 @@ if (!API_KEY) console.log('SERPER_API_KEY is not configured; skipping Serper SEO
 for (const candidate of API_KEY ? queue : []) {
   try {
     const name = cleanGameName(candidate.gameName || '');
-    const [results, suggestions] = await Promise.all([searchSerper(`"${name}"`), fetchSuggestions(name)]);
+    const [results, suggestions] = await Promise.all([searchSerper(name), fetchSuggestions(name)]);
     const verdict = applyChannelSeoAdjustment(candidate, calculateSeoVerdict({ gameName: name, exactResults: results, gameResults: [], suggestions, discoveryScore: candidate.discoveryScore || 0 }));
     candidate.seo = { modelVersion: SEO_MODEL_VERSION, checkedAt: new Date().toISOString(), status: 'ok', provider: 'serper+autocomplete', queryName: name, searchRequests: 1, serperUsage: await usageSummary(), ...verdict };
     candidate.fast = calculateFastSignals(candidate, candidate.fast || {});
