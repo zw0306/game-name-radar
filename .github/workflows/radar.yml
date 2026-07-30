@@ -47,7 +47,6 @@ jobs:
       SERPER_DAILY_LIMIT: 2450
 
       # Third-party Google Trends provider: SerpApi.
-      # Only the primary account is used for searches until account ownership and quotas are inspected.
       SERPAPI_API_KEY: ${{ secrets.SERPAPI_API_KEY }}
       SERPAPI_MONTHLY_LIMIT: 245
       SERPAPI_DAILY_LIMIT: 245
@@ -72,8 +71,8 @@ jobs:
       - name: Verify Apify account token without running an Actor
         run: node scripts/check-apify-account.mjs
 
-      - name: Inspect Apify Google Trends output once
-        run: node scripts/smoke-test-apify-trends.mjs
+      - name: Inspect recent Apify Trends runs without starting an Actor
+        run: node scripts/inspect-apify-trends-runs.mjs
 
       - name: Run parser and scoring tests
         continue-on-error: true
@@ -121,5 +120,5 @@ jobs:
           git config user.name "game-radar-bot"
           git config user.email "game-radar-bot@users.noreply.github.com"
           git add data/
-          git commit -m "chore: inspect Apify Trends output and verify game opportunities"
+          git commit -m "chore: inspect Apify Trends runs and verify game opportunities"
           git push
