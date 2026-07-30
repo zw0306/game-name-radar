@@ -55,7 +55,7 @@ jobs:
       SERPAPI_WIKI_LIMIT: 999
       SERPAPI_FLEX_LIMIT: 999
 
-      # Test a more resilient Apify fallback; production queue remains paused during validation.
+      # Pause production Apify queue while inspecting the latest alternative Actor run.
       APIFY_API_TOKEN: ${{ secrets.APIFY_API_TOKEN }}
       APIFY_DATA_OPS_TRENDS_ACTOR_ID: data_ops_main~google-trends
       APIFY_FAST_TRENDS_ACTOR_ID: data_xplorer~google-trends-fast-scraper
@@ -80,8 +80,10 @@ jobs:
       - name: Verify Apify account token without running an Actor
         run: node scripts/check-apify-account.mjs
 
-      - name: Test resilient Apify Trends Actor once
-        run: node scripts/smoke-test-apify-data-ops-trends.mjs
+      - name: Inspect latest resilient Apify Trends run without starting an Actor
+        env:
+          APIFY_TRENDS_ACTOR_ID: data_ops_main~google-trends
+        run: node scripts/inspect-apify-trends-runs.mjs
 
       - name: Persist Apify fallback preflight diagnostics
         run: node scripts/check-apify-fallback-runtime.mjs
@@ -120,7 +122,7 @@ jobs:
       - name: Restore SerpApi usage report
         run: node scripts/fill-serpapi-pool.mjs --report-only
 
-      - name: Skip production Apify queue during Actor validation
+      - name: Skip production Apify queue during Actor inspection
         id: apify_fill
         continue-on-error: true
         run: node scripts/fill-apify-trends.mjs
@@ -144,5 +146,5 @@ jobs:
           git config user.name "game-radar-bot"
           git config user.email "game-radar-bot@users.noreply.github.com"
           git add data/
-          git commit -m "chore: test resilient Apify Trends actor"
+          git commit -m "chore: inspect resilient Apify Trends actor"
           git push
