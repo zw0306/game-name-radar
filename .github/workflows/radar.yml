@@ -47,7 +47,7 @@ jobs:
       SERPER_DAILY_LIMIT: 2450
 
       # Third-party Google Trends provider: SerpApi.
-      # Only the primary account is enabled. Additional free-account rotation is intentionally disabled.
+      # Only the primary account is used for searches until account ownership and quotas are inspected.
       SERPAPI_API_KEY: ${{ secrets.SERPAPI_API_KEY }}
       SERPAPI_MONTHLY_LIMIT: 245
       SERPAPI_DAILY_LIMIT: 245
@@ -84,7 +84,16 @@ jobs:
       - name: Recalculate typed site classification
         run: npm run classify
 
-      - name: Verify all eligible Trends candidates with SerpApi
+      - name: Inspect all SerpApi account quotas without spending searches
+        env:
+          SERPAPI_API_KEY: ${{ secrets.SERPAPI_API_KEY }}
+          SERPAPI_API_KEY_2: ${{ secrets.SERPAPI_API_KEY_2 }}
+          SERPAPI_API_KEY_3: ${{ secrets.SERPAPI_API_KEY_3 }}
+          SERPAPI_API_KEY_4: ${{ secrets.SERPAPI_API_KEY_4 }}
+          SERPAPI_API_KEY_5: ${{ secrets.SERPAPI_API_KEY_5 }}
+        run: node scripts/check-serpapi-accounts.mjs
+
+      - name: Verify all eligible Trends candidates with primary SerpApi account
         run: node scripts/fill-serpapi-pool.mjs
 
       - name: Finalize online and wiki opportunity counts
@@ -102,5 +111,5 @@ jobs:
           git config user.name "game-radar-bot"
           git config user.email "game-radar-bot@users.noreply.github.com"
           git add data/
-          git commit -m "chore: verify game opportunities with third-party APIs"
+          git commit -m "chore: inspect SerpApi accounts and verify game opportunities"
           git push
