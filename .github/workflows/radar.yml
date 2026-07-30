@@ -57,7 +57,7 @@ jobs:
 
       # Apify fallback provider.
       APIFY_API_TOKEN: ${{ secrets.APIFY_API_TOKEN }}
-      APIFY_TRENDS_ACTOR_ID: apify~google-trends-scraper
+      APIFY_FAST_TRENDS_ACTOR_ID: data_xplorer~google-trends-fast-scraper
 
     steps:
       - uses: actions/checkout@v4
@@ -71,8 +71,8 @@ jobs:
       - name: Verify Apify account token without running an Actor
         run: node scripts/check-apify-account.mjs
 
-      - name: Inspect recent Apify Trends runs without starting an Actor
-        run: node scripts/inspect-apify-trends-runs.mjs
+      - name: Test lightweight Apify Trends provider once
+        run: node scripts/smoke-test-apify-fast-trends.mjs
 
       - name: Run parser and scoring tests
         continue-on-error: true
@@ -120,5 +120,5 @@ jobs:
           git config user.name "game-radar-bot"
           git config user.email "game-radar-bot@users.noreply.github.com"
           git add data/
-          git commit -m "chore: inspect Apify Trends runs and verify game opportunities"
+          git commit -m "chore: test lightweight Apify Trends provider"
           git push
