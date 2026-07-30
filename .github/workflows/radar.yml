@@ -55,14 +55,15 @@ jobs:
       SERPAPI_WIKI_LIMIT: 999
       SERPAPI_FLEX_LIMIT: 999
 
-      # Apify Trends fallback provider. Start conservatively, then raise after runtime verification.
+      # Apify Trends fallback provider. Start with two candidates for runtime validation.
       APIFY_API_TOKEN: ${{ secrets.APIFY_API_TOKEN }}
       APIFY_FAST_TRENDS_ACTOR_ID: data_xplorer~google-trends-fast-scraper
       APIFY_TRENDS_ENABLED: true
-      APIFY_TRENDS_VERIFY_LIMIT: 10
-      APIFY_TRENDS_ONLINE_LIMIT: 7
-      APIFY_TRENDS_WIKI_LIMIT: 3
+      APIFY_TRENDS_VERIFY_LIMIT: 2
+      APIFY_TRENDS_ONLINE_LIMIT: 1
+      APIFY_TRENDS_WIKI_LIMIT: 1
       APIFY_TRENDS_CONCURRENCY: 2
+      APIFY_TRENDS_TIMEOUT_MS: 60000
       APIFY_TRENDS_MONTHLY_CALL_LIMIT: 4000
       APIFY_TRENDS_MAX_CHARGE_USD: 0.05
 
