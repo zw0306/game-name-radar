@@ -55,14 +55,14 @@ jobs:
       SERPAPI_WIKI_LIMIT: 999
       SERPAPI_FLEX_LIMIT: 999
 
-      # Apify Trends fallback provider.
+      # Apify Trends fallback provider. Start conservatively, then raise after runtime verification.
       APIFY_API_TOKEN: ${{ secrets.APIFY_API_TOKEN }}
       APIFY_FAST_TRENDS_ACTOR_ID: data_xplorer~google-trends-fast-scraper
       APIFY_TRENDS_ENABLED: true
-      APIFY_TRENDS_VERIFY_LIMIT: 40
-      APIFY_TRENDS_ONLINE_LIMIT: 28
-      APIFY_TRENDS_WIKI_LIMIT: 12
-      APIFY_TRENDS_CONCURRENCY: 3
+      APIFY_TRENDS_VERIFY_LIMIT: 10
+      APIFY_TRENDS_ONLINE_LIMIT: 7
+      APIFY_TRENDS_WIKI_LIMIT: 3
+      APIFY_TRENDS_CONCURRENCY: 2
       APIFY_TRENDS_MONTHLY_CALL_LIMIT: 4000
       APIFY_TRENDS_MAX_CHARGE_USD: 0.05
 
@@ -77,6 +77,9 @@ jobs:
 
       - name: Verify Apify account token without running an Actor
         run: node scripts/check-apify-account.mjs
+
+      - name: Persist Apify fallback preflight diagnostics
+        run: node scripts/check-apify-fallback-runtime.mjs
 
       - name: Run parser and scoring tests
         continue-on-error: true
@@ -113,7 +116,16 @@ jobs:
         run: node scripts/fill-serpapi-pool.mjs --report-only
 
       - name: Fill remaining Trends queue with Apify
+        id: apify_fill
+        continue-on-error: true
         run: node scripts/fill-apify-trends.mjs
+
+      - name: Record Apify fallback step outcome
+        env:
+          APIFY_STEP_OUTCOME: ${{ steps.apify_fill.outcome }}
+          APIFY_STEP_CONCLUSION: ${{ steps.apify_fill.conclusion }}
+        run: |
+          node -e "const fs=require('fs');fs.writeFileSync('data/apify-fallback-step.json',JSON.stringify({recordedAt:new Date().toISOString(),outcome:process.env.APIFY_STEP_OUTCOME,conclusion:process.env.APIFY_STEP_CONCLUSION},null,2)+'\n')"
 
       - name: Finalize online and wiki opportunity counts
         run: npm run classify
@@ -127,5 +139,5 @@ jobs:
           git config user.name "game-radar-bot"
           git config user.email "game-radar-bot@users.noreply.github.com"
           git add data/
-          git commit -m "chore: verify Trends with SerpApi and Apify fallback"
+          git commit -m "chore: verify Apify Trends fallback runtime"
           git push
