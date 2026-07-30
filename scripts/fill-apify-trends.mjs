@@ -3,7 +3,7 @@ import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { buildBalancedTrendQueue, TREND_MODEL_VERSION } from '../lib/trend-queue.mjs';
 import { TREND_PROFILE_VERSION } from '../lib/trend-verifier.mjs';
-import { verifyApifyTrendDemand, isApifyFastTrendsConfigured } from '../lib/apify-fast-trends.mjs';
+import { verifyApifyResidentialTrendDemand, isApifyResidentialTrendsConfigured } from '../lib/apify-residential-trends.mjs';
 import { applyFinalRecommendation, recommendationCounts, channelCounts } from '../lib/opportunity-finalizer.mjs';
 import { classifySiteType } from '../lib/site-type.mjs';
 
@@ -40,7 +40,7 @@ function providerCounts(candidates) {
   const counts = {};
   for (const candidate of candidates) {
     const provider = candidate.trend?.provider;
-    if (provider) counts[provider] = (counts[provider] || 0) + 1;
+    if (provider && !['pending', 'error'].includes(candidate.trend?.classification)) counts[provider] = (counts[provider] || 0) + 1;
   }
   return counts;
 }
@@ -50,7 +50,7 @@ const candidates = Array.isArray(payload) ? payload : payload.candidates || [];
 for (const candidate of candidates) candidate.siteType = classifySiteType(candidate);
 const report = await readJson(reportPath, {});
 let usage = await readUsage();
-const configured = isApifyFastTrendsConfigured();
+const configured = isApifyResidentialTrendsConfigured();
 const remainingCallsAtStart = Math.max(0, monthlyCallLimit - Number(usage.actorCalls || 0));
 const maxCandidatesByCalls = Math.floor(remainingCallsAtStart / 2);
 const effectiveLimit = Math.min(verifyLimit, maxCandidatesByCalls);
@@ -78,8 +78,8 @@ async function processItem(item) {
   const candidate = item.candidate;
   const previousTrend = candidate.trend;
   try {
-    console.log(`Apify Trends fallback [${item.channel}/${item.tier}]: ${candidate.gameName}`);
-    const verdict = await verifyApifyTrendDemand(candidate.gameName, { siteType: item.channel, market: 'US' });
+    console.log(`Apify residential Trends fallback [${item.channel}/${item.tier}]: ${candidate.gameName}`);
+    const verdict = await verifyApifyResidentialTrendDemand(candidate.gameName, { siteType: item.channel, market: 'US' });
     candidate.trend = {
       ...verdict,
       modelVersion: TREND_MODEL_VERSION,
@@ -96,13 +96,14 @@ async function processItem(item) {
     verifiedNames.push(candidate.gameName);
   } catch (error) {
     const message = String(error?.message || error);
+    actorCalls += Number(error?.actorCalls || 0);
     if (error.code === 'APIFY_QUOTA_GUARD' || /credit|quota|billing|charge limit/i.test(message)) quotaStopped = true;
     const previousIsValid = previousTrend && !['error', 'pending'].includes(previousTrend.classification);
     candidate.trend = previousIsValid
       ? { ...previousTrend, stale: true, lastError: message, lastErrorAt: new Date().toISOString() }
-      : { modelVersion: TREND_MODEL_VERSION, profileVersion: TREND_PROFILE_VERSION, checkedAt: new Date().toISOString(), status: 'error', provider: 'apify-data-xplorer', classification: 'error', score: 0, validationTier: item.tier, validationChannel: item.channel, reasons: [`Apify趋势验证失败：${message}`] };
+      : { modelVersion: TREND_MODEL_VERSION, profileVersion: TREND_PROFILE_VERSION, checkedAt: new Date().toISOString(), status: 'error', provider: 'apify-data-xplorer', proxyGroup: 'RESIDENTIAL', classification: 'error', score: 0, validationTier: item.tier, validationChannel: item.channel, reasons: [`Apify住宅代理趋势验证失败：${message}`] };
     errors += 1;
-    errorNames.push({ name: candidate.gameName, error: message.slice(0, 240) });
+    errorNames.push({ name: candidate.gameName, error: message.slice(0, 240), actorCalls: Number(error?.actorCalls || 0) });
   }
   applyFinalRecommendation(candidate);
 }
@@ -149,6 +150,7 @@ await fs.writeFile(reportPath, JSON.stringify({
     enabled,
     configured,
     actorId: process.env.APIFY_FAST_TRENDS_ACTOR_ID || 'data_xplorer~google-trends-fast-scraper',
+    proxyGroup: 'RESIDENTIAL',
     verifyLimit,
     effectiveLimit,
     monthlyCallLimit,
@@ -170,4 +172,4 @@ await fs.writeFile(reportPath, JSON.stringify({
   },
 }, null, 2) + '\n');
 
-console.log(`Apify Trends fallback complete: ${verified} verified, ${errors} errors, ${actorCalls} Actor calls, ${usage.actorCalls}/${monthlyCallLimit} monthly calls.`);
+console.log(`Apify residential Trends fallback complete: ${verified} verified, ${errors} errors, ${actorCalls} Actor calls, ${usage.actorCalls}/${monthlyCallLimit} monthly calls.`);
