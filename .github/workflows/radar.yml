@@ -55,7 +55,7 @@ jobs:
       SERPAPI_WIKI_LIMIT: 999
       SERPAPI_FLEX_LIMIT: 999
 
-      # SearchApi Google Trends fallback. New accounts include 100 free requests.
+      # SearchApi Google Trends fallback; verify the newly configured secret immediately.
       SEARCHAPI_API_KEY: ${{ secrets.SEARCHAPI_API_KEY }}
       SEARCHAPI_TRENDS_ENABLED: true
       SEARCHAPI_TRENDS_VERIFY_LIMIT: 95
