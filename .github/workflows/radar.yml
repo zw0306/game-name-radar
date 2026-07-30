@@ -46,7 +46,7 @@ jobs:
       SERPER_TOTAL_LIMIT: 2450
       SERPER_DAILY_LIMIT: 2450
 
-      # Third-party Google Trends provider: SerpApi.
+      # Primary third-party Google Trends provider: SerpApi.
       SERPAPI_API_KEY: ${{ secrets.SERPAPI_API_KEY }}
       SERPAPI_MONTHLY_LIMIT: 245
       SERPAPI_DAILY_LIMIT: 245
@@ -55,9 +55,16 @@ jobs:
       SERPAPI_WIKI_LIMIT: 999
       SERPAPI_FLEX_LIMIT: 999
 
-      # Apify fallback provider.
+      # Apify Trends fallback provider.
       APIFY_API_TOKEN: ${{ secrets.APIFY_API_TOKEN }}
       APIFY_FAST_TRENDS_ACTOR_ID: data_xplorer~google-trends-fast-scraper
+      APIFY_TRENDS_ENABLED: true
+      APIFY_TRENDS_VERIFY_LIMIT: 40
+      APIFY_TRENDS_ONLINE_LIMIT: 28
+      APIFY_TRENDS_WIKI_LIMIT: 12
+      APIFY_TRENDS_CONCURRENCY: 3
+      APIFY_TRENDS_MONTHLY_CALL_LIMIT: 4000
+      APIFY_TRENDS_MAX_CHARGE_USD: 0.05
 
     steps:
       - uses: actions/checkout@v4
@@ -70,9 +77,6 @@ jobs:
 
       - name: Verify Apify account token without running an Actor
         run: node scripts/check-apify-account.mjs
-
-      - name: Test lightweight Apify Trends provider once
-        run: node scripts/smoke-test-apify-fast-trends.mjs
 
       - name: Run parser and scoring tests
         continue-on-error: true
@@ -102,14 +106,17 @@ jobs:
           SERPAPI_API_KEY_5: ${{ secrets.SERPAPI_API_KEY_5 }}
         run: node scripts/check-serpapi-accounts.mjs
 
-      - name: Verify all eligible Trends candidates with primary SerpApi account
+      - name: Verify eligible Trends candidates with primary SerpApi account
         run: node scripts/fill-serpapi-pool.mjs
-
-      - name: Finalize online and wiki opportunity counts
-        run: npm run classify
 
       - name: Restore SerpApi usage report
         run: node scripts/fill-serpapi-pool.mjs --report-only
+
+      - name: Fill remaining Trends queue with Apify
+        run: node scripts/fill-apify-trends.mjs
+
+      - name: Finalize online and wiki opportunity counts
+        run: npm run classify
 
       - name: Commit updated result data
         run: |
@@ -120,5 +127,5 @@ jobs:
           git config user.name "game-radar-bot"
           git config user.email "game-radar-bot@users.noreply.github.com"
           git add data/
-          git commit -m "chore: test lightweight Apify Trends provider"
+          git commit -m "chore: verify Trends with SerpApi and Apify fallback"
           git push
