@@ -56,8 +56,9 @@ jobs:
       SERPAPI_WIKI_LIMIT: 999
       SERPAPI_FLEX_LIMIT: 999
 
-      # Apify fallback provider. This run only validates the token; no Actor is started yet.
+      # Apify fallback provider.
       APIFY_API_TOKEN: ${{ secrets.APIFY_API_TOKEN }}
+      APIFY_TRENDS_ACTOR_ID: apify~google-trends-scraper
 
     steps:
       - uses: actions/checkout@v4
@@ -70,6 +71,9 @@ jobs:
 
       - name: Verify Apify account token without running an Actor
         run: node scripts/check-apify-account.mjs
+
+      - name: Inspect Apify Google Trends output once
+        run: node scripts/smoke-test-apify-trends.mjs
 
       - name: Run parser and scoring tests
         continue-on-error: true
@@ -117,5 +121,5 @@ jobs:
           git config user.name "game-radar-bot"
           git config user.email "game-radar-bot@users.noreply.github.com"
           git add data/
-          git commit -m "chore: inspect Apify and verify game opportunities"
+          git commit -m "chore: inspect Apify Trends output and verify game opportunities"
           git push
