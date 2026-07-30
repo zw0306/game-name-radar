@@ -31,21 +31,21 @@ jobs:
       TARGET_MARKET: US_GLOBAL
       SEO_REGION: US
       SEO_LANGUAGE: en-US
-      SEO_VERIFY_LIMIT: 5
+      SEO_VERIFY_LIMIT: 0
       SEO_EXPAND_LIMIT: 0
       SERPER_API_KEY: ${{ secrets.SERPER_API_KEY }}
-      SERPER_VERIFY_LIMIT: 800
-      SERPER_ONLINE_LIMIT: 560
-      SERPER_WIKI_LIMIT: 240
+      SERPER_VERIFY_LIMIT: 0
+      SERPER_ONLINE_LIMIT: 0
+      SERPER_WIKI_LIMIT: 0
       SERPER_TOTAL_LIMIT: 2450
       SERPER_DAILY_LIMIT: 2450
       GOOGLE_CSE_API_KEY: ${{ secrets.GOOGLE_CSE_API_KEY || secrets.GOOGLE_CSE_API_KEY_1 || secrets.GOOGLE_SEARCH_API_KEY }}
       GOOGLE_CSE_CX: ${{ secrets.GOOGLE_CSE_CX || secrets.GOOGLE_CSE_ID || secrets.GOOGLE_SEARCH_CX }}
       GOOGLE_CSE_API_KEY_2: ${{ secrets.GOOGLE_CSE_API_KEY_2 || secrets.GOOGLE_SEARCH_API_KEY_2 }}
       GOOGLE_CSE_CX_2: ${{ secrets.GOOGLE_CSE_CX_2 || secrets.GOOGLE_CSE_ID_2 || secrets.GOOGLE_SEARCH_CX_2 || secrets.GOOGLE_CSE_CX || secrets.GOOGLE_CSE_ID || secrets.GOOGLE_SEARCH_CX }}
-      GOOGLE_CSE_VERIFY_LIMIT: 180
-      GOOGLE_CSE_DAILY_LIMIT: 90
-      TRENDS_VERIFY_LIMIT: 1
+      GOOGLE_CSE_VERIFY_LIMIT: 0
+      GOOGLE_CSE_DAILY_LIMIT: 0
+      TRENDS_VERIFY_LIMIT: 0
       TRENDS_ANCHOR: itch io
       SERPAPI_API_KEY: ${{ secrets.SERPAPI_API_KEY }}
       SERPAPI_API_KEY_2: ${{ secrets.SERPAPI_API_KEY_2 }}
@@ -54,11 +54,11 @@ jobs:
       SERPAPI_API_KEY_5: ${{ secrets.SERPAPI_API_KEY_5 }}
       SERPAPI_MONTHLY_LIMIT: 245
       SERPAPI_DAILY_LIMIT: 245
-      SERPAPI_FILL_ENABLED: true
-      SERPAPI_ONLINE_LIMIT: 999
-      SERPAPI_WIKI_LIMIT: 999
-      SERPAPI_FLEX_LIMIT: 999
-      YOUTUBE_VERIFY_LIMIT: 3
+      SERPAPI_FILL_ENABLED: false
+      SERPAPI_ONLINE_LIMIT: 0
+      SERPAPI_WIKI_LIMIT: 0
+      SERPAPI_FLEX_LIMIT: 0
+      YOUTUBE_VERIFY_LIMIT: 0
       YOUTUBE_REGION: US
       YOUTUBE_LANGUAGE: en
       YOUTUBE_API_KEY: ${{ secrets.YOUTUBE_API_KEY }}
@@ -78,13 +78,13 @@ jobs:
         run: npm run scan
       - name: Classify online and wiki channels before verification
         run: npm run classify
-      - name: Rush-verify up to 800 SEO candidates with Serper
+      - name: Pause Serper SEO verification during account review
         run: node scripts/verify-serper.mjs
-      - name: Verify remaining SEO intent with Google CSE fallback
+      - name: Pause Google CSE verification during account review
         run: node scripts/verify-google-cse.mjs
       - name: Recalculate typed site classification
         run: npm run classify
-      - name: Spend all available pooled SerpApi quota immediately
+      - name: Pause SerpApi Trends verification during account review
         run: node scripts/fill-serpapi-pool.mjs
       - name: Finalize online and wiki opportunity counts
         run: npm run classify
@@ -99,5 +99,5 @@ jobs:
           git config user.name "game-radar-bot"
           git config user.email "game-radar-bot@users.noreply.github.com"
           git add data/
-          git commit -m "chore: rush-verify fresh game opportunities"
+          git commit -m "chore: scan sources in API safe mode"
           git push
