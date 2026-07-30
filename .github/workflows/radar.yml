@@ -55,13 +55,13 @@ jobs:
       SERPAPI_WIKI_LIMIT: 999
       SERPAPI_FLEX_LIMIT: 999
 
-      # Apify Trends fallback provider. Validate one queued candidate before scaling.
+      # Temporarily pause new Apify calls while inspecting the last residential-proxy run.
       APIFY_API_TOKEN: ${{ secrets.APIFY_API_TOKEN }}
       APIFY_FAST_TRENDS_ACTOR_ID: data_xplorer~google-trends-fast-scraper
       APIFY_TRENDS_ENABLED: true
-      APIFY_TRENDS_VERIFY_LIMIT: 1
-      APIFY_TRENDS_ONLINE_LIMIT: 1
-      APIFY_TRENDS_WIKI_LIMIT: 1
+      APIFY_TRENDS_VERIFY_LIMIT: 0
+      APIFY_TRENDS_ONLINE_LIMIT: 0
+      APIFY_TRENDS_WIKI_LIMIT: 0
       APIFY_TRENDS_CONCURRENCY: 1
       APIFY_TRENDS_TIMEOUT_MS: 150000
       APIFY_TRENDS_MONTHLY_CALL_LIMIT: 4000
@@ -78,11 +78,6 @@ jobs:
 
       - name: Verify Apify account token without running an Actor
         run: node scripts/check-apify-account.mjs
-
-      - name: Inspect recent lightweight Apify Trends runs without starting an Actor
-        env:
-          APIFY_TRENDS_ACTOR_ID: data_xplorer~google-trends-fast-scraper
-        run: node scripts/inspect-apify-trends-runs.mjs
 
       - name: Persist Apify fallback preflight diagnostics
         run: node scripts/check-apify-fallback-runtime.mjs
@@ -121,10 +116,15 @@ jobs:
       - name: Restore SerpApi usage report
         run: node scripts/fill-serpapi-pool.mjs --report-only
 
-      - name: Fill remaining Trends queue with Apify
+      - name: Skip new Apify calls and persist queue state
         id: apify_fill
         continue-on-error: true
         run: node scripts/fill-apify-trends.mjs
+
+      - name: Inspect latest lightweight Apify Trends run without starting an Actor
+        env:
+          APIFY_TRENDS_ACTOR_ID: data_xplorer~google-trends-fast-scraper
+        run: node scripts/inspect-apify-trends-runs.mjs
 
       - name: Record Apify fallback step outcome
         env:
@@ -145,5 +145,5 @@ jobs:
           git config user.name "game-radar-bot"
           git config user.email "game-radar-bot@users.noreply.github.com"
           git add data/
-          git commit -m "chore: verify Apify Trends fallback cold start"
+          git commit -m "chore: inspect residential Apify Trends run"
           git push
