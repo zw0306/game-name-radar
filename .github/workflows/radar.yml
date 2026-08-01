@@ -103,6 +103,9 @@ jobs:
       - name: Verify fresh SEO candidates with Serper
         run: node scripts/verify-serper.mjs
 
+      - name: Diagnose pending evidence candidates
+        run: node scripts/diagnose-evidence-fallback.mjs
+
       - name: Route strong candidates with quota-free platform evidence
         run: node scripts/verify-evidence-fallback.mjs
 
