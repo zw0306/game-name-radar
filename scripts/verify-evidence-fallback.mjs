@@ -3,6 +3,7 @@ import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { estimateNameRisk, cleanGameName } from '../lib/seo-verifier.mjs';
 import { classifySiteType } from '../lib/site-type.mjs';
+import { calculateFastSignals } from '../lib/fast-signals.mjs';
 import { SEO_MODEL_VERSION } from '../lib/trend-queue.mjs';
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
@@ -11,8 +12,6 @@ const reportPath = path.join(root, 'data', 'latest-report.json');
 const LIMIT = Math.max(0, Number(process.env.SEO_EVIDENCE_FALLBACK_LIMIT || 300));
 const DAY = 86400000;
 
-// These values deliberately match the sourceId values emitted by the current
-// scanners. Keep aliases too, so older candidate records remain usable.
 const ONLINE_STRATEGIC = new Set([
   'crazygames-new', 'poki-new', 'y8-new', 'gamepix-new', 'lagged-new',
   'newgrounds-daily-top', 'newgrounds-latest',
@@ -88,13 +87,17 @@ function buildFallback(candidate) {
   const reasons = [];
 
   if (channel === 'online') {
+    // Do not require fastClass here. Fast signals previously depended on SEO,
+    // which created a deadlock when Serper had no quota. Strong independent
+    // platform evidence is enough for a provisional SEO record.
     qualifies = browserEvidence
       && nameRisk <= 20
       && (
-        (platforms >= 2 && ['pass', 'watch'].includes(fastClass))
-        || (strategicCount >= 2 && ['pass', 'watch'].includes(fastClass))
-        || (strategicCount >= 1 && sources >= 2 && fastScore >= 18)
-        || (strategicCount >= 1 && fastClass === 'pass' && fastScore >= 24)
+        (platforms >= 2 && strategicCount >= 2 && discovery >= 10)
+        || (platforms >= 2 && sources >= 2 && discovery >= 12)
+        || (strategicCount >= 2 && sources >= 2 && discovery >= 12)
+        || (strategicCount >= 1 && sources >= 3 && discovery >= 16)
+        || (fastClass === 'pass' && strategicCount >= 1 && fastScore >= 24)
       );
 
     if (platforms >= 2) reasons.push(`已在${platforms}个在线游戏平台发现`);
@@ -107,9 +110,10 @@ function buildFallback(candidate) {
 
     qualifies = nameRisk <= 18
       && (
-        (hasSteamEvidence && ['pass', 'watch'].includes(fastClass) && fastScore >= 16)
-        || (strategicCount >= 2 && sources >= 2 && ['pass', 'watch'].includes(fastClass))
-        || (strategicCount >= 1 && sources >= 3 && fastClass === 'pass' && fastScore >= 24)
+        (hasSteamEvidence && sources >= 1 && discovery >= 10)
+        || (strategicCount >= 2 && sources >= 2 && discovery >= 10)
+        || (strategicCount >= 1 && sources >= 3 && discovery >= 15)
+        || (fastClass === 'pass' && strategicCount >= 1 && fastScore >= 24)
       );
 
     if (hasSteamEvidence) reasons.push('存在Steam发行或热门新游证据');
@@ -121,8 +125,8 @@ function buildFallback(candidate) {
   reasons.push('Serper额度不足，当前为平台证据临时验证，仍需后续SERP复核');
 
   const rawScore = channel === 'online'
-    ? 26 + platforms * 10 + strategicCount * 6 + Math.min(12, sources * 3) + Math.min(10, Math.round(fastScore / 5))
-    : 26 + strategicCount * 8 + Math.min(12, sources * 3) + Math.min(10, Math.round(fastScore / 5));
+    ? 28 + platforms * 10 + strategicCount * 6 + Math.min(12, sources * 3) + Math.min(10, Math.round(discovery / 2))
+    : 28 + strategicCount * 8 + Math.min(12, sources * 3) + Math.min(10, Math.round(discovery / 2));
 
   return {
     modelVersion: SEO_MODEL_VERSION,
@@ -131,7 +135,7 @@ function buildFallback(candidate) {
     provider: 'evidence-fallback',
     queryName: name,
     classification: 'page',
-    score: Math.max(30, Math.min(62, rawScore - Math.round(nameRisk * 0.5))),
+    score: Math.max(35, Math.min(62, rawScore - Math.round(nameRisk * 0.5))),
     nameRisk,
     entityConflict: false,
     provisional: true,
@@ -160,11 +164,14 @@ const queue = candidates
 let verified = 0;
 const verifiedNames = [];
 const channelVerified = { online: 0, wiki: 0, pending: 0 };
+const fastRecalculated = { pass: 0, watch: 0, weak: 0, reject: 0, pending: 0 };
 
 for (const item of queue) {
   const verdict = buildFallback(item.candidate);
   if (!verdict) continue;
   item.candidate.seo = verdict;
+  item.candidate.fast = calculateFastSignals(item.candidate, item.candidate.fast || {});
+  fastRecalculated[item.candidate.fast?.classification || 'pending'] += 1;
   item.candidate.recommendation = item.candidate.trend ? item.candidate.recommendation || 'watch' : 'pending';
   item.candidate.level = item.candidate.recommendation;
   verified += 1;
@@ -181,9 +188,10 @@ await fs.writeFile(reportPath, JSON.stringify({
     queueSize: queue.length,
     verified,
     channelVerified,
+    fastRecalculated,
     verifiedNames: verifiedNames.slice(0, 100),
     ranAt: new Date().toISOString(),
   },
 }, null, 2) + '\n');
 
-console.log(`Evidence SEO fallback complete: ${verified} provisional page candidate(s).`);
+console.log(`Evidence SEO fallback complete: ${verified} provisional page candidate(s); fast signals recalculated.`);
