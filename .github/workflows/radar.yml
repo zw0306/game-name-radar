@@ -46,6 +46,11 @@ jobs:
       SERPER_TOTAL_LIMIT: 2450
       SERPER_DAILY_LIMIT: 2450
 
+      # When Serper is unavailable, strong multi-platform evidence can route a
+      # candidate to Trends provisionally. It can never create an independent
+      # recommendation until a real SERP provider confirms search intent.
+      SEO_EVIDENCE_FALLBACK_LIMIT: 300
+
       # Primary third-party Google Trends provider: SerpApi.
       SERPAPI_API_KEY: ${{ secrets.SERPAPI_API_KEY }}
       SERPAPI_MONTHLY_LIMIT: 245
@@ -55,15 +60,16 @@ jobs:
       SERPAPI_WIKI_LIMIT: 999
       SERPAPI_FLEX_LIMIT: 999
 
-      # SearchApi Google Trends fallback; verify the newly configured secret immediately.
+      # SearchApi Google Trends fallback. Single concurrency is slower but much
+      # more reliable than the previous three simultaneous browser jobs.
       SEARCHAPI_API_KEY: ${{ secrets.SEARCHAPI_API_KEY }}
       SEARCHAPI_TRENDS_ENABLED: true
       SEARCHAPI_TRENDS_VERIFY_LIMIT: 95
       SEARCHAPI_TRENDS_ONLINE_LIMIT: 67
       SEARCHAPI_TRENDS_WIKI_LIMIT: 28
-      SEARCHAPI_TRENDS_CONCURRENCY: 3
+      SEARCHAPI_TRENDS_CONCURRENCY: 1
       SEARCHAPI_TOTAL_LIMIT: 95
-      SEARCHAPI_TIMEOUT_MS: 45000
+      SEARCHAPI_TIMEOUT_MS: 90000
 
       # Keep Apify connected for account visibility, but disable all Actor calls.
       APIFY_API_TOKEN: ${{ secrets.APIFY_API_TOKEN }}
@@ -88,9 +94,6 @@ jobs:
         continue-on-error: true
         run: npm test
 
-      - name: Reset legacy free Trends results
-        run: node scripts/reset-legacy-trends.mjs
-
       - name: Discover games and build source evidence
         run: npm run scan
 
@@ -99,6 +102,9 @@ jobs:
 
       - name: Verify fresh SEO candidates with Serper
         run: node scripts/verify-serper.mjs
+
+      - name: Route strong candidates with quota-free platform evidence
+        run: node scripts/verify-evidence-fallback.mjs
 
       - name: Recalculate typed site classification
         run: npm run classify
@@ -133,5 +139,5 @@ jobs:
           git config user.name "game-radar-bot"
           git config user.email "game-radar-bot@users.noreply.github.com"
           git add data/
-          git commit -m "chore: verify Trends with SerpApi and SearchApi"
+          git commit -m "chore: scan and verify game opportunities"
           git push
