@@ -7,6 +7,7 @@ import { discoverRisingGameQueries } from '../lib/rising-discovery.mjs';
 import { verifyGameKeyword, cleanGameName, estimateNameRisk } from '../lib/seo-verifier.mjs';
 import { verifyTrendDemand } from '../lib/trend-verifier.mjs';
 import { calculateFastSignals, verifyYoutubeSignals, FAST_MODEL_VERSION } from '../lib/fast-signals.mjs';
+import { applyFinalRecommendation } from '../lib/opportunity-finalizer.mjs';
 
 const root=path.resolve(path.dirname(fileURLToPath(import.meta.url)),'..');
 const sourcesPath=path.join(root,'config','sources.json');
@@ -63,6 +64,10 @@ function normalizeCandidateName(candidate){
     delete candidate.fast;
     delete candidate.trend;
     delete candidate.youtube;
+    delete candidate.social;
+    delete candidate.wikiPrelaunch;
+    delete candidate.marketFreshness;
+    delete candidate.opportunity;
     candidate.score=0;
     candidate.level='pending';
     candidate.recommendation='pending';
@@ -84,6 +89,10 @@ function dedupeCandidates(items){
     if(!existing.fast&&item.fast)existing.fast=item.fast;
     if(!existing.trend&&item.trend)existing.trend=item.trend;
     if(!existing.youtube&&item.youtube)existing.youtube=item.youtube;
+    if(!existing.social&&item.social)existing.social=item.social;
+    if(!existing.wikiPrelaunch&&item.wikiPrelaunch)existing.wikiPrelaunch=item.wikiPrelaunch;
+    if(!existing.marketFreshness&&item.marketFreshness)existing.marketFreshness=item.marketFreshness;
+    if(!existing.opportunity&&item.opportunity)existing.opportunity=item.opportunity;
   }
   return [...map.values()];
 }
@@ -192,46 +201,6 @@ function youtubeNeedsCheck(candidate){
   if(!['pass','watch'].includes(candidate.fast?.classification))return false;
   const checked=Date.parse(candidate.youtube?.checkedAt||'');
   return !Number.isFinite(checked)||Date.now()-checked>YOUTUBE_MAX_AGE;
-}
-
-function applyFinalRecommendation(candidate){
-  const seoClass=candidate.seo?.classification||'pending';
-  const fastClass=candidate.fast?.classification||'pending';
-  const demandClass=candidate.trend?.classification||'pending';
-  const globalDemandClass=candidate.trend?.globalClassification||null;
-  const globalRising=['rising','breakout'].includes(globalDemandClass);
-  const nameRisk=Number(candidate.seo?.nameRisk??30);
-  const keywordFreshness=candidate.trend?.keywordFreshness||'unknown';
-  const entityConflict=Boolean(candidate.seo?.entityConflict||candidate.trend?.entityConflict);
-  let recommendation='pending';
-
-  if(!hasCurrentSeo(candidate))recommendation='pending';
-  else if(seoClass==='error')recommendation='error';
-  else if(seoClass==='reject'||candidate.seo?.entityConflict||fastClass==='reject')recommendation='reject';
-  else if(seoClass==='pending'||fastClass==='pending')recommendation='pending';
-  else if(fastClass==='weak')recommendation='reject';
-  else if(fastClass==='watch')recommendation='watch';
-  else if(demandClass==='error'||demandClass==='pending')recommendation='pending';
-  else if(seoClass==='independent'&&nameRisk<=12&&keywordFreshness!=='existing'&&!entityConflict&&['rising','breakout'].includes(demandClass))recommendation='independent';
-  else if(globalRising&&['moderate','strong'].includes(demandClass)&&['independent','page'].includes(seoClass))recommendation='page';
-  else if(globalRising)recommendation='watch';
-  else if(demandClass==='none')recommendation='reject';
-  else if(demandClass==='weak')recommendation='watch';
-  else if(['independent','page'].includes(seoClass)&&['strong','moderate'].includes(demandClass))recommendation='page';
-  else recommendation='watch';
-
-  const seoScore=Number(candidate.seo?.score||0),fastScore=Number(candidate.fast?.score||0),trendScore=Number(candidate.trend?.score||0);
-  const globalScore=Number(candidate.trend?.globalScore||0);
-  let finalScore=Math.round(seoScore*0.32+fastScore*0.28+trendScore*0.34+globalScore*0.06);
-  if(['rising','breakout'].includes(demandClass))finalScore=Math.min(100,finalScore+8);
-  else if(globalRising)finalScore=Math.min(79,finalScore+4);
-  if(keywordFreshness==='existing'||entityConflict)finalScore=Math.min(finalScore,69);
-  if(recommendation==='watch')finalScore=Math.min(finalScore,59);
-  if(['reject','pending','error'].includes(recommendation))finalScore=0;
-  candidate.finalScore=finalScore;
-  candidate.score=finalScore;
-  candidate.level=recommendation;
-  candidate.recommendation=recommendation;
 }
 
 function recommendationRank(candidate){return {independent:6,page:5,watch:4,pending:3,reject:2,error:1}[candidate.recommendation||'pending']||0}

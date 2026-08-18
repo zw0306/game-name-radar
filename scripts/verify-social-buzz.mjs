@@ -119,6 +119,7 @@ async function queryReddit(gameName) {
     checkedAt,
     postCount: posts.length,
     subredditCount: new Set(posts.map((item) => item.subreddit).filter(Boolean)).size,
+    authorCount: new Set(posts.map((item) => item.author).filter(Boolean)).size,
     totalScore: posts.reduce((sum, item) => sum + Number(item.score || 0), 0),
     totalComments: posts.reduce((sum, item) => sum + Number(item.num_comments || 0), 0),
     recent24h: posts.filter((item) => Date.now() - Number(item.created_utc || 0) * 1000 <= DAY).length,
@@ -172,6 +173,7 @@ async function queryTikTok(gameName) {
     totalLikes: videos.reduce((sum, item) => sum + Number(item.like_count || 0), 0),
     totalComments: videos.reduce((sum, item) => sum + Number(item.comment_count || 0), 0),
     totalShares: videos.reduce((sum, item) => sum + Number(item.share_count || 0), 0),
+    recent24h: videos.filter((item) => Date.now() - Number(item.create_time || 0) * 1000 <= DAY).length,
   };
 }
 
@@ -194,16 +196,19 @@ function priority(candidate) {
   const fast = Number(candidate.fast?.score || 0);
   const discovery = Number(candidate.discoveryScore || 0) * 3;
   const recent = Date.now() - Date.parse(candidate.firstSeen || 0) <= 2 * DAY ? 15 : 0;
-  return trends + platforms + fast + discovery + recent;
+  const steam = candidate.siteType?.type === 'wiki'
+    ? Math.min(35, Number(candidate.wikiPrelaunch?.score || 0) * 0.35)
+    : 0;
+  return trends + platforms + fast + discovery + recent + steam;
 }
 
 const payload = await readJson(candidatesPath, { candidates: [] });
 const candidates = Array.isArray(payload) ? payload : payload.candidates || [];
 for (const candidate of candidates) candidate.siteType = classifySiteType(candidate);
 const queue = candidates
-  .filter((candidate) => candidate.siteType?.type === 'online')
+  .filter((candidate) => ['online', 'wiki'].includes(candidate.siteType?.type))
   .filter((candidate) => candidate.seo?.modelVersion === 5 && ['independent', 'page'].includes(candidate.seo?.classification))
-  .filter((candidate) => candidate.siteType?.browserPlayable && Number(candidate.seo?.nameRisk ?? 30) <= 20)
+  .filter((candidate) => (candidate.siteType?.type === 'wiki' || candidate.siteType?.browserPlayable) && Number(candidate.seo?.nameRisk ?? 30) <= 20)
   .filter(needsCheck)
   .sort((a, b) => priority(b) - priority(a))
   .slice(0, LIMIT);

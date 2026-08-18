@@ -3,6 +3,7 @@ import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { classifySiteType, SITE_TYPE_MODEL_VERSION } from '../lib/site-type.mjs';
 import { applyFinalRecommendation } from '../lib/opportunity-finalizer.mjs';
+import { WIKI_PRELAUNCH_MODEL_VERSION } from '../lib/wiki-prelaunch.mjs';
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const candidatesPath = path.join(root, 'data', 'candidates.json');
@@ -111,7 +112,7 @@ await fs.writeFile(reportPath, JSON.stringify({
   braveSearchUsage: { enabled: false },
   siteTypeModelVersion: SITE_TYPE_MODEL_VERSION,
   siteTypeCounts: counts,
-  wikiPrelaunchModelVersion: 1,
+  wikiPrelaunchModelVersion: WIKI_PRELAUNCH_MODEL_VERSION,
   wikiPrelaunchCounts,
 }, null, 2) + '\n');
 
