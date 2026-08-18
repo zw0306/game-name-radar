@@ -51,7 +51,7 @@ jobs:
       # recommendation until a real SERP provider confirms search intent.
       SEO_EVIDENCE_FALLBACK_LIMIT: 300
 
-      # Official social APIs for online-game promotion velocity. Every provider
+      # Official social APIs for online and Steam-game promotion velocity. Every provider
       # is optional; unavailable providers are skipped without failing the scan.
       SOCIAL_VERIFY_LIMIT: 35
       SOCIAL_MAX_AGE_MS: 21600000
@@ -134,7 +134,7 @@ jobs:
       - name: Recalculate typed site classification
         run: npm run classify
 
-      - name: Verify social promotion heat for online games
+      - name: Verify independent social spillover for game candidates
         run: node scripts/verify-social-buzz.mjs
 
       - name: Inspect all SerpApi account quotas without spending searches

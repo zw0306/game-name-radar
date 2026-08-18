@@ -3,10 +3,17 @@ import assert from 'node:assert/strict';
 import { analyzeWikiPrelaunch } from '../lib/wiki-prelaunch.mjs';
 import { applyFinalRecommendation } from '../lib/opportunity-finalizer.mjs';
 import { parseSteamSearch } from '../lib/steam-discovery.mjs';
+import { analyzeOnlineSocialBuzz } from '../lib/social-buzz.mjs';
 
 const NOW = Date.parse('2026-08-04T02:00:00Z');
 
 function prelaunchCandidate(overrides = {}) {
+  const social = analyzeOnlineSocialBuzz({ social: { providers: {
+    youtube: { configured: true, checkedAt: '2026-08-04T01:00:00Z', videoCount: 8, channelCount: 6, totalViews: 120000, totalLikes: 7000, totalComments: 900, recent24h: 3 },
+    reddit: { configured: true, checkedAt: '2026-08-04T01:00:00Z', postCount: 6, subredditCount: 3, authorCount: 5, totalScore: 500, totalComments: 180, recent24h: 2 },
+    x: { configured: false },
+    tiktok: { configured: false },
+  } } });
   return {
     gameName: 'Project Emberfall',
     firstSeen: '2026-08-02T02:00:00Z',
@@ -37,8 +44,9 @@ function prelaunchCandidate(overrides = {}) {
       gameResultUrls: ['https://www.youtube.com/watch?v=trailer'],
     },
     fast: { modelVersion: 3, classification: 'pass', score: 72 },
-    trend: { modelVersion: 4, classification: 'pending', score: 0, keywordFreshness: 'unknown' },
+    trend: { modelVersion: 4, classification: 'breakout', score: 88, keywordFreshness: 'new' },
     youtube: { checkedAt: '2026-08-04T01:00:00Z', videoCount: 8, channelCount: 6, totalViews: 120000 },
+    social,
     siteType: {
       modelVersion: 2,
       type: 'wiki',
@@ -74,12 +82,32 @@ test('prioritizes an unreleased high-wishlist game with guide depth and trailer 
   assert.equal(result.allowsIndependent, true);
 });
 
-test('allows a verified open-market Steam prelaunch guide opportunity before Trends breaks out', () => {
+test('allows a verified open-market Steam opportunity after growth, search and spillover all pass', () => {
   const candidate = prelaunchCandidate();
   applyFinalRecommendation(candidate);
   assert.equal(candidate.recommendation, 'independent');
   assert.equal(candidate.wikiPrelaunch.classification, 'priority');
   assert.match(candidate.siteType.reasons.join(' '), /Steam愿望单榜当前第18名/);
+  assert.equal(candidate.opportunity.hardGates.externalSpillover, true);
+  assert.deepEqual(candidate.opportunity.weights, {
+    socialSpread: 0.30,
+    growthVelocity: 0.25,
+    searchFormation: 0.15,
+    contentExpandability: 0.15,
+    serpGap: 0.10,
+    nameSafety: 0.05,
+  });
+});
+
+test('keeps a high-wishlist game in observation when independent social spillover is missing', () => {
+  const candidate = prelaunchCandidate({ social: {} });
+  const result = analyzeWikiPrelaunch(candidate, NOW);
+  assert.equal(result.classification, 'prepare');
+  assert.equal(result.hasExternalSpillover, false);
+
+  applyFinalRecommendation(candidate);
+  assert.equal(candidate.recommendation, 'watch');
+  assert.equal(candidate.opportunity.hardGates.externalSpillover, false);
 });
 
 test('blocks a wishlist-hot game when a dedicated wiki already occupies the query', () => {
@@ -101,6 +129,7 @@ test('does not treat wishlist rank alone as enough when guide intent is absent',
   const candidate = prelaunchCandidate({
     seo: { ...prelaunchCandidate().seo, suggestions: [] },
     youtube: { checkedAt: '2026-08-04T01:00:00Z', videoCount: 0, channelCount: 0, totalViews: 0 },
+    social: {},
   });
   const result = analyzeWikiPrelaunch(candidate, NOW);
   assert.notEqual(result.classification, 'priority');

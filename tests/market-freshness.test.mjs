@@ -23,7 +23,7 @@ function baseCandidate(overrides = {}) {
       ],
       gameResultUrls: [],
     },
-    fast: { classification: 'pass', score: 80, onlinePlatformCount: 2 },
+    fast: { classification: 'pass', score: 80, onlinePlatformCount: 2, sourceAdded24h: 2, onlineSuggestionCount: 2 },
     trend: {
       modelVersion: 4,
       classification: 'breakout',
@@ -34,7 +34,7 @@ function baseCandidate(overrides = {}) {
       checkedAt: SOCIAL_CHECKED_AT,
       providers: {
         youtube: { configured: true, checkedAt: SOCIAL_CHECKED_AT, videoCount: 8, channelCount: 5, totalViews: 50000, totalLikes: 3000, totalComments: 500, recent24h: 3 },
-        reddit: { configured: true, checkedAt: SOCIAL_CHECKED_AT, postCount: 5, subredditCount: 3, totalScore: 200, totalComments: 100, recent24h: 1 },
+        reddit: { configured: true, checkedAt: SOCIAL_CHECKED_AT, postCount: 5, subredditCount: 3, authorCount: 4, totalScore: 200, totalComments: 100, recent24h: 1 },
         x: { configured: false },
         tiktok: { configured: false },
       },
