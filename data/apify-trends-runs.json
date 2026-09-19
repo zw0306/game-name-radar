@@ -1,0 +1,23 @@
+{
+  "checkedAt": "2026-07-30T04:15:26.908Z",
+  "configured": true,
+  "actorId": "devilscrapes~google-trends-scraper",
+  "ok": true,
+  "runs": [
+    {
+      "id": "UC6aqnD3GwfpveQKX",
+      "status": "FAILED",
+      "statusMessage": null,
+      "startedAt": "2026-07-30T04:07:50.358Z",
+      "finishedAt": "2026-07-30T04:09:10.242Z",
+      "defaultDatasetId": "cka9kcm5z3KXmJMc6",
+      "usageUsd": null,
+      "usageTotalUsd": 0.02,
+      "pricingInfo": null,
+      "stats": null,
+      "buildNumber": "0.10.1",
+      "datasetItemCountSampled": 0,
+      "logTail": "2026-07-30T04:07:50.525Z ACTOR: Pulling container image of build ON2QAEHpSdhzjM58F from registry.\n2026-07-30T04:07:55.490Z ACTOR: Creating container.\n2026-07-30T04:07:55.537Z ACTOR: Starting container.\n2026-07-30T04:07:55.539Z ACTOR: Running under \"LIMITED_PERMISSIONS\".\n2026-07-30T04:07:57.316Z [04:07:57] apify._configuration WARNING Actor is running on the Apify platform, `disable_browser_sandbox` was changed to True.\n2026-07-30T04:07:57.319Z [apify] INFO  Initializing Actor ({\"apify_sdk_version\": \"3.4.1\", \"apify_client_version\": \"2.5.1\", \"crawlee_version\": \"1.7.2\", \"python_version\": \"3.11.15\", \"os\": \"linux\", \"is_running_in_ipython\": false})\n2026-07-30T04:07:57.474Z [04:07:57] src.main INFO Input validated: 1 keyword(s), geo='US', timeframe='today 3-m', widgets=['interest_over_time']\n2026-07-30T04:07:57.635Z [04:07:57] src.client INFO prime_session: GET https://trends.google.com/trends/\n2026-07-30T04:07:57.726Z [04:07:57] src.client INFO prime_session: cookies collected\n2026-07-30T04:07:57.727Z [04:07:57] src.main INFO Batch 1/1: ['Shift At Midnight']\n2026-07-30T04:07:57.728Z [04:07:57] src.client INFO fetch_explore_tokens: keywords=['Shift At Midnight'] geo='US' timeframe='today 3-m'\n2026-07-30T04:07:58.590Z [04:07:58] src.client INFO fetch_explore_tokens: response len=5688, first300=')]}\\'\\n{\"widgets\":[{\"request\":{\"time\":\"2026-04-30 2026-07-30\",\"resolution\":\"DAY\",\"locale\":\"en-US\",\"comparisonItem\":[{\"geo\":{\"country\":\"US\"},\"complexKeywordsRestriction\":{\"keyword\":[{\"type\":\"BROAD\",\"value\":\"Shift At Midnight\"}]}}],\"requestOptions\":{\"property\":\"\",\"backend\":\"IZG\",\"category\":0},\"userConfi'\n2026-07-30T04:07:58.591Z [04:07:58] src.client INFO fetch_widgetdata: widget='interest_over_time' endpoint='multiline'\n2026-07-30T04:07:58.816Z [04:07:58] src.client WARNING fetch_widgetdata[interest_over_time]: HTTP 429 (attempt 1/5) — sleeping 2s then retrying 'https://trends.google.com/trends/api/widgetdata/multiline'\n2026-07-30T04:08:06.344Z [04:08:06] src.client WARNING fetch_widgetdata[interest_over_time]: HTTP 429 (attempt 2/5) — sleeping 4s then retrying 'https://trends.google.com/trends/api/widgetdata/multiline'\n2026-07-30T04:08:12.715Z [04:08:12] src.client WARNING fetch_widgetdata[interest_over_time]: HTTP 429 (attempt 3/5) — sleeping 8s then retrying 'https://trends.google.com/trends/api/widgetdata/multiline'\n2026-07-30T04:08:22.987Z [04:08:22] src.client WARNING fetch_widgetdata[interest_over_time]: HTTP 429 (attempt 4/5) — sleeping 16s then retrying 'https://trends.google.com/trends/api/widgetdata/multiline'\n2026-07-30T04:08:39.524Z [04:08:39] src.client WARNING fetch_widgetdata[interest_over_time]: HTTP 429 (attempt 5/5) — sleeping 30s then retrying 'https://trends.google.com/trends/api/widgetdata/multiline'\n2026-07-30T04:09:09.526Z [04:09:09] src.main WARNING widget 'interest_over_time' for keyword 'Shift At Midnight' failed: fetch_widgetdata[interest_over_time]: gave up after 5 retries on 'https://trends.google.com/trends/api/widgetdata/multiline'\n2026-07-30T04:09:09.526Z [04:09:09] src.main WARNING all widgets failed for keyword 'Shift At Midnight'\n2026-07-30T04:09:09.547Z [04:09:09] src.main ERROR All batches failed — target may have hard-blocked the scraper.\n2026-07-30T04:09:09.547Z [apify] ERROR Actor failed with an exception\n2026-07-30T04:09:09.549Z       Traceback (most recent call last):\n2026-07-30T04:09:09.549Z         File \"/usr/src/app/src/main.py\", line 258, in main\n2026-07-30T04:09:09.550Z           raise SystemExit(1)\n2026-07-30T04:09:09.550Z       SystemExit: 1\n2026-07-30T04:09:09.551Z [apify] INFO  Exiting Actor ({\"exit_code\": 91})\n"
+    }
+  ]
+}

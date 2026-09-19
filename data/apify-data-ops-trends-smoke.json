@@ -1,0 +1,25 @@
+{
+  "checkedAt": "2026-07-30T04:03:11.570Z",
+  "configured": true,
+  "ok": false,
+  "actorId": "data_ops_main~google-trends",
+  "input": {
+    "keywords": [
+      "Shift At Midnight"
+    ],
+    "geo": "US",
+    "timeframe": "today 3-m",
+    "proxyConfiguration": {
+      "useApifyProxy": true,
+      "apifyProxyGroups": [
+        "RESIDENTIAL"
+      ]
+    },
+    "delayBetweenRequests": 2000,
+    "maxRetries": 4,
+    "requestTimeout": 30000
+  },
+  "itemCount": 0,
+  "sample": [],
+  "error": "Actor completed but returned no dataset items"
+}

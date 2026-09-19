@@ -1,0 +1,22 @@
+{
+  "checkedAt": "2026-07-30T03:08:09.082Z",
+  "configured": true,
+  "ok": false,
+  "actorId": "apify~google-trends-scraper",
+  "input": {
+    "queries": [
+      "Shift At Midnight",
+      "Shift At Midnight wiki",
+      "Shift At Midnight guide",
+      "steam"
+    ],
+    "startUrls": [
+      {
+        "url": "https://trends.google.com/trends/explore?date=today+3-m&geo=US&q=Shift+At+Midnight%2CShift+At+Midnight+wiki%2CShift+At+Midnight+guide%2Csteam"
+      }
+    ]
+  },
+  "itemCount": 0,
+  "sample": [],
+  "error": "Actor completed but returned no dataset items"
+}
