@@ -1,45 +1,44 @@
 {
-  "generatedAt": "2026-09-19T13:57:33.561Z",
+  "generatedAt": "2026-09-19T14:22:07.342Z",
   "totalCandidates": 3000,
-  "pendingSeo": 2333,
+  "pendingSeo": 2325,
   "channelCounts": {
-    "pending": 470,
-    "online": 1858,
-    "wiki": 5
+    "pending": 481,
+    "online": 1838,
+    "wiki": 6
   },
   "fastClassCounts": {
-    "pending:pending": 470,
-    "online:pending": 1858,
-    "wiki:pending": 5
+    "pending:pending": 481,
+    "online:pending": 1838,
+    "wiki:pending": 6
   },
   "strategicCounts": {
-    "pending:0": 461,
-    "online:2": 439,
-    "online:1": 1419,
+    "pending:0": 472,
+    "online:2": 420,
+    "online:1": 1418,
     "pending:1": 9,
-    "wiki:0": 1,
-    "wiki:1": 4
+    "wiki:1": 6
   },
   "topSources": [
     {
       "id": "itch-new",
-      "count": 1867
+      "count": 1855
     },
     {
       "id": "itch-new-feed",
-      "count": 1808
+      "count": 1796
     },
     {
       "id": "itch-newest-web",
-      "count": 1787
+      "count": 1764
     },
     {
       "id": "itch-new-popular-web",
-      "count": 439
+      "count": 420
     },
     {
       "id": "itch-popular",
-      "count": 439
+      "count": 420
     },
     {
       "id": "trends-rising-7d",
@@ -74,28 +73,28 @@
       "count": 52
     },
     {
-      "id": "newgrounds-daily-top",
-      "count": 32
-    },
-    {
-      "id": "newgrounds-top",
-      "count": 32
-    },
-    {
       "id": "newgrounds-latest",
-      "count": 32
+      "count": 36
     },
     {
       "id": "newgrounds-new",
-      "count": 32
+      "count": 36
+    },
+    {
+      "id": "newgrounds-daily-top",
+      "count": 30
+    },
+    {
+      "id": "newgrounds-top",
+      "count": 30
     },
     {
       "id": "steam-latest-indie",
-      "count": 10
+      "count": 12
     },
     {
       "id": "steam-new",
-      "count": 10
+      "count": 12
     },
     {
       "id": "itch-featured-feed",
@@ -118,7 +117,7 @@
       "count": 2
     },
     {
-      "id": "steam-top-wishlist",
+      "id": "crazygames-new",
       "count": 1
     }
   ],
@@ -1036,14 +1035,14 @@
       ]
     },
     {
-      "name": "Still Dreaming",
+      "name": "insignificance",
       "channel": "online",
       "fastClass": "pending",
       "fastScore": 0,
       "discoveryScore": 15,
       "platforms": 1,
       "browserPlayable": true,
-      "nameRisk": 0,
+      "nameRisk": 5,
       "strategicCount": 2,
       "sourceCount": 5,
       "sourceIds": [
@@ -1055,7 +1054,7 @@
       ]
     },
     {
-      "name": "insignificance",
+      "name": "The Liar's Door",
       "channel": "online",
       "fastClass": "pending",
       "fastScore": 0,

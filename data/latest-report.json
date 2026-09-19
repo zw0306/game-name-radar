@@ -1,30 +1,30 @@
 {
-  "scannedAt": "2026-09-19T13:55:31.312Z",
+  "scannedAt": "2026-09-19T14:20:41.360Z",
   "targetMarket": "US_GLOBAL",
   "primaryMarket": "US",
   "referenceMarket": "WORLDWIDE",
-  "totalAdded": 143,
+  "totalAdded": 35,
   "sources": [
     {
       "ok": true,
       "sourceId": "itch-newest-web",
       "sourceName": "itch.io 最新网页游戏",
       "total": 36,
-      "added": 23
+      "added": 9
     },
     {
       "ok": true,
       "sourceId": "itch-new-popular-web",
       "sourceName": "itch.io New & Popular",
       "total": 36,
-      "added": 3
+      "added": 0
     },
     {
       "ok": true,
       "sourceId": "itch-new-feed",
       "sourceName": "itch.io New Feed",
       "total": 36,
-      "added": 33
+      "added": 20
     },
     {
       "ok": true,
@@ -45,14 +45,14 @@
       "sourceId": "steam-popular-new",
       "sourceName": "Steam 热门新发行",
       "total": 50,
-      "added": 1
+      "added": 0
     },
     {
       "ok": true,
       "sourceId": "steam-latest-indie",
       "sourceName": "Steam 最新独立游戏",
       "total": 50,
-      "added": 2
+      "added": 0
     },
     {
       "ok": true,
@@ -66,7 +66,7 @@
       "sourceId": "newgrounds-latest",
       "sourceName": "Newgrounds 最新通过作品",
       "total": 12,
-      "added": 3
+      "added": 0
     },
     {
       "ok": true,
@@ -87,7 +87,7 @@
       "sourceId": "y8-new",
       "sourceName": "Y8 新游戏",
       "total": 73,
-      "added": 28
+      "added": 6
     },
     {
       "ok": false,
@@ -101,100 +101,58 @@
       "sourceName": "Lagged 新游戏",
       "total": 82,
       "added": 0
-    },
-    {
-      "ok": true,
-      "sourceId": "trends-rising-7d-itch-io",
-      "sourceName": "Trends上涨 7天 · itch io",
-      "total": 13,
-      "added": 8
-    },
-    {
-      "ok": true,
-      "sourceId": "trends-rising-30d-itch-io",
-      "sourceName": "Trends上涨 30天 · itch io",
-      "total": 17,
-      "added": 11
-    },
-    {
-      "ok": true,
-      "sourceId": "trends-rising-7d-indie-game",
-      "sourceName": "Trends上涨 7天 · indie game",
-      "total": 11,
-      "added": 7
-    },
-    {
-      "ok": true,
-      "sourceId": "trends-rising-30d-indie-game",
-      "sourceName": "Trends上涨 30天 · indie game",
-      "total": 17,
-      "added": 10
-    },
-    {
-      "ok": true,
-      "sourceId": "trends-rising-7d-horror-game",
-      "sourceName": "Trends上涨 7天 · horror game",
-      "total": 13,
-      "added": 2
-    },
-    {
-      "ok": true,
-      "sourceId": "trends-rising-30d-horror-game",
-      "sourceName": "Trends上涨 30天 · horror game",
-      "total": 20,
-      "added": 12
     }
   ],
-  "seoVerified": 89,
+  "seoVerified": 86,
   "seoErrors": 0,
   "fastModelVersion": 3,
-  "fastPassedCount": 265,
-  "fastWatchCount": 260,
-  "fastRejectedCount": 142,
+  "fastPassedCount": 272,
+  "fastWatchCount": 270,
+  "fastRejectedCount": 133,
   "youtubeEnabled": false,
   "youtubeConfigured": false,
   "youtubeVerified": 0,
   "youtubeErrors": 0,
-  "trendsVerified": 5,
+  "trendsVerified": 16,
   "trendErrors": 0,
   "trendBatchRan": true,
   "trendQueueSize": 0,
-  "risingDiscoveryRan": true,
+  "risingDiscoveryRan": false,
   "seoModelVersion": 5,
   "trendModelVersion": 4,
-  "seoPassedCount": 422,
-  "trendEligibleCount": 204,
+  "seoPassedCount": 438,
+  "trendEligibleCount": 205,
   "trendPendingCount": 162,
-  "trendValidatedCount": 351,
-  "risingCount": 4,
+  "trendValidatedCount": 366,
+  "risingCount": 5,
   "globalRisingCount": 0,
   "recommendationCounts": {
     "independent": 0,
     "test-now": 0,
     "page": 4,
-    "watch": 458,
-    "reject": 78,
-    "pending": 2460,
+    "watch": 474,
+    "reject": 69,
+    "pending": 2453,
     "error": 0
   },
   "trendProvider": "serpapi",
   "trendProviderCounts": {
-    "serpapi": 351
+    "serpapi": 366
   },
   "serpApiConfigured": true,
   "serpApiUsage": {
     "enabled": true,
     "month": "2026-09",
-    "monthUsed": 146,
+    "monthUsed": 162,
     "day": "2026-09-19",
-    "dayUsed": 146,
+    "dayUsed": 162,
     "monthlyLimit": 245,
     "dailyLimit": 245,
-    "updatedAt": "2026-09-19T13:57:48.077Z"
+    "updatedAt": "2026-09-19T14:22:56.911Z"
   },
   "apifyConfigured": false,
   "apifyAccountStatus": {
-    "checkedAt": "2026-09-19T13:55:30.370Z",
+    "checkedAt": "2026-09-19T14:20:40.375Z",
     "configured": false,
     "ok": false,
     "provider": "apify",
@@ -212,19 +170,19 @@
   },
   "seoProvider": "serper-google-search",
   "seoProviderCounts": {
-    "serper+autocomplete": 435,
+    "serper+autocomplete": 443,
     "evidence-fallback": 138,
     "duckduckgo+autocomplete": 95
   },
   "serperConfigured": true,
   "serperUsage": {
     "enabled": true,
-    "totalUsed": 800,
+    "totalUsed": 886,
     "day": "2026-09-19",
-    "dayUsed": 800,
+    "dayUsed": 886,
     "totalLimit": 2450,
     "dailyLimit": 2450,
-    "updatedAt": "2026-09-19T13:57:33.182Z",
+    "updatedAt": "2026-09-19T14:22:06.953Z",
     "lastError": null
   },
   "googleCseConfiguredSlots": 0,
@@ -243,16 +201,16 @@
   },
   "siteTypeModelVersion": 2,
   "siteTypeCounts": {
-    "online": 2316,
-    "wiki": 114,
-    "pending": 570
+    "online": 2307,
+    "wiki": 112,
+    "pending": 581
   },
   "wikiPrelaunchModelVersion": 2,
   "wikiPrelaunchCounts": {
     "priority": 0,
-    "prepare": 13,
-    "watch": 7,
-    "weak": 94
+    "prepare": 9,
+    "watch": 5,
+    "weak": 98
   },
   "serperVerification": {
     "rushMode": true,
@@ -265,112 +223,109 @@
     "limit": 90,
     "onlineLimit": 63,
     "wikiLimit": 27,
-    "queueSize": 90,
-    "verified": 89,
+    "queueSize": 86,
+    "verified": 86,
     "verifiedByChannel": {
-      "online": 62,
-      "wiki": 27,
+      "online": 63,
+      "wiki": 23,
       "pending": 0
     },
-    "errors": 1,
+    "errors": 0,
     "quotaStopped": false,
     "verifiedNames": [
-      "Rock Declutterer",
-      "Dawson Oaks Trailer Park",
-      "Police Chief Simulator",
-      "The Guild 1 Remake: Europa 1410",
-      "Ragdoll SuperFun Banana",
-      "Merge Elementals: Castle Defense",
-      "Splash Sliders",
-      "Monster Island",
-      "Slime Horde TD",
-      "Call of Duty®: Black Ops 7 - BlackCell (Season 06)",
-      "pop jump",
-      "Muccha Octopus",
-      "Doom Fest",
-      "Mage Dungeon",
-      "Five Nights at Bipolar Planet",
-      "Sometimes|Nowhere",
-      "Mythical March Arena",
-      "Rodha",
-      "Pip's Leap",
-      "Evolution Animals +1",
-      "Vox Heroes",
-      "City Gas Station Simulator",
-      "SEEDLIFT",
-      "Honeycraft",
-      "Seekquence",
-      "90s 666 DEMO",
-      "BUILD A GUN",
-      "015 RPS CARDS",
-      "014 DUNGEON DICE",
-      "project-0443",
-      "Clanky! Clicker",
-      "Eggcelente Oferta",
-      "Tip Tap Notes",
-      "D.U.C.C. - Ducks United Cosmos Crusader",
-      "Dating Killmulator",
-      "Cata Lata",
-      "Entre cores",
-      "Space Farmers",
-      "Coin Cascade",
-      "Quick 1v1 Games - Instant Chat Mini-Games",
-      "Swan Rhythm - スワン、まだ待て",
-      "Purrdy Cat",
-      "Katabasis Prototype",
-      "Bippi's Space Reboot",
-      "Mechanics playground",
-      "Signal Flow",
-      "The Soundtrack of My Life",
-      "Alien Attack",
-      "Test Drive Car Parking",
-      "Puppet Soccer 2026 Football",
-      "Super Block Digger",
-      "cars super simulator",
-      "Space War: Space Eater",
-      "Scratch It! Lucky Cards",
-      "Click Cafe",
-      "Thock Factory",
-      "Thought Rot",
-      "Incremental Bowling demo",
-      "Au lait or Not",
-      "Incremental Mines",
-      "Color Cascade",
-      "Crash Miner",
-      "One More Floor",
-      "Trillion Dollar Cart",
-      "TrustMe Social™",
-      "Cherry Picking Bot Demo",
-      "Persona 4 Revival",
-      "METRO 2039",
-      "Rooted",
-      "Graveyard Keeper 2",
-      "ACE COMBAT 8: WINGS OF THEVE",
-      "Somebody's Tale",
-      "Granny - Welcome Home",
-      "Pixel BlackJack - 二十一点",
-      "Visual Novel: EVENING BROADCAST",
-      "Perfect Cut",
-      "Slime Trader",
-      "Poopy's Playland",
-      "Glitch Protocol",
-      "Dashing Krew",
-      "Jumping Jimothy",
-      "Chief Cenab : Şahmaran",
-      "Gears of War: E-Day",
-      "Emberwall",
-      "Ashworth",
-      "Epochlings",
-      "Meowtsky",
-      "Gridmax",
-      "WomboCombo"
+      "Fright Train",
+      "Batomon Showdown",
+      "Steam Frame",
+      "Gunman Contracts - Stand Alone",
+      "Train Sim World® 7",
+      "Wanderburg",
+      "Blocky Sword",
+      "Heist Hop",
+      "Kick Brainrot Balls",
+      "Escape: Pickaxe Swing",
+      "Roll King",
+      "Mirage Survivors",
+      "Miner, Dig It All",
+      "Dino Realms",
+      "Wrecking Beam",
+      "Flower Story",
+      "Master Chess",
+      "Hole.io",
+      "Subway Surfers",
+      "MineFun.io",
+      "Slime Keyboard Escape",
+      "Drift Boss",
+      "Retro Bowl",
+      "Dino Merge",
+      "Shroom and Gloom",
+      "Avatar Legends: The Fighting Game",
+      "Merge Defense: Army Behind the Wall",
+      "The Loopler",
+      "Spot the Diff: Drama Style",
+      "GLITCH BRAWL",
+      "Star Caravan — Prototype",
+      "Paw Cafe: Global Tycoon",
+      "Spin Lander",
+      "Gold Fishin'",
+      "Bouncing rocks",
+      "Cornerlet",
+      "GYROBLADE",
+      "Yeetcat",
+      "Word Search Puzzle",
+      "Road To Glory",
+      "Blocky Blast Puzzle",
+      "Catch a Pet",
+      "Axie Dream Diver — Dream 01",
+      "Tanks 1944",
+      "Touhou Koumakyou: New Classic - the Embodiment of Scarlet Devil",
+      "Cop Simulator: My Prison 3D",
+      "My Clothing Store Simulator 3D",
+      "Clean The Supermarket",
+      "Pirate Guy",
+      "Movie Star Dress Up",
+      "Soccer(football) manager pro",
+      "GameOverse: Kit's Power Battle",
+      "ATM Hack: a fan-made recreation of the GTA RP button-mash hack",
+      "🍺 Brewverse Odyssey: The Levain 🍺DEMO",
+      "Still Dreaming",
+      "Jump Army",
+      "Sprunki: REVAMPED",
+      "Frozen Ground",
+      "Sprunki.APK",
+      "Hard Spinning Blades",
+      "Immortal Ascension",
+      "Rattle Spring: Overture",
+      "Elite Soccer Manager",
+      "Mercy - Prototype",
+      "Incremental Pain Profit",
+      "Pirate Themed Fishing",
+      "Sprunki:Colors Like you Wanted",
+      "Fish Fishing",
+      "ABSOLUTE HIGHLOAD",
+      "Great March",
+      "Sapphic Tactics",
+      "Zero Pressure",
+      "Polícia e Ladrão",
+      "PVKK: Planetenverteidigungskanonenkommandant",
+      "Trash Wars",
+      "Nexus Ascendant",
+      "IDEL CAVITY INC.",
+      "That Cloud Looks Like",
+      "Black Hole Grow Forever",
+      "At Face Value",
+      "Night Alley : ตรอกลวง ดวงดับ",
+      "Dead Margin",
+      "Dravo's Twisted Show",
+      "Biovoid",
+      "Cubed",
+      "Lander"
     ],
-    "ranAt": "2026-09-19T13:57:33.320Z"
+    "ranAt": "2026-09-19T14:22:07.090Z"
   },
   "evidenceSeoFallback": {
     "enabled": true,
     "limit": 180,
-    "pendingCount": 2333,
+    "pendingCount": 2325,
     "eligibleCount": 0,
     "queueSize": 0,
     "verified": 0,
@@ -387,7 +342,7 @@
       "pending": 0
     },
     "verifiedNames": [],
-    "ranAt": "2026-09-19T13:57:33.978Z"
+    "ranAt": "2026-09-19T14:22:07.755Z"
   },
   "socialBuzzVerification": {
     "modelVersion": 3,
@@ -409,16 +364,16 @@
       "x": 0,
       "tiktok": 0
     },
-    "ranAt": "2026-09-19T13:57:34.983Z"
+    "ranAt": "2026-09-19T14:22:08.750Z"
   },
   "serpApiAccountStatus": {
-    "checkedAt": "2026-09-19T13:57:35.230Z",
+    "checkedAt": "2026-09-19T14:22:08.921Z",
     "accountApiConsumesSearchCredits": false,
     "configuredKeys": 1,
     "workingKeys": 1,
     "uniqueAccountCount": 1,
     "duplicateKeyGroups": [],
-    "totalIndependentSearchesLeft": 114,
+    "totalIndependentSearchesLeft": 109,
     "accounts": [
       {
         "accountFingerprint": "ea334463bd86",
@@ -427,8 +382,8 @@
         ],
         "planName": "Free Plan",
         "searchesPerMonth": 250,
-        "thisMonthUsage": 136,
-        "totalSearchesLeft": 114,
+        "thisMonthUsage": 141,
+        "totalSearchesLeft": 109,
         "renewalDate": "2026-10-19"
       }
     ],
@@ -445,11 +400,11 @@
         "planMonthlyPrice": 0,
         "renewalDate": "2026-10-19",
         "searchesPerMonth": 250,
-        "thisMonthUsage": 136,
-        "planSearchesLeft": 114,
-        "totalSearchesLeft": 114,
+        "thisMonthUsage": 141,
+        "planSearchesLeft": 109,
+        "totalSearchesLeft": 109,
         "rateLimitPerHour": 250,
-        "checkedAt": "2026-09-19T13:57:35.229Z",
+        "checkedAt": "2026-09-19T14:22:08.921Z",
         "sharedAccount": false,
         "sharedWithSlots": []
       },
@@ -485,12 +440,12 @@
   },
   "channelOpportunityCounts": {
     "online": {
-      "validated": 300,
-      "rising": 1,
+      "validated": 312,
+      "rising": 2,
       "recommended": 0
     },
     "wiki": {
-      "validated": 50,
+      "validated": 53,
       "rising": 2,
       "recommended": 0
     },
@@ -503,19 +458,19 @@
   "serpApiQuotaFill": {
     "enabled": true,
     "configuredSlots": 1,
-    "remainingAtStart": 104,
-    "queueSize": 5,
-    "verified": 5,
+    "remainingAtStart": 99,
+    "queueSize": 16,
+    "verified": 16,
     "errors": 0,
     "quotaStopped": false,
     "tierCounts": {
-      "strong": 1,
-      "secondary": 3,
-      "strategic": 1
+      "strong": 7,
+      "secondary": 5,
+      "strategic": 4
     },
     "channelVerified": {
-      "online": 3,
-      "wiki": 2,
+      "online": 12,
+      "wiki": 4,
       "pending": 0
     },
     "pendingByTier": {
@@ -528,11 +483,22 @@
       "wiki": 0
     },
     "verifiedNames": [
-      "Dating Killmulator",
-      "Cherry Picking Bot Demo",
-      "Dawson Oaks Trailer Park",
-      "Coin Cascade",
-      "Police Chief Simulator"
+      "Hole.io",
+      "Retro Bowl",
+      "MineFun.io",
+      "Master Chess",
+      "Subway Surfers",
+      "Blocky Blast Puzzle",
+      "Slime Keyboard Escape",
+      "Incremental Pain Profit",
+      "Rattle Spring: Overture",
+      "Sapphic Tactics",
+      "Gold Fishin'",
+      "Clean The Supermarket",
+      "Batomon Showdown",
+      "Shroom and Gloom",
+      "Avatar Legends: The Fighting Game",
+      "The Loopler"
     ],
     "caps": {
       "online": 999,
@@ -545,39 +511,39 @@
         "envName": "SERPAPI_API_KEY",
         "ok": true,
         "error": null,
-        "verified": 5,
+        "verified": 16,
         "channelVerified": {
-          "online": 3,
-          "wiki": 2,
+          "online": 12,
+          "wiki": 4,
           "pending": 0
         },
         "errors": 0,
         "quotaStopped": false
       }
     },
-    "ranAt": "2026-09-19T13:57:50.849Z"
+    "ranAt": "2026-09-19T14:23:02.500Z"
   },
   "serpApiConfiguredSlots": 1,
   "serpApiPoolUsage": {
     "enabled": true,
     "configuredSlots": 1,
     "month": "2026-09",
-    "monthUsed": 146,
+    "monthUsed": 162,
     "day": "2026-09-19",
-    "dayUsed": 146,
+    "dayUsed": 162,
     "monthlyLimit": 245,
     "dailyLimit": 245,
     "accounts": {
       "1": {
         "envName": "SERPAPI_API_KEY",
-        "monthUsed": 146,
-        "dayUsed": 146,
+        "monthUsed": 162,
+        "dayUsed": 162,
         "monthlyLimit": 245,
         "dailyLimit": 245,
-        "updatedAt": "2026-09-19T13:57:48.077Z"
+        "updatedAt": "2026-09-19T14:22:56.911Z"
       }
     },
-    "updatedAt": "2026-09-19T13:57:50.893Z"
+    "updatedAt": "2026-09-19T14:23:02.550Z"
   },
   "searchApiConfigured": false,
   "searchApiTrendsUsage": {
@@ -620,6 +586,6 @@
     },
     "verifiedNames": [],
     "errorNames": [],
-    "ranAt": "2026-09-19T13:57:51.422Z"
+    "ranAt": "2026-09-19T14:23:03.093Z"
   }
 }
