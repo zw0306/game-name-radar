@@ -1,44 +1,44 @@
 {
-  "generatedAt": "2026-09-19T06:17:23.460Z",
+  "generatedAt": "2026-09-19T06:38:09.477Z",
   "totalCandidates": 3000,
-  "pendingSeo": 2413,
+  "pendingSeo": 2391,
   "channelCounts": {
-    "pending": 415,
-    "online": 1997,
-    "wiki": 1
+    "pending": 417,
+    "online": 1963,
+    "wiki": 11
   },
   "fastClassCounts": {
-    "pending:pending": 415,
-    "online:pending": 1997,
-    "wiki:pending": 1
+    "pending:pending": 417,
+    "online:pending": 1963,
+    "wiki:pending": 11
   },
   "strategicCounts": {
-    "pending:0": 406,
-    "online:2": 477,
-    "online:1": 1520,
+    "pending:0": 408,
+    "online:2": 473,
+    "online:1": 1490,
     "pending:1": 9,
-    "wiki:0": 1
+    "wiki:1": 11
   },
   "topSources": [
     {
       "id": "itch-new",
-      "count": 1963
+      "count": 1929
     },
     {
       "id": "itch-newest-web",
-      "count": 1934
+      "count": 1898
     },
     {
       "id": "itch-new-feed",
-      "count": 1904
+      "count": 1870
     },
     {
       "id": "itch-new-popular-web",
-      "count": 474
+      "count": 472
     },
     {
       "id": "itch-popular",
-      "count": 474
+      "count": 472
     },
     {
       "id": "trends-rising-7d",
@@ -89,20 +89,20 @@
       "count": 29
     },
     {
+      "id": "steam-latest-indie",
+      "count": 17
+    },
+    {
+      "id": "steam-new",
+      "count": 17
+    },
+    {
       "id": "itch-featured-feed",
       "count": 9
     },
     {
       "id": "itch-featured",
       "count": 9
-    },
-    {
-      "id": "steam-latest-indie",
-      "count": 6
-    },
-    {
-      "id": "steam-new",
-      "count": 6
     },
     {
       "id": "y8-new",
@@ -115,10 +115,6 @@
     {
       "id": "lagged-new",
       "count": 2
-    },
-    {
-      "id": "steam-top-wishlist",
-      "count": 1
     }
   ],
   "samples": [
@@ -446,63 +442,6 @@
       ]
     },
     {
-      "name": "Nine Heavens Ascent",
-      "channel": "online",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 15,
-      "platforms": 1,
-      "browserPlayable": true,
-      "nameRisk": 0,
-      "strategicCount": 2,
-      "sourceCount": 5,
-      "sourceIds": [
-        "itch-newest-web",
-        "itch-new",
-        "itch-new-feed",
-        "itch-new-popular-web",
-        "itch-popular"
-      ]
-    },
-    {
-      "name": "DreamCore House",
-      "channel": "online",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 15,
-      "platforms": 1,
-      "browserPlayable": true,
-      "nameRisk": 0,
-      "strategicCount": 2,
-      "sourceCount": 5,
-      "sourceIds": [
-        "itch-newest-web",
-        "itch-new",
-        "itch-new-feed",
-        "itch-new-popular-web",
-        "itch-popular"
-      ]
-    },
-    {
-      "name": "MYTHOS LAST SUMMER",
-      "channel": "online",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 15,
-      "platforms": 1,
-      "browserPlayable": true,
-      "nameRisk": 0,
-      "strategicCount": 2,
-      "sourceCount": 5,
-      "sourceIds": [
-        "itch-newest-web",
-        "itch-new",
-        "itch-new-feed",
-        "itch-new-popular-web",
-        "itch-popular"
-      ]
-    },
-    {
       "name": "Kick The Piñata!",
       "channel": "online",
       "fastClass": "pending",
@@ -511,25 +450,6 @@
       "platforms": 1,
       "browserPlayable": true,
       "nameRisk": 5,
-      "strategicCount": 2,
-      "sourceCount": 5,
-      "sourceIds": [
-        "itch-newest-web",
-        "itch-new",
-        "itch-new-feed",
-        "itch-new-popular-web",
-        "itch-popular"
-      ]
-    },
-    {
-      "name": "Running God",
-      "channel": "online",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 15,
-      "platforms": 1,
-      "browserPlayable": true,
-      "nameRisk": 0,
       "strategicCount": 2,
       "sourceCount": 5,
       "sourceIds": [
@@ -1062,6 +982,82 @@
       "platforms": 1,
       "browserPlayable": true,
       "nameRisk": 9,
+      "strategicCount": 2,
+      "sourceCount": 5,
+      "sourceIds": [
+        "itch-newest-web",
+        "itch-new",
+        "itch-new-feed",
+        "itch-new-popular-web",
+        "itch-popular"
+      ]
+    },
+    {
+      "name": "Gravitor",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 15,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 5,
+      "strategicCount": 2,
+      "sourceCount": 5,
+      "sourceIds": [
+        "itch-newest-web",
+        "itch-new",
+        "itch-new-feed",
+        "itch-new-popular-web",
+        "itch-popular"
+      ]
+    },
+    {
+      "name": "Eleven Thousand: Deep",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 15,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 0,
+      "strategicCount": 2,
+      "sourceCount": 5,
+      "sourceIds": [
+        "itch-newest-web",
+        "itch-new",
+        "itch-new-feed",
+        "itch-new-popular-web",
+        "itch-popular"
+      ]
+    },
+    {
+      "name": "Eternal Fortress",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 15,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 0,
+      "strategicCount": 2,
+      "sourceCount": 5,
+      "sourceIds": [
+        "itch-newest-web",
+        "itch-new",
+        "itch-new-feed",
+        "itch-new-popular-web",
+        "itch-popular"
+      ]
+    },
+    {
+      "name": "Industrial Knowledge",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 15,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 0,
       "strategicCount": 2,
       "sourceCount": 5,
       "sourceIds": [

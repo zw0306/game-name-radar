@@ -2,20 +2,20 @@
   "enabled": true,
   "configuredSlots": 1,
   "month": "2026-09",
-  "monthUsed": 92,
+  "monthUsed": 100,
   "day": "2026-09-19",
-  "dayUsed": 92,
+  "dayUsed": 100,
   "monthlyLimit": 245,
   "dailyLimit": 245,
   "accounts": {
     "1": {
       "envName": "SERPAPI_API_KEY",
-      "monthUsed": 92,
-      "dayUsed": 92,
+      "monthUsed": 100,
+      "dayUsed": 100,
       "monthlyLimit": 245,
       "dailyLimit": 245,
-      "updatedAt": "2026-09-19T06:17:52.634Z"
+      "updatedAt": "2026-09-19T06:38:17.890Z"
     }
   },
-  "updatedAt": "2026-09-19T06:17:57.522Z"
+  "updatedAt": "2026-09-19T06:38:19.135Z"
 }
