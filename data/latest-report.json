@@ -1,16 +1,16 @@
 {
-  "scannedAt": "2026-09-19T03:37:50.210Z",
+  "scannedAt": "2026-09-19T03:40:00.297Z",
   "targetMarket": "US_GLOBAL",
   "primaryMarket": "US",
   "referenceMarket": "WORLDWIDE",
-  "totalAdded": 5,
+  "totalAdded": 1,
   "sources": [
     {
       "ok": true,
       "sourceId": "itch-newest-web",
       "sourceName": "itch.io 最新网页游戏",
       "total": 36,
-      "added": 4
+      "added": 0
     },
     {
       "ok": true,
@@ -153,7 +153,7 @@
   },
   "apifyConfigured": false,
   "apifyAccountStatus": {
-    "checkedAt": "2026-09-19T03:37:49.258Z",
+    "checkedAt": "2026-09-19T03:39:59.312Z",
     "configured": false,
     "ok": false,
     "provider": "apify",
@@ -234,7 +234,7 @@
     "errors": 0,
     "quotaStopped": true,
     "verifiedNames": [],
-    "ranAt": "2026-09-19T03:37:55.236Z"
+    "ranAt": "2026-09-19T03:40:05.156Z"
   },
   "evidenceSeoFallback": {
     "enabled": true,
@@ -256,7 +256,7 @@
       "pending": 0
     },
     "verifiedNames": [],
-    "ranAt": "2026-09-19T03:37:55.961Z"
+    "ranAt": "2026-09-19T03:40:05.876Z"
   },
   "socialBuzzVerification": {
     "modelVersion": 3,
@@ -278,10 +278,10 @@
       "x": 0,
       "tiktok": 0
     },
-    "ranAt": "2026-09-19T03:37:56.936Z"
+    "ranAt": "2026-09-19T03:40:06.843Z"
   },
   "serpApiAccountStatus": {
-    "checkedAt": "2026-09-19T03:37:57.220Z",
+    "checkedAt": "2026-09-19T03:40:06.994Z",
     "accountApiConsumesSearchCredits": false,
     "configuredKeys": 1,
     "workingKeys": 1,
@@ -318,7 +318,7 @@
         "planSearchesLeft": 250,
         "totalSearchesLeft": 250,
         "rateLimitPerHour": 250,
-        "checkedAt": "2026-09-19T03:37:57.220Z",
+        "checkedAt": "2026-09-19T03:40:06.993Z",
         "sharedAccount": false,
         "sharedWithSlots": []
       },
@@ -418,7 +418,7 @@
         "quotaStopped": false
       }
     },
-    "ranAt": "2026-09-19T03:37:57.827Z"
+    "ranAt": "2026-09-19T03:40:07.593Z"
   },
   "serpApiConfiguredSlots": 1,
   "serpApiPoolUsage": {
@@ -440,7 +440,7 @@
         "updatedAt": "2026-09-01T00:53:23.800Z"
       }
     },
-    "updatedAt": "2026-09-19T03:37:57.877Z"
+    "updatedAt": "2026-09-19T03:40:07.649Z"
   },
   "searchApiConfigured": false,
   "searchApiTrendsUsage": {
@@ -483,6 +483,6 @@
     },
     "verifiedNames": [],
     "errorNames": [],
-    "ranAt": "2026-09-19T03:37:58.379Z"
+    "ranAt": "2026-09-19T03:40:08.150Z"
   }
 }
