@@ -153,6 +153,9 @@ jobs:
       - name: Finalize online and wiki opportunity counts
         run: npm run classify
 
+      - name: Split candidates into recent and monthly archives
+        run: node scripts/split-candidates.mjs
+
       - name: Commit updated result data
         run: |
           if git diff --quiet -- data/; then
