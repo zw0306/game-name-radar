@@ -126,7 +126,7 @@ test('allows a genuinely new online term when market and social evidence both pa
 
 test('routes an unknown-history rising term to test-now instead of strict independent', () => {
   const candidate = baseCandidate({
-    firstSeen: '2026-08-27T08:00:00Z',
+    firstSeen: new Date(Date.now() - 86400000).toISOString(),
     trend: {
       modelVersion: 4,
       classification: 'breakout',

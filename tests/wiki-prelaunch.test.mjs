@@ -9,21 +9,21 @@ const NOW = Date.parse('2026-08-04T02:00:00Z');
 
 function prelaunchCandidate(overrides = {}) {
   const social = analyzeOnlineSocialBuzz({ social: { providers: {
-    youtube: { configured: true, checkedAt: '2026-08-04T01:00:00Z', videoCount: 8, channelCount: 6, totalViews: 120000, totalLikes: 7000, totalComments: 900, recent24h: 3 },
-    reddit: { configured: true, checkedAt: '2026-08-04T01:00:00Z', postCount: 6, subredditCount: 3, authorCount: 5, totalScore: 500, totalComments: 180, recent24h: 2 },
+    youtube: { configured: true, checkedAt: new Date(Date.now() - 3600000).toISOString(), videoCount: 8, channelCount: 6, totalViews: 120000, totalLikes: 7000, totalComments: 900, recent24h: 3 },
+    reddit: { configured: true, checkedAt: new Date(Date.now() - 3600000).toISOString(), postCount: 6, subredditCount: 3, authorCount: 5, totalScore: 500, totalComments: 180, recent24h: 2 },
     x: { configured: false },
     tiktok: { configured: false },
   } } });
   return {
     gameName: 'Project Emberfall',
-    firstSeen: '2026-08-02T02:00:00Z',
+    firstSeen: new Date(Date.now() - 86400000).toISOString(),
     sources: [{
       key: 'steam-top-wishlist|https://store.steampowered.com/app/123/project_emberfall/',
       sourceId: 'steam-top-wishlist',
       kind: 'steam-top-wishlist',
       url: 'https://store.steampowered.com/app/123/project_emberfall/',
-      date: 'Sep 12, 2026',
-      firstSeen: '2026-08-02T02:00:00Z',
+      date: 'Sep 12, 2030',
+      firstSeen: new Date(Date.now() - 86400000).toISOString(),
       previousRank: 32,
       currentRank: 18,
       bestRank: 18,
@@ -45,7 +45,7 @@ function prelaunchCandidate(overrides = {}) {
     },
     fast: { modelVersion: 3, classification: 'pass', score: 72 },
     trend: { modelVersion: 4, classification: 'breakout', score: 88, keywordFreshness: 'new' },
-    youtube: { checkedAt: '2026-08-04T01:00:00Z', videoCount: 8, channelCount: 6, totalViews: 120000 },
+    youtube: { checkedAt: new Date(Date.now() - 3600000).toISOString(), videoCount: 8, channelCount: 6, totalViews: 120000 },
     social,
     siteType: {
       modelVersion: 2,
@@ -64,12 +64,12 @@ test('parses release date from Steam search result rows', () => {
     <a class="search_result_row ds_collapse_flag" href="https://store.steampowered.com/app/123/Project_Emberfall/">
       <div class="responsive_search_name_combined">
         <span class="title">Project Emberfall</span>
-        <div class="col search_released responsive_secondrow">Sep 12, 2026</div>
+        <div class="col search_released responsive_secondrow">Sep 12, 2030</div>
       </div>
     </a>`;
   const [entry] = parseSteamSearch(html);
   assert.equal(entry.gameName, 'Project Emberfall');
-  assert.equal(entry.releaseDate, 'Sep 12, 2026');
+  assert.equal(entry.releaseDate, 'Sep 12, 2030');
 });
 
 test('prioritizes an unreleased high-wishlist game with guide depth and trailer momentum', () => {
