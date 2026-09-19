@@ -1,45 +1,44 @@
 {
-  "generatedAt": "2026-09-19T09:33:28.300Z",
+  "generatedAt": "2026-09-19T11:16:53.000Z",
   "totalCandidates": 3000,
-  "pendingSeo": 2383,
+  "pendingSeo": 2379,
   "channelCounts": {
-    "pending": 435,
-    "online": 1939,
-    "wiki": 9
+    "pending": 445,
+    "online": 1928,
+    "wiki": 6
   },
   "fastClassCounts": {
-    "pending:pending": 435,
-    "online:pending": 1939,
-    "wiki:pending": 9
+    "pending:pending": 445,
+    "online:pending": 1928,
+    "wiki:pending": 6
   },
   "strategicCounts": {
-    "pending:0": 426,
-    "online:2": 473,
-    "online:1": 1466,
+    "pending:0": 436,
+    "online:2": 470,
+    "online:1": 1458,
     "pending:1": 9,
-    "wiki:0": 1,
-    "wiki:1": 8
+    "wiki:1": 6
   },
   "topSources": [
     {
       "id": "itch-new",
-      "count": 1913
+      "count": 1912
     },
     {
       "id": "itch-newest-web",
-      "count": 1866
+      "count": 1855
     },
     {
       "id": "itch-new-feed",
-      "count": 1854
+      "count": 1853
     },
     {
       "id": "itch-new-popular-web",
-      "count": 472
+      "count": 469
     },
     {
       "id": "itch-popular",
-      "count": 472
+      "count": 469
     },
     {
       "id": "trends-rising-7d",
@@ -75,27 +74,27 @@
     },
     {
       "id": "newgrounds-latest",
-      "count": 35
+      "count": 36
     },
     {
       "id": "newgrounds-new",
-      "count": 35
+      "count": 36
     },
     {
       "id": "newgrounds-daily-top",
-      "count": 32
+      "count": 30
     },
     {
       "id": "newgrounds-top",
-      "count": 32
+      "count": 30
     },
     {
       "id": "steam-latest-indie",
-      "count": 14
+      "count": 12
     },
     {
       "id": "steam-new",
-      "count": 14
+      "count": 12
     },
     {
       "id": "itch-featured-feed",
@@ -118,7 +117,7 @@
       "count": 2
     },
     {
-      "id": "steam-top-wishlist",
+      "id": "crazygames-new",
       "count": 1
     }
   ],
@@ -466,25 +465,6 @@
       ]
     },
     {
-      "name": "Treeternal Demo",
-      "channel": "online",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 15,
-      "platforms": 1,
-      "browserPlayable": true,
-      "nameRisk": 0,
-      "strategicCount": 2,
-      "sourceCount": 5,
-      "sourceIds": [
-        "itch-newest-web",
-        "itch-new",
-        "itch-new-feed",
-        "itch-new-popular-web",
-        "itch-popular"
-      ]
-    },
-    {
       "name": "DownShaft",
       "channel": "online",
       "fastClass": "pending",
@@ -493,25 +473,6 @@
       "platforms": 1,
       "browserPlayable": true,
       "nameRisk": 5,
-      "strategicCount": 2,
-      "sourceCount": 5,
-      "sourceIds": [
-        "itch-newest-web",
-        "itch-new",
-        "itch-new-feed",
-        "itch-new-popular-web",
-        "itch-popular"
-      ]
-    },
-    {
-      "name": "Nuclear-Stic Mines Retrash'd",
-      "channel": "online",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 15,
-      "platforms": 1,
-      "browserPlayable": true,
-      "nameRisk": 0,
       "strategicCount": 2,
       "sourceCount": 5,
       "sourceIds": [
@@ -558,25 +519,6 @@
         "itch-new-feed",
         "itch-new-popular-web",
         "itch-popular"
-      ]
-    },
-    {
-      "name": "Intergalactic Comet Rail Project",
-      "channel": "online",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 15,
-      "platforms": 1,
-      "browserPlayable": true,
-      "nameRisk": 0,
-      "strategicCount": 2,
-      "sourceCount": 5,
-      "sourceIds": [
-        "itch-newest-web",
-        "itch-new",
-        "itch-new-popular-web",
-        "itch-popular",
-        "itch-new-feed"
       ]
     },
     {
@@ -1063,6 +1005,63 @@
       "platforms": 1,
       "browserPlayable": true,
       "nameRisk": 0,
+      "strategicCount": 2,
+      "sourceCount": 5,
+      "sourceIds": [
+        "itch-newest-web",
+        "itch-new",
+        "itch-new-feed",
+        "itch-new-popular-web",
+        "itch-popular"
+      ]
+    },
+    {
+      "name": "Scratch It! Lucky Cards",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 15,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 0,
+      "strategicCount": 2,
+      "sourceCount": 5,
+      "sourceIds": [
+        "itch-newest-web",
+        "itch-new",
+        "itch-new-feed",
+        "itch-new-popular-web",
+        "itch-popular"
+      ]
+    },
+    {
+      "name": "Click Cafe",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 15,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 0,
+      "strategicCount": 2,
+      "sourceCount": 5,
+      "sourceIds": [
+        "itch-newest-web",
+        "itch-new",
+        "itch-new-feed",
+        "itch-new-popular-web",
+        "itch-popular"
+      ]
+    },
+    {
+      "name": "Heart of Stars",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 15,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 6,
       "strategicCount": 2,
       "sourceCount": 5,
       "sourceIds": [
