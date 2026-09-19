@@ -1,30 +1,30 @@
 {
-  "scannedAt": "2026-09-19T03:03:28.855Z",
+  "scannedAt": "2026-09-19T03:07:00.791Z",
   "targetMarket": "US_GLOBAL",
   "primaryMarket": "US",
   "referenceMarket": "WORLDWIDE",
-  "totalAdded": 135,
+  "totalAdded": 5,
   "sources": [
     {
       "ok": true,
       "sourceId": "itch-newest-web",
       "sourceName": "itch.io 最新网页游戏",
       "total": 36,
-      "added": 36
+      "added": 0
     },
     {
       "ok": true,
       "sourceId": "itch-new-popular-web",
       "sourceName": "itch.io New & Popular",
       "total": 36,
-      "added": 2
+      "added": 0
     },
     {
       "ok": true,
       "sourceId": "itch-new-feed",
       "sourceName": "itch.io New Feed",
       "total": 36,
-      "added": 36
+      "added": 2
     },
     {
       "ok": true,
@@ -45,26 +45,28 @@
       "sourceId": "steam-popular-new",
       "sourceName": "Steam 热门新发行",
       "total": 50,
-      "added": 1
+      "added": 0
     },
     {
       "ok": true,
       "sourceId": "steam-latest-indie",
       "sourceName": "Steam 最新独立游戏",
       "total": 50,
-      "added": 3
+      "added": 0
     },
     {
-      "ok": false,
+      "ok": true,
       "sourceId": "newgrounds-daily-top",
       "sourceName": "Newgrounds Daily Top Five",
-      "error": "远程站点返回 503"
+      "total": 5,
+      "added": 0
     },
     {
-      "ok": false,
+      "ok": true,
       "sourceId": "newgrounds-latest",
       "sourceName": "Newgrounds 最新通过作品",
-      "error": "远程站点返回 503"
+      "total": 12,
+      "added": 0
     },
     {
       "ok": true,
@@ -85,7 +87,7 @@
       "sourceId": "y8-new",
       "sourceName": "Y8 新游戏",
       "total": 73,
-      "added": 27
+      "added": 3
     },
     {
       "ok": false,
@@ -99,48 +101,6 @@
       "sourceName": "Lagged 新游戏",
       "total": 82,
       "added": 0
-    },
-    {
-      "ok": true,
-      "sourceId": "trends-rising-7d-itch-io",
-      "sourceName": "Trends上涨 7天 · itch io",
-      "total": 7,
-      "added": 4
-    },
-    {
-      "ok": true,
-      "sourceId": "trends-rising-30d-itch-io",
-      "sourceName": "Trends上涨 30天 · itch io",
-      "total": 12,
-      "added": 2
-    },
-    {
-      "ok": true,
-      "sourceId": "trends-rising-7d-indie-game",
-      "sourceName": "Trends上涨 7天 · indie game",
-      "total": 4,
-      "added": 0
-    },
-    {
-      "ok": true,
-      "sourceId": "trends-rising-30d-indie-game",
-      "sourceName": "Trends上涨 30天 · indie game",
-      "total": 7,
-      "added": 4
-    },
-    {
-      "ok": true,
-      "sourceId": "trends-rising-7d-horror-game",
-      "sourceName": "Trends上涨 7天 · horror game",
-      "total": 16,
-      "added": 12
-    },
-    {
-      "ok": true,
-      "sourceId": "trends-rising-30d-horror-game",
-      "sourceName": "Trends上涨 30天 · horror game",
-      "total": 16,
-      "added": 8
     }
   ],
   "seoVerified": 0,
@@ -157,7 +117,7 @@
   "trendErrors": 0,
   "trendBatchRan": true,
   "trendQueueSize": 0,
-  "risingDiscoveryRan": true,
+  "risingDiscoveryRan": false,
   "seoModelVersion": 5,
   "trendModelVersion": 4,
   "seoPassedCount": 370,
@@ -193,7 +153,7 @@
   },
   "apifyConfigured": false,
   "apifyAccountStatus": {
-    "checkedAt": "2026-09-19T03:03:27.020Z",
+    "checkedAt": "2026-09-19T03:06:59.176Z",
     "configured": false,
     "ok": false,
     "provider": "apify",
@@ -274,7 +234,7 @@
     "errors": 0,
     "quotaStopped": true,
     "verifiedNames": [],
-    "ranAt": "2026-09-19T03:03:54.150Z"
+    "ranAt": "2026-09-19T03:07:12.879Z"
   },
   "evidenceSeoFallback": {
     "enabled": true,
@@ -296,7 +256,7 @@
       "pending": 0
     },
     "verifiedNames": [],
-    "ranAt": "2026-09-19T03:03:55.014Z"
+    "ranAt": "2026-09-19T03:07:13.451Z"
   },
   "socialBuzzVerification": {
     "modelVersion": 3,
@@ -318,10 +278,10 @@
       "x": 0,
       "tiktok": 0
     },
-    "ranAt": "2026-09-19T03:03:56.182Z"
+    "ranAt": "2026-09-19T03:07:14.641Z"
   },
   "serpApiAccountStatus": {
-    "checkedAt": "2026-09-19T03:03:56.348Z",
+    "checkedAt": "2026-09-19T03:07:15.049Z",
     "accountApiConsumesSearchCredits": false,
     "configuredKeys": 1,
     "workingKeys": 1,
@@ -358,7 +318,7 @@
         "planSearchesLeft": 250,
         "totalSearchesLeft": 250,
         "rateLimitPerHour": 250,
-        "checkedAt": "2026-09-19T03:03:56.348Z",
+        "checkedAt": "2026-09-19T03:07:15.048Z",
         "sharedAccount": false,
         "sharedWithSlots": []
       },
@@ -458,7 +418,7 @@
         "quotaStopped": false
       }
     },
-    "ranAt": "2026-09-19T03:03:57.185Z"
+    "ranAt": "2026-09-19T03:07:15.565Z"
   },
   "serpApiConfiguredSlots": 1,
   "serpApiPoolUsage": {
@@ -480,7 +440,7 @@
         "updatedAt": "2026-09-01T00:53:23.800Z"
       }
     },
-    "updatedAt": "2026-09-19T03:03:57.235Z"
+    "updatedAt": "2026-09-19T03:07:15.778Z"
   },
   "searchApiConfigured": false,
   "searchApiTrendsUsage": {
@@ -523,6 +483,6 @@
     },
     "verifiedNames": [],
     "errorNames": [],
-    "ranAt": "2026-09-19T03:03:57.827Z"
+    "ranAt": "2026-09-19T03:07:16.311Z"
   }
 }
