@@ -1,41 +1,44 @@
 {
-  "generatedAt": "2026-09-19T06:12:56.614Z",
+  "generatedAt": "2026-09-19T06:17:23.460Z",
   "totalCandidates": 3000,
-  "pendingSeo": 2432,
+  "pendingSeo": 2413,
   "channelCounts": {
-    "pending": 398,
-    "online": 2034
+    "pending": 415,
+    "online": 1997,
+    "wiki": 1
   },
   "fastClassCounts": {
-    "pending:pending": 398,
-    "online:pending": 2034
+    "pending:pending": 415,
+    "online:pending": 1997,
+    "wiki:pending": 1
   },
   "strategicCounts": {
-    "pending:0": 389,
-    "online:2": 478,
-    "online:1": 1556,
-    "pending:1": 9
+    "pending:0": 406,
+    "online:2": 477,
+    "online:1": 1520,
+    "pending:1": 9,
+    "wiki:0": 1
   },
   "topSources": [
     {
       "id": "itch-new",
-      "count": 1991
+      "count": 1963
     },
     {
       "id": "itch-newest-web",
-      "count": 1979
+      "count": 1934
     },
     {
       "id": "itch-new-feed",
-      "count": 1932
+      "count": 1904
     },
     {
       "id": "itch-new-popular-web",
-      "count": 467
+      "count": 474
     },
     {
       "id": "itch-popular",
-      "count": 467
+      "count": 474
     },
     {
       "id": "trends-rising-7d",
@@ -112,6 +115,10 @@
     {
       "id": "lagged-new",
       "count": 2
+    },
+    {
+      "id": "steam-top-wishlist",
+      "count": 1
     }
   ],
   "samples": [
@@ -371,25 +378,6 @@
       "platforms": 1,
       "browserPlayable": true,
       "nameRisk": 6,
-      "strategicCount": 2,
-      "sourceCount": 5,
-      "sourceIds": [
-        "itch-newest-web",
-        "itch-new",
-        "itch-new-feed",
-        "itch-new-popular-web",
-        "itch-popular"
-      ]
-    },
-    {
-      "name": "Necromancer Incremental Graveyard",
-      "channel": "online",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 15,
-      "platforms": 1,
-      "browserPlayable": true,
-      "nameRisk": 0,
       "strategicCount": 2,
       "sourceCount": 5,
       "sourceIds": [
@@ -1055,6 +1043,25 @@
       "platforms": 1,
       "browserPlayable": true,
       "nameRisk": 0,
+      "strategicCount": 2,
+      "sourceCount": 5,
+      "sourceIds": [
+        "itch-newest-web",
+        "itch-new",
+        "itch-new-feed",
+        "itch-new-popular-web",
+        "itch-popular"
+      ]
+    },
+    {
+      "name": "Idle Wizard",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 15,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 9,
       "strategicCount": 2,
       "sourceCount": 5,
       "sourceIds": [
