@@ -5,17 +5,17 @@
   "monthUsed": 237,
   "day": "2026-09-20",
   "dayUsed": 54,
-  "monthlyLimit": 245,
-  "dailyLimit": 245,
+  "monthlyLimit": 100,
+  "dailyLimit": 10,
   "accounts": {
     "1": {
       "envName": "SERPAPI_API_KEY",
       "monthUsed": 237,
       "dayUsed": 54,
-      "monthlyLimit": 245,
-      "dailyLimit": 245,
+      "monthlyLimit": 100,
+      "dailyLimit": 10,
       "updatedAt": "2026-09-20T02:54:03.847Z"
     }
   },
-  "updatedAt": "2026-09-20T02:54:05.074Z"
+  "updatedAt": "2026-09-20T05:18:15.738Z"
 }

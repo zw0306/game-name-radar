@@ -1,8 +1,15 @@
 {
-  "checkedAt": "2026-09-20T02:52:19.380Z",
-  "configured": false,
-  "ok": false,
+  "checkedAt": "2026-09-20T05:16:08.951Z",
+  "configured": true,
+  "ok": true,
   "provider": "apify",
   "accountApiConsumesActorCredits": false,
-  "error": "APIFY_API_TOKEN is not configured"
+  "accountFingerprint": "89de60e6bd04",
+  "username": "tough_jacket_g42",
+  "plan": {
+    "id": "FREE",
+    "name": null,
+    "monthlyUsageCreditsUsd": 5,
+    "monthlyUsageCredits": null
+  }
 }
