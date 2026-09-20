@@ -1,16 +1,16 @@
 {
-  "scannedAt": "2026-09-20T16:48:04.847Z",
+  "scannedAt": "2026-09-20T19:27:00.476Z",
   "targetMarket": "US_GLOBAL",
   "primaryMarket": "US",
   "referenceMarket": "WORLDWIDE",
-  "totalAdded": 125,
+  "totalAdded": 109,
   "sources": [
     {
       "ok": true,
       "sourceId": "itch-newest-web",
       "sourceName": "itch.io 最新网页游戏",
       "total": 36,
-      "added": 34
+      "added": 36
     },
     {
       "ok": true,
@@ -24,7 +24,7 @@
       "sourceId": "itch-new-feed",
       "sourceName": "itch.io New Feed",
       "total": 36,
-      "added": 34
+      "added": 36
     },
     {
       "ok": true,
@@ -45,14 +45,14 @@
       "sourceId": "steam-popular-new",
       "sourceName": "Steam 热门新发行",
       "total": 50,
-      "added": 2
+      "added": 4
     },
     {
       "ok": true,
       "sourceId": "steam-latest-indie",
       "sourceName": "Steam 最新独立游戏",
       "total": 50,
-      "added": 8
+      "added": 0
     },
     {
       "ok": true,
@@ -66,7 +66,7 @@
       "sourceId": "newgrounds-latest",
       "sourceName": "Newgrounds 最新通过作品",
       "total": 12,
-      "added": 3
+      "added": 5
     },
     {
       "ok": true,
@@ -87,7 +87,7 @@
       "sourceId": "y8-new",
       "sourceName": "Y8 新游戏",
       "total": 73,
-      "added": 34
+      "added": 26
     },
     {
       "ok": false,
@@ -101,85 +101,43 @@
       "sourceName": "Lagged 新游戏",
       "total": 82,
       "added": 0
-    },
-    {
-      "ok": true,
-      "sourceId": "trends-rising-7d-itch-io",
-      "sourceName": "Trends上涨 7天 · itch io",
-      "total": 9,
-      "added": 2
-    },
-    {
-      "ok": true,
-      "sourceId": "trends-rising-30d-itch-io",
-      "sourceName": "Trends上涨 30天 · itch io",
-      "total": 14,
-      "added": 0
-    },
-    {
-      "ok": true,
-      "sourceId": "trends-rising-7d-indie-game",
-      "sourceName": "Trends上涨 7天 · indie game",
-      "total": 4,
-      "added": 1
-    },
-    {
-      "ok": true,
-      "sourceId": "trends-rising-30d-indie-game",
-      "sourceName": "Trends上涨 30天 · indie game",
-      "total": 7,
-      "added": 0
-    },
-    {
-      "ok": true,
-      "sourceId": "trends-rising-7d-horror-game",
-      "sourceName": "Trends上涨 7天 · horror game",
-      "total": 15,
-      "added": 4
-    },
-    {
-      "ok": true,
-      "sourceId": "trends-rising-30d-horror-game",
-      "sourceName": "Trends上涨 30天 · horror game",
-      "total": 19,
-      "added": 1
     }
   ],
-  "seoVerified": 84,
+  "seoVerified": 78,
   "seoErrors": 0,
   "fastModelVersion": 3,
   "fastPassedCount": 269,
-  "fastWatchCount": 363,
+  "fastWatchCount": 364,
   "fastRejectedCount": 188,
   "youtubeEnabled": false,
   "youtubeConfigured": false,
   "youtubeVerified": 0,
   "youtubeErrors": 0,
-  "trendsVerified": 4,
-  "trendErrors": 1,
+  "trendsVerified": 6,
+  "trendErrors": 3,
   "trendBatchRan": true,
   "trendQueueSize": 0,
-  "risingDiscoveryRan": true,
+  "risingDiscoveryRan": false,
   "seoModelVersion": 5,
   "trendModelVersion": 4,
   "seoPassedCount": 495,
   "trendEligibleCount": 211,
-  "trendPendingCount": 197,
-  "trendValidatedCount": 408,
+  "trendPendingCount": 199,
+  "trendValidatedCount": 407,
   "risingCount": 11,
   "globalRisingCount": 0,
   "recommendationCounts": {
     "independent": 0,
     "test-now": 0,
     "page": 5,
-    "watch": 589,
-    "reject": 76,
-    "pending": 2330,
+    "watch": 590,
+    "reject": 73,
+    "pending": 2332,
     "error": 0
   },
   "trendProvider": "serpapi+apify-data-xplorer",
   "trendProviderCounts": {
-    "serpapi": 388,
+    "serpapi": 387,
     "apify-data-xplorer": 26
   },
   "serpApiConfigured": true,
@@ -195,7 +153,7 @@
   },
   "apifyConfigured": true,
   "apifyAccountStatus": {
-    "checkedAt": "2026-09-20T16:48:03.601Z",
+    "checkedAt": "2026-09-20T19:26:59.352Z",
     "configured": true,
     "ok": true,
     "provider": "apify",
@@ -211,28 +169,28 @@
   },
   "apifyTrendsUsage": {
     "month": "2026-09",
-    "actorCalls": 41,
-    "resultItems": 33,
-    "candidatesVerified": 22,
-    "errors": 6,
+    "actorCalls": 59,
+    "resultItems": 45,
+    "candidatesVerified": 28,
+    "errors": 9,
     "monthlyCallLimit": 4000,
-    "updatedAt": "2026-09-20T16:51:44.699Z"
+    "updatedAt": "2026-09-20T19:33:28.943Z"
   },
   "seoProvider": "serper-google-search",
   "seoProviderCounts": {
-    "serper+autocomplete": 590,
+    "serper+autocomplete": 591,
     "evidence-fallback": 136,
     "duckduckgo+autocomplete": 95
   },
   "serperConfigured": true,
   "serperUsage": {
     "enabled": true,
-    "totalUsed": 2049,
+    "totalUsed": 2127,
     "day": "2026-09-20",
-    "dayUsed": 901,
+    "dayUsed": 979,
     "totalLimit": 2450,
     "dailyLimit": 2450,
-    "updatedAt": "2026-09-20T16:49:51.384Z",
+    "updatedAt": "2026-09-20T19:28:38.818Z",
     "lastError": null
   },
   "googleCseConfiguredSlots": 0,
@@ -251,16 +209,16 @@
   },
   "siteTypeModelVersion": 2,
   "siteTypeCounts": {
-    "online": 2163,
-    "wiki": 138,
-    "pending": 699
+    "online": 2159,
+    "wiki": 128,
+    "pending": 713
   },
   "wikiPrelaunchModelVersion": 2,
   "wikiPrelaunchCounts": {
     "priority": 0,
-    "prepare": 10,
-    "watch": 5,
-    "weak": 123
+    "prepare": 13,
+    "watch": 7,
+    "weak": 108
   },
   "serperVerification": {
     "rushMode": true,
@@ -273,107 +231,101 @@
     "limit": 90,
     "onlineLimit": 63,
     "wikiLimit": 27,
-    "queueSize": 84,
-    "verified": 84,
+    "queueSize": 78,
+    "verified": 78,
     "verifiedByChannel": {
       "online": 63,
-      "wiki": 21,
+      "wiki": 15,
       "pending": 0
     },
     "errors": 0,
     "quotaStopped": false,
     "verifiedNames": [
-      "Real Car Bmw M4 Drift",
-      "Seed the Planet - DEMO",
-      "Steam Frame",
-      "Gunman Contracts - Stand Alone",
-      "Wanderburg",
-      "Make Brainrots",
-      "Avatar Legends: The Fighting Game",
-      "Godot Pong",
-      "Mecha-Tumble Rumble",
-      "Shan Koe Mee",
-      "Static Home",
-      "Cornerlet",
-      "Tens!",
-      "Lafufu Blind Box Dress Up",
-      "Battle Blast",
-      "Tomatato",
-      "Dandelion",
-      "bubul",
-      "Vircout",
-      "Tomato",
-      "Skribline",
-      "echooooo",
-      "Touhou Koumakyou: New Classic - the Embodiment of Scarlet Devil",
-      "Blades of Hex",
-      "2D Asteroids",
-      "Generic Sprunki Mod Inspired by Pyramix/ACID3x",
-      "TERI-ESCAPEE",
-      "GOLD RUSH 1898",
-      "Movie Star Dress Up",
-      "Rize",
-      "MARKET WHOLESALE (PILOT)",
-      "Makeup Time",
-      "PVKK: Planetenverteidigungskanonenkommandant",
-      "Earth ReGen",
-      "Mini Me-Mao",
-      "Arcadie: Cold Lands (Android)",
-      "Luv Parade",
-      "Log Drop",
-      "Ascension Fracture",
-      "Amber Eyes",
-      "HealTD incremental",
-      "Sprunki Hypershifted Pepper's Take",
-      "The Platypus' Natural Habitat (1918)",
-      "RATBASTERDZ: WADE'S SONG",
-      "Only One Bed at the Inn",
-      "Bloody Flower of Teyvat",
-      "Darby Is Here Forever",
-      "Dear Journey...",
-      "Canyon Carnage",
-      "Trash Wars",
-      "Nexus Ascendant",
-      "IDEL CAVITY INC.",
-      "That Cloud Looks Like",
-      "Black Hole Grow Forever",
-      "Camping Tycoon Simulator Alpha",
-      "Gearworks",
-      "CHRONOSPIRE",
-      "Hexatown",
-      "想和魏菊OOXX",
-      "Lighthouse",
-      "Touhou ~ By My Hand",
-      "ThroeDown",
-      "The Count is Down",
-      "HordeFall",
-      "IdleGambler",
-      "Babylumns",
-      "Dragon Under My Farm",
-      "Blastin' Balloons - v1.31",
-      "EmergenHex",
-      "VoltCore",
-      "Jelly",
-      "Mosquitos",
-      "Vagrant",
-      "Kraken's Variety Pack 6: Search Party!",
-      "Lottohuolto",
-      "SOULROSE_β",
-      "WORDMINER",
-      "At Face Value",
-      "Night Alley : ตรอกลวง ดวงดับ",
-      "Dead Margin",
-      "BABU - Blow All Blocks Up!",
-      "Techfront",
-      "Farmabot",
-      "Biovoid"
+      "Rock Declutterer",
+      "Blocky Sword",
+      "Heist Hop",
+      "Kick Brainrot Balls",
+      "Merge Elementals: Castle Defense",
+      "Splash Sliders",
+      "Monster Island",
+      "Slime Horde TD",
+      "Roll King",
+      "Mirage Survivors",
+      "Dino Realms",
+      "Wrecking Beam",
+      "Flower Story",
+      "Drift Boss",
+      "Sword Legends",
+      "Little Farm World",
+      "Tiny Sticker Town",
+      "Harvest Loop",
+      "Chick Flix",
+      "Boomy World",
+      "Perfect Shape",
+      "How to Fish",
+      "Merge Defense: Army Behind the Wall",
+      "Spot the Diff: Drama Style",
+      "Thought Spiral",
+      "Walk Rage: Summit Vacation — Demo",
+      "HEREDERO DE LA DUDA",
+      "Charm Clash",
+      "Ketch-Ants",
+      "Steppy Fox",
+      "Retro Auto Theft I",
+      "GYROBLADE",
+      "Yeetcat",
+      "Evolution Animals +1",
+      "Word Search Puzzle",
+      "Road To Glory",
+      "Catch a Pet",
+      "Clean The Roof",
+      "Robo Cleaner Simulator",
+      "the cabin game",
+      "Dude, Where Is My Galaxy?",
+      "Vox Heroes",
+      "Tanks 1944",
+      "Crowd Rush",
+      "Leafcrease",
+      "Breakup",
+      "Find the Treasure",
+      "The Invincible Tomato",
+      "Crafty Idle Demo",
+      "The Cloister",
+      "Alien Attack",
+      "Test Drive Car Parking",
+      "Puppet Soccer 2026 Football",
+      "Super Dress",
+      "The Waking Grove Demo",
+      "Panoplia",
+      "Overshoot",
+      "A Thousand Cloys",
+      "Trust the System",
+      "my dear Linda",
+      "SHAPE - Web Version",
+      "Carnival of Shadows",
+      "OutRun · Arcade 3D",
+      "Think Up House",
+      "Revive My Wounds",
+      "METRO 2039",
+      "Rooted",
+      "Graveyard Keeper 2",
+      "ACE COMBAT 8: WINGS OF THEVE",
+      "Screw IT",
+      "Somebody's Tale",
+      "Granny - Welcome Home",
+      "Pixel BlackJack - 二十一点",
+      "Visual Novel: EVENING BROADCAST",
+      "Perfect Cut",
+      "Slime Trader",
+      "Gears of War: E-Day",
+      "Fluttering"
     ],
-    "ranAt": "2026-09-20T16:49:51.529Z"
+    "ranAt": "2026-09-20T19:28:38.925Z"
   },
   "evidenceSeoFallback": {
     "enabled": true,
     "limit": 180,
-    "pendingCount": 2180,
+    "pendingCount": 2179,
     "eligibleCount": 0,
     "queueSize": 0,
     "verified": 0,
@@ -390,7 +342,7 @@
       "pending": 0
     },
     "verifiedNames": [],
-    "ranAt": "2026-09-20T16:49:52.212Z"
+    "ranAt": "2026-09-20T19:28:39.426Z"
   },
   "socialBuzzVerification": {
     "modelVersion": 3,
@@ -412,7 +364,7 @@
       "x": 0,
       "tiktok": 0
     },
-    "ranAt": "2026-09-20T16:49:53.252Z"
+    "ranAt": "2026-09-20T19:28:40.207Z"
   },
   "channelOpportunityCounts": {
     "online": {
@@ -421,7 +373,7 @@
       "recommended": 0
     },
     "wiki": {
-      "validated": 52,
+      "validated": 51,
       "rising": 5,
       "recommended": 0
     },
@@ -439,50 +391,62 @@
     "verifyLimit": 200,
     "effectiveLimit": 200,
     "monthlyCallLimit": 4000,
-    "remainingCallsAtStart": 3964,
-    "queueSize": 5,
-    "verified": 4,
-    "errors": 1,
-    "actorCalls": 5,
-    "resultItems": 4,
+    "remainingCallsAtStart": 3959,
+    "queueSize": 9,
+    "verified": 6,
+    "errors": 3,
+    "actorCalls": 18,
+    "resultItems": 12,
     "quotaStopped": false,
     "concurrency": 3,
     "channelVerified": {
       "online": 3,
-      "wiki": 1,
+      "wiki": 3,
       "pending": 0
     },
     "tierCounts": {
-      "strong": 0,
-      "secondary": 3,
-      "strategic": 1
+      "strong": 3,
+      "secondary": 0,
+      "strategic": 3
     },
     "pendingByChannel": {
-      "online": 0,
-      "wiki": 0
+      "online": 1,
+      "wiki": 1
     },
     "pendingByTier": {
-      "strong": 0,
+      "strong": 1,
       "secondary": 0,
-      "strategic": 0
+      "strategic": 1
     },
     "verifiedNames": [
-      "Babylumns",
-      "Godot Pong",
-      "Avatar Legends: The Fighting Game",
-      "Camping Tycoon Simulator Alpha"
+      "Retro Bowl",
+      "wardogs",
+      "Subway Surfers",
+      "Valheim",
+      "the cabin game",
+      "Shroom and Gloom"
     ],
     "errorNames": [
       {
-        "name": "Shan Koe Mee",
+        "name": "Trump Wall Building",
         "error": "Apify residential Trends actor returned no timeline_data",
-        "actorCalls": 1
+        "actorCalls": 2
+      },
+      {
+        "name": "Coaster Rush",
+        "error": "Apify residential Trends actor returned no timeline_data",
+        "actorCalls": 2
+      },
+      {
+        "name": "Batomon Showdown",
+        "error": "Apify residential Trends actor returned no timeline_data",
+        "actorCalls": 2
       }
     ],
-    "ranAt": "2026-09-20T16:51:44.875Z"
+    "ranAt": "2026-09-20T19:33:29.132Z"
   },
   "serpApiAccountStatus": {
-    "checkedAt": "2026-09-20T16:51:45.012Z",
+    "checkedAt": "2026-09-20T19:33:29.395Z",
     "accountApiConsumesSearchCredits": false,
     "configuredKeys": 1,
     "workingKeys": 1,
@@ -519,7 +483,7 @@
         "planSearchesLeft": 24,
         "totalSearchesLeft": 24,
         "rateLimitPerHour": 250,
-        "checkedAt": "2026-09-20T16:51:45.012Z",
+        "checkedAt": "2026-09-20T19:33:29.395Z",
         "sharedAccount": false,
         "sharedWithSlots": []
       },
@@ -572,13 +536,13 @@
       "pending": 0
     },
     "pendingByTier": {
-      "strong": 0,
+      "strong": 1,
       "secondary": 0,
-      "strategic": 0
+      "strategic": 1
     },
     "pendingByChannel": {
-      "online": 0,
-      "wiki": 0
+      "online": 1,
+      "wiki": 1
     },
     "verifiedNames": [],
     "caps": {
@@ -602,7 +566,7 @@
         "quotaStopped": false
       }
     },
-    "ranAt": "2026-09-20T16:51:45.670Z"
+    "ranAt": "2026-09-20T19:33:29.901Z"
   },
   "serpApiConfiguredSlots": 1,
   "serpApiPoolUsage": {
@@ -624,7 +588,7 @@
         "updatedAt": "2026-09-20T02:54:03.847Z"
       }
     },
-    "updatedAt": "2026-09-20T16:51:45.722Z"
+    "updatedAt": "2026-09-20T19:33:30.012Z"
   },
   "searchApiConfigured": false,
   "searchApiTrendsUsage": {
@@ -657,16 +621,16 @@
       "strategic": 0
     },
     "pendingByChannel": {
-      "online": 0,
-      "wiki": 0
+      "online": 1,
+      "wiki": 1
     },
     "pendingByTier": {
-      "strong": 0,
+      "strong": 1,
       "secondary": 0,
-      "strategic": 0
+      "strategic": 1
     },
     "verifiedNames": [],
     "errorNames": [],
-    "ranAt": "2026-09-20T16:51:46.288Z"
+    "ranAt": "2026-09-20T19:33:30.431Z"
   }
 }
