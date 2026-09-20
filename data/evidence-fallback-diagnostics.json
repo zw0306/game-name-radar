@@ -1,61 +1,60 @@
 {
-  "generatedAt": "2026-09-20T06:19:57.148Z",
+  "generatedAt": "2026-09-20T12:16:29.748Z",
   "totalCandidates": 3000,
-  "pendingSeo": 2209,
+  "pendingSeo": 2196,
   "channelCounts": {
-    "pending": 569,
-    "online": 1633,
+    "pending": 589,
+    "online": 1600,
     "wiki": 7
   },
   "fastClassCounts": {
-    "pending:pending": 569,
-    "online:pending": 1633,
+    "pending:pending": 589,
+    "online:pending": 1600,
     "wiki:pending": 7
   },
   "strategicCounts": {
-    "pending:0": 560,
-    "online:2": 252,
-    "online:1": 1381,
+    "pending:0": 580,
+    "online:2": 225,
+    "online:1": 1375,
     "pending:1": 9,
-    "wiki:0": 1,
-    "wiki:1": 6
+    "wiki:1": 7
   },
   "topSources": [
     {
       "id": "itch-new",
-      "count": 1745
+      "count": 1736
     },
     {
       "id": "itch-new-feed",
-      "count": 1686
+      "count": 1677
     },
     {
       "id": "itch-newest-web",
-      "count": 1566
+      "count": 1539
     },
     {
       "id": "trends-rising-7d",
-      "count": 323
-    },
-    {
-      "id": "itch-new-popular-web",
-      "count": 248
-    },
-    {
-      "id": "itch-popular",
-      "count": 248
+      "count": 324
     },
     {
       "id": "trends-rising-30d",
-      "count": 215
+      "count": 217
+    },
+    {
+      "id": "itch-new-popular-web",
+      "count": 217
+    },
+    {
+      "id": "itch-popular",
+      "count": 217
     },
     {
       "id": "trends-rising-7d-horror-game",
-      "count": 163
+      "count": 164
     },
     {
       "id": "trends-rising-30d-horror-game",
-      "count": 113
+      "count": 115
     },
     {
       "id": "trends-rising-7d-indie-game",
@@ -75,27 +74,27 @@
     },
     {
       "id": "newgrounds-latest",
-      "count": 35
+      "count": 34
     },
     {
       "id": "newgrounds-new",
-      "count": 35
+      "count": 34
     },
     {
       "id": "newgrounds-daily-top",
-      "count": 29
+      "count": 28
     },
     {
       "id": "newgrounds-top",
-      "count": 29
+      "count": 28
     },
     {
       "id": "steam-latest-indie",
-      "count": 12
+      "count": 13
     },
     {
       "id": "steam-new",
-      "count": 12
+      "count": 13
     },
     {
       "id": "itch-featured-feed",
@@ -116,10 +115,6 @@
     {
       "id": "lagged-new",
       "count": 2
-    },
-    {
-      "id": "steam-top-wishlist",
-      "count": 1
     }
   ],
   "samples": [
@@ -903,63 +898,6 @@
       ]
     },
     {
-      "name": "Cat Shoot to Move",
-      "channel": "online",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 15,
-      "platforms": 1,
-      "browserPlayable": true,
-      "nameRisk": 5,
-      "strategicCount": 2,
-      "sourceCount": 5,
-      "sourceIds": [
-        "itch-newest-web",
-        "itch-new",
-        "itch-new-feed",
-        "itch-new-popular-web",
-        "itch-popular"
-      ]
-    },
-    {
-      "name": "Pixel Cult v0.1",
-      "channel": "online",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 15,
-      "platforms": 1,
-      "browserPlayable": true,
-      "nameRisk": 5,
-      "strategicCount": 2,
-      "sourceCount": 5,
-      "sourceIds": [
-        "itch-newest-web",
-        "itch-new",
-        "itch-new-feed",
-        "itch-new-popular-web",
-        "itch-popular"
-      ]
-    },
-    {
-      "name": "Gamma",
-      "channel": "online",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 15,
-      "platforms": 1,
-      "browserPlayable": true,
-      "nameRisk": 5,
-      "strategicCount": 2,
-      "sourceCount": 5,
-      "sourceIds": [
-        "itch-newest-web",
-        "itch-new",
-        "itch-new-feed",
-        "itch-new-popular-web",
-        "itch-popular"
-      ]
-    },
-    {
       "name": "Threads of Tomot",
       "channel": "online",
       "fastClass": "pending",
@@ -968,25 +906,6 @@
       "platforms": 1,
       "browserPlayable": true,
       "nameRisk": 6,
-      "strategicCount": 2,
-      "sourceCount": 5,
-      "sourceIds": [
-        "itch-newest-web",
-        "itch-new",
-        "itch-new-feed",
-        "itch-new-popular-web",
-        "itch-popular"
-      ]
-    },
-    {
-      "name": "Quackyard",
-      "channel": "online",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 15,
-      "platforms": 1,
-      "browserPlayable": true,
-      "nameRisk": 5,
       "strategicCount": 2,
       "sourceCount": 5,
       "sourceIds": [
@@ -1036,14 +955,14 @@
       ]
     },
     {
-      "name": "Progress98",
+      "name": "8-Ball Idle",
       "channel": "online",
       "fastClass": "pending",
       "fastScore": 0,
       "discoveryScore": 15,
       "platforms": 1,
       "browserPlayable": true,
-      "nameRisk": 5,
+      "nameRisk": 12,
       "strategicCount": 2,
       "sourceCount": 5,
       "sourceIds": [
@@ -1055,14 +974,90 @@
       ]
     },
     {
-      "name": "8-Ball Idle",
+      "name": "1999 Midnight Dispatch",
       "channel": "online",
       "fastClass": "pending",
       "fastScore": 0,
       "discoveryScore": 15,
       "platforms": 1,
       "browserPlayable": true,
-      "nameRisk": 12,
+      "nameRisk": 6,
+      "strategicCount": 2,
+      "sourceCount": 5,
+      "sourceIds": [
+        "itch-newest-web",
+        "itch-new",
+        "itch-new-feed",
+        "itch-new-popular-web",
+        "itch-popular"
+      ]
+    },
+    {
+      "name": "Cook the Dungeon",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 15,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 6,
+      "strategicCount": 2,
+      "sourceCount": 5,
+      "sourceIds": [
+        "itch-newest-web",
+        "itch-new",
+        "itch-new-feed",
+        "itch-new-popular-web",
+        "itch-popular"
+      ]
+    },
+    {
+      "name": "コラプトカード・スクール v0.1",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 15,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 9,
+      "strategicCount": 2,
+      "sourceCount": 5,
+      "sourceIds": [
+        "itch-newest-web",
+        "itch-new",
+        "itch-new-feed",
+        "itch-new-popular-web",
+        "itch-popular"
+      ]
+    },
+    {
+      "name": "Bumper to Billions",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 15,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 6,
+      "strategicCount": 2,
+      "sourceCount": 5,
+      "sourceIds": [
+        "itch-newest-web",
+        "itch-new",
+        "itch-new-feed",
+        "itch-new-popular-web",
+        "itch-popular"
+      ]
+    },
+    {
+      "name": "Ensis IDLE",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 15,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 9,
       "strategicCount": 2,
       "sourceCount": 5,
       "sourceIds": [
