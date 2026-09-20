@@ -1,36 +1,37 @@
 {
-  "generatedAt": "2026-09-20T12:16:29.748Z",
+  "generatedAt": "2026-09-20T12:23:24.006Z",
   "totalCandidates": 3000,
-  "pendingSeo": 2196,
+  "pendingSeo": 2192,
   "channelCounts": {
-    "pending": 589,
-    "online": 1600,
-    "wiki": 7
+    "pending": 588,
+    "online": 1598,
+    "wiki": 6
   },
   "fastClassCounts": {
-    "pending:pending": 589,
-    "online:pending": 1600,
-    "wiki:pending": 7
+    "pending:pending": 588,
+    "online:pending": 1598,
+    "wiki:pending": 6
   },
   "strategicCounts": {
-    "pending:0": 580,
-    "online:2": 225,
-    "online:1": 1375,
+    "pending:0": 579,
+    "online:2": 216,
+    "online:1": 1382,
     "pending:1": 9,
-    "wiki:1": 7
+    "wiki:0": 1,
+    "wiki:1": 5
   },
   "topSources": [
     {
       "id": "itch-new",
-      "count": 1736
+      "count": 1727
     },
     {
       "id": "itch-new-feed",
-      "count": 1677
+      "count": 1668
     },
     {
       "id": "itch-newest-web",
-      "count": 1539
+      "count": 1531
     },
     {
       "id": "trends-rising-7d",
@@ -42,11 +43,11 @@
     },
     {
       "id": "itch-new-popular-web",
-      "count": 217
+      "count": 209
     },
     {
       "id": "itch-popular",
-      "count": 217
+      "count": 209
     },
     {
       "id": "trends-rising-7d-horror-game",
@@ -74,27 +75,27 @@
     },
     {
       "id": "newgrounds-latest",
-      "count": 34
+      "count": 31
     },
     {
       "id": "newgrounds-new",
-      "count": 34
+      "count": 31
     },
     {
       "id": "newgrounds-daily-top",
-      "count": 28
+      "count": 27
     },
     {
       "id": "newgrounds-top",
-      "count": 28
+      "count": 27
     },
     {
       "id": "steam-latest-indie",
-      "count": 13
+      "count": 11
     },
     {
       "id": "steam-new",
-      "count": 13
+      "count": 11
     },
     {
       "id": "itch-featured-feed",
@@ -105,6 +106,10 @@
       "count": 9
     },
     {
+      "id": "poki-new",
+      "count": 6
+    },
+    {
       "id": "y8-new",
       "count": 5
     },
@@ -113,8 +118,16 @@
       "count": 3
     },
     {
+      "id": "crazygames-new",
+      "count": 3
+    },
+    {
       "id": "lagged-new",
       "count": 2
+    },
+    {
+      "id": "steam-top-wishlist",
+      "count": 1
     }
   ],
   "samples": [
