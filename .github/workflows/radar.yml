@@ -71,8 +71,8 @@ jobs:
       SERPAPI_API_KEY_3: ${{ secrets.SERPAPI_API_KEY_3 }}
       SERPAPI_API_KEY_4: ${{ secrets.SERPAPI_API_KEY_4 }}
       SERPAPI_API_KEY_5: ${{ secrets.SERPAPI_API_KEY_5 }}
-      SERPAPI_MONTHLY_LIMIT: 245
-      SERPAPI_DAILY_LIMIT: 245
+      SERPAPI_MONTHLY_LIMIT: 100
+      SERPAPI_DAILY_LIMIT: 10
       SERPAPI_FILL_ENABLED: true
       SERPAPI_ONLINE_LIMIT: 999
       SERPAPI_WIKI_LIMIT: 999
@@ -89,12 +89,16 @@ jobs:
       SEARCHAPI_TOTAL_LIMIT: 95
       SEARCHAPI_TIMEOUT_MS: 90000
 
-      # Keep Apify connected for account visibility, but disable all Actor calls.
+      # Apify: primary Google Trends provider. Free tier gives $5/month of credits
+      # (~5000 fast-mode calls). Priority: Apify -> SerpApi -> SearchApi.
       APIFY_API_TOKEN: ${{ secrets.APIFY_API_TOKEN }}
-      APIFY_TRENDS_ENABLED: false
-      APIFY_TRENDS_VERIFY_LIMIT: 0
-      APIFY_TRENDS_ONLINE_LIMIT: 0
-      APIFY_TRENDS_WIKI_LIMIT: 0
+      APIFY_TRENDS_ENABLED: true
+      APIFY_TRENDS_VERIFY_LIMIT: 200
+      APIFY_TRENDS_ONLINE_LIMIT: 140
+      APIFY_TRENDS_WIKI_LIMIT: 60
+      APIFY_TRENDS_MONTHLY_CALL_LIMIT: 4000
+      APIFY_TRENDS_CONCURRENCY: 3
+      APIFY_TRENDS_MAX_CHARGE_USD: 0.05
 
     steps:
       - uses: actions/checkout@v4
@@ -138,10 +142,13 @@ jobs:
       - name: Verify independent social spillover for game candidates
         run: node scripts/verify-social-buzz.mjs
 
+      - name: Fill Trends queue with Apify (primary provider)
+        run: node scripts/fill-apify-trends.mjs
+
       - name: Inspect all SerpApi account quotas without spending searches
         run: node scripts/check-serpapi-accounts.mjs
 
-      - name: Verify eligible Trends candidates with SerpApi account pool
+      - name: Verify remaining Trends candidates with SerpApi free quota
         run: node scripts/fill-serpapi-pool.mjs
 
       - name: Restore SerpApi usage report
