@@ -87,3 +87,21 @@ python3 -m http.server 8080
 ```
 
 浏览器直接访问 `http://localhost:8080` 即可，读取的是本地 `data/` 目录下的 JSON（内容与远端一致，不会被修改）。
+
+---
+
+## Git 冲突处理
+
+当本地提交与远端 CI 提交的 `data/` 文件产生 merge conflict 时，**始终取远端版本**，不要手动编辑冲突标记：
+
+```bash
+# 一键取远端版本解决所有 data/ 冲突
+git checkout --theirs data/
+git add data/
+
+# 完成 merge
+git commit --no-edit
+git push
+```
+
+原因：`data/` 下所有文件均由 CI 自动生成，本地修改无效且会产生脏数据。Agent 在本地误执行脚本后尤其需要注意这一点。
