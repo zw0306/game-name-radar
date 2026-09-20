@@ -15355,6 +15355,191 @@
     }
   },
   {
+    "id": "auto-Y2F0IGluIHRoZSBoYXQgaG9y",
+    "gameName": "cat in the hat horror",
+    "normalizedName": "cat in the hat horror",
+    "firstSeen": "2026-09-13T01:24:57.782Z",
+    "lastSeen": "2026-09-19T09:31:31.211Z",
+    "status": "new",
+    "sources": [
+      {
+        "key": "trends-rising-7d-horror-game|https://trends.google.com/trends/explore?date=now 7-d&geo=US&q=cat%20in%20the%20hat%20horror",
+        "sourceId": "trends-rising-7d-horror-game",
+        "name": "Trends上涨 7天 · horror game",
+        "kind": "trends-rising-7d",
+        "url": "https://trends.google.com/trends/explore?date=now 7-d&geo=US&q=cat%20in%20the%20hat%20horror",
+        "date": "2026-09-15T11:42:50.802Z",
+        "growth": "+110%",
+        "seed": "horror game",
+        "windowDays": 7,
+        "firstSeen": "2026-09-13T01:24:57.782Z",
+        "lastSeen": "2026-09-15T11:42:32.408Z",
+        "currentRank": 21,
+        "previousRank": 17,
+        "bestRank": 17
+      },
+      {
+        "key": "trends-rising-30d-horror-game|https://trends.google.com/trends/explore?date=today 1-m&geo=US&q=cat%20in%20the%20hat%20horror",
+        "sourceId": "trends-rising-30d-horror-game",
+        "name": "Trends上涨 30天 · horror game",
+        "kind": "trends-rising-30d",
+        "url": "https://trends.google.com/trends/explore?date=today 1-m&geo=US&q=cat%20in%20the%20hat%20horror",
+        "date": "2026-09-19T09:31:50.467Z",
+        "growth": "+700%",
+        "seed": "horror game",
+        "windowDays": 30,
+        "firstSeen": "2026-09-19T09:31:31.211Z",
+        "lastSeen": "2026-09-19T09:31:31.211Z",
+        "currentRank": 9,
+        "previousRank": null,
+        "bestRank": 9
+      }
+    ],
+    "recommendation": "pending",
+    "discoveryScore": 20,
+    "discoveryLevel": "hot",
+    "seo": {
+      "modelVersion": 5,
+      "status": "pending",
+      "classification": "pending",
+      "score": 0,
+      "reasons": [
+        "等待自动搜索意图验证"
+      ]
+    },
+    "fast": {
+      "modelVersion": 3,
+      "status": "pending",
+      "classification": "pending",
+      "score": 0,
+      "reasons": [
+        "等待最新SEO验证后计算快速热度"
+      ]
+    },
+    "siteType": {
+      "modelVersion": 2,
+      "checkedAt": "2026-09-20T01:11:45.788Z",
+      "type": "pending",
+      "channel": "pending",
+      "confidence": "low",
+      "browserPlayable": null,
+      "iframeLikely": null,
+      "embedStatus": "unknown",
+      "onlineSourceCount": 0,
+      "onlinePlatformCount": 0,
+      "premiumOnlineCount": 0,
+      "wikiSourceCount": 0,
+      "hasWishlistSource": false,
+      "reasons": [
+        "关键词历史或现有竞争站占位尚未完成确认",
+        "缺少多平台、多独立创作者的外溢传播",
+        "24–48小时平台扩散速度不足",
+        "搜索需求尚未形成",
+        "可扩展内容主题不足",
+        "SERP尚未确认是严格空白市场",
+        "名称歧义或实体冲突风险过高",
+        "当前来源不足以确认是HTML5在线游戏还是下载型游戏"
+      ]
+    },
+    "marketFreshness": {
+      "modelVersion": 1,
+      "checkedAt": "2026-09-20T01:11:45.788Z",
+      "status": "unknown",
+      "confidence": "low",
+      "reason": "关键词历史或现有竞争站占位尚未完成确认",
+      "keywordFreshness": "unknown",
+      "rising": false,
+      "competitionChecked": false,
+      "dedicatedDomains": [],
+      "contentDomains": [],
+      "allowsIndependent": false,
+      "provisionalNew": false
+    },
+    "opportunity": {
+      "modelVersion": 3,
+      "checkedAt": "2026-09-20T01:11:45.788Z",
+      "weights": {
+        "socialSpread": 0.3,
+        "growthVelocity": 0.25,
+        "searchFormation": 0.15,
+        "contentExpandability": 0.15,
+        "serpGap": 0.1,
+        "nameSafety": 0.05
+      },
+      "components": {
+        "socialSpread": 0,
+        "growthVelocity": 0,
+        "searchFormation": 15,
+        "contentExpandability": 0,
+        "serpGap": 25,
+        "nameSafety": 0
+      },
+      "hardGates": {
+        "externalSpillover": false,
+        "growthVelocity": false,
+        "searchFormation": false,
+        "contentDepth": false,
+        "competitionOpen": false,
+        "nameSafe": false
+      },
+      "testGates": {
+        "growthVelocity": false,
+        "searchFormation": false,
+        "contentDepth": false,
+        "competitionTestable": false,
+        "nameSafe": false
+      },
+      "testScore": 8,
+      "allowsTest": false,
+      "allowsIndependent": false,
+      "score": 5,
+      "reasons": [
+        "缺少多平台、多独立创作者的外溢传播",
+        "24–48小时平台扩散速度不足",
+        "搜索需求尚未形成",
+        "可扩展内容主题不足",
+        "SERP尚未确认是严格空白市场",
+        "名称歧义或实体冲突风险过高"
+      ]
+    },
+    "social": {
+      "modelVersion": 3,
+      "checkedAt": "2026-09-13T01:25:31.267Z",
+      "score": 0,
+      "classification": "pending",
+      "confidence": "low",
+      "providers": {
+        "youtube": {},
+        "reddit": {},
+        "x": {},
+        "tiktok": {}
+      },
+      "configuredProviders": [],
+      "checkedProviders": [],
+      "activeProviders": [],
+      "strongProviders": [],
+      "veryStrongProviders": [],
+      "independentProviders": [],
+      "independentCreatorCount": 0,
+      "freshProviders": [],
+      "crossPlatformCount": 0,
+      "hasExternalSpillover": false,
+      "hasSinglePlatformMomentum": false,
+      "singlePlatformMomentum": null,
+      "hasMeasuredEvidence": false,
+      "evidenceStatus": "unknown",
+      "allowsTest": true,
+      "allowsIndependent": false,
+      "reasons": [
+        "尚未完成社媒热度验证"
+      ],
+      "providerErrors": {}
+    },
+    "finalScore": 0,
+    "score": 0,
+    "level": "pending"
+  },
+  {
     "id": "auto-ZGltcmFldGggaW5kaWUgY28g",
     "gameName": "dimraeth indie co-op",
     "normalizedName": "dimraeth indie co op",
@@ -33348,6 +33533,175 @@
     "social": {
       "modelVersion": 3,
       "checkedAt": "2026-09-01T18:29:56.330Z",
+      "score": 0,
+      "classification": "pending",
+      "confidence": "low",
+      "providers": {
+        "youtube": {},
+        "reddit": {},
+        "x": {},
+        "tiktok": {}
+      },
+      "configuredProviders": [],
+      "checkedProviders": [],
+      "activeProviders": [],
+      "strongProviders": [],
+      "veryStrongProviders": [],
+      "independentProviders": [],
+      "independentCreatorCount": 0,
+      "freshProviders": [],
+      "crossPlatformCount": 0,
+      "hasExternalSpillover": false,
+      "hasSinglePlatformMomentum": false,
+      "singlePlatformMomentum": null,
+      "hasMeasuredEvidence": false,
+      "evidenceStatus": "unknown",
+      "allowsTest": true,
+      "allowsIndependent": false,
+      "reasons": [
+        "尚未完成社媒热度验证"
+      ],
+      "providerErrors": {}
+    },
+    "finalScore": 0,
+    "score": 0,
+    "level": "pending"
+  },
+  {
+    "id": "auto-Y2F0IGluIHRoZSBoYXQ",
+    "gameName": "cat in the hat",
+    "normalizedName": "cat in the hat",
+    "firstSeen": "2026-09-13T01:24:57.782Z",
+    "lastSeen": "2026-09-13T16:37:25.252Z",
+    "status": "new",
+    "sources": [
+      {
+        "key": "trends-rising-7d-horror-game|https://trends.google.com/trends/explore?date=now 7-d&geo=US&q=cat%20in%20the%20hat",
+        "sourceId": "trends-rising-7d-horror-game",
+        "name": "Trends上涨 7天 · horror game",
+        "kind": "trends-rising-7d",
+        "url": "https://trends.google.com/trends/explore?date=now 7-d&geo=US&q=cat%20in%20the%20hat",
+        "date": "2026-09-13T16:37:46.456Z",
+        "growth": "+110%",
+        "seed": "horror game",
+        "windowDays": 7,
+        "firstSeen": "2026-09-13T01:24:57.782Z",
+        "lastSeen": "2026-09-13T16:37:25.252Z",
+        "currentRank": 15,
+        "previousRank": 21,
+        "bestRank": 15
+      }
+    ],
+    "recommendation": "pending",
+    "discoveryScore": 11,
+    "discoveryLevel": "verify",
+    "seo": {
+      "modelVersion": 5,
+      "status": "pending",
+      "classification": "pending",
+      "score": 0,
+      "reasons": [
+        "等待自动搜索意图验证"
+      ]
+    },
+    "fast": {
+      "modelVersion": 3,
+      "status": "pending",
+      "classification": "pending",
+      "score": 0,
+      "reasons": [
+        "等待最新SEO验证后计算快速热度"
+      ]
+    },
+    "siteType": {
+      "modelVersion": 2,
+      "checkedAt": "2026-09-20T01:11:45.813Z",
+      "type": "pending",
+      "channel": "pending",
+      "confidence": "low",
+      "browserPlayable": null,
+      "iframeLikely": null,
+      "embedStatus": "unknown",
+      "onlineSourceCount": 0,
+      "onlinePlatformCount": 0,
+      "premiumOnlineCount": 0,
+      "wikiSourceCount": 0,
+      "hasWishlistSource": false,
+      "reasons": [
+        "关键词历史或现有竞争站占位尚未完成确认",
+        "缺少多平台、多独立创作者的外溢传播",
+        "24–48小时平台扩散速度不足",
+        "搜索需求尚未形成",
+        "可扩展内容主题不足",
+        "SERP尚未确认是严格空白市场",
+        "名称歧义或实体冲突风险过高",
+        "当前来源不足以确认是HTML5在线游戏还是下载型游戏"
+      ]
+    },
+    "marketFreshness": {
+      "modelVersion": 1,
+      "checkedAt": "2026-09-20T01:11:45.813Z",
+      "status": "unknown",
+      "confidence": "low",
+      "reason": "关键词历史或现有竞争站占位尚未完成确认",
+      "keywordFreshness": "unknown",
+      "rising": false,
+      "competitionChecked": false,
+      "dedicatedDomains": [],
+      "contentDomains": [],
+      "allowsIndependent": false,
+      "provisionalNew": false
+    },
+    "opportunity": {
+      "modelVersion": 3,
+      "checkedAt": "2026-09-20T01:11:45.813Z",
+      "weights": {
+        "socialSpread": 0.3,
+        "growthVelocity": 0.25,
+        "searchFormation": 0.15,
+        "contentExpandability": 0.15,
+        "serpGap": 0.1,
+        "nameSafety": 0.05
+      },
+      "components": {
+        "socialSpread": 0,
+        "growthVelocity": 0,
+        "searchFormation": 15,
+        "contentExpandability": 0,
+        "serpGap": 25,
+        "nameSafety": 0
+      },
+      "hardGates": {
+        "externalSpillover": false,
+        "growthVelocity": false,
+        "searchFormation": false,
+        "contentDepth": false,
+        "competitionOpen": false,
+        "nameSafe": false
+      },
+      "testGates": {
+        "growthVelocity": false,
+        "searchFormation": false,
+        "contentDepth": false,
+        "competitionTestable": false,
+        "nameSafe": false
+      },
+      "testScore": 8,
+      "allowsTest": false,
+      "allowsIndependent": false,
+      "score": 5,
+      "reasons": [
+        "缺少多平台、多独立创作者的外溢传播",
+        "24–48小时平台扩散速度不足",
+        "搜索需求尚未形成",
+        "可扩展内容主题不足",
+        "SERP尚未确认是严格空白市场",
+        "名称歧义或实体冲突风险过高"
+      ]
+    },
+    "social": {
+      "modelVersion": 3,
+      "checkedAt": "2026-09-13T01:25:31.267Z",
       "score": 0,
       "classification": "pending",
       "confidence": "low",
