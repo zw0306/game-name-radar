@@ -1,21 +1,21 @@
 {
-  "updatedAt": "2026-09-20T02:37:07.971Z",
+  "updatedAt": "2026-09-20T02:54:06.402Z",
   "recentDays": 7,
-  "recentCount": 882,
+  "recentCount": 893,
   "archives": [
     {
       "month": "2026-07",
-      "count": 306,
+      "count": 304,
       "file": "data/candidates-2026-07.json"
     },
     {
       "month": "2026-08",
-      "count": 804,
+      "count": 797,
       "file": "data/candidates-2026-08.json"
     },
     {
       "month": "2026-09",
-      "count": 1008,
+      "count": 1006,
       "file": "data/candidates-2026-09.json"
     }
   ]
