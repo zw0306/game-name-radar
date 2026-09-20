@@ -1,37 +1,36 @@
 {
-  "generatedAt": "2026-09-20T02:31:18.448Z",
+  "generatedAt": "2026-09-20T02:36:41.679Z",
   "totalCandidates": 3000,
-  "pendingSeo": 2243,
+  "pendingSeo": 2233,
   "channelCounts": {
-    "pending": 546,
-    "online": 1690,
+    "pending": 548,
+    "online": 1678,
     "wiki": 7
   },
   "fastClassCounts": {
-    "pending:pending": 546,
-    "online:pending": 1690,
+    "pending:pending": 548,
+    "online:pending": 1678,
     "wiki:pending": 7
   },
   "strategicCounts": {
-    "pending:0": 537,
-    "online:2": 310,
-    "online:1": 1380,
+    "pending:0": 539,
+    "online:2": 294,
+    "online:1": 1384,
     "pending:1": 9,
-    "wiki:0": 1,
-    "wiki:1": 6
+    "wiki:1": 7
   },
   "topSources": [
     {
       "id": "itch-new",
-      "count": 1780
+      "count": 1766
     },
     {
       "id": "itch-new-feed",
-      "count": 1721
+      "count": 1707
     },
     {
       "id": "itch-newest-web",
-      "count": 1624
+      "count": 1608
     },
     {
       "id": "trends-rising-7d",
@@ -39,11 +38,11 @@
     },
     {
       "id": "itch-new-popular-web",
-      "count": 304
+      "count": 288
     },
     {
       "id": "itch-popular",
-      "count": 304
+      "count": 288
     },
     {
       "id": "trends-rising-30d",
@@ -75,27 +74,27 @@
     },
     {
       "id": "newgrounds-latest",
-      "count": 35
+      "count": 34
     },
     {
       "id": "newgrounds-new",
-      "count": 35
+      "count": 34
     },
     {
       "id": "newgrounds-daily-top",
-      "count": 30
+      "count": 28
     },
     {
       "id": "newgrounds-top",
-      "count": 30
+      "count": 28
     },
     {
       "id": "steam-latest-indie",
-      "count": 12
+      "count": 13
     },
     {
       "id": "steam-new",
-      "count": 12
+      "count": 13
     },
     {
       "id": "itch-featured-feed",
@@ -104,6 +103,10 @@
     {
       "id": "itch-featured",
       "count": 9
+    },
+    {
+      "id": "poki-new",
+      "count": 6
     },
     {
       "id": "y8-new",
@@ -118,7 +121,7 @@
       "count": 2
     },
     {
-      "id": "steam-top-wishlist",
+      "id": "crazygames-new",
       "count": 1
     }
   ],
@@ -219,25 +222,6 @@
       ]
     },
     {
-      "name": "Average and generic SPRUNKI SHIFTED mod",
-      "channel": "online",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 15,
-      "platforms": 1,
-      "browserPlayable": true,
-      "nameRisk": 3,
-      "strategicCount": 2,
-      "sourceCount": 5,
-      "sourceIds": [
-        "itch-newest-web",
-        "itch-new",
-        "itch-new-feed",
-        "itch-new-popular-web",
-        "itch-popular"
-      ]
-    },
-    {
       "name": "Super Plants",
       "channel": "online",
       "fastClass": "pending",
@@ -265,25 +249,6 @@
       "platforms": 1,
       "browserPlayable": true,
       "nameRisk": 6,
-      "strategicCount": 2,
-      "sourceCount": 5,
-      "sourceIds": [
-        "itch-newest-web",
-        "itch-new",
-        "itch-new-feed",
-        "itch-new-popular-web",
-        "itch-popular"
-      ]
-    },
-    {
-      "name": "Crimson Nova: The Star Gear Jobs",
-      "channel": "online",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 15,
-      "platforms": 1,
-      "browserPlayable": true,
-      "nameRisk": 3,
       "strategicCount": 2,
       "sourceCount": 5,
       "sourceIds": [
@@ -349,25 +314,6 @@
         "itch-new-popular-web",
         "itch-popular",
         "itch-new-feed"
-      ]
-    },
-    {
-      "name": "Endless Void: Idle Tower Defence Demo",
-      "channel": "online",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 15,
-      "platforms": 1,
-      "browserPlayable": true,
-      "nameRisk": 3,
-      "strategicCount": 2,
-      "sourceCount": 5,
-      "sourceIds": [
-        "itch-newest-web",
-        "itch-new",
-        "itch-new-feed",
-        "itch-new-popular-web",
-        "itch-popular"
       ]
     },
     {
@@ -770,25 +716,6 @@
       ]
     },
     {
-      "name": "Dystopia: The Jester's Obsession",
-      "channel": "online",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 15,
-      "platforms": 1,
-      "browserPlayable": true,
-      "nameRisk": 4,
-      "strategicCount": 2,
-      "sourceCount": 5,
-      "sourceIds": [
-        "itch-newest-web",
-        "itch-new",
-        "itch-new-feed",
-        "itch-new-popular-web",
-        "itch-popular"
-      ]
-    },
-    {
       "name": "SWALLET",
       "channel": "online",
       "fastClass": "pending",
@@ -960,25 +887,6 @@
       ]
     },
     {
-      "name": "PJSK: Surprises Abound's wish adventure",
-      "channel": "online",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 15,
-      "platforms": 1,
-      "browserPlayable": true,
-      "nameRisk": 3,
-      "strategicCount": 2,
-      "sourceCount": 5,
-      "sourceIds": [
-        "itch-newest-web",
-        "itch-new",
-        "itch-new-feed",
-        "itch-new-popular-web",
-        "itch-popular"
-      ]
-    },
-    {
       "name": "Runeclicker",
       "channel": "online",
       "fastClass": "pending",
@@ -1063,6 +971,101 @@
       "platforms": 1,
       "browserPlayable": true,
       "nameRisk": 5,
+      "strategicCount": 2,
+      "sourceCount": 5,
+      "sourceIds": [
+        "itch-newest-web",
+        "itch-new",
+        "itch-new-feed",
+        "itch-new-popular-web",
+        "itch-popular"
+      ]
+    },
+    {
+      "name": "Quarterheart",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 15,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 5,
+      "strategicCount": 2,
+      "sourceCount": 5,
+      "sourceIds": [
+        "itch-newest-web",
+        "itch-new",
+        "itch-new-feed",
+        "itch-new-popular-web",
+        "itch-popular"
+      ]
+    },
+    {
+      "name": "11 - Minute Hero",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 15,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 12,
+      "strategicCount": 2,
+      "sourceCount": 5,
+      "sourceIds": [
+        "itch-newest-web",
+        "itch-new",
+        "itch-new-feed",
+        "itch-new-popular-web",
+        "itch-popular"
+      ]
+    },
+    {
+      "name": "ALATE",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 15,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 5,
+      "strategicCount": 2,
+      "sourceCount": 5,
+      "sourceIds": [
+        "itch-newest-web",
+        "itch-new",
+        "itch-new-feed",
+        "itch-new-popular-web",
+        "itch-popular"
+      ]
+    },
+    {
+      "name": "The Challenge of Julie",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 15,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 9,
+      "strategicCount": 2,
+      "sourceCount": 5,
+      "sourceIds": [
+        "itch-newest-web",
+        "itch-new",
+        "itch-new-feed",
+        "itch-new-popular-web",
+        "itch-popular"
+      ]
+    },
+    {
+      "name": "Poke the Bug",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 15,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 6,
       "strategicCount": 2,
       "sourceCount": 5,
       "sourceIds": [
