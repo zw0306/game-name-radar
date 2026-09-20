@@ -1,37 +1,36 @@
 {
-  "generatedAt": "2026-09-20T19:28:39.116Z",
+  "generatedAt": "2026-09-20T22:27:29.690Z",
   "totalCandidates": 3000,
-  "pendingSeo": 2179,
+  "pendingSeo": 2211,
   "channelCounts": {
-    "pending": 613,
-    "online": 1561,
-    "wiki": 5
+    "pending": 625,
+    "online": 1562,
+    "wiki": 24
   },
   "fastClassCounts": {
-    "pending:pending": 613,
-    "online:pending": 1561,
-    "wiki:pending": 5
+    "pending:pending": 625,
+    "online:pending": 1562,
+    "wiki:pending": 24
   },
   "strategicCounts": {
-    "pending:0": 604,
+    "pending:0": 616,
     "online:2": 182,
-    "online:1": 1379,
+    "online:1": 1380,
     "pending:1": 9,
-    "wiki:0": 1,
-    "wiki:1": 4
+    "wiki:1": 24
   },
   "topSources": [
     {
       "id": "itch-new",
-      "count": 1719
+      "count": 1728
     },
     {
       "id": "itch-new-feed",
-      "count": 1660
+      "count": 1669
     },
     {
       "id": "itch-newest-web",
-      "count": 1499
+      "count": 1496
     },
     {
       "id": "trends-rising-7d",
@@ -43,11 +42,11 @@
     },
     {
       "id": "itch-new-popular-web",
-      "count": 176
+      "count": 179
     },
     {
       "id": "itch-popular",
-      "count": 176
+      "count": 179
     },
     {
       "id": "trends-rising-7d-horror-game",
@@ -75,27 +74,27 @@
     },
     {
       "id": "newgrounds-latest",
-      "count": 34
+      "count": 33
     },
     {
       "id": "newgrounds-new",
-      "count": 34
-    },
-    {
-      "id": "newgrounds-daily-top",
-      "count": 27
-    },
-    {
-      "id": "newgrounds-top",
-      "count": 27
+      "count": 33
     },
     {
       "id": "steam-latest-indie",
-      "count": 10
+      "count": 30
     },
     {
       "id": "steam-new",
-      "count": 10
+      "count": 30
+    },
+    {
+      "id": "newgrounds-daily-top",
+      "count": 29
+    },
+    {
+      "id": "newgrounds-top",
+      "count": 29
     },
     {
       "id": "itch-featured-feed",
@@ -116,10 +115,6 @@
     {
       "id": "lagged-new",
       "count": 2
-    },
-    {
-      "id": "steam-top-wishlist",
-      "count": 1
     }
   ],
   "samples": [
