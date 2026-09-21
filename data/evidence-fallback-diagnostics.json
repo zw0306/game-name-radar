@@ -1,40 +1,41 @@
 {
-  "generatedAt": "2026-09-21T06:21:26.253Z",
+  "generatedAt": "2026-09-21T14:09:32.009Z",
   "totalCandidates": 3000,
-  "pendingSeo": 2252,
+  "pendingSeo": 2254,
   "channelCounts": {
-    "pending": 636,
-    "online": 1608,
-    "wiki": 8
+    "pending": 606,
+    "online": 1637,
+    "wiki": 11
   },
   "fastClassCounts": {
-    "pending:pending": 636,
-    "online:pending": 1608,
-    "wiki:pending": 8
+    "pending:pending": 606,
+    "online:pending": 1637,
+    "wiki:pending": 11
   },
   "strategicCounts": {
-    "pending:0": 627,
-    "online:2": 186,
-    "online:1": 1422,
+    "pending:0": 597,
+    "online:2": 190,
+    "online:1": 1447,
+    "wiki:2": 1,
     "pending:1": 9,
-    "wiki:1": 8
+    "wiki:1": 10
   },
   "topSources": [
     {
       "id": "itch-new",
-      "count": 1782
+      "count": 1769
     },
     {
       "id": "itch-new-feed",
-      "count": 1723
+      "count": 1710
     },
     {
       "id": "itch-newest-web",
-      "count": 1541
+      "count": 1560
     },
     {
       "id": "trends-rising-7d",
-      "count": 328
+      "count": 330
     },
     {
       "id": "trends-rising-30d",
@@ -42,15 +43,15 @@
     },
     {
       "id": "itch-new-popular-web",
-      "count": 180
+      "count": 189
     },
     {
       "id": "itch-popular",
-      "count": 180
+      "count": 189
     },
     {
       "id": "trends-rising-7d-horror-game",
-      "count": 167
+      "count": 168
     },
     {
       "id": "trends-rising-30d-horror-game",
@@ -62,7 +63,7 @@
     },
     {
       "id": "trends-rising-7d-itch-io",
-      "count": 71
+      "count": 72
     },
     {
       "id": "trends-rising-30d-indie-game",
@@ -90,34 +91,53 @@
     },
     {
       "id": "steam-popular-new",
-      "count": 11
+      "count": 14
     },
     {
       "id": "itch-featured-feed",
-      "count": 10
+      "count": 11
     },
     {
       "id": "itch-featured",
-      "count": 10
+      "count": 11
     },
     {
       "id": "steam-latest-indie",
-      "count": 6
+      "count": 7
     },
     {
       "id": "steam-new",
-      "count": 6
+      "count": 7
     },
     {
       "id": "y8-new",
-      "count": 5
+      "count": 7
     },
     {
       "id": "lagged-new",
-      "count": 2
+      "count": 4
     }
   ],
   "samples": [
+    {
+      "name": "Scrap Empire",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 17,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 9,
+      "strategicCount": 2,
+      "sourceCount": 5,
+      "sourceIds": [
+        "itch-newest-web",
+        "itch-new",
+        "itch-new-feed",
+        "itch-new-popular-web",
+        "itch-popular"
+      ]
+    },
     {
       "name": "Rock Declutterer",
       "channel": "online",
@@ -134,6 +154,24 @@
         "itch-popular",
         "itch-featured-feed",
         "itch-featured"
+      ]
+    },
+    {
+      "name": "Eat not, Want not",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 15,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 0,
+      "strategicCount": 2,
+      "sourceCount": 4,
+      "sourceIds": [
+        "itch-featured-feed",
+        "itch-featured",
+        "itch-new-popular-web",
+        "itch-popular"
       ]
     },
     {
@@ -1019,44 +1057,6 @@
       "platforms": 1,
       "browserPlayable": true,
       "nameRisk": 9,
-      "strategicCount": 2,
-      "sourceCount": 5,
-      "sourceIds": [
-        "itch-newest-web",
-        "itch-new",
-        "itch-new-feed",
-        "itch-new-popular-web",
-        "itch-popular"
-      ]
-    },
-    {
-      "name": "Transcriptions of Time",
-      "channel": "online",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 15,
-      "platforms": 1,
-      "browserPlayable": true,
-      "nameRisk": 6,
-      "strategicCount": 2,
-      "sourceCount": 5,
-      "sourceIds": [
-        "itch-newest-web",
-        "itch-new",
-        "itch-new-feed",
-        "itch-new-popular-web",
-        "itch-popular"
-      ]
-    },
-    {
-      "name": "Shroom: The Gathering",
-      "channel": "online",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 15,
-      "platforms": 1,
-      "browserPlayable": true,
-      "nameRisk": 6,
       "strategicCount": 2,
       "sourceCount": 5,
       "sourceIds": [
