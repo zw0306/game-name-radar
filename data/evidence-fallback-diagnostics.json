@@ -1,36 +1,37 @@
 {
-  "generatedAt": "2026-09-20T22:27:29.690Z",
+  "generatedAt": "2026-09-21T01:05:19.879Z",
   "totalCandidates": 3000,
-  "pendingSeo": 2211,
+  "pendingSeo": 2252,
   "channelCounts": {
-    "pending": 625,
-    "online": 1562,
-    "wiki": 24
+    "pending": 639,
+    "online": 1592,
+    "wiki": 21
   },
   "fastClassCounts": {
-    "pending:pending": 625,
-    "online:pending": 1562,
-    "wiki:pending": 24
+    "pending:pending": 639,
+    "online:pending": 1592,
+    "wiki:pending": 21
   },
   "strategicCounts": {
-    "pending:0": 616,
-    "online:2": 182,
-    "online:1": 1380,
+    "pending:0": 630,
+    "online:2": 183,
+    "online:1": 1409,
     "pending:1": 9,
-    "wiki:1": 24
+    "wiki:1": 16,
+    "wiki:0": 5
   },
   "topSources": [
     {
       "id": "itch-new",
-      "count": 1728
+      "count": 1762
     },
     {
       "id": "itch-new-feed",
-      "count": 1669
+      "count": 1703
     },
     {
       "id": "itch-newest-web",
-      "count": 1496
+      "count": 1516
     },
     {
       "id": "trends-rising-7d",
@@ -42,11 +43,11 @@
     },
     {
       "id": "itch-new-popular-web",
-      "count": 179
+      "count": 180
     },
     {
       "id": "itch-popular",
-      "count": 179
+      "count": 180
     },
     {
       "id": "trends-rising-7d-horror-game",
@@ -74,42 +75,50 @@
     },
     {
       "id": "newgrounds-latest",
-      "count": 33
+      "count": 40
     },
     {
       "id": "newgrounds-new",
-      "count": 33
-    },
-    {
-      "id": "steam-latest-indie",
-      "count": 30
-    },
-    {
-      "id": "steam-new",
-      "count": 30
+      "count": 40
     },
     {
       "id": "newgrounds-daily-top",
-      "count": 29
+      "count": 28
     },
     {
       "id": "newgrounds-top",
-      "count": 29
+      "count": 28
+    },
+    {
+      "id": "steam-latest-indie",
+      "count": 19
+    },
+    {
+      "id": "steam-new",
+      "count": 19
     },
     {
       "id": "itch-featured-feed",
-      "count": 9
+      "count": 10
     },
     {
       "id": "itch-featured",
-      "count": 9
+      "count": 10
+    },
+    {
+      "id": "steam-popular-new",
+      "count": 6
     },
     {
       "id": "y8-new",
       "count": 5
     },
     {
-      "id": "steam-popular-new",
+      "id": "steam-top-wishlist",
+      "count": 5
+    },
+    {
+      "id": "crazygames-new",
       "count": 3
     },
     {
@@ -118,6 +127,24 @@
     }
   ],
   "samples": [
+    {
+      "name": "Rock Declutterer",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 17,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 0,
+      "strategicCount": 2,
+      "sourceCount": 4,
+      "sourceIds": [
+        "itch-new-popular-web",
+        "itch-popular",
+        "itch-featured-feed",
+        "itch-featured"
+      ]
+    },
     {
       "name": "Super Plants",
       "channel": "online",
@@ -1032,25 +1059,6 @@
     },
     {
       "name": "Shroom: The Gathering",
-      "channel": "online",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 15,
-      "platforms": 1,
-      "browserPlayable": true,
-      "nameRisk": 6,
-      "strategicCount": 2,
-      "sourceCount": 5,
-      "sourceIds": [
-        "itch-newest-web",
-        "itch-new",
-        "itch-new-feed",
-        "itch-new-popular-web",
-        "itch-popular"
-      ]
-    },
-    {
-      "name": "The Last Train",
       "channel": "online",
       "fastClass": "pending",
       "fastScore": 0,
