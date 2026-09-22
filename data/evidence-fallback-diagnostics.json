@@ -1,41 +1,41 @@
 {
-  "generatedAt": "2026-09-22T18:55:25.838Z",
+  "generatedAt": "2026-09-22T22:09:51.467Z",
   "totalCandidates": 3000,
-  "pendingSeo": 2255,
+  "pendingSeo": 2253,
   "channelCounts": {
-    "pending": 483,
-    "online": 1749,
-    "wiki": 23
+    "pending": 478,
+    "online": 1750,
+    "wiki": 25
   },
   "fastClassCounts": {
-    "pending:pending": 483,
-    "online:pending": 1749,
-    "wiki:pending": 23
+    "pending:pending": 478,
+    "online:pending": 1750,
+    "wiki:pending": 25
   },
   "strategicCounts": {
-    "pending:0": 474,
-    "online:2": 192,
+    "pending:0": 469,
+    "online:2": 193,
     "online:1": 1557,
-    "wiki:2": 2,
+    "wiki:2": 1,
     "pending:1": 9,
-    "wiki:1": 21
+    "wiki:1": 24
   },
   "topSources": [
     {
       "id": "itch-new",
-      "count": 1750
+      "count": 1760
     },
     {
       "id": "itch-new-feed",
-      "count": 1690
+      "count": 1700
     },
     {
       "id": "itch-newest-web",
-      "count": 1668
+      "count": 1684
     },
     {
       "id": "trends-rising-7d",
-      "count": 336
+      "count": 337
     },
     {
       "id": "trends-rising-30d",
@@ -43,11 +43,11 @@
     },
     {
       "id": "itch-new-popular-web",
-      "count": 196
+      "count": 181
     },
     {
       "id": "itch-popular",
-      "count": 196
+      "count": 181
     },
     {
       "id": "trends-rising-7d-horror-game",
@@ -59,7 +59,7 @@
     },
     {
       "id": "trends-rising-7d-indie-game",
-      "count": 101
+      "count": 102
     },
     {
       "id": "trends-rising-7d-itch-io",
@@ -91,7 +91,7 @@
     },
     {
       "id": "steam-popular-new",
-      "count": 26
+      "count": 28
     },
     {
       "id": "itch-featured-feed",
@@ -103,11 +103,11 @@
     },
     {
       "id": "steam-latest-indie",
-      "count": 8
+      "count": 7
     },
     {
       "id": "steam-new",
-      "count": 8
+      "count": 7
     },
     {
       "id": "y8-new",
@@ -116,6 +116,10 @@
     {
       "id": "lagged-new",
       "count": 2
+    },
+    {
+      "id": "crazygames-new",
+      "count": 1
     }
   ],
   "samples": [
