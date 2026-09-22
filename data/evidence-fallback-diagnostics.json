@@ -1,40 +1,40 @@
 {
-  "generatedAt": "2026-09-22T04:56:38.931Z",
+  "generatedAt": "2026-09-22T14:54:49.906Z",
   "totalCandidates": 3000,
-  "pendingSeo": 2250,
+  "pendingSeo": 2252,
   "channelCounts": {
-    "pending": 531,
-    "online": 1704,
-    "wiki": 15
+    "pending": 506,
+    "online": 1729,
+    "wiki": 17
   },
   "fastClassCounts": {
-    "pending:pending": 531,
-    "online:pending": 1704,
-    "wiki:pending": 15
+    "pending:pending": 506,
+    "online:pending": 1729,
+    "wiki:pending": 17
   },
   "strategicCounts": {
-    "pending:0": 522,
-    "online:2": 189,
-    "online:1": 1515,
+    "pending:0": 497,
+    "online:2": 190,
+    "online:1": 1539,
     "pending:1": 9,
-    "wiki:1": 15
+    "wiki:1": 17
   },
   "topSources": [
     {
       "id": "itch-new",
-      "count": 1754
+      "count": 1749
     },
     {
       "id": "itch-new-feed",
-      "count": 1694
+      "count": 1689
     },
     {
       "id": "itch-newest-web",
-      "count": 1623
+      "count": 1643
     },
     {
       "id": "trends-rising-7d",
-      "count": 334
+      "count": 335
     },
     {
       "id": "trends-rising-30d",
@@ -42,11 +42,11 @@
     },
     {
       "id": "itch-new-popular-web",
-      "count": 192
+      "count": 198
     },
     {
       "id": "itch-popular",
-      "count": 192
+      "count": 198
     },
     {
       "id": "trends-rising-7d-horror-game",
@@ -58,7 +58,7 @@
     },
     {
       "id": "trends-rising-7d-indie-game",
-      "count": 100
+      "count": 101
     },
     {
       "id": "trends-rising-7d-itch-io",
@@ -90,7 +90,7 @@
     },
     {
       "id": "steam-popular-new",
-      "count": 18
+      "count": 20
     },
     {
       "id": "itch-featured-feed",
@@ -119,6 +119,25 @@
   ],
   "samples": [
     {
+      "name": "Return of The Twin Peaks",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 17,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 7,
+      "strategicCount": 2,
+      "sourceCount": 5,
+      "sourceIds": [
+        "itch-newest-web",
+        "itch-new",
+        "itch-new-feed",
+        "itch-new-popular-web",
+        "itch-popular"
+      ]
+    },
+    {
       "name": "Scrap Empire",
       "channel": "online",
       "fastClass": "pending",
@@ -142,7 +161,7 @@
       "channel": "online",
       "fastClass": "pending",
       "fastScore": 0,
-      "discoveryScore": 17,
+      "discoveryScore": 15,
       "platforms": 1,
       "browserPlayable": true,
       "nameRisk": 0,
@@ -1030,25 +1049,6 @@
     },
     {
       "name": "Bureaucracy Simulator",
-      "channel": "online",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 15,
-      "platforms": 1,
-      "browserPlayable": true,
-      "nameRisk": 9,
-      "strategicCount": 2,
-      "sourceCount": 5,
-      "sourceIds": [
-        "itch-newest-web",
-        "itch-new",
-        "itch-new-feed",
-        "itch-new-popular-web",
-        "itch-popular"
-      ]
-    },
-    {
-      "name": "Paws to the Stars",
       "channel": "online",
       "fastClass": "pending",
       "fastScore": 0,
