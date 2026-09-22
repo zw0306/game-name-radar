@@ -1,56 +1,57 @@
 {
-  "generatedAt": "2026-09-22T14:54:49.906Z",
+  "generatedAt": "2026-09-22T18:55:25.838Z",
   "totalCandidates": 3000,
-  "pendingSeo": 2252,
+  "pendingSeo": 2255,
   "channelCounts": {
-    "pending": 506,
-    "online": 1729,
-    "wiki": 17
+    "pending": 483,
+    "online": 1749,
+    "wiki": 23
   },
   "fastClassCounts": {
-    "pending:pending": 506,
-    "online:pending": 1729,
-    "wiki:pending": 17
+    "pending:pending": 483,
+    "online:pending": 1749,
+    "wiki:pending": 23
   },
   "strategicCounts": {
-    "pending:0": 497,
-    "online:2": 190,
-    "online:1": 1539,
+    "pending:0": 474,
+    "online:2": 192,
+    "online:1": 1557,
+    "wiki:2": 2,
     "pending:1": 9,
-    "wiki:1": 17
+    "wiki:1": 21
   },
   "topSources": [
     {
       "id": "itch-new",
-      "count": 1749
+      "count": 1750
     },
     {
       "id": "itch-new-feed",
-      "count": 1689
+      "count": 1690
     },
     {
       "id": "itch-newest-web",
-      "count": 1643
+      "count": 1668
     },
     {
       "id": "trends-rising-7d",
-      "count": 335
+      "count": 336
     },
     {
       "id": "trends-rising-30d",
-      "count": 221
+      "count": 222
     },
     {
       "id": "itch-new-popular-web",
-      "count": 198
+      "count": 196
     },
     {
       "id": "itch-popular",
-      "count": 198
+      "count": 196
     },
     {
       "id": "trends-rising-7d-horror-game",
-      "count": 169
+      "count": 171
     },
     {
       "id": "trends-rising-30d-horror-game",
@@ -66,7 +67,7 @@
     },
     {
       "id": "trends-rising-30d-indie-game",
-      "count": 58
+      "count": 59
     },
     {
       "id": "trends-rising-30d-itch-io",
@@ -74,11 +75,11 @@
     },
     {
       "id": "newgrounds-daily-top",
-      "count": 37
+      "count": 36
     },
     {
       "id": "newgrounds-top",
-      "count": 37
+      "count": 36
     },
     {
       "id": "newgrounds-latest",
@@ -90,7 +91,7 @@
     },
     {
       "id": "steam-popular-new",
-      "count": 20
+      "count": 26
     },
     {
       "id": "itch-featured-feed",
@@ -102,11 +103,11 @@
     },
     {
       "id": "steam-latest-indie",
-      "count": 6
+      "count": 8
     },
     {
       "id": "steam-new",
-      "count": 6
+      "count": 8
     },
     {
       "id": "y8-new",
@@ -119,6 +120,25 @@
   ],
   "samples": [
     {
+      "name": "SWELTER",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 17,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 5,
+      "strategicCount": 2,
+      "sourceCount": 5,
+      "sourceIds": [
+        "itch-newest-web",
+        "itch-new",
+        "itch-new-feed",
+        "itch-new-popular-web",
+        "itch-popular"
+      ]
+    },
+    {
       "name": "Return of The Twin Peaks",
       "channel": "online",
       "fastClass": "pending",
@@ -127,6 +147,25 @@
       "platforms": 1,
       "browserPlayable": true,
       "nameRisk": 7,
+      "strategicCount": 2,
+      "sourceCount": 5,
+      "sourceIds": [
+        "itch-newest-web",
+        "itch-new",
+        "itch-new-feed",
+        "itch-new-popular-web",
+        "itch-popular"
+      ]
+    },
+    {
+      "name": "IDLE HQ",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 17,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 9,
       "strategicCount": 2,
       "sourceCount": 5,
       "sourceIds": [
@@ -1018,44 +1057,6 @@
       "platforms": 1,
       "browserPlayable": true,
       "nameRisk": 12,
-      "strategicCount": 2,
-      "sourceCount": 5,
-      "sourceIds": [
-        "itch-newest-web",
-        "itch-new",
-        "itch-new-feed",
-        "itch-new-popular-web",
-        "itch-popular"
-      ]
-    },
-    {
-      "name": "Draw Your Heart",
-      "channel": "online",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 15,
-      "platforms": 1,
-      "browserPlayable": true,
-      "nameRisk": 6,
-      "strategicCount": 2,
-      "sourceCount": 5,
-      "sourceIds": [
-        "itch-newest-web",
-        "itch-new",
-        "itch-new-feed",
-        "itch-new-popular-web",
-        "itch-popular"
-      ]
-    },
-    {
-      "name": "Bureaucracy Simulator",
-      "channel": "online",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 15,
-      "platforms": 1,
-      "browserPlayable": true,
-      "nameRisk": 9,
       "strategicCount": 2,
       "sourceCount": 5,
       "sourceIds": [
