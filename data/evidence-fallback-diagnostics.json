@@ -1,41 +1,40 @@
 {
-  "generatedAt": "2026-09-23T20:22:27.449Z",
+  "generatedAt": "2026-09-23T23:42:41.023Z",
   "totalCandidates": 3000,
-  "pendingSeo": 2248,
+  "pendingSeo": 2247,
   "channelCounts": {
-    "pending": 422,
-    "online": 1809,
-    "wiki": 17
+    "pending": 418,
+    "online": 1811,
+    "wiki": 18
   },
   "fastClassCounts": {
-    "pending:pending": 422,
-    "online:pending": 1809,
-    "wiki:pending": 17
+    "pending:pending": 418,
+    "online:pending": 1811,
+    "wiki:pending": 18
   },
   "strategicCounts": {
     "pending:0": 417,
-    "online:2": 195,
-    "online:1": 1614,
-    "wiki:2": 1,
-    "pending:1": 5,
-    "wiki:1": 16
+    "online:2": 196,
+    "online:1": 1615,
+    "pending:1": 1,
+    "wiki:1": 18
   },
   "topSources": [
     {
       "id": "itch-new",
-      "count": 1777
+      "count": 1779
     },
     {
       "id": "itch-newest-web",
-      "count": 1763
+      "count": 1765
     },
     {
       "id": "itch-new-feed",
-      "count": 1716
+      "count": 1718
     },
     {
       "id": "trends-rising-7d",
-      "count": 341
+      "count": 342
     },
     {
       "id": "trends-rising-30d",
@@ -63,7 +62,7 @@
     },
     {
       "id": "trends-rising-7d-itch-io",
-      "count": 74
+      "count": 75
     },
     {
       "id": "trends-rising-30d-indie-game",
@@ -91,27 +90,27 @@
     },
     {
       "id": "steam-popular-new",
-      "count": 20
-    },
-    {
-      "id": "itch-featured-feed",
-      "count": 7
-    },
-    {
-      "id": "itch-featured",
-      "count": 7
+      "count": 21
     },
     {
       "id": "steam-latest-indie",
-      "count": 7
+      "count": 6
     },
     {
       "id": "steam-new",
-      "count": 7
+      "count": 6
     },
     {
       "id": "y8-new",
       "count": 5
+    },
+    {
+      "id": "itch-featured-feed",
+      "count": 4
+    },
+    {
+      "id": "itch-featured",
+      "count": 4
     },
     {
       "id": "lagged-new",
@@ -119,6 +118,26 @@
     }
   ],
   "samples": [
+    {
+      "name": "Swamp and Luig",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 20,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 6,
+      "strategicCount": 2,
+      "sourceCount": 6,
+      "sourceIds": [
+        "itch-new-popular-web",
+        "itch-popular",
+        "itch-new-feed",
+        "itch-new",
+        "itch-featured-feed",
+        "itch-featured"
+      ]
+    },
     {
       "name": "Trolley Problem Is Not Problem",
       "channel": "online",
@@ -1038,25 +1057,6 @@
       "platforms": 1,
       "browserPlayable": true,
       "nameRisk": 9,
-      "strategicCount": 2,
-      "sourceCount": 5,
-      "sourceIds": [
-        "itch-newest-web",
-        "itch-new",
-        "itch-new-feed",
-        "itch-new-popular-web",
-        "itch-popular"
-      ]
-    },
-    {
-      "name": "Bumper to Billions",
-      "channel": "online",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 15,
-      "platforms": 1,
-      "browserPlayable": true,
-      "nameRisk": 6,
       "strategicCount": 2,
       "sourceCount": 5,
       "sourceIds": [
