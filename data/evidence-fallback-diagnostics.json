@@ -1,56 +1,56 @@
 {
-  "generatedAt": "2026-09-23T05:58:55.455Z",
+  "generatedAt": "2026-09-23T11:37:11.445Z",
   "totalCandidates": 3000,
   "pendingSeo": 2250,
   "channelCounts": {
-    "pending": 439,
-    "online": 1786,
-    "wiki": 25
+    "pending": 429,
+    "online": 1794,
+    "wiki": 27
   },
   "fastClassCounts": {
-    "pending:pending": 439,
-    "online:pending": 1786,
-    "wiki:pending": 25
+    "pending:pending": 429,
+    "online:pending": 1794,
+    "wiki:pending": 27
   },
   "strategicCounts": {
-    "pending:0": 430,
-    "online:2": 193,
-    "online:1": 1593,
+    "pending:0": 420,
+    "online:2": 194,
+    "online:1": 1600,
     "pending:1": 9,
-    "wiki:1": 25
+    "wiki:1": 27
   },
   "topSources": [
     {
       "id": "itch-new",
-      "count": 1748
+      "count": 1755
     },
     {
       "id": "itch-newest-web",
-      "count": 1711
+      "count": 1732
     },
     {
       "id": "itch-new-feed",
-      "count": 1688
+      "count": 1695
     },
     {
       "id": "trends-rising-7d",
-      "count": 337
+      "count": 339
     },
     {
       "id": "trends-rising-30d",
-      "count": 223
+      "count": 225
     },
     {
       "id": "itch-new-popular-web",
-      "count": 187
+      "count": 174
     },
     {
       "id": "itch-popular",
-      "count": 187
+      "count": 174
     },
     {
       "id": "trends-rising-7d-horror-game",
-      "count": 171
+      "count": 172
     },
     {
       "id": "trends-rising-30d-horror-game",
@@ -58,7 +58,7 @@
     },
     {
       "id": "trends-rising-7d-indie-game",
-      "count": 102
+      "count": 103
     },
     {
       "id": "trends-rising-7d-itch-io",
@@ -66,7 +66,7 @@
     },
     {
       "id": "trends-rising-30d-indie-game",
-      "count": 59
+      "count": 61
     },
     {
       "id": "trends-rising-30d-itch-io",
@@ -74,11 +74,11 @@
     },
     {
       "id": "newgrounds-daily-top",
-      "count": 40
+      "count": 39
     },
     {
       "id": "newgrounds-top",
-      "count": 40
+      "count": 39
     },
     {
       "id": "newgrounds-latest",
@@ -90,7 +90,7 @@
     },
     {
       "id": "steam-popular-new",
-      "count": 28
+      "count": 30
     },
     {
       "id": "itch-featured-feed",
@@ -114,7 +114,11 @@
     },
     {
       "id": "lagged-new",
-      "count": 2
+      "count": 3
+    },
+    {
+      "id": "crazygames-new",
+      "count": 1
     }
   ],
   "samples": [
@@ -199,7 +203,7 @@
       "channel": "online",
       "fastClass": "pending",
       "fastScore": 0,
-      "discoveryScore": 17,
+      "discoveryScore": 15,
       "platforms": 1,
       "browserPlayable": true,
       "nameRisk": 9,
