@@ -1,37 +1,36 @@
 {
-  "generatedAt": "2026-09-23T00:35:11.302Z",
+  "generatedAt": "2026-09-23T05:58:55.455Z",
   "totalCandidates": 3000,
-  "pendingSeo": 2251,
+  "pendingSeo": 2250,
   "channelCounts": {
-    "pending": 455,
-    "online": 1770,
-    "wiki": 26
+    "pending": 439,
+    "online": 1786,
+    "wiki": 25
   },
   "fastClassCounts": {
-    "pending:pending": 455,
-    "online:pending": 1770,
-    "wiki:pending": 26
+    "pending:pending": 439,
+    "online:pending": 1786,
+    "wiki:pending": 25
   },
   "strategicCounts": {
-    "pending:0": 446,
-    "online:2": 192,
-    "online:1": 1578,
-    "wiki:2": 1,
+    "pending:0": 430,
+    "online:2": 193,
+    "online:1": 1593,
     "pending:1": 9,
     "wiki:1": 25
   },
   "topSources": [
     {
       "id": "itch-new",
-      "count": 1754
+      "count": 1748
     },
     {
       "id": "itch-newest-web",
-      "count": 1701
+      "count": 1711
     },
     {
       "id": "itch-new-feed",
-      "count": 1694
+      "count": 1688
     },
     {
       "id": "trends-rising-7d",
@@ -39,15 +38,15 @@
     },
     {
       "id": "trends-rising-30d",
-      "count": 222
+      "count": 223
     },
     {
       "id": "itch-new-popular-web",
-      "count": 185
+      "count": 187
     },
     {
       "id": "itch-popular",
-      "count": 185
+      "count": 187
     },
     {
       "id": "trends-rising-7d-horror-game",
@@ -55,7 +54,7 @@
     },
     {
       "id": "trends-rising-30d-horror-game",
-      "count": 117
+      "count": 118
     },
     {
       "id": "trends-rising-7d-indie-game",
@@ -75,11 +74,11 @@
     },
     {
       "id": "newgrounds-daily-top",
-      "count": 35
+      "count": 40
     },
     {
       "id": "newgrounds-top",
-      "count": 35
+      "count": 40
     },
     {
       "id": "newgrounds-latest",
@@ -91,7 +90,7 @@
     },
     {
       "id": "steam-popular-new",
-      "count": 29
+      "count": 28
     },
     {
       "id": "itch-featured-feed",
@@ -103,11 +102,11 @@
     },
     {
       "id": "steam-latest-indie",
-      "count": 7
+      "count": 6
     },
     {
       "id": "steam-new",
-      "count": 7
+      "count": 6
     },
     {
       "id": "y8-new",
@@ -119,6 +118,25 @@
     }
   ],
   "samples": [
+    {
+      "name": "EMBERWATCH",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 17,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 5,
+      "strategicCount": 2,
+      "sourceCount": 5,
+      "sourceIds": [
+        "itch-newest-web",
+        "itch-new",
+        "itch-new-feed",
+        "itch-new-popular-web",
+        "itch-popular"
+      ]
+    },
     {
       "name": "SWELTER",
       "channel": "online",
@@ -1038,25 +1056,6 @@
       "platforms": 1,
       "browserPlayable": true,
       "nameRisk": 6,
-      "strategicCount": 2,
-      "sourceCount": 5,
-      "sourceIds": [
-        "itch-newest-web",
-        "itch-new",
-        "itch-new-feed",
-        "itch-new-popular-web",
-        "itch-popular"
-      ]
-    },
-    {
-      "name": "For The Fame",
-      "channel": "online",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 15,
-      "platforms": 1,
-      "browserPlayable": true,
-      "nameRisk": 12,
       "strategicCount": 2,
       "sourceCount": 5,
       "sourceIds": [
