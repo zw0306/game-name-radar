@@ -1,37 +1,37 @@
 {
-  "generatedAt": "2026-09-23T16:58:53.813Z",
+  "generatedAt": "2026-09-23T20:22:27.449Z",
   "totalCandidates": 3000,
-  "pendingSeo": 2249,
+  "pendingSeo": 2248,
   "channelCounts": {
-    "pending": 418,
-    "online": 1805,
-    "wiki": 26
+    "pending": 422,
+    "online": 1809,
+    "wiki": 17
   },
   "fastClassCounts": {
-    "pending:pending": 418,
-    "online:pending": 1805,
-    "wiki:pending": 26
+    "pending:pending": 422,
+    "online:pending": 1809,
+    "wiki:pending": 17
   },
   "strategicCounts": {
-    "pending:0": 416,
-    "online:2": 193,
-    "online:1": 1612,
+    "pending:0": 417,
+    "online:2": 195,
+    "online:1": 1614,
     "wiki:2": 1,
-    "pending:1": 2,
-    "wiki:1": 25
+    "pending:1": 5,
+    "wiki:1": 16
   },
   "topSources": [
     {
       "id": "itch-new",
-      "count": 1764
+      "count": 1777
     },
     {
       "id": "itch-newest-web",
-      "count": 1750
+      "count": 1763
     },
     {
       "id": "itch-new-feed",
-      "count": 1703
+      "count": 1716
     },
     {
       "id": "trends-rising-7d",
@@ -39,7 +39,7 @@
     },
     {
       "id": "trends-rising-30d",
-      "count": 229
+      "count": 230
     },
     {
       "id": "trends-rising-7d-horror-game",
@@ -47,11 +47,11 @@
     },
     {
       "id": "itch-new-popular-web",
-      "count": 168
+      "count": 170
     },
     {
       "id": "itch-popular",
-      "count": 168
+      "count": 170
     },
     {
       "id": "trends-rising-30d-horror-game",
@@ -71,15 +71,7 @@
     },
     {
       "id": "trends-rising-30d-itch-io",
-      "count": 53
-    },
-    {
-      "id": "newgrounds-daily-top",
-      "count": 39
-    },
-    {
-      "id": "newgrounds-top",
-      "count": 39
+      "count": 54
     },
     {
       "id": "newgrounds-latest",
@@ -90,8 +82,24 @@
       "count": 32
     },
     {
+      "id": "newgrounds-daily-top",
+      "count": 30
+    },
+    {
+      "id": "newgrounds-top",
+      "count": 30
+    },
+    {
       "id": "steam-popular-new",
-      "count": 29
+      "count": 20
+    },
+    {
+      "id": "itch-featured-feed",
+      "count": 7
+    },
+    {
+      "id": "itch-featured",
+      "count": 7
     },
     {
       "id": "steam-latest-indie",
@@ -106,19 +114,49 @@
       "count": 5
     },
     {
-      "id": "itch-featured-feed",
-      "count": 4
-    },
-    {
-      "id": "itch-featured",
-      "count": 4
-    },
-    {
       "id": "lagged-new",
       "count": 2
     }
   ],
   "samples": [
+    {
+      "name": "Trolley Problem Is Not Problem",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 17,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 0,
+      "strategicCount": 2,
+      "sourceCount": 5,
+      "sourceIds": [
+        "itch-newest-web",
+        "itch-new",
+        "itch-new-feed",
+        "itch-new-popular-web",
+        "itch-popular"
+      ]
+    },
+    {
+      "name": "Vibecoding Idle",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 17,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 9,
+      "strategicCount": 2,
+      "sourceCount": 5,
+      "sourceIds": [
+        "itch-newest-web",
+        "itch-new",
+        "itch-new-feed",
+        "itch-new-popular-web",
+        "itch-popular"
+      ]
+    },
     {
       "name": "EMBERWATCH",
       "channel": "online",
@@ -1012,44 +1050,6 @@
     },
     {
       "name": "Bumper to Billions",
-      "channel": "online",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 15,
-      "platforms": 1,
-      "browserPlayable": true,
-      "nameRisk": 6,
-      "strategicCount": 2,
-      "sourceCount": 5,
-      "sourceIds": [
-        "itch-newest-web",
-        "itch-new",
-        "itch-new-feed",
-        "itch-new-popular-web",
-        "itch-popular"
-      ]
-    },
-    {
-      "name": "Ensis IDLE",
-      "channel": "online",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 15,
-      "platforms": 1,
-      "browserPlayable": true,
-      "nameRisk": 9,
-      "strategicCount": 2,
-      "sourceCount": 5,
-      "sourceIds": [
-        "itch-newest-web",
-        "itch-new",
-        "itch-new-feed",
-        "itch-new-popular-web",
-        "itch-popular"
-      ]
-    },
-    {
-      "name": "The Biggest Flame",
       "channel": "online",
       "fastClass": "pending",
       "fastScore": 0,
