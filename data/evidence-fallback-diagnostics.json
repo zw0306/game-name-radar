@@ -1,41 +1,41 @@
 {
-  "generatedAt": "2026-09-24T04:51:19.184Z",
+  "generatedAt": "2026-09-24T10:01:52.583Z",
   "totalCandidates": 3000,
-  "pendingSeo": 2247,
+  "pendingSeo": 2244,
   "channelCounts": {
-    "pending": 418,
-    "wiki": 18,
-    "online": 1811
+    "online": 1809,
+    "pending": 420,
+    "wiki": 15
   },
   "fastClassCounts": {
-    "pending:pending": 418,
-    "wiki:pending": 18,
-    "online:pending": 1811
+    "online:pending": 1809,
+    "pending:pending": 420,
+    "wiki:pending": 15
   },
   "strategicCounts": {
-    "pending:0": 417,
-    "wiki:1": 16,
-    "online:2": 198,
-    "online:1": 1613,
-    "wiki:2": 2,
-    "pending:1": 1
+    "online:3": 1,
+    "pending:0": 419,
+    "online:2": 201,
+    "online:1": 1607,
+    "pending:1": 1,
+    "wiki:1": 15
   },
   "topSources": [
     {
       "id": "itch-new",
-      "count": 1779
+      "count": 1775
     },
     {
       "id": "itch-newest-web",
-      "count": 1766
+      "count": 1762
     },
     {
       "id": "itch-new-feed",
-      "count": 1717
+      "count": 1713
     },
     {
       "id": "trends-rising-7d",
-      "count": 343
+      "count": 344
     },
     {
       "id": "trends-rising-30d",
@@ -43,15 +43,15 @@
     },
     {
       "id": "trends-rising-7d-horror-game",
-      "count": 174
+      "count": 175
     },
     {
       "id": "itch-new-popular-web",
-      "count": 170
+      "count": 173
     },
     {
       "id": "itch-popular",
-      "count": 170
+      "count": 173
     },
     {
       "id": "trends-rising-30d-horror-game",
@@ -91,15 +91,19 @@
     },
     {
       "id": "steam-popular-new",
-      "count": 21
+      "count": 18
+    },
+    {
+      "id": "y8-new",
+      "count": 7
     },
     {
       "id": "steam-latest-indie",
-      "count": 8
+      "count": 6
     },
     {
       "id": "steam-new",
-      "count": 8
+      "count": 6
     },
     {
       "id": "itch-featured-feed",
@@ -110,15 +114,35 @@
       "count": 5
     },
     {
-      "id": "y8-new",
-      "count": 5
+      "id": "lagged-new",
+      "count": 3
     },
     {
-      "id": "lagged-new",
-      "count": 2
+      "id": "crazygames-new",
+      "count": 1
     }
   ],
   "samples": [
+    {
+      "name": "THRORBS",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 20,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 5,
+      "strategicCount": 3,
+      "sourceCount": 6,
+      "sourceIds": [
+        "itch-newest-web",
+        "itch-new",
+        "itch-featured-feed",
+        "itch-featured",
+        "itch-new-popular-web",
+        "itch-popular"
+      ]
+    },
     {
       "name": "Swamp and Luig",
       "channel": "online",
@@ -137,6 +161,25 @@
         "itch-new",
         "itch-featured-feed",
         "itch-featured"
+      ]
+    },
+    {
+      "name": "Forgever",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 17,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 5,
+      "strategicCount": 2,
+      "sourceCount": 5,
+      "sourceIds": [
+        "itch-newest-web",
+        "itch-new",
+        "itch-new-feed",
+        "itch-new-popular-web",
+        "itch-popular"
       ]
     },
     {
@@ -254,21 +297,22 @@
       ]
     },
     {
-      "name": "THRORBS",
+      "name": "A DREAM - when i was small",
       "channel": "online",
       "fastClass": "pending",
       "fastScore": 0,
       "discoveryScore": 15,
       "platforms": 1,
       "browserPlayable": true,
-      "nameRisk": 5,
+      "nameRisk": 3,
       "strategicCount": 2,
-      "sourceCount": 4,
+      "sourceCount": 5,
       "sourceIds": [
         "itch-newest-web",
         "itch-new",
-        "itch-featured-feed",
-        "itch-featured"
+        "itch-new-feed",
+        "itch-new-popular-web",
+        "itch-popular"
       ]
     },
     {
@@ -1019,44 +1063,6 @@
       "platforms": 1,
       "browserPlayable": true,
       "nameRisk": 12,
-      "strategicCount": 2,
-      "sourceCount": 5,
-      "sourceIds": [
-        "itch-newest-web",
-        "itch-new",
-        "itch-new-feed",
-        "itch-new-popular-web",
-        "itch-popular"
-      ]
-    },
-    {
-      "name": "1999 Midnight Dispatch",
-      "channel": "online",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 15,
-      "platforms": 1,
-      "browserPlayable": true,
-      "nameRisk": 6,
-      "strategicCount": 2,
-      "sourceCount": 5,
-      "sourceIds": [
-        "itch-newest-web",
-        "itch-new",
-        "itch-new-feed",
-        "itch-new-popular-web",
-        "itch-popular"
-      ]
-    },
-    {
-      "name": "Cook the Dungeon",
-      "channel": "online",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 15,
-      "platforms": 1,
-      "browserPlayable": true,
-      "nameRisk": 6,
       "strategicCount": 2,
       "sourceCount": 5,
       "sourceIds": [
