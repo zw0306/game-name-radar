@@ -1,42 +1,41 @@
 {
-  "generatedAt": "2026-09-24T19:10:48.539Z",
+  "generatedAt": "2026-09-24T22:27:26.457Z",
   "totalCandidates": 3000,
-  "pendingSeo": 2240,
+  "pendingSeo": 2237,
   "channelCounts": {
-    "online": 1796,
-    "pending": 422,
-    "wiki": 22
+    "online": 1790,
+    "pending": 424,
+    "wiki": 23
   },
   "fastClassCounts": {
-    "online:pending": 1796,
-    "pending:pending": 422,
-    "wiki:pending": 22
+    "online:pending": 1790,
+    "pending:pending": 424,
+    "wiki:pending": 23
   },
   "strategicCounts": {
     "online:3": 1,
-    "pending:0": 421,
-    "online:2": 200,
-    "online:1": 1595,
-    "wiki:2": 2,
+    "pending:0": 423,
+    "online:2": 202,
+    "online:1": 1587,
     "pending:1": 1,
-    "wiki:1": 20
+    "wiki:1": 23
   },
   "topSources": [
     {
       "id": "itch-new",
-      "count": 1765
+      "count": 1758
     },
     {
       "id": "itch-newest-web",
-      "count": 1751
+      "count": 1745
     },
     {
       "id": "itch-new-feed",
-      "count": 1702
+      "count": 1694
     },
     {
       "id": "trends-rising-7d",
-      "count": 346
+      "count": 348
     },
     {
       "id": "trends-rising-30d",
@@ -44,15 +43,15 @@
     },
     {
       "id": "trends-rising-7d-horror-game",
-      "count": 177
+      "count": 179
     },
     {
       "id": "itch-new-popular-web",
-      "count": 174
+      "count": 176
     },
     {
       "id": "itch-popular",
-      "count": 174
+      "count": 176
     },
     {
       "id": "trends-rising-30d-horror-game",
@@ -92,15 +91,15 @@
     },
     {
       "id": "steam-popular-new",
-      "count": 24
+      "count": 26
     },
     {
       "id": "steam-latest-indie",
-      "count": 9
+      "count": 6
     },
     {
       "id": "steam-new",
-      "count": 9
+      "count": 6
     },
     {
       "id": "itch-featured-feed",
@@ -158,6 +157,25 @@
         "itch-new",
         "itch-featured-feed",
         "itch-featured"
+      ]
+    },
+    {
+      "name": "Digable Planetoids",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 17,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 0,
+      "strategicCount": 2,
+      "sourceCount": 5,
+      "sourceIds": [
+        "itch-newest-web",
+        "itch-new",
+        "itch-new-feed",
+        "itch-new-popular-web",
+        "itch-popular"
       ]
     },
     {
@@ -275,14 +293,14 @@
       ]
     },
     {
-      "name": "IDLE HQ",
+      "name": "A DREAM - when i was small",
       "channel": "online",
       "fastClass": "pending",
       "fastScore": 0,
-      "discoveryScore": 17,
+      "discoveryScore": 15,
       "platforms": 1,
       "browserPlayable": true,
-      "nameRisk": 9,
+      "nameRisk": 3,
       "strategicCount": 2,
       "sourceCount": 5,
       "sourceIds": [
@@ -294,14 +312,14 @@
       ]
     },
     {
-      "name": "A DREAM - when i was small",
+      "name": "IDLE HQ",
       "channel": "online",
       "fastClass": "pending",
       "fastScore": 0,
       "discoveryScore": 15,
       "platforms": 1,
       "browserPlayable": true,
-      "nameRisk": 3,
+      "nameRisk": 9,
       "strategicCount": 2,
       "sourceCount": 5,
       "sourceIds": [
@@ -1041,25 +1059,6 @@
       "platforms": 1,
       "browserPlayable": true,
       "nameRisk": 6,
-      "strategicCount": 2,
-      "sourceCount": 5,
-      "sourceIds": [
-        "itch-newest-web",
-        "itch-new",
-        "itch-new-feed",
-        "itch-new-popular-web",
-        "itch-popular"
-      ]
-    },
-    {
-      "name": "8-Ball Idle",
-      "channel": "online",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 15,
-      "platforms": 1,
-      "browserPlayable": true,
-      "nameRisk": 12,
       "strategicCount": 2,
       "sourceCount": 5,
       "sourceIds": [
