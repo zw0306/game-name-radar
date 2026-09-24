@@ -1,23 +1,24 @@
 {
-  "generatedAt": "2026-09-23T23:42:41.023Z",
+  "generatedAt": "2026-09-24T04:51:19.184Z",
   "totalCandidates": 3000,
   "pendingSeo": 2247,
   "channelCounts": {
     "pending": 418,
-    "online": 1811,
-    "wiki": 18
+    "wiki": 18,
+    "online": 1811
   },
   "fastClassCounts": {
     "pending:pending": 418,
-    "online:pending": 1811,
-    "wiki:pending": 18
+    "wiki:pending": 18,
+    "online:pending": 1811
   },
   "strategicCounts": {
     "pending:0": 417,
-    "online:2": 196,
-    "online:1": 1615,
-    "pending:1": 1,
-    "wiki:1": 18
+    "wiki:1": 16,
+    "online:2": 198,
+    "online:1": 1613,
+    "wiki:2": 2,
+    "pending:1": 1
   },
   "topSources": [
     {
@@ -26,15 +27,15 @@
     },
     {
       "id": "itch-newest-web",
-      "count": 1765
+      "count": 1766
     },
     {
       "id": "itch-new-feed",
-      "count": 1718
+      "count": 1717
     },
     {
       "id": "trends-rising-7d",
-      "count": 342
+      "count": 343
     },
     {
       "id": "trends-rising-30d",
@@ -42,7 +43,7 @@
     },
     {
       "id": "trends-rising-7d-horror-game",
-      "count": 173
+      "count": 174
     },
     {
       "id": "itch-new-popular-web",
@@ -94,23 +95,23 @@
     },
     {
       "id": "steam-latest-indie",
-      "count": 6
+      "count": 8
     },
     {
       "id": "steam-new",
-      "count": 6
+      "count": 8
+    },
+    {
+      "id": "itch-featured-feed",
+      "count": 5
+    },
+    {
+      "id": "itch-featured",
+      "count": 5
     },
     {
       "id": "y8-new",
       "count": 5
-    },
-    {
-      "id": "itch-featured-feed",
-      "count": 4
-    },
-    {
-      "id": "itch-featured",
-      "count": 4
     },
     {
       "id": "lagged-new",
@@ -250,6 +251,24 @@
         "itch-new-feed",
         "itch-new-popular-web",
         "itch-popular"
+      ]
+    },
+    {
+      "name": "THRORBS",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 15,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 5,
+      "strategicCount": 2,
+      "sourceCount": 4,
+      "sourceIds": [
+        "itch-newest-web",
+        "itch-new",
+        "itch-featured-feed",
+        "itch-featured"
       ]
     },
     {
@@ -1038,25 +1057,6 @@
       "platforms": 1,
       "browserPlayable": true,
       "nameRisk": 6,
-      "strategicCount": 2,
-      "sourceCount": 5,
-      "sourceIds": [
-        "itch-newest-web",
-        "itch-new",
-        "itch-new-feed",
-        "itch-new-popular-web",
-        "itch-popular"
-      ]
-    },
-    {
-      "name": "コラプトカード・スクール v0.1",
-      "channel": "online",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 15,
-      "platforms": 1,
-      "browserPlayable": true,
-      "nameRisk": 9,
       "strategicCount": 2,
       "sourceCount": 5,
       "sourceIds": [
