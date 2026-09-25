@@ -1,9 +1,9 @@
 {
-  "scannedAt": "2026-09-25T18:36:51.363Z",
+  "scannedAt": "2026-09-25T22:20:30.807Z",
   "targetMarket": "US_GLOBAL",
   "primaryMarket": "US",
   "referenceMarket": "WORLDWIDE",
-  "totalAdded": 201,
+  "totalAdded": 132,
   "sources": [
     {
       "ok": true,
@@ -24,7 +24,7 @@
       "sourceId": "itch-new-feed",
       "sourceName": "itch.io New Feed",
       "total": 36,
-      "added": 36
+      "added": 35
     },
     {
       "ok": true,
@@ -45,14 +45,14 @@
       "sourceId": "steam-popular-new",
       "sourceName": "Steam 热门新发行",
       "total": 50,
-      "added": 5
+      "added": 4
     },
     {
       "ok": true,
       "sourceId": "steam-latest-indie",
       "sourceName": "Steam 最新独立游戏",
       "total": 50,
-      "added": 35
+      "added": 8
     },
     {
       "ok": true,
@@ -66,7 +66,7 @@
       "sourceId": "newgrounds-latest",
       "sourceName": "Newgrounds 最新通过作品",
       "total": 12,
-      "added": 5
+      "added": 6
     },
     {
       "ok": true,
@@ -80,14 +80,14 @@
       "sourceId": "poki-new",
       "sourceName": "Poki 新游戏",
       "total": 172,
-      "added": 9
+      "added": 0
     },
     {
       "ok": true,
       "sourceId": "y8-new",
       "sourceName": "Y8 新游戏",
       "total": 73,
-      "added": 41
+      "added": 32
     },
     {
       "ok": false,
@@ -106,15 +106,15 @@
       "ok": true,
       "sourceId": "trends-rising-7d-itch-io",
       "sourceName": "Trends上涨 7天 · itch io",
-      "total": 6,
-      "added": 5
+      "total": 4,
+      "added": 0
     },
     {
       "ok": true,
       "sourceId": "trends-rising-30d-itch-io",
       "sourceName": "Trends上涨 30天 · itch io",
       "total": 12,
-      "added": 4
+      "added": 2
     },
     {
       "ok": true,
@@ -134,23 +134,23 @@
       "ok": true,
       "sourceId": "trends-rising-7d-horror-game",
       "sourceName": "Trends上涨 7天 · horror game",
-      "total": 17,
-      "added": 11
+      "total": 10,
+      "added": 3
     },
     {
       "ok": true,
       "sourceId": "trends-rising-30d-horror-game",
       "sourceName": "Trends上涨 30天 · horror game",
-      "total": 24,
-      "added": 9
+      "total": 20,
+      "added": 1
     }
   ],
   "seoVerified": 0,
   "seoErrors": 0,
   "fastModelVersion": 3,
   "fastPassedCount": 265,
-  "fastWatchCount": 327,
-  "fastRejectedCount": 172,
+  "fastWatchCount": 325,
+  "fastRejectedCount": 175,
   "youtubeEnabled": false,
   "youtubeConfigured": false,
   "youtubeVerified": 0,
@@ -162,7 +162,7 @@
   "risingDiscoveryRan": true,
   "seoModelVersion": 5,
   "trendModelVersion": 4,
-  "seoPassedCount": 509,
+  "seoPassedCount": 510,
   "trendEligibleCount": 208,
   "trendPendingCount": 208,
   "trendValidatedCount": 403,
@@ -195,7 +195,7 @@
   },
   "apifyConfigured": true,
   "apifyAccountStatus": {
-    "checkedAt": "2026-09-25T18:36:50.134Z",
+    "checkedAt": "2026-09-25T22:20:29.548Z",
     "configured": true,
     "ok": true,
     "provider": "apify",
@@ -211,17 +211,17 @@
   },
   "apifyTrendsUsage": {
     "month": "2026-09",
-    "actorCalls": 293,
+    "actorCalls": 296,
     "resultItems": 158,
     "candidatesVerified": 99,
-    "errors": 111,
+    "errors": 114,
     "monthlyCallLimit": 4000,
-    "updatedAt": "2026-09-25T18:37:17.896Z"
+    "updatedAt": "2026-09-25T22:20:58.769Z"
   },
   "seoProvider": "serper-google-search",
   "seoProviderCounts": {
     "serper+autocomplete": 513,
-    "evidence-fallback": 158,
+    "evidence-fallback": 160,
     "duckduckgo+autocomplete": 95
   },
   "serperConfigured": true,
@@ -232,7 +232,7 @@
     "dayUsed": 0,
     "totalLimit": 2450,
     "dailyLimit": 2450,
-    "updatedAt": "2026-09-25T18:37:15.394Z",
+    "updatedAt": "2026-09-25T22:20:56.335Z",
     "lastError": "Not enough credits"
   },
   "googleCseConfiguredSlots": 0,
@@ -251,8 +251,8 @@
   },
   "siteTypeModelVersion": 2,
   "siteTypeCounts": {
-    "online": 2333,
-    "wiki": 139,
+    "online": 2331,
+    "wiki": 141,
     "pending": 528
   },
   "wikiPrelaunchModelVersion": 2,
@@ -260,7 +260,7 @@
     "priority": 0,
     "prepare": 8,
     "watch": 7,
-    "weak": 124
+    "weak": 126
   },
   "serperVerification": {
     "rushMode": true,
@@ -283,31 +283,32 @@
     "errors": 0,
     "quotaStopped": true,
     "verifiedNames": [],
-    "ranAt": "2026-09-25T18:37:15.534Z"
+    "ranAt": "2026-09-25T22:20:56.456Z"
   },
   "evidenceSeoFallback": {
     "enabled": true,
     "limit": 180,
-    "pendingCount": 2236,
-    "eligibleCount": 1,
-    "queueSize": 1,
-    "verified": 1,
+    "pendingCount": 2235,
+    "eligibleCount": 2,
+    "queueSize": 2,
+    "verified": 2,
     "channelVerified": {
-      "online": 0,
+      "online": 1,
       "wiki": 1,
       "pending": 0
     },
     "fastRecalculated": {
-      "pass": 0,
-      "watch": 0,
-      "weak": 1,
+      "pass": 1,
+      "watch": 1,
+      "weak": 0,
       "reject": 0,
       "pending": 0
     },
     "verifiedNames": [
-      "DinoBones: Tidy Up the Museum"
+      "Slime Works",
+      "Scapewatch: Idle MMO"
     ],
-    "ranAt": "2026-09-25T18:37:16.240Z"
+    "ranAt": "2026-09-25T22:20:57.140Z"
   },
   "socialBuzzVerification": {
     "modelVersion": 3,
@@ -329,7 +330,7 @@
       "x": 0,
       "tiktok": 0
     },
-    "ranAt": "2026-09-25T18:37:17.296Z"
+    "ranAt": "2026-09-25T22:20:58.135Z"
   },
   "channelOpportunityCounts": {
     "online": {
@@ -356,7 +357,7 @@
     "verifyLimit": 200,
     "effectiveLimit": 200,
     "monthlyCallLimit": 4000,
-    "remainingCallsAtStart": 3710,
+    "remainingCallsAtStart": 3707,
     "queueSize": 200,
     "verified": 0,
     "errors": 3,
@@ -375,13 +376,13 @@
       "strategic": 0
     },
     "pendingByChannel": {
-      "online": 197,
-      "wiki": 44
+      "online": 198,
+      "wiki": 45
     },
     "pendingByTier": {
-      "strong": 92,
-      "secondary": 121,
-      "strategic": 28
+      "strong": 93,
+      "secondary": 120,
+      "strategic": 30
     },
     "verifiedNames": [],
     "errorNames": [
@@ -396,15 +397,15 @@
         "actorCalls": 1
       },
       {
-        "name": "Noob vs Pro : Drift Tag",
+        "name": "Obby Climb and Jump Tower",
         "error": "Monthly usage hard limit exceeded",
         "actorCalls": 1
       }
     ],
-    "ranAt": "2026-09-25T18:37:18.044Z"
+    "ranAt": "2026-09-25T22:20:58.903Z"
   },
   "serpApiAccountStatus": {
-    "checkedAt": "2026-09-25T18:37:18.200Z",
+    "checkedAt": "2026-09-25T22:20:59.104Z",
     "accountApiConsumesSearchCredits": false,
     "configuredKeys": 1,
     "workingKeys": 1,
@@ -441,7 +442,7 @@
         "planSearchesLeft": 24,
         "totalSearchesLeft": 24,
         "rateLimitPerHour": 250,
-        "checkedAt": "2026-09-25T18:37:18.200Z",
+        "checkedAt": "2026-09-25T22:20:59.104Z",
         "sharedAccount": false,
         "sharedWithSlots": []
       },
@@ -494,13 +495,13 @@
       "pending": 0
     },
     "pendingByTier": {
-      "strong": 92,
-      "secondary": 121,
-      "strategic": 28
+      "strong": 93,
+      "secondary": 120,
+      "strategic": 30
     },
     "pendingByChannel": {
-      "online": 197,
-      "wiki": 44
+      "online": 198,
+      "wiki": 45
     },
     "verifiedNames": [],
     "caps": {
@@ -524,7 +525,7 @@
         "quotaStopped": false
       }
     },
-    "ranAt": "2026-09-25T18:37:18.860Z"
+    "ranAt": "2026-09-25T22:20:59.723Z"
   },
   "serpApiConfiguredSlots": 1,
   "serpApiPoolUsage": {
@@ -546,7 +547,7 @@
         "updatedAt": "2026-09-20T02:54:03.847Z"
       }
     },
-    "updatedAt": "2026-09-25T18:37:18.914Z"
+    "updatedAt": "2026-09-25T22:20:59.778Z"
   },
   "searchApiConfigured": false,
   "searchApiTrendsUsage": {
@@ -579,16 +580,16 @@
       "strategic": 0
     },
     "pendingByChannel": {
-      "online": 197,
-      "wiki": 44
+      "online": 198,
+      "wiki": 45
     },
     "pendingByTier": {
-      "strong": 92,
-      "secondary": 121,
-      "strategic": 28
+      "strong": 93,
+      "secondary": 120,
+      "strategic": 30
     },
     "verifiedNames": [],
     "errorNames": [],
-    "ranAt": "2026-09-25T18:37:19.457Z"
+    "ranAt": "2026-09-25T22:21:00.304Z"
   }
 }
