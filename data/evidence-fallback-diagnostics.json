@@ -1,20 +1,20 @@
 {
-  "generatedAt": "2026-09-25T01:31:09.700Z",
+  "generatedAt": "2026-09-25T07:49:08.547Z",
   "totalCandidates": 3000,
   "pendingSeo": 2237,
   "channelCounts": {
-    "online": 1796,
     "pending": 425,
+    "online": 1796,
     "wiki": 16
   },
   "fastClassCounts": {
-    "online:pending": 1796,
     "pending:pending": 425,
+    "online:pending": 1796,
     "wiki:pending": 16
   },
   "strategicCounts": {
-    "online:3": 1,
     "pending:0": 424,
+    "online:3": 1,
     "online:2": 202,
     "online:1": 1593,
     "pending:1": 1,
@@ -39,7 +39,7 @@
     },
     {
       "id": "trends-rising-30d",
-      "count": 231
+      "count": 232
     },
     {
       "id": "trends-rising-7d-horror-game",
@@ -55,7 +55,7 @@
     },
     {
       "id": "trends-rising-30d-horror-game",
-      "count": 119
+      "count": 120
     },
     {
       "id": "trends-rising-7d-indie-game",
@@ -255,14 +255,14 @@
       ]
     },
     {
-      "name": "SWELTER",
+      "name": "A DREAM - when i was small",
       "channel": "online",
       "fastClass": "pending",
       "fastScore": 0,
-      "discoveryScore": 17,
+      "discoveryScore": 15,
       "platforms": 1,
       "browserPlayable": true,
-      "nameRisk": 5,
+      "nameRisk": 3,
       "strategicCount": 2,
       "sourceCount": 5,
       "sourceIds": [
@@ -274,14 +274,14 @@
       ]
     },
     {
-      "name": "A DREAM - when i was small",
+      "name": "SWELTER",
       "channel": "online",
       "fastClass": "pending",
       "fastScore": 0,
       "discoveryScore": 15,
       "platforms": 1,
       "browserPlayable": true,
-      "nameRisk": 3,
+      "nameRisk": 5,
       "strategicCount": 2,
       "sourceCount": 5,
       "sourceIds": [
