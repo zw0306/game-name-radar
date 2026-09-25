@@ -1,57 +1,57 @@
 {
-  "generatedAt": "2026-09-25T07:49:08.547Z",
+  "generatedAt": "2026-09-25T13:47:58.478Z",
   "totalCandidates": 3000,
   "pendingSeo": 2237,
   "channelCounts": {
-    "pending": 425,
-    "online": 1796,
+    "pending": 428,
+    "online": 1793,
     "wiki": 16
   },
   "fastClassCounts": {
-    "pending:pending": 425,
-    "online:pending": 1796,
+    "pending:pending": 428,
+    "online:pending": 1793,
     "wiki:pending": 16
   },
   "strategicCounts": {
-    "pending:0": 424,
+    "pending:0": 427,
     "online:3": 1,
-    "online:2": 202,
-    "online:1": 1593,
+    "online:2": 205,
+    "online:1": 1587,
     "pending:1": 1,
     "wiki:1": 16
   },
   "topSources": [
     {
       "id": "itch-new",
-      "count": 1764
+      "count": 1760
     },
     {
       "id": "itch-newest-web",
-      "count": 1751
+      "count": 1747
     },
     {
       "id": "itch-new-feed",
-      "count": 1700
+      "count": 1696
     },
     {
       "id": "trends-rising-7d",
-      "count": 350
+      "count": 353
     },
     {
       "id": "trends-rising-30d",
-      "count": 232
+      "count": 233
     },
     {
       "id": "trends-rising-7d-horror-game",
-      "count": 180
+      "count": 181
     },
     {
       "id": "itch-new-popular-web",
-      "count": 176
+      "count": 178
     },
     {
       "id": "itch-popular",
-      "count": 176
+      "count": 178
     },
     {
       "id": "trends-rising-30d-horror-game",
@@ -59,7 +59,7 @@
     },
     {
       "id": "trends-rising-7d-indie-game",
-      "count": 104
+      "count": 106
     },
     {
       "id": "trends-rising-7d-itch-io",
@@ -71,7 +71,7 @@
     },
     {
       "id": "trends-rising-30d-itch-io",
-      "count": 54
+      "count": 55
     },
     {
       "id": "newgrounds-latest",
@@ -116,6 +116,14 @@
     {
       "id": "lagged-new",
       "count": 2
+    },
+    {
+      "id": "crazygames-new",
+      "count": 1
+    },
+    {
+      "id": "poki-new",
+      "count": 1
     }
   ],
   "samples": [
@@ -157,6 +165,25 @@
         "itch-new",
         "itch-featured-feed",
         "itch-featured"
+      ]
+    },
+    {
+      "name": "Shakedown Troll",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 17,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 0,
+      "strategicCount": 2,
+      "sourceCount": 5,
+      "sourceIds": [
+        "itch-newest-web",
+        "itch-new",
+        "itch-new-feed",
+        "itch-new-popular-web",
+        "itch-popular"
       ]
     },
     {
@@ -252,6 +279,25 @@
         "itch-new-feed",
         "itch-new-popular-web",
         "itch-popular"
+      ]
+    },
+    {
+      "name": "Neverending dreams - Demo",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 15,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 0,
+      "strategicCount": 2,
+      "sourceCount": 5,
+      "sourceIds": [
+        "itch-newest-web",
+        "itch-new",
+        "itch-new-popular-web",
+        "itch-popular",
+        "itch-new-feed"
       ]
     },
     {
@@ -1014,44 +1060,6 @@
     },
     {
       "name": "Threads of Tomot",
-      "channel": "online",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 15,
-      "platforms": 1,
-      "browserPlayable": true,
-      "nameRisk": 6,
-      "strategicCount": 2,
-      "sourceCount": 5,
-      "sourceIds": [
-        "itch-newest-web",
-        "itch-new",
-        "itch-new-feed",
-        "itch-new-popular-web",
-        "itch-popular"
-      ]
-    },
-    {
-      "name": "Fairy's Hero",
-      "channel": "online",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 15,
-      "platforms": 1,
-      "browserPlayable": true,
-      "nameRisk": 6,
-      "strategicCount": 2,
-      "sourceCount": 5,
-      "sourceIds": [
-        "itch-newest-web",
-        "itch-new",
-        "itch-new-feed",
-        "itch-new-popular-web",
-        "itch-popular"
-      ]
-    },
-    {
-      "name": "My Ultimate \"SPRUNKI\"",
       "channel": "online",
       "fastClass": "pending",
       "fastScore": 0,
