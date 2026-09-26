@@ -1,57 +1,58 @@
 {
-  "generatedAt": "2026-09-26T07:41:40.356Z",
+  "generatedAt": "2026-09-26T13:06:07.509Z",
   "totalCandidates": 3000,
-  "pendingSeo": 2232,
+  "pendingSeo": 2373,
   "channelCounts": {
-    "pending": 431,
-    "online": 1788,
-    "wiki": 13
+    "pending": 451,
+    "online": 1842,
+    "wiki": 80
   },
   "fastClassCounts": {
-    "pending:pending": 431,
-    "online:pending": 1788,
-    "wiki:pending": 13
+    "pending:pending": 451,
+    "online:pending": 1842,
+    "wiki:pending": 80
   },
   "strategicCounts": {
-    "pending:0": 430,
+    "pending:0": 445,
     "online:3": 1,
     "online:2": 204,
-    "online:1": 1583,
-    "pending:1": 1,
-    "wiki:1": 13
+    "online:1": 1637,
+    "pending:1": 6,
+    "wiki:1": 72,
+    "wiki:0": 8
   },
   "topSources": [
     {
       "id": "itch-new",
-      "count": 1756
+      "count": 1791
     },
     {
       "id": "itch-newest-web",
-      "count": 1743
+      "count": 1765
     },
     {
       "id": "itch-new-feed",
-      "count": 1692
+      "count": 1727
     },
     {
       "id": "trends-rising-7d",
-      "count": 357
+      "count": 359
     },
     {
       "id": "trends-rising-30d",
-      "count": 235
-    },
-    {
-      "id": "trends-rising-7d-horror-game",
-      "count": 184
+      "count": 236
     },
     {
       "id": "itch-new-popular-web",
-      "count": 178
+      "count": 206
     },
     {
       "id": "itch-popular",
-      "count": 178
+      "count": 206
+    },
+    {
+      "id": "trends-rising-7d-horror-game",
+      "count": 185
     },
     {
       "id": "trends-rising-30d-horror-game",
@@ -63,59 +64,63 @@
     },
     {
       "id": "trends-rising-7d-itch-io",
-      "count": 77
+      "count": 78
     },
     {
       "id": "trends-rising-30d-indie-game",
-      "count": 64
+      "count": 65
     },
     {
       "id": "trends-rising-30d-itch-io",
       "count": 55
     },
     {
-      "id": "newgrounds-latest",
-      "count": 32
-    },
-    {
-      "id": "newgrounds-new",
-      "count": 32
-    },
-    {
-      "id": "newgrounds-daily-top",
-      "count": 30
-    },
-    {
-      "id": "newgrounds-top",
-      "count": 30
-    },
-    {
-      "id": "steam-popular-new",
-      "count": 16
-    },
-    {
       "id": "steam-latest-indie",
-      "count": 6
+      "count": 53
     },
     {
       "id": "steam-new",
-      "count": 6
+      "count": 53
+    },
+    {
+      "id": "newgrounds-daily-top",
+      "count": 35
+    },
+    {
+      "id": "newgrounds-top",
+      "count": 35
+    },
+    {
+      "id": "newgrounds-latest",
+      "count": 33
+    },
+    {
+      "id": "newgrounds-new",
+      "count": 33
+    },
+    {
+      "id": "steam-popular-new",
+      "count": 28
     },
     {
       "id": "itch-featured-feed",
-      "count": 5
+      "count": 10
     },
     {
       "id": "itch-featured",
-      "count": 5
+      "count": 10
+    },
+    {
+      "id": "steam-top-wishlist",
+      "count": 8
     },
     {
       "id": "y8-new",
-      "count": 5
+      "count": 4
     },
     {
       "id": "lagged-new",
-      "count": 2
+      "count": 1
     }
   ],
   "samples": [
@@ -157,6 +162,25 @@
         "itch-new",
         "itch-featured-feed",
         "itch-featured"
+      ]
+    },
+    {
+      "name": "Marisa's Star Stacker",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 17,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 0,
+      "strategicCount": 2,
+      "sourceCount": 5,
+      "sourceIds": [
+        "itch-newest-web",
+        "itch-new",
+        "itch-new-feed",
+        "itch-new-popular-web",
+        "itch-popular"
       ]
     },
     {
@@ -236,25 +260,6 @@
       ]
     },
     {
-      "name": "Vibecoding Idle",
-      "channel": "online",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 17,
-      "platforms": 1,
-      "browserPlayable": true,
-      "nameRisk": 9,
-      "strategicCount": 2,
-      "sourceCount": 5,
-      "sourceIds": [
-        "itch-newest-web",
-        "itch-new",
-        "itch-new-feed",
-        "itch-new-popular-web",
-        "itch-popular"
-      ]
-    },
-    {
       "name": "EMBERWATCH",
       "channel": "online",
       "fastClass": "pending",
@@ -290,6 +295,25 @@
         "itch-new-popular-web",
         "itch-popular",
         "itch-new-feed"
+      ]
+    },
+    {
+      "name": "Vibecoding Idle",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 15,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 9,
+      "strategicCount": 2,
+      "sourceCount": 5,
+      "sourceIds": [
+        "itch-newest-web",
+        "itch-new",
+        "itch-new-feed",
+        "itch-new-popular-web",
+        "itch-popular"
       ]
     },
     {
@@ -1033,25 +1057,6 @@
     },
     {
       "name": "Threads of Tomot",
-      "channel": "online",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 15,
-      "platforms": 1,
-      "browserPlayable": true,
-      "nameRisk": 6,
-      "strategicCount": 2,
-      "sourceCount": 5,
-      "sourceIds": [
-        "itch-newest-web",
-        "itch-new",
-        "itch-new-feed",
-        "itch-new-popular-web",
-        "itch-popular"
-      ]
-    },
-    {
-      "name": "Fairy's Hero",
       "channel": "online",
       "fastClass": "pending",
       "fastScore": 0,
