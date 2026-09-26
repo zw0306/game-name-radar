@@ -1,37 +1,38 @@
 {
-  "generatedAt": "2026-09-26T17:11:18.479Z",
+  "generatedAt": "2026-09-26T19:53:51.229Z",
   "totalCandidates": 3000,
-  "pendingSeo": 2391,
+  "pendingSeo": 2398,
   "channelCounts": {
-    "pending": 458,
-    "online": 1905,
-    "wiki": 28
+    "pending": 470,
+    "online": 1889,
+    "wiki": 39
   },
   "fastClassCounts": {
-    "pending:pending": 458,
-    "online:pending": 1905,
-    "wiki:pending": 28
+    "pending:pending": 470,
+    "online:pending": 1889,
+    "wiki:pending": 39
   },
   "strategicCounts": {
-    "pending:0": 453,
+    "pending:0": 464,
     "online:3": 1,
-    "online:2": 204,
-    "online:1": 1700,
-    "pending:1": 5,
-    "wiki:1": 28
+    "online:2": 206,
+    "online:1": 1682,
+    "pending:1": 6,
+    "wiki:1": 31,
+    "wiki:0": 8
   },
   "topSources": [
     {
       "id": "itch-new",
-      "count": 1823
+      "count": 1855
     },
     {
       "id": "itch-newest-web",
-      "count": 1791
+      "count": 1812
     },
     {
       "id": "itch-new-feed",
-      "count": 1758
+      "count": 1790
     },
     {
       "id": "trends-rising-7d",
@@ -43,11 +44,11 @@
     },
     {
       "id": "itch-new-popular-web",
-      "count": 208
+      "count": 210
     },
     {
       "id": "itch-popular",
-      "count": 208
+      "count": 210
     },
     {
       "id": "trends-rising-7d-horror-game",
@@ -74,14 +75,6 @@
       "count": 56
     },
     {
-      "id": "newgrounds-latest",
-      "count": 41
-    },
-    {
-      "id": "newgrounds-new",
-      "count": 41
-    },
-    {
       "id": "newgrounds-daily-top",
       "count": 34
     },
@@ -90,28 +83,36 @@
       "count": 34
     },
     {
+      "id": "newgrounds-latest",
+      "count": 32
+    },
+    {
+      "id": "newgrounds-new",
+      "count": 32
+    },
+    {
       "id": "steam-popular-new",
-      "count": 28
-    },
-    {
-      "id": "crazygames-new",
-      "count": 28
-    },
-    {
-      "id": "itch-featured-feed",
-      "count": 9
-    },
-    {
-      "id": "itch-featured",
-      "count": 9
+      "count": 29
     },
     {
       "id": "steam-latest-indie",
-      "count": 9
+      "count": 11
     },
     {
       "id": "steam-new",
-      "count": 9
+      "count": 11
+    },
+    {
+      "id": "itch-featured-feed",
+      "count": 10
+    },
+    {
+      "id": "itch-featured",
+      "count": 10
+    },
+    {
+      "id": "steam-top-wishlist",
+      "count": 8
     },
     {
       "id": "y8-new",
@@ -161,6 +162,25 @@
         "itch-new",
         "itch-featured-feed",
         "itch-featured"
+      ]
+    },
+    {
+      "name": "まるかいてドカン! / Maru Kaite Dokan!",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 17,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 0,
+      "strategicCount": 2,
+      "sourceCount": 5,
+      "sourceIds": [
+        "itch-newest-web",
+        "itch-new",
+        "itch-new-feed",
+        "itch-new-popular-web",
+        "itch-popular"
       ]
     },
     {
@@ -221,7 +241,7 @@
       ]
     },
     {
-      "name": "Forgever",
+      "name": "EMBERWATCH",
       "channel": "online",
       "fastClass": "pending",
       "fastScore": 0,
@@ -240,11 +260,11 @@
       ]
     },
     {
-      "name": "EMBERWATCH",
+      "name": "Wender",
       "channel": "online",
       "fastClass": "pending",
       "fastScore": 0,
-      "discoveryScore": 17,
+      "discoveryScore": 15,
       "platforms": 1,
       "browserPlayable": true,
       "nameRisk": 5,
@@ -275,6 +295,25 @@
         "itch-new-popular-web",
         "itch-popular",
         "itch-new-feed"
+      ]
+    },
+    {
+      "name": "Forgever",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 15,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 5,
+      "strategicCount": 2,
+      "sourceCount": 5,
+      "sourceIds": [
+        "itch-newest-web",
+        "itch-new",
+        "itch-new-feed",
+        "itch-new-popular-web",
+        "itch-popular"
       ]
     },
     {
@@ -1018,44 +1057,6 @@
     },
     {
       "name": "Empire Ticker (エンパイアティッカー) — Prototype",
-      "channel": "online",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 15,
-      "platforms": 1,
-      "browserPlayable": true,
-      "nameRisk": 6,
-      "strategicCount": 2,
-      "sourceCount": 5,
-      "sourceIds": [
-        "itch-newest-web",
-        "itch-new",
-        "itch-new-feed",
-        "itch-new-popular-web",
-        "itch-popular"
-      ]
-    },
-    {
-      "name": "Neon Foundry Idle",
-      "channel": "online",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 15,
-      "platforms": 1,
-      "browserPlayable": true,
-      "nameRisk": 6,
-      "strategicCount": 2,
-      "sourceCount": 5,
-      "sourceIds": [
-        "itch-newest-web",
-        "itch-new",
-        "itch-new-feed",
-        "itch-new-popular-web",
-        "itch-popular"
-      ]
-    },
-    {
-      "name": "Threads of Tomot",
       "channel": "online",
       "fastClass": "pending",
       "fastScore": 0,
