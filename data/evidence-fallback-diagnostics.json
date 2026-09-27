@@ -1,41 +1,41 @@
 {
-  "generatedAt": "2026-09-27T18:24:40.282Z",
+  "generatedAt": "2026-09-27T22:11:32.180Z",
   "totalCandidates": 3000,
-  "pendingSeo": 2439,
+  "pendingSeo": 2443,
   "channelCounts": {
-    "pending": 453,
-    "online": 1958,
-    "wiki": 28
+    "pending": 449,
+    "online": 1965,
+    "wiki": 29
   },
   "fastClassCounts": {
-    "pending:pending": 453,
-    "online:pending": 1958,
-    "wiki:pending": 28
+    "pending:pending": 449,
+    "online:pending": 1965,
+    "wiki:pending": 29
   },
   "strategicCounts": {
-    "pending:0": 448,
+    "pending:0": 444,
     "online:3": 1,
-    "online:2": 211,
-    "online:1": 1746,
+    "online:2": 212,
+    "online:1": 1752,
     "pending:1": 5,
-    "wiki:1": 28
+    "wiki:1": 29
   },
   "topSources": [
     {
       "id": "itch-new",
-      "count": 1909
+      "count": 1916
     },
     {
       "id": "itch-newest-web",
-      "count": 1892
+      "count": 1903
     },
     {
       "id": "itch-new-feed",
-      "count": 1844
+      "count": 1851
     },
     {
       "id": "trends-rising-7d",
-      "count": 368
+      "count": 369
     },
     {
       "id": "trends-rising-30d",
@@ -43,11 +43,11 @@
     },
     {
       "id": "itch-new-popular-web",
-      "count": 199
+      "count": 196
     },
     {
       "id": "itch-popular",
-      "count": 199
+      "count": 196
     },
     {
       "id": "trends-rising-7d-horror-game",
@@ -63,7 +63,7 @@
     },
     {
       "id": "trends-rising-7d-itch-io",
-      "count": 79
+      "count": 80
     },
     {
       "id": "trends-rising-30d-indie-game",
@@ -82,16 +82,16 @@
       "count": 39
     },
     {
+      "id": "steam-popular-new",
+      "count": 32
+    },
+    {
       "id": "newgrounds-latest",
       "count": 32
     },
     {
       "id": "newgrounds-new",
       "count": 32
-    },
-    {
-      "id": "steam-popular-new",
-      "count": 31
     },
     {
       "id": "itch-featured-feed",
@@ -157,6 +157,25 @@
         "itch-new",
         "itch-featured-feed",
         "itch-featured"
+      ]
+    },
+    {
+      "name": "The Root Cause",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 17,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 6,
+      "strategicCount": 2,
+      "sourceCount": 5,
+      "sourceIds": [
+        "itch-newest-web",
+        "itch-new",
+        "itch-new-feed",
+        "itch-new-popular-web",
+        "itch-popular"
       ]
     },
     {
@@ -1040,25 +1059,6 @@
       "platforms": 1,
       "browserPlayable": true,
       "nameRisk": 6,
-      "strategicCount": 2,
-      "sourceCount": 5,
-      "sourceIds": [
-        "itch-newest-web",
-        "itch-new",
-        "itch-new-feed",
-        "itch-new-popular-web",
-        "itch-popular"
-      ]
-    },
-    {
-      "name": "the Cellarer",
-      "channel": "online",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 15,
-      "platforms": 1,
-      "browserPlayable": true,
-      "nameRisk": 9,
       "strategicCount": 2,
       "sourceCount": 5,
       "sourceIds": [
