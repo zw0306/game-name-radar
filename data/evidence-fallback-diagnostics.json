@@ -1,61 +1,61 @@
 {
-  "generatedAt": "2026-09-27T08:10:49.903Z",
+  "generatedAt": "2026-09-27T14:01:24.872Z",
   "totalCandidates": 3000,
-  "pendingSeo": 2409,
+  "pendingSeo": 2432,
   "channelCounts": {
-    "pending": 451,
-    "online": 1930,
+    "pending": 463,
+    "online": 1941,
     "wiki": 28
   },
   "fastClassCounts": {
-    "pending:pending": 451,
-    "online:pending": 1930,
+    "pending:pending": 463,
+    "online:pending": 1941,
     "wiki:pending": 28
   },
   "strategicCounts": {
-    "pending:0": 446,
+    "pending:0": 458,
     "online:3": 1,
-    "online:2": 209,
-    "online:1": 1720,
+    "online:2": 212,
+    "online:1": 1728,
     "pending:1": 5,
     "wiki:1": 28
   },
   "topSources": [
     {
       "id": "itch-new",
-      "count": 1889
+      "count": 1910
     },
     {
       "id": "itch-newest-web",
-      "count": 1865
+      "count": 1878
     },
     {
       "id": "itch-new-feed",
-      "count": 1824
+      "count": 1845
     },
     {
       "id": "trends-rising-7d",
-      "count": 363
+      "count": 364
     },
     {
       "id": "trends-rising-30d",
-      "count": 237
+      "count": 242
     },
     {
       "id": "itch-new-popular-web",
-      "count": 201
+      "count": 195
     },
     {
       "id": "itch-popular",
-      "count": 201
+      "count": 195
     },
     {
       "id": "trends-rising-7d-horror-game",
-      "count": 188
+      "count": 189
     },
     {
       "id": "trends-rising-30d-horror-game",
-      "count": 122
+      "count": 123
     },
     {
       "id": "trends-rising-7d-indie-game",
@@ -67,19 +67,19 @@
     },
     {
       "id": "trends-rising-30d-indie-game",
-      "count": 65
+      "count": 66
     },
     {
       "id": "trends-rising-30d-itch-io",
-      "count": 56
+      "count": 59
     },
     {
       "id": "newgrounds-daily-top",
-      "count": 34
+      "count": 39
     },
     {
       "id": "newgrounds-top",
-      "count": 34
+      "count": 39
     },
     {
       "id": "newgrounds-latest",
@@ -111,11 +111,11 @@
     },
     {
       "id": "y8-new",
-      "count": 4
+      "count": 5
     },
     {
       "id": "lagged-new",
-      "count": 1
+      "count": 2
     }
   ],
   "samples": [
@@ -236,14 +236,14 @@
       ]
     },
     {
-      "name": "Digable Planetoids",
+      "name": "EMBERWATCH",
       "channel": "online",
       "fastClass": "pending",
       "fastScore": 0,
       "discoveryScore": 17,
       "platforms": 1,
       "browserPlayable": true,
-      "nameRisk": 0,
+      "nameRisk": 5,
       "strategicCount": 2,
       "sourceCount": 5,
       "sourceIds": [
@@ -255,14 +255,33 @@
       ]
     },
     {
-      "name": "EMBERWATCH",
+      "name": "Aura Farmer",
       "channel": "online",
       "fastClass": "pending",
       "fastScore": 0,
-      "discoveryScore": 17,
+      "discoveryScore": 15,
       "platforms": 1,
       "browserPlayable": true,
-      "nameRisk": 5,
+      "nameRisk": 0,
+      "strategicCount": 2,
+      "sourceCount": 5,
+      "sourceIds": [
+        "itch-newest-web",
+        "itch-new",
+        "itch-new-popular-web",
+        "itch-popular",
+        "itch-new-feed"
+      ]
+    },
+    {
+      "name": "Deep Time",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 15,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 0,
       "strategicCount": 2,
       "sourceCount": 5,
       "sourceIds": [
@@ -328,6 +347,25 @@
         "itch-new-popular-web",
         "itch-popular",
         "itch-new-feed"
+      ]
+    },
+    {
+      "name": "Digable Planetoids",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 15,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 0,
+      "strategicCount": 2,
+      "sourceCount": 5,
+      "sourceIds": [
+        "itch-newest-web",
+        "itch-new",
+        "itch-new-feed",
+        "itch-new-popular-web",
+        "itch-popular"
       ]
     },
     {
@@ -1021,44 +1059,6 @@
       "platforms": 1,
       "browserPlayable": true,
       "nameRisk": 9,
-      "strategicCount": 2,
-      "sourceCount": 5,
-      "sourceIds": [
-        "itch-newest-web",
-        "itch-new",
-        "itch-new-feed",
-        "itch-new-popular-web",
-        "itch-popular"
-      ]
-    },
-    {
-      "name": "Dude where's my flying car!",
-      "channel": "online",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 15,
-      "platforms": 1,
-      "browserPlayable": true,
-      "nameRisk": 6,
-      "strategicCount": 2,
-      "sourceCount": 5,
-      "sourceIds": [
-        "itch-newest-web",
-        "itch-new",
-        "itch-new-feed",
-        "itch-new-popular-web",
-        "itch-popular"
-      ]
-    },
-    {
-      "name": "LCK Manager 26",
-      "channel": "online",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 15,
-      "platforms": 1,
-      "browserPlayable": true,
-      "nameRisk": 6,
       "strategicCount": 2,
       "sourceCount": 5,
       "sourceIds": [
