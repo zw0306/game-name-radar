@@ -1,37 +1,38 @@
 {
-  "generatedAt": "2026-09-28T15:28:37.408Z",
+  "generatedAt": "2026-09-28T22:01:18.664Z",
   "totalCandidates": 3000,
-  "pendingSeo": 2460,
+  "pendingSeo": 2468,
   "channelCounts": {
-    "pending": 446,
-    "online": 2004,
-    "wiki": 10
+    "pending": 448,
+    "online": 2015,
+    "wiki": 5
   },
   "fastClassCounts": {
-    "pending:pending": 446,
-    "online:pending": 2004,
-    "wiki:pending": 10
+    "pending:pending": 448,
+    "online:pending": 2015,
+    "wiki:pending": 5
   },
   "strategicCounts": {
     "pending:0": 444,
     "online:3": 1,
-    "online:2": 212,
-    "online:1": 1791,
-    "pending:1": 2,
-    "wiki:1": 10
+    "online:2": 213,
+    "online:1": 1801,
+    "wiki:2": 1,
+    "pending:1": 4,
+    "wiki:1": 4
   },
   "topSources": [
     {
       "id": "itch-new",
-      "count": 1962
+      "count": 1983
     },
     {
       "id": "itch-newest-web",
-      "count": 1949
+      "count": 1970
     },
     {
       "id": "itch-new-feed",
-      "count": 1897
+      "count": 1918
     },
     {
       "id": "trends-rising-7d",
@@ -47,11 +48,11 @@
     },
     {
       "id": "itch-new-popular-web",
-      "count": 188
+      "count": 189
     },
     {
       "id": "itch-popular",
-      "count": 188
+      "count": 189
     },
     {
       "id": "trends-rising-30d-horror-game",
@@ -74,14 +75,6 @@
       "count": 60
     },
     {
-      "id": "newgrounds-daily-top",
-      "count": 40
-    },
-    {
-      "id": "newgrounds-top",
-      "count": 40
-    },
-    {
       "id": "newgrounds-latest",
       "count": 32
     },
@@ -90,24 +83,32 @@
       "count": 32
     },
     {
-      "id": "steam-popular-new",
-      "count": 13
+      "id": "newgrounds-daily-top",
+      "count": 30
+    },
+    {
+      "id": "newgrounds-top",
+      "count": 30
     },
     {
       "id": "itch-featured-feed",
-      "count": 6
+      "count": 8
     },
     {
       "id": "itch-featured",
-      "count": 6
+      "count": 8
+    },
+    {
+      "id": "steam-popular-new",
+      "count": 8
     },
     {
       "id": "steam-latest-indie",
-      "count": 6
+      "count": 7
     },
     {
       "id": "steam-new",
-      "count": 6
+      "count": 7
     },
     {
       "id": "y8-new",
@@ -164,14 +165,14 @@
       ]
     },
     {
-      "name": "The Root Cause",
+      "name": "TUMBLESTORM",
       "channel": "online",
       "fastClass": "pending",
       "fastScore": 0,
       "discoveryScore": 17,
       "platforms": 1,
       "browserPlayable": true,
-      "nameRisk": 6,
+      "nameRisk": 5,
       "strategicCount": 2,
       "sourceCount": 5,
       "sourceIds": [
@@ -183,14 +184,14 @@
       ]
     },
     {
-      "name": "sweet instincts",
+      "name": "The Root Cause",
       "channel": "online",
       "fastClass": "pending",
       "fastScore": 0,
       "discoveryScore": 17,
       "platforms": 1,
       "browserPlayable": true,
-      "nameRisk": 0,
+      "nameRisk": 6,
       "strategicCount": 2,
       "sourceCount": 5,
       "sourceIds": [
@@ -241,6 +242,25 @@
     },
     {
       "name": "Deep Time",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 15,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 0,
+      "strategicCount": 2,
+      "sourceCount": 5,
+      "sourceIds": [
+        "itch-newest-web",
+        "itch-new",
+        "itch-new-feed",
+        "itch-new-popular-web",
+        "itch-popular"
+      ]
+    },
+    {
+      "name": "sweet instincts",
       "channel": "online",
       "fastClass": "pending",
       "fastScore": 0,
@@ -1037,25 +1057,6 @@
     },
     {
       "name": "The great balding",
-      "channel": "online",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 15,
-      "platforms": 1,
-      "browserPlayable": true,
-      "nameRisk": 6,
-      "strategicCount": 2,
-      "sourceCount": 5,
-      "sourceIds": [
-        "itch-newest-web",
-        "itch-new",
-        "itch-new-feed",
-        "itch-new-popular-web",
-        "itch-popular"
-      ]
-    },
-    {
-      "name": "Pieces of Escape",
       "channel": "online",
       "fastClass": "pending",
       "fastScore": 0,
