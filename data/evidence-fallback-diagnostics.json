@@ -1,37 +1,37 @@
 {
-  "generatedAt": "2026-09-28T06:54:42.202Z",
+  "generatedAt": "2026-09-28T15:28:37.408Z",
   "totalCandidates": 3000,
-  "pendingSeo": 2456,
+  "pendingSeo": 2460,
   "channelCounts": {
-    "pending": 449,
-    "online": 1991,
-    "wiki": 16
+    "pending": 446,
+    "online": 2004,
+    "wiki": 10
   },
   "fastClassCounts": {
-    "pending:pending": 449,
-    "online:pending": 1991,
-    "wiki:pending": 16
+    "pending:pending": 446,
+    "online:pending": 2004,
+    "wiki:pending": 10
   },
   "strategicCounts": {
     "pending:0": 444,
     "online:3": 1,
-    "online:2": 213,
-    "online:1": 1777,
-    "pending:1": 5,
-    "wiki:1": 16
+    "online:2": 212,
+    "online:1": 1791,
+    "pending:1": 2,
+    "wiki:1": 10
   },
   "topSources": [
     {
       "id": "itch-new",
-      "count": 1947
+      "count": 1962
     },
     {
       "id": "itch-newest-web",
-      "count": 1934
+      "count": 1949
     },
     {
       "id": "itch-new-feed",
-      "count": 1881
+      "count": 1897
     },
     {
       "id": "trends-rising-7d",
@@ -39,7 +39,7 @@
     },
     {
       "id": "trends-rising-30d",
-      "count": 245
+      "count": 246
     },
     {
       "id": "trends-rising-7d-horror-game",
@@ -55,7 +55,7 @@
     },
     {
       "id": "trends-rising-30d-horror-game",
-      "count": 126
+      "count": 127
     },
     {
       "id": "trends-rising-7d-indie-game",
@@ -75,11 +75,11 @@
     },
     {
       "id": "newgrounds-daily-top",
-      "count": 42
+      "count": 40
     },
     {
       "id": "newgrounds-top",
-      "count": 42
+      "count": 40
     },
     {
       "id": "newgrounds-latest",
@@ -91,15 +91,15 @@
     },
     {
       "id": "steam-popular-new",
-      "count": 19
+      "count": 13
     },
     {
       "id": "itch-featured-feed",
-      "count": 9
+      "count": 6
     },
     {
       "id": "itch-featured",
-      "count": 9
+      "count": 6
     },
     {
       "id": "steam-latest-indie",
@@ -111,7 +111,7 @@
     },
     {
       "id": "y8-new",
-      "count": 5
+      "count": 4
     },
     {
       "id": "steam-top-wishlist",
@@ -221,25 +221,6 @@
       ]
     },
     {
-      "name": "Marisa's Star Stacker",
-      "channel": "online",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 17,
-      "platforms": 1,
-      "browserPlayable": true,
-      "nameRisk": 0,
-      "strategicCount": 2,
-      "sourceCount": 5,
-      "sourceIds": [
-        "itch-newest-web",
-        "itch-new",
-        "itch-new-feed",
-        "itch-new-popular-web",
-        "itch-popular"
-      ]
-    },
-    {
       "name": "Aura Farmer",
       "channel": "online",
       "fastClass": "pending",
@@ -305,6 +286,25 @@
       "platforms": 1,
       "browserPlayable": true,
       "nameRisk": 5,
+      "strategicCount": 2,
+      "sourceCount": 5,
+      "sourceIds": [
+        "itch-newest-web",
+        "itch-new",
+        "itch-new-feed",
+        "itch-new-popular-web",
+        "itch-popular"
+      ]
+    },
+    {
+      "name": "Marisa's Star Stacker",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 15,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 0,
       "strategicCount": 2,
       "sourceCount": 5,
       "sourceIds": [
