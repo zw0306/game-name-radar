@@ -1,37 +1,37 @@
 {
-  "generatedAt": "2026-09-27T22:11:32.180Z",
+  "generatedAt": "2026-09-28T00:49:43.324Z",
   "totalCandidates": 3000,
-  "pendingSeo": 2443,
+  "pendingSeo": 2452,
   "channelCounts": {
     "pending": 449,
-    "online": 1965,
-    "wiki": 29
+    "online": 1975,
+    "wiki": 28
   },
   "fastClassCounts": {
     "pending:pending": 449,
-    "online:pending": 1965,
-    "wiki:pending": 29
+    "online:pending": 1975,
+    "wiki:pending": 28
   },
   "strategicCounts": {
     "pending:0": 444,
     "online:3": 1,
     "online:2": 212,
-    "online:1": 1752,
+    "online:1": 1762,
     "pending:1": 5,
-    "wiki:1": 29
+    "wiki:1": 28
   },
   "topSources": [
     {
       "id": "itch-new",
-      "count": 1916
+      "count": 1927
     },
     {
       "id": "itch-newest-web",
-      "count": 1903
+      "count": 1914
     },
     {
       "id": "itch-new-feed",
-      "count": 1851
+      "count": 1862
     },
     {
       "id": "trends-rising-7d",
@@ -75,15 +75,11 @@
     },
     {
       "id": "newgrounds-daily-top",
-      "count": 39
+      "count": 38
     },
     {
       "id": "newgrounds-top",
-      "count": 39
-    },
-    {
-      "id": "steam-popular-new",
-      "count": 32
+      "count": 38
     },
     {
       "id": "newgrounds-latest",
@@ -92,6 +88,10 @@
     {
       "id": "newgrounds-new",
       "count": 32
+    },
+    {
+      "id": "steam-popular-new",
+      "count": 31
     },
     {
       "id": "itch-featured-feed",
@@ -112,6 +112,10 @@
     {
       "id": "y8-new",
       "count": 4
+    },
+    {
+      "id": "steam-top-wishlist",
+      "count": 1
     },
     {
       "id": "lagged-new",
@@ -236,44 +240,6 @@
       ]
     },
     {
-      "name": "Shakedown Troll",
-      "channel": "online",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 17,
-      "platforms": 1,
-      "browserPlayable": true,
-      "nameRisk": 0,
-      "strategicCount": 2,
-      "sourceCount": 5,
-      "sourceIds": [
-        "itch-newest-web",
-        "itch-new",
-        "itch-new-feed",
-        "itch-new-popular-web",
-        "itch-popular"
-      ]
-    },
-    {
-      "name": "EMBERWATCH",
-      "channel": "online",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 17,
-      "platforms": 1,
-      "browserPlayable": true,
-      "nameRisk": 5,
-      "strategicCount": 2,
-      "sourceCount": 5,
-      "sourceIds": [
-        "itch-newest-web",
-        "itch-new",
-        "itch-new-feed",
-        "itch-new-popular-web",
-        "itch-popular"
-      ]
-    },
-    {
       "name": "Aura Farmer",
       "channel": "online",
       "fastClass": "pending",
@@ -369,6 +335,25 @@
       ]
     },
     {
+      "name": "Shakedown Troll",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 15,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 0,
+      "strategicCount": 2,
+      "sourceCount": 5,
+      "sourceIds": [
+        "itch-newest-web",
+        "itch-new",
+        "itch-new-feed",
+        "itch-new-popular-web",
+        "itch-popular"
+      ]
+    },
+    {
       "name": "Digable Planetoids",
       "channel": "online",
       "fastClass": "pending",
@@ -434,6 +419,25 @@
       "platforms": 1,
       "browserPlayable": true,
       "nameRisk": 9,
+      "strategicCount": 2,
+      "sourceCount": 5,
+      "sourceIds": [
+        "itch-newest-web",
+        "itch-new",
+        "itch-new-feed",
+        "itch-new-popular-web",
+        "itch-popular"
+      ]
+    },
+    {
+      "name": "EMBERWATCH",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 15,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 5,
       "strategicCount": 2,
       "sourceCount": 5,
       "sourceIds": [
