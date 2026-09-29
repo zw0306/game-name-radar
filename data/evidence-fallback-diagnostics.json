@@ -1,45 +1,47 @@
 {
-  "generatedAt": "2026-09-29T08:31:06.779Z",
+  "generatedAt": "2026-09-29T15:52:17.611Z",
   "totalCandidates": 3000,
-  "pendingSeo": 2481,
+  "pendingSeo": 2482,
   "channelCounts": {
-    "pending": 442,
-    "online": 2034,
-    "wiki": 5
+    "pending": 436,
+    "online": 2037,
+    "wiki": 9
   },
   "fastClassCounts": {
-    "pending:pending": 442,
-    "online:pending": 2034,
-    "wiki:pending": 5
+    "pending:pending": 436,
+    "online:pending": 2037,
+    "wiki:pending": 9
   },
   "strategicCounts": {
-    "pending:0": 440,
+    "pending:0": 434,
     "online:3": 1,
-    "online:2": 213,
+    "online:2": 216,
+    "wiki:0": 1,
     "online:1": 1820,
+    "wiki:2": 1,
     "pending:1": 2,
-    "wiki:1": 5
+    "wiki:1": 7
   },
   "topSources": [
     {
       "id": "itch-new",
-      "count": 2002
+      "count": 2004
     },
     {
       "id": "itch-newest-web",
-      "count": 1989
+      "count": 1991
     },
     {
       "id": "itch-new-feed",
-      "count": 1937
+      "count": 1939
     },
     {
       "id": "trends-rising-7d",
-      "count": 370
+      "count": 367
     },
     {
       "id": "trends-rising-30d",
-      "count": 244
+      "count": 239
     },
     {
       "id": "trends-rising-7d-horror-game",
@@ -47,11 +49,11 @@
     },
     {
       "id": "itch-new-popular-web",
-      "count": 189
+      "count": 191
     },
     {
       "id": "itch-popular",
-      "count": 189
+      "count": 191
     },
     {
       "id": "trends-rising-30d-horror-game",
@@ -63,7 +65,7 @@
     },
     {
       "id": "trends-rising-7d-itch-io",
-      "count": 83
+      "count": 79
     },
     {
       "id": "trends-rising-30d-indie-game",
@@ -71,7 +73,7 @@
     },
     {
       "id": "trends-rising-30d-itch-io",
-      "count": 62
+      "count": 56
     },
     {
       "id": "newgrounds-latest",
@@ -91,7 +93,15 @@
     },
     {
       "id": "steam-popular-new",
-      "count": 8
+      "count": 11
+    },
+    {
+      "id": "steam-latest-indie",
+      "count": 7
+    },
+    {
+      "id": "steam-new",
+      "count": 7
     },
     {
       "id": "itch-featured-feed",
@@ -102,24 +112,16 @@
       "count": 6
     },
     {
-      "id": "steam-latest-indie",
-      "count": 6
-    },
-    {
-      "id": "steam-new",
-      "count": 6
-    },
-    {
       "id": "y8-new",
-      "count": 4
+      "count": 5
     },
     {
       "id": "steam-top-wishlist",
-      "count": 1
+      "count": 2
     },
     {
       "id": "lagged-new",
-      "count": 1
+      "count": 2
     }
   ],
   "samples": [
@@ -161,6 +163,25 @@
         "itch-new",
         "itch-featured-feed",
         "itch-featured"
+      ]
+    },
+    {
+      "name": "WALL//KEEP",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 17,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 0,
+      "strategicCount": 2,
+      "sourceCount": 5,
+      "sourceIds": [
+        "itch-newest-web",
+        "itch-new",
+        "itch-new-feed",
+        "itch-new-popular-web",
+        "itch-popular"
       ]
     },
     {
@@ -221,11 +242,11 @@
       ]
     },
     {
-      "name": "まるかいてドカン! / Maru Kaite Dokan!",
+      "name": "Praise Be Evangeline",
       "channel": "online",
       "fastClass": "pending",
       "fastScore": 0,
-      "discoveryScore": 17,
+      "discoveryScore": 15,
       "platforms": 1,
       "browserPlayable": true,
       "nameRisk": 0,
@@ -324,6 +345,25 @@
       "platforms": 1,
       "browserPlayable": true,
       "nameRisk": 5,
+      "strategicCount": 2,
+      "sourceCount": 5,
+      "sourceIds": [
+        "itch-newest-web",
+        "itch-new",
+        "itch-new-feed",
+        "itch-new-popular-web",
+        "itch-popular"
+      ]
+    },
+    {
+      "name": "まるかいてドカン! / Maru Kaite Dokan!",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 15,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 0,
       "strategicCount": 2,
       "sourceCount": 5,
       "sourceIds": [
@@ -1025,44 +1065,6 @@
       "platforms": 1,
       "browserPlayable": true,
       "nameRisk": 6,
-      "strategicCount": 2,
-      "sourceCount": 5,
-      "sourceIds": [
-        "itch-newest-web",
-        "itch-new",
-        "itch-new-feed",
-        "itch-new-popular-web",
-        "itch-popular"
-      ]
-    },
-    {
-      "name": "Roulette Idle",
-      "channel": "online",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 15,
-      "platforms": 1,
-      "browserPlayable": true,
-      "nameRisk": 9,
-      "strategicCount": 2,
-      "sourceCount": 5,
-      "sourceIds": [
-        "itch-newest-web",
-        "itch-new",
-        "itch-new-feed",
-        "itch-new-popular-web",
-        "itch-popular"
-      ]
-    },
-    {
-      "name": "Murder on the Fursonacon Express",
-      "channel": "online",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 15,
-      "platforms": 1,
-      "browserPlayable": true,
-      "nameRisk": 7,
       "strategicCount": 2,
       "sourceCount": 5,
       "sourceIds": [
