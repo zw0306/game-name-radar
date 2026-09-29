@@ -1,37 +1,37 @@
 {
-  "generatedAt": "2026-09-29T01:58:09.730Z",
+  "generatedAt": "2026-09-29T08:31:06.779Z",
   "totalCandidates": 3000,
-  "pendingSeo": 2479,
+  "pendingSeo": 2481,
   "channelCounts": {
-    "pending": 441,
-    "online": 2035,
-    "wiki": 3
+    "pending": 442,
+    "online": 2034,
+    "wiki": 5
   },
   "fastClassCounts": {
-    "pending:pending": 441,
-    "online:pending": 2035,
-    "wiki:pending": 3
+    "pending:pending": 442,
+    "online:pending": 2034,
+    "wiki:pending": 5
   },
   "strategicCounts": {
-    "pending:0": 439,
+    "pending:0": 440,
     "online:3": 1,
-    "online:2": 212,
-    "online:1": 1822,
+    "online:2": 213,
+    "online:1": 1820,
     "pending:1": 2,
-    "wiki:1": 3
+    "wiki:1": 5
   },
   "topSources": [
     {
       "id": "itch-new",
-      "count": 2003
+      "count": 2002
     },
     {
       "id": "itch-newest-web",
-      "count": 1990
+      "count": 1989
     },
     {
       "id": "itch-new-feed",
-      "count": 1938
+      "count": 1937
     },
     {
       "id": "trends-rising-7d",
@@ -39,7 +39,7 @@
     },
     {
       "id": "trends-rising-30d",
-      "count": 242
+      "count": 244
     },
     {
       "id": "trends-rising-7d-horror-game",
@@ -47,11 +47,11 @@
     },
     {
       "id": "itch-new-popular-web",
-      "count": 188
+      "count": 189
     },
     {
       "id": "itch-popular",
-      "count": 188
+      "count": 189
     },
     {
       "id": "trends-rising-30d-horror-game",
@@ -71,7 +71,7 @@
     },
     {
       "id": "trends-rising-30d-itch-io",
-      "count": 60
+      "count": 62
     },
     {
       "id": "newgrounds-latest",
@@ -90,15 +90,15 @@
       "count": 30
     },
     {
+      "id": "steam-popular-new",
+      "count": 8
+    },
+    {
       "id": "itch-featured-feed",
       "count": 6
     },
     {
       "id": "itch-featured",
-      "count": 6
-    },
-    {
-      "id": "steam-popular-new",
       "count": 6
     },
     {
@@ -161,6 +161,25 @@
         "itch-new",
         "itch-featured-feed",
         "itch-featured"
+      ]
+    },
+    {
+      "name": "Penguin Planet",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 17,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 0,
+      "strategicCount": 2,
+      "sourceCount": 5,
+      "sourceIds": [
+        "itch-newest-web",
+        "itch-new",
+        "itch-new-feed",
+        "itch-new-popular-web",
+        "itch-popular"
       ]
     },
     {
@@ -1044,25 +1063,6 @@
       "platforms": 1,
       "browserPlayable": true,
       "nameRisk": 7,
-      "strategicCount": 2,
-      "sourceCount": 5,
-      "sourceIds": [
-        "itch-newest-web",
-        "itch-new",
-        "itch-new-feed",
-        "itch-new-popular-web",
-        "itch-popular"
-      ]
-    },
-    {
-      "name": "The great balding",
-      "channel": "online",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 15,
-      "platforms": 1,
-      "browserPlayable": true,
-      "nameRisk": 6,
       "strategicCount": 2,
       "sourceCount": 5,
       "sourceIds": [
