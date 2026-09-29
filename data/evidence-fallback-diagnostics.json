@@ -1,47 +1,47 @@
 {
-  "generatedAt": "2026-09-29T15:52:17.611Z",
+  "generatedAt": "2026-09-29T20:47:30.820Z",
   "totalCandidates": 3000,
-  "pendingSeo": 2482,
+  "pendingSeo": 2484,
   "channelCounts": {
-    "pending": 436,
-    "online": 2037,
-    "wiki": 9
+    "pending": 433,
+    "online": 2041,
+    "wiki": 10
   },
   "fastClassCounts": {
-    "pending:pending": 436,
-    "online:pending": 2037,
-    "wiki:pending": 9
+    "pending:pending": 433,
+    "online:pending": 2041,
+    "wiki:pending": 10
   },
   "strategicCounts": {
-    "pending:0": 434,
+    "pending:0": 431,
     "online:3": 1,
-    "online:2": 216,
+    "online:2": 215,
     "wiki:0": 1,
-    "online:1": 1820,
+    "online:1": 1825,
     "wiki:2": 1,
     "pending:1": 2,
-    "wiki:1": 7
+    "wiki:1": 8
   },
   "topSources": [
     {
       "id": "itch-new",
-      "count": 2004
+      "count": 2009
     },
     {
       "id": "itch-newest-web",
-      "count": 1991
+      "count": 1996
     },
     {
       "id": "itch-new-feed",
-      "count": 1939
+      "count": 1944
     },
     {
       "id": "trends-rising-7d",
-      "count": 367
+      "count": 366
     },
     {
       "id": "trends-rising-30d",
-      "count": 239
+      "count": 235
     },
     {
       "id": "trends-rising-7d-horror-game",
@@ -65,7 +65,7 @@
     },
     {
       "id": "trends-rising-7d-itch-io",
-      "count": 79
+      "count": 78
     },
     {
       "id": "trends-rising-30d-indie-game",
@@ -73,7 +73,7 @@
     },
     {
       "id": "trends-rising-30d-itch-io",
-      "count": 56
+      "count": 52
     },
     {
       "id": "newgrounds-latest",
@@ -93,7 +93,7 @@
     },
     {
       "id": "steam-popular-new",
-      "count": 11
+      "count": 12
     },
     {
       "id": "steam-latest-indie",
@@ -113,7 +113,7 @@
     },
     {
       "id": "y8-new",
-      "count": 5
+      "count": 4
     },
     {
       "id": "steam-top-wishlist",
@@ -121,7 +121,7 @@
     },
     {
       "id": "lagged-new",
-      "count": 2
+      "count": 1
     }
   ],
   "samples": [
