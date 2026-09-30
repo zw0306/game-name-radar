@@ -1,62 +1,63 @@
 {
-  "generatedAt": "2026-09-30T13:43:55.263Z",
+  "generatedAt": "2026-09-30T19:20:27.949Z",
   "totalCandidates": 3000,
-  "pendingSeo": 2496,
+  "pendingSeo": 2494,
   "channelCounts": {
-    "pending": 426,
-    "online": 2059,
-    "wiki": 11
+    "wiki": 14,
+    "pending": 428,
+    "online": 2052
   },
   "fastClassCounts": {
-    "pending:pending": 426,
-    "online:pending": 2059,
-    "wiki:pending": 11
+    "wiki:pending": 14,
+    "pending:pending": 428,
+    "online:pending": 2052
   },
   "strategicCounts": {
-    "pending:0": 424,
+    "wiki:1": 12,
+    "pending:0": 426,
     "online:3": 1,
-    "online:2": 219,
+    "online:2": 221,
     "wiki:0": 1,
-    "online:1": 1839,
-    "pending:1": 2,
-    "wiki:1": 10
+    "online:1": 1830,
+    "wiki:2": 1,
+    "pending:1": 2
   },
   "topSources": [
     {
       "id": "itch-new",
-      "count": 2025
+      "count": 2020
     },
     {
       "id": "itch-newest-web",
-      "count": 2013
+      "count": 2008
     },
     {
       "id": "itch-new-feed",
-      "count": 1960
+      "count": 1955
     },
     {
       "id": "trends-rising-7d",
-      "count": 362
+      "count": 364
     },
     {
       "id": "trends-rising-30d",
-      "count": 228
+      "count": 230
     },
     {
       "id": "itch-new-popular-web",
-      "count": 195
+      "count": 197
     },
     {
       "id": "itch-popular",
-      "count": 195
+      "count": 197
     },
     {
       "id": "trends-rising-7d-horror-game",
-      "count": 189
+      "count": 190
     },
     {
       "id": "trends-rising-30d-horror-game",
-      "count": 119
+      "count": 121
     },
     {
       "id": "trends-rising-7d-indie-game",
@@ -64,7 +65,7 @@
     },
     {
       "id": "trends-rising-7d-itch-io",
-      "count": 78
+      "count": 79
     },
     {
       "id": "trends-rising-30d-indie-game",
@@ -76,31 +77,31 @@
     },
     {
       "id": "newgrounds-latest",
-      "count": 31
+      "count": 32
     },
     {
       "id": "newgrounds-new",
-      "count": 31
+      "count": 32
     },
     {
       "id": "newgrounds-daily-top",
-      "count": 30
+      "count": 29
     },
     {
       "id": "newgrounds-top",
-      "count": 30
+      "count": 29
     },
     {
       "id": "steam-popular-new",
-      "count": 13
+      "count": 16
     },
     {
       "id": "steam-latest-indie",
-      "count": 7
+      "count": 8
     },
     {
       "id": "steam-new",
-      "count": 7
+      "count": 8
     },
     {
       "id": "itch-featured-feed",
@@ -112,7 +113,7 @@
     },
     {
       "id": "y8-new",
-      "count": 5
+      "count": 4
     },
     {
       "id": "steam-top-wishlist",
@@ -120,7 +121,7 @@
     },
     {
       "id": "lagged-new",
-      "count": 2
+      "count": 1
     }
   ],
   "samples": [
@@ -142,24 +143,6 @@
         "itch-featured",
         "itch-new-popular-web",
         "itch-popular"
-      ]
-    },
-    {
-      "name": "JOJORUNE: VS Dio",
-      "channel": "online",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 15,
-      "platforms": 2,
-      "browserPlayable": true,
-      "nameRisk": 0,
-      "strategicCount": 2,
-      "sourceCount": 4,
-      "sourceIds": [
-        "itch-new-popular-web",
-        "itch-popular",
-        "newgrounds-daily-top",
-        "newgrounds-top"
       ]
     },
     {
@@ -191,6 +174,25 @@
       "platforms": 1,
       "browserPlayable": true,
       "nameRisk": 5,
+      "strategicCount": 2,
+      "sourceCount": 5,
+      "sourceIds": [
+        "itch-newest-web",
+        "itch-new",
+        "itch-new-feed",
+        "itch-new-popular-web",
+        "itch-popular"
+      ]
+    },
+    {
+      "name": "FISH EATS EARTH",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 17,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 0,
       "strategicCount": 2,
       "sourceCount": 5,
       "sourceIds": [
@@ -267,6 +269,44 @@
       "platforms": 1,
       "browserPlayable": true,
       "nameRisk": 5,
+      "strategicCount": 2,
+      "sourceCount": 5,
+      "sourceIds": [
+        "itch-newest-web",
+        "itch-new",
+        "itch-new-feed",
+        "itch-new-popular-web",
+        "itch-popular"
+      ]
+    },
+    {
+      "name": "Stoneheart Archive",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 15,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 0,
+      "strategicCount": 2,
+      "sourceCount": 5,
+      "sourceIds": [
+        "itch-newest-web",
+        "itch-new",
+        "itch-new-feed",
+        "itch-new-popular-web",
+        "itch-popular"
+      ]
+    },
+    {
+      "name": "All The Birds",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 15,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 6,
       "strategicCount": 2,
       "sourceCount": 5,
       "sourceIds": [
@@ -1018,44 +1058,6 @@
     },
     {
       "name": "The Slopmachine",
-      "channel": "online",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 15,
-      "platforms": 1,
-      "browserPlayable": true,
-      "nameRisk": 9,
-      "strategicCount": 2,
-      "sourceCount": 5,
-      "sourceIds": [
-        "itch-newest-web",
-        "itch-new",
-        "itch-new-feed",
-        "itch-new-popular-web",
-        "itch-popular"
-      ]
-    },
-    {
-      "name": "Your Other Half",
-      "channel": "online",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 15,
-      "platforms": 1,
-      "browserPlayable": true,
-      "nameRisk": 6,
-      "strategicCount": 2,
-      "sourceCount": 5,
-      "sourceIds": [
-        "itch-newest-web",
-        "itch-new",
-        "itch-new-feed",
-        "itch-new-popular-web",
-        "itch-popular"
-      ]
-    },
-    {
-      "name": "Department 98",
       "channel": "online",
       "fastClass": "pending",
       "fastScore": 0,
