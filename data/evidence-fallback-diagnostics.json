@@ -1,39 +1,38 @@
 {
-  "generatedAt": "2026-09-30T00:27:47.285Z",
+  "generatedAt": "2026-09-30T06:43:56.411Z",
   "totalCandidates": 3000,
-  "pendingSeo": 2485,
+  "pendingSeo": 2488,
   "channelCounts": {
-    "pending": 433,
-    "online": 2042,
+    "online": 2050,
+    "pending": 428,
     "wiki": 10
   },
   "fastClassCounts": {
-    "pending:pending": 433,
-    "online:pending": 2042,
+    "online:pending": 2050,
+    "pending:pending": 428,
     "wiki:pending": 10
   },
   "strategicCounts": {
-    "pending:0": 431,
+    "online:1": 1832,
+    "pending:0": 426,
     "online:3": 1,
-    "online:2": 215,
+    "online:2": 217,
     "wiki:0": 1,
-    "online:1": 1826,
-    "wiki:2": 1,
     "pending:1": 2,
-    "wiki:1": 8
+    "wiki:1": 9
   },
   "topSources": [
     {
       "id": "itch-new",
-      "count": 2010
+      "count": 2016
     },
     {
       "id": "itch-newest-web",
-      "count": 1997
+      "count": 2004
     },
     {
       "id": "itch-new-feed",
-      "count": 1945
+      "count": 1951
     },
     {
       "id": "trends-rising-7d",
@@ -41,35 +40,35 @@
     },
     {
       "id": "trends-rising-30d",
-      "count": 236
-    },
-    {
-      "id": "trends-rising-7d-horror-game",
-      "count": 192
+      "count": 230
     },
     {
       "id": "itch-new-popular-web",
-      "count": 191
+      "count": 194
     },
     {
       "id": "itch-popular",
+      "count": 194
+    },
+    {
+      "id": "trends-rising-7d-horror-game",
       "count": 191
     },
     {
       "id": "trends-rising-30d-horror-game",
-      "count": 125
+      "count": 120
     },
     {
       "id": "trends-rising-7d-indie-game",
-      "count": 106
+      "count": 105
     },
     {
       "id": "trends-rising-7d-itch-io",
-      "count": 78
+      "count": 80
     },
     {
       "id": "trends-rising-30d-indie-game",
-      "count": 64
+      "count": 63
     },
     {
       "id": "trends-rising-30d-itch-io",
@@ -96,19 +95,19 @@
       "count": 12
     },
     {
-      "id": "steam-latest-indie",
-      "count": 7
-    },
-    {
-      "id": "steam-new",
-      "count": 7
-    },
-    {
       "id": "itch-featured-feed",
       "count": 6
     },
     {
       "id": "itch-featured",
+      "count": 6
+    },
+    {
+      "id": "steam-latest-indie",
+      "count": 6
+    },
+    {
+      "id": "steam-new",
       "count": 6
     },
     {
@@ -163,6 +162,25 @@
         "itch-new",
         "itch-featured-feed",
         "itch-featured"
+      ]
+    },
+    {
+      "name": "Frog Eats Flies!",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 17,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 0,
+      "strategicCount": 2,
+      "sourceCount": 5,
+      "sourceIds": [
+        "itch-newest-web",
+        "itch-new",
+        "itch-new-feed",
+        "itch-new-popular-web",
+        "itch-popular"
       ]
     },
     {
@@ -231,6 +249,25 @@
       "platforms": 1,
       "browserPlayable": true,
       "nameRisk": 6,
+      "strategicCount": 2,
+      "sourceCount": 5,
+      "sourceIds": [
+        "itch-newest-web",
+        "itch-new",
+        "itch-new-feed",
+        "itch-new-popular-web",
+        "itch-popular"
+      ]
+    },
+    {
+      "name": "Atom By Atom",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 15,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 0,
       "strategicCount": 2,
       "sourceCount": 5,
       "sourceIds": [
@@ -1020,44 +1057,6 @@
     },
     {
       "name": "Steal the Core",
-      "channel": "online",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 15,
-      "platforms": 1,
-      "browserPlayable": true,
-      "nameRisk": 6,
-      "strategicCount": 2,
-      "sourceCount": 5,
-      "sourceIds": [
-        "itch-newest-web",
-        "itch-new",
-        "itch-new-feed",
-        "itch-new-popular-web",
-        "itch-popular"
-      ]
-    },
-    {
-      "name": "Into the Shimmer",
-      "channel": "online",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 15,
-      "platforms": 1,
-      "browserPlayable": true,
-      "nameRisk": 6,
-      "strategicCount": 2,
-      "sourceCount": 5,
-      "sourceIds": [
-        "itch-newest-web",
-        "itch-new",
-        "itch-new-feed",
-        "itch-new-popular-web",
-        "itch-popular"
-      ]
-    },
-    {
-      "name": "Down To Detonate",
       "channel": "online",
       "fastClass": "pending",
       "fastScore": 0,
