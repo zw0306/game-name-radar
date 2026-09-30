@@ -1,74 +1,74 @@
 {
-  "generatedAt": "2026-09-30T06:43:56.411Z",
+  "generatedAt": "2026-09-30T13:43:55.263Z",
   "totalCandidates": 3000,
-  "pendingSeo": 2488,
+  "pendingSeo": 2496,
   "channelCounts": {
-    "online": 2050,
-    "pending": 428,
-    "wiki": 10
+    "pending": 426,
+    "online": 2059,
+    "wiki": 11
   },
   "fastClassCounts": {
-    "online:pending": 2050,
-    "pending:pending": 428,
-    "wiki:pending": 10
+    "pending:pending": 426,
+    "online:pending": 2059,
+    "wiki:pending": 11
   },
   "strategicCounts": {
-    "online:1": 1832,
-    "pending:0": 426,
+    "pending:0": 424,
     "online:3": 1,
-    "online:2": 217,
+    "online:2": 219,
     "wiki:0": 1,
+    "online:1": 1839,
     "pending:1": 2,
-    "wiki:1": 9
+    "wiki:1": 10
   },
   "topSources": [
     {
       "id": "itch-new",
-      "count": 2016
+      "count": 2025
     },
     {
       "id": "itch-newest-web",
-      "count": 2004
+      "count": 2013
     },
     {
       "id": "itch-new-feed",
-      "count": 1951
+      "count": 1960
     },
     {
       "id": "trends-rising-7d",
-      "count": 366
+      "count": 362
     },
     {
       "id": "trends-rising-30d",
-      "count": 230
+      "count": 228
     },
     {
       "id": "itch-new-popular-web",
-      "count": 194
+      "count": 195
     },
     {
       "id": "itch-popular",
-      "count": 194
+      "count": 195
     },
     {
       "id": "trends-rising-7d-horror-game",
-      "count": 191
+      "count": 189
     },
     {
       "id": "trends-rising-30d-horror-game",
-      "count": 120
+      "count": 119
     },
     {
       "id": "trends-rising-7d-indie-game",
-      "count": 105
+      "count": 104
     },
     {
       "id": "trends-rising-7d-itch-io",
-      "count": 80
+      "count": 78
     },
     {
       "id": "trends-rising-30d-indie-game",
-      "count": 63
+      "count": 62
     },
     {
       "id": "trends-rising-30d-itch-io",
@@ -76,11 +76,11 @@
     },
     {
       "id": "newgrounds-latest",
-      "count": 32
+      "count": 31
     },
     {
       "id": "newgrounds-new",
-      "count": 32
+      "count": 31
     },
     {
       "id": "newgrounds-daily-top",
@@ -92,7 +92,15 @@
     },
     {
       "id": "steam-popular-new",
-      "count": 12
+      "count": 13
+    },
+    {
+      "id": "steam-latest-indie",
+      "count": 7
+    },
+    {
+      "id": "steam-new",
+      "count": 7
     },
     {
       "id": "itch-featured-feed",
@@ -103,16 +111,8 @@
       "count": 6
     },
     {
-      "id": "steam-latest-indie",
-      "count": 6
-    },
-    {
-      "id": "steam-new",
-      "count": 6
-    },
-    {
       "id": "y8-new",
-      "count": 4
+      "count": 5
     },
     {
       "id": "steam-top-wishlist",
@@ -120,7 +120,7 @@
     },
     {
       "id": "lagged-new",
-      "count": 1
+      "count": 2
     }
   ],
   "samples": [
@@ -145,6 +145,24 @@
       ]
     },
     {
+      "name": "JOJORUNE: VS Dio",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 15,
+      "platforms": 2,
+      "browserPlayable": true,
+      "nameRisk": 0,
+      "strategicCount": 2,
+      "sourceCount": 4,
+      "sourceIds": [
+        "itch-new-popular-web",
+        "itch-popular",
+        "newgrounds-daily-top",
+        "newgrounds-top"
+      ]
+    },
+    {
       "name": "Swamp and Luig",
       "channel": "online",
       "fastClass": "pending",
@@ -162,6 +180,25 @@
         "itch-new",
         "itch-featured-feed",
         "itch-featured"
+      ]
+    },
+    {
+      "name": "Dig Through the Universe",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 17,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 5,
+      "strategicCount": 2,
+      "sourceCount": 5,
+      "sourceIds": [
+        "itch-newest-web",
+        "itch-new",
+        "itch-new-feed",
+        "itch-new-popular-web",
+        "itch-popular"
       ]
     },
     {
@@ -241,25 +278,6 @@
       ]
     },
     {
-      "name": "The Root Cause",
-      "channel": "online",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 17,
-      "platforms": 1,
-      "browserPlayable": true,
-      "nameRisk": 6,
-      "strategicCount": 2,
-      "sourceCount": 5,
-      "sourceIds": [
-        "itch-newest-web",
-        "itch-new",
-        "itch-new-feed",
-        "itch-new-popular-web",
-        "itch-popular"
-      ]
-    },
-    {
       "name": "Atom By Atom",
       "channel": "online",
       "fastClass": "pending",
@@ -287,6 +305,25 @@
       "platforms": 1,
       "browserPlayable": true,
       "nameRisk": 0,
+      "strategicCount": 2,
+      "sourceCount": 5,
+      "sourceIds": [
+        "itch-newest-web",
+        "itch-new",
+        "itch-new-feed",
+        "itch-new-popular-web",
+        "itch-popular"
+      ]
+    },
+    {
+      "name": "The Root Cause",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 15,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 6,
       "strategicCount": 2,
       "sourceCount": 5,
       "sourceIds": [
@@ -1026,44 +1063,6 @@
       "platforms": 1,
       "browserPlayable": true,
       "nameRisk": 9,
-      "strategicCount": 2,
-      "sourceCount": 5,
-      "sourceIds": [
-        "itch-newest-web",
-        "itch-new",
-        "itch-new-feed",
-        "itch-new-popular-web",
-        "itch-popular"
-      ]
-    },
-    {
-      "name": "Dispatches 1940",
-      "channel": "online",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 15,
-      "platforms": 1,
-      "browserPlayable": true,
-      "nameRisk": 9,
-      "strategicCount": 2,
-      "sourceCount": 5,
-      "sourceIds": [
-        "itch-newest-web",
-        "itch-new",
-        "itch-new-feed",
-        "itch-new-popular-web",
-        "itch-popular"
-      ]
-    },
-    {
-      "name": "Steal the Core",
-      "channel": "online",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 15,
-      "platforms": 1,
-      "browserPlayable": true,
-      "nameRisk": 6,
       "strategicCount": 2,
       "sourceCount": 5,
       "sourceIds": [
