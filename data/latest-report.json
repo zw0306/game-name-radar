@@ -1,23 +1,23 @@
 {
-  "scannedAt": "2026-10-01T05:53:47.258Z",
+  "scannedAt": "2026-10-01T13:14:55.970Z",
   "targetMarket": "US_GLOBAL",
   "primaryMarket": "US",
   "referenceMarket": "WORLDWIDE",
-  "totalAdded": 172,
+  "totalAdded": 203,
   "sources": [
     {
       "ok": true,
       "sourceId": "itch-newest-web",
       "sourceName": "itch.io 最新网页游戏",
       "total": 36,
-      "added": 36
+      "added": 35
     },
     {
       "ok": true,
       "sourceId": "itch-new-popular-web",
       "sourceName": "itch.io New & Popular",
       "total": 36,
-      "added": 6
+      "added": 2
     },
     {
       "ok": true,
@@ -31,7 +31,7 @@
       "sourceId": "itch-featured-feed",
       "sourceName": "itch.io Featured Feed",
       "total": 10,
-      "added": 0
+      "added": 2
     },
     {
       "ok": true,
@@ -45,21 +45,20 @@
       "sourceId": "steam-popular-new",
       "sourceName": "Steam 热门新发行",
       "total": 50,
-      "added": 4
+      "added": 1
     },
     {
       "ok": true,
       "sourceId": "steam-latest-indie",
       "sourceName": "Steam 最新独立游戏",
       "total": 50,
-      "added": 11
+      "added": 35
     },
     {
-      "ok": true,
+      "ok": false,
       "sourceId": "newgrounds-daily-top",
       "sourceName": "Newgrounds Daily Top Five",
-      "total": 5,
-      "added": 5
+      "error": "请求超时"
     },
     {
       "ok": true,
@@ -73,21 +72,21 @@
       "sourceId": "crazygames-new",
       "sourceName": "CrazyGames 新游戏",
       "total": 70,
-      "added": 4
+      "added": 0
     },
     {
       "ok": true,
       "sourceId": "poki-new",
       "sourceName": "Poki 新游戏",
-      "total": 162,
-      "added": 1
+      "total": 148,
+      "added": 7
     },
     {
       "ok": true,
       "sourceId": "y8-new",
       "sourceName": "Y8 新游戏",
       "total": 73,
-      "added": 39
+      "added": 45
     },
     {
       "ok": false,
@@ -100,21 +99,21 @@
       "sourceId": "lagged-new",
       "sourceName": "Lagged 新游戏",
       "total": 82,
-      "added": 0
+      "added": 7
     },
     {
       "ok": true,
       "sourceId": "trends-rising-7d-itch-io",
       "sourceName": "Trends上涨 7天 · itch io",
-      "total": 11,
-      "added": 9
+      "total": 10,
+      "added": 5
     },
     {
       "ok": true,
       "sourceId": "trends-rising-30d-itch-io",
       "sourceName": "Trends上涨 30天 · itch io",
-      "total": 11,
-      "added": 4
+      "total": 18,
+      "added": 8
     },
     {
       "ok": true,
@@ -128,58 +127,59 @@
       "sourceId": "trends-rising-30d-indie-game",
       "sourceName": "Trends上涨 30天 · indie game",
       "total": 2,
-      "added": 1
+      "added": 0
     },
     {
       "ok": true,
       "sourceId": "trends-rising-7d-horror-game",
       "sourceName": "Trends上涨 7天 · horror game",
-      "total": 15,
+      "total": 17,
       "added": 5
     },
     {
-      "ok": false,
+      "ok": true,
       "sourceId": "trends-rising-30d-horror-game",
       "sourceName": "Trends上涨 30天 · horror game",
-      "error": "Unexpected token '<', \"<html lang\"... is not valid JSON"
+      "total": 21,
+      "added": 4
     }
   ],
   "seoVerified": 0,
   "seoErrors": 0,
   "fastModelVersion": 3,
-  "fastPassedCount": 192,
+  "fastPassedCount": 191,
   "fastWatchCount": 145,
-  "fastRejectedCount": 163,
+  "fastRejectedCount": 162,
   "youtubeEnabled": false,
   "youtubeConfigured": false,
   "youtubeVerified": 0,
   "youtubeErrors": 0,
-  "trendsVerified": 10,
+  "trendsVerified": 0,
   "trendErrors": 3,
   "trendBatchRan": true,
   "trendQueueSize": 0,
   "risingDiscoveryRan": true,
   "seoModelVersion": 5,
   "trendModelVersion": 4,
-  "seoPassedCount": 346,
-  "trendEligibleCount": 167,
-  "trendPendingCount": 167,
-  "trendValidatedCount": 244,
+  "seoPassedCount": 344,
+  "trendEligibleCount": 165,
+  "trendPendingCount": 156,
+  "trendValidatedCount": 243,
   "risingCount": 12,
   "globalRisingCount": 0,
   "recommendationCounts": {
     "independent": 0,
     "test-now": 0,
     "page": 3,
-    "watch": 366,
-    "reject": 1,
+    "watch": 367,
+    "reject": 0,
     "pending": 2630,
     "error": 0
   },
   "trendProvider": "apify-data-xplorer+serpapi",
   "trendProviderCounts": {
-    "apify-data-xplorer": 60,
-    "serpapi": 189
+    "apify-data-xplorer": 63,
+    "serpapi": 188
   },
   "serpApiConfigured": true,
   "serpApiUsage": {
@@ -194,7 +194,7 @@
   },
   "apifyConfigured": true,
   "apifyAccountStatus": {
-    "checkedAt": "2026-10-01T05:53:46.140Z",
+    "checkedAt": "2026-10-01T13:14:54.608Z",
     "configured": true,
     "ok": true,
     "provider": "apify",
@@ -210,18 +210,18 @@
   },
   "apifyTrendsUsage": {
     "month": "2026-10",
-    "actorCalls": 3,
+    "actorCalls": 6,
     "resultItems": 0,
     "candidatesVerified": 0,
-    "errors": 3,
+    "errors": 6,
     "monthlyCallLimit": 4000,
-    "updatedAt": "2026-10-01T05:54:16.797Z"
+    "updatedAt": "2026-10-01T13:15:37.211Z"
   },
   "seoProvider": "serper-google-search",
   "seoProviderCounts": {
     "serper+autocomplete": 281,
-    "evidence-fallback": 169,
-    "duckduckgo+autocomplete": 50
+    "evidence-fallback": 170,
+    "duckduckgo+autocomplete": 49
   },
   "serperConfigured": true,
   "serperUsage": {
@@ -231,7 +231,7 @@
     "dayUsed": 0,
     "totalLimit": 2450,
     "dailyLimit": 2450,
-    "updatedAt": "2026-10-01T05:54:14.554Z",
+    "updatedAt": "2026-10-01T13:15:34.896Z",
     "lastError": "Not enough credits"
   },
   "googleCseConfiguredSlots": 0,
@@ -250,16 +250,16 @@
   },
   "siteTypeModelVersion": 2,
   "siteTypeCounts": {
-    "online": 2396,
-    "wiki": 133,
-    "pending": 471
+    "online": 2394,
+    "wiki": 134,
+    "pending": 472
   },
   "wikiPrelaunchModelVersion": 2,
   "wikiPrelaunchCounts": {
     "priority": 0,
     "prepare": 5,
     "watch": 10,
-    "weak": 118
+    "weak": 119
   },
   "serperVerification": {
     "rushMode": true,
@@ -282,29 +282,32 @@
     "errors": 0,
     "quotaStopped": true,
     "verifiedNames": [],
-    "ranAt": "2026-10-01T05:54:14.650Z"
+    "ranAt": "2026-10-01T13:15:35.012Z"
   },
   "evidenceSeoFallback": {
     "enabled": true,
     "limit": 180,
-    "pendingCount": 2500,
-    "eligibleCount": 0,
-    "queueSize": 0,
-    "verified": 0,
+    "pendingCount": 2502,
+    "eligibleCount": 2,
+    "queueSize": 2,
+    "verified": 2,
     "channelVerified": {
-      "online": 0,
-      "wiki": 0,
+      "online": 1,
+      "wiki": 1,
       "pending": 0
     },
     "fastRecalculated": {
-      "pass": 0,
+      "pass": 2,
       "watch": 0,
       "weak": 0,
       "reject": 0,
       "pending": 0
     },
-    "verifiedNames": [],
-    "ranAt": "2026-10-01T05:54:15.216Z"
+    "verifiedNames": [
+      "Attack & Dash",
+      "Songs of Glimmerwick"
+    ],
+    "ranAt": "2026-10-01T13:15:35.683Z"
   },
   "socialBuzzVerification": {
     "modelVersion": 3,
@@ -326,11 +329,11 @@
       "x": 0,
       "tiktok": 0
     },
-    "ranAt": "2026-10-01T05:54:16.146Z"
+    "ranAt": "2026-10-01T13:15:36.668Z"
   },
   "channelOpportunityCounts": {
     "online": {
-      "validated": 205,
+      "validated": 204,
       "rising": 5,
       "recommended": 0
     },
@@ -353,7 +356,7 @@
     "verifyLimit": 200,
     "effectiveLimit": 200,
     "monthlyCallLimit": 4000,
-    "remainingCallsAtStart": 4000,
+    "remainingCallsAtStart": 3997,
     "queueSize": 200,
     "verified": 0,
     "errors": 3,
@@ -372,42 +375,42 @@
       "strategic": 0
     },
     "pendingByChannel": {
-      "online": 215,
-      "wiki": 58
+      "online": 203,
+      "wiki": 59
     },
     "pendingByTier": {
-      "strong": 140,
+      "strong": 129,
       "secondary": 90,
       "strategic": 43
     },
     "verifiedNames": [],
     "errorNames": [
       {
-        "name": "My Army Base",
+        "name": "Bike Obby Draw Pencil",
         "error": "Monthly usage hard limit exceeded",
         "actorCalls": 1
       },
       {
-        "name": "Survive-ish",
+        "name": "Attack & Dash",
         "error": "Monthly usage hard limit exceeded",
         "actorCalls": 1
       },
       {
-        "name": "Cubes Match 3 Quest",
+        "name": "Super Dev Quest",
         "error": "Monthly usage hard limit exceeded",
         "actorCalls": 1
       }
     ],
-    "ranAt": "2026-10-01T05:54:16.904Z"
+    "ranAt": "2026-10-01T13:15:37.334Z"
   },
   "serpApiAccountStatus": {
-    "checkedAt": "2026-10-01T05:54:17.096Z",
+    "checkedAt": "2026-10-01T13:15:37.520Z",
     "accountApiConsumesSearchCredits": false,
     "configuredKeys": 1,
     "workingKeys": 1,
     "uniqueAccountCount": 1,
     "duplicateKeyGroups": [],
-    "totalIndependentSearchesLeft": 24,
+    "totalIndependentSearchesLeft": 14,
     "accounts": [
       {
         "accountFingerprint": "ea334463bd86",
@@ -416,8 +419,8 @@
         ],
         "planName": "Free Plan",
         "searchesPerMonth": 250,
-        "thisMonthUsage": 226,
-        "totalSearchesLeft": 24,
+        "thisMonthUsage": 236,
+        "totalSearchesLeft": 14,
         "renewalDate": "2026-10-19"
       }
     ],
@@ -434,11 +437,11 @@
         "planMonthlyPrice": 0,
         "renewalDate": "2026-10-19",
         "searchesPerMonth": 250,
-        "thisMonthUsage": 226,
-        "planSearchesLeft": 24,
-        "totalSearchesLeft": 24,
+        "thisMonthUsage": 236,
+        "planSearchesLeft": 14,
+        "totalSearchesLeft": 14,
         "rateLimitPerHour": 250,
-        "checkedAt": "2026-10-01T05:54:17.096Z",
+        "checkedAt": "2026-10-01T13:15:37.519Z",
         "sharedAccount": false,
         "sharedWithSlots": []
       },
@@ -475,42 +478,31 @@
   "serpApiQuotaFill": {
     "enabled": true,
     "configuredSlots": 1,
-    "remainingAtStart": 10,
-    "queueSize": 273,
-    "verified": 10,
+    "remainingAtStart": 0,
+    "queueSize": 0,
+    "verified": 0,
     "errors": 0,
-    "quotaStopped": true,
+    "quotaStopped": false,
     "tierCounts": {
-      "strong": 10,
+      "strong": 0,
       "secondary": 0,
       "strategic": 0
     },
     "channelVerified": {
-      "online": 10,
+      "online": 0,
       "wiki": 0,
       "pending": 0
     },
     "pendingByTier": {
-      "strong": 130,
+      "strong": 129,
       "secondary": 90,
       "strategic": 43
     },
     "pendingByChannel": {
-      "online": 205,
-      "wiki": 58
+      "online": 203,
+      "wiki": 59
     },
-    "verifiedNames": [
-      "My Army Base",
-      "Survive-ish",
-      "Cubes Match 3 Quest",
-      "Noob vs Pro : Drift Tag",
-      "GORILGO FPS Online Shooter",
-      "Obby Climb and Jump Tower",
-      "SWAT: Squad Tactics",
-      "Remember",
-      "Sprunki(?)",
-      "JOJORUNE: VS Dio"
-    ],
+    "verifiedNames": [],
     "caps": {
       "online": 999,
       "wiki": 999,
@@ -522,17 +514,17 @@
         "envName": "SERPAPI_API_KEY",
         "ok": true,
         "error": null,
-        "verified": 10,
+        "verified": 0,
         "channelVerified": {
-          "online": 10,
+          "online": 0,
           "wiki": 0,
           "pending": 0
         },
         "errors": 0,
-        "quotaStopped": true
+        "quotaStopped": false
       }
     },
-    "ranAt": "2026-10-01T05:54:58.712Z"
+    "ranAt": "2026-10-01T13:15:38.111Z"
   },
   "serpApiConfiguredSlots": 1,
   "serpApiPoolUsage": {
@@ -554,7 +546,7 @@
         "updatedAt": "2026-10-01T05:54:56.210Z"
       }
     },
-    "updatedAt": "2026-10-01T05:54:58.758Z"
+    "updatedAt": "2026-10-01T13:15:38.171Z"
   },
   "searchApiConfigured": false,
   "searchApiTrendsUsage": {
@@ -587,16 +579,16 @@
       "strategic": 0
     },
     "pendingByChannel": {
-      "online": 205,
-      "wiki": 58
+      "online": 203,
+      "wiki": 59
     },
     "pendingByTier": {
-      "strong": 130,
+      "strong": 129,
       "secondary": 90,
       "strategic": 43
     },
     "verifiedNames": [],
     "errorNames": [],
-    "ranAt": "2026-10-01T05:54:59.199Z"
+    "ranAt": "2026-10-01T13:15:38.661Z"
   }
 }

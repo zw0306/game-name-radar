@@ -1,24 +1,25 @@
 {
-  "generatedAt": "2026-10-01T05:54:14.870Z",
+  "generatedAt": "2026-10-01T13:15:35.283Z",
   "totalCandidates": 3000,
-  "pendingSeo": 2500,
+  "pendingSeo": 2502,
   "channelCounts": {
-    "pending": 421,
-    "online": 2069,
-    "wiki": 10
+    "pending": 423,
+    "online": 2068,
+    "wiki": 11
   },
   "fastClassCounts": {
-    "pending:pending": 421,
-    "online:pending": 2069,
-    "wiki:pending": 10
+    "pending:pending": 423,
+    "online:pending": 2068,
+    "wiki:pending": 11
   },
   "strategicCounts": {
-    "pending:0": 419,
+    "pending:0": 420,
     "online:3": 1,
-    "online:2": 213,
+    "online:2": 215,
+    "wiki:2": 1,
     "wiki:0": 1,
-    "online:1": 1855,
-    "pending:1": 2,
+    "online:1": 1852,
+    "pending:1": 3,
     "wiki:1": 9
   },
   "topSources": [
@@ -28,15 +29,15 @@
     },
     {
       "id": "itch-newest-web",
-      "count": 2027
+      "count": 2026
     },
     {
       "id": "itch-new-feed",
-      "count": 1976
+      "count": 1975
     },
     {
       "id": "trends-rising-7d",
-      "count": 360
+      "count": 361
     },
     {
       "id": "trends-rising-30d",
@@ -44,15 +45,15 @@
     },
     {
       "id": "itch-new-popular-web",
-      "count": 192
+      "count": 194
     },
     {
       "id": "itch-popular",
-      "count": 192
+      "count": 194
     },
     {
       "id": "trends-rising-7d-horror-game",
-      "count": 190
+      "count": 191
     },
     {
       "id": "trends-rising-30d-horror-game",
@@ -76,19 +77,19 @@
     },
     {
       "id": "newgrounds-latest",
-      "count": 29
+      "count": 28
     },
     {
       "id": "newgrounds-new",
-      "count": 29
+      "count": 28
     },
     {
       "id": "newgrounds-daily-top",
-      "count": 27
+      "count": 26
     },
     {
       "id": "newgrounds-top",
-      "count": 27
+      "count": 26
     },
     {
       "id": "steam-popular-new",
@@ -96,23 +97,23 @@
     },
     {
       "id": "itch-featured-feed",
-      "count": 6
+      "count": 8
     },
     {
       "id": "itch-featured",
-      "count": 6
+      "count": 8
     },
     {
       "id": "steam-latest-indie",
-      "count": 6
+      "count": 7
     },
     {
       "id": "steam-new",
-      "count": 6
+      "count": 7
     },
     {
       "id": "y8-new",
-      "count": 4
+      "count": 5
     },
     {
       "id": "steam-top-wishlist",
@@ -120,7 +121,7 @@
     },
     {
       "id": "lagged-new",
-      "count": 1
+      "count": 2
     }
   ],
   "samples": [
@@ -162,6 +163,25 @@
         "itch-new",
         "itch-featured-feed",
         "itch-featured"
+      ]
+    },
+    {
+      "name": "PlesentFlight",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 17,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 5,
+      "strategicCount": 2,
+      "sourceCount": 5,
+      "sourceIds": [
+        "itch-newest-web",
+        "itch-new",
+        "itch-new-feed",
+        "itch-new-popular-web",
+        "itch-popular"
       ]
     },
     {
@@ -1045,25 +1065,6 @@
       "platforms": 1,
       "browserPlayable": true,
       "nameRisk": 6,
-      "strategicCount": 2,
-      "sourceCount": 5,
-      "sourceIds": [
-        "itch-newest-web",
-        "itch-new",
-        "itch-new-feed",
-        "itch-new-popular-web",
-        "itch-popular"
-      ]
-    },
-    {
-      "name": "The Slopmachine",
-      "channel": "online",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 15,
-      "platforms": 1,
-      "browserPlayable": true,
-      "nameRisk": 9,
       "strategicCount": 2,
       "sourceCount": 5,
       "sourceIds": [
