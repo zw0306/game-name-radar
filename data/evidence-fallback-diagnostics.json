@@ -1,70 +1,70 @@
 {
-  "generatedAt": "2026-10-01T19:32:21.483Z",
+  "generatedAt": "2026-10-01T23:53:18.931Z",
   "totalCandidates": 3000,
-  "pendingSeo": 2504,
+  "pendingSeo": 2506,
   "channelCounts": {
-    "pending": 417,
-    "online": 2075,
+    "online": 2079,
+    "pending": 415,
     "wiki": 12
   },
   "fastClassCounts": {
-    "pending:pending": 417,
-    "online:pending": 2075,
+    "online:pending": 2079,
+    "pending:pending": 415,
     "wiki:pending": 12
   },
   "strategicCounts": {
-    "pending:0": 415,
+    "online:1": 1876,
+    "pending:0": 413,
     "online:3": 1,
-    "online:2": 209,
+    "online:2": 202,
     "wiki:0": 1,
-    "online:1": 1865,
     "pending:1": 2,
     "wiki:1": 11
   },
   "topSources": [
     {
       "id": "itch-new",
-      "count": 2049
+      "count": 2055
     },
     {
       "id": "itch-newest-web",
-      "count": 2036
+      "count": 2042
     },
     {
       "id": "itch-new-feed",
-      "count": 1988
+      "count": 1996
     },
     {
       "id": "trends-rising-7d",
-      "count": 356
+      "count": 355
     },
     {
       "id": "trends-rising-30d",
-      "count": 222
-    },
-    {
-      "id": "itch-new-popular-web",
-      "count": 190
-    },
-    {
-      "id": "itch-popular",
-      "count": 190
+      "count": 224
     },
     {
       "id": "trends-rising-7d-horror-game",
       "count": 189
     },
     {
+      "id": "itch-new-popular-web",
+      "count": 188
+    },
+    {
+      "id": "itch-popular",
+      "count": 188
+    },
+    {
       "id": "trends-rising-30d-horror-game",
-      "count": 115
+      "count": 116
     },
     {
       "id": "trends-rising-7d-indie-game",
-      "count": 99
+      "count": 97
     },
     {
       "id": "trends-rising-7d-itch-io",
-      "count": 76
+      "count": 77
     },
     {
       "id": "trends-rising-30d-indie-game",
@@ -72,35 +72,27 @@
     },
     {
       "id": "trends-rising-30d-itch-io",
-      "count": 52
+      "count": 53
     },
     {
       "id": "newgrounds-latest",
-      "count": 26
+      "count": 24
     },
     {
       "id": "newgrounds-new",
-      "count": 26
+      "count": 24
     },
     {
       "id": "newgrounds-daily-top",
-      "count": 24
+      "count": 22
     },
     {
       "id": "newgrounds-top",
-      "count": 24
+      "count": 22
     },
     {
       "id": "steam-popular-new",
       "count": 13
-    },
-    {
-      "id": "steam-latest-indie",
-      "count": 7
-    },
-    {
-      "id": "steam-new",
-      "count": 7
     },
     {
       "id": "itch-featured-feed",
@@ -111,16 +103,20 @@
       "count": 6
     },
     {
+      "id": "steam-latest-indie",
+      "count": 6
+    },
+    {
+      "id": "steam-new",
+      "count": 6
+    },
+    {
       "id": "y8-new",
-      "count": 5
+      "count": 3
     },
     {
       "id": "steam-top-wishlist",
       "count": 2
-    },
-    {
-      "id": "lagged-new",
-      "count": 1
     }
   ],
   "samples": [
@@ -142,26 +138,6 @@
         "itch-featured",
         "itch-new-popular-web",
         "itch-popular"
-      ]
-    },
-    {
-      "name": "Brick by Brick",
-      "channel": "online",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 15,
-      "platforms": 2,
-      "browserPlayable": true,
-      "nameRisk": 0,
-      "strategicCount": 2,
-      "sourceCount": 6,
-      "sourceIds": [
-        "itch-newest-web",
-        "itch-new",
-        "itch-new-feed",
-        "steam-latest-indie",
-        "steam-new",
-        "y8-new"
       ]
     },
     {
@@ -280,25 +256,6 @@
       ]
     },
     {
-      "name": "Penguin Planet",
-      "channel": "online",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 17,
-      "platforms": 1,
-      "browserPlayable": true,
-      "nameRisk": 0,
-      "strategicCount": 2,
-      "sourceCount": 5,
-      "sourceIds": [
-        "itch-newest-web",
-        "itch-new",
-        "itch-new-feed",
-        "itch-new-popular-web",
-        "itch-popular"
-      ]
-    },
-    {
       "name": "Stoneheart Archive",
       "channel": "online",
       "fastClass": "pending",
@@ -357,6 +314,25 @@
     },
     {
       "name": "Praise Be Evangeline",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 15,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 0,
+      "strategicCount": 2,
+      "sourceCount": 5,
+      "sourceIds": [
+        "itch-newest-web",
+        "itch-new",
+        "itch-new-feed",
+        "itch-new-popular-web",
+        "itch-popular"
+      ]
+    },
+    {
+      "name": "Penguin Planet",
       "channel": "online",
       "fastClass": "pending",
       "fastScore": 0,
@@ -1065,6 +1041,25 @@
       "platforms": 1,
       "browserPlayable": true,
       "nameRisk": 9,
+      "strategicCount": 2,
+      "sourceCount": 5,
+      "sourceIds": [
+        "itch-newest-web",
+        "itch-new",
+        "itch-new-feed",
+        "itch-new-popular-web",
+        "itch-popular"
+      ]
+    },
+    {
+      "name": "Poke the Bug",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 15,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 6,
       "strategicCount": 2,
       "sourceCount": 5,
       "sourceIds": [
