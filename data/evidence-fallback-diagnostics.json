@@ -1,71 +1,70 @@
 {
-  "generatedAt": "2026-10-01T13:15:35.283Z",
+  "generatedAt": "2026-10-01T19:32:21.483Z",
   "totalCandidates": 3000,
-  "pendingSeo": 2502,
+  "pendingSeo": 2504,
   "channelCounts": {
-    "pending": 423,
-    "online": 2068,
-    "wiki": 11
+    "pending": 417,
+    "online": 2075,
+    "wiki": 12
   },
   "fastClassCounts": {
-    "pending:pending": 423,
-    "online:pending": 2068,
-    "wiki:pending": 11
+    "pending:pending": 417,
+    "online:pending": 2075,
+    "wiki:pending": 12
   },
   "strategicCounts": {
-    "pending:0": 420,
+    "pending:0": 415,
     "online:3": 1,
-    "online:2": 215,
-    "wiki:2": 1,
+    "online:2": 209,
     "wiki:0": 1,
-    "online:1": 1852,
-    "pending:1": 3,
-    "wiki:1": 9
+    "online:1": 1865,
+    "pending:1": 2,
+    "wiki:1": 11
   },
   "topSources": [
     {
       "id": "itch-new",
-      "count": 2039
+      "count": 2049
     },
     {
       "id": "itch-newest-web",
-      "count": 2026
+      "count": 2036
     },
     {
       "id": "itch-new-feed",
-      "count": 1975
+      "count": 1988
     },
     {
       "id": "trends-rising-7d",
-      "count": 361
+      "count": 356
     },
     {
       "id": "trends-rising-30d",
-      "count": 225
+      "count": 222
     },
     {
       "id": "itch-new-popular-web",
-      "count": 194
+      "count": 190
     },
     {
       "id": "itch-popular",
-      "count": 194
+      "count": 190
     },
     {
       "id": "trends-rising-7d-horror-game",
-      "count": 191
+      "count": 189
     },
     {
       "id": "trends-rising-30d-horror-game",
-      "count": 117
+      "count": 115
     },
     {
       "id": "trends-rising-7d-indie-game",
-      "count": 101
+      "count": 99
     },
     {
       "id": "trends-rising-7d-itch-io",
-      "count": 77
+      "count": 76
     },
     {
       "id": "trends-rising-30d-indie-game",
@@ -73,35 +72,27 @@
     },
     {
       "id": "trends-rising-30d-itch-io",
-      "count": 53
+      "count": 52
     },
     {
       "id": "newgrounds-latest",
-      "count": 28
+      "count": 26
     },
     {
       "id": "newgrounds-new",
-      "count": 28
+      "count": 26
     },
     {
       "id": "newgrounds-daily-top",
-      "count": 26
+      "count": 24
     },
     {
       "id": "newgrounds-top",
-      "count": 26
+      "count": 24
     },
     {
       "id": "steam-popular-new",
-      "count": 12
-    },
-    {
-      "id": "itch-featured-feed",
-      "count": 8
-    },
-    {
-      "id": "itch-featured",
-      "count": 8
+      "count": 13
     },
     {
       "id": "steam-latest-indie",
@@ -110,6 +101,14 @@
     {
       "id": "steam-new",
       "count": 7
+    },
+    {
+      "id": "itch-featured-feed",
+      "count": 6
+    },
+    {
+      "id": "itch-featured",
+      "count": 6
     },
     {
       "id": "y8-new",
@@ -121,7 +120,7 @@
     },
     {
       "id": "lagged-new",
-      "count": 2
+      "count": 1
     }
   ],
   "samples": [
@@ -143,6 +142,26 @@
         "itch-featured",
         "itch-new-popular-web",
         "itch-popular"
+      ]
+    },
+    {
+      "name": "Brick by Brick",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 15,
+      "platforms": 2,
+      "browserPlayable": true,
+      "nameRisk": 0,
+      "strategicCount": 2,
+      "sourceCount": 6,
+      "sourceIds": [
+        "itch-newest-web",
+        "itch-new",
+        "itch-new-feed",
+        "steam-latest-indie",
+        "steam-new",
+        "y8-new"
       ]
     },
     {
@@ -280,25 +299,6 @@
       ]
     },
     {
-      "name": "TUMBLESTORM",
-      "channel": "online",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 17,
-      "platforms": 1,
-      "browserPlayable": true,
-      "nameRisk": 5,
-      "strategicCount": 2,
-      "sourceCount": 5,
-      "sourceIds": [
-        "itch-newest-web",
-        "itch-new",
-        "itch-new-feed",
-        "itch-new-popular-web",
-        "itch-popular"
-      ]
-    },
-    {
       "name": "Stoneheart Archive",
       "channel": "online",
       "fastClass": "pending",
@@ -364,6 +364,25 @@
       "platforms": 1,
       "browserPlayable": true,
       "nameRisk": 0,
+      "strategicCount": 2,
+      "sourceCount": 5,
+      "sourceIds": [
+        "itch-newest-web",
+        "itch-new",
+        "itch-new-feed",
+        "itch-new-popular-web",
+        "itch-popular"
+      ]
+    },
+    {
+      "name": "TUMBLESTORM",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 15,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 5,
       "strategicCount": 2,
       "sourceCount": 5,
       "sourceIds": [
@@ -1046,25 +1065,6 @@
       "platforms": 1,
       "browserPlayable": true,
       "nameRisk": 9,
-      "strategicCount": 2,
-      "sourceCount": 5,
-      "sourceIds": [
-        "itch-newest-web",
-        "itch-new",
-        "itch-new-feed",
-        "itch-new-popular-web",
-        "itch-popular"
-      ]
-    },
-    {
-      "name": "Poke the Bug",
-      "channel": "online",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 15,
-      "platforms": 1,
-      "browserPlayable": true,
-      "nameRisk": 6,
       "strategicCount": 2,
       "sourceCount": 5,
       "sourceIds": [
