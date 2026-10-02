@@ -1,58 +1,58 @@
 {
-  "generatedAt": "2026-10-01T23:53:18.931Z",
+  "generatedAt": "2026-10-02T05:37:50.133Z",
   "totalCandidates": 3000,
-  "pendingSeo": 2506,
+  "pendingSeo": 2505,
   "channelCounts": {
-    "online": 2079,
     "pending": 415,
-    "wiki": 12
+    "online": 2082,
+    "wiki": 8
   },
   "fastClassCounts": {
-    "online:pending": 2079,
     "pending:pending": 415,
-    "wiki:pending": 12
+    "online:pending": 2082,
+    "wiki:pending": 8
   },
   "strategicCounts": {
-    "online:1": 1876,
     "pending:0": 413,
     "online:3": 1,
     "online:2": 202,
     "wiki:0": 1,
+    "online:1": 1879,
     "pending:1": 2,
-    "wiki:1": 11
+    "wiki:1": 7
   },
   "topSources": [
     {
       "id": "itch-new",
-      "count": 2055
+      "count": 2060
     },
     {
       "id": "itch-newest-web",
-      "count": 2042
+      "count": 2046
     },
     {
       "id": "itch-new-feed",
-      "count": 1996
+      "count": 2001
     },
     {
       "id": "trends-rising-7d",
-      "count": 355
+      "count": 354
     },
     {
       "id": "trends-rising-30d",
-      "count": 224
+      "count": 222
     },
     {
       "id": "trends-rising-7d-horror-game",
-      "count": 189
+      "count": 190
     },
     {
       "id": "itch-new-popular-web",
-      "count": 188
+      "count": 187
     },
     {
       "id": "itch-popular",
-      "count": 188
+      "count": 187
     },
     {
       "id": "trends-rising-30d-horror-game",
@@ -60,19 +60,19 @@
     },
     {
       "id": "trends-rising-7d-indie-game",
-      "count": 97
+      "count": 96
     },
     {
       "id": "trends-rising-7d-itch-io",
-      "count": 77
+      "count": 76
     },
     {
       "id": "trends-rising-30d-indie-game",
-      "count": 61
+      "count": 60
     },
     {
       "id": "trends-rising-30d-itch-io",
-      "count": 53
+      "count": 52
     },
     {
       "id": "newgrounds-latest",
@@ -92,7 +92,7 @@
     },
     {
       "id": "steam-popular-new",
-      "count": 13
+      "count": 9
     },
     {
       "id": "itch-featured-feed",
@@ -237,25 +237,6 @@
       ]
     },
     {
-      "name": "WALL//KEEP",
-      "channel": "online",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 17,
-      "platforms": 1,
-      "browserPlayable": true,
-      "nameRisk": 0,
-      "strategicCount": 2,
-      "sourceCount": 5,
-      "sourceIds": [
-        "itch-newest-web",
-        "itch-new",
-        "itch-new-feed",
-        "itch-new-popular-web",
-        "itch-popular"
-      ]
-    },
-    {
       "name": "Stoneheart Archive",
       "channel": "online",
       "fastClass": "pending",
@@ -314,6 +295,25 @@
     },
     {
       "name": "Praise Be Evangeline",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 15,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 0,
+      "strategicCount": 2,
+      "sourceCount": 5,
+      "sourceIds": [
+        "itch-newest-web",
+        "itch-new",
+        "itch-new-feed",
+        "itch-new-popular-web",
+        "itch-popular"
+      ]
+    },
+    {
+      "name": "WALL//KEEP",
       "channel": "online",
       "fastClass": "pending",
       "fastScore": 0,
