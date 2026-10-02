@@ -1,62 +1,62 @@
 {
-  "generatedAt": "2026-10-02T05:37:50.133Z",
+  "generatedAt": "2026-10-02T12:35:26.840Z",
   "totalCandidates": 3000,
-  "pendingSeo": 2505,
+  "pendingSeo": 2509,
   "channelCounts": {
-    "pending": 415,
-    "online": 2082,
+    "pending": 413,
+    "online": 2088,
     "wiki": 8
   },
   "fastClassCounts": {
-    "pending:pending": 415,
-    "online:pending": 2082,
+    "pending:pending": 413,
+    "online:pending": 2088,
     "wiki:pending": 8
   },
   "strategicCounts": {
-    "pending:0": 413,
+    "pending:0": 411,
     "online:3": 1,
-    "online:2": 202,
+    "online:2": 199,
     "wiki:0": 1,
-    "online:1": 1879,
+    "online:1": 1888,
     "pending:1": 2,
     "wiki:1": 7
   },
   "topSources": [
     {
       "id": "itch-new",
-      "count": 2060
+      "count": 2068
     },
     {
       "id": "itch-newest-web",
-      "count": 2046
+      "count": 2053
     },
     {
       "id": "itch-new-feed",
-      "count": 2001
+      "count": 2012
     },
     {
       "id": "trends-rising-7d",
-      "count": 354
+      "count": 352
     },
     {
       "id": "trends-rising-30d",
-      "count": 222
+      "count": 221
     },
     {
       "id": "trends-rising-7d-horror-game",
-      "count": 190
+      "count": 188
     },
     {
       "id": "itch-new-popular-web",
-      "count": 187
+      "count": 185
     },
     {
       "id": "itch-popular",
-      "count": 187
+      "count": 185
     },
     {
       "id": "trends-rising-30d-horror-game",
-      "count": 116
+      "count": 115
     },
     {
       "id": "trends-rising-7d-indie-game",
@@ -76,19 +76,19 @@
     },
     {
       "id": "newgrounds-latest",
-      "count": 24
+      "count": 23
     },
     {
       "id": "newgrounds-new",
-      "count": 24
+      "count": 23
     },
     {
       "id": "newgrounds-daily-top",
-      "count": 22
+      "count": 21
     },
     {
       "id": "newgrounds-top",
-      "count": 22
+      "count": 21
     },
     {
       "id": "steam-popular-new",
@@ -226,6 +226,25 @@
       "platforms": 1,
       "browserPlayable": true,
       "nameRisk": 0,
+      "strategicCount": 2,
+      "sourceCount": 5,
+      "sourceIds": [
+        "itch-newest-web",
+        "itch-new",
+        "itch-new-feed",
+        "itch-new-popular-web",
+        "itch-popular"
+      ]
+    },
+    {
+      "name": "Bopp Clicker Web",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 15,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 12,
       "strategicCount": 2,
       "sourceCount": 5,
       "sourceIds": [
@@ -1041,25 +1060,6 @@
       "platforms": 1,
       "browserPlayable": true,
       "nameRisk": 9,
-      "strategicCount": 2,
-      "sourceCount": 5,
-      "sourceIds": [
-        "itch-newest-web",
-        "itch-new",
-        "itch-new-feed",
-        "itch-new-popular-web",
-        "itch-popular"
-      ]
-    },
-    {
-      "name": "Poke the Bug",
-      "channel": "online",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 15,
-      "platforms": 1,
-      "browserPlayable": true,
-      "nameRisk": 6,
       "strategicCount": 2,
       "sourceCount": 5,
       "sourceIds": [
