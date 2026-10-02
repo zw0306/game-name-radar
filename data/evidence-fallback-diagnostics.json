@@ -1,62 +1,62 @@
 {
-  "generatedAt": "2026-10-02T12:35:26.840Z",
+  "generatedAt": "2026-10-02T18:25:26.574Z",
   "totalCandidates": 3000,
-  "pendingSeo": 2509,
+  "pendingSeo": 2510,
   "channelCounts": {
-    "pending": 413,
-    "online": 2088,
+    "pending": 420,
+    "online": 2082,
     "wiki": 8
   },
   "fastClassCounts": {
-    "pending:pending": 413,
-    "online:pending": 2088,
+    "pending:pending": 420,
+    "online:pending": 2082,
     "wiki:pending": 8
   },
   "strategicCounts": {
-    "pending:0": 411,
+    "pending:0": 418,
     "online:3": 1,
-    "online:2": 199,
+    "online:2": 186,
     "wiki:0": 1,
-    "online:1": 1888,
+    "online:1": 1895,
     "pending:1": 2,
     "wiki:1": 7
   },
   "topSources": [
     {
       "id": "itch-new",
-      "count": 2068
+      "count": 2062
     },
     {
       "id": "itch-newest-web",
-      "count": 2053
+      "count": 2047
     },
     {
       "id": "itch-new-feed",
-      "count": 2012
+      "count": 2016
     },
     {
       "id": "trends-rising-7d",
-      "count": 352
+      "count": 357
     },
     {
       "id": "trends-rising-30d",
-      "count": 221
+      "count": 224
     },
     {
       "id": "trends-rising-7d-horror-game",
-      "count": 188
+      "count": 192
     },
     {
       "id": "itch-new-popular-web",
-      "count": 185
+      "count": 172
     },
     {
       "id": "itch-popular",
-      "count": 185
+      "count": 172
     },
     {
       "id": "trends-rising-30d-horror-game",
-      "count": 115
+      "count": 117
     },
     {
       "id": "trends-rising-7d-indie-game",
@@ -64,7 +64,7 @@
     },
     {
       "id": "trends-rising-7d-itch-io",
-      "count": 76
+      "count": 77
     },
     {
       "id": "trends-rising-30d-indie-game",
@@ -72,7 +72,7 @@
     },
     {
       "id": "trends-rising-30d-itch-io",
-      "count": 52
+      "count": 53
     },
     {
       "id": "newgrounds-latest",
@@ -95,19 +95,19 @@
       "count": 9
     },
     {
+      "id": "steam-latest-indie",
+      "count": 7
+    },
+    {
+      "id": "steam-new",
+      "count": 7
+    },
+    {
       "id": "itch-featured-feed",
       "count": 6
     },
     {
       "id": "itch-featured",
-      "count": 6
-    },
-    {
-      "id": "steam-latest-indie",
-      "count": 6
-    },
-    {
-      "id": "steam-new",
       "count": 6
     },
     {
@@ -218,25 +218,6 @@
       ]
     },
     {
-      "name": "Frog Eats Flies!",
-      "channel": "online",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 17,
-      "platforms": 1,
-      "browserPlayable": true,
-      "nameRisk": 0,
-      "strategicCount": 2,
-      "sourceCount": 5,
-      "sourceIds": [
-        "itch-newest-web",
-        "itch-new",
-        "itch-new-feed",
-        "itch-new-popular-web",
-        "itch-popular"
-      ]
-    },
-    {
       "name": "Bopp Clicker Web",
       "channel": "online",
       "fastClass": "pending",
@@ -295,6 +276,25 @@
     },
     {
       "name": "Atom By Atom",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 15,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 0,
+      "strategicCount": 2,
+      "sourceCount": 5,
+      "sourceIds": [
+        "itch-newest-web",
+        "itch-new",
+        "itch-new-feed",
+        "itch-new-popular-web",
+        "itch-popular"
+      ]
+    },
+    {
+      "name": "Frog Eats Flies!",
       "channel": "online",
       "fastClass": "pending",
       "fastScore": 0,
