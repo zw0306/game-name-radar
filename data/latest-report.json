@@ -1,37 +1,37 @@
 {
-  "scannedAt": "2026-10-03T01:57:01.471Z",
+  "scannedAt": "2026-10-03T08:05:57.542Z",
   "targetMarket": "US_GLOBAL",
   "primaryMarket": "US",
   "referenceMarket": "WORLDWIDE",
-  "totalAdded": 114,
+  "totalAdded": 164,
   "sources": [
     {
       "ok": true,
       "sourceId": "itch-newest-web",
       "sourceName": "itch.io 最新网页游戏",
       "total": 36,
-      "added": 36
+      "added": 35
     },
     {
       "ok": true,
       "sourceId": "itch-new-popular-web",
       "sourceName": "itch.io New & Popular",
       "total": 36,
-      "added": 0
+      "added": 2
     },
     {
       "ok": true,
       "sourceId": "itch-new-feed",
       "sourceName": "itch.io New Feed",
       "total": 36,
-      "added": 35
+      "added": 36
     },
     {
       "ok": true,
       "sourceId": "itch-featured-feed",
       "sourceName": "itch.io Featured Feed",
       "total": 10,
-      "added": 0
+      "added": 1
     },
     {
       "ok": true,
@@ -45,28 +45,28 @@
       "sourceId": "steam-popular-new",
       "sourceName": "Steam 热门新发行",
       "total": 50,
-      "added": 3
+      "added": 4
     },
     {
       "ok": true,
       "sourceId": "steam-latest-indie",
       "sourceName": "Steam 最新独立游戏",
       "total": 50,
-      "added": 2
+      "added": 4
     },
     {
       "ok": true,
       "sourceId": "newgrounds-daily-top",
       "sourceName": "Newgrounds Daily Top Five",
       "total": 5,
-      "added": 0
+      "added": 5
     },
     {
       "ok": true,
       "sourceId": "newgrounds-latest",
       "sourceName": "Newgrounds 最新通过作品",
       "total": 12,
-      "added": 5
+      "added": 10
     },
     {
       "ok": true,
@@ -79,7 +79,7 @@
       "ok": true,
       "sourceId": "poki-new",
       "sourceName": "Poki 新游戏",
-      "total": 162,
+      "total": 142,
       "added": 1
     },
     {
@@ -87,7 +87,7 @@
       "sourceId": "y8-new",
       "sourceName": "Y8 新游戏",
       "total": 73,
-      "added": 32
+      "added": 40
     },
     {
       "ok": false,
@@ -101,28 +101,70 @@
       "sourceName": "Lagged 新游戏",
       "total": 82,
       "added": 0
+    },
+    {
+      "ok": true,
+      "sourceId": "trends-rising-7d-itch-io",
+      "sourceName": "Trends上涨 7天 · itch io",
+      "total": 16,
+      "added": 9
+    },
+    {
+      "ok": true,
+      "sourceId": "trends-rising-30d-itch-io",
+      "sourceName": "Trends上涨 30天 · itch io",
+      "total": 18,
+      "added": 7
+    },
+    {
+      "ok": true,
+      "sourceId": "trends-rising-7d-indie-game",
+      "sourceName": "Trends上涨 7天 · indie game",
+      "total": 2,
+      "added": 1
+    },
+    {
+      "ok": true,
+      "sourceId": "trends-rising-30d-indie-game",
+      "sourceName": "Trends上涨 30天 · indie game",
+      "total": 1,
+      "added": 0
+    },
+    {
+      "ok": true,
+      "sourceId": "trends-rising-7d-horror-game",
+      "sourceName": "Trends上涨 7天 · horror game",
+      "total": 13,
+      "added": 4
+    },
+    {
+      "ok": true,
+      "sourceId": "trends-rising-30d-horror-game",
+      "sourceName": "Trends上涨 30天 · horror game",
+      "total": 20,
+      "added": 5
     }
   ],
   "seoVerified": 0,
   "seoErrors": 0,
   "fastModelVersion": 3,
-  "fastPassedCount": 185,
+  "fastPassedCount": 184,
   "fastWatchCount": 142,
   "fastRejectedCount": 163,
   "youtubeEnabled": false,
   "youtubeConfigured": false,
   "youtubeVerified": 0,
   "youtubeErrors": 0,
-  "trendsVerified": 4,
-  "trendErrors": 9,
+  "trendsVerified": 0,
+  "trendErrors": 3,
   "trendBatchRan": true,
   "trendQueueSize": 0,
-  "risingDiscoveryRan": false,
+  "risingDiscoveryRan": true,
   "seoModelVersion": 5,
   "trendModelVersion": 4,
-  "seoPassedCount": 338,
-  "trendEligibleCount": 162,
-  "trendPendingCount": 154,
+  "seoPassedCount": 337,
+  "trendEligibleCount": 161,
+  "trendPendingCount": 157,
   "trendValidatedCount": 238,
   "risingCount": 10,
   "globalRisingCount": 0,
@@ -130,14 +172,14 @@
     "independent": 0,
     "test-now": 0,
     "page": 3,
-    "watch": 363,
+    "watch": 364,
     "reject": 0,
-    "pending": 2634,
+    "pending": 2633,
     "error": 0
   },
   "trendProvider": "apify-data-xplorer+serpapi",
   "trendProviderCounts": {
-    "apify-data-xplorer": 60,
+    "apify-data-xplorer": 61,
     "serpapi": 188
   },
   "serpApiConfigured": true,
@@ -153,7 +195,7 @@
   },
   "apifyConfigured": true,
   "apifyAccountStatus": {
-    "checkedAt": "2026-10-03T01:57:00.210Z",
+    "checkedAt": "2026-10-03T08:05:56.355Z",
     "configured": true,
     "ok": true,
     "provider": "apify",
@@ -169,18 +211,18 @@
   },
   "apifyTrendsUsage": {
     "month": "2026-10",
-    "actorCalls": 27,
+    "actorCalls": 30,
     "resultItems": 0,
     "candidatesVerified": 0,
-    "errors": 27,
+    "errors": 30,
     "monthlyCallLimit": 4000,
-    "updatedAt": "2026-10-03T01:57:08.266Z"
+    "updatedAt": "2026-10-03T08:06:26.849Z"
   },
   "seoProvider": "serper-google-search",
   "seoProviderCounts": {
     "serper+autocomplete": 279,
-    "evidence-fallback": 167,
-    "duckduckgo+autocomplete": 44
+    "evidence-fallback": 168,
+    "duckduckgo+autocomplete": 43
   },
   "serperConfigured": true,
   "serperUsage": {
@@ -190,7 +232,7 @@
     "dayUsed": 0,
     "totalLimit": 2450,
     "dailyLimit": 2450,
-    "updatedAt": "2026-10-03T01:57:06.020Z",
+    "updatedAt": "2026-10-03T08:06:24.558Z",
     "lastError": "Not enough credits"
   },
   "googleCseConfiguredSlots": 0,
@@ -209,9 +251,9 @@
   },
   "siteTypeModelVersion": 2,
   "siteTypeCounts": {
-    "online": 2406,
+    "online": 2403,
     "wiki": 127,
-    "pending": 467
+    "pending": 470
   },
   "wikiPrelaunchModelVersion": 2,
   "wikiPrelaunchCounts": {
@@ -241,29 +283,31 @@
     "errors": 0,
     "quotaStopped": true,
     "verifiedNames": [],
-    "ranAt": "2026-10-03T01:57:06.159Z"
+    "ranAt": "2026-10-03T08:06:24.686Z"
   },
   "evidenceSeoFallback": {
     "enabled": true,
     "limit": 180,
-    "pendingCount": 2510,
-    "eligibleCount": 0,
-    "queueSize": 0,
-    "verified": 0,
+    "pendingCount": 2511,
+    "eligibleCount": 1,
+    "queueSize": 1,
+    "verified": 1,
     "channelVerified": {
-      "online": 0,
+      "online": 1,
       "wiki": 0,
       "pending": 0
     },
     "fastRecalculated": {
-      "pass": 0,
+      "pass": 1,
       "watch": 0,
       "weak": 0,
       "reject": 0,
       "pending": 0
     },
-    "verifiedNames": [],
-    "ranAt": "2026-10-03T01:57:06.796Z"
+    "verifiedNames": [
+      "Obby: +1 Digging Power per Click"
+    ],
+    "ranAt": "2026-10-03T08:06:25.346Z"
   },
   "socialBuzzVerification": {
     "modelVersion": 3,
@@ -285,7 +329,7 @@
       "x": 0,
       "tiktok": 0
     },
-    "ranAt": "2026-10-03T01:57:07.750Z"
+    "ranAt": "2026-10-03T08:06:26.358Z"
   },
   "channelOpportunityCounts": {
     "online": {
@@ -312,7 +356,7 @@
     "verifyLimit": 200,
     "effectiveLimit": 200,
     "monthlyCallLimit": 4000,
-    "remainingCallsAtStart": 3976,
+    "remainingCallsAtStart": 3973,
     "queueSize": 200,
     "verified": 0,
     "errors": 3,
@@ -331,42 +375,42 @@
       "strategic": 0
     },
     "pendingByChannel": {
-      "online": 198,
-      "wiki": 54
+      "online": 194,
+      "wiki": 53
     },
     "pendingByTier": {
-      "strong": 120,
+      "strong": 115,
       "secondary": 88,
       "strategic": 44
     },
     "verifiedNames": [],
     "errorNames": [
       {
-        "name": "Ocean Rescue Sort",
+        "name": "Attack & Dash",
         "error": "Monthly usage hard limit exceeded",
         "actorCalls": 1
       },
       {
-        "name": "Remember",
+        "name": "Obby: +1 Digging Power per Click",
         "error": "Monthly usage hard limit exceeded",
         "actorCalls": 1
       },
       {
-        "name": "CMYK Puzzle",
+        "name": "Card Clash Battle Arena",
         "error": "Monthly usage hard limit exceeded",
         "actorCalls": 1
       }
     ],
-    "ranAt": "2026-10-03T01:57:08.399Z"
+    "ranAt": "2026-10-03T08:06:26.981Z"
   },
   "serpApiAccountStatus": {
-    "checkedAt": "2026-10-03T01:57:08.543Z",
+    "checkedAt": "2026-10-03T08:06:27.127Z",
     "accountApiConsumesSearchCredits": false,
     "configuredKeys": 1,
     "workingKeys": 1,
     "uniqueAccountCount": 1,
     "duplicateKeyGroups": [],
-    "totalIndependentSearchesLeft": 4,
+    "totalIndependentSearchesLeft": 0,
     "accounts": [
       {
         "accountFingerprint": "ea334463bd86",
@@ -375,8 +419,8 @@
         ],
         "planName": "Free Plan",
         "searchesPerMonth": 250,
-        "thisMonthUsage": 246,
-        "totalSearchesLeft": 4,
+        "thisMonthUsage": 250,
+        "totalSearchesLeft": 0,
         "renewalDate": "2026-10-19"
       }
     ],
@@ -387,17 +431,17 @@
         "configured": true,
         "ok": true,
         "accountFingerprint": "ea334463bd86",
-        "accountStatus": "Active",
+        "accountStatus": "Your account has run out of searches.",
         "planId": "free",
         "planName": "Free Plan",
         "planMonthlyPrice": 0,
         "renewalDate": "2026-10-19",
         "searchesPerMonth": 250,
-        "thisMonthUsage": 246,
-        "planSearchesLeft": 4,
-        "totalSearchesLeft": 4,
+        "thisMonthUsage": 250,
+        "planSearchesLeft": 0,
+        "totalSearchesLeft": 0,
         "rateLimitPerHour": 250,
-        "checkedAt": "2026-10-03T01:57:08.542Z",
+        "checkedAt": "2026-10-03T08:06:27.126Z",
         "sharedAccount": false,
         "sharedWithSlots": []
       },
@@ -434,19 +478,19 @@
   "serpApiQuotaFill": {
     "enabled": true,
     "configuredSlots": 1,
-    "remainingAtStart": 10,
-    "queueSize": 252,
-    "verified": 4,
-    "errors": 6,
-    "quotaStopped": true,
+    "remainingAtStart": 0,
+    "queueSize": 0,
+    "verified": 0,
+    "errors": 0,
+    "quotaStopped": false,
     "tierCounts": {
-      "strong": 4,
+      "strong": 0,
       "secondary": 0,
       "strategic": 0
     },
     "channelVerified": {
-      "online": 3,
-      "wiki": 1,
+      "online": 0,
+      "wiki": 0,
       "pending": 0
     },
     "pendingByTier": {
@@ -458,12 +502,7 @@
       "online": 194,
       "wiki": 53
     },
-    "verifiedNames": [
-      "Ocean Rescue Sort",
-      "CMYK Puzzle",
-      "game banana",
-      "Mystery Mansion Lost in the No Spotlight Rooms"
-    ],
+    "verifiedNames": [],
     "caps": {
       "online": 999,
       "wiki": 999,
@@ -475,17 +514,17 @@
         "envName": "SERPAPI_API_KEY",
         "ok": true,
         "error": null,
-        "verified": 4,
+        "verified": 0,
         "channelVerified": {
-          "online": 3,
-          "wiki": 1,
+          "online": 0,
+          "wiki": 0,
           "pending": 0
         },
-        "errors": 6,
-        "quotaStopped": true
+        "errors": 0,
+        "quotaStopped": false
       }
     },
-    "ranAt": "2026-10-03T01:57:47.823Z"
+    "ranAt": "2026-10-03T08:06:27.732Z"
   },
   "serpApiConfiguredSlots": 1,
   "serpApiPoolUsage": {
@@ -507,7 +546,7 @@
         "updatedAt": "2026-10-03T01:57:46.724Z"
       }
     },
-    "updatedAt": "2026-10-03T01:57:47.874Z"
+    "updatedAt": "2026-10-03T08:06:27.785Z"
   },
   "searchApiConfigured": false,
   "searchApiTrendsUsage": {
@@ -550,6 +589,6 @@
     },
     "verifiedNames": [],
     "errorNames": [],
-    "ranAt": "2026-10-03T01:57:48.355Z"
+    "ranAt": "2026-10-03T08:06:28.280Z"
   }
 }
