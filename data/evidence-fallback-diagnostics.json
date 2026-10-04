@@ -1,30 +1,30 @@
 {
-  "generatedAt": "2026-10-04T00:37:59.345Z",
+  "generatedAt": "2026-10-04T06:50:23.499Z",
   "totalCandidates": 3000,
   "pendingSeo": 2513,
   "channelCounts": {
-    "pending": 430,
+    "pending": 431,
     "online": 2080,
-    "wiki": 3
+    "wiki": 2
   },
   "fastClassCounts": {
-    "pending:pending": 430,
+    "pending:pending": 431,
     "online:pending": 2080,
-    "wiki:pending": 3
+    "wiki:pending": 2
   },
   "strategicCounts": {
-    "pending:0": 423,
+    "pending:0": 424,
     "online:3": 1,
-    "online:2": 165,
+    "online:2": 164,
     "wiki:0": 1,
     "pending:1": 7,
-    "online:1": 1914,
-    "wiki:1": 2
+    "online:1": 1915,
+    "wiki:1": 1
   },
   "topSources": [
     {
       "id": "itch-new",
-      "count": 2067
+      "count": 2066
     },
     {
       "id": "itch-newest-web",
@@ -32,11 +32,11 @@
     },
     {
       "id": "itch-new-feed",
-      "count": 2032
+      "count": 2031
     },
     {
       "id": "trends-rising-7d",
-      "count": 360
+      "count": 361
     },
     {
       "id": "trends-rising-30d",
@@ -48,11 +48,11 @@
     },
     {
       "id": "itch-new-popular-web",
-      "count": 156
+      "count": 155
     },
     {
       "id": "itch-popular",
-      "count": 156
+      "count": 155
     },
     {
       "id": "trends-rising-30d-horror-game",
@@ -64,7 +64,7 @@
     },
     {
       "id": "trends-rising-7d-itch-io",
-      "count": 80
+      "count": 81
     },
     {
       "id": "trends-rising-30d-indie-game",
@@ -100,11 +100,11 @@
     },
     {
       "id": "steam-latest-indie",
-      "count": 7
+      "count": 6
     },
     {
       "id": "steam-new",
-      "count": 7
+      "count": 6
     },
     {
       "id": "steam-popular-new",
@@ -161,14 +161,14 @@
       ]
     },
     {
-      "name": "PlesentFlight",
+      "name": "Bopp Clicker Web",
       "channel": "online",
       "fastClass": "pending",
       "fastScore": 0,
-      "discoveryScore": 17,
+      "discoveryScore": 15,
       "platforms": 1,
       "browserPlayable": true,
-      "nameRisk": 5,
+      "nameRisk": 12,
       "strategicCount": 2,
       "sourceCount": 5,
       "sourceIds": [
@@ -180,14 +180,14 @@
       ]
     },
     {
-      "name": "Bopp Clicker Web",
+      "name": "PlesentFlight",
       "channel": "online",
       "fastClass": "pending",
       "fastScore": 0,
       "discoveryScore": 15,
       "platforms": 1,
       "browserPlayable": true,
-      "nameRisk": 12,
+      "nameRisk": 5,
       "strategicCount": 2,
       "sourceCount": 5,
       "sourceIds": [
