@@ -1,49 +1,49 @@
 {
-  "generatedAt": "2026-10-05T07:03:00.820Z",
+  "generatedAt": "2026-10-05T16:00:38.139Z",
   "totalCandidates": 3000,
-  "pendingSeo": 2517,
+  "pendingSeo": 2520,
   "channelCounts": {
-    "pending": 433,
-    "online": 2083,
+    "pending": 429,
+    "online": 2090,
     "wiki": 1
   },
   "fastClassCounts": {
-    "pending:pending": 433,
-    "online:pending": 2083,
+    "pending:pending": 429,
+    "online:pending": 2090,
     "wiki:pending": 1
   },
   "strategicCounts": {
-    "pending:0": 427,
+    "pending:0": 423,
     "online:3": 1,
     "online:2": 155,
     "wiki:0": 1,
     "pending:1": 6,
-    "online:1": 1927
+    "online:1": 1934
   },
   "topSources": [
     {
       "id": "itch-new",
-      "count": 2073
+      "count": 2081
     },
     {
       "id": "itch-newest-web",
-      "count": 2060
+      "count": 2069
     },
     {
       "id": "itch-new-feed",
-      "count": 2038
+      "count": 2046
     },
     {
       "id": "trends-rising-7d",
-      "count": 363
+      "count": 359
     },
     {
       "id": "trends-rising-30d",
-      "count": 228
+      "count": 227
     },
     {
       "id": "trends-rising-7d-horror-game",
-      "count": 193
+      "count": 190
     },
     {
       "id": "itch-new-popular-web",
@@ -55,7 +55,7 @@
     },
     {
       "id": "trends-rising-30d-horror-game",
-      "count": 120
+      "count": 119
     },
     {
       "id": "trends-rising-7d-indie-game",
@@ -63,7 +63,7 @@
     },
     {
       "id": "trends-rising-7d-itch-io",
-      "count": 82
+      "count": 81
     },
     {
       "id": "trends-rising-30d-indie-game",
@@ -74,14 +74,6 @@
       "count": 54
     },
     {
-      "id": "newgrounds-latest",
-      "count": 12
-    },
-    {
-      "id": "newgrounds-new",
-      "count": 12
-    },
-    {
       "id": "itch-featured-feed",
       "count": 11
     },
@@ -90,12 +82,20 @@
       "count": 11
     },
     {
-      "id": "newgrounds-daily-top",
+      "id": "newgrounds-latest",
       "count": 11
     },
     {
-      "id": "newgrounds-top",
+      "id": "newgrounds-new",
       "count": 11
+    },
+    {
+      "id": "newgrounds-daily-top",
+      "count": 10
+    },
+    {
+      "id": "newgrounds-top",
+      "count": 10
     },
     {
       "id": "steam-latest-indie",
@@ -157,6 +157,25 @@
         "itch-new",
         "itch-featured-feed",
         "itch-featured"
+      ]
+    },
+    {
+      "name": "Maybe... I'll go to the beach",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 17,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 5,
+      "strategicCount": 2,
+      "sourceCount": 5,
+      "sourceIds": [
+        "itch-newest-web",
+        "itch-new",
+        "itch-new-feed",
+        "itch-new-popular-web",
+        "itch-popular"
       ]
     },
     {
@@ -1032,25 +1051,6 @@
     },
     {
       "name": "SUPER YIPPIE CLICKER",
-      "channel": "online",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 15,
-      "platforms": 1,
-      "browserPlayable": true,
-      "nameRisk": 12,
-      "strategicCount": 2,
-      "sourceCount": 5,
-      "sourceIds": [
-        "itch-newest-web",
-        "itch-new",
-        "itch-new-feed",
-        "itch-new-popular-web",
-        "itch-popular"
-      ]
-    },
-    {
-      "name": "11 - Minute Hero",
       "channel": "online",
       "fastClass": "pending",
       "fastScore": 0,
