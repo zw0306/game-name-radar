@@ -1,9 +1,9 @@
 {
-  "scannedAt": "2026-10-04T21:24:50.129Z",
+  "scannedAt": "2026-10-05T07:02:37.793Z",
   "targetMarket": "US_GLOBAL",
   "primaryMarket": "US",
   "referenceMarket": "WORLDWIDE",
-  "totalAdded": 130,
+  "totalAdded": 150,
   "sources": [
     {
       "ok": true,
@@ -17,7 +17,7 @@
       "sourceId": "itch-new-popular-web",
       "sourceName": "itch.io New & Popular",
       "total": 36,
-      "added": 1
+      "added": 6
     },
     {
       "ok": true,
@@ -31,7 +31,7 @@
       "sourceId": "itch-featured-feed",
       "sourceName": "itch.io Featured Feed",
       "total": 10,
-      "added": 1
+      "added": 0
     },
     {
       "ok": true,
@@ -52,41 +52,42 @@
       "sourceId": "steam-latest-indie",
       "sourceName": "Steam 最新独立游戏",
       "total": 50,
-      "added": 4
+      "added": 7
     },
     {
-      "ok": false,
+      "ok": true,
       "sourceId": "newgrounds-daily-top",
       "sourceName": "Newgrounds Daily Top Five",
-      "error": "请求超时"
+      "total": 5,
+      "added": 5
     },
     {
       "ok": true,
       "sourceId": "newgrounds-latest",
       "sourceName": "Newgrounds 最新通过作品",
       "total": 12,
-      "added": 6
+      "added": 12
     },
     {
       "ok": true,
       "sourceId": "crazygames-new",
       "sourceName": "CrazyGames 新游戏",
       "total": 70,
-      "added": 0
+      "added": 3
     },
     {
       "ok": true,
       "sourceId": "poki-new",
       "sourceName": "Poki 新游戏",
       "total": 142,
-      "added": 0
+      "added": 1
     },
     {
       "ok": true,
       "sourceId": "y8-new",
       "sourceName": "Y8 新游戏",
       "total": 73,
-      "added": 31
+      "added": 42
     },
     {
       "ok": false,
@@ -102,46 +103,40 @@
       "added": 0
     },
     {
-      "ok": true,
+      "ok": false,
       "sourceId": "trends-rising-7d-itch-io",
       "sourceName": "Trends上涨 7天 · itch io",
-      "total": 11,
-      "added": 4
+      "error": "Unexpected token '<', \"<html lang\"... is not valid JSON"
     },
     {
-      "ok": true,
+      "ok": false,
       "sourceId": "trends-rising-30d-itch-io",
       "sourceName": "Trends上涨 30天 · itch io",
-      "total": 17,
-      "added": 2
+      "error": "Unexpected token '<', \"<html lang\"... is not valid JSON"
     },
     {
-      "ok": true,
+      "ok": false,
       "sourceId": "trends-rising-7d-indie-game",
       "sourceName": "Trends上涨 7天 · indie game",
-      "total": 2,
-      "added": 0
+      "error": "Unexpected token '<', \"<html lang\"... is not valid JSON"
     },
     {
-      "ok": true,
+      "ok": false,
       "sourceId": "trends-rising-30d-indie-game",
       "sourceName": "Trends上涨 30天 · indie game",
-      "total": 2,
-      "added": 1
+      "error": "Unexpected token '<', \"<html lang\"... is not valid JSON"
     },
     {
-      "ok": true,
+      "ok": false,
       "sourceId": "trends-rising-7d-horror-game",
       "sourceName": "Trends上涨 7天 · horror game",
-      "total": 15,
-      "added": 2
+      "error": "Unexpected token '<', \"<html lang\"... is not valid JSON"
     },
     {
-      "ok": true,
+      "ok": false,
       "sourceId": "trends-rising-30d-horror-game",
       "sourceName": "Trends上涨 30天 · horror game",
-      "total": 21,
-      "added": 4
+      "error": "Unexpected token '<', \"<html lang\"... is not valid JSON"
     }
   ],
   "seoVerified": 0,
@@ -154,8 +149,8 @@
   "youtubeConfigured": false,
   "youtubeVerified": 0,
   "youtubeErrors": 0,
-  "trendsVerified": 0,
-  "trendErrors": 3,
+  "trendsVerified": 32,
+  "trendErrors": 44,
   "trendBatchRan": true,
   "trendQueueSize": 0,
   "risingDiscoveryRan": true,
@@ -164,37 +159,37 @@
   "seoPassedCount": 333,
   "trendEligibleCount": 160,
   "trendPendingCount": 160,
-  "trendValidatedCount": 234,
-  "risingCount": 10,
+  "trendValidatedCount": 240,
+  "risingCount": 13,
   "globalRisingCount": 0,
   "recommendationCounts": {
     "independent": 0,
     "test-now": 0,
     "page": 3,
-    "watch": 360,
-    "reject": 0,
-    "pending": 2637,
+    "watch": 359,
+    "reject": 2,
+    "pending": 2636,
     "error": 0
   },
   "trendProvider": "apify-data-xplorer+serpapi",
   "trendProviderCounts": {
-    "apify-data-xplorer": 61,
-    "serpapi": 185
+    "apify-data-xplorer": 81,
+    "serpapi": 170
   },
   "serpApiConfigured": true,
   "serpApiUsage": {
     "enabled": true,
     "month": "2026-10",
-    "monthUsed": 40,
-    "day": "2026-10-04",
+    "monthUsed": 50,
+    "day": "2026-10-05",
     "dayUsed": 10,
     "monthlyLimit": 100,
     "dailyLimit": 10,
-    "updatedAt": "2026-10-04T00:38:08.866Z"
+    "updatedAt": "2026-10-05T07:33:35.419Z"
   },
   "apifyConfigured": true,
   "apifyAccountStatus": {
-    "checkedAt": "2026-10-04T21:24:48.699Z",
+    "checkedAt": "2026-10-05T07:02:36.690Z",
     "configured": true,
     "ok": true,
     "provider": "apify",
@@ -210,12 +205,12 @@
   },
   "apifyTrendsUsage": {
     "month": "2026-10",
-    "actorCalls": 54,
-    "resultItems": 0,
-    "candidatesVerified": 0,
-    "errors": 54,
+    "actorCalls": 140,
+    "resultItems": 45,
+    "candidatesVerified": 32,
+    "errors": 88,
     "monthlyCallLimit": 4000,
-    "updatedAt": "2026-10-04T21:25:32.283Z"
+    "updatedAt": "2026-10-05T07:33:26.407Z"
   },
   "seoProvider": "serper-google-search",
   "seoProviderCounts": {
@@ -227,18 +222,18 @@
   "serperUsage": {
     "enabled": true,
     "totalUsed": 2170,
-    "day": "2026-10-04",
+    "day": "2026-10-05",
     "dayUsed": 0,
     "totalLimit": 2450,
     "dailyLimit": 2450,
-    "updatedAt": "2026-10-04T21:25:29.865Z",
+    "updatedAt": "2026-10-05T07:03:00.522Z",
     "lastError": "Not enough credits"
   },
   "googleCseConfiguredSlots": 0,
   "googleCseUsage": {
     "enabled": false,
     "configuredSlots": 0,
-    "day": "2026-10-04",
+    "day": "2026-10-05",
     "totalDayUsed": 0,
     "totalDailyLimit": 0,
     "slots": {},
@@ -250,16 +245,16 @@
   },
   "siteTypeModelVersion": 2,
   "siteTypeCounts": {
-    "online": 2400,
-    "wiki": 124,
-    "pending": 476
+    "online": 2403,
+    "wiki": 123,
+    "pending": 474
   },
   "wikiPrelaunchModelVersion": 2,
   "wikiPrelaunchCounts": {
     "priority": 0,
     "prepare": 5,
     "watch": 10,
-    "weak": 109
+    "weak": 108
   },
   "serperVerification": {
     "rushMode": true,
@@ -282,7 +277,7 @@
     "errors": 0,
     "quotaStopped": true,
     "verifiedNames": [],
-    "ranAt": "2026-10-04T21:25:29.988Z"
+    "ranAt": "2026-10-05T07:03:00.627Z"
   },
   "evidenceSeoFallback": {
     "enabled": true,
@@ -304,7 +299,7 @@
       "pending": 0
     },
     "verifiedNames": [],
-    "ranAt": "2026-10-04T21:25:30.649Z"
+    "ranAt": "2026-10-05T07:03:01.166Z"
   },
   "socialBuzzVerification": {
     "modelVersion": 3,
@@ -326,17 +321,17 @@
       "x": 0,
       "tiktok": 0
     },
-    "ranAt": "2026-10-04T21:25:31.617Z"
+    "ranAt": "2026-10-05T07:03:01.893Z"
   },
   "channelOpportunityCounts": {
     "online": {
-      "validated": 196,
-      "rising": 4,
+      "validated": 201,
+      "rising": 6,
       "recommended": 0
     },
     "wiki": {
-      "validated": 38,
-      "rising": 6,
+      "validated": 39,
+      "rising": 7,
       "recommended": 0
     },
     "pending": {
@@ -353,55 +348,243 @@
     "verifyLimit": 200,
     "effectiveLimit": 200,
     "monthlyCallLimit": 4000,
-    "remainingCallsAtStart": 3949,
+    "remainingCallsAtStart": 3946,
     "queueSize": 200,
-    "verified": 0,
-    "errors": 3,
-    "actorCalls": 3,
-    "resultItems": 0,
+    "verified": 32,
+    "errors": 34,
+    "actorCalls": 86,
+    "resultItems": 45,
     "quotaStopped": true,
     "concurrency": 3,
     "channelVerified": {
-      "online": 0,
-      "wiki": 0,
+      "online": 30,
+      "wiki": 2,
       "pending": 0
     },
     "tierCounts": {
-      "strong": 0,
+      "strong": 32,
       "secondary": 0,
       "strategic": 0
     },
     "pendingByChannel": {
-      "online": 190,
-      "wiki": 53
+      "online": 158,
+      "wiki": 51
     },
     "pendingByTier": {
-      "strong": 114,
+      "strong": 80,
       "secondary": 86,
       "strategic": 43
     },
-    "verifiedNames": [],
+    "verifiedNames": [
+      "Dressmaker",
+      "Obby: +1 Digging Power per Click",
+      "Iron Bastion",
+      "Brush Cat Challenge",
+      "Color Mosaic",
+      "Airbiker",
+      "Echollow",
+      "Arrows Out",
+      "Arrow Escape Turbo",
+      "Cricket Smash 3D",
+      "Puzzle Fit the Pieces",
+      "Trump Wall Building",
+      "Riddle House",
+      "Shadow Fit",
+      "Spin to Wind",
+      "Obby Keyboard Escape",
+      "Bolt Sort",
+      "Obby: Epic SkatePark",
+      "Royal Defense",
+      "Ram Rush",
+      "Bike Obby Draw Pencil",
+      "Dino World 3D",
+      "Obby: +1 Laser to Break Walls",
+      "My Castle: Merge & Story",
+      "Pinpoint Globe",
+      "Falafel Master",
+      "Coloring: Mosaic by Symbols",
+      "Offroad Crash Climber 4X4",
+      "Mine Blade Online KitPvP",
+      "Yenemy",
+      "silent hill townfall",
+      "Lucy Makeup and Dress Up"
+    ],
     "errorNames": [
       {
-        "name": "Real Car Bmw M4 Drift",
-        "error": "Monthly usage hard limit exceeded",
+        "name": "Super Dev Quest",
+        "error": "Apify residential Trends actor returned no timeline_data",
         "actorCalls": 1
       },
       {
-        "name": "Remember",
-        "error": "Monthly usage hard limit exceeded",
+        "name": "Red Pippy",
+        "error": "Apify residential Trends actor returned no timeline_data",
         "actorCalls": 1
       },
       {
-        "name": "Dressmaker",
-        "error": "Monthly usage hard limit exceeded",
+        "name": "Haaland Coloring Book",
+        "error": "Apify residential Trends actor returned no timeline_data",
+        "actorCalls": 1
+      },
+      {
+        "name": "Street Fist",
+        "error": "Apify residential Trends actor returned no timeline_data",
+        "actorCalls": 2
+      },
+      {
+        "name": "Mystery Dumpling Squishy Slime",
+        "error": "Apify residential Trends actor returned no timeline_data",
+        "actorCalls": 1
+      },
+      {
+        "name": "Tile Family: Match Puzzle",
+        "error": "Apify residential Trends actor returned no timeline_data",
+        "actorCalls": 1
+      },
+      {
+        "name": "Girl Dream House DIY Fun",
+        "error": "Apify residential Trends actor returned no timeline_data",
+        "actorCalls": 1
+      },
+      {
+        "name": "Super Slime: Black Hole",
+        "error": "Apify residential Trends actor returned no timeline_data",
+        "actorCalls": 1
+      },
+      {
+        "name": "Dicebound Survivors",
+        "error": "Apify residential Trends actor returned no timeline_data",
+        "actorCalls": 1
+      },
+      {
+        "name": "+1 Speed Keyboard Lucky Escape",
+        "error": "Apify residential Trends actor returned no timeline_data",
+        "actorCalls": 1
+      },
+      {
+        "name": "Airplane Manager",
+        "error": "Apify residential Trends actor returned no timeline_data",
+        "actorCalls": 2
+      },
+      {
+        "name": "Wheee",
+        "error": "Apify residential Trends actor returned no timeline_data",
+        "actorCalls": 2
+      },
+      {
+        "name": "Merge Zodiac",
+        "error": "Apify residential Trends actor returned no timeline_data",
+        "actorCalls": 1
+      },
+      {
+        "name": "Commando Force",
+        "error": "Apify residential Trends actor returned no timeline_data",
+        "actorCalls": 2
+      },
+      {
+        "name": "Geometry Overlap",
+        "error": "Apify residential Trends actor returned no timeline_data",
+        "actorCalls": 2
+      },
+      {
+        "name": "Fall Boys Coloring Book",
+        "error": "Apify residential Trends actor returned no timeline_data",
+        "actorCalls": 1
+      },
+      {
+        "name": "Toca: Hidden Stars",
+        "error": "Apify residential Trends actor returned no timeline_data",
+        "actorCalls": 1
+      },
+      {
+        "name": "Slime Works",
+        "error": "Apify residential Trends actor returned no timeline_data",
+        "actorCalls": 2
+      },
+      {
+        "name": "Cute Farm Match Puzzle",
+        "error": "Apify residential Trends actor returned no timeline_data",
+        "actorCalls": 1
+      },
+      {
+        "name": "Ninja on the Run",
+        "error": "Apify residential Trends actor returned no timeline_data",
+        "actorCalls": 2
+      },
+      {
+        "name": "PrismRoll 3D",
+        "error": "Apify residential Trends actor returned no timeline_data",
+        "actorCalls": 1
+      },
+      {
+        "name": "Merge Champions",
+        "error": "Apify residential Trends actor returned no timeline_data",
+        "actorCalls": 1
+      },
+      {
+        "name": "Candy Flow Factory",
+        "error": "Apify residential Trends actor returned no timeline_data",
+        "actorCalls": 1
+      },
+      {
+        "name": "Toca Coloring Book",
+        "error": "Apify residential Trends actor returned no timeline_data",
+        "actorCalls": 1
+      },
+      {
+        "name": "Obby Rainbow Parkour Two Player",
+        "error": "Apify residential Trends actor returned no timeline_data",
+        "actorCalls": 1
+      },
+      {
+        "name": "Shinobi Chronicles",
+        "error": "Apify residential Trends actor returned no timeline_data",
+        "actorCalls": 1
+      },
+      {
+        "name": "Farm vs Zombies",
+        "error": "Apify residential Trends actor returned no timeline_data",
+        "actorCalls": 1
+      },
+      {
+        "name": "Attack & Dash",
+        "error": "Apify residential Trends actor returned no timeline_data",
+        "actorCalls": 1
+      },
+      {
+        "name": "Sniper For Brainrot",
+        "error": "Apify residential Trends actor returned no timeline_data",
+        "actorCalls": 1
+      },
+      {
+        "name": "Wild Horse Simulator Racing Games",
+        "error": "Apify residential Trends actor returned no timeline_data",
+        "actorCalls": 1
+      },
+      {
+        "name": "2048 Decks",
+        "error": "Actor run did not succeed (run ID: xqLjFJJwCrub8OJF6, status: ABORTED).",
+        "actorCalls": 1
+      },
+      {
+        "name": "Fruit Pairs: Zombieland",
+        "error": "Monthly usage hard limit exceeded. Please upgrade your subscription or contact support@apify.com",
+        "actorCalls": 1
+      },
+      {
+        "name": "Endless Sky Adventure",
+        "error": "Monthly usage hard limit exceeded. Please upgrade your subscription or contact support@apify.com",
+        "actorCalls": 1
+      },
+      {
+        "name": "My Army Getting Stronger",
+        "error": "Monthly usage hard limit exceeded. Please upgrade your subscription or contact support@apify.com",
         "actorCalls": 1
       }
     ],
-    "ranAt": "2026-10-04T21:25:32.419Z"
+    "ranAt": "2026-10-05T07:33:26.679Z"
   },
   "serpApiAccountStatus": {
-    "checkedAt": "2026-10-04T21:25:32.652Z",
+    "checkedAt": "2026-10-05T07:33:26.878Z",
     "accountApiConsumesSearchCredits": false,
     "configuredKeys": 1,
     "workingKeys": 1,
@@ -438,7 +621,7 @@
         "planSearchesLeft": 0,
         "totalSearchesLeft": 0,
         "rateLimitPerHour": 250,
-        "checkedAt": "2026-10-04T21:25:32.651Z",
+        "checkedAt": "2026-10-05T07:33:26.878Z",
         "sharedAccount": false,
         "sharedWithSlots": []
       },
@@ -475,11 +658,11 @@
   "serpApiQuotaFill": {
     "enabled": true,
     "configuredSlots": 1,
-    "remainingAtStart": 0,
-    "queueSize": 0,
+    "remainingAtStart": 10,
+    "queueSize": 209,
     "verified": 0,
-    "errors": 0,
-    "quotaStopped": false,
+    "errors": 10,
+    "quotaStopped": true,
     "tierCounts": {
       "strong": 0,
       "secondary": 0,
@@ -491,13 +674,13 @@
       "pending": 0
     },
     "pendingByTier": {
-      "strong": 114,
+      "strong": 80,
       "secondary": 86,
       "strategic": 43
     },
     "pendingByChannel": {
-      "online": 190,
-      "wiki": 53
+      "online": 158,
+      "wiki": 51
     },
     "verifiedNames": [],
     "caps": {
@@ -517,33 +700,33 @@
           "wiki": 0,
           "pending": 0
         },
-        "errors": 0,
-        "quotaStopped": false
+        "errors": 10,
+        "quotaStopped": true
       }
     },
-    "ranAt": "2026-10-04T21:25:33.245Z"
+    "ranAt": "2026-10-05T07:33:36.574Z"
   },
   "serpApiConfiguredSlots": 1,
   "serpApiPoolUsage": {
     "enabled": true,
     "configuredSlots": 1,
     "month": "2026-10",
-    "monthUsed": 40,
-    "day": "2026-10-04",
+    "monthUsed": 50,
+    "day": "2026-10-05",
     "dayUsed": 10,
     "monthlyLimit": 100,
     "dailyLimit": 10,
     "accounts": {
       "1": {
         "envName": "SERPAPI_API_KEY",
-        "monthUsed": 40,
+        "monthUsed": 50,
         "dayUsed": 10,
         "monthlyLimit": 100,
         "dailyLimit": 10,
-        "updatedAt": "2026-10-04T00:38:08.866Z"
+        "updatedAt": "2026-10-05T07:33:35.419Z"
       }
     },
-    "updatedAt": "2026-10-04T21:25:33.300Z"
+    "updatedAt": "2026-10-05T07:33:36.617Z"
   },
   "searchApiConfigured": false,
   "searchApiTrendsUsage": {
@@ -576,16 +759,16 @@
       "strategic": 0
     },
     "pendingByChannel": {
-      "online": 190,
-      "wiki": 53
+      "online": 158,
+      "wiki": 51
     },
     "pendingByTier": {
-      "strong": 114,
+      "strong": 80,
       "secondary": 86,
       "strategic": 43
     },
     "verifiedNames": [],
     "errorNames": [],
-    "ranAt": "2026-10-04T21:25:33.801Z"
+    "ranAt": "2026-10-05T07:33:36.991Z"
   }
 }

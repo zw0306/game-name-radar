@@ -1,46 +1,45 @@
 {
-  "generatedAt": "2026-10-04T21:25:30.247Z",
+  "generatedAt": "2026-10-05T07:03:00.820Z",
   "totalCandidates": 3000,
   "pendingSeo": 2517,
   "channelCounts": {
-    "pending": 435,
-    "online": 2080,
-    "wiki": 2
+    "pending": 433,
+    "online": 2083,
+    "wiki": 1
   },
   "fastClassCounts": {
-    "pending:pending": 435,
-    "online:pending": 2080,
-    "wiki:pending": 2
+    "pending:pending": 433,
+    "online:pending": 2083,
+    "wiki:pending": 1
   },
   "strategicCounts": {
-    "pending:0": 428,
+    "pending:0": 427,
     "online:3": 1,
-    "online:2": 157,
+    "online:2": 155,
     "wiki:0": 1,
-    "pending:1": 7,
-    "online:1": 1922,
-    "wiki:1": 1
+    "pending:1": 6,
+    "online:1": 1927
   },
   "topSources": [
     {
       "id": "itch-new",
-      "count": 2068
+      "count": 2073
     },
     {
       "id": "itch-newest-web",
-      "count": 2054
+      "count": 2060
     },
     {
       "id": "itch-new-feed",
-      "count": 2033
+      "count": 2038
     },
     {
       "id": "trends-rising-7d",
-      "count": 364
+      "count": 363
     },
     {
       "id": "trends-rising-30d",
-      "count": 229
+      "count": 228
     },
     {
       "id": "trends-rising-7d-horror-game",
@@ -64,7 +63,7 @@
     },
     {
       "id": "trends-rising-7d-itch-io",
-      "count": 83
+      "count": 82
     },
     {
       "id": "trends-rising-30d-indie-game",
@@ -72,23 +71,15 @@
     },
     {
       "id": "trends-rising-30d-itch-io",
-      "count": 55
+      "count": 54
     },
     {
       "id": "newgrounds-latest",
-      "count": 15
+      "count": 12
     },
     {
       "id": "newgrounds-new",
-      "count": 15
-    },
-    {
-      "id": "newgrounds-daily-top",
-      "count": 13
-    },
-    {
-      "id": "newgrounds-top",
-      "count": 13
+      "count": 12
     },
     {
       "id": "itch-featured-feed",
@@ -96,6 +87,14 @@
     },
     {
       "id": "itch-featured",
+      "count": 11
+    },
+    {
+      "id": "newgrounds-daily-top",
+      "count": 11
+    },
+    {
+      "id": "newgrounds-top",
       "count": 11
     },
     {
@@ -108,14 +107,14 @@
     },
     {
       "id": "steam-popular-new",
-      "count": 4
-    },
-    {
-      "id": "y8-new",
       "count": 3
     },
     {
       "id": "steam-top-wishlist",
+      "count": 2
+    },
+    {
+      "id": "y8-new",
       "count": 2
     }
   ],
@@ -158,6 +157,24 @@
         "itch-new",
         "itch-featured-feed",
         "itch-featured"
+      ]
+    },
+    {
+      "name": "Rulehouse",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 17,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 5,
+      "strategicCount": 2,
+      "sourceCount": 4,
+      "sourceIds": [
+        "itch-featured-feed",
+        "itch-featured",
+        "itch-new-popular-web",
+        "itch-popular"
       ]
     },
     {
@@ -1041,25 +1058,6 @@
       "platforms": 1,
       "browserPlayable": true,
       "nameRisk": 12,
-      "strategicCount": 2,
-      "sourceCount": 5,
-      "sourceIds": [
-        "itch-newest-web",
-        "itch-new",
-        "itch-new-feed",
-        "itch-new-popular-web",
-        "itch-popular"
-      ]
-    },
-    {
-      "name": "The Challenge of Julie",
-      "channel": "online",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 15,
-      "platforms": 1,
-      "browserPlayable": true,
-      "nameRisk": 9,
       "strategicCount": 2,
       "sourceCount": 5,
       "sourceIds": [
