@@ -1,45 +1,46 @@
 {
-  "generatedAt": "2026-10-06T02:58:47.807Z",
+  "generatedAt": "2026-10-06T10:18:03.564Z",
   "totalCandidates": 3000,
-  "pendingSeo": 2523,
+  "pendingSeo": 2522,
   "channelCounts": {
-    "pending": 431,
+    "pending": 429,
     "online": 2091,
-    "wiki": 1
+    "wiki": 2
   },
   "fastClassCounts": {
-    "pending:pending": 431,
+    "pending:pending": 429,
     "online:pending": 2091,
-    "wiki:pending": 1
+    "wiki:pending": 2
   },
   "strategicCounts": {
-    "pending:0": 428,
+    "pending:0": 427,
     "online:3": 1,
     "online:2": 155,
-    "online:1": 1935,
     "wiki:0": 1,
-    "pending:1": 3
+    "pending:1": 2,
+    "online:1": 1935,
+    "wiki:1": 1
   },
   "topSources": [
     {
       "id": "itch-new",
-      "count": 2082
+      "count": 2083
     },
     {
       "id": "itch-newest-web",
-      "count": 2070
+      "count": 2071
     },
     {
       "id": "itch-new-feed",
-      "count": 2048
+      "count": 2049
     },
     {
       "id": "trends-rising-7d",
-      "count": 364
+      "count": 363
     },
     {
       "id": "trends-rising-30d",
-      "count": 229
+      "count": 228
     },
     {
       "id": "trends-rising-7d-horror-game",
@@ -47,11 +48,11 @@
     },
     {
       "id": "itch-new-popular-web",
-      "count": 150
+      "count": 152
     },
     {
       "id": "itch-popular",
-      "count": 150
+      "count": 152
     },
     {
       "id": "trends-rising-30d-horror-game",
@@ -63,7 +64,7 @@
     },
     {
       "id": "trends-rising-7d-itch-io",
-      "count": 84
+      "count": 83
     },
     {
       "id": "trends-rising-30d-indie-game",
@@ -71,23 +72,15 @@
     },
     {
       "id": "trends-rising-30d-itch-io",
-      "count": 54
+      "count": 53
     },
     {
       "id": "newgrounds-latest",
-      "count": 11
+      "count": 9
     },
     {
       "id": "newgrounds-new",
-      "count": 11
-    },
-    {
-      "id": "newgrounds-daily-top",
-      "count": 10
-    },
-    {
-      "id": "newgrounds-top",
-      "count": 10
+      "count": 9
     },
     {
       "id": "itch-featured-feed",
@@ -95,6 +88,14 @@
     },
     {
       "id": "itch-featured",
+      "count": 8
+    },
+    {
+      "id": "newgrounds-daily-top",
+      "count": 8
+    },
+    {
+      "id": "newgrounds-top",
       "count": 8
     },
     {
@@ -107,7 +108,7 @@
     },
     {
       "id": "steam-popular-new",
-      "count": 3
+      "count": 4
     },
     {
       "id": "steam-top-wishlist",
@@ -155,6 +156,24 @@
         "itch-popular",
         "itch-new-feed",
         "itch-new",
+        "itch-featured-feed",
+        "itch-featured"
+      ]
+    },
+    {
+      "name": "Alpine",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 17,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 5,
+      "strategicCount": 2,
+      "sourceCount": 4,
+      "sourceIds": [
+        "itch-new-popular-web",
+        "itch-popular",
         "itch-featured-feed",
         "itch-featured"
       ]
@@ -615,6 +634,25 @@
       ]
     },
     {
+      "name": "orbital",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 15,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 5,
+      "strategicCount": 2,
+      "sourceCount": 5,
+      "sourceIds": [
+        "itch-newest-web",
+        "itch-new",
+        "itch-new-feed",
+        "itch-new-popular-web",
+        "itch-popular"
+      ]
+    },
+    {
       "name": "Shakedown Troll",
       "channel": "online",
       "fastClass": "pending",
@@ -1020,44 +1058,6 @@
       "platforms": 1,
       "browserPlayable": true,
       "nameRisk": 9,
-      "strategicCount": 2,
-      "sourceCount": 5,
-      "sourceIds": [
-        "itch-newest-web",
-        "itch-new",
-        "itch-new-feed",
-        "itch-new-popular-web",
-        "itch-popular"
-      ]
-    },
-    {
-      "name": "Core!1!",
-      "channel": "online",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 15,
-      "platforms": 1,
-      "browserPlayable": true,
-      "nameRisk": 9,
-      "strategicCount": 2,
-      "sourceCount": 5,
-      "sourceIds": [
-        "itch-newest-web",
-        "itch-new",
-        "itch-new-feed",
-        "itch-new-popular-web",
-        "itch-popular"
-      ]
-    },
-    {
-      "name": "Rosa Quest 2026",
-      "channel": "online",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 15,
-      "platforms": 1,
-      "browserPlayable": true,
-      "nameRisk": 6,
       "strategicCount": 2,
       "sourceCount": 5,
       "sourceIds": [
