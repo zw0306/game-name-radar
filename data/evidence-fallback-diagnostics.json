@@ -1,33 +1,33 @@
 {
-  "generatedAt": "2026-10-05T22:37:44.281Z",
+  "generatedAt": "2026-10-06T02:58:47.807Z",
   "totalCandidates": 3000,
   "pendingSeo": 2523,
   "channelCounts": {
-    "pending": 430,
-    "online": 2092,
+    "pending": 431,
+    "online": 2091,
     "wiki": 1
   },
   "fastClassCounts": {
-    "pending:pending": 430,
-    "online:pending": 2092,
+    "pending:pending": 431,
+    "online:pending": 2091,
     "wiki:pending": 1
   },
   "strategicCounts": {
-    "pending:0": 427,
+    "pending:0": 428,
     "online:3": 1,
-    "online:2": 154,
+    "online:2": 155,
+    "online:1": 1935,
     "wiki:0": 1,
-    "pending:1": 3,
-    "online:1": 1937
+    "pending:1": 3
   },
   "topSources": [
     {
       "id": "itch-new",
-      "count": 2083
+      "count": 2082
     },
     {
       "id": "itch-newest-web",
-      "count": 2071
+      "count": 2070
     },
     {
       "id": "itch-new-feed",
@@ -35,7 +35,7 @@
     },
     {
       "id": "trends-rising-7d",
-      "count": 362
+      "count": 364
     },
     {
       "id": "trends-rising-30d",
@@ -47,11 +47,11 @@
     },
     {
       "id": "itch-new-popular-web",
-      "count": 149
+      "count": 150
     },
     {
       "id": "itch-popular",
-      "count": 149
+      "count": 150
     },
     {
       "id": "trends-rising-30d-horror-game",
@@ -63,7 +63,7 @@
     },
     {
       "id": "trends-rising-7d-itch-io",
-      "count": 82
+      "count": 84
     },
     {
       "id": "trends-rising-30d-indie-game",
@@ -192,6 +192,25 @@
       "sourceIds": [
         "itch-featured-feed",
         "itch-featured",
+        "itch-new-popular-web",
+        "itch-popular"
+      ]
+    },
+    {
+      "name": "Stompy Stompy Panic",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 15,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 0,
+      "strategicCount": 2,
+      "sourceCount": 5,
+      "sourceIds": [
+        "itch-newest-web",
+        "itch-new",
+        "itch-new-feed",
         "itch-new-popular-web",
         "itch-popular"
       ]
@@ -1039,25 +1058,6 @@
       "platforms": 1,
       "browserPlayable": true,
       "nameRisk": 6,
-      "strategicCount": 2,
-      "sourceCount": 5,
-      "sourceIds": [
-        "itch-newest-web",
-        "itch-new",
-        "itch-new-feed",
-        "itch-new-popular-web",
-        "itch-popular"
-      ]
-    },
-    {
-      "name": "SUPER YIPPIE CLICKER",
-      "channel": "online",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 15,
-      "platforms": 1,
-      "browserPlayable": true,
-      "nameRisk": 12,
       "strategicCount": 2,
       "sourceCount": 5,
       "sourceIds": [
