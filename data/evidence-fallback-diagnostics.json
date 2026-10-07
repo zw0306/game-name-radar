@@ -1,50 +1,50 @@
 {
-  "generatedAt": "2026-10-07T16:28:44.237Z",
+  "generatedAt": "2026-10-07T21:59:05.661Z",
   "totalCandidates": 3000,
-  "pendingSeo": 2532,
+  "pendingSeo": 2537,
   "channelCounts": {
     "pending": 423,
-    "online": 2104,
-    "wiki": 5
+    "online": 2110,
+    "wiki": 4
   },
   "fastClassCounts": {
     "pending:pending": 423,
-    "online:pending": 2104,
-    "wiki:pending": 5
+    "online:pending": 2110,
+    "wiki:pending": 4
   },
   "strategicCounts": {
     "pending:0": 420,
     "online:3": 1,
     "online:2": 151,
-    "wiki:1": 4,
     "wiki:0": 1,
-    "online:1": 1952,
-    "pending:1": 3
+    "online:1": 1958,
+    "pending:1": 3,
+    "wiki:1": 3
   },
   "topSources": [
     {
       "id": "itch-new",
-      "count": 2098
+      "count": 2104
     },
     {
       "id": "itch-newest-web",
-      "count": 2086
+      "count": 2093
     },
     {
       "id": "itch-new-feed",
-      "count": 2065
+      "count": 2072
     },
     {
       "id": "trends-rising-7d",
-      "count": 355
+      "count": 354
     },
     {
       "id": "trends-rising-30d",
-      "count": 230
+      "count": 229
     },
     {
       "id": "trends-rising-7d-horror-game",
-      "count": 187
+      "count": 186
     },
     {
       "id": "itch-new-popular-web",
@@ -56,7 +56,7 @@
     },
     {
       "id": "trends-rising-30d-horror-game",
-      "count": 121
+      "count": 120
     },
     {
       "id": "trends-rising-7d-indie-game",
@@ -83,23 +83,23 @@
       "count": 9
     },
     {
+      "id": "steam-popular-new",
+      "count": 6
+    },
+    {
       "id": "steam-latest-indie",
-      "count": 7
+      "count": 6
     },
     {
       "id": "steam-new",
-      "count": 7
+      "count": 6
     },
     {
       "id": "newgrounds-latest",
-      "count": 7
+      "count": 6
     },
     {
       "id": "newgrounds-new",
-      "count": 7
-    },
-    {
-      "id": "steam-popular-new",
       "count": 6
     },
     {
@@ -161,6 +161,25 @@
       ]
     },
     {
+      "name": "Stargate Legacy",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 17,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 0,
+      "strategicCount": 2,
+      "sourceCount": 5,
+      "sourceIds": [
+        "itch-newest-web",
+        "itch-new",
+        "itch-new-feed",
+        "itch-new-popular-web",
+        "itch-popular"
+      ]
+    },
+    {
       "name": "Alpine",
       "channel": "online",
       "fastClass": "pending",
@@ -176,24 +195,6 @@
         "itch-popular",
         "itch-featured-feed",
         "itch-featured"
-      ]
-    },
-    {
-      "name": "Rulehouse",
-      "channel": "online",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 17,
-      "platforms": 1,
-      "browserPlayable": true,
-      "nameRisk": 5,
-      "strategicCount": 2,
-      "sourceCount": 4,
-      "sourceIds": [
-        "itch-featured-feed",
-        "itch-featured",
-        "itch-new-popular-web",
-        "itch-popular"
       ]
     },
     {
@@ -230,6 +231,24 @@
         "itch-newest-web",
         "itch-new",
         "itch-new-feed",
+        "itch-new-popular-web",
+        "itch-popular"
+      ]
+    },
+    {
+      "name": "Rulehouse",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 15,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 5,
+      "strategicCount": 2,
+      "sourceCount": 4,
+      "sourceIds": [
+        "itch-featured-feed",
+        "itch-featured",
         "itch-new-popular-web",
         "itch-popular"
       ]
@@ -1032,25 +1051,6 @@
     },
     {
       "name": "Love Rush",
-      "channel": "online",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 15,
-      "platforms": 1,
-      "browserPlayable": true,
-      "nameRisk": 9,
-      "strategicCount": 2,
-      "sourceCount": 5,
-      "sourceIds": [
-        "itch-newest-web",
-        "itch-new",
-        "itch-new-feed",
-        "itch-new-popular-web",
-        "itch-popular"
-      ]
-    },
-    {
-      "name": "vengeance of the vegetables",
       "channel": "online",
       "fastClass": "pending",
       "fastScore": 0,
