@@ -1,62 +1,62 @@
 {
-  "generatedAt": "2026-10-07T01:32:34.097Z",
+  "generatedAt": "2026-10-07T08:39:33.493Z",
   "totalCandidates": 3000,
   "pendingSeo": 2526,
   "channelCounts": {
-    "pending": 424,
-    "online": 2098,
+    "pending": 427,
+    "online": 2095,
     "wiki": 4
   },
   "fastClassCounts": {
-    "pending:pending": 424,
-    "online:pending": 2098,
+    "pending:pending": 427,
+    "online:pending": 2095,
     "wiki:pending": 4
   },
   "strategicCounts": {
-    "pending:0": 422,
+    "pending:0": 425,
     "online:3": 1,
-    "online:2": 154,
+    "online:2": 152,
     "wiki:0": 1,
-    "online:1": 1943,
+    "online:1": 1942,
     "pending:1": 2,
     "wiki:1": 3
   },
   "topSources": [
     {
       "id": "itch-new",
-      "count": 2090
+      "count": 2088
     },
     {
       "id": "itch-newest-web",
-      "count": 2078
+      "count": 2076
     },
     {
       "id": "itch-new-feed",
-      "count": 2057
+      "count": 2055
     },
     {
       "id": "trends-rising-7d",
-      "count": 357
+      "count": 360
     },
     {
       "id": "trends-rising-30d",
-      "count": 228
+      "count": 231
     },
     {
       "id": "trends-rising-7d-horror-game",
-      "count": 189
+      "count": 191
     },
     {
       "id": "itch-new-popular-web",
-      "count": 151
+      "count": 150
     },
     {
       "id": "itch-popular",
-      "count": 151
+      "count": 150
     },
     {
       "id": "trends-rising-30d-horror-game",
-      "count": 121
+      "count": 122
     },
     {
       "id": "trends-rising-7d-indie-game",
@@ -64,7 +64,7 @@
     },
     {
       "id": "trends-rising-7d-itch-io",
-      "count": 82
+      "count": 83
     },
     {
       "id": "trends-rising-30d-indie-game",
@@ -72,15 +72,7 @@
     },
     {
       "id": "trends-rising-30d-itch-io",
-      "count": 54
-    },
-    {
-      "id": "newgrounds-latest",
-      "count": 9
-    },
-    {
-      "id": "newgrounds-new",
-      "count": 9
+      "count": 56
     },
     {
       "id": "itch-featured-feed",
@@ -91,12 +83,20 @@
       "count": 8
     },
     {
-      "id": "newgrounds-daily-top",
+      "id": "newgrounds-latest",
       "count": 8
     },
     {
-      "id": "newgrounds-top",
+      "id": "newgrounds-new",
       "count": 8
+    },
+    {
+      "id": "newgrounds-daily-top",
+      "count": 7
+    },
+    {
+      "id": "newgrounds-top",
+      "count": 7
     },
     {
       "id": "steam-popular-new",
@@ -179,25 +179,6 @@
       ]
     },
     {
-      "name": "Maybe... I'll go to the beach",
-      "channel": "online",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 17,
-      "platforms": 1,
-      "browserPlayable": true,
-      "nameRisk": 5,
-      "strategicCount": 2,
-      "sourceCount": 5,
-      "sourceIds": [
-        "itch-newest-web",
-        "itch-new",
-        "itch-new-feed",
-        "itch-new-popular-web",
-        "itch-popular"
-      ]
-    },
-    {
       "name": "Rulehouse",
       "channel": "online",
       "fastClass": "pending",
@@ -224,6 +205,25 @@
       "platforms": 1,
       "browserPlayable": true,
       "nameRisk": 0,
+      "strategicCount": 2,
+      "sourceCount": 5,
+      "sourceIds": [
+        "itch-newest-web",
+        "itch-new",
+        "itch-new-feed",
+        "itch-new-popular-web",
+        "itch-popular"
+      ]
+    },
+    {
+      "name": "Maybe... I'll go to the beach",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 15,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 5,
       "strategicCount": 2,
       "sourceCount": 5,
       "sourceIds": [
