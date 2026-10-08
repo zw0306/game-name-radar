@@ -1,62 +1,62 @@
 {
-  "generatedAt": "2026-10-07T21:59:05.661Z",
+  "generatedAt": "2026-10-08T01:56:07.081Z",
   "totalCandidates": 3000,
-  "pendingSeo": 2537,
+  "pendingSeo": 2539,
   "channelCounts": {
-    "pending": 423,
-    "online": 2110,
+    "pending": 422,
+    "online": 2113,
     "wiki": 4
   },
   "fastClassCounts": {
-    "pending:pending": 423,
-    "online:pending": 2110,
+    "pending:pending": 422,
+    "online:pending": 2113,
     "wiki:pending": 4
   },
   "strategicCounts": {
-    "pending:0": 420,
+    "pending:0": 419,
     "online:3": 1,
-    "online:2": 151,
+    "online:2": 152,
     "wiki:0": 1,
-    "online:1": 1958,
+    "online:1": 1960,
     "pending:1": 3,
     "wiki:1": 3
   },
   "topSources": [
     {
       "id": "itch-new",
-      "count": 2104
+      "count": 2107
     },
     {
       "id": "itch-newest-web",
-      "count": 2093
+      "count": 2096
     },
     {
       "id": "itch-new-feed",
-      "count": 2072
+      "count": 2075
     },
     {
       "id": "trends-rising-7d",
-      "count": 354
+      "count": 353
     },
     {
       "id": "trends-rising-30d",
-      "count": 229
+      "count": 228
     },
     {
       "id": "trends-rising-7d-horror-game",
-      "count": 186
+      "count": 185
     },
     {
       "id": "itch-new-popular-web",
-      "count": 150
+      "count": 151
     },
     {
       "id": "itch-popular",
-      "count": 150
+      "count": 151
     },
     {
       "id": "trends-rising-30d-horror-game",
-      "count": 120
+      "count": 119
     },
     {
       "id": "trends-rising-7d-indie-game",
@@ -158,6 +158,25 @@
         "itch-new",
         "itch-featured-feed",
         "itch-featured"
+      ]
+    },
+    {
+      "name": "Can’t Lose Hero",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 17,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 5,
+      "strategicCount": 2,
+      "sourceCount": 5,
+      "sourceIds": [
+        "itch-newest-web",
+        "itch-new",
+        "itch-new-feed",
+        "itch-new-popular-web",
+        "itch-popular"
       ]
     },
     {
@@ -1039,25 +1058,6 @@
       "platforms": 1,
       "browserPlayable": true,
       "nameRisk": 6,
-      "strategicCount": 2,
-      "sourceCount": 5,
-      "sourceIds": [
-        "itch-newest-web",
-        "itch-new",
-        "itch-new-feed",
-        "itch-new-popular-web",
-        "itch-popular"
-      ]
-    },
-    {
-      "name": "Love Rush",
-      "channel": "online",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 15,
-      "platforms": 1,
-      "browserPlayable": true,
-      "nameRisk": 9,
       "strategicCount": 2,
       "sourceCount": 5,
       "sourceIds": [
