@@ -1,38 +1,38 @@
 {
-  "generatedAt": "2026-10-08T01:56:07.081Z",
+  "generatedAt": "2026-10-08T08:58:26.313Z",
   "totalCandidates": 3000,
   "pendingSeo": 2539,
   "channelCounts": {
-    "pending": 422,
-    "online": 2113,
+    "pending": 421,
+    "online": 2114,
     "wiki": 4
   },
   "fastClassCounts": {
-    "pending:pending": 422,
-    "online:pending": 2113,
+    "pending:pending": 421,
+    "online:pending": 2114,
     "wiki:pending": 4
   },
   "strategicCounts": {
-    "pending:0": 419,
+    "pending:0": 418,
     "online:3": 1,
-    "online:2": 152,
+    "online:2": 156,
     "wiki:0": 1,
-    "online:1": 1960,
+    "online:1": 1957,
     "pending:1": 3,
     "wiki:1": 3
   },
   "topSources": [
     {
       "id": "itch-new",
-      "count": 2107
+      "count": 2106
     },
     {
       "id": "itch-newest-web",
-      "count": 2096
+      "count": 2095
     },
     {
       "id": "itch-new-feed",
-      "count": 2075
+      "count": 2074
     },
     {
       "id": "trends-rising-7d",
@@ -40,7 +40,7 @@
     },
     {
       "id": "trends-rising-30d",
-      "count": 228
+      "count": 227
     },
     {
       "id": "trends-rising-7d-horror-game",
@@ -48,23 +48,23 @@
     },
     {
       "id": "itch-new-popular-web",
-      "count": 151
+      "count": 153
     },
     {
       "id": "itch-popular",
-      "count": 151
+      "count": 153
     },
     {
       "id": "trends-rising-30d-horror-game",
-      "count": 119
+      "count": 118
     },
     {
       "id": "trends-rising-7d-indie-game",
-      "count": 93
+      "count": 92
     },
     {
       "id": "trends-rising-7d-itch-io",
-      "count": 83
+      "count": 84
     },
     {
       "id": "trends-rising-30d-indie-game",
@@ -81,6 +81,14 @@
     {
       "id": "itch-featured",
       "count": 9
+    },
+    {
+      "id": "newgrounds-daily-top",
+      "count": 7
+    },
+    {
+      "id": "newgrounds-top",
+      "count": 7
     },
     {
       "id": "steam-popular-new",
@@ -103,20 +111,20 @@
       "count": 6
     },
     {
-      "id": "newgrounds-daily-top",
-      "count": 6
-    },
-    {
-      "id": "newgrounds-top",
-      "count": 6
+      "id": "y8-new",
+      "count": 3
     },
     {
       "id": "steam-top-wishlist",
       "count": 2
     },
     {
-      "id": "y8-new",
-      "count": 2
+      "id": "crazygames-new",
+      "count": 1
+    },
+    {
+      "id": "lagged-new",
+      "count": 1
     }
   ],
   "samples": [
@@ -138,6 +146,24 @@
         "itch-featured",
         "itch-new-popular-web",
         "itch-popular"
+      ]
+    },
+    {
+      "name": "Yes, Comrade.",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 15,
+      "platforms": 2,
+      "browserPlayable": true,
+      "nameRisk": 0,
+      "strategicCount": 2,
+      "sourceCount": 4,
+      "sourceIds": [
+        "itch-new-popular-web",
+        "itch-popular",
+        "newgrounds-daily-top",
+        "newgrounds-top"
       ]
     },
     {
@@ -214,6 +240,25 @@
         "itch-popular",
         "itch-featured-feed",
         "itch-featured"
+      ]
+    },
+    {
+      "name": "A Fortnight in Another World",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 15,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 7,
+      "strategicCount": 2,
+      "sourceCount": 5,
+      "sourceIds": [
+        "itch-newest-web",
+        "itch-new",
+        "itch-new-feed",
+        "itch-new-popular-web",
+        "itch-popular"
       ]
     },
     {
@@ -1013,44 +1058,6 @@
     },
     {
       "name": "THE WARM ROOM",
-      "channel": "online",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 15,
-      "platforms": 1,
-      "browserPlayable": true,
-      "nameRisk": 6,
-      "strategicCount": 2,
-      "sourceCount": 5,
-      "sourceIds": [
-        "itch-newest-web",
-        "itch-new",
-        "itch-new-feed",
-        "itch-new-popular-web",
-        "itch-popular"
-      ]
-    },
-    {
-      "name": "Mushroom Man 2026",
-      "channel": "online",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 15,
-      "platforms": 1,
-      "browserPlayable": true,
-      "nameRisk": 6,
-      "strategicCount": 2,
-      "sourceCount": 5,
-      "sourceIds": [
-        "itch-newest-web",
-        "itch-new",
-        "itch-new-feed",
-        "itch-new-popular-web",
-        "itch-popular"
-      ]
-    },
-    {
-      "name": "The Grand Book Archive: Tidy Up",
       "channel": "online",
       "fastClass": "pending",
       "fastScore": 0,
