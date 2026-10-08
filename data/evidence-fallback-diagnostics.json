@@ -1,50 +1,51 @@
 {
-  "generatedAt": "2026-10-08T08:58:26.313Z",
+  "generatedAt": "2026-10-08T16:28:50.484Z",
   "totalCandidates": 3000,
-  "pendingSeo": 2539,
+  "pendingSeo": 2540,
   "channelCounts": {
-    "pending": 421,
-    "online": 2114,
-    "wiki": 4
+    "pending": 415,
+    "online": 2117,
+    "wiki": 8
   },
   "fastClassCounts": {
-    "pending:pending": 421,
-    "online:pending": 2114,
-    "wiki:pending": 4
+    "pending:pending": 415,
+    "online:pending": 2117,
+    "wiki:pending": 8
   },
   "strategicCounts": {
-    "pending:0": 418,
+    "pending:0": 412,
     "online:3": 1,
-    "online:2": 156,
+    "online:2": 152,
     "wiki:0": 1,
-    "online:1": 1957,
+    "online:1": 1964,
+    "wiki:2": 1,
     "pending:1": 3,
-    "wiki:1": 3
+    "wiki:1": 6
   },
   "topSources": [
     {
       "id": "itch-new",
-      "count": 2106
+      "count": 2113
     },
     {
       "id": "itch-newest-web",
-      "count": 2095
+      "count": 2102
     },
     {
       "id": "itch-new-feed",
-      "count": 2074
+      "count": 2081
     },
     {
       "id": "trends-rising-7d",
-      "count": 353
+      "count": 347
     },
     {
       "id": "trends-rising-30d",
-      "count": 227
+      "count": 224
     },
     {
       "id": "trends-rising-7d-horror-game",
-      "count": 185
+      "count": 183
     },
     {
       "id": "itch-new-popular-web",
@@ -56,23 +57,27 @@
     },
     {
       "id": "trends-rising-30d-horror-game",
-      "count": 118
+      "count": 117
     },
     {
       "id": "trends-rising-7d-indie-game",
-      "count": 92
+      "count": 89
     },
     {
       "id": "trends-rising-7d-itch-io",
-      "count": 84
+      "count": 83
     },
     {
       "id": "trends-rising-30d-indie-game",
-      "count": 59
+      "count": 58
     },
     {
       "id": "trends-rising-30d-itch-io",
-      "count": 56
+      "count": 55
+    },
+    {
+      "id": "steam-popular-new",
+      "count": 10
     },
     {
       "id": "itch-featured-feed",
@@ -83,48 +88,36 @@
       "count": 9
     },
     {
-      "id": "newgrounds-daily-top",
-      "count": 7
-    },
-    {
-      "id": "newgrounds-top",
-      "count": 7
-    },
-    {
-      "id": "steam-popular-new",
-      "count": 6
-    },
-    {
       "id": "steam-latest-indie",
-      "count": 6
+      "count": 7
     },
     {
       "id": "steam-new",
-      "count": 6
+      "count": 7
     },
     {
       "id": "newgrounds-latest",
-      "count": 6
+      "count": 4
     },
     {
       "id": "newgrounds-new",
-      "count": 6
+      "count": 4
     },
     {
-      "id": "y8-new",
-      "count": 3
+      "id": "newgrounds-daily-top",
+      "count": 4
+    },
+    {
+      "id": "newgrounds-top",
+      "count": 4
     },
     {
       "id": "steam-top-wishlist",
       "count": 2
     },
     {
-      "id": "crazygames-new",
-      "count": 1
-    },
-    {
-      "id": "lagged-new",
-      "count": 1
+      "id": "y8-new",
+      "count": 2
     }
   ],
   "samples": [
@@ -146,24 +139,6 @@
         "itch-featured",
         "itch-new-popular-web",
         "itch-popular"
-      ]
-    },
-    {
-      "name": "Yes, Comrade.",
-      "channel": "online",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 15,
-      "platforms": 2,
-      "browserPlayable": true,
-      "nameRisk": 0,
-      "strategicCount": 2,
-      "sourceCount": 4,
-      "sourceIds": [
-        "itch-new-popular-web",
-        "itch-popular",
-        "newgrounds-daily-top",
-        "newgrounds-top"
       ]
     },
     {
@@ -957,6 +932,25 @@
       "sourceIds": [
         "itch-featured-feed",
         "itch-featured",
+        "itch-new-popular-web",
+        "itch-popular"
+      ]
+    },
+    {
+      "name": "One More Flip",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 15,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 0,
+      "strategicCount": 2,
+      "sourceCount": 5,
+      "sourceIds": [
+        "itch-newest-web",
+        "itch-new",
+        "itch-new-feed",
         "itch-new-popular-web",
         "itch-popular"
       ]
