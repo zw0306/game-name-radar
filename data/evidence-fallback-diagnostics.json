@@ -1,46 +1,47 @@
 {
-  "generatedAt": "2026-10-09T09:08:41.752Z",
+  "generatedAt": "2026-10-09T16:13:14.588Z",
   "totalCandidates": 3000,
-  "pendingSeo": 2543,
+  "pendingSeo": 2545,
   "channelCounts": {
-    "pending": 410,
-    "online": 2123,
-    "wiki": 10
+    "pending": 408,
+    "online": 2121,
+    "wiki": 16
   },
   "fastClassCounts": {
-    "pending:pending": 410,
-    "online:pending": 2123,
-    "wiki:pending": 10
+    "pending:pending": 408,
+    "online:pending": 2121,
+    "wiki:pending": 16
   },
   "strategicCounts": {
-    "pending:0": 407,
+    "pending:0": 405,
     "online:3": 1,
-    "online:2": 149,
+    "online:2": 148,
     "wiki:0": 1,
-    "online:1": 1973,
+    "online:1": 1972,
+    "wiki:2": 1,
     "pending:1": 3,
-    "wiki:1": 9
+    "wiki:1": 14
   },
   "topSources": [
     {
       "id": "itch-new",
-      "count": 2117
+      "count": 2115
     },
     {
       "id": "itch-newest-web",
-      "count": 2107
+      "count": 2105
     },
     {
       "id": "itch-new-feed",
-      "count": 2085
+      "count": 2083
     },
     {
       "id": "trends-rising-7d",
-      "count": 344
+      "count": 343
     },
     {
       "id": "trends-rising-30d",
-      "count": 220
+      "count": 219
     },
     {
       "id": "trends-rising-7d-horror-game",
@@ -56,11 +57,11 @@
     },
     {
       "id": "trends-rising-30d-horror-game",
-      "count": 115
+      "count": 114
     },
     {
       "id": "trends-rising-7d-indie-game",
-      "count": 88
+      "count": 87
     },
     {
       "id": "trends-rising-7d-itch-io",
@@ -76,23 +77,23 @@
     },
     {
       "id": "steam-popular-new",
-      "count": 12
+      "count": 18
     },
     {
       "id": "itch-featured-feed",
-      "count": 9
+      "count": 10
     },
     {
       "id": "itch-featured",
-      "count": 9
+      "count": 10
     },
     {
       "id": "steam-latest-indie",
-      "count": 6
+      "count": 7
     },
     {
       "id": "steam-new",
-      "count": 6
+      "count": 7
     },
     {
       "id": "newgrounds-latest",
@@ -117,14 +118,6 @@
     {
       "id": "y8-new",
       "count": 2
-    },
-    {
-      "id": "crazygames-new",
-      "count": 1
-    },
-    {
-      "id": "poki-new",
-      "count": 1
     }
   ],
   "samples": [
@@ -164,6 +157,24 @@
         "itch-popular",
         "itch-new-feed",
         "itch-new",
+        "itch-featured-feed",
+        "itch-featured"
+      ]
+    },
+    {
+      "name": "Battle Healer Hildegard",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 17,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 6,
+      "strategicCount": 2,
+      "sourceCount": 4,
+      "sourceIds": [
+        "itch-new-popular-web",
+        "itch-popular",
         "itch-featured-feed",
         "itch-featured"
       ]
@@ -1047,25 +1058,6 @@
       "platforms": 1,
       "browserPlayable": true,
       "nameRisk": 9,
-      "strategicCount": 2,
-      "sourceCount": 5,
-      "sourceIds": [
-        "itch-newest-web",
-        "itch-new",
-        "itch-new-feed",
-        "itch-new-popular-web",
-        "itch-popular"
-      ]
-    },
-    {
-      "name": "Heart of Stars",
-      "channel": "online",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 15,
-      "platforms": 1,
-      "browserPlayable": true,
-      "nameRisk": 6,
       "strategicCount": 2,
       "sourceCount": 5,
       "sourceIds": [
