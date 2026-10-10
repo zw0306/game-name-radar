@@ -1,38 +1,38 @@
 {
-  "generatedAt": "2026-10-10T13:42:07.122Z",
+  "generatedAt": "2026-10-10T18:36:24.250Z",
   "totalCandidates": 3000,
   "pendingSeo": 2547,
   "channelCounts": {
-    "pending": 408,
-    "online": 2122,
+    "pending": 409,
+    "online": 2121,
     "wiki": 17
   },
   "fastClassCounts": {
-    "pending:pending": 408,
-    "online:pending": 2122,
+    "pending:pending": 409,
+    "online:pending": 2121,
     "wiki:pending": 17
   },
   "strategicCounts": {
-    "pending:0": 406,
+    "pending:0": 407,
     "online:3": 1,
-    "online:2": 145,
+    "online:2": 146,
     "wiki:0": 1,
-    "online:1": 1976,
+    "online:1": 1974,
     "pending:1": 2,
     "wiki:1": 16
   },
   "topSources": [
     {
       "id": "itch-new",
-      "count": 2117
+      "count": 2115
     },
     {
       "id": "itch-newest-web",
-      "count": 2107
+      "count": 2105
     },
     {
       "id": "itch-new-feed",
-      "count": 2086
+      "count": 2084
     },
     {
       "id": "trends-rising-7d",
@@ -40,7 +40,7 @@
     },
     {
       "id": "trends-rising-30d",
-      "count": 221
+      "count": 222
     },
     {
       "id": "trends-rising-7d-horror-game",
@@ -68,7 +68,7 @@
     },
     {
       "id": "trends-rising-30d-itch-io",
-      "count": 59
+      "count": 60
     },
     {
       "id": "trends-rising-30d-indie-game",
@@ -95,6 +95,10 @@
       "count": 7
     },
     {
+      "id": "y8-new",
+      "count": 3
+    },
+    {
       "id": "newgrounds-latest",
       "count": 3
     },
@@ -115,8 +119,8 @@
       "count": 2
     },
     {
-      "id": "y8-new",
-      "count": 2
+      "id": "lagged-new",
+      "count": 1
     }
   ],
   "samples": [
@@ -179,25 +183,6 @@
       ]
     },
     {
-      "name": "Can’t Lose Hero",
-      "channel": "online",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 17,
-      "platforms": 1,
-      "browserPlayable": true,
-      "nameRisk": 5,
-      "strategicCount": 2,
-      "sourceCount": 5,
-      "sourceIds": [
-        "itch-newest-web",
-        "itch-new",
-        "itch-new-feed",
-        "itch-new-popular-web",
-        "itch-popular"
-      ]
-    },
-    {
       "name": "JANO ADVENTURE",
       "channel": "online",
       "fastClass": "pending",
@@ -225,6 +210,25 @@
       "platforms": 1,
       "browserPlayable": true,
       "nameRisk": 7,
+      "strategicCount": 2,
+      "sourceCount": 5,
+      "sourceIds": [
+        "itch-newest-web",
+        "itch-new",
+        "itch-new-feed",
+        "itch-new-popular-web",
+        "itch-popular"
+      ]
+    },
+    {
+      "name": "Can’t Lose Hero",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 15,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 5,
       "strategicCount": 2,
       "sourceCount": 5,
       "sourceIds": [
