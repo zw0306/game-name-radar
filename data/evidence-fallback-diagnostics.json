@@ -1,38 +1,38 @@
 {
-  "generatedAt": "2026-10-10T07:07:38.528Z",
+  "generatedAt": "2026-10-10T13:42:07.122Z",
   "totalCandidates": 3000,
-  "pendingSeo": 2546,
+  "pendingSeo": 2547,
   "channelCounts": {
-    "pending": 409,
-    "online": 2120,
+    "pending": 408,
+    "online": 2122,
     "wiki": 17
   },
   "fastClassCounts": {
-    "pending:pending": 409,
-    "online:pending": 2120,
+    "pending:pending": 408,
+    "online:pending": 2122,
     "wiki:pending": 17
   },
   "strategicCounts": {
     "pending:0": 406,
     "online:3": 1,
-    "online:2": 147,
+    "online:2": 145,
     "wiki:0": 1,
-    "online:1": 1972,
-    "pending:1": 3,
+    "online:1": 1976,
+    "pending:1": 2,
     "wiki:1": 16
   },
   "topSources": [
     {
       "id": "itch-new",
-      "count": 2114
+      "count": 2117
     },
     {
       "id": "itch-newest-web",
-      "count": 2104
+      "count": 2107
     },
     {
       "id": "itch-new-feed",
-      "count": 2082
+      "count": 2086
     },
     {
       "id": "trends-rising-7d",
@@ -40,7 +40,7 @@
     },
     {
       "id": "trends-rising-30d",
-      "count": 220
+      "count": 221
     },
     {
       "id": "trends-rising-7d-horror-game",
@@ -48,11 +48,11 @@
     },
     {
       "id": "itch-new-popular-web",
-      "count": 148
+      "count": 147
     },
     {
       "id": "itch-popular",
-      "count": 148
+      "count": 147
     },
     {
       "id": "trends-rising-30d-horror-game",
@@ -68,7 +68,7 @@
     },
     {
       "id": "trends-rising-30d-itch-io",
-      "count": 58
+      "count": 59
     },
     {
       "id": "trends-rising-30d-indie-game",
@@ -80,11 +80,11 @@
     },
     {
       "id": "itch-featured-feed",
-      "count": 10
+      "count": 9
     },
     {
       "id": "itch-featured",
-      "count": 10
+      "count": 9
     },
     {
       "id": "steam-latest-indie",
@@ -96,19 +96,19 @@
     },
     {
       "id": "newgrounds-latest",
-      "count": 4
+      "count": 3
     },
     {
       "id": "newgrounds-new",
-      "count": 4
+      "count": 3
     },
     {
       "id": "newgrounds-daily-top",
-      "count": 4
+      "count": 3
     },
     {
       "id": "newgrounds-top",
-      "count": 4
+      "count": 3
     },
     {
       "id": "steam-top-wishlist",
@@ -198,25 +198,6 @@
       ]
     },
     {
-      "name": "Stargate Legacy",
-      "channel": "online",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 17,
-      "platforms": 1,
-      "browserPlayable": true,
-      "nameRisk": 0,
-      "strategicCount": 2,
-      "sourceCount": 5,
-      "sourceIds": [
-        "itch-newest-web",
-        "itch-new",
-        "itch-new-feed",
-        "itch-new-popular-web",
-        "itch-popular"
-      ]
-    },
-    {
       "name": "JANO ADVENTURE",
       "channel": "online",
       "fastClass": "pending",
@@ -244,6 +225,25 @@
       "platforms": 1,
       "browserPlayable": true,
       "nameRisk": 7,
+      "strategicCount": 2,
+      "sourceCount": 5,
+      "sourceIds": [
+        "itch-newest-web",
+        "itch-new",
+        "itch-new-feed",
+        "itch-new-popular-web",
+        "itch-popular"
+      ]
+    },
+    {
+      "name": "Stargate Legacy",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 15,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 0,
       "strategicCount": 2,
       "sourceCount": 5,
       "sourceIds": [
