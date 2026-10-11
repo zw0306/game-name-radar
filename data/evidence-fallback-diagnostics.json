@@ -1,62 +1,62 @@
 {
-  "generatedAt": "2026-10-11T15:41:24.634Z",
+  "generatedAt": "2026-10-11T20:17:27.477Z",
   "totalCandidates": 3000,
   "pendingSeo": 2546,
   "channelCounts": {
-    "wiki": 9,
-    "pending": 414,
-    "online": 2123
+    "pending": 415,
+    "online": 2123,
+    "wiki": 8
   },
   "fastClassCounts": {
-    "wiki:pending": 9,
-    "pending:pending": 414,
-    "online:pending": 2123
+    "pending:pending": 415,
+    "online:pending": 2123,
+    "wiki:pending": 8
   },
   "strategicCounts": {
-    "wiki:1": 8,
-    "pending:0": 413,
+    "pending:0": 414,
     "online:3": 1,
     "online:2": 144,
     "wiki:0": 1,
     "online:1": 1978,
-    "pending:1": 1
+    "pending:1": 1,
+    "wiki:1": 7
   },
   "topSources": [
     {
       "id": "itch-new",
-      "count": 2115
+      "count": 2116
     },
     {
       "id": "itch-newest-web",
-      "count": 2106
+      "count": 2107
     },
     {
       "id": "itch-new-feed",
-      "count": 2085
+      "count": 2086
     },
     {
       "id": "trends-rising-7d",
-      "count": 351
+      "count": 352
     },
     {
       "id": "trends-rising-30d",
-      "count": 231
+      "count": 232
     },
     {
       "id": "trends-rising-7d-horror-game",
-      "count": 186
+      "count": 187
     },
     {
       "id": "itch-new-popular-web",
-      "count": 145
+      "count": 146
     },
     {
       "id": "itch-popular",
-      "count": 145
+      "count": 146
     },
     {
       "id": "trends-rising-30d-horror-game",
-      "count": 118
+      "count": 119
     },
     {
       "id": "trends-rising-7d-itch-io",
@@ -76,7 +76,7 @@
     },
     {
       "id": "steam-popular-new",
-      "count": 11
+      "count": 10
     },
     {
       "id": "itch-featured-feed",
@@ -96,7 +96,7 @@
     },
     {
       "id": "y8-new",
-      "count": 4
+      "count": 3
     },
     {
       "id": "newgrounds-latest",
@@ -117,10 +117,6 @@
     {
       "id": "steam-top-wishlist",
       "count": 2
-    },
-    {
-      "id": "lagged-new",
-      "count": 1
     }
   ],
   "samples": [
@@ -162,6 +158,25 @@
         "itch-new",
         "itch-featured-feed",
         "itch-featured"
+      ]
+    },
+    {
+      "name": "Lab accident",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 17,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 0,
+      "strategicCount": 2,
+      "sourceCount": 5,
+      "sourceIds": [
+        "itch-newest-web",
+        "itch-new",
+        "itch-new-feed",
+        "itch-new-popular-web",
+        "itch-popular"
       ]
     },
     {
@@ -1042,25 +1057,6 @@
       "platforms": 1,
       "browserPlayable": true,
       "nameRisk": 9,
-      "strategicCount": 2,
-      "sourceCount": 5,
-      "sourceIds": [
-        "itch-newest-web",
-        "itch-new",
-        "itch-new-feed",
-        "itch-new-popular-web",
-        "itch-popular"
-      ]
-    },
-    {
-      "name": "今天也要搗個亂。｜3D 貓咪搗亂模擬器",
-      "channel": "online",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 15,
-      "platforms": 1,
-      "browserPlayable": true,
-      "nameRisk": 23,
       "strategicCount": 2,
       "sourceCount": 5,
       "sourceIds": [
