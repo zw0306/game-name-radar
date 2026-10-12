@@ -1,45 +1,45 @@
 {
-  "generatedAt": "2026-10-12T00:32:50.766Z",
+  "generatedAt": "2026-10-12T07:21:32.010Z",
   "totalCandidates": 3000,
-  "pendingSeo": 2547,
+  "pendingSeo": 2551,
   "channelCounts": {
-    "pending": 420,
-    "online": 2126,
+    "pending": 417,
+    "online": 2133,
     "wiki": 1
   },
   "fastClassCounts": {
-    "pending:pending": 420,
-    "online:pending": 2126,
+    "pending:pending": 417,
+    "online:pending": 2133,
     "wiki:pending": 1
   },
   "strategicCounts": {
-    "pending:0": 419,
+    "pending:0": 416,
     "online:3": 1,
     "online:2": 145,
     "wiki:0": 1,
-    "online:1": 1980,
+    "online:1": 1987,
     "pending:1": 1
   },
   "topSources": [
     {
       "id": "itch-new",
-      "count": 2118
+      "count": 2125
     },
     {
       "id": "itch-newest-web",
-      "count": 2109
+      "count": 2117
     },
     {
       "id": "itch-new-feed",
-      "count": 2088
+      "count": 2095
     },
     {
       "id": "trends-rising-7d",
-      "count": 357
+      "count": 355
     },
     {
       "id": "trends-rising-30d",
-      "count": 233
+      "count": 232
     },
     {
       "id": "trends-rising-7d-horror-game",
@@ -47,11 +47,11 @@
     },
     {
       "id": "itch-new-popular-web",
-      "count": 146
+      "count": 147
     },
     {
       "id": "itch-popular",
-      "count": 146
+      "count": 147
     },
     {
       "id": "trends-rising-30d-horror-game",
@@ -59,11 +59,11 @@
     },
     {
       "id": "trends-rising-7d-itch-io",
-      "count": 93
+      "count": 92
     },
     {
       "id": "trends-rising-7d-indie-game",
-      "count": 82
+      "count": 81
     },
     {
       "id": "trends-rising-30d-itch-io",
@@ -71,7 +71,7 @@
     },
     {
       "id": "trends-rising-30d-indie-game",
-      "count": 54
+      "count": 53
     },
     {
       "id": "steam-latest-indie",
@@ -90,11 +90,11 @@
       "count": 8
     },
     {
-      "id": "y8-new",
-      "count": 4
+      "id": "steam-popular-new",
+      "count": 3
     },
     {
-      "id": "steam-popular-new",
+      "id": "y8-new",
       "count": 3
     },
     {
@@ -116,10 +116,6 @@
     {
       "id": "steam-top-wishlist",
       "count": 2
-    },
-    {
-      "id": "lagged-new",
-      "count": 1
     }
   ],
   "samples": [
@@ -236,6 +232,25 @@
         "itch-popular",
         "itch-featured-feed",
         "itch-featured"
+      ]
+    },
+    {
+      "name": "II II II I I I I II",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 15,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 0,
+      "strategicCount": 2,
+      "sourceCount": 5,
+      "sourceIds": [
+        "itch-newest-web",
+        "itch-new",
+        "itch-new-feed",
+        "itch-new-popular-web",
+        "itch-popular"
       ]
     },
     {
@@ -1041,25 +1056,6 @@
       "platforms": 1,
       "browserPlayable": true,
       "nameRisk": 0,
-      "strategicCount": 2,
-      "sourceCount": 5,
-      "sourceIds": [
-        "itch-newest-web",
-        "itch-new",
-        "itch-new-feed",
-        "itch-new-popular-web",
-        "itch-popular"
-      ]
-    },
-    {
-      "name": "Super Plants",
-      "channel": "online",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 15,
-      "platforms": 1,
-      "browserPlayable": true,
-      "nameRisk": 9,
       "strategicCount": 2,
       "sourceCount": 5,
       "sourceIds": [
