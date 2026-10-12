@@ -1,41 +1,42 @@
 {
-  "generatedAt": "2026-10-12T07:21:32.010Z",
+  "generatedAt": "2026-10-12T17:54:35.096Z",
   "totalCandidates": 3000,
-  "pendingSeo": 2551,
+  "pendingSeo": 2554,
   "channelCounts": {
-    "pending": 417,
-    "online": 2133,
-    "wiki": 1
+    "pending": 419,
+    "online": 2131,
+    "wiki": 4
   },
   "fastClassCounts": {
-    "pending:pending": 417,
-    "online:pending": 2133,
-    "wiki:pending": 1
+    "pending:pending": 419,
+    "online:pending": 2131,
+    "wiki:pending": 4
   },
   "strategicCounts": {
-    "pending:0": 416,
+    "pending:0": 418,
     "online:3": 1,
     "online:2": 145,
     "wiki:0": 1,
-    "online:1": 1987,
-    "pending:1": 1
+    "online:1": 1985,
+    "pending:1": 1,
+    "wiki:1": 3
   },
   "topSources": [
     {
       "id": "itch-new",
-      "count": 2125
+      "count": 2123
     },
     {
       "id": "itch-newest-web",
-      "count": 2117
+      "count": 2115
     },
     {
       "id": "itch-new-feed",
-      "count": 2095
+      "count": 2093
     },
     {
       "id": "trends-rising-7d",
-      "count": 355
+      "count": 357
     },
     {
       "id": "trends-rising-30d",
@@ -43,7 +44,7 @@
     },
     {
       "id": "trends-rising-7d-horror-game",
-      "count": 190
+      "count": 191
     },
     {
       "id": "itch-new-popular-web",
@@ -59,7 +60,7 @@
     },
     {
       "id": "trends-rising-7d-itch-io",
-      "count": 92
+      "count": 93
     },
     {
       "id": "trends-rising-7d-indie-game",
@@ -91,7 +92,7 @@
     },
     {
       "id": "steam-popular-new",
-      "count": 3
+      "count": 6
     },
     {
       "id": "y8-new",
@@ -217,24 +218,6 @@
       ]
     },
     {
-      "name": "Battle Healer Hildegard",
-      "channel": "online",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 17,
-      "platforms": 1,
-      "browserPlayable": true,
-      "nameRisk": 6,
-      "strategicCount": 2,
-      "sourceCount": 4,
-      "sourceIds": [
-        "itch-new-popular-web",
-        "itch-popular",
-        "itch-featured-feed",
-        "itch-featured"
-      ]
-    },
-    {
       "name": "II II II I I I I II",
       "channel": "online",
       "fastClass": "pending",
@@ -251,6 +234,24 @@
         "itch-new-feed",
         "itch-new-popular-web",
         "itch-popular"
+      ]
+    },
+    {
+      "name": "Battle Healer Hildegard",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 15,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 6,
+      "strategicCount": 2,
+      "sourceCount": 4,
+      "sourceIds": [
+        "itch-new-popular-web",
+        "itch-popular",
+        "itch-featured-feed",
+        "itch-featured"
       ]
     },
     {
