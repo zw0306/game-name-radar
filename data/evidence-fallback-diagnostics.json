@@ -1,50 +1,50 @@
 {
-  "generatedAt": "2026-10-13T07:42:50.412Z",
+  "generatedAt": "2026-10-13T15:59:20.029Z",
   "totalCandidates": 3000,
-  "pendingSeo": 2563,
+  "pendingSeo": 2570,
   "channelCounts": {
-    "pending": 414,
-    "online": 2143,
-    "wiki": 6
+    "pending": 407,
+    "online": 2140,
+    "wiki": 23
   },
   "fastClassCounts": {
-    "pending:pending": 414,
-    "online:pending": 2143,
-    "wiki:pending": 6
+    "pending:pending": 407,
+    "online:pending": 2140,
+    "wiki:pending": 23
   },
   "strategicCounts": {
-    "pending:0": 413,
+    "pending:0": 406,
     "online:3": 1,
-    "online:2": 144,
+    "online:2": 143,
     "wiki:0": 1,
-    "online:1": 1998,
+    "online:1": 1996,
     "pending:1": 1,
-    "wiki:1": 5
+    "wiki:1": 22
   },
   "topSources": [
     {
       "id": "itch-new",
-      "count": 2133
+      "count": 2131
     },
     {
       "id": "itch-newest-web",
-      "count": 2125
+      "count": 2123
     },
     {
       "id": "itch-new-feed",
-      "count": 2104
+      "count": 2102
     },
     {
       "id": "trends-rising-7d",
-      "count": 354
+      "count": 346
     },
     {
       "id": "trends-rising-30d",
-      "count": 230
+      "count": 228
     },
     {
       "id": "trends-rising-7d-horror-game",
-      "count": 189
+      "count": 184
     },
     {
       "id": "itch-new-popular-web",
@@ -56,7 +56,7 @@
     },
     {
       "id": "trends-rising-30d-horror-game",
-      "count": 119
+      "count": 116
     },
     {
       "id": "trends-rising-7d-itch-io",
@@ -64,15 +64,19 @@
     },
     {
       "id": "trends-rising-7d-indie-game",
-      "count": 78
+      "count": 74
     },
     {
       "id": "trends-rising-30d-itch-io",
-      "count": 67
+      "count": 69
     },
     {
       "id": "trends-rising-30d-indie-game",
-      "count": 51
+      "count": 49
+    },
+    {
+      "id": "steam-popular-new",
+      "count": 25
     },
     {
       "id": "itch-featured-feed",
@@ -91,12 +95,8 @@
       "count": 9
     },
     {
-      "id": "steam-popular-new",
-      "count": 8
-    },
-    {
       "id": "y8-new",
-      "count": 4
+      "count": 3
     },
     {
       "id": "newgrounds-latest",
@@ -117,10 +117,6 @@
     {
       "id": "steam-top-wishlist",
       "count": 2
-    },
-    {
-      "id": "lagged-new",
-      "count": 1
     }
   ],
   "samples": [
@@ -221,11 +217,11 @@
       ]
     },
     {
-      "name": "PokéSurvivor",
+      "name": "II II II I I I I II",
       "channel": "online",
       "fastClass": "pending",
       "fastScore": 0,
-      "discoveryScore": 17,
+      "discoveryScore": 15,
       "platforms": 1,
       "browserPlayable": true,
       "nameRisk": 0,
@@ -240,7 +236,7 @@
       ]
     },
     {
-      "name": "II II II I I I I II",
+      "name": "PokéSurvivor",
       "channel": "online",
       "fastClass": "pending",
       "fastScore": 0,
