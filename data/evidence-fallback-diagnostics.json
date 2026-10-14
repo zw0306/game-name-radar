@@ -1,42 +1,43 @@
 {
-  "generatedAt": "2026-10-14T13:44:04.944Z",
+  "generatedAt": "2026-10-14T18:38:05.826Z",
   "totalCandidates": 3000,
-  "pendingSeo": 2577,
+  "pendingSeo": 2576,
   "channelCounts": {
-    "pending": 409,
-    "online": 2156,
-    "wiki": 12
+    "pending": 403,
+    "online": 2152,
+    "wiki": 21
   },
   "fastClassCounts": {
-    "pending:pending": 409,
-    "online:pending": 2156,
-    "wiki:pending": 12
+    "pending:pending": 403,
+    "online:pending": 2152,
+    "wiki:pending": 21
   },
   "strategicCounts": {
-    "pending:0": 408,
+    "pending:0": 402,
+    "online:1": 2013,
     "online:3": 1,
     "wiki:0": 2,
-    "online:2": 139,
-    "online:1": 2016,
+    "online:2": 138,
+    "wiki:2": 4,
     "pending:1": 1,
-    "wiki:1": 10
+    "wiki:1": 15
   },
   "topSources": [
     {
       "id": "itch-new",
-      "count": 2146
+      "count": 2141
     },
     {
       "id": "itch-newest-web",
-      "count": 2138
+      "count": 2133
     },
     {
       "id": "itch-new-feed",
-      "count": 2117
+      "count": 2112
     },
     {
       "id": "trends-rising-7d",
-      "count": 348
+      "count": 342
     },
     {
       "id": "trends-rising-30d",
@@ -44,7 +45,7 @@
     },
     {
       "id": "trends-rising-7d-horror-game",
-      "count": 188
+      "count": 186
     },
     {
       "id": "itch-new-popular-web",
@@ -56,26 +57,34 @@
     },
     {
       "id": "trends-rising-30d-horror-game",
-      "count": 118
+      "count": 121
     },
     {
       "id": "trends-rising-7d-itch-io",
-      "count": 94
+      "count": 92
     },
     {
       "id": "trends-rising-7d-indie-game",
-      "count": 72
+      "count": 69
     },
     {
       "id": "trends-rising-30d-itch-io",
-      "count": 70
+      "count": 68
     },
     {
       "id": "trends-rising-30d-indie-game",
-      "count": 48
+      "count": 47
     },
     {
       "id": "steam-popular-new",
+      "count": 22
+    },
+    {
+      "id": "steam-latest-indie",
+      "count": 13
+    },
+    {
+      "id": "steam-new",
       "count": 13
     },
     {
@@ -84,14 +93,6 @@
     },
     {
       "id": "itch-featured",
-      "count": 9
-    },
-    {
-      "id": "steam-latest-indie",
-      "count": 9
-    },
-    {
-      "id": "steam-new",
       "count": 9
     },
     {
@@ -203,25 +204,6 @@
     },
     {
       "name": "Lab accident",
-      "channel": "online",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 17,
-      "platforms": 1,
-      "browserPlayable": true,
-      "nameRisk": 0,
-      "strategicCount": 2,
-      "sourceCount": 5,
-      "sourceIds": [
-        "itch-newest-web",
-        "itch-new",
-        "itch-new-feed",
-        "itch-new-popular-web",
-        "itch-popular"
-      ]
-    },
-    {
-      "name": "II II II I I I I II",
       "channel": "online",
       "fastClass": "pending",
       "fastScore": 0,
@@ -1069,6 +1051,24 @@
         "itch-popular",
         "itch-featured-feed",
         "itch-featured"
+      ]
+    },
+    {
+      "name": "Eat not, Want not",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 15,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 0,
+      "strategicCount": 2,
+      "sourceCount": 4,
+      "sourceIds": [
+        "itch-featured-feed",
+        "itch-featured",
+        "itch-new-popular-web",
+        "itch-popular"
       ]
     }
   ]
