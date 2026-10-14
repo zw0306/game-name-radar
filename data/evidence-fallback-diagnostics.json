@@ -1,38 +1,39 @@
 {
-  "generatedAt": "2026-10-14T01:13:46.770Z",
+  "generatedAt": "2026-10-14T07:38:45.299Z",
   "totalCandidates": 3000,
   "pendingSeo": 2579,
   "channelCounts": {
-    "pending": 408,
-    "online": 2159,
-    "wiki": 12
+    "pending": 411,
+    "online": 2154,
+    "wiki": 14
   },
   "fastClassCounts": {
-    "pending:pending": 408,
-    "online:pending": 2159,
-    "wiki:pending": 12
+    "pending:pending": 411,
+    "online:pending": 2154,
+    "wiki:pending": 14
   },
   "strategicCounts": {
-    "pending:0": 407,
+    "pending:0": 410,
     "online:3": 1,
     "wiki:0": 2,
-    "online:2": 141,
-    "online:1": 2017,
+    "online:2": 140,
+    "online:1": 2013,
+    "wiki:2": 2,
     "pending:1": 1,
     "wiki:1": 10
   },
   "topSources": [
     {
       "id": "itch-new",
-      "count": 2150
+      "count": 2145
     },
     {
       "id": "itch-newest-web",
-      "count": 2142
+      "count": 2137
     },
     {
       "id": "itch-new-feed",
-      "count": 2121
+      "count": 2116
     },
     {
       "id": "trends-rising-7d",
@@ -40,23 +41,23 @@
     },
     {
       "id": "trends-rising-30d",
-      "count": 229
+      "count": 232
     },
     {
       "id": "trends-rising-7d-horror-game",
-      "count": 187
+      "count": 188
     },
     {
       "id": "itch-new-popular-web",
-      "count": 143
+      "count": 142
     },
     {
       "id": "itch-popular",
-      "count": 143
+      "count": 142
     },
     {
       "id": "trends-rising-30d-horror-game",
-      "count": 118
+      "count": 120
     },
     {
       "id": "trends-rising-7d-itch-io",
@@ -64,11 +65,11 @@
     },
     {
       "id": "trends-rising-7d-indie-game",
-      "count": 73
+      "count": 72
     },
     {
       "id": "trends-rising-30d-itch-io",
-      "count": 69
+      "count": 70
     },
     {
       "id": "trends-rising-30d-indie-game",
@@ -76,7 +77,15 @@
     },
     {
       "id": "steam-popular-new",
-      "count": 13
+      "count": 15
+    },
+    {
+      "id": "steam-latest-indie",
+      "count": 11
+    },
+    {
+      "id": "steam-new",
+      "count": 11
     },
     {
       "id": "itch-featured-feed",
@@ -84,14 +93,6 @@
     },
     {
       "id": "itch-featured",
-      "count": 9
-    },
-    {
-      "id": "steam-latest-indie",
-      "count": 9
-    },
-    {
-      "id": "steam-new",
       "count": 9
     },
     {
@@ -161,6 +162,25 @@
       ]
     },
     {
+      "name": "Mawster",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 17,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 5,
+      "strategicCount": 2,
+      "sourceCount": 5,
+      "sourceIds": [
+        "itch-newest-web",
+        "itch-new",
+        "itch-new-feed",
+        "itch-new-popular-web",
+        "itch-popular"
+      ]
+    },
+    {
       "name": "ROTETRA",
       "channel": "online",
       "fastClass": "pending",
@@ -198,11 +218,11 @@
       ]
     },
     {
-      "name": "KAIJU DISPOSAL",
+      "name": "II II II I I I I II",
       "channel": "online",
       "fastClass": "pending",
       "fastScore": 0,
-      "discoveryScore": 17,
+      "discoveryScore": 15,
       "platforms": 1,
       "browserPlayable": true,
       "nameRisk": 0,
@@ -217,7 +237,7 @@
       ]
     },
     {
-      "name": "II II II I I I I II",
+      "name": "KAIJU DISPOSAL",
       "channel": "online",
       "fastClass": "pending",
       "fastScore": 0,
@@ -1046,24 +1066,6 @@
         "itch-popular",
         "itch-featured-feed",
         "itch-featured"
-      ]
-    },
-    {
-      "name": "Eat not, Want not",
-      "channel": "online",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 15,
-      "platforms": 1,
-      "browserPlayable": true,
-      "nameRisk": 0,
-      "strategicCount": 2,
-      "sourceCount": 4,
-      "sourceIds": [
-        "itch-featured-feed",
-        "itch-featured",
-        "itch-new-popular-web",
-        "itch-popular"
       ]
     }
   ]
