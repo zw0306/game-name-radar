@@ -1,62 +1,62 @@
 {
-  "generatedAt": "2026-10-15T01:29:05.689Z",
+  "generatedAt": "2026-10-15T07:27:20.188Z",
   "totalCandidates": 3000,
-  "pendingSeo": 2574,
+  "pendingSeo": 2573,
   "channelCounts": {
-    "pending": 399,
-    "online": 2162,
-    "wiki": 13
+    "pending": 402,
+    "online": 2156,
+    "wiki": 15
   },
   "fastClassCounts": {
-    "pending:pending": 399,
-    "online:pending": 2162,
-    "wiki:pending": 13
+    "pending:pending": 402,
+    "online:pending": 2156,
+    "wiki:pending": 15
   },
   "strategicCounts": {
-    "pending:0": 398,
+    "pending:0": 401,
     "online:3": 1,
     "wiki:0": 2,
     "online:2": 137,
-    "online:1": 2024,
+    "online:1": 2018,
     "pending:1": 1,
-    "wiki:1": 11
+    "wiki:1": 13
   },
   "topSources": [
     {
       "id": "itch-new",
-      "count": 2153
+      "count": 2147
     },
     {
       "id": "itch-newest-web",
-      "count": 2145
+      "count": 2139
     },
     {
       "id": "itch-new-feed",
-      "count": 2123
+      "count": 2117
     },
     {
       "id": "trends-rising-7d",
-      "count": 337
+      "count": 338
     },
     {
       "id": "trends-rising-30d",
-      "count": 228
+      "count": 230
     },
     {
       "id": "trends-rising-7d-horror-game",
-      "count": 184
+      "count": 185
     },
     {
       "id": "itch-new-popular-web",
-      "count": 138
+      "count": 139
     },
     {
       "id": "itch-popular",
-      "count": 138
+      "count": 139
     },
     {
       "id": "trends-rising-30d-horror-game",
-      "count": 120
+      "count": 121
     },
     {
       "id": "trends-rising-7d-itch-io",
@@ -68,7 +68,7 @@
     },
     {
       "id": "trends-rising-30d-itch-io",
-      "count": 66
+      "count": 67
     },
     {
       "id": "trends-rising-30d-indie-game",
@@ -76,7 +76,7 @@
     },
     {
       "id": "steam-popular-new",
-      "count": 14
+      "count": 16
     },
     {
       "id": "itch-featured-feed",
@@ -95,11 +95,11 @@
       "count": 9
     },
     {
-      "id": "y8-new",
-      "count": 4
+      "id": "steam-top-wishlist",
+      "count": 3
     },
     {
-      "id": "steam-top-wishlist",
+      "id": "y8-new",
       "count": 3
     },
     {
@@ -169,6 +169,25 @@
       "platforms": 1,
       "browserPlayable": true,
       "nameRisk": 9,
+      "strategicCount": 2,
+      "sourceCount": 5,
+      "sourceIds": [
+        "itch-newest-web",
+        "itch-new",
+        "itch-new-feed",
+        "itch-new-popular-web",
+        "itch-popular"
+      ]
+    },
+    {
+      "name": "Disk Defragmenter — Free Demo",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 17,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 0,
       "strategicCount": 2,
       "sourceCount": 5,
       "sourceIds": [
@@ -1047,24 +1066,6 @@
         "itch-new-feed",
         "itch-new-popular-web",
         "itch-popular"
-      ]
-    },
-    {
-      "name": "Rock Declutterer",
-      "channel": "online",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 15,
-      "platforms": 1,
-      "browserPlayable": true,
-      "nameRisk": 0,
-      "strategicCount": 2,
-      "sourceCount": 4,
-      "sourceIds": [
-        "itch-new-popular-web",
-        "itch-popular",
-        "itch-featured-feed",
-        "itch-featured"
       ]
     }
   ]
