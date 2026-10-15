@@ -1,33 +1,37 @@
 {
-  "scannedAt": "2026-10-15T13:26:25.902Z",
+  "scannedAt": "2026-10-15T18:18:16.359Z",
   "targetMarket": "US_GLOBAL",
   "primaryMarket": "US",
   "referenceMarket": "WORLDWIDE",
-  "totalAdded": 106,
+  "totalAdded": 185,
   "sources": [
     {
-      "ok": false,
+      "ok": true,
       "sourceId": "itch-newest-web",
       "sourceName": "itch.io 最新网页游戏",
-      "error": "远程站点返回 429"
+      "total": 36,
+      "added": 36
     },
     {
-      "ok": false,
+      "ok": true,
       "sourceId": "itch-new-popular-web",
       "sourceName": "itch.io New & Popular",
-      "error": "远程站点返回 429"
+      "total": 36,
+      "added": 12
     },
     {
-      "ok": false,
+      "ok": true,
       "sourceId": "itch-new-feed",
       "sourceName": "itch.io New Feed",
-      "error": "远程站点返回 429"
+      "total": 36,
+      "added": 34
     },
     {
-      "ok": false,
+      "ok": true,
       "sourceId": "itch-featured-feed",
       "sourceName": "itch.io Featured Feed",
-      "error": "远程站点返回 429"
+      "total": 10,
+      "added": 3
     },
     {
       "ok": true,
@@ -48,7 +52,7 @@
       "sourceId": "steam-latest-indie",
       "sourceName": "Steam 最新独立游戏",
       "total": 50,
-      "added": 24
+      "added": 35
     },
     {
       "ok": true,
@@ -62,7 +66,7 @@
       "sourceId": "newgrounds-latest",
       "sourceName": "Newgrounds 最新通过作品",
       "total": 12,
-      "added": 10
+      "added": 8
     },
     {
       "ok": true,
@@ -75,15 +79,15 @@
       "ok": true,
       "sourceId": "poki-new",
       "sourceName": "Poki 新游戏",
-      "total": 156,
-      "added": 16
+      "total": 162,
+      "added": 6
     },
     {
       "ok": true,
       "sourceId": "y8-new",
       "sourceName": "Y8 新游戏",
       "total": 73,
-      "added": 43
+      "added": 38
     },
     {
       "ok": false,
@@ -96,31 +100,35 @@
       "sourceId": "lagged-new",
       "sourceName": "Lagged 新游戏",
       "total": 82,
-      "added": 9
+      "added": 0
     },
     {
-      "ok": false,
+      "ok": true,
       "sourceId": "trends-rising-7d-itch-io",
       "sourceName": "Trends上涨 7天 · itch io",
-      "error": "Unexpected token '<', \"<html lang\"... is not valid JSON"
+      "total": 6,
+      "added": 2
     },
     {
-      "ok": false,
+      "ok": true,
       "sourceId": "trends-rising-30d-itch-io",
       "sourceName": "Trends上涨 30天 · itch io",
-      "error": "Unexpected token '<', \"<html lang\"... is not valid JSON"
+      "total": 15,
+      "added": 7
     },
     {
-      "ok": false,
+      "ok": true,
       "sourceId": "trends-rising-7d-indie-game",
       "sourceName": "Trends上涨 7天 · indie game",
-      "error": "Unexpected token '<', \"<html lang\"... is not valid JSON"
+      "total": 1,
+      "added": 0
     },
     {
-      "ok": false,
+      "ok": true,
       "sourceId": "trends-rising-30d-indie-game",
       "sourceName": "Trends上涨 30天 · indie game",
-      "error": "Unexpected token '<', \"<html lang\"... is not valid JSON"
+      "total": 0,
+      "added": 0
     },
     {
       "ok": false,
@@ -138,8 +146,8 @@
   "seoVerified": 0,
   "seoErrors": 0,
   "fastModelVersion": 3,
-  "fastPassedCount": 125,
-  "fastWatchCount": 126,
+  "fastPassedCount": 127,
+  "fastWatchCount": 124,
   "fastRejectedCount": 173,
   "youtubeEnabled": false,
   "youtubeConfigured": false,
@@ -153,9 +161,9 @@
   "seoModelVersion": 5,
   "trendModelVersion": 4,
   "seoPassedCount": 291,
-  "trendEligibleCount": 116,
-  "trendPendingCount": 116,
-  "trendValidatedCount": 192,
+  "trendEligibleCount": 118,
+  "trendPendingCount": 118,
+  "trendValidatedCount": 191,
   "risingCount": 11,
   "globalRisingCount": 0,
   "recommendationCounts": {
@@ -170,7 +178,7 @@
   "trendProvider": "apify-data-xplorer+serpapi",
   "trendProviderCounts": {
     "apify-data-xplorer": 55,
-    "serpapi": 148
+    "serpapi": 147
   },
   "serpApiConfigured": true,
   "serpApiUsage": {
@@ -185,7 +193,7 @@
   },
   "apifyConfigured": false,
   "apifyAccountStatus": {
-    "checkedAt": "2026-10-15T13:26:24.943Z",
+    "checkedAt": "2026-10-15T18:18:15.130Z",
     "configured": false,
     "ok": false,
     "provider": "apify",
@@ -199,12 +207,12 @@
     "candidatesVerified": 32,
     "errors": 145,
     "monthlyCallLimit": 4000,
-    "updatedAt": "2026-10-15T13:26:51.190Z"
+    "updatedAt": "2026-10-15T18:18:45.529Z"
   },
   "seoProvider": "serper-google-search",
   "seoProviderCounts": {
-    "serper+autocomplete": 260,
-    "evidence-fallback": 159,
+    "serper+autocomplete": 259,
+    "evidence-fallback": 161,
     "duckduckgo+autocomplete": 6
   },
   "serperConfigured": true,
@@ -215,7 +223,7 @@
     "dayUsed": 0,
     "totalLimit": 2450,
     "dailyLimit": 2450,
-    "updatedAt": "2026-10-15T13:26:49.130Z",
+    "updatedAt": "2026-10-15T18:18:43.470Z",
     "lastError": "Not enough credits"
   },
   "googleCseConfiguredSlots": 0,
@@ -234,9 +242,9 @@
   },
   "siteTypeModelVersion": 2,
   "siteTypeCounts": {
-    "online": 2437,
+    "online": 2436,
     "wiki": 155,
-    "pending": 408
+    "pending": 409
   },
   "wikiPrelaunchModelVersion": 2,
   "wikiPrelaunchCounts": {
@@ -266,31 +274,32 @@
     "errors": 0,
     "quotaStopped": true,
     "verifiedNames": [],
-    "ranAt": "2026-10-15T13:26:49.246Z"
+    "ranAt": "2026-10-15T18:18:43.598Z"
   },
   "evidenceSeoFallback": {
     "enabled": true,
     "limit": 180,
     "pendingCount": 2576,
-    "eligibleCount": 1,
-    "queueSize": 1,
-    "verified": 1,
+    "eligibleCount": 2,
+    "queueSize": 2,
+    "verified": 2,
     "channelVerified": {
       "online": 1,
-      "wiki": 0,
+      "wiki": 1,
       "pending": 0
     },
     "fastRecalculated": {
       "pass": 1,
-      "watch": 0,
+      "watch": 1,
       "weak": 0,
       "reject": 0,
       "pending": 0
     },
     "verifiedNames": [
-      "Anime Girl High School Simulator"
+      "Night Lake",
+      "Enshrouded"
     ],
-    "ranAt": "2026-10-15T13:26:49.895Z"
+    "ranAt": "2026-10-15T18:18:44.243Z"
   },
   "socialBuzzVerification": {
     "modelVersion": 3,
@@ -312,11 +321,11 @@
       "x": 0,
       "tiktok": 0
     },
-    "ranAt": "2026-10-15T13:26:50.830Z"
+    "ranAt": "2026-10-15T18:18:45.178Z"
   },
   "channelOpportunityCounts": {
     "online": {
-      "validated": 156,
+      "validated": 155,
       "rising": 4,
       "recommended": 0
     },
@@ -359,19 +368,19 @@
     },
     "pendingByChannel": {
       "online": 180,
-      "wiki": 72
+      "wiki": 73
     },
     "pendingByTier": {
-      "strong": 116,
-      "secondary": 81,
+      "strong": 118,
+      "secondary": 80,
       "strategic": 55
     },
     "verifiedNames": [],
     "errorNames": [],
-    "ranAt": "2026-10-15T13:26:51.330Z"
+    "ranAt": "2026-10-15T18:18:45.658Z"
   },
   "serpApiAccountStatus": {
-    "checkedAt": "2026-10-15T13:26:51.596Z",
+    "checkedAt": "2026-10-15T18:18:45.810Z",
     "accountApiConsumesSearchCredits": false,
     "configuredKeys": 1,
     "workingKeys": 1,
@@ -408,7 +417,7 @@
         "planSearchesLeft": 0,
         "totalSearchesLeft": 0,
         "rateLimitPerHour": 250,
-        "checkedAt": "2026-10-15T13:26:51.596Z",
+        "checkedAt": "2026-10-15T18:18:45.810Z",
         "sharedAccount": false,
         "sharedWithSlots": []
       },
@@ -461,13 +470,13 @@
       "pending": 0
     },
     "pendingByTier": {
-      "strong": 116,
-      "secondary": 81,
+      "strong": 118,
+      "secondary": 80,
       "strategic": 55
     },
     "pendingByChannel": {
       "online": 180,
-      "wiki": 72
+      "wiki": 73
     },
     "verifiedNames": [],
     "caps": {
@@ -491,7 +500,7 @@
         "quotaStopped": false
       }
     },
-    "ranAt": "2026-10-15T13:26:52.155Z"
+    "ranAt": "2026-10-15T18:18:46.379Z"
   },
   "serpApiConfiguredSlots": 1,
   "serpApiPoolUsage": {
@@ -513,7 +522,7 @@
         "updatedAt": "2026-10-10T00:51:38.722Z"
       }
     },
-    "updatedAt": "2026-10-15T13:26:52.209Z"
+    "updatedAt": "2026-10-15T18:18:46.436Z"
   },
   "searchApiConfigured": false,
   "searchApiTrendsUsage": {
@@ -547,15 +556,15 @@
     },
     "pendingByChannel": {
       "online": 180,
-      "wiki": 72
+      "wiki": 73
     },
     "pendingByTier": {
-      "strong": 116,
-      "secondary": 81,
+      "strong": 118,
+      "secondary": 80,
       "strategic": 55
     },
     "verifiedNames": [],
     "errorNames": [],
-    "ranAt": "2026-10-15T13:26:52.696Z"
+    "ranAt": "2026-10-15T18:18:46.914Z"
   }
 }
