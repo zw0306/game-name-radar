@@ -1,50 +1,50 @@
 {
-  "generatedAt": "2026-10-16T07:09:54.916Z",
+  "generatedAt": "2026-10-16T12:27:26.725Z",
   "totalCandidates": 3000,
-  "pendingSeo": 2576,
+  "pendingSeo": 2578,
   "channelCounts": {
-    "pending": 405,
-    "online": 2151,
+    "pending": 404,
+    "online": 2154,
     "wiki": 20
   },
   "fastClassCounts": {
-    "pending:pending": 405,
-    "online:pending": 2151,
+    "pending:pending": 404,
+    "online:pending": 2154,
     "wiki:pending": 20
   },
   "strategicCounts": {
-    "pending:0": 402,
+    "pending:0": 401,
     "online:3": 1,
     "wiki:0": 2,
     "online:2": 131,
-    "online:1": 2019,
+    "online:1": 2022,
     "pending:1": 3,
     "wiki:1": 18
   },
   "topSources": [
     {
       "id": "itch-new",
-      "count": 2142
+      "count": 2145
     },
     {
       "id": "itch-newest-web",
-      "count": 2134
+      "count": 2137
     },
     {
       "id": "itch-new-feed",
-      "count": 2112
+      "count": 2115
     },
     {
       "id": "trends-rising-7d",
-      "count": 340
+      "count": 339
     },
     {
       "id": "trends-rising-30d",
-      "count": 230
+      "count": 229
     },
     {
       "id": "trends-rising-7d-horror-game",
-      "count": 187
+      "count": 186
     },
     {
       "id": "itch-new-popular-web",
@@ -60,7 +60,7 @@
     },
     {
       "id": "trends-rising-7d-itch-io",
-      "count": 89
+      "count": 90
     },
     {
       "id": "trends-rising-30d-itch-io",
@@ -68,11 +68,11 @@
     },
     {
       "id": "trends-rising-7d-indie-game",
-      "count": 68
+      "count": 67
     },
     {
       "id": "trends-rising-30d-indie-game",
-      "count": 46
+      "count": 45
     },
     {
       "id": "steam-popular-new",
@@ -207,6 +207,25 @@
       "platforms": 1,
       "browserPlayable": true,
       "nameRisk": 5,
+      "strategicCount": 2,
+      "sourceCount": 5,
+      "sourceIds": [
+        "itch-newest-web",
+        "itch-new",
+        "itch-new-feed",
+        "itch-new-popular-web",
+        "itch-popular"
+      ]
+    },
+    {
+      "name": "今天也要搗個亂。｜3D 貓咪搗亂模擬器",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 17,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 23,
       "strategicCount": 2,
       "sourceCount": 5,
       "sourceIds": [
@@ -1039,25 +1058,6 @@
       "platforms": 1,
       "browserPlayable": true,
       "nameRisk": 7,
-      "strategicCount": 2,
-      "sourceCount": 5,
-      "sourceIds": [
-        "itch-newest-web",
-        "itch-new",
-        "itch-new-feed",
-        "itch-new-popular-web",
-        "itch-popular"
-      ]
-    },
-    {
-      "name": "IDLE HQ",
-      "channel": "online",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 15,
-      "platforms": 1,
-      "browserPlayable": true,
-      "nameRisk": 9,
       "strategicCount": 2,
       "sourceCount": 5,
       "sourceIds": [
