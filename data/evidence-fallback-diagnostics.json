@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-17T17:10:49.378Z",
+  "generatedAt": "2026-10-17T19:26:15.409Z",
   "totalCandidates": 3000,
   "pendingSeo": 2589,
   "channelCounts": {
@@ -16,8 +16,8 @@
     "pending:0": 398,
     "online:3": 1,
     "wiki:0": 1,
-    "online:2": 127,
-    "online:1": 2045,
+    "online:2": 128,
+    "online:1": 2044,
     "pending:1": 3,
     "wiki:1": 14
   },
@@ -32,7 +32,7 @@
     },
     {
       "id": "itch-new-feed",
-      "count": 2135
+      "count": 2134
     },
     {
       "id": "trends-rising-7d",
@@ -95,6 +95,10 @@
       "count": 9
     },
     {
+      "id": "y8-new",
+      "count": 3
+    },
+    {
       "id": "newgrounds-latest",
       "count": 3
     },
@@ -112,10 +116,6 @@
     },
     {
       "id": "steam-top-wishlist",
-      "count": 2
-    },
-    {
-      "id": "y8-new",
       "count": 2
     }
   ],
