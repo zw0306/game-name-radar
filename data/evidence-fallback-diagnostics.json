@@ -1,49 +1,49 @@
 {
-  "generatedAt": "2026-10-19T07:46:33.641Z",
+  "generatedAt": "2026-10-19T15:36:25.358Z",
   "totalCandidates": 3000,
   "pendingSeo": 2600,
   "channelCounts": {
-    "pending": 405,
-    "online": 2194,
+    "pending": 406,
+    "online": 2193,
     "wiki": 1
   },
   "fastClassCounts": {
-    "pending:pending": 405,
-    "online:pending": 2194,
+    "pending:pending": 406,
+    "online:pending": 2193,
     "wiki:pending": 1
   },
   "strategicCounts": {
-    "pending:0": 404,
+    "pending:0": 405,
     "online:3": 1,
     "wiki:0": 1,
-    "online:2": 124,
+    "online:2": 123,
     "online:1": 2069,
     "pending:1": 1
   },
   "topSources": [
     {
       "id": "itch-new",
-      "count": 2186
+      "count": 2185
     },
     {
       "id": "itch-newest-web",
-      "count": 2178
+      "count": 2177
     },
     {
       "id": "itch-new-feed",
-      "count": 2157
+      "count": 2156
     },
     {
       "id": "trends-rising-7d",
-      "count": 346
+      "count": 345
     },
     {
       "id": "trends-rising-30d",
-      "count": 228
+      "count": 231
     },
     {
       "id": "trends-rising-7d-horror-game",
-      "count": 191
+      "count": 189
     },
     {
       "id": "itch-new-popular-web",
@@ -55,7 +55,7 @@
     },
     {
       "id": "trends-rising-30d-horror-game",
-      "count": 122
+      "count": 123
     },
     {
       "id": "trends-rising-7d-itch-io",
@@ -63,15 +63,23 @@
     },
     {
       "id": "trends-rising-7d-indie-game",
-      "count": 71
+      "count": 72
     },
     {
       "id": "trends-rising-30d-itch-io",
-      "count": 65
+      "count": 67
     },
     {
       "id": "trends-rising-30d-indie-game",
       "count": 44
+    },
+    {
+      "id": "steam-latest-indie",
+      "count": 11
+    },
+    {
+      "id": "steam-new",
+      "count": 11
     },
     {
       "id": "itch-featured-feed",
@@ -82,20 +90,12 @@
       "count": 9
     },
     {
-      "id": "steam-latest-indie",
-      "count": 9
-    },
-    {
-      "id": "steam-new",
-      "count": 9
-    },
-    {
       "id": "newgrounds-latest",
-      "count": 4
+      "count": 3
     },
     {
       "id": "newgrounds-new",
-      "count": 4
+      "count": 3
     },
     {
       "id": "newgrounds-daily-top",
@@ -160,22 +160,24 @@
       ]
     },
     {
-      "name": "今天也要搗個亂。｜3D 貓咪搗亂模擬器",
+      "name": "Trolley Problem Is Not Problem",
       "channel": "online",
       "fastClass": "pending",
       "fastScore": 0,
-      "discoveryScore": 17,
+      "discoveryScore": 18,
       "platforms": 1,
       "browserPlayable": true,
-      "nameRisk": 23,
+      "nameRisk": 0,
       "strategicCount": 2,
-      "sourceCount": 5,
+      "sourceCount": 7,
       "sourceIds": [
         "itch-newest-web",
         "itch-new",
         "itch-new-feed",
         "itch-new-popular-web",
-        "itch-popular"
+        "itch-popular",
+        "steam-latest-indie",
+        "steam-new"
       ]
     },
     {
@@ -364,6 +366,25 @@
         "itch-popular",
         "itch-featured-feed",
         "itch-featured"
+      ]
+    },
+    {
+      "name": "diagnosis lovesick",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 15,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 0,
+      "strategicCount": 2,
+      "sourceCount": 5,
+      "sourceIds": [
+        "itch-newest-web",
+        "itch-new",
+        "itch-new-feed",
+        "itch-new-popular-web",
+        "itch-popular"
       ]
     },
     {
@@ -981,25 +1002,6 @@
       "platforms": 1,
       "browserPlayable": true,
       "nameRisk": 5,
-      "strategicCount": 2,
-      "sourceCount": 5,
-      "sourceIds": [
-        "itch-newest-web",
-        "itch-new",
-        "itch-new-feed",
-        "itch-new-popular-web",
-        "itch-popular"
-      ]
-    },
-    {
-      "name": "Trolley Problem Is Not Problem",
-      "channel": "online",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 15,
-      "platforms": 1,
-      "browserPlayable": true,
-      "nameRisk": 0,
       "strategicCount": 2,
       "sourceCount": 5,
       "sourceIds": [
