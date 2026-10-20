@@ -1,61 +1,61 @@
 {
-  "generatedAt": "2026-10-20T20:35:20.151Z",
+  "generatedAt": "2026-10-20T23:53:03.309Z",
   "totalCandidates": 3000,
   "pendingSeo": 2597,
   "channelCounts": {
-    "wiki": 5,
     "pending": 410,
-    "online": 2182
+    "online": 2183,
+    "wiki": 4
   },
   "fastClassCounts": {
-    "wiki:pending": 5,
     "pending:pending": 410,
-    "online:pending": 2182
+    "online:pending": 2183,
+    "wiki:pending": 4
   },
   "strategicCounts": {
-    "wiki:1": 4,
     "pending:0": 406,
     "online:3": 1,
     "wiki:0": 1,
     "online:2": 120,
-    "online:1": 2061,
-    "pending:1": 4
+    "online:1": 2062,
+    "pending:1": 4,
+    "wiki:1": 3
   },
   "topSources": [
     {
       "id": "itch-new",
-      "count": 2173
+      "count": 2175
     },
     {
       "id": "itch-newest-web",
-      "count": 2165
+      "count": 2167
     },
     {
       "id": "itch-new-feed",
-      "count": 2144
+      "count": 2146
     },
     {
       "id": "trends-rising-7d",
-      "count": 350
+      "count": 349
     },
     {
       "id": "trends-rising-30d",
-      "count": 229
+      "count": 227
     },
     {
       "id": "trends-rising-7d-horror-game",
-      "count": 192
-    },
-    {
-      "id": "trends-rising-30d-horror-game",
-      "count": 123
+      "count": 190
     },
     {
       "id": "itch-new-popular-web",
-      "count": 121
+      "count": 122
     },
     {
       "id": "itch-popular",
+      "count": 122
+    },
+    {
+      "id": "trends-rising-30d-horror-game",
       "count": 121
     },
     {
@@ -64,7 +64,7 @@
     },
     {
       "id": "trends-rising-7d-indie-game",
-      "count": 78
+      "count": 79
     },
     {
       "id": "trends-rising-30d-itch-io",
@@ -92,11 +92,7 @@
     },
     {
       "id": "steam-popular-new",
-      "count": 6
-    },
-    {
-      "id": "y8-new",
-      "count": 3
+      "count": 5
     },
     {
       "id": "newgrounds-latest",
@@ -119,8 +115,8 @@
       "count": 2
     },
     {
-      "id": "lagged-new",
-      "count": 1
+      "id": "y8-new",
+      "count": 2
     }
   ],
   "samples": [
@@ -183,6 +179,44 @@
         "itch-popular",
         "steam-latest-indie",
         "steam-new"
+      ]
+    },
+    {
+      "name": "Castle: Build&Defend",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 15,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 0,
+      "strategicCount": 2,
+      "sourceCount": 5,
+      "sourceIds": [
+        "itch-newest-web",
+        "itch-new",
+        "itch-new-feed",
+        "itch-new-popular-web",
+        "itch-popular"
+      ]
+    },
+    {
+      "name": "Parcel_Panic_Mutiplayer_test",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 15,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 0,
+      "strategicCount": 2,
+      "sourceCount": 5,
+      "sourceIds": [
+        "itch-newest-web",
+        "itch-new",
+        "itch-new-feed",
+        "itch-new-popular-web",
+        "itch-popular"
       ]
     },
     {
@@ -1026,44 +1060,6 @@
       "platforms": 1,
       "browserPlayable": true,
       "nameRisk": 9,
-      "strategicCount": 2,
-      "sourceCount": 5,
-      "sourceIds": [
-        "itch-newest-web",
-        "itch-new",
-        "itch-new-feed",
-        "itch-new-popular-web",
-        "itch-popular"
-      ]
-    },
-    {
-      "name": "EMBERWATCH",
-      "channel": "online",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 15,
-      "platforms": 1,
-      "browserPlayable": true,
-      "nameRisk": 5,
-      "strategicCount": 2,
-      "sourceCount": 5,
-      "sourceIds": [
-        "itch-newest-web",
-        "itch-new",
-        "itch-new-feed",
-        "itch-new-popular-web",
-        "itch-popular"
-      ]
-    },
-    {
-      "name": "SWELTER",
-      "channel": "online",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 15,
-      "platforms": 1,
-      "browserPlayable": true,
-      "nameRisk": 5,
       "strategicCount": 2,
       "sourceCount": 5,
       "sourceIds": [
