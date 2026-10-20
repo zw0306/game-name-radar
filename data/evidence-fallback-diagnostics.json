@@ -1,24 +1,23 @@
 {
-  "generatedAt": "2026-10-19T21:03:21.404Z",
+  "generatedAt": "2026-10-20T00:20:36.382Z",
   "totalCandidates": 3000,
   "pendingSeo": 2601,
   "channelCounts": {
-    "pending": 403,
-    "online": 2196,
-    "wiki": 2
+    "pending": 405,
+    "online": 2195,
+    "wiki": 1
   },
   "fastClassCounts": {
-    "pending:pending": 403,
-    "online:pending": 2196,
-    "wiki:pending": 2
+    "pending:pending": 405,
+    "online:pending": 2195,
+    "wiki:pending": 1
   },
   "strategicCounts": {
-    "pending:0": 402,
+    "pending:0": 404,
     "online:3": 1,
     "wiki:0": 1,
-    "online:2": 123,
-    "online:1": 2072,
-    "wiki:2": 1,
+    "online:2": 121,
+    "online:1": 2073,
     "pending:1": 1
   },
   "topSources": [
@@ -36,7 +35,7 @@
     },
     {
       "id": "trends-rising-7d",
-      "count": 342
+      "count": 346
     },
     {
       "id": "trends-rising-30d",
@@ -47,15 +46,15 @@
       "count": 189
     },
     {
+      "id": "trends-rising-30d-horror-game",
+      "count": 123
+    },
+    {
       "id": "itch-new-popular-web",
-      "count": 124
+      "count": 123
     },
     {
       "id": "itch-popular",
-      "count": 124
-    },
-    {
-      "id": "trends-rising-30d-horror-game",
       "count": 123
     },
     {
@@ -64,7 +63,7 @@
     },
     {
       "id": "trends-rising-7d-indie-game",
-      "count": 71
+      "count": 75
     },
     {
       "id": "trends-rising-30d-itch-io",
@@ -76,11 +75,11 @@
     },
     {
       "id": "steam-latest-indie",
-      "count": 12
+      "count": 11
     },
     {
       "id": "steam-new",
-      "count": 12
+      "count": 11
     },
     {
       "id": "itch-featured-feed",
@@ -89,14 +88,6 @@
     {
       "id": "itch-featured",
       "count": 9
-    },
-    {
-      "id": "steam-popular-new",
-      "count": 3
-    },
-    {
-      "id": "y8-new",
-      "count": 3
     },
     {
       "id": "newgrounds-latest",
@@ -119,8 +110,12 @@
       "count": 2
     },
     {
-      "id": "lagged-new",
-      "count": 1
+      "id": "steam-popular-new",
+      "count": 2
+    },
+    {
+      "id": "y8-new",
+      "count": 2
     }
   ],
   "samples": [
