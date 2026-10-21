@@ -1,24 +1,23 @@
 {
-  "generatedAt": "2026-10-21T04:47:09.681Z",
+  "generatedAt": "2026-10-21T10:08:40.859Z",
   "totalCandidates": 3000,
-  "pendingSeo": 2598,
+  "pendingSeo": 2597,
   "channelCounts": {
-    "pending": 411,
-    "online": 2180,
-    "wiki": 7
+    "pending": 410,
+    "online": 2181,
+    "wiki": 6
   },
   "fastClassCounts": {
-    "pending:pending": 411,
-    "online:pending": 2180,
-    "wiki:pending": 7
+    "pending:pending": 410,
+    "online:pending": 2181,
+    "wiki:pending": 6
   },
   "strategicCounts": {
-    "pending:0": 407,
+    "pending:0": 406,
     "online:3": 1,
     "wiki:0": 1,
-    "online:2": 121,
+    "online:2": 122,
     "online:1": 2058,
-    "wiki:2": 1,
     "pending:1": 4,
     "wiki:1": 5
   },
@@ -41,7 +40,7 @@
     },
     {
       "id": "trends-rising-30d",
-      "count": 228
+      "count": 227
     },
     {
       "id": "trends-rising-7d-horror-game",
@@ -69,19 +68,11 @@
     },
     {
       "id": "trends-rising-30d-itch-io",
-      "count": 66
+      "count": 65
     },
     {
       "id": "trends-rising-30d-indie-game",
       "count": 43
-    },
-    {
-      "id": "steam-latest-indie",
-      "count": 13
-    },
-    {
-      "id": "steam-new",
-      "count": 13
     },
     {
       "id": "itch-featured-feed",
@@ -92,8 +83,20 @@
       "count": 12
     },
     {
+      "id": "steam-latest-indie",
+      "count": 12
+    },
+    {
+      "id": "steam-new",
+      "count": 12
+    },
+    {
       "id": "steam-popular-new",
-      "count": 8
+      "count": 7
+    },
+    {
+      "id": "y8-new",
+      "count": 3
     },
     {
       "id": "newgrounds-latest",
@@ -116,8 +119,8 @@
       "count": 2
     },
     {
-      "id": "y8-new",
-      "count": 2
+      "id": "crazygames-new",
+      "count": 1
     }
   ],
   "samples": [
@@ -210,6 +213,25 @@
       "platforms": 1,
       "browserPlayable": true,
       "nameRisk": 0,
+      "strategicCount": 2,
+      "sourceCount": 5,
+      "sourceIds": [
+        "itch-newest-web",
+        "itch-new",
+        "itch-new-feed",
+        "itch-new-popular-web",
+        "itch-popular"
+      ]
+    },
+    {
+      "name": "Ingridible",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 15,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 5,
       "strategicCount": 2,
       "sourceCount": 5,
       "sourceIds": [
@@ -1042,25 +1064,6 @@
       "platforms": 1,
       "browserPlayable": true,
       "nameRisk": 0,
-      "strategicCount": 2,
-      "sourceCount": 5,
-      "sourceIds": [
-        "itch-newest-web",
-        "itch-new",
-        "itch-new-feed",
-        "itch-new-popular-web",
-        "itch-popular"
-      ]
-    },
-    {
-      "name": "Forgever",
-      "channel": "online",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 15,
-      "platforms": 1,
-      "browserPlayable": true,
-      "nameRisk": 5,
       "strategicCount": 2,
       "sourceCount": 5,
       "sourceIds": [
