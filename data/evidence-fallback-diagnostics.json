@@ -1,38 +1,38 @@
 {
-  "generatedAt": "2026-10-21T10:08:40.859Z",
+  "generatedAt": "2026-10-21T15:14:43.138Z",
   "totalCandidates": 3000,
-  "pendingSeo": 2597,
+  "pendingSeo": 2600,
   "channelCounts": {
-    "pending": 410,
-    "online": 2181,
+    "pending": 409,
+    "online": 2185,
     "wiki": 6
   },
   "fastClassCounts": {
-    "pending:pending": 410,
-    "online:pending": 2181,
+    "pending:pending": 409,
+    "online:pending": 2185,
     "wiki:pending": 6
   },
   "strategicCounts": {
-    "pending:0": 406,
+    "pending:0": 405,
     "online:3": 1,
     "wiki:0": 1,
-    "online:2": 122,
-    "online:1": 2058,
+    "online:2": 120,
+    "online:1": 2064,
     "pending:1": 4,
     "wiki:1": 5
   },
   "topSources": [
     {
       "id": "itch-new",
-      "count": 2172
+      "count": 2177
     },
     {
       "id": "itch-newest-web",
-      "count": 2164
+      "count": 2169
     },
     {
       "id": "itch-new-feed",
-      "count": 2143
+      "count": 2148
     },
     {
       "id": "trends-rising-7d",
@@ -40,23 +40,23 @@
     },
     {
       "id": "trends-rising-30d",
-      "count": 227
+      "count": 226
     },
     {
       "id": "trends-rising-7d-horror-game",
       "count": 189
     },
     {
+      "id": "trends-rising-30d-horror-game",
+      "count": 121
+    },
+    {
       "id": "itch-new-popular-web",
-      "count": 123
+      "count": 121
     },
     {
       "id": "itch-popular",
-      "count": 123
-    },
-    {
-      "id": "trends-rising-30d-horror-game",
-      "count": 122
+      "count": 121
     },
     {
       "id": "trends-rising-7d-itch-io",
@@ -95,10 +95,6 @@
       "count": 7
     },
     {
-      "id": "y8-new",
-      "count": 3
-    },
-    {
       "id": "newgrounds-latest",
       "count": 3
     },
@@ -119,7 +115,11 @@
       "count": 2
     },
     {
-      "id": "crazygames-new",
+      "id": "y8-new",
+      "count": 2
+    },
+    {
+      "id": "lagged-new",
       "count": 1
     }
   ],
@@ -142,6 +142,24 @@
         "itch-featured",
         "itch-new-popular-web",
         "itch-popular"
+      ]
+    },
+    {
+      "name": "Night Shift",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 16,
+      "platforms": 2,
+      "browserPlayable": true,
+      "nameRisk": 0,
+      "strategicCount": 2,
+      "sourceCount": 4,
+      "sourceIds": [
+        "itch-newest-web",
+        "itch-new",
+        "itch-new-feed",
+        "lagged-new"
       ]
     },
     {
@@ -1038,25 +1056,6 @@
     },
     {
       "name": "Shakedown Troll",
-      "channel": "online",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 15,
-      "platforms": 1,
-      "browserPlayable": true,
-      "nameRisk": 0,
-      "strategicCount": 2,
-      "sourceCount": 5,
-      "sourceIds": [
-        "itch-newest-web",
-        "itch-new",
-        "itch-new-feed",
-        "itch-new-popular-web",
-        "itch-popular"
-      ]
-    },
-    {
-      "name": "Digable Planetoids",
       "channel": "online",
       "fastClass": "pending",
       "fastScore": 0,
