@@ -1,43 +1,42 @@
 {
-  "generatedAt": "2026-10-21T23:22:43.177Z",
+  "generatedAt": "2026-10-22T04:45:22.843Z",
   "totalCandidates": 3000,
-  "pendingSeo": 2598,
+  "pendingSeo": 2597,
   "channelCounts": {
     "pending": 411,
-    "online": 2177,
-    "wiki": 10
+    "online": 2179,
+    "wiki": 7
   },
   "fastClassCounts": {
     "pending:pending": 411,
-    "online:pending": 2177,
-    "wiki:pending": 10
+    "online:pending": 2179,
+    "wiki:pending": 7
   },
   "strategicCounts": {
     "pending:0": 406,
     "online:3": 1,
     "wiki:0": 1,
-    "online:2": 119,
-    "online:1": 2057,
-    "wiki:2": 1,
+    "online:2": 118,
+    "online:1": 2060,
     "pending:1": 5,
-    "wiki:1": 8
+    "wiki:1": 6
   },
   "topSources": [
     {
       "id": "itch-new",
-      "count": 2169
+      "count": 2171
     },
     {
       "id": "itch-newest-web",
-      "count": 2161
+      "count": 2163
     },
     {
       "id": "itch-new-feed",
-      "count": 2140
+      "count": 2142
     },
     {
       "id": "trends-rising-7d",
-      "count": 350
+      "count": 352
     },
     {
       "id": "trends-rising-30d",
@@ -61,19 +60,19 @@
     },
     {
       "id": "trends-rising-7d-itch-io",
-      "count": 86
+      "count": 87
     },
     {
       "id": "trends-rising-7d-indie-game",
-      "count": 80
+      "count": 81
     },
     {
       "id": "trends-rising-30d-itch-io",
-      "count": 65
+      "count": 66
     },
     {
       "id": "trends-rising-30d-indie-game",
-      "count": 43
+      "count": 42
     },
     {
       "id": "itch-featured-feed",
@@ -85,19 +84,15 @@
     },
     {
       "id": "steam-latest-indie",
-      "count": 13
+      "count": 12
     },
     {
       "id": "steam-new",
-      "count": 13
+      "count": 12
     },
     {
       "id": "steam-popular-new",
-      "count": 11
-    },
-    {
-      "id": "y8-new",
-      "count": 3
+      "count": 8
     },
     {
       "id": "newgrounds-latest",
@@ -117,6 +112,10 @@
     },
     {
       "id": "steam-top-wishlist",
+      "count": 2
+    },
+    {
+      "id": "y8-new",
       "count": 2
     }
   ],
@@ -166,7 +165,7 @@
       "channel": "online",
       "fastClass": "pending",
       "fastScore": 0,
-      "discoveryScore": 18,
+      "discoveryScore": 16,
       "platforms": 1,
       "browserPlayable": true,
       "nameRisk": 0,
