@@ -1,62 +1,62 @@
 {
-  "generatedAt": "2026-10-22T04:45:22.843Z",
+  "generatedAt": "2026-10-22T10:11:14.755Z",
   "totalCandidates": 3000,
   "pendingSeo": 2597,
   "channelCounts": {
-    "pending": 411,
-    "online": 2179,
+    "pending": 407,
+    "online": 2183,
     "wiki": 7
   },
   "fastClassCounts": {
-    "pending:pending": 411,
-    "online:pending": 2179,
+    "pending:pending": 407,
+    "online:pending": 2183,
     "wiki:pending": 7
   },
   "strategicCounts": {
-    "pending:0": 406,
+    "pending:0": 402,
     "online:3": 1,
     "wiki:0": 1,
-    "online:2": 118,
-    "online:1": 2060,
+    "online:2": 119,
+    "online:1": 2063,
     "pending:1": 5,
     "wiki:1": 6
   },
   "topSources": [
     {
       "id": "itch-new",
-      "count": 2171
+      "count": 2175
     },
     {
       "id": "itch-newest-web",
-      "count": 2163
+      "count": 2167
     },
     {
       "id": "itch-new-feed",
-      "count": 2142
+      "count": 2145
     },
     {
       "id": "trends-rising-7d",
-      "count": 352
+      "count": 349
     },
     {
       "id": "trends-rising-30d",
-      "count": 233
+      "count": 230
     },
     {
       "id": "trends-rising-7d-horror-game",
-      "count": 188
+      "count": 186
     },
     {
       "id": "trends-rising-30d-horror-game",
-      "count": 128
+      "count": 127
     },
     {
       "id": "itch-new-popular-web",
-      "count": 120
+      "count": 121
     },
     {
       "id": "itch-popular",
-      "count": 120
+      "count": 121
     },
     {
       "id": "trends-rising-7d-itch-io",
@@ -64,15 +64,15 @@
     },
     {
       "id": "trends-rising-7d-indie-game",
-      "count": 81
+      "count": 80
     },
     {
       "id": "trends-rising-30d-itch-io",
-      "count": 66
+      "count": 65
     },
     {
       "id": "trends-rising-30d-indie-game",
-      "count": 42
+      "count": 41
     },
     {
       "id": "itch-featured-feed",
@@ -179,6 +179,25 @@
         "itch-popular",
         "steam-latest-indie",
         "steam-new"
+      ]
+    },
+    {
+      "name": "Idle Mage: Conquest",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 15,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 6,
+      "strategicCount": 2,
+      "sourceCount": 5,
+      "sourceIds": [
+        "itch-newest-web",
+        "itch-new",
+        "itch-new-feed",
+        "itch-new-popular-web",
+        "itch-popular"
       ]
     },
     {
@@ -1034,25 +1053,6 @@
     },
     {
       "name": "Shakedown Troll",
-      "channel": "online",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 15,
-      "platforms": 1,
-      "browserPlayable": true,
-      "nameRisk": 0,
-      "strategicCount": 2,
-      "sourceCount": 5,
-      "sourceIds": [
-        "itch-newest-web",
-        "itch-new",
-        "itch-new-feed",
-        "itch-new-popular-web",
-        "itch-popular"
-      ]
-    },
-    {
-      "name": "Digable Planetoids",
       "channel": "online",
       "fastClass": "pending",
       "fastScore": 0,
