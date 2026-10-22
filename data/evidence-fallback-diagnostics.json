@@ -1,39 +1,38 @@
 {
-  "generatedAt": "2026-10-22T15:19:57.223Z",
+  "generatedAt": "2026-10-22T20:07:14.687Z",
   "totalCandidates": 3000,
-  "pendingSeo": 2597,
+  "pendingSeo": 2596,
   "channelCounts": {
+    "online": 2178,
     "pending": 409,
-    "online": 2180,
-    "wiki": 8
+    "wiki": 9
   },
   "fastClassCounts": {
+    "online:pending": 2178,
     "pending:pending": 409,
-    "online:pending": 2180,
-    "wiki:pending": 8
+    "wiki:pending": 9
   },
   "strategicCounts": {
+    "online:1": 2053,
     "pending:0": 404,
     "online:3": 1,
     "wiki:0": 1,
-    "online:2": 119,
-    "online:1": 2060,
-    "wiki:2": 1,
-    "pending:1": 5,
-    "wiki:1": 6
+    "online:2": 124,
+    "wiki:1": 8,
+    "pending:1": 5
   },
   "topSources": [
     {
       "id": "itch-new",
-      "count": 2172
+      "count": 2167
     },
     {
       "id": "itch-newest-web",
-      "count": 2164
+      "count": 2159
     },
     {
       "id": "itch-new-feed",
-      "count": 2141
+      "count": 2136
     },
     {
       "id": "trends-rising-7d",
@@ -41,7 +40,7 @@
     },
     {
       "id": "trends-rising-30d",
-      "count": 229
+      "count": 230
     },
     {
       "id": "trends-rising-7d-horror-game",
@@ -49,31 +48,31 @@
     },
     {
       "id": "trends-rising-30d-horror-game",
-      "count": 126
+      "count": 127
     },
     {
       "id": "itch-new-popular-web",
-      "count": 121
+      "count": 125
     },
     {
       "id": "itch-popular",
-      "count": 121
+      "count": 125
     },
     {
       "id": "trends-rising-7d-itch-io",
-      "count": 88
+      "count": 89
     },
     {
       "id": "trends-rising-7d-indie-game",
-      "count": 82
+      "count": 81
     },
     {
       "id": "trends-rising-30d-itch-io",
-      "count": 65
+      "count": 66
     },
     {
       "id": "trends-rising-30d-indie-game",
-      "count": 41
+      "count": 40
     },
     {
       "id": "itch-featured-feed",
@@ -85,23 +84,27 @@
     },
     {
       "id": "steam-latest-indie",
-      "count": 13
+      "count": 11
     },
     {
       "id": "steam-new",
-      "count": 13
+      "count": 11
     },
     {
       "id": "steam-popular-new",
-      "count": 9
+      "count": 10
+    },
+    {
+      "id": "y8-new",
+      "count": 4
     },
     {
       "id": "newgrounds-latest",
-      "count": 3
+      "count": 4
     },
     {
       "id": "newgrounds-new",
-      "count": 3
+      "count": 4
     },
     {
       "id": "newgrounds-daily-top",
@@ -116,8 +119,8 @@
       "count": 2
     },
     {
-      "id": "y8-new",
-      "count": 2
+      "id": "lagged-new",
+      "count": 1
     }
   ],
   "samples": [
@@ -159,6 +162,25 @@
         "itch-new",
         "itch-featured-feed",
         "itch-featured"
+      ]
+    },
+    {
+      "name": "Golem Quest",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 17,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 0,
+      "strategicCount": 2,
+      "sourceCount": 5,
+      "sourceIds": [
+        "itch-newest-web",
+        "itch-new",
+        "itch-new-feed",
+        "itch-new-popular-web",
+        "itch-popular"
       ]
     },
     {
@@ -260,6 +282,25 @@
     },
     {
       "name": "Project Hail Meowy",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 15,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 0,
+      "strategicCount": 2,
+      "sourceCount": 5,
+      "sourceIds": [
+        "itch-newest-web",
+        "itch-new",
+        "itch-new-feed",
+        "itch-new-popular-web",
+        "itch-popular"
+      ]
+    },
+    {
+      "name": "Living Scraps",
       "channel": "online",
       "fastClass": "pending",
       "fastScore": 0,
@@ -1031,44 +1072,6 @@
         "itch-new-popular-web",
         "itch-popular",
         "itch-new-feed"
-      ]
-    },
-    {
-      "name": "orbital",
-      "channel": "online",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 15,
-      "platforms": 1,
-      "browserPlayable": true,
-      "nameRisk": 5,
-      "strategicCount": 2,
-      "sourceCount": 5,
-      "sourceIds": [
-        "itch-newest-web",
-        "itch-new",
-        "itch-new-feed",
-        "itch-new-popular-web",
-        "itch-popular"
-      ]
-    },
-    {
-      "name": "Shakedown Troll",
-      "channel": "online",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 15,
-      "platforms": 1,
-      "browserPlayable": true,
-      "nameRisk": 0,
-      "strategicCount": 2,
-      "sourceCount": 5,
-      "sourceIds": [
-        "itch-newest-web",
-        "itch-new",
-        "itch-new-feed",
-        "itch-new-popular-web",
-        "itch-popular"
       ]
     }
   ]
