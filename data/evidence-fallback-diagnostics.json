@@ -1,43 +1,42 @@
 {
-  "generatedAt": "2026-10-23T19:13:31.753Z",
+  "generatedAt": "2026-10-23T22:19:23.479Z",
   "totalCandidates": 3000,
-  "pendingSeo": 2589,
+  "pendingSeo": 2587,
   "channelCounts": {
     "pending": 409,
     "online": 2176,
-    "wiki": 4
+    "wiki": 2
   },
   "fastClassCounts": {
     "pending:pending": 409,
     "online:pending": 2176,
-    "wiki:pending": 4
+    "wiki:pending": 2
   },
   "strategicCounts": {
-    "pending:0": 405,
+    "pending:0": 407,
     "online:3": 1,
     "wiki:0": 1,
-    "online:2": 115,
-    "online:1": 2060,
-    "wiki:2": 1,
-    "wiki:1": 2,
-    "pending:1": 4
+    "online:2": 113,
+    "online:1": 2062,
+    "pending:1": 2,
+    "wiki:1": 1
   },
   "topSources": [
     {
       "id": "itch-new",
-      "count": 2168
+      "count": 2170
     },
     {
       "id": "itch-newest-web",
-      "count": 2160
+      "count": 2161
     },
     {
       "id": "itch-new-feed",
-      "count": 2138
+      "count": 2140
     },
     {
       "id": "trends-rising-7d",
-      "count": 349
+      "count": 351
     },
     {
       "id": "trends-rising-30d",
@@ -53,19 +52,19 @@
     },
     {
       "id": "itch-new-popular-web",
-      "count": 116
+      "count": 114
     },
     {
       "id": "itch-popular",
-      "count": 116
+      "count": 114
     },
     {
       "id": "trends-rising-7d-itch-io",
-      "count": 85
+      "count": 86
     },
     {
       "id": "trends-rising-7d-indie-game",
-      "count": 83
+      "count": 84
     },
     {
       "id": "trends-rising-30d-itch-io",
@@ -76,24 +75,20 @@
       "count": 37
     },
     {
-      "id": "itch-featured-feed",
-      "count": 12
-    },
-    {
-      "id": "itch-featured",
-      "count": 12
-    },
-    {
       "id": "steam-latest-indie",
-      "count": 12
+      "count": 11
     },
     {
       "id": "steam-new",
-      "count": 12
+      "count": 11
     },
     {
-      "id": "steam-popular-new",
-      "count": 5
+      "id": "itch-featured-feed",
+      "count": 10
+    },
+    {
+      "id": "itch-featured",
+      "count": 10
     },
     {
       "id": "newgrounds-latest",
@@ -116,12 +111,12 @@
       "count": 2
     },
     {
-      "id": "y8-new",
+      "id": "steam-popular-new",
       "count": 2
     },
     {
-      "id": "poki-new",
-      "count": 1
+      "id": "y8-new",
+      "count": 2
     }
   ],
   "samples": [
@@ -166,25 +161,6 @@
       ]
     },
     {
-      "name": "Golem Quest",
-      "channel": "online",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 17,
-      "platforms": 1,
-      "browserPlayable": true,
-      "nameRisk": 0,
-      "strategicCount": 2,
-      "sourceCount": 5,
-      "sourceIds": [
-        "itch-newest-web",
-        "itch-new",
-        "itch-new-feed",
-        "itch-new-popular-web",
-        "itch-popular"
-      ]
-    },
-    {
       "name": "Trolley Problem Is Not Problem",
       "channel": "online",
       "fastClass": "pending",
@@ -203,6 +179,25 @@
         "itch-popular",
         "steam-latest-indie",
         "steam-new"
+      ]
+    },
+    {
+      "name": "Golem Quest",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 15,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 0,
+      "strategicCount": 2,
+      "sourceCount": 5,
+      "sourceIds": [
+        "itch-newest-web",
+        "itch-new",
+        "itch-new-feed",
+        "itch-new-popular-web",
+        "itch-popular"
       ]
     },
     {
