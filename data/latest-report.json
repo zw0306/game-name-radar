@@ -1,9 +1,9 @@
 {
-  "scannedAt": "2026-10-24T12:40:28.100Z",
+  "scannedAt": "2026-10-24T16:35:09.725Z",
   "targetMarket": "US_GLOBAL",
   "primaryMarket": "US",
   "referenceMarket": "WORLDWIDE",
-  "totalAdded": 244,
+  "totalAdded": 219,
   "sources": [
     {
       "ok": true,
@@ -38,14 +38,14 @@
       "sourceId": "steam-top-wishlist",
       "sourceName": "Steam Top Wishlists",
       "total": 50,
-      "added": 2
+      "added": 0
     },
     {
       "ok": true,
       "sourceId": "steam-popular-new",
       "sourceName": "Steam 热门新发行",
       "total": 50,
-      "added": 48
+      "added": 37
     },
     {
       "ok": true,
@@ -66,7 +66,7 @@
       "sourceId": "newgrounds-latest",
       "sourceName": "Newgrounds 最新通过作品",
       "total": 12,
-      "added": 10
+      "added": 6
     },
     {
       "ok": true,
@@ -87,7 +87,7 @@
       "sourceId": "y8-new",
       "sourceName": "Y8 新游戏",
       "total": 73,
-      "added": 39
+      "added": 41
     },
     {
       "ok": false,
@@ -100,28 +100,27 @@
       "sourceId": "lagged-new",
       "sourceName": "Lagged 新游戏",
       "total": 81,
-      "added": 5
+      "added": 0
     },
     {
       "ok": true,
       "sourceId": "trends-rising-7d-itch-io",
       "sourceName": "Trends上涨 7天 · itch io",
-      "total": 7,
-      "added": 3
+      "total": 8,
+      "added": 6
     },
     {
       "ok": true,
       "sourceId": "trends-rising-30d-itch-io",
       "sourceName": "Trends上涨 30天 · itch io",
-      "total": 17,
-      "added": 7
+      "total": 18,
+      "added": 8
     },
     {
-      "ok": true,
+      "ok": false,
       "sourceId": "trends-rising-7d-indie-game",
       "sourceName": "Trends上涨 7天 · indie game",
-      "total": 8,
-      "added": 1
+      "error": "Unexpected token '<', \"<html lang\"... is not valid JSON"
     },
     {
       "ok": true,
@@ -131,26 +130,24 @@
       "added": 0
     },
     {
-      "ok": true,
+      "ok": false,
       "sourceId": "trends-rising-7d-horror-game",
       "sourceName": "Trends上涨 7天 · horror game",
-      "total": 12,
-      "added": 5
+      "error": "Unexpected token '<', \"<html lang\"... is not valid JSON"
     },
     {
-      "ok": true,
+      "ok": false,
       "sourceId": "trends-rising-30d-horror-game",
       "sourceName": "Trends上涨 30天 · horror game",
-      "total": 15,
-      "added": 3
+      "error": "Unexpected token '<', \"<html lang\"... is not valid JSON"
     }
   ],
   "seoVerified": 0,
   "seoErrors": 0,
   "fastModelVersion": 3,
   "fastPassedCount": 124,
-  "fastWatchCount": 92,
-  "fastRejectedCount": 192,
+  "fastWatchCount": 91,
+  "fastRejectedCount": 193,
   "youtubeEnabled": false,
   "youtubeConfigured": false,
   "youtubeVerified": 0,
@@ -165,22 +162,22 @@
   "seoPassedCount": 295,
   "trendEligibleCount": 117,
   "trendPendingCount": 117,
-  "trendValidatedCount": 150,
+  "trendValidatedCount": 148,
   "risingCount": 10,
   "globalRisingCount": 0,
   "recommendationCounts": {
     "independent": 0,
     "test-now": 0,
     "page": 2,
-    "watch": 290,
+    "watch": 288,
     "reject": 0,
-    "pending": 2708,
+    "pending": 2710,
     "error": 0
   },
   "trendProvider": "apify-data-xplorer+serpapi",
   "trendProviderCounts": {
-    "apify-data-xplorer": 46,
-    "serpapi": 115
+    "apify-data-xplorer": 45,
+    "serpapi": 114
   },
   "serpApiConfigured": true,
   "serpApiUsage": {
@@ -195,7 +192,7 @@
   },
   "apifyConfigured": false,
   "apifyAccountStatus": {
-    "checkedAt": "2026-10-24T12:40:27.146Z",
+    "checkedAt": "2026-10-24T16:35:08.982Z",
     "configured": false,
     "ok": false,
     "provider": "apify",
@@ -209,12 +206,12 @@
     "candidatesVerified": 32,
     "errors": 145,
     "monthlyCallLimit": 4000,
-    "updatedAt": "2026-10-24T12:40:55.364Z"
+    "updatedAt": "2026-10-24T16:35:36.690Z"
   },
   "seoProvider": "serper-google-search",
   "seoProviderCounts": {
     "serper+autocomplete": 228,
-    "evidence-fallback": 181,
+    "evidence-fallback": 180,
     "duckduckgo+autocomplete": 1
   },
   "serperConfigured": true,
@@ -225,7 +222,7 @@
     "dayUsed": 0,
     "totalLimit": 2450,
     "dailyLimit": 2450,
-    "updatedAt": "2026-10-24T12:40:53.690Z",
+    "updatedAt": "2026-10-24T16:35:34.975Z",
     "lastError": "Not enough credits"
   },
   "googleCseConfiguredSlots": 0,
@@ -244,16 +241,16 @@
   },
   "siteTypeModelVersion": 2,
   "siteTypeCounts": {
-    "online": 2433,
-    "wiki": 155,
-    "pending": 412
+    "online": 2436,
+    "wiki": 154,
+    "pending": 410
   },
   "wikiPrelaunchModelVersion": 2,
   "wikiPrelaunchCounts": {
     "priority": 0,
     "prepare": 1,
     "watch": 13,
-    "weak": 141
+    "weak": 140
   },
   "serperVerification": {
     "rushMode": true,
@@ -276,32 +273,31 @@
     "errors": 0,
     "quotaStopped": true,
     "verifiedNames": [],
-    "ranAt": "2026-10-24T12:40:53.783Z"
+    "ranAt": "2026-10-24T16:35:35.062Z"
   },
   "evidenceSeoFallback": {
     "enabled": true,
     "limit": 180,
     "pendingCount": 2592,
-    "eligibleCount": 2,
-    "queueSize": 2,
-    "verified": 2,
+    "eligibleCount": 1,
+    "queueSize": 1,
+    "verified": 1,
     "channelVerified": {
       "online": 1,
-      "wiki": 1,
+      "wiki": 0,
       "pending": 0
     },
     "fastRecalculated": {
       "pass": 1,
-      "watch": 1,
+      "watch": 0,
       "weak": 0,
       "reject": 0,
       "pending": 0
     },
     "verifiedNames": [
-      "DIY Interior Consultant",
-      "Under Canopies"
+      "Rainbow's Doctor"
     ],
-    "ranAt": "2026-10-24T12:40:54.327Z"
+    "ranAt": "2026-10-24T16:35:35.574Z"
   },
   "socialBuzzVerification": {
     "modelVersion": 3,
@@ -323,16 +319,16 @@
       "x": 0,
       "tiktok": 0
     },
-    "ranAt": "2026-10-24T12:40:55.069Z"
+    "ranAt": "2026-10-24T16:35:36.398Z"
   },
   "channelOpportunityCounts": {
     "online": {
-      "validated": 123,
+      "validated": 122,
       "rising": 3,
       "recommended": 0
     },
     "wiki": {
-      "validated": 27,
+      "validated": 26,
       "rising": 7,
       "recommended": 0
     },
@@ -370,19 +366,19 @@
     },
     "pendingByChannel": {
       "online": 173,
-      "wiki": 88
+      "wiki": 87
     },
     "pendingByTier": {
       "strong": 120,
-      "secondary": 67,
-      "strategic": 74
+      "secondary": 65,
+      "strategic": 75
     },
     "verifiedNames": [],
     "errorNames": [],
-    "ranAt": "2026-10-24T12:40:55.464Z"
+    "ranAt": "2026-10-24T16:35:36.785Z"
   },
   "serpApiAccountStatus": {
-    "checkedAt": "2026-10-24T12:40:55.667Z",
+    "checkedAt": "2026-10-24T16:35:37.029Z",
     "accountApiConsumesSearchCredits": false,
     "configuredKeys": 1,
     "workingKeys": 1,
@@ -419,7 +415,7 @@
         "planSearchesLeft": 250,
         "totalSearchesLeft": 250,
         "rateLimitPerHour": 250,
-        "checkedAt": "2026-10-24T12:40:55.667Z",
+        "checkedAt": "2026-10-24T16:35:37.029Z",
         "sharedAccount": false,
         "sharedWithSlots": []
       },
@@ -473,12 +469,12 @@
     },
     "pendingByTier": {
       "strong": 120,
-      "secondary": 67,
-      "strategic": 74
+      "secondary": 65,
+      "strategic": 75
     },
     "pendingByChannel": {
       "online": 173,
-      "wiki": 88
+      "wiki": 87
     },
     "verifiedNames": [],
     "caps": {
@@ -502,7 +498,7 @@
         "quotaStopped": false
       }
     },
-    "ranAt": "2026-10-24T12:40:56.154Z"
+    "ranAt": "2026-10-24T16:35:37.475Z"
   },
   "serpApiConfiguredSlots": 1,
   "serpApiPoolUsage": {
@@ -524,7 +520,7 @@
         "updatedAt": "2026-10-10T00:51:38.722Z"
       }
     },
-    "updatedAt": "2026-10-24T12:40:56.240Z"
+    "updatedAt": "2026-10-24T16:35:37.576Z"
   },
   "searchApiConfigured": false,
   "searchApiTrendsUsage": {
@@ -558,15 +554,15 @@
     },
     "pendingByChannel": {
       "online": 173,
-      "wiki": 88
+      "wiki": 87
     },
     "pendingByTier": {
       "strong": 120,
-      "secondary": 67,
-      "strategic": 74
+      "secondary": 65,
+      "strategic": 75
     },
     "verifiedNames": [],
     "errorNames": [],
-    "ranAt": "2026-10-24T12:40:56.619Z"
+    "ranAt": "2026-10-24T16:35:37.955Z"
   }
 }

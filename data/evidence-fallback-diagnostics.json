@@ -1,54 +1,54 @@
 {
-  "generatedAt": "2026-10-24T12:40:54.023Z",
+  "generatedAt": "2026-10-24T16:35:35.265Z",
   "totalCandidates": 3000,
   "pendingSeo": 2592,
   "channelCounts": {
-    "pending": 411,
-    "online": 2177,
-    "wiki": 4
+    "pending": 409,
+    "online": 2180,
+    "wiki": 3
   },
   "fastClassCounts": {
-    "pending:pending": 411,
-    "online:pending": 2177,
-    "wiki:pending": 4
+    "pending:pending": 409,
+    "online:pending": 2180,
+    "wiki:pending": 3
   },
   "strategicCounts": {
-    "pending:0": 409,
+    "pending:0": 407,
     "online:3": 1,
     "wiki:0": 1,
     "online:2": 111,
-    "online:1": 2065,
-    "wiki:1": 3,
-    "pending:1": 2
+    "online:1": 2068,
+    "pending:1": 2,
+    "wiki:1": 2
   },
   "topSources": [
     {
       "id": "itch-new",
-      "count": 2170
+      "count": 2173
     },
     {
       "id": "itch-newest-web",
-      "count": 2161
+      "count": 2163
     },
     {
       "id": "itch-new-feed",
-      "count": 2140
+      "count": 2143
     },
     {
       "id": "trends-rising-7d",
-      "count": 353
+      "count": 351
     },
     {
       "id": "trends-rising-30d",
-      "count": 226
+      "count": 224
     },
     {
       "id": "trends-rising-7d-horror-game",
-      "count": 189
+      "count": 188
     },
     {
       "id": "trends-rising-30d-horror-game",
-      "count": 129
+      "count": 128
     },
     {
       "id": "itch-new-popular-web",
@@ -64,7 +64,7 @@
     },
     {
       "id": "trends-rising-7d-indie-game",
-      "count": 83
+      "count": 82
     },
     {
       "id": "trends-rising-30d-itch-io",
@@ -72,7 +72,7 @@
     },
     {
       "id": "trends-rising-30d-indie-game",
-      "count": 35
+      "count": 34
     },
     {
       "id": "steam-latest-indie",
@@ -92,7 +92,7 @@
     },
     {
       "id": "steam-popular-new",
-      "count": 4
+      "count": 3
     },
     {
       "id": "y8-new",
@@ -120,6 +120,10 @@
     },
     {
       "id": "crazygames-new",
+      "count": 1
+    },
+    {
+      "id": "lagged-new",
       "count": 1
     }
   ],
