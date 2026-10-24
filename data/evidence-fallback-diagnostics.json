@@ -1,46 +1,46 @@
 {
-  "generatedAt": "2026-10-24T07:17:56.662Z",
+  "generatedAt": "2026-10-24T12:40:54.023Z",
   "totalCandidates": 3000,
   "pendingSeo": 2592,
   "channelCounts": {
-    "pending": 413,
-    "online": 2175,
+    "pending": 411,
+    "online": 2177,
     "wiki": 4
   },
   "fastClassCounts": {
-    "pending:pending": 413,
-    "online:pending": 2175,
+    "pending:pending": 411,
+    "online:pending": 2177,
     "wiki:pending": 4
   },
   "strategicCounts": {
-    "pending:0": 411,
+    "pending:0": 409,
     "online:3": 1,
     "wiki:0": 1,
-    "online:2": 113,
-    "online:1": 2061,
-    "pending:1": 2,
-    "wiki:1": 3
+    "online:2": 111,
+    "online:1": 2065,
+    "wiki:1": 3,
+    "pending:1": 2
   },
   "topSources": [
     {
       "id": "itch-new",
-      "count": 2168
+      "count": 2170
     },
     {
       "id": "itch-newest-web",
-      "count": 2159
+      "count": 2161
     },
     {
       "id": "itch-new-feed",
-      "count": 2138
+      "count": 2140
     },
     {
       "id": "trends-rising-7d",
-      "count": 356
+      "count": 353
     },
     {
       "id": "trends-rising-30d",
-      "count": 227
+      "count": 226
     },
     {
       "id": "trends-rising-7d-horror-game",
@@ -52,27 +52,27 @@
     },
     {
       "id": "itch-new-popular-web",
-      "count": 112
+      "count": 111
     },
     {
       "id": "itch-popular",
-      "count": 112
+      "count": 111
     },
     {
       "id": "trends-rising-7d-itch-io",
-      "count": 86
-    },
-    {
-      "id": "trends-rising-7d-indie-game",
       "count": 85
     },
     {
+      "id": "trends-rising-7d-indie-game",
+      "count": 83
+    },
+    {
       "id": "trends-rising-30d-itch-io",
-      "count": 64
+      "count": 65
     },
     {
       "id": "trends-rising-30d-indie-game",
-      "count": 37
+      "count": 35
     },
     {
       "id": "steam-latest-indie",
@@ -120,10 +120,6 @@
     },
     {
       "id": "crazygames-new",
-      "count": 1
-    },
-    {
-      "id": "lagged-new",
       "count": 1
     }
   ],
