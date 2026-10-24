@@ -1,42 +1,42 @@
 {
-  "generatedAt": "2026-10-24T16:35:35.265Z",
+  "generatedAt": "2026-10-24T19:29:27.839Z",
   "totalCandidates": 3000,
-  "pendingSeo": 2592,
+  "pendingSeo": 2591,
   "channelCounts": {
-    "pending": 409,
-    "online": 2180,
+    "pending": 407,
+    "online": 2181,
     "wiki": 3
   },
   "fastClassCounts": {
-    "pending:pending": 409,
-    "online:pending": 2180,
+    "pending:pending": 407,
+    "online:pending": 2181,
     "wiki:pending": 3
   },
   "strategicCounts": {
-    "pending:0": 407,
+    "pending:0": 406,
     "online:3": 1,
     "wiki:0": 1,
-    "online:2": 111,
-    "online:1": 2068,
-    "pending:1": 2,
+    "online:2": 107,
+    "online:1": 2073,
+    "pending:1": 1,
     "wiki:1": 2
   },
   "topSources": [
     {
       "id": "itch-new",
-      "count": 2173
+      "count": 2175
     },
     {
       "id": "itch-newest-web",
-      "count": 2163
+      "count": 2165
     },
     {
       "id": "itch-new-feed",
-      "count": 2143
+      "count": 2145
     },
     {
       "id": "trends-rising-7d",
-      "count": 351
+      "count": 350
     },
     {
       "id": "trends-rising-30d",
@@ -52,11 +52,11 @@
     },
     {
       "id": "itch-new-popular-web",
-      "count": 111
+      "count": 108
     },
     {
       "id": "itch-popular",
-      "count": 111
+      "count": 108
     },
     {
       "id": "trends-rising-7d-itch-io",
@@ -64,7 +64,7 @@
     },
     {
       "id": "trends-rising-7d-indie-game",
-      "count": 82
+      "count": 81
     },
     {
       "id": "trends-rising-30d-itch-io",
@@ -84,18 +84,14 @@
     },
     {
       "id": "itch-featured-feed",
-      "count": 10
+      "count": 9
     },
     {
       "id": "itch-featured",
-      "count": 10
+      "count": 9
     },
     {
       "id": "steam-popular-new",
-      "count": 3
-    },
-    {
-      "id": "y8-new",
       "count": 3
     },
     {
@@ -119,11 +115,11 @@
       "count": 2
     },
     {
-      "id": "crazygames-new",
-      "count": 1
+      "id": "y8-new",
+      "count": 2
     },
     {
-      "id": "lagged-new",
+      "id": "crazygames-new",
       "count": 1
     }
   ],
