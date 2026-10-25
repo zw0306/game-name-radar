@@ -1,46 +1,46 @@
 {
-  "generatedAt": "2026-10-25T11:37:24.630Z",
+  "generatedAt": "2026-10-25T16:19:12.659Z",
   "totalCandidates": 3000,
   "pendingSeo": 2594,
   "channelCounts": {
-    "pending": 405,
-    "online": 2187,
+    "pending": 409,
+    "online": 2183,
     "wiki": 2
   },
   "fastClassCounts": {
-    "pending:pending": 405,
-    "online:pending": 2187,
+    "pending:pending": 409,
+    "online:pending": 2183,
     "wiki:pending": 2
   },
   "strategicCounts": {
-    "pending:0": 404,
+    "pending:0": 408,
     "online:3": 1,
     "wiki:0": 1,
     "online:2": 106,
-    "online:1": 2080,
+    "online:1": 2076,
     "pending:1": 1,
     "wiki:1": 1
   },
   "topSources": [
     {
       "id": "itch-new",
-      "count": 2181
+      "count": 2177
     },
     {
       "id": "itch-newest-web",
-      "count": 2171
+      "count": 2167
     },
     {
       "id": "itch-new-feed",
-      "count": 2152
+      "count": 2148
     },
     {
       "id": "trends-rising-7d",
-      "count": 349
+      "count": 352
     },
     {
       "id": "trends-rising-30d",
-      "count": 218
+      "count": 220
     },
     {
       "id": "trends-rising-7d-horror-game",
@@ -48,7 +48,7 @@
     },
     {
       "id": "trends-rising-30d-horror-game",
-      "count": 125
+      "count": 127
     },
     {
       "id": "itch-new-popular-web",
@@ -60,11 +60,11 @@
     },
     {
       "id": "trends-rising-7d-itch-io",
-      "count": 84
+      "count": 85
     },
     {
       "id": "trends-rising-7d-indie-game",
-      "count": 82
+      "count": 84
     },
     {
       "id": "trends-rising-30d-itch-io",
@@ -162,6 +162,25 @@
         "itch-new",
         "itch-featured-feed",
         "itch-featured"
+      ]
+    },
+    {
+      "name": "今天也要搗個亂。｜3D 貓咪搗亂模擬器",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 17,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 23,
+      "strategicCount": 2,
+      "sourceCount": 5,
+      "sourceIds": [
+        "itch-newest-web",
+        "itch-new",
+        "itch-new-feed",
+        "itch-new-popular-web",
+        "itch-popular"
       ]
     },
     {
@@ -1053,25 +1072,6 @@
         "itch-new-feed",
         "itch-new-popular-web",
         "itch-popular"
-      ]
-    },
-    {
-      "name": "Neverending dreams - Demo",
-      "channel": "online",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 15,
-      "platforms": 1,
-      "browserPlayable": true,
-      "nameRisk": 0,
-      "strategicCount": 2,
-      "sourceCount": 5,
-      "sourceIds": [
-        "itch-newest-web",
-        "itch-new",
-        "itch-new-popular-web",
-        "itch-popular",
-        "itch-new-feed"
       ]
     }
   ]
