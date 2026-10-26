@@ -1,85 +1,87 @@
 {
-  "generatedAt": "2026-10-26T06:17:35.969Z",
+  "generatedAt": "2026-10-26T14:16:34.691Z",
   "totalCandidates": 3000,
-  "pendingSeo": 2596,
+  "pendingSeo": 2595,
   "channelCounts": {
-    "online": 2184,
-    "pending": 411,
-    "wiki": 1
+    "pending": 407,
+    "online": 2185,
+    "wiki": 3
   },
   "fastClassCounts": {
-    "online:pending": 2184,
-    "pending:pending": 411,
-    "wiki:pending": 1
+    "pending:pending": 407,
+    "online:pending": 2185,
+    "wiki:pending": 3
   },
   "strategicCounts": {
-    "online:1": 2077,
-    "pending:0": 410,
+    "pending:0": 406,
     "online:3": 1,
     "wiki:0": 1,
-    "online:2": 106,
-    "pending:1": 1
+    "online:2": 105,
+    "online:1": 2079,
+    "pending:1": 1,
+    "wiki:2": 1,
+    "wiki:1": 1
   },
   "topSources": [
     {
       "id": "itch-new",
-      "count": 2176
+      "count": 2177
     },
     {
       "id": "itch-newest-web",
-      "count": 2166
+      "count": 2167
     },
     {
       "id": "itch-new-feed",
-      "count": 2147
+      "count": 2148
     },
     {
       "id": "trends-rising-7d",
-      "count": 358
+      "count": 353
     },
     {
       "id": "trends-rising-30d",
-      "count": 222
+      "count": 217
     },
     {
       "id": "trends-rising-7d-horror-game",
-      "count": 187
+      "count": 184
     },
     {
       "id": "trends-rising-30d-horror-game",
-      "count": 126
+      "count": 124
     },
     {
       "id": "itch-new-popular-web",
-      "count": 108
+      "count": 105
     },
     {
       "id": "itch-popular",
-      "count": 108
+      "count": 105
     },
     {
       "id": "trends-rising-7d-itch-io",
-      "count": 90
+      "count": 89
     },
     {
       "id": "trends-rising-7d-indie-game",
-      "count": 85
+      "count": 84
     },
     {
       "id": "trends-rising-30d-itch-io",
-      "count": 66
+      "count": 64
     },
     {
       "id": "trends-rising-30d-indie-game",
-      "count": 32
+      "count": 31
     },
     {
       "id": "steam-latest-indie",
-      "count": 11
+      "count": 13
     },
     {
       "id": "steam-new",
-      "count": 11
+      "count": 13
     },
     {
       "id": "itch-featured-feed",
@@ -90,12 +92,12 @@
       "count": 9
     },
     {
-      "id": "newgrounds-daily-top",
-      "count": 4
+      "id": "steam-popular-new",
+      "count": 3
     },
     {
-      "id": "newgrounds-top",
-      "count": 4
+      "id": "y8-new",
+      "count": 3
     },
     {
       "id": "newgrounds-latest",
@@ -106,11 +108,15 @@
       "count": 3
     },
     {
-      "id": "steam-top-wishlist",
-      "count": 2
+      "id": "newgrounds-daily-top",
+      "count": 3
     },
     {
-      "id": "y8-new",
+      "id": "newgrounds-top",
+      "count": 3
+    },
+    {
+      "id": "steam-top-wishlist",
       "count": 2
     },
     {
@@ -118,7 +124,11 @@
       "count": 1
     },
     {
-      "id": "steam-popular-new",
+      "id": "poki-new",
+      "count": 1
+    },
+    {
+      "id": "lagged-new",
       "count": 1
     }
   ],
@@ -141,24 +151,6 @@
         "itch-featured",
         "itch-new-popular-web",
         "itch-popular"
-      ]
-    },
-    {
-      "name": "Troll the King",
-      "channel": "online",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 15,
-      "platforms": 2,
-      "browserPlayable": true,
-      "nameRisk": 6,
-      "strategicCount": 2,
-      "sourceCount": 4,
-      "sourceIds": [
-        "itch-new-popular-web",
-        "itch-popular",
-        "newgrounds-daily-top",
-        "newgrounds-top"
       ]
     },
     {
@@ -1062,6 +1054,25 @@
       "platforms": 1,
       "browserPlayable": true,
       "nameRisk": 5,
+      "strategicCount": 2,
+      "sourceCount": 5,
+      "sourceIds": [
+        "itch-newest-web",
+        "itch-new",
+        "itch-new-feed",
+        "itch-new-popular-web",
+        "itch-popular"
+      ]
+    },
+    {
+      "name": "まるかいてドカン! / Maru Kaite Dokan!",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 15,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 0,
       "strategicCount": 2,
       "sourceCount": 5,
       "sourceIds": [
