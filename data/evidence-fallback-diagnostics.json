@@ -1,25 +1,24 @@
 {
-  "generatedAt": "2026-10-25T22:33:13.653Z",
+  "generatedAt": "2026-10-26T01:10:20.238Z",
   "totalCandidates": 3000,
-  "pendingSeo": 2597,
+  "pendingSeo": 2596,
   "channelCounts": {
-    "pending": 404,
-    "online": 2191,
-    "wiki": 2
+    "pending": 405,
+    "online": 2190,
+    "wiki": 1
   },
   "fastClassCounts": {
-    "pending:pending": 404,
-    "online:pending": 2191,
-    "wiki:pending": 2
+    "pending:pending": 405,
+    "online:pending": 2190,
+    "wiki:pending": 1
   },
   "strategicCounts": {
-    "pending:0": 403,
+    "pending:0": 404,
     "online:3": 1,
     "wiki:0": 1,
-    "online:2": 106,
-    "online:1": 2084,
-    "pending:1": 1,
-    "wiki:1": 1
+    "online:2": 104,
+    "online:1": 2085,
+    "pending:1": 1
   },
   "topSources": [
     {
@@ -36,7 +35,7 @@
     },
     {
       "id": "trends-rising-7d",
-      "count": 349
+      "count": 351
     },
     {
       "id": "trends-rising-30d",
@@ -48,19 +47,19 @@
     },
     {
       "id": "trends-rising-30d-horror-game",
-      "count": 124
+      "count": 123
     },
     {
       "id": "itch-new-popular-web",
-      "count": 106
+      "count": 105
     },
     {
       "id": "itch-popular",
-      "count": 106
+      "count": 105
     },
     {
       "id": "trends-rising-7d-itch-io",
-      "count": 85
+      "count": 86
     },
     {
       "id": "trends-rising-7d-indie-game",
@@ -76,11 +75,11 @@
     },
     {
       "id": "steam-latest-indie",
-      "count": 11
+      "count": 10
     },
     {
       "id": "steam-new",
-      "count": 11
+      "count": 10
     },
     {
       "id": "itch-featured-feed",
@@ -89,10 +88,6 @@
     {
       "id": "itch-featured",
       "count": 9
-    },
-    {
-      "id": "y8-new",
-      "count": 3
     },
     {
       "id": "newgrounds-latest",
@@ -115,12 +110,16 @@
       "count": 2
     },
     {
-      "id": "crazygames-new",
+      "id": "y8-new",
       "count": 2
     },
     {
+      "id": "crazygames-new",
+      "count": 1
+    },
+    {
       "id": "steam-popular-new",
-      "count": 2
+      "count": 1
     }
   ],
   "samples": [
