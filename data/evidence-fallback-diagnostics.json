@@ -1,85 +1,85 @@
 {
-  "generatedAt": "2026-10-26T01:10:20.238Z",
+  "generatedAt": "2026-10-26T06:17:35.969Z",
   "totalCandidates": 3000,
   "pendingSeo": 2596,
   "channelCounts": {
-    "pending": 405,
-    "online": 2190,
+    "online": 2184,
+    "pending": 411,
     "wiki": 1
   },
   "fastClassCounts": {
-    "pending:pending": 405,
-    "online:pending": 2190,
+    "online:pending": 2184,
+    "pending:pending": 411,
     "wiki:pending": 1
   },
   "strategicCounts": {
-    "pending:0": 404,
+    "online:1": 2077,
+    "pending:0": 410,
     "online:3": 1,
     "wiki:0": 1,
-    "online:2": 104,
-    "online:1": 2085,
+    "online:2": 106,
     "pending:1": 1
   },
   "topSources": [
     {
       "id": "itch-new",
-      "count": 2184
+      "count": 2176
     },
     {
       "id": "itch-newest-web",
-      "count": 2174
+      "count": 2166
     },
     {
       "id": "itch-new-feed",
-      "count": 2155
+      "count": 2147
     },
     {
       "id": "trends-rising-7d",
-      "count": 351
+      "count": 358
     },
     {
       "id": "trends-rising-30d",
-      "count": 216
+      "count": 222
     },
     {
       "id": "trends-rising-7d-horror-game",
-      "count": 185
+      "count": 187
     },
     {
       "id": "trends-rising-30d-horror-game",
-      "count": 123
+      "count": 126
     },
     {
       "id": "itch-new-popular-web",
-      "count": 105
+      "count": 108
     },
     {
       "id": "itch-popular",
-      "count": 105
+      "count": 108
     },
     {
       "id": "trends-rising-7d-itch-io",
-      "count": 86
+      "count": 90
     },
     {
       "id": "trends-rising-7d-indie-game",
-      "count": 84
+      "count": 85
     },
     {
       "id": "trends-rising-30d-itch-io",
-      "count": 64
+      "count": 66
     },
     {
       "id": "trends-rising-30d-indie-game",
-      "count": 31
+      "count": 32
     },
     {
       "id": "steam-latest-indie",
-      "count": 10
+      "count": 11
     },
     {
       "id": "steam-new",
-      "count": 10
+      "count": 11
     },
     {
       "id": "itch-featured-feed",
@@ -90,19 +90,19 @@
       "count": 9
     },
     {
+      "id": "newgrounds-daily-top",
+      "count": 4
+    },
+    {
+      "id": "newgrounds-top",
+      "count": 4
+    },
+    {
       "id": "newgrounds-latest",
       "count": 3
     },
     {
       "id": "newgrounds-new",
-      "count": 3
-    },
-    {
-      "id": "newgrounds-daily-top",
-      "count": 3
-    },
-    {
-      "id": "newgrounds-top",
       "count": 3
     },
     {
@@ -144,6 +144,24 @@
       ]
     },
     {
+      "name": "Troll the King",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 15,
+      "platforms": 2,
+      "browserPlayable": true,
+      "nameRisk": 6,
+      "strategicCount": 2,
+      "sourceCount": 4,
+      "sourceIds": [
+        "itch-new-popular-web",
+        "itch-popular",
+        "newgrounds-daily-top",
+        "newgrounds-top"
+      ]
+    },
+    {
       "name": "Swamp and Luig",
       "channel": "online",
       "fastClass": "pending",
@@ -161,6 +179,25 @@
         "itch-new",
         "itch-featured-feed",
         "itch-featured"
+      ]
+    },
+    {
+      "name": "You Leave Grass In Your Wake",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 17,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 6,
+      "strategicCount": 2,
+      "sourceCount": 5,
+      "sourceIds": [
+        "itch-newest-web",
+        "itch-new",
+        "itch-new-feed",
+        "itch-new-popular-web",
+        "itch-popular"
       ]
     },
     {
@@ -1025,44 +1062,6 @@
       "platforms": 1,
       "browserPlayable": true,
       "nameRisk": 5,
-      "strategicCount": 2,
-      "sourceCount": 5,
-      "sourceIds": [
-        "itch-newest-web",
-        "itch-new",
-        "itch-new-feed",
-        "itch-new-popular-web",
-        "itch-popular"
-      ]
-    },
-    {
-      "name": "まるかいてドカン! / Maru Kaite Dokan!",
-      "channel": "online",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 15,
-      "platforms": 1,
-      "browserPlayable": true,
-      "nameRisk": 0,
-      "strategicCount": 2,
-      "sourceCount": 5,
-      "sourceIds": [
-        "itch-newest-web",
-        "itch-new",
-        "itch-new-feed",
-        "itch-new-popular-web",
-        "itch-popular"
-      ]
-    },
-    {
-      "name": "Marisa's Star Stacker",
-      "channel": "online",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 15,
-      "platforms": 1,
-      "browserPlayable": true,
-      "nameRisk": 0,
       "strategicCount": 2,
       "sourceCount": 5,
       "sourceIds": [
