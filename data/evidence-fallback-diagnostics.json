@@ -1,42 +1,42 @@
 {
-  "generatedAt": "2026-10-27T13:12:57.491Z",
+  "generatedAt": "2026-10-27T18:45:01.038Z",
   "totalCandidates": 3000,
-  "pendingSeo": 2587,
+  "pendingSeo": 2585,
   "channelCounts": {
-    "pending": 411,
-    "online": 2170,
-    "wiki": 6
+    "pending": 408,
+    "online": 2168,
+    "wiki": 9
   },
   "fastClassCounts": {
-    "pending:pending": 411,
-    "online:pending": 2170,
-    "wiki:pending": 6
+    "pending:pending": 408,
+    "online:pending": 2168,
+    "wiki:pending": 9
   },
   "strategicCounts": {
-    "pending:0": 408,
+    "pending:0": 406,
     "online:3": 1,
     "wiki:0": 1,
-    "online:2": 104,
-    "online:1": 2065,
-    "wiki:1": 5,
-    "pending:1": 3
+    "online:2": 107,
+    "online:1": 2060,
+    "wiki:1": 8,
+    "pending:1": 2
   },
   "topSources": [
     {
       "id": "itch-new",
-      "count": 2161
+      "count": 2157
     },
     {
       "id": "itch-newest-web",
-      "count": 2152
+      "count": 2148
     },
     {
       "id": "itch-new-feed",
-      "count": 2132
+      "count": 2128
     },
     {
       "id": "trends-rising-7d",
-      "count": 352
+      "count": 349
     },
     {
       "id": "trends-rising-30d",
@@ -44,19 +44,19 @@
     },
     {
       "id": "trends-rising-7d-horror-game",
-      "count": 181
+      "count": 178
     },
     {
       "id": "trends-rising-30d-horror-game",
-      "count": 125
+      "count": 123
     },
     {
       "id": "itch-new-popular-web",
-      "count": 105
+      "count": 107
     },
     {
       "id": "itch-popular",
-      "count": 105
+      "count": 107
     },
     {
       "id": "trends-rising-7d-itch-io",
@@ -68,7 +68,7 @@
     },
     {
       "id": "trends-rising-30d-itch-io",
-      "count": 64
+      "count": 66
     },
     {
       "id": "trends-rising-30d-indie-game",
@@ -92,7 +92,11 @@
     },
     {
       "id": "steam-popular-new",
-      "count": 6
+      "count": 9
+    },
+    {
+      "id": "y8-new",
+      "count": 3
     },
     {
       "id": "newgrounds-latest",
@@ -115,15 +119,15 @@
       "count": 2
     },
     {
-      "id": "y8-new",
-      "count": 2
-    },
-    {
-      "id": "crazygames-new",
+      "id": "lagged-new",
       "count": 1
     },
     {
       "id": "poki-new",
+      "count": 1
+    },
+    {
+      "id": "crazygames-new",
       "count": 1
     }
   ],
@@ -184,6 +188,43 @@
         "itch-popular",
         "itch-featured-feed",
         "itch-featured"
+      ]
+    },
+    {
+      "name": "Dungeonbound (In Development)",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 17,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 6,
+      "strategicCount": 2,
+      "sourceCount": 4,
+      "sourceIds": [
+        "itch-featured-feed",
+        "itch-featured",
+        "itch-new-popular-web",
+        "itch-popular"
+      ]
+    },
+    {
+      "name": "Hoard Sweeper",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 17,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 0,
+      "strategicCount": 2,
+      "sourceCount": 5,
+      "sourceIds": [
+        "itch-newest-web",
+        "itch-new",
+        "itch-new-feed",
+        "itch-new-popular-web",
+        "itch-popular"
       ]
     },
     {
@@ -1029,44 +1070,6 @@
       "platforms": 1,
       "browserPlayable": true,
       "nameRisk": 0,
-      "strategicCount": 2,
-      "sourceCount": 5,
-      "sourceIds": [
-        "itch-newest-web",
-        "itch-new",
-        "itch-new-feed",
-        "itch-new-popular-web",
-        "itch-popular"
-      ]
-    },
-    {
-      "name": "135_Rags of Racs_Dhelangan Studio_PC",
-      "channel": "online",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 15,
-      "platforms": 1,
-      "browserPlayable": true,
-      "nameRisk": 5,
-      "strategicCount": 2,
-      "sourceCount": 5,
-      "sourceIds": [
-        "itch-newest-web",
-        "itch-new",
-        "itch-new-feed",
-        "itch-new-popular-web",
-        "itch-popular"
-      ]
-    },
-    {
-      "name": "Wender",
-      "channel": "online",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 15,
-      "platforms": 1,
-      "browserPlayable": true,
-      "nameRisk": 5,
       "strategicCount": 2,
       "sourceCount": 5,
       "sourceIds": [
