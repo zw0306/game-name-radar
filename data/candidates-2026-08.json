@@ -68,7 +68,7 @@
     "fast": {
       "modelVersion": 3,
       "profile": "online",
-      "checkedAt": "2026-10-28T02:15:26.498Z",
+      "checkedAt": "2026-10-28T09:40:19.982Z",
       "score": 64,
       "classification": "pass",
       "reasons": [
@@ -105,7 +105,7 @@
     },
     "siteType": {
       "modelVersion": 2,
-      "checkedAt": "2026-10-28T02:15:30.336Z",
+      "checkedAt": "2026-10-28T09:40:25.648Z",
       "type": "online",
       "channel": "online",
       "confidence": "high",
@@ -132,7 +132,7 @@
     },
     "marketFreshness": {
       "modelVersion": 1,
-      "checkedAt": "2026-10-28T02:15:30.336Z",
+      "checkedAt": "2026-10-28T09:40:25.649Z",
       "status": "unknown",
       "confidence": "low",
       "reason": "关键词历史或现有竞争站占位尚未完成确认",
@@ -146,7 +146,7 @@
     },
     "opportunity": {
       "modelVersion": 3,
-      "checkedAt": "2026-10-28T02:15:30.336Z",
+      "checkedAt": "2026-10-28T09:40:25.649Z",
       "weights": {
         "socialSpread": 0.3,
         "growthVelocity": 0.25,
@@ -504,7 +504,7 @@
     "fast": {
       "modelVersion": 3,
       "profile": "online",
-      "checkedAt": "2026-10-28T02:15:26.499Z",
+      "checkedAt": "2026-10-28T09:40:19.983Z",
       "score": 29,
       "classification": "watch",
       "reasons": [
@@ -551,7 +551,7 @@
     },
     "siteType": {
       "modelVersion": 2,
-      "checkedAt": "2026-10-28T02:15:30.337Z",
+      "checkedAt": "2026-10-28T09:40:25.650Z",
       "type": "online",
       "channel": "online",
       "confidence": "high",
@@ -577,7 +577,7 @@
     },
     "marketFreshness": {
       "modelVersion": 1,
-      "checkedAt": "2026-10-28T02:15:30.337Z",
+      "checkedAt": "2026-10-28T09:40:25.650Z",
       "status": "unknown",
       "confidence": "low",
       "reason": "关键词历史或现有竞争站占位尚未完成确认",
@@ -591,7 +591,7 @@
     },
     "opportunity": {
       "modelVersion": 3,
-      "checkedAt": "2026-10-28T02:15:30.337Z",
+      "checkedAt": "2026-10-28T09:40:25.650Z",
       "weights": {
         "socialSpread": 0.3,
         "growthVelocity": 0.25,
@@ -742,7 +742,7 @@
     "fast": {
       "modelVersion": 3,
       "profile": "wiki",
-      "checkedAt": "2026-10-28T02:15:26.504Z",
+      "checkedAt": "2026-10-28T09:40:19.990Z",
       "score": 72,
       "classification": "pass",
       "reasons": [
@@ -779,7 +779,7 @@
     },
     "siteType": {
       "modelVersion": 2,
-      "checkedAt": "2026-10-28T02:15:30.344Z",
+      "checkedAt": "2026-10-28T09:40:25.663Z",
       "type": "wiki",
       "channel": "wiki",
       "confidence": "high",
@@ -806,7 +806,7 @@
     },
     "marketFreshness": {
       "modelVersion": 1,
-      "checkedAt": "2026-10-28T02:15:30.344Z",
+      "checkedAt": "2026-10-28T09:40:25.663Z",
       "status": "unknown",
       "confidence": "low",
       "reason": "关键词历史或现有竞争站占位尚未完成确认",
@@ -820,7 +820,7 @@
     },
     "opportunity": {
       "modelVersion": 3,
-      "checkedAt": "2026-10-28T02:15:30.344Z",
+      "checkedAt": "2026-10-28T09:40:25.663Z",
       "weights": {
         "socialSpread": 0.3,
         "growthVelocity": 0.25,
@@ -866,7 +866,7 @@
     },
     "wikiPrelaunch": {
       "modelVersion": 2,
-      "checkedAt": "2026-10-28T02:15:30.344Z",
+      "checkedAt": "2026-10-28T09:40:25.663Z",
       "score": 0,
       "classification": "weak",
       "reasons": [
@@ -1173,7 +1173,7 @@
     },
     "siteType": {
       "modelVersion": 2,
-      "checkedAt": "2026-10-28T02:15:30.354Z",
+      "checkedAt": "2026-10-28T09:40:25.684Z",
       "type": "pending",
       "channel": "pending",
       "confidence": "low",
@@ -1198,7 +1198,7 @@
     },
     "marketFreshness": {
       "modelVersion": 1,
-      "checkedAt": "2026-10-28T02:15:30.354Z",
+      "checkedAt": "2026-10-28T09:40:25.684Z",
       "status": "unknown",
       "confidence": "low",
       "reason": "关键词历史或现有竞争站占位尚未完成确认",
@@ -1212,7 +1212,7 @@
     },
     "opportunity": {
       "modelVersion": 3,
-      "checkedAt": "2026-10-28T02:15:30.354Z",
+      "checkedAt": "2026-10-28T09:40:25.684Z",
       "weights": {
         "socialSpread": 0.3,
         "growthVelocity": 0.25,
@@ -1358,7 +1358,7 @@
     },
     "siteType": {
       "modelVersion": 2,
-      "checkedAt": "2026-10-28T02:15:30.354Z",
+      "checkedAt": "2026-10-28T09:40:25.684Z",
       "type": "pending",
       "channel": "pending",
       "confidence": "low",
@@ -1383,7 +1383,7 @@
     },
     "marketFreshness": {
       "modelVersion": 1,
-      "checkedAt": "2026-10-28T02:15:30.354Z",
+      "checkedAt": "2026-10-28T09:40:25.684Z",
       "status": "unknown",
       "confidence": "low",
       "reason": "关键词历史或现有竞争站占位尚未完成确认",
@@ -1397,7 +1397,7 @@
     },
     "opportunity": {
       "modelVersion": 3,
-      "checkedAt": "2026-10-28T02:15:30.354Z",
+      "checkedAt": "2026-10-28T09:40:25.684Z",
       "weights": {
         "socialSpread": 0.3,
         "growthVelocity": 0.25,
@@ -1543,7 +1543,7 @@
     },
     "siteType": {
       "modelVersion": 2,
-      "checkedAt": "2026-10-28T02:15:30.354Z",
+      "checkedAt": "2026-10-28T09:40:25.684Z",
       "type": "pending",
       "channel": "pending",
       "confidence": "low",
@@ -1568,7 +1568,7 @@
     },
     "marketFreshness": {
       "modelVersion": 1,
-      "checkedAt": "2026-10-28T02:15:30.354Z",
+      "checkedAt": "2026-10-28T09:40:25.684Z",
       "status": "unknown",
       "confidence": "low",
       "reason": "关键词历史或现有竞争站占位尚未完成确认",
@@ -1582,7 +1582,7 @@
     },
     "opportunity": {
       "modelVersion": 3,
-      "checkedAt": "2026-10-28T02:15:30.354Z",
+      "checkedAt": "2026-10-28T09:40:25.684Z",
       "weights": {
         "socialSpread": 0.3,
         "growthVelocity": 0.25,
@@ -1728,7 +1728,7 @@
     },
     "siteType": {
       "modelVersion": 2,
-      "checkedAt": "2026-10-28T02:15:30.354Z",
+      "checkedAt": "2026-10-28T09:40:25.684Z",
       "type": "pending",
       "channel": "pending",
       "confidence": "low",
@@ -1753,7 +1753,7 @@
     },
     "marketFreshness": {
       "modelVersion": 1,
-      "checkedAt": "2026-10-28T02:15:30.354Z",
+      "checkedAt": "2026-10-28T09:40:25.684Z",
       "status": "unknown",
       "confidence": "low",
       "reason": "关键词历史或现有竞争站占位尚未完成确认",
@@ -1767,7 +1767,7 @@
     },
     "opportunity": {
       "modelVersion": 3,
-      "checkedAt": "2026-10-28T02:15:30.354Z",
+      "checkedAt": "2026-10-28T09:40:25.684Z",
       "weights": {
         "socialSpread": 0.3,
         "growthVelocity": 0.25,
@@ -1913,7 +1913,7 @@
     },
     "siteType": {
       "modelVersion": 2,
-      "checkedAt": "2026-10-28T02:15:30.354Z",
+      "checkedAt": "2026-10-28T09:40:25.684Z",
       "type": "pending",
       "channel": "pending",
       "confidence": "low",
@@ -1938,7 +1938,7 @@
     },
     "marketFreshness": {
       "modelVersion": 1,
-      "checkedAt": "2026-10-28T02:15:30.354Z",
+      "checkedAt": "2026-10-28T09:40:25.684Z",
       "status": "unknown",
       "confidence": "low",
       "reason": "关键词历史或现有竞争站占位尚未完成确认",
@@ -1952,7 +1952,7 @@
     },
     "opportunity": {
       "modelVersion": 3,
-      "checkedAt": "2026-10-28T02:15:30.355Z",
+      "checkedAt": "2026-10-28T09:40:25.684Z",
       "weights": {
         "socialSpread": 0.3,
         "growthVelocity": 0.25,
@@ -2098,7 +2098,7 @@
     },
     "siteType": {
       "modelVersion": 2,
-      "checkedAt": "2026-10-28T02:15:30.355Z",
+      "checkedAt": "2026-10-28T09:40:25.684Z",
       "type": "pending",
       "channel": "pending",
       "confidence": "low",
@@ -2123,7 +2123,7 @@
     },
     "marketFreshness": {
       "modelVersion": 1,
-      "checkedAt": "2026-10-28T02:15:30.355Z",
+      "checkedAt": "2026-10-28T09:40:25.684Z",
       "status": "unknown",
       "confidence": "low",
       "reason": "关键词历史或现有竞争站占位尚未完成确认",
@@ -2137,7 +2137,7 @@
     },
     "opportunity": {
       "modelVersion": 3,
-      "checkedAt": "2026-10-28T02:15:30.355Z",
+      "checkedAt": "2026-10-28T09:40:25.684Z",
       "weights": {
         "socialSpread": 0.3,
         "growthVelocity": 0.25,
@@ -2283,7 +2283,7 @@
     },
     "siteType": {
       "modelVersion": 2,
-      "checkedAt": "2026-10-28T02:15:30.355Z",
+      "checkedAt": "2026-10-28T09:40:25.684Z",
       "type": "pending",
       "channel": "pending",
       "confidence": "low",
@@ -2308,7 +2308,7 @@
     },
     "marketFreshness": {
       "modelVersion": 1,
-      "checkedAt": "2026-10-28T02:15:30.355Z",
+      "checkedAt": "2026-10-28T09:40:25.684Z",
       "status": "unknown",
       "confidence": "low",
       "reason": "关键词历史或现有竞争站占位尚未完成确认",
@@ -2322,7 +2322,7 @@
     },
     "opportunity": {
       "modelVersion": 3,
-      "checkedAt": "2026-10-28T02:15:30.355Z",
+      "checkedAt": "2026-10-28T09:40:25.684Z",
       "weights": {
         "socialSpread": 0.3,
         "growthVelocity": 0.25,
@@ -2370,376 +2370,6 @@
     "social": {
       "modelVersion": 3,
       "checkedAt": "2026-08-29T15:20:17.381Z",
-      "score": 0,
-      "classification": "pending",
-      "confidence": "low",
-      "providers": {
-        "youtube": {},
-        "reddit": {},
-        "x": {},
-        "tiktok": {}
-      },
-      "configuredProviders": [],
-      "checkedProviders": [],
-      "activeProviders": [],
-      "strongProviders": [],
-      "veryStrongProviders": [],
-      "independentProviders": [],
-      "independentCreatorCount": 0,
-      "freshProviders": [],
-      "crossPlatformCount": 0,
-      "hasExternalSpillover": false,
-      "hasSinglePlatformMomentum": false,
-      "singlePlatformMomentum": null,
-      "hasMeasuredEvidence": false,
-      "evidenceStatus": "unknown",
-      "allowsTest": true,
-      "allowsIndependent": false,
-      "reasons": [
-        "尚未完成社媒热度验证"
-      ],
-      "providerErrors": {}
-    },
-    "finalScore": 0,
-    "score": 0,
-    "level": "pending"
-  },
-  {
-    "id": "auto-aHlwZXIgbGlnaHQgZHJpZnRl",
-    "gameName": "hyper light drifter",
-    "normalizedName": "hyper light drifter",
-    "firstSeen": "2026-08-29T03:22:35.342Z",
-    "lastSeen": "2026-09-15T22:13:03.779Z",
-    "status": "new",
-    "sources": [
-      {
-        "key": "trends-rising-7d-indie-game|https://trends.google.com/trends/explore?date=now 7-d&geo=US&q=hyper%20light%20drifter",
-        "sourceId": "trends-rising-7d-indie-game",
-        "name": "Trends上涨 7天 · indie game",
-        "kind": "trends-rising-7d",
-        "url": "https://trends.google.com/trends/explore?date=now 7-d&geo=US&q=hyper%20light%20drifter",
-        "date": "2026-09-09T17:17:46.476Z",
-        "growth": "+300%",
-        "seed": "indie game",
-        "windowDays": 7,
-        "firstSeen": "2026-08-29T03:22:35.342Z",
-        "lastSeen": "2026-09-09T17:17:35.637Z",
-        "currentRank": 6,
-        "previousRank": 7,
-        "bestRank": 1
-      },
-      {
-        "key": "trends-rising-30d-indie-game|https://trends.google.com/trends/explore?date=today 1-m&geo=US&q=hyper%20light%20drifter",
-        "sourceId": "trends-rising-30d-indie-game",
-        "name": "Trends上涨 30天 · indie game",
-        "kind": "trends-rising-30d",
-        "url": "https://trends.google.com/trends/explore?date=today 1-m&geo=US&q=hyper%20light%20drifter",
-        "date": "2026-09-15T22:13:15.291Z",
-        "growth": "+4,050%",
-        "seed": "indie game",
-        "windowDays": 30,
-        "firstSeen": "2026-08-29T10:25:15.844Z",
-        "lastSeen": "2026-09-15T22:13:03.779Z",
-        "currentRank": 5,
-        "previousRank": 8,
-        "bestRank": 2
-      }
-    ],
-    "recommendation": "pending",
-    "discoveryScore": 20,
-    "discoveryLevel": "hot",
-    "seo": {
-      "modelVersion": 5,
-      "status": "pending",
-      "classification": "pending",
-      "score": 0,
-      "reasons": [
-        "等待自动搜索意图验证"
-      ]
-    },
-    "fast": {
-      "modelVersion": 3,
-      "status": "pending",
-      "classification": "pending",
-      "score": 0,
-      "reasons": [
-        "等待最新SEO验证后计算快速热度"
-      ]
-    },
-    "siteType": {
-      "modelVersion": 2,
-      "checkedAt": "2026-10-28T02:15:30.355Z",
-      "type": "pending",
-      "channel": "pending",
-      "confidence": "low",
-      "browserPlayable": null,
-      "iframeLikely": null,
-      "embedStatus": "unknown",
-      "onlineSourceCount": 0,
-      "onlinePlatformCount": 0,
-      "premiumOnlineCount": 0,
-      "wikiSourceCount": 0,
-      "hasWishlistSource": false,
-      "reasons": [
-        "关键词历史或现有竞争站占位尚未完成确认",
-        "缺少多平台、多独立创作者的外溢传播",
-        "24–48小时平台扩散速度不足",
-        "搜索需求尚未形成",
-        "可扩展内容主题不足",
-        "SERP尚未确认是严格空白市场",
-        "名称歧义或实体冲突风险过高",
-        "当前来源不足以确认是HTML5在线游戏还是下载型游戏"
-      ]
-    },
-    "marketFreshness": {
-      "modelVersion": 1,
-      "checkedAt": "2026-10-28T02:15:30.355Z",
-      "status": "unknown",
-      "confidence": "low",
-      "reason": "关键词历史或现有竞争站占位尚未完成确认",
-      "keywordFreshness": "unknown",
-      "rising": false,
-      "competitionChecked": false,
-      "dedicatedDomains": [],
-      "contentDomains": [],
-      "allowsIndependent": false,
-      "provisionalNew": false
-    },
-    "opportunity": {
-      "modelVersion": 3,
-      "checkedAt": "2026-10-28T02:15:30.355Z",
-      "weights": {
-        "socialSpread": 0.3,
-        "growthVelocity": 0.25,
-        "searchFormation": 0.15,
-        "contentExpandability": 0.15,
-        "serpGap": 0.1,
-        "nameSafety": 0.05
-      },
-      "components": {
-        "socialSpread": 0,
-        "growthVelocity": 0,
-        "searchFormation": 15,
-        "contentExpandability": 0,
-        "serpGap": 25,
-        "nameSafety": 0
-      },
-      "hardGates": {
-        "externalSpillover": false,
-        "growthVelocity": false,
-        "searchFormation": false,
-        "contentDepth": false,
-        "competitionOpen": false,
-        "nameSafe": false
-      },
-      "testGates": {
-        "growthVelocity": false,
-        "searchFormation": false,
-        "contentDepth": false,
-        "competitionTestable": false,
-        "nameSafe": false
-      },
-      "testScore": 8,
-      "allowsTest": false,
-      "allowsIndependent": false,
-      "score": 5,
-      "reasons": [
-        "缺少多平台、多独立创作者的外溢传播",
-        "24–48小时平台扩散速度不足",
-        "搜索需求尚未形成",
-        "可扩展内容主题不足",
-        "SERP尚未确认是严格空白市场",
-        "名称歧义或实体冲突风险过高"
-      ]
-    },
-    "social": {
-      "modelVersion": 3,
-      "checkedAt": "2026-08-29T03:23:04.398Z",
-      "score": 0,
-      "classification": "pending",
-      "confidence": "low",
-      "providers": {
-        "youtube": {},
-        "reddit": {},
-        "x": {},
-        "tiktok": {}
-      },
-      "configuredProviders": [],
-      "checkedProviders": [],
-      "activeProviders": [],
-      "strongProviders": [],
-      "veryStrongProviders": [],
-      "independentProviders": [],
-      "independentCreatorCount": 0,
-      "freshProviders": [],
-      "crossPlatformCount": 0,
-      "hasExternalSpillover": false,
-      "hasSinglePlatformMomentum": false,
-      "singlePlatformMomentum": null,
-      "hasMeasuredEvidence": false,
-      "evidenceStatus": "unknown",
-      "allowsTest": true,
-      "allowsIndependent": false,
-      "reasons": [
-        "尚未完成社媒热度验证"
-      ],
-      "providerErrors": {}
-    },
-    "finalScore": 0,
-    "score": 0,
-    "level": "pending"
-  },
-  {
-    "id": "auto-a25lZSBkZWVw",
-    "gameName": "knee deep",
-    "normalizedName": "knee deep",
-    "firstSeen": "2026-08-29T03:22:35.342Z",
-    "lastSeen": "2026-09-12T21:39:48.133Z",
-    "status": "new",
-    "sources": [
-      {
-        "key": "trends-rising-7d-itch-io|https://trends.google.com/trends/explore?date=now 7-d&geo=US&q=knee%20deep%20itch%20io",
-        "sourceId": "trends-rising-7d-itch-io",
-        "name": "Trends上涨 7天 · itch io",
-        "kind": "trends-rising-7d",
-        "url": "https://trends.google.com/trends/explore?date=now 7-d&geo=US&q=knee%20deep%20itch%20io",
-        "date": "2026-09-12T21:39:57.216Z",
-        "growth": "+40%",
-        "seed": "itch io",
-        "windowDays": 7,
-        "firstSeen": "2026-08-29T03:22:35.342Z",
-        "lastSeen": "2026-09-12T21:39:48.133Z",
-        "currentRank": 6,
-        "previousRank": 8,
-        "bestRank": 1
-      },
-      {
-        "key": "trends-rising-30d-itch-io|https://trends.google.com/trends/explore?date=today 1-m&geo=US&q=knee%20deep%20itch%20io",
-        "sourceId": "trends-rising-30d-itch-io",
-        "name": "Trends上涨 30天 · itch io",
-        "kind": "trends-rising-30d",
-        "url": "https://trends.google.com/trends/explore?date=today 1-m&geo=US&q=knee%20deep%20itch%20io",
-        "date": "2026-09-10T23:09:56.148Z",
-        "growth": "Breakout",
-        "seed": "itch io",
-        "windowDays": 30,
-        "firstSeen": "2026-09-06T06:30:06.703Z",
-        "lastSeen": "2026-09-10T23:09:41.958Z",
-        "currentRank": 8,
-        "previousRank": 12,
-        "bestRank": 7
-      }
-    ],
-    "recommendation": "pending",
-    "discoveryScore": 20,
-    "discoveryLevel": "hot",
-    "seo": {
-      "modelVersion": 5,
-      "status": "pending",
-      "classification": "pending",
-      "score": 0,
-      "reasons": [
-        "等待自动搜索意图验证"
-      ]
-    },
-    "fast": {
-      "modelVersion": 3,
-      "status": "pending",
-      "classification": "pending",
-      "score": 0,
-      "reasons": [
-        "等待最新SEO验证后计算快速热度"
-      ]
-    },
-    "siteType": {
-      "modelVersion": 2,
-      "checkedAt": "2026-10-28T02:15:30.355Z",
-      "type": "pending",
-      "channel": "pending",
-      "confidence": "low",
-      "browserPlayable": null,
-      "iframeLikely": null,
-      "embedStatus": "unknown",
-      "onlineSourceCount": 0,
-      "onlinePlatformCount": 0,
-      "premiumOnlineCount": 0,
-      "wikiSourceCount": 0,
-      "hasWishlistSource": false,
-      "reasons": [
-        "关键词历史或现有竞争站占位尚未完成确认",
-        "缺少多平台、多独立创作者的外溢传播",
-        "24–48小时平台扩散速度不足",
-        "搜索需求尚未形成",
-        "可扩展内容主题不足",
-        "SERP尚未确认是严格空白市场",
-        "名称歧义或实体冲突风险过高",
-        "当前来源不足以确认是HTML5在线游戏还是下载型游戏"
-      ]
-    },
-    "marketFreshness": {
-      "modelVersion": 1,
-      "checkedAt": "2026-10-28T02:15:30.355Z",
-      "status": "unknown",
-      "confidence": "low",
-      "reason": "关键词历史或现有竞争站占位尚未完成确认",
-      "keywordFreshness": "unknown",
-      "rising": false,
-      "competitionChecked": false,
-      "dedicatedDomains": [],
-      "contentDomains": [],
-      "allowsIndependent": false,
-      "provisionalNew": false
-    },
-    "opportunity": {
-      "modelVersion": 3,
-      "checkedAt": "2026-10-28T02:15:30.355Z",
-      "weights": {
-        "socialSpread": 0.3,
-        "growthVelocity": 0.25,
-        "searchFormation": 0.15,
-        "contentExpandability": 0.15,
-        "serpGap": 0.1,
-        "nameSafety": 0.05
-      },
-      "components": {
-        "socialSpread": 0,
-        "growthVelocity": 0,
-        "searchFormation": 15,
-        "contentExpandability": 0,
-        "serpGap": 25,
-        "nameSafety": 0
-      },
-      "hardGates": {
-        "externalSpillover": false,
-        "growthVelocity": false,
-        "searchFormation": false,
-        "contentDepth": false,
-        "competitionOpen": false,
-        "nameSafe": false
-      },
-      "testGates": {
-        "growthVelocity": false,
-        "searchFormation": false,
-        "contentDepth": false,
-        "competitionTestable": false,
-        "nameSafe": false
-      },
-      "testScore": 8,
-      "allowsTest": false,
-      "allowsIndependent": false,
-      "score": 5,
-      "reasons": [
-        "缺少多平台、多独立创作者的外溢传播",
-        "24–48小时平台扩散速度不足",
-        "搜索需求尚未形成",
-        "可扩展内容主题不足",
-        "SERP尚未确认是严格空白市场",
-        "名称歧义或实体冲突风险过高"
-      ]
-    },
-    "social": {
-      "modelVersion": 3,
-      "checkedAt": "2026-08-29T03:23:04.398Z",
       "score": 0,
       "classification": "pending",
       "confidence": "low",
@@ -2854,7 +2484,7 @@
     },
     "siteType": {
       "modelVersion": 2,
-      "checkedAt": "2026-10-28T02:15:30.356Z",
+      "checkedAt": "2026-10-28T09:40:25.687Z",
       "type": "online",
       "channel": "online",
       "confidence": "high",
@@ -2881,7 +2511,7 @@
     },
     "marketFreshness": {
       "modelVersion": 1,
-      "checkedAt": "2026-10-28T02:15:30.356Z",
+      "checkedAt": "2026-10-28T09:40:25.687Z",
       "status": "unknown",
       "confidence": "low",
       "reason": "关键词历史或现有竞争站占位尚未完成确认",
@@ -2895,7 +2525,7 @@
     },
     "opportunity": {
       "modelVersion": 3,
-      "checkedAt": "2026-10-28T02:15:30.356Z",
+      "checkedAt": "2026-10-28T09:40:25.687Z",
       "weights": {
         "socialSpread": 0.3,
         "growthVelocity": 0.25,
@@ -3057,7 +2687,7 @@
     },
     "siteType": {
       "modelVersion": 2,
-      "checkedAt": "2026-10-28T02:15:30.356Z",
+      "checkedAt": "2026-10-28T09:40:25.687Z",
       "type": "online",
       "channel": "online",
       "confidence": "high",
@@ -3084,7 +2714,7 @@
     },
     "marketFreshness": {
       "modelVersion": 1,
-      "checkedAt": "2026-10-28T02:15:30.356Z",
+      "checkedAt": "2026-10-28T09:40:25.687Z",
       "status": "unknown",
       "confidence": "low",
       "reason": "关键词历史或现有竞争站占位尚未完成确认",
@@ -3098,7 +2728,7 @@
     },
     "opportunity": {
       "modelVersion": 3,
-      "checkedAt": "2026-10-28T02:15:30.356Z",
+      "checkedAt": "2026-10-28T09:40:25.687Z",
       "weights": {
         "socialSpread": 0.3,
         "growthVelocity": 0.25,
@@ -3228,7 +2858,7 @@
     },
     "siteType": {
       "modelVersion": 2,
-      "checkedAt": "2026-10-28T02:15:30.361Z",
+      "checkedAt": "2026-10-28T09:40:25.696Z",
       "type": "pending",
       "channel": "pending",
       "confidence": "low",
@@ -3253,7 +2883,7 @@
     },
     "marketFreshness": {
       "modelVersion": 1,
-      "checkedAt": "2026-10-28T02:15:30.361Z",
+      "checkedAt": "2026-10-28T09:40:25.696Z",
       "status": "unknown",
       "confidence": "low",
       "reason": "关键词历史或现有竞争站占位尚未完成确认",
@@ -3267,7 +2897,7 @@
     },
     "opportunity": {
       "modelVersion": 3,
-      "checkedAt": "2026-10-28T02:15:30.361Z",
+      "checkedAt": "2026-10-28T09:40:25.696Z",
       "weights": {
         "socialSpread": 0.3,
         "growthVelocity": 0.25,
@@ -3397,7 +3027,7 @@
     },
     "siteType": {
       "modelVersion": 2,
-      "checkedAt": "2026-10-28T02:15:30.361Z",
+      "checkedAt": "2026-10-28T09:40:25.696Z",
       "type": "pending",
       "channel": "pending",
       "confidence": "low",
@@ -3422,7 +3052,7 @@
     },
     "marketFreshness": {
       "modelVersion": 1,
-      "checkedAt": "2026-10-28T02:15:30.361Z",
+      "checkedAt": "2026-10-28T09:40:25.696Z",
       "status": "unknown",
       "confidence": "low",
       "reason": "关键词历史或现有竞争站占位尚未完成确认",
@@ -3436,7 +3066,7 @@
     },
     "opportunity": {
       "modelVersion": 3,
-      "checkedAt": "2026-10-28T02:15:30.361Z",
+      "checkedAt": "2026-10-28T09:40:25.696Z",
       "weights": {
         "socialSpread": 0.3,
         "growthVelocity": 0.25,
@@ -3566,7 +3196,7 @@
     },
     "siteType": {
       "modelVersion": 2,
-      "checkedAt": "2026-10-28T02:15:30.361Z",
+      "checkedAt": "2026-10-28T09:40:25.696Z",
       "type": "pending",
       "channel": "pending",
       "confidence": "low",
@@ -3591,7 +3221,7 @@
     },
     "marketFreshness": {
       "modelVersion": 1,
-      "checkedAt": "2026-10-28T02:15:30.361Z",
+      "checkedAt": "2026-10-28T09:40:25.696Z",
       "status": "unknown",
       "confidence": "low",
       "reason": "关键词历史或现有竞争站占位尚未完成确认",
@@ -3605,7 +3235,7 @@
     },
     "opportunity": {
       "modelVersion": 3,
-      "checkedAt": "2026-10-28T02:15:30.361Z",
+      "checkedAt": "2026-10-28T09:40:25.696Z",
       "weights": {
         "socialSpread": 0.3,
         "growthVelocity": 0.25,
@@ -3735,7 +3365,7 @@
     },
     "siteType": {
       "modelVersion": 2,
-      "checkedAt": "2026-10-28T02:15:30.361Z",
+      "checkedAt": "2026-10-28T09:40:25.696Z",
       "type": "pending",
       "channel": "pending",
       "confidence": "low",
@@ -3760,7 +3390,7 @@
     },
     "marketFreshness": {
       "modelVersion": 1,
-      "checkedAt": "2026-10-28T02:15:30.361Z",
+      "checkedAt": "2026-10-28T09:40:25.696Z",
       "status": "unknown",
       "confidence": "low",
       "reason": "关键词历史或现有竞争站占位尚未完成确认",
@@ -3774,7 +3404,7 @@
     },
     "opportunity": {
       "modelVersion": 3,
-      "checkedAt": "2026-10-28T02:15:30.361Z",
+      "checkedAt": "2026-10-28T09:40:25.696Z",
       "weights": {
         "socialSpread": 0.3,
         "growthVelocity": 0.25,
@@ -3904,7 +3534,7 @@
     },
     "siteType": {
       "modelVersion": 2,
-      "checkedAt": "2026-10-28T02:15:30.361Z",
+      "checkedAt": "2026-10-28T09:40:25.696Z",
       "type": "pending",
       "channel": "pending",
       "confidence": "low",
@@ -3929,7 +3559,7 @@
     },
     "marketFreshness": {
       "modelVersion": 1,
-      "checkedAt": "2026-10-28T02:15:30.361Z",
+      "checkedAt": "2026-10-28T09:40:25.696Z",
       "status": "unknown",
       "confidence": "low",
       "reason": "关键词历史或现有竞争站占位尚未完成确认",
@@ -3943,7 +3573,7 @@
     },
     "opportunity": {
       "modelVersion": 3,
-      "checkedAt": "2026-10-28T02:15:30.361Z",
+      "checkedAt": "2026-10-28T09:40:25.696Z",
       "weights": {
         "socialSpread": 0.3,
         "growthVelocity": 0.25,
@@ -4105,7 +3735,7 @@
     },
     "siteType": {
       "modelVersion": 2,
-      "checkedAt": "2026-10-28T02:15:30.361Z",
+      "checkedAt": "2026-10-28T09:40:25.696Z",
       "type": "online",
       "channel": "online",
       "confidence": "medium",
@@ -4131,7 +3761,7 @@
     },
     "marketFreshness": {
       "modelVersion": 1,
-      "checkedAt": "2026-10-28T02:15:30.361Z",
+      "checkedAt": "2026-10-28T09:40:25.696Z",
       "status": "unknown",
       "confidence": "low",
       "reason": "关键词历史或现有竞争站占位尚未完成确认",
@@ -4145,7 +3775,7 @@
     },
     "opportunity": {
       "modelVersion": 3,
-      "checkedAt": "2026-10-28T02:15:30.361Z",
+      "checkedAt": "2026-10-28T09:40:25.696Z",
       "weights": {
         "socialSpread": 0.3,
         "growthVelocity": 0.25,
@@ -4275,7 +3905,7 @@
     },
     "siteType": {
       "modelVersion": 2,
-      "checkedAt": "2026-10-28T02:15:30.361Z",
+      "checkedAt": "2026-10-28T09:40:25.696Z",
       "type": "pending",
       "channel": "pending",
       "confidence": "low",
@@ -4300,7 +3930,7 @@
     },
     "marketFreshness": {
       "modelVersion": 1,
-      "checkedAt": "2026-10-28T02:15:30.361Z",
+      "checkedAt": "2026-10-28T09:40:25.696Z",
       "status": "unknown",
       "confidence": "low",
       "reason": "关键词历史或现有竞争站占位尚未完成确认",
@@ -4314,7 +3944,7 @@
     },
     "opportunity": {
       "modelVersion": 3,
-      "checkedAt": "2026-10-28T02:15:30.361Z",
+      "checkedAt": "2026-10-28T09:40:25.696Z",
       "weights": {
         "socialSpread": 0.3,
         "growthVelocity": 0.25,
@@ -4397,175 +4027,6 @@
     "level": "pending"
   },
   {
-    "id": "auto-YWxpZW4gaG9ycm9y",
-    "gameName": "alien horror",
-    "normalizedName": "alien horror",
-    "firstSeen": "2026-08-29T03:22:35.342Z",
-    "lastSeen": "2026-08-29T03:22:35.342Z",
-    "status": "new",
-    "sources": [
-      {
-        "key": "trends-rising-7d-horror-game|https://trends.google.com/trends/explore?date=now 7-d&geo=US&q=alien%20horror%20game",
-        "sourceId": "trends-rising-7d-horror-game",
-        "name": "Trends上涨 7天 · horror game",
-        "kind": "trends-rising-7d",
-        "url": "https://trends.google.com/trends/explore?date=now 7-d&geo=US&q=alien%20horror%20game",
-        "date": "2026-08-29T03:22:52.258Z",
-        "growth": "+40%",
-        "seed": "horror game",
-        "windowDays": 7,
-        "firstSeen": "2026-08-29T03:22:35.342Z",
-        "lastSeen": "2026-08-29T03:22:35.342Z",
-        "currentRank": 9,
-        "previousRank": null,
-        "bestRank": 9
-      }
-    ],
-    "recommendation": "pending",
-    "discoveryScore": 11,
-    "discoveryLevel": "verify",
-    "seo": {
-      "modelVersion": 5,
-      "status": "pending",
-      "classification": "pending",
-      "score": 0,
-      "reasons": [
-        "等待自动搜索意图验证"
-      ]
-    },
-    "fast": {
-      "modelVersion": 3,
-      "status": "pending",
-      "classification": "pending",
-      "score": 0,
-      "reasons": [
-        "等待最新SEO验证后计算快速热度"
-      ]
-    },
-    "siteType": {
-      "modelVersion": 2,
-      "checkedAt": "2026-10-28T02:15:30.361Z",
-      "type": "pending",
-      "channel": "pending",
-      "confidence": "low",
-      "browserPlayable": null,
-      "iframeLikely": null,
-      "embedStatus": "unknown",
-      "onlineSourceCount": 0,
-      "onlinePlatformCount": 0,
-      "premiumOnlineCount": 0,
-      "wikiSourceCount": 0,
-      "hasWishlistSource": false,
-      "reasons": [
-        "关键词历史或现有竞争站占位尚未完成确认",
-        "缺少多平台、多独立创作者的外溢传播",
-        "24–48小时平台扩散速度不足",
-        "搜索需求尚未形成",
-        "可扩展内容主题不足",
-        "SERP尚未确认是严格空白市场",
-        "名称歧义或实体冲突风险过高",
-        "当前来源不足以确认是HTML5在线游戏还是下载型游戏"
-      ]
-    },
-    "marketFreshness": {
-      "modelVersion": 1,
-      "checkedAt": "2026-10-28T02:15:30.361Z",
-      "status": "unknown",
-      "confidence": "low",
-      "reason": "关键词历史或现有竞争站占位尚未完成确认",
-      "keywordFreshness": "unknown",
-      "rising": false,
-      "competitionChecked": false,
-      "dedicatedDomains": [],
-      "contentDomains": [],
-      "allowsIndependent": false,
-      "provisionalNew": false
-    },
-    "opportunity": {
-      "modelVersion": 3,
-      "checkedAt": "2026-10-28T02:15:30.361Z",
-      "weights": {
-        "socialSpread": 0.3,
-        "growthVelocity": 0.25,
-        "searchFormation": 0.15,
-        "contentExpandability": 0.15,
-        "serpGap": 0.1,
-        "nameSafety": 0.05
-      },
-      "components": {
-        "socialSpread": 0,
-        "growthVelocity": 0,
-        "searchFormation": 15,
-        "contentExpandability": 0,
-        "serpGap": 25,
-        "nameSafety": 0
-      },
-      "hardGates": {
-        "externalSpillover": false,
-        "growthVelocity": false,
-        "searchFormation": false,
-        "contentDepth": false,
-        "competitionOpen": false,
-        "nameSafe": false
-      },
-      "testGates": {
-        "growthVelocity": false,
-        "searchFormation": false,
-        "contentDepth": false,
-        "competitionTestable": false,
-        "nameSafe": false
-      },
-      "testScore": 8,
-      "allowsTest": false,
-      "allowsIndependent": false,
-      "score": 5,
-      "reasons": [
-        "缺少多平台、多独立创作者的外溢传播",
-        "24–48小时平台扩散速度不足",
-        "搜索需求尚未形成",
-        "可扩展内容主题不足",
-        "SERP尚未确认是严格空白市场",
-        "名称歧义或实体冲突风险过高"
-      ]
-    },
-    "social": {
-      "modelVersion": 3,
-      "checkedAt": "2026-08-29T03:23:04.398Z",
-      "score": 0,
-      "classification": "pending",
-      "confidence": "low",
-      "providers": {
-        "youtube": {},
-        "reddit": {},
-        "x": {},
-        "tiktok": {}
-      },
-      "configuredProviders": [],
-      "checkedProviders": [],
-      "activeProviders": [],
-      "strongProviders": [],
-      "veryStrongProviders": [],
-      "independentProviders": [],
-      "independentCreatorCount": 0,
-      "freshProviders": [],
-      "crossPlatformCount": 0,
-      "hasExternalSpillover": false,
-      "hasSinglePlatformMomentum": false,
-      "singlePlatformMomentum": null,
-      "hasMeasuredEvidence": false,
-      "evidenceStatus": "unknown",
-      "allowsTest": true,
-      "allowsIndependent": false,
-      "reasons": [
-        "尚未完成社媒热度验证"
-      ],
-      "providerErrors": {}
-    },
-    "finalScore": 0,
-    "score": 0,
-    "level": "pending"
-  },
-  {
     "id": "auto-ZXhpdCA4",
     "gameName": "exit 8",
     "normalizedName": "exit 8",
@@ -4613,7 +4074,7 @@
     },
     "siteType": {
       "modelVersion": 2,
-      "checkedAt": "2026-10-28T02:15:30.364Z",
+      "checkedAt": "2026-10-28T09:40:25.702Z",
       "type": "pending",
       "channel": "pending",
       "confidence": "low",
@@ -4638,7 +4099,7 @@
     },
     "marketFreshness": {
       "modelVersion": 1,
-      "checkedAt": "2026-10-28T02:15:30.364Z",
+      "checkedAt": "2026-10-28T09:40:25.702Z",
       "status": "unknown",
       "confidence": "low",
       "reason": "关键词历史或现有竞争站占位尚未完成确认",
@@ -4652,7 +4113,7 @@
     },
     "opportunity": {
       "modelVersion": 3,
-      "checkedAt": "2026-10-28T02:15:30.364Z",
+      "checkedAt": "2026-10-28T09:40:25.702Z",
       "weights": {
         "socialSpread": 0.3,
         "growthVelocity": 0.25,
