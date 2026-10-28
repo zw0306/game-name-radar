@@ -68,7 +68,7 @@
     "fast": {
       "modelVersion": 3,
       "profile": "online",
-      "checkedAt": "2026-10-27T22:57:23.081Z",
+      "checkedAt": "2026-10-28T02:15:26.498Z",
       "score": 64,
       "classification": "pass",
       "reasons": [
@@ -105,7 +105,7 @@
     },
     "siteType": {
       "modelVersion": 2,
-      "checkedAt": "2026-10-27T22:57:28.520Z",
+      "checkedAt": "2026-10-28T02:15:30.336Z",
       "type": "online",
       "channel": "online",
       "confidence": "high",
@@ -132,7 +132,7 @@
     },
     "marketFreshness": {
       "modelVersion": 1,
-      "checkedAt": "2026-10-27T22:57:28.521Z",
+      "checkedAt": "2026-10-28T02:15:30.336Z",
       "status": "unknown",
       "confidence": "low",
       "reason": "关键词历史或现有竞争站占位尚未完成确认",
@@ -146,7 +146,7 @@
     },
     "opportunity": {
       "modelVersion": 3,
-      "checkedAt": "2026-10-27T22:57:28.521Z",
+      "checkedAt": "2026-10-28T02:15:30.336Z",
       "weights": {
         "socialSpread": 0.3,
         "growthVelocity": 0.25,
@@ -504,7 +504,7 @@
     "fast": {
       "modelVersion": 3,
       "profile": "online",
-      "checkedAt": "2026-10-27T22:57:23.082Z",
+      "checkedAt": "2026-10-28T02:15:26.499Z",
       "score": 29,
       "classification": "watch",
       "reasons": [
@@ -551,7 +551,7 @@
     },
     "siteType": {
       "modelVersion": 2,
-      "checkedAt": "2026-10-27T22:57:28.522Z",
+      "checkedAt": "2026-10-28T02:15:30.337Z",
       "type": "online",
       "channel": "online",
       "confidence": "high",
@@ -577,7 +577,7 @@
     },
     "marketFreshness": {
       "modelVersion": 1,
-      "checkedAt": "2026-10-27T22:57:28.522Z",
+      "checkedAt": "2026-10-28T02:15:30.337Z",
       "status": "unknown",
       "confidence": "low",
       "reason": "关键词历史或现有竞争站占位尚未完成确认",
@@ -591,7 +591,7 @@
     },
     "opportunity": {
       "modelVersion": 3,
-      "checkedAt": "2026-10-27T22:57:28.522Z",
+      "checkedAt": "2026-10-28T02:15:30.337Z",
       "weights": {
         "socialSpread": 0.3,
         "growthVelocity": 0.25,
@@ -742,7 +742,7 @@
     "fast": {
       "modelVersion": 3,
       "profile": "wiki",
-      "checkedAt": "2026-10-27T22:57:23.088Z",
+      "checkedAt": "2026-10-28T02:15:26.504Z",
       "score": 72,
       "classification": "pass",
       "reasons": [
@@ -779,7 +779,7 @@
     },
     "siteType": {
       "modelVersion": 2,
-      "checkedAt": "2026-10-27T22:57:28.536Z",
+      "checkedAt": "2026-10-28T02:15:30.344Z",
       "type": "wiki",
       "channel": "wiki",
       "confidence": "high",
@@ -806,7 +806,7 @@
     },
     "marketFreshness": {
       "modelVersion": 1,
-      "checkedAt": "2026-10-27T22:57:28.536Z",
+      "checkedAt": "2026-10-28T02:15:30.344Z",
       "status": "unknown",
       "confidence": "low",
       "reason": "关键词历史或现有竞争站占位尚未完成确认",
@@ -820,7 +820,7 @@
     },
     "opportunity": {
       "modelVersion": 3,
-      "checkedAt": "2026-10-27T22:57:28.536Z",
+      "checkedAt": "2026-10-28T02:15:30.344Z",
       "weights": {
         "socialSpread": 0.3,
         "growthVelocity": 0.25,
@@ -866,7 +866,7 @@
     },
     "wikiPrelaunch": {
       "modelVersion": 2,
-      "checkedAt": "2026-10-27T22:57:28.536Z",
+      "checkedAt": "2026-10-28T02:15:30.344Z",
       "score": 0,
       "classification": "weak",
       "reasons": [
@@ -1173,7 +1173,7 @@
     },
     "siteType": {
       "modelVersion": 2,
-      "checkedAt": "2026-10-27T22:57:28.553Z",
+      "checkedAt": "2026-10-28T02:15:30.354Z",
       "type": "pending",
       "channel": "pending",
       "confidence": "low",
@@ -1198,7 +1198,7 @@
     },
     "marketFreshness": {
       "modelVersion": 1,
-      "checkedAt": "2026-10-27T22:57:28.553Z",
+      "checkedAt": "2026-10-28T02:15:30.354Z",
       "status": "unknown",
       "confidence": "low",
       "reason": "关键词历史或现有竞争站占位尚未完成确认",
@@ -1212,7 +1212,7 @@
     },
     "opportunity": {
       "modelVersion": 3,
-      "checkedAt": "2026-10-27T22:57:28.553Z",
+      "checkedAt": "2026-10-28T02:15:30.354Z",
       "weights": {
         "socialSpread": 0.3,
         "growthVelocity": 0.25,
@@ -1358,7 +1358,7 @@
     },
     "siteType": {
       "modelVersion": 2,
-      "checkedAt": "2026-10-27T22:57:28.553Z",
+      "checkedAt": "2026-10-28T02:15:30.354Z",
       "type": "pending",
       "channel": "pending",
       "confidence": "low",
@@ -1383,7 +1383,7 @@
     },
     "marketFreshness": {
       "modelVersion": 1,
-      "checkedAt": "2026-10-27T22:57:28.553Z",
+      "checkedAt": "2026-10-28T02:15:30.354Z",
       "status": "unknown",
       "confidence": "low",
       "reason": "关键词历史或现有竞争站占位尚未完成确认",
@@ -1397,7 +1397,7 @@
     },
     "opportunity": {
       "modelVersion": 3,
-      "checkedAt": "2026-10-27T22:57:28.553Z",
+      "checkedAt": "2026-10-28T02:15:30.354Z",
       "weights": {
         "socialSpread": 0.3,
         "growthVelocity": 0.25,
@@ -1543,7 +1543,7 @@
     },
     "siteType": {
       "modelVersion": 2,
-      "checkedAt": "2026-10-27T22:57:28.553Z",
+      "checkedAt": "2026-10-28T02:15:30.354Z",
       "type": "pending",
       "channel": "pending",
       "confidence": "low",
@@ -1568,7 +1568,7 @@
     },
     "marketFreshness": {
       "modelVersion": 1,
-      "checkedAt": "2026-10-27T22:57:28.553Z",
+      "checkedAt": "2026-10-28T02:15:30.354Z",
       "status": "unknown",
       "confidence": "low",
       "reason": "关键词历史或现有竞争站占位尚未完成确认",
@@ -1582,7 +1582,7 @@
     },
     "opportunity": {
       "modelVersion": 3,
-      "checkedAt": "2026-10-27T22:57:28.553Z",
+      "checkedAt": "2026-10-28T02:15:30.354Z",
       "weights": {
         "socialSpread": 0.3,
         "growthVelocity": 0.25,
@@ -1728,7 +1728,7 @@
     },
     "siteType": {
       "modelVersion": 2,
-      "checkedAt": "2026-10-27T22:57:28.553Z",
+      "checkedAt": "2026-10-28T02:15:30.354Z",
       "type": "pending",
       "channel": "pending",
       "confidence": "low",
@@ -1753,7 +1753,7 @@
     },
     "marketFreshness": {
       "modelVersion": 1,
-      "checkedAt": "2026-10-27T22:57:28.553Z",
+      "checkedAt": "2026-10-28T02:15:30.354Z",
       "status": "unknown",
       "confidence": "low",
       "reason": "关键词历史或现有竞争站占位尚未完成确认",
@@ -1767,7 +1767,7 @@
     },
     "opportunity": {
       "modelVersion": 3,
-      "checkedAt": "2026-10-27T22:57:28.553Z",
+      "checkedAt": "2026-10-28T02:15:30.354Z",
       "weights": {
         "socialSpread": 0.3,
         "growthVelocity": 0.25,
@@ -1913,7 +1913,7 @@
     },
     "siteType": {
       "modelVersion": 2,
-      "checkedAt": "2026-10-27T22:57:28.553Z",
+      "checkedAt": "2026-10-28T02:15:30.354Z",
       "type": "pending",
       "channel": "pending",
       "confidence": "low",
@@ -1938,7 +1938,7 @@
     },
     "marketFreshness": {
       "modelVersion": 1,
-      "checkedAt": "2026-10-27T22:57:28.553Z",
+      "checkedAt": "2026-10-28T02:15:30.354Z",
       "status": "unknown",
       "confidence": "low",
       "reason": "关键词历史或现有竞争站占位尚未完成确认",
@@ -1952,7 +1952,7 @@
     },
     "opportunity": {
       "modelVersion": 3,
-      "checkedAt": "2026-10-27T22:57:28.553Z",
+      "checkedAt": "2026-10-28T02:15:30.355Z",
       "weights": {
         "socialSpread": 0.3,
         "growthVelocity": 0.25,
@@ -2098,7 +2098,7 @@
     },
     "siteType": {
       "modelVersion": 2,
-      "checkedAt": "2026-10-27T22:57:28.553Z",
+      "checkedAt": "2026-10-28T02:15:30.355Z",
       "type": "pending",
       "channel": "pending",
       "confidence": "low",
@@ -2123,7 +2123,7 @@
     },
     "marketFreshness": {
       "modelVersion": 1,
-      "checkedAt": "2026-10-27T22:57:28.553Z",
+      "checkedAt": "2026-10-28T02:15:30.355Z",
       "status": "unknown",
       "confidence": "low",
       "reason": "关键词历史或现有竞争站占位尚未完成确认",
@@ -2137,7 +2137,7 @@
     },
     "opportunity": {
       "modelVersion": 3,
-      "checkedAt": "2026-10-27T22:57:28.553Z",
+      "checkedAt": "2026-10-28T02:15:30.355Z",
       "weights": {
         "socialSpread": 0.3,
         "growthVelocity": 0.25,
@@ -2283,7 +2283,7 @@
     },
     "siteType": {
       "modelVersion": 2,
-      "checkedAt": "2026-10-27T22:57:28.553Z",
+      "checkedAt": "2026-10-28T02:15:30.355Z",
       "type": "pending",
       "channel": "pending",
       "confidence": "low",
@@ -2308,7 +2308,7 @@
     },
     "marketFreshness": {
       "modelVersion": 1,
-      "checkedAt": "2026-10-27T22:57:28.553Z",
+      "checkedAt": "2026-10-28T02:15:30.355Z",
       "status": "unknown",
       "confidence": "low",
       "reason": "关键词历史或现有竞争站占位尚未完成确认",
@@ -2322,7 +2322,7 @@
     },
     "opportunity": {
       "modelVersion": 3,
-      "checkedAt": "2026-10-27T22:57:28.553Z",
+      "checkedAt": "2026-10-28T02:15:30.355Z",
       "weights": {
         "socialSpread": 0.3,
         "growthVelocity": 0.25,
@@ -2468,7 +2468,7 @@
     },
     "siteType": {
       "modelVersion": 2,
-      "checkedAt": "2026-10-27T22:57:28.553Z",
+      "checkedAt": "2026-10-28T02:15:30.355Z",
       "type": "pending",
       "channel": "pending",
       "confidence": "low",
@@ -2493,7 +2493,7 @@
     },
     "marketFreshness": {
       "modelVersion": 1,
-      "checkedAt": "2026-10-27T22:57:28.553Z",
+      "checkedAt": "2026-10-28T02:15:30.355Z",
       "status": "unknown",
       "confidence": "low",
       "reason": "关键词历史或现有竞争站占位尚未完成确认",
@@ -2507,7 +2507,7 @@
     },
     "opportunity": {
       "modelVersion": 3,
-      "checkedAt": "2026-10-27T22:57:28.553Z",
+      "checkedAt": "2026-10-28T02:15:30.355Z",
       "weights": {
         "socialSpread": 0.3,
         "growthVelocity": 0.25,
@@ -2653,7 +2653,7 @@
     },
     "siteType": {
       "modelVersion": 2,
-      "checkedAt": "2026-10-27T22:57:28.553Z",
+      "checkedAt": "2026-10-28T02:15:30.355Z",
       "type": "pending",
       "channel": "pending",
       "confidence": "low",
@@ -2678,7 +2678,7 @@
     },
     "marketFreshness": {
       "modelVersion": 1,
-      "checkedAt": "2026-10-27T22:57:28.553Z",
+      "checkedAt": "2026-10-28T02:15:30.355Z",
       "status": "unknown",
       "confidence": "low",
       "reason": "关键词历史或现有竞争站占位尚未完成确认",
@@ -2692,7 +2692,7 @@
     },
     "opportunity": {
       "modelVersion": 3,
-      "checkedAt": "2026-10-27T22:57:28.553Z",
+      "checkedAt": "2026-10-28T02:15:30.355Z",
       "weights": {
         "socialSpread": 0.3,
         "growthVelocity": 0.25,
@@ -2854,7 +2854,7 @@
     },
     "siteType": {
       "modelVersion": 2,
-      "checkedAt": "2026-10-27T22:57:28.558Z",
+      "checkedAt": "2026-10-28T02:15:30.356Z",
       "type": "online",
       "channel": "online",
       "confidence": "high",
@@ -2881,7 +2881,7 @@
     },
     "marketFreshness": {
       "modelVersion": 1,
-      "checkedAt": "2026-10-27T22:57:28.558Z",
+      "checkedAt": "2026-10-28T02:15:30.356Z",
       "status": "unknown",
       "confidence": "low",
       "reason": "关键词历史或现有竞争站占位尚未完成确认",
@@ -2895,7 +2895,7 @@
     },
     "opportunity": {
       "modelVersion": 3,
-      "checkedAt": "2026-10-27T22:57:28.558Z",
+      "checkedAt": "2026-10-28T02:15:30.356Z",
       "weights": {
         "socialSpread": 0.3,
         "growthVelocity": 0.25,
@@ -3057,7 +3057,7 @@
     },
     "siteType": {
       "modelVersion": 2,
-      "checkedAt": "2026-10-27T22:57:28.558Z",
+      "checkedAt": "2026-10-28T02:15:30.356Z",
       "type": "online",
       "channel": "online",
       "confidence": "high",
@@ -3084,7 +3084,7 @@
     },
     "marketFreshness": {
       "modelVersion": 1,
-      "checkedAt": "2026-10-27T22:57:28.558Z",
+      "checkedAt": "2026-10-28T02:15:30.356Z",
       "status": "unknown",
       "confidence": "low",
       "reason": "关键词历史或现有竞争站占位尚未完成确认",
@@ -3098,7 +3098,7 @@
     },
     "opportunity": {
       "modelVersion": 3,
-      "checkedAt": "2026-10-27T22:57:28.558Z",
+      "checkedAt": "2026-10-28T02:15:30.356Z",
       "weights": {
         "socialSpread": 0.3,
         "growthVelocity": 0.25,
@@ -3228,7 +3228,7 @@
     },
     "siteType": {
       "modelVersion": 2,
-      "checkedAt": "2026-10-27T22:57:28.566Z",
+      "checkedAt": "2026-10-28T02:15:30.361Z",
       "type": "pending",
       "channel": "pending",
       "confidence": "low",
@@ -3253,7 +3253,7 @@
     },
     "marketFreshness": {
       "modelVersion": 1,
-      "checkedAt": "2026-10-27T22:57:28.567Z",
+      "checkedAt": "2026-10-28T02:15:30.361Z",
       "status": "unknown",
       "confidence": "low",
       "reason": "关键词历史或现有竞争站占位尚未完成确认",
@@ -3267,7 +3267,7 @@
     },
     "opportunity": {
       "modelVersion": 3,
-      "checkedAt": "2026-10-27T22:57:28.567Z",
+      "checkedAt": "2026-10-28T02:15:30.361Z",
       "weights": {
         "socialSpread": 0.3,
         "growthVelocity": 0.25,
@@ -3397,7 +3397,7 @@
     },
     "siteType": {
       "modelVersion": 2,
-      "checkedAt": "2026-10-27T22:57:28.567Z",
+      "checkedAt": "2026-10-28T02:15:30.361Z",
       "type": "pending",
       "channel": "pending",
       "confidence": "low",
@@ -3422,7 +3422,7 @@
     },
     "marketFreshness": {
       "modelVersion": 1,
-      "checkedAt": "2026-10-27T22:57:28.567Z",
+      "checkedAt": "2026-10-28T02:15:30.361Z",
       "status": "unknown",
       "confidence": "low",
       "reason": "关键词历史或现有竞争站占位尚未完成确认",
@@ -3436,7 +3436,7 @@
     },
     "opportunity": {
       "modelVersion": 3,
-      "checkedAt": "2026-10-27T22:57:28.567Z",
+      "checkedAt": "2026-10-28T02:15:30.361Z",
       "weights": {
         "socialSpread": 0.3,
         "growthVelocity": 0.25,
@@ -3566,7 +3566,7 @@
     },
     "siteType": {
       "modelVersion": 2,
-      "checkedAt": "2026-10-27T22:57:28.567Z",
+      "checkedAt": "2026-10-28T02:15:30.361Z",
       "type": "pending",
       "channel": "pending",
       "confidence": "low",
@@ -3591,7 +3591,7 @@
     },
     "marketFreshness": {
       "modelVersion": 1,
-      "checkedAt": "2026-10-27T22:57:28.567Z",
+      "checkedAt": "2026-10-28T02:15:30.361Z",
       "status": "unknown",
       "confidence": "low",
       "reason": "关键词历史或现有竞争站占位尚未完成确认",
@@ -3605,7 +3605,7 @@
     },
     "opportunity": {
       "modelVersion": 3,
-      "checkedAt": "2026-10-27T22:57:28.567Z",
+      "checkedAt": "2026-10-28T02:15:30.361Z",
       "weights": {
         "socialSpread": 0.3,
         "growthVelocity": 0.25,
@@ -3735,7 +3735,7 @@
     },
     "siteType": {
       "modelVersion": 2,
-      "checkedAt": "2026-10-27T22:57:28.567Z",
+      "checkedAt": "2026-10-28T02:15:30.361Z",
       "type": "pending",
       "channel": "pending",
       "confidence": "low",
@@ -3760,7 +3760,7 @@
     },
     "marketFreshness": {
       "modelVersion": 1,
-      "checkedAt": "2026-10-27T22:57:28.567Z",
+      "checkedAt": "2026-10-28T02:15:30.361Z",
       "status": "unknown",
       "confidence": "low",
       "reason": "关键词历史或现有竞争站占位尚未完成确认",
@@ -3774,7 +3774,7 @@
     },
     "opportunity": {
       "modelVersion": 3,
-      "checkedAt": "2026-10-27T22:57:28.567Z",
+      "checkedAt": "2026-10-28T02:15:30.361Z",
       "weights": {
         "socialSpread": 0.3,
         "growthVelocity": 0.25,
@@ -3904,7 +3904,7 @@
     },
     "siteType": {
       "modelVersion": 2,
-      "checkedAt": "2026-10-27T22:57:28.567Z",
+      "checkedAt": "2026-10-28T02:15:30.361Z",
       "type": "pending",
       "channel": "pending",
       "confidence": "low",
@@ -3929,7 +3929,7 @@
     },
     "marketFreshness": {
       "modelVersion": 1,
-      "checkedAt": "2026-10-27T22:57:28.567Z",
+      "checkedAt": "2026-10-28T02:15:30.361Z",
       "status": "unknown",
       "confidence": "low",
       "reason": "关键词历史或现有竞争站占位尚未完成确认",
@@ -3943,7 +3943,7 @@
     },
     "opportunity": {
       "modelVersion": 3,
-      "checkedAt": "2026-10-27T22:57:28.567Z",
+      "checkedAt": "2026-10-28T02:15:30.361Z",
       "weights": {
         "socialSpread": 0.3,
         "growthVelocity": 0.25,
@@ -4105,7 +4105,7 @@
     },
     "siteType": {
       "modelVersion": 2,
-      "checkedAt": "2026-10-27T22:57:28.567Z",
+      "checkedAt": "2026-10-28T02:15:30.361Z",
       "type": "online",
       "channel": "online",
       "confidence": "medium",
@@ -4131,7 +4131,7 @@
     },
     "marketFreshness": {
       "modelVersion": 1,
-      "checkedAt": "2026-10-27T22:57:28.567Z",
+      "checkedAt": "2026-10-28T02:15:30.361Z",
       "status": "unknown",
       "confidence": "low",
       "reason": "关键词历史或现有竞争站占位尚未完成确认",
@@ -4145,7 +4145,7 @@
     },
     "opportunity": {
       "modelVersion": 3,
-      "checkedAt": "2026-10-27T22:57:28.567Z",
+      "checkedAt": "2026-10-28T02:15:30.361Z",
       "weights": {
         "socialSpread": 0.3,
         "growthVelocity": 0.25,
@@ -4275,7 +4275,7 @@
     },
     "siteType": {
       "modelVersion": 2,
-      "checkedAt": "2026-10-27T22:57:28.567Z",
+      "checkedAt": "2026-10-28T02:15:30.361Z",
       "type": "pending",
       "channel": "pending",
       "confidence": "low",
@@ -4300,7 +4300,7 @@
     },
     "marketFreshness": {
       "modelVersion": 1,
-      "checkedAt": "2026-10-27T22:57:28.567Z",
+      "checkedAt": "2026-10-28T02:15:30.361Z",
       "status": "unknown",
       "confidence": "low",
       "reason": "关键词历史或现有竞争站占位尚未完成确认",
@@ -4314,7 +4314,7 @@
     },
     "opportunity": {
       "modelVersion": 3,
-      "checkedAt": "2026-10-27T22:57:28.567Z",
+      "checkedAt": "2026-10-28T02:15:30.361Z",
       "weights": {
         "socialSpread": 0.3,
         "growthVelocity": 0.25,
@@ -4444,7 +4444,7 @@
     },
     "siteType": {
       "modelVersion": 2,
-      "checkedAt": "2026-10-27T22:57:28.567Z",
+      "checkedAt": "2026-10-28T02:15:30.361Z",
       "type": "pending",
       "channel": "pending",
       "confidence": "low",
@@ -4469,7 +4469,7 @@
     },
     "marketFreshness": {
       "modelVersion": 1,
-      "checkedAt": "2026-10-27T22:57:28.567Z",
+      "checkedAt": "2026-10-28T02:15:30.361Z",
       "status": "unknown",
       "confidence": "low",
       "reason": "关键词历史或现有竞争站占位尚未完成确认",
@@ -4483,7 +4483,7 @@
     },
     "opportunity": {
       "modelVersion": 3,
-      "checkedAt": "2026-10-27T22:57:28.567Z",
+      "checkedAt": "2026-10-28T02:15:30.361Z",
       "weights": {
         "socialSpread": 0.3,
         "growthVelocity": 0.25,
@@ -4613,7 +4613,7 @@
     },
     "siteType": {
       "modelVersion": 2,
-      "checkedAt": "2026-10-27T22:57:28.573Z",
+      "checkedAt": "2026-10-28T02:15:30.364Z",
       "type": "pending",
       "channel": "pending",
       "confidence": "low",
@@ -4638,7 +4638,7 @@
     },
     "marketFreshness": {
       "modelVersion": 1,
-      "checkedAt": "2026-10-27T22:57:28.573Z",
+      "checkedAt": "2026-10-28T02:15:30.364Z",
       "status": "unknown",
       "confidence": "low",
       "reason": "关键词历史或现有竞争站占位尚未完成确认",
@@ -4652,7 +4652,7 @@
     },
     "opportunity": {
       "modelVersion": 3,
-      "checkedAt": "2026-10-27T22:57:28.573Z",
+      "checkedAt": "2026-10-28T02:15:30.364Z",
       "weights": {
         "socialSpread": 0.3,
         "growthVelocity": 0.25,
