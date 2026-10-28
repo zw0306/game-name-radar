@@ -1,50 +1,50 @@
 {
-  "generatedAt": "2026-10-28T09:40:22.014Z",
+  "generatedAt": "2026-10-28T16:38:16.736Z",
   "totalCandidates": 3000,
   "pendingSeo": 2573,
   "channelCounts": {
-    "pending": 412,
-    "online": 2156,
-    "wiki": 5
+    "pending": 409,
+    "online": 2155,
+    "wiki": 9
   },
   "fastClassCounts": {
-    "pending:pending": 412,
-    "online:pending": 2156,
-    "wiki:pending": 5
+    "pending:pending": 409,
+    "online:pending": 2155,
+    "wiki:pending": 9
   },
   "strategicCounts": {
-    "pending:0": 410,
+    "pending:0": 407,
     "online:3": 1,
     "wiki:0": 1,
-    "online:2": 106,
-    "online:1": 2049,
-    "pending:1": 2,
-    "wiki:1": 4
+    "online:2": 107,
+    "online:1": 2047,
+    "wiki:1": 8,
+    "pending:1": 2
   },
   "topSources": [
     {
       "id": "itch-new",
-      "count": 2146
+      "count": 2144
     },
     {
       "id": "itch-newest-web",
-      "count": 2137
+      "count": 2135
     },
     {
       "id": "itch-new-feed",
-      "count": 2117
+      "count": 2115
     },
     {
       "id": "trends-rising-7d",
-      "count": 353
+      "count": 350
     },
     {
       "id": "trends-rising-30d",
-      "count": 221
+      "count": 219
     },
     {
       "id": "trends-rising-7d-horror-game",
-      "count": 181
+      "count": 180
     },
     {
       "id": "trends-rising-30d-horror-game",
@@ -60,19 +60,19 @@
     },
     {
       "id": "trends-rising-7d-indie-game",
-      "count": 88
+      "count": 87
     },
     {
       "id": "trends-rising-7d-itch-io",
-      "count": 88
+      "count": 87
     },
     {
       "id": "trends-rising-30d-itch-io",
-      "count": 67
+      "count": 66
     },
     {
       "id": "trends-rising-30d-indie-game",
-      "count": 32
+      "count": 31
     },
     {
       "id": "steam-latest-indie",
@@ -92,7 +92,11 @@
     },
     {
       "id": "steam-popular-new",
-      "count": 5
+      "count": 9
+    },
+    {
+      "id": "y8-new",
+      "count": 3
     },
     {
       "id": "newgrounds-latest",
@@ -115,8 +119,8 @@
       "count": 2
     },
     {
-      "id": "y8-new",
-      "count": 2
+      "id": "lagged-new",
+      "count": 1
     },
     {
       "id": "poki-new",
@@ -224,44 +228,6 @@
       ]
     },
     {
-      "name": "You Leave Grass In Your Wake",
-      "channel": "online",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 17,
-      "platforms": 1,
-      "browserPlayable": true,
-      "nameRisk": 6,
-      "strategicCount": 2,
-      "sourceCount": 5,
-      "sourceIds": [
-        "itch-newest-web",
-        "itch-new",
-        "itch-new-feed",
-        "itch-new-popular-web",
-        "itch-popular"
-      ]
-    },
-    {
-      "name": "今天也要搗個亂。｜3D 貓咪搗亂模擬器",
-      "channel": "online",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 17,
-      "platforms": 1,
-      "browserPlayable": true,
-      "nameRisk": 23,
-      "strategicCount": 2,
-      "sourceCount": 5,
-      "sourceIds": [
-        "itch-newest-web",
-        "itch-new",
-        "itch-new-feed",
-        "itch-new-popular-web",
-        "itch-popular"
-      ]
-    },
-    {
       "name": "Trolley Problem Is Not Problem",
       "channel": "online",
       "fastClass": "pending",
@@ -280,6 +246,25 @@
         "itch-popular",
         "steam-latest-indie",
         "steam-new"
+      ]
+    },
+    {
+      "name": "You Leave Grass In Your Wake",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 15,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 6,
+      "strategicCount": 2,
+      "sourceCount": 5,
+      "sourceIds": [
+        "itch-newest-web",
+        "itch-new",
+        "itch-new-feed",
+        "itch-new-popular-web",
+        "itch-popular"
       ]
     },
     {
@@ -1066,6 +1051,25 @@
       "platforms": 1,
       "browserPlayable": true,
       "nameRisk": 0,
+      "strategicCount": 2,
+      "sourceCount": 5,
+      "sourceIds": [
+        "itch-newest-web",
+        "itch-new",
+        "itch-new-feed",
+        "itch-new-popular-web",
+        "itch-popular"
+      ]
+    },
+    {
+      "name": "135_Rags of Racs_Dhelangan Studio_PC",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 15,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 5,
       "strategicCount": 2,
       "sourceCount": 5,
       "sourceIds": [
