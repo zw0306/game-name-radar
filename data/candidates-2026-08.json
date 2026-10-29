@@ -68,7 +68,7 @@
     "fast": {
       "modelVersion": 3,
       "profile": "online",
-      "checkedAt": "2026-10-28T21:39:50.483Z",
+      "checkedAt": "2026-10-29T01:48:14.111Z",
       "score": 64,
       "classification": "pass",
       "reasons": [
@@ -105,7 +105,7 @@
     },
     "siteType": {
       "modelVersion": 2,
-      "checkedAt": "2026-10-28T21:39:56.615Z",
+      "checkedAt": "2026-10-29T01:48:18.010Z",
       "type": "online",
       "channel": "online",
       "confidence": "high",
@@ -132,7 +132,7 @@
     },
     "marketFreshness": {
       "modelVersion": 1,
-      "checkedAt": "2026-10-28T21:39:56.615Z",
+      "checkedAt": "2026-10-29T01:48:18.010Z",
       "status": "unknown",
       "confidence": "low",
       "reason": "关键词历史或现有竞争站占位尚未完成确认",
@@ -146,7 +146,7 @@
     },
     "opportunity": {
       "modelVersion": 3,
-      "checkedAt": "2026-10-28T21:39:56.616Z",
+      "checkedAt": "2026-10-29T01:48:18.010Z",
       "weights": {
         "socialSpread": 0.3,
         "growthVelocity": 0.25,
@@ -392,287 +392,6 @@
     }
   },
   {
-    "id": "auto-aW5jcmVtZW50YWwgYm93bGlu",
-    "gameName": "Incremental Bowling demo",
-    "normalizedName": "incremental bowling demo",
-    "firstSeen": "2026-08-29T21:43:12.241Z",
-    "lastSeen": "2026-09-01T10:27:15.784Z",
-    "status": "new",
-    "sources": [
-      {
-        "key": "itch-newest-web|https://reniformgames.itch.io/incrementalbowling",
-        "sourceId": "itch-newest-web",
-        "name": "itch.io 最新网页游戏",
-        "kind": "itch-new",
-        "url": "https://reniformgames.itch.io/incrementalbowling",
-        "date": "",
-        "growth": "",
-        "seed": "",
-        "windowDays": null,
-        "firstSeen": "2026-08-29T21:43:12.241Z",
-        "lastSeen": "2026-08-29T21:43:12.241Z",
-        "currentRank": 25,
-        "previousRank": null,
-        "bestRank": 25
-      },
-      {
-        "key": "itch-new-feed|https://reniformgames.itch.io/incrementalbowling",
-        "sourceId": "itch-new-feed",
-        "name": "itch.io New Feed",
-        "kind": "itch-new",
-        "url": "https://reniformgames.itch.io/incrementalbowling",
-        "date": "Sat, 15 Aug 2026 05:20:18 GMT",
-        "growth": "",
-        "seed": "",
-        "windowDays": null,
-        "firstSeen": "2026-08-29T21:43:12.241Z",
-        "lastSeen": "2026-08-29T21:43:12.241Z",
-        "currentRank": 35,
-        "previousRank": null,
-        "bestRank": 35
-      },
-      {
-        "key": "itch-new-popular-web|https://reniformgames.itch.io/incrementalbowling",
-        "sourceId": "itch-new-popular-web",
-        "name": "itch.io New & Popular",
-        "kind": "itch-popular",
-        "url": "https://reniformgames.itch.io/incrementalbowling",
-        "date": "",
-        "growth": "",
-        "seed": "",
-        "windowDays": null,
-        "firstSeen": "2026-08-30T07:25:14.616Z",
-        "lastSeen": "2026-09-01T10:27:15.784Z",
-        "currentRank": 33,
-        "previousRank": 29,
-        "bestRank": 12
-      }
-    ],
-    "recommendation": "watch",
-    "discoveryScore": 15,
-    "discoveryLevel": "hot",
-    "seo": {
-      "modelVersion": 5,
-      "checkedAt": "2026-09-19T13:57:03.372Z",
-      "status": "ok",
-      "provider": "serper+autocomplete",
-      "queryName": "Incremental Bowling demo",
-      "searchRequests": 1,
-      "serperUsage": {
-        "enabled": true,
-        "rushMode": true,
-        "totalUsed": 769,
-        "day": "2026-09-19",
-        "dayUsed": 769,
-        "totalLimit": 2450,
-        "dailyLimit": 2450,
-        "updatedAt": "2026-09-19T13:57:03.371Z",
-        "lastError": null
-      },
-      "score": 37,
-      "classification": "watch",
-      "reasons": [
-        "已确认1个在线游戏平台来源",
-        "主词搜索结果以游戏内容为主"
-      ],
-      "entityConflict": false,
-      "exactGameRatio": 0.6,
-      "exactNewsRatio": 0,
-      "exactNonGameRatio": 0.1,
-      "gameQueryGameRatio": 0,
-      "suggestionGameCount": 0,
-      "suggestionNonGameCount": 0,
-      "suggestions": [],
-      "nameRisk": 0,
-      "exactResultCount": 10,
-      "gameResultCount": 0,
-      "exactResultUrls": [
-        "https://reniformgames.itch.io/incrementalbowling",
-        "https://www.youtube.com/watch?v=P7LXRSX6gFk",
-        "https://www.reddit.com/r/incremental_games/comments/1wejgb2/i_made_an_incremental_bowling_gamebowl_big_demo/",
-        "https://galaxy.click/play/879",
-        "https://www.tiktok.com/@rayleighstudios/video/7682505976582262030",
-        "https://www.youtube.com/watch?v=1ZPFHzd03Iw&vl=en-US",
-        "https://www.instagram.com/p/DdMsID9DHX0/",
-        "https://www.incrementaldb.com/game/incremental-bowling?id=11471",
-        "https://www.gamespress.com/en-US/Exponentially-Scaling-Incremental-Sports-Title-Bowl-Big-Launches-Steam",
-        "https://reniformgames.itch.io/incrementalbowling/purchase"
-      ],
-      "gameResultUrls": [],
-      "intentProfile": "online"
-    },
-    "fast": {
-      "modelVersion": 3,
-      "profile": "online",
-      "checkedAt": "2026-10-28T21:39:50.484Z",
-      "score": 29,
-      "classification": "watch",
-      "reasons": [
-        "使用在线游戏专用快速热度模型",
-        "已进入平台前12名"
-      ],
-      "sourceCount": 1,
-      "rawSourceCount": 3,
-      "sourceAdded24h": 0,
-      "sourceAdded48h": 0,
-      "onlineSourceCount": 2,
-      "onlinePlatformCount": 1,
-      "wikiSourceCount": 0,
-      "onlineHighQualityCount": 1,
-      "wikiHighQualityCount": 0,
-      "sharedHighQualityCount": 1,
-      "highQualityCount": 2,
-      "maxRankGain": 0,
-      "bestRank": 12,
-      "suggestionCount": 0,
-      "onlineSuggestionCount": 0,
-      "wikiSuggestionCount": 0,
-      "newSuggestionCount": 0,
-      "newSerpPageCount": 0,
-      "suggestionBaselineReady": true,
-      "serpBaselineReady": true,
-      "youtubeEnabled": false,
-      "youtubeChannels": 0,
-      "youtubeVideos": 0,
-      "youtubeViews": 0,
-      "suggestionSnapshot": [],
-      "serpSnapshot": [
-        "https://reniformgames.itch.io/incrementalbowling",
-        "https://www.youtube.com/watch?v=P7LXRSX6gFk",
-        "https://www.reddit.com/r/incremental_games/comments/1wejgb2/i_made_an_incremental_bowling_gamebowl_big_demo/",
-        "https://galaxy.click/play/879",
-        "https://www.tiktok.com/@rayleighstudios/video/7682505976582262030",
-        "https://www.youtube.com/watch?v=1ZPFHzd03Iw&vl=en-US",
-        "https://www.instagram.com/p/DdMsID9DHX0/",
-        "https://www.incrementaldb.com/game/incremental-bowling?id=11471",
-        "https://www.gamespress.com/en-US/Exponentially-Scaling-Incremental-Sports-Title-Bowl-Big-Launches-Steam",
-        "https://reniformgames.itch.io/incrementalbowling/purchase"
-      ]
-    },
-    "siteType": {
-      "modelVersion": 2,
-      "checkedAt": "2026-10-28T21:39:56.617Z",
-      "type": "online",
-      "channel": "online",
-      "confidence": "high",
-      "browserPlayable": true,
-      "iframeLikely": null,
-      "embedStatus": "needs-check",
-      "onlineSourceCount": 2,
-      "onlinePlatformCount": 1,
-      "premiumOnlineCount": 1,
-      "wikiSourceCount": 0,
-      "hasWishlistSource": false,
-      "reasons": [
-        "关键词历史或现有竞争站占位尚未完成确认",
-        "尚未完成社媒热度验证",
-        "缺少多平台、多独立创作者的外溢传播",
-        "24–48小时平台扩散速度不足",
-        "搜索需求尚未形成",
-        "可扩展内容主题不足",
-        "SERP尚未确认是严格空白市场",
-        "已在1个浏览器游戏平台或HTML5榜单出现",
-        "包含1个高价值在线游戏平台信号"
-      ]
-    },
-    "marketFreshness": {
-      "modelVersion": 1,
-      "checkedAt": "2026-10-28T21:39:56.617Z",
-      "status": "unknown",
-      "confidence": "low",
-      "reason": "关键词历史或现有竞争站占位尚未完成确认",
-      "keywordFreshness": "unknown",
-      "rising": false,
-      "competitionChecked": true,
-      "dedicatedDomains": [],
-      "contentDomains": [],
-      "allowsIndependent": false,
-      "provisionalNew": false
-    },
-    "opportunity": {
-      "modelVersion": 3,
-      "checkedAt": "2026-10-28T21:39:56.617Z",
-      "weights": {
-        "socialSpread": 0.3,
-        "growthVelocity": 0.25,
-        "searchFormation": 0.15,
-        "contentExpandability": 0.15,
-        "serpGap": 0.1,
-        "nameSafety": 0.05
-      },
-      "components": {
-        "socialSpread": 0,
-        "growthVelocity": 15,
-        "searchFormation": 15,
-        "contentExpandability": 0,
-        "serpGap": 25,
-        "nameSafety": 100
-      },
-      "hardGates": {
-        "externalSpillover": false,
-        "growthVelocity": false,
-        "searchFormation": false,
-        "contentDepth": false,
-        "competitionOpen": false,
-        "nameSafe": true
-      },
-      "testGates": {
-        "growthVelocity": false,
-        "searchFormation": false,
-        "contentDepth": false,
-        "competitionTestable": false,
-        "nameSafe": true
-      },
-      "testScore": 23,
-      "allowsTest": false,
-      "allowsIndependent": false,
-      "score": 14,
-      "reasons": [
-        "缺少多平台、多独立创作者的外溢传播",
-        "24–48小时平台扩散速度不足",
-        "搜索需求尚未形成",
-        "可扩展内容主题不足",
-        "SERP尚未确认是严格空白市场"
-      ]
-    },
-    "social": {
-      "modelVersion": 3,
-      "checkedAt": "2026-08-29T21:43:21.756Z",
-      "score": 0,
-      "classification": "pending",
-      "confidence": "low",
-      "providers": {
-        "youtube": {},
-        "reddit": {},
-        "x": {},
-        "tiktok": {}
-      },
-      "configuredProviders": [],
-      "checkedProviders": [],
-      "activeProviders": [],
-      "strongProviders": [],
-      "veryStrongProviders": [],
-      "independentProviders": [],
-      "independentCreatorCount": 0,
-      "freshProviders": [],
-      "crossPlatformCount": 0,
-      "hasExternalSpillover": false,
-      "hasSinglePlatformMomentum": false,
-      "singlePlatformMomentum": null,
-      "hasMeasuredEvidence": false,
-      "evidenceStatus": "unknown",
-      "allowsTest": true,
-      "allowsIndependent": false,
-      "reasons": [
-        "尚未完成社媒热度验证"
-      ],
-      "providerErrors": {}
-    },
-    "finalScore": 14,
-    "score": 14,
-    "level": "watch"
-  },
-  {
     "id": "auto-c3RhciB3YXJzIHplcm8gY29t",
     "gameName": "STAR WARS Zero Company™",
     "normalizedName": "star wars zero company",
@@ -742,7 +461,7 @@
     "fast": {
       "modelVersion": 3,
       "profile": "wiki",
-      "checkedAt": "2026-10-28T21:39:50.491Z",
+      "checkedAt": "2026-10-29T01:48:14.115Z",
       "score": 72,
       "classification": "pass",
       "reasons": [
@@ -779,7 +498,7 @@
     },
     "siteType": {
       "modelVersion": 2,
-      "checkedAt": "2026-10-28T21:39:56.630Z",
+      "checkedAt": "2026-10-29T01:48:18.016Z",
       "type": "wiki",
       "channel": "wiki",
       "confidence": "high",
@@ -806,7 +525,7 @@
     },
     "marketFreshness": {
       "modelVersion": 1,
-      "checkedAt": "2026-10-28T21:39:56.630Z",
+      "checkedAt": "2026-10-29T01:48:18.016Z",
       "status": "unknown",
       "confidence": "low",
       "reason": "关键词历史或现有竞争站占位尚未完成确认",
@@ -820,7 +539,7 @@
     },
     "opportunity": {
       "modelVersion": 3,
-      "checkedAt": "2026-10-28T21:39:56.630Z",
+      "checkedAt": "2026-10-29T01:48:18.016Z",
       "weights": {
         "socialSpread": 0.3,
         "growthVelocity": 0.25,
@@ -866,7 +585,7 @@
     },
     "wikiPrelaunch": {
       "modelVersion": 2,
-      "checkedAt": "2026-10-28T21:39:56.630Z",
+      "checkedAt": "2026-10-29T01:48:18.016Z",
       "score": 0,
       "classification": "weak",
       "reasons": [
@@ -1173,7 +892,7 @@
     },
     "siteType": {
       "modelVersion": 2,
-      "checkedAt": "2026-10-28T21:39:56.649Z",
+      "checkedAt": "2026-10-29T01:48:18.026Z",
       "type": "pending",
       "channel": "pending",
       "confidence": "low",
@@ -1198,7 +917,7 @@
     },
     "marketFreshness": {
       "modelVersion": 1,
-      "checkedAt": "2026-10-28T21:39:56.649Z",
+      "checkedAt": "2026-10-29T01:48:18.026Z",
       "status": "unknown",
       "confidence": "low",
       "reason": "关键词历史或现有竞争站占位尚未完成确认",
@@ -1212,7 +931,7 @@
     },
     "opportunity": {
       "modelVersion": 3,
-      "checkedAt": "2026-10-28T21:39:56.649Z",
+      "checkedAt": "2026-10-29T01:48:18.026Z",
       "weights": {
         "socialSpread": 0.3,
         "growthVelocity": 0.25,
@@ -1358,7 +1077,7 @@
     },
     "siteType": {
       "modelVersion": 2,
-      "checkedAt": "2026-10-28T21:39:56.649Z",
+      "checkedAt": "2026-10-29T01:48:18.026Z",
       "type": "pending",
       "channel": "pending",
       "confidence": "low",
@@ -1383,7 +1102,7 @@
     },
     "marketFreshness": {
       "modelVersion": 1,
-      "checkedAt": "2026-10-28T21:39:56.649Z",
+      "checkedAt": "2026-10-29T01:48:18.026Z",
       "status": "unknown",
       "confidence": "low",
       "reason": "关键词历史或现有竞争站占位尚未完成确认",
@@ -1397,7 +1116,7 @@
     },
     "opportunity": {
       "modelVersion": 3,
-      "checkedAt": "2026-10-28T21:39:56.649Z",
+      "checkedAt": "2026-10-29T01:48:18.026Z",
       "weights": {
         "socialSpread": 0.3,
         "growthVelocity": 0.25,
@@ -1543,7 +1262,7 @@
     },
     "siteType": {
       "modelVersion": 2,
-      "checkedAt": "2026-10-28T21:39:56.649Z",
+      "checkedAt": "2026-10-29T01:48:18.026Z",
       "type": "pending",
       "channel": "pending",
       "confidence": "low",
@@ -1568,7 +1287,7 @@
     },
     "marketFreshness": {
       "modelVersion": 1,
-      "checkedAt": "2026-10-28T21:39:56.649Z",
+      "checkedAt": "2026-10-29T01:48:18.026Z",
       "status": "unknown",
       "confidence": "low",
       "reason": "关键词历史或现有竞争站占位尚未完成确认",
@@ -1582,7 +1301,7 @@
     },
     "opportunity": {
       "modelVersion": 3,
-      "checkedAt": "2026-10-28T21:39:56.649Z",
+      "checkedAt": "2026-10-29T01:48:18.026Z",
       "weights": {
         "socialSpread": 0.3,
         "growthVelocity": 0.25,
@@ -1728,7 +1447,7 @@
     },
     "siteType": {
       "modelVersion": 2,
-      "checkedAt": "2026-10-28T21:39:56.649Z",
+      "checkedAt": "2026-10-29T01:48:18.026Z",
       "type": "pending",
       "channel": "pending",
       "confidence": "low",
@@ -1753,7 +1472,7 @@
     },
     "marketFreshness": {
       "modelVersion": 1,
-      "checkedAt": "2026-10-28T21:39:56.649Z",
+      "checkedAt": "2026-10-29T01:48:18.026Z",
       "status": "unknown",
       "confidence": "low",
       "reason": "关键词历史或现有竞争站占位尚未完成确认",
@@ -1767,7 +1486,7 @@
     },
     "opportunity": {
       "modelVersion": 3,
-      "checkedAt": "2026-10-28T21:39:56.649Z",
+      "checkedAt": "2026-10-29T01:48:18.026Z",
       "weights": {
         "socialSpread": 0.3,
         "growthVelocity": 0.25,
@@ -1913,7 +1632,7 @@
     },
     "siteType": {
       "modelVersion": 2,
-      "checkedAt": "2026-10-28T21:39:56.649Z",
+      "checkedAt": "2026-10-29T01:48:18.026Z",
       "type": "pending",
       "channel": "pending",
       "confidence": "low",
@@ -1938,7 +1657,7 @@
     },
     "marketFreshness": {
       "modelVersion": 1,
-      "checkedAt": "2026-10-28T21:39:56.649Z",
+      "checkedAt": "2026-10-29T01:48:18.026Z",
       "status": "unknown",
       "confidence": "low",
       "reason": "关键词历史或现有竞争站占位尚未完成确认",
@@ -1952,7 +1671,7 @@
     },
     "opportunity": {
       "modelVersion": 3,
-      "checkedAt": "2026-10-28T21:39:56.649Z",
+      "checkedAt": "2026-10-29T01:48:18.026Z",
       "weights": {
         "socialSpread": 0.3,
         "growthVelocity": 0.25,
@@ -2098,7 +1817,7 @@
     },
     "siteType": {
       "modelVersion": 2,
-      "checkedAt": "2026-10-28T21:39:56.649Z",
+      "checkedAt": "2026-10-29T01:48:18.026Z",
       "type": "pending",
       "channel": "pending",
       "confidence": "low",
@@ -2123,7 +1842,7 @@
     },
     "marketFreshness": {
       "modelVersion": 1,
-      "checkedAt": "2026-10-28T21:39:56.649Z",
+      "checkedAt": "2026-10-29T01:48:18.026Z",
       "status": "unknown",
       "confidence": "low",
       "reason": "关键词历史或现有竞争站占位尚未完成确认",
@@ -2137,7 +1856,7 @@
     },
     "opportunity": {
       "modelVersion": 3,
-      "checkedAt": "2026-10-28T21:39:56.649Z",
+      "checkedAt": "2026-10-29T01:48:18.026Z",
       "weights": {
         "socialSpread": 0.3,
         "growthVelocity": 0.25,
@@ -2299,7 +2018,7 @@
     },
     "siteType": {
       "modelVersion": 2,
-      "checkedAt": "2026-10-28T21:39:56.653Z",
+      "checkedAt": "2026-10-29T01:48:18.028Z",
       "type": "online",
       "channel": "online",
       "confidence": "high",
@@ -2326,7 +2045,7 @@
     },
     "marketFreshness": {
       "modelVersion": 1,
-      "checkedAt": "2026-10-28T21:39:56.653Z",
+      "checkedAt": "2026-10-29T01:48:18.028Z",
       "status": "unknown",
       "confidence": "low",
       "reason": "关键词历史或现有竞争站占位尚未完成确认",
@@ -2340,7 +2059,7 @@
     },
     "opportunity": {
       "modelVersion": 3,
-      "checkedAt": "2026-10-28T21:39:56.653Z",
+      "checkedAt": "2026-10-29T01:48:18.028Z",
       "weights": {
         "socialSpread": 0.3,
         "growthVelocity": 0.25,
@@ -2470,7 +2189,7 @@
     },
     "siteType": {
       "modelVersion": 2,
-      "checkedAt": "2026-10-28T21:39:56.663Z",
+      "checkedAt": "2026-10-29T01:48:18.032Z",
       "type": "pending",
       "channel": "pending",
       "confidence": "low",
@@ -2495,7 +2214,7 @@
     },
     "marketFreshness": {
       "modelVersion": 1,
-      "checkedAt": "2026-10-28T21:39:56.663Z",
+      "checkedAt": "2026-10-29T01:48:18.032Z",
       "status": "unknown",
       "confidence": "low",
       "reason": "关键词历史或现有竞争站占位尚未完成确认",
@@ -2509,7 +2228,7 @@
     },
     "opportunity": {
       "modelVersion": 3,
-      "checkedAt": "2026-10-28T21:39:56.663Z",
+      "checkedAt": "2026-10-29T01:48:18.032Z",
       "weights": {
         "socialSpread": 0.3,
         "growthVelocity": 0.25,
@@ -2639,7 +2358,7 @@
     },
     "siteType": {
       "modelVersion": 2,
-      "checkedAt": "2026-10-28T21:39:56.663Z",
+      "checkedAt": "2026-10-29T01:48:18.032Z",
       "type": "pending",
       "channel": "pending",
       "confidence": "low",
@@ -2664,7 +2383,7 @@
     },
     "marketFreshness": {
       "modelVersion": 1,
-      "checkedAt": "2026-10-28T21:39:56.663Z",
+      "checkedAt": "2026-10-29T01:48:18.032Z",
       "status": "unknown",
       "confidence": "low",
       "reason": "关键词历史或现有竞争站占位尚未完成确认",
@@ -2678,7 +2397,7 @@
     },
     "opportunity": {
       "modelVersion": 3,
-      "checkedAt": "2026-10-28T21:39:56.663Z",
+      "checkedAt": "2026-10-29T01:48:18.032Z",
       "weights": {
         "socialSpread": 0.3,
         "growthVelocity": 0.25,
@@ -2808,7 +2527,7 @@
     },
     "siteType": {
       "modelVersion": 2,
-      "checkedAt": "2026-10-28T21:39:56.663Z",
+      "checkedAt": "2026-10-29T01:48:18.032Z",
       "type": "pending",
       "channel": "pending",
       "confidence": "low",
@@ -2833,7 +2552,7 @@
     },
     "marketFreshness": {
       "modelVersion": 1,
-      "checkedAt": "2026-10-28T21:39:56.663Z",
+      "checkedAt": "2026-10-29T01:48:18.032Z",
       "status": "unknown",
       "confidence": "low",
       "reason": "关键词历史或现有竞争站占位尚未完成确认",
@@ -2847,7 +2566,7 @@
     },
     "opportunity": {
       "modelVersion": 3,
-      "checkedAt": "2026-10-28T21:39:56.663Z",
+      "checkedAt": "2026-10-29T01:48:18.032Z",
       "weights": {
         "socialSpread": 0.3,
         "growthVelocity": 0.25,
@@ -2977,7 +2696,7 @@
     },
     "siteType": {
       "modelVersion": 2,
-      "checkedAt": "2026-10-28T21:39:56.663Z",
+      "checkedAt": "2026-10-29T01:48:18.032Z",
       "type": "pending",
       "channel": "pending",
       "confidence": "low",
@@ -3002,7 +2721,7 @@
     },
     "marketFreshness": {
       "modelVersion": 1,
-      "checkedAt": "2026-10-28T21:39:56.663Z",
+      "checkedAt": "2026-10-29T01:48:18.032Z",
       "status": "unknown",
       "confidence": "low",
       "reason": "关键词历史或现有竞争站占位尚未完成确认",
@@ -3016,7 +2735,7 @@
     },
     "opportunity": {
       "modelVersion": 3,
-      "checkedAt": "2026-10-28T21:39:56.663Z",
+      "checkedAt": "2026-10-29T01:48:18.032Z",
       "weights": {
         "socialSpread": 0.3,
         "growthVelocity": 0.25,
@@ -3146,7 +2865,7 @@
     },
     "siteType": {
       "modelVersion": 2,
-      "checkedAt": "2026-10-28T21:39:56.663Z",
+      "checkedAt": "2026-10-29T01:48:18.032Z",
       "type": "pending",
       "channel": "pending",
       "confidence": "low",
@@ -3171,7 +2890,7 @@
     },
     "marketFreshness": {
       "modelVersion": 1,
-      "checkedAt": "2026-10-28T21:39:56.663Z",
+      "checkedAt": "2026-10-29T01:48:18.032Z",
       "status": "unknown",
       "confidence": "low",
       "reason": "关键词历史或现有竞争站占位尚未完成确认",
@@ -3185,7 +2904,7 @@
     },
     "opportunity": {
       "modelVersion": 3,
-      "checkedAt": "2026-10-28T21:39:56.663Z",
+      "checkedAt": "2026-10-29T01:48:18.032Z",
       "weights": {
         "socialSpread": 0.3,
         "growthVelocity": 0.25,
@@ -3315,7 +3034,7 @@
     },
     "siteType": {
       "modelVersion": 2,
-      "checkedAt": "2026-10-28T21:39:56.670Z",
+      "checkedAt": "2026-10-29T01:48:18.035Z",
       "type": "pending",
       "channel": "pending",
       "confidence": "low",
@@ -3340,7 +3059,7 @@
     },
     "marketFreshness": {
       "modelVersion": 1,
-      "checkedAt": "2026-10-28T21:39:56.670Z",
+      "checkedAt": "2026-10-29T01:48:18.035Z",
       "status": "unknown",
       "confidence": "low",
       "reason": "关键词历史或现有竞争站占位尚未完成确认",
@@ -3354,7 +3073,7 @@
     },
     "opportunity": {
       "modelVersion": 3,
-      "checkedAt": "2026-10-28T21:39:56.670Z",
+      "checkedAt": "2026-10-29T01:48:18.035Z",
       "weights": {
         "socialSpread": 0.3,
         "growthVelocity": 0.25,
