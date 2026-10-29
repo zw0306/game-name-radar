@@ -1,70 +1,70 @@
 {
-  "generatedAt": "2026-10-29T01:48:15.453Z",
+  "generatedAt": "2026-10-29T08:28:55.896Z",
   "totalCandidates": 3000,
-  "pendingSeo": 2564,
+  "pendingSeo": 2562,
   "channelCounts": {
-    "pending": 411,
-    "online": 2143,
-    "wiki": 10
+    "pending": 419,
+    "online": 2136,
+    "wiki": 7
   },
   "fastClassCounts": {
-    "pending:pending": 411,
-    "online:pending": 2143,
-    "wiki:pending": 10
+    "pending:pending": 419,
+    "online:pending": 2136,
+    "wiki:pending": 7
   },
   "strategicCounts": {
-    "pending:0": 409,
+    "pending:0": 417,
     "online:3": 1,
     "wiki:0": 1,
-    "online:2": 105,
-    "online:1": 2037,
-    "wiki:1": 9,
+    "online:2": 106,
+    "online:1": 2029,
+    "wiki:1": 6,
     "pending:1": 2
   },
   "topSources": [
     {
       "id": "itch-new",
-      "count": 2132
+      "count": 2125
     },
     {
       "id": "itch-newest-web",
-      "count": 2124
+      "count": 2117
     },
     {
       "id": "itch-new-feed",
-      "count": 2103
+      "count": 2096
     },
     {
       "id": "trends-rising-7d",
-      "count": 354
+      "count": 363
     },
     {
       "id": "trends-rising-30d",
-      "count": 218
+      "count": 219
     },
     {
       "id": "trends-rising-7d-horror-game",
-      "count": 182
+      "count": 183
     },
     {
       "id": "trends-rising-30d-horror-game",
-      "count": 122
+      "count": 123
     },
     {
       "id": "itch-new-popular-web",
-      "count": 106
+      "count": 107
     },
     {
       "id": "itch-popular",
-      "count": 106
+      "count": 107
     },
     {
       "id": "trends-rising-7d-indie-game",
-      "count": 88
+      "count": 94
     },
     {
       "id": "trends-rising-7d-itch-io",
-      "count": 88
+      "count": 90
     },
     {
       "id": "trends-rising-30d-itch-io",
@@ -92,7 +92,7 @@
     },
     {
       "id": "steam-popular-new",
-      "count": 10
+      "count": 7
     },
     {
       "id": "newgrounds-latest",
@@ -166,6 +166,25 @@
         "itch-new",
         "itch-featured-feed",
         "itch-featured"
+      ]
+    },
+    {
+      "name": "The Idle Countdown",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 17,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 12,
+      "strategicCount": 2,
+      "sourceCount": 5,
+      "sourceIds": [
+        "itch-newest-web",
+        "itch-new",
+        "itch-new-feed",
+        "itch-new-popular-web",
+        "itch-popular"
       ]
     },
     {
@@ -1047,25 +1066,6 @@
       "platforms": 1,
       "browserPlayable": true,
       "nameRisk": 0,
-      "strategicCount": 2,
-      "sourceCount": 5,
-      "sourceIds": [
-        "itch-newest-web",
-        "itch-new",
-        "itch-new-feed",
-        "itch-new-popular-web",
-        "itch-popular"
-      ]
-    },
-    {
-      "name": "135_Rags of Racs_Dhelangan Studio_PC",
-      "channel": "online",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 15,
-      "platforms": 1,
-      "browserPlayable": true,
-      "nameRisk": 5,
       "strategicCount": 2,
       "sourceCount": 5,
       "sourceIds": [
