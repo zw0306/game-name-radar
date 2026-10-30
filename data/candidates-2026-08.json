@@ -79,7 +79,7 @@
     },
     "siteType": {
       "modelVersion": 2,
-      "checkedAt": "2026-10-30T00:59:35.920Z",
+      "checkedAt": "2026-10-30T07:06:52.826Z",
       "type": "pending",
       "channel": "pending",
       "confidence": "low",
@@ -104,7 +104,7 @@
     },
     "marketFreshness": {
       "modelVersion": 1,
-      "checkedAt": "2026-10-30T00:59:35.920Z",
+      "checkedAt": "2026-10-30T07:06:52.826Z",
       "status": "unknown",
       "confidence": "low",
       "reason": "关键词历史或现有竞争站占位尚未完成确认",
@@ -118,7 +118,7 @@
     },
     "opportunity": {
       "modelVersion": 3,
-      "checkedAt": "2026-10-30T00:59:35.920Z",
+      "checkedAt": "2026-10-30T07:06:52.826Z",
       "weights": {
         "socialSpread": 0.3,
         "growthVelocity": 0.25,
@@ -264,7 +264,7 @@
     },
     "siteType": {
       "modelVersion": 2,
-      "checkedAt": "2026-10-30T00:59:35.920Z",
+      "checkedAt": "2026-10-30T07:06:52.826Z",
       "type": "pending",
       "channel": "pending",
       "confidence": "low",
@@ -289,7 +289,7 @@
     },
     "marketFreshness": {
       "modelVersion": 1,
-      "checkedAt": "2026-10-30T00:59:35.920Z",
+      "checkedAt": "2026-10-30T07:06:52.826Z",
       "status": "unknown",
       "confidence": "low",
       "reason": "关键词历史或现有竞争站占位尚未完成确认",
@@ -303,7 +303,7 @@
     },
     "opportunity": {
       "modelVersion": 3,
-      "checkedAt": "2026-10-30T00:59:35.920Z",
+      "checkedAt": "2026-10-30T07:06:52.826Z",
       "weights": {
         "socialSpread": 0.3,
         "growthVelocity": 0.25,
@@ -386,191 +386,6 @@
     "level": "pending"
   },
   {
-    "id": "auto-ZGlub3NhdXI",
-    "gameName": "dinosaur",
-    "normalizedName": "dinosaur",
-    "firstSeen": "2026-08-31T07:01:39.734Z",
-    "lastSeen": "2026-09-24T15:06:22.817Z",
-    "status": "new",
-    "sources": [
-      {
-        "key": "trends-rising-30d-horror-game|https://trends.google.com/trends/explore?date=today 1-m&geo=US&q=dinosaur%20game",
-        "sourceId": "trends-rising-30d-horror-game",
-        "name": "Trends上涨 30天 · horror game",
-        "kind": "trends-rising-30d",
-        "url": "https://trends.google.com/trends/explore?date=today 1-m&geo=US&q=dinosaur%20game",
-        "date": "2026-09-04T13:47:22.473Z",
-        "growth": "+70%",
-        "seed": "horror game",
-        "windowDays": 30,
-        "firstSeen": "2026-08-31T07:01:39.734Z",
-        "lastSeen": "2026-09-04T13:46:57.607Z",
-        "currentRank": 21,
-        "previousRank": 19,
-        "bestRank": 18
-      },
-      {
-        "key": "trends-rising-7d-horror-game|https://trends.google.com/trends/explore?date=now 7-d&geo=US&q=dinosaur%20game",
-        "sourceId": "trends-rising-7d-horror-game",
-        "name": "Trends上涨 7天 · horror game",
-        "kind": "trends-rising-7d",
-        "url": "https://trends.google.com/trends/explore?date=now 7-d&geo=US&q=dinosaur%20game",
-        "date": "2026-09-24T15:06:39.324Z",
-        "growth": "+70%",
-        "seed": "horror game",
-        "windowDays": 7,
-        "firstSeen": "2026-09-24T15:06:22.817Z",
-        "lastSeen": "2026-09-24T15:06:22.817Z",
-        "currentRank": 6,
-        "previousRank": null,
-        "bestRank": 6
-      }
-    ],
-    "recommendation": "pending",
-    "discoveryScore": 20,
-    "discoveryLevel": "hot",
-    "seo": {
-      "modelVersion": 5,
-      "status": "pending",
-      "classification": "pending",
-      "score": 0,
-      "reasons": [
-        "等待自动搜索意图验证"
-      ]
-    },
-    "fast": {
-      "modelVersion": 3,
-      "status": "pending",
-      "classification": "pending",
-      "score": 0,
-      "reasons": [
-        "等待最新SEO验证后计算快速热度"
-      ]
-    },
-    "siteType": {
-      "modelVersion": 2,
-      "checkedAt": "2026-10-30T00:59:35.920Z",
-      "type": "pending",
-      "channel": "pending",
-      "confidence": "low",
-      "browserPlayable": null,
-      "iframeLikely": null,
-      "embedStatus": "unknown",
-      "onlineSourceCount": 0,
-      "onlinePlatformCount": 0,
-      "premiumOnlineCount": 0,
-      "wikiSourceCount": 0,
-      "hasWishlistSource": false,
-      "reasons": [
-        "关键词历史或现有竞争站占位尚未完成确认",
-        "缺少多平台、多独立创作者的外溢传播",
-        "24–48小时平台扩散速度不足",
-        "搜索需求尚未形成",
-        "可扩展内容主题不足",
-        "SERP尚未确认是严格空白市场",
-        "名称歧义或实体冲突风险过高",
-        "当前来源不足以确认是HTML5在线游戏还是下载型游戏"
-      ]
-    },
-    "marketFreshness": {
-      "modelVersion": 1,
-      "checkedAt": "2026-10-30T00:59:35.920Z",
-      "status": "unknown",
-      "confidence": "low",
-      "reason": "关键词历史或现有竞争站占位尚未完成确认",
-      "keywordFreshness": "unknown",
-      "rising": false,
-      "competitionChecked": false,
-      "dedicatedDomains": [],
-      "contentDomains": [],
-      "allowsIndependent": false,
-      "provisionalNew": false
-    },
-    "opportunity": {
-      "modelVersion": 3,
-      "checkedAt": "2026-10-30T00:59:35.920Z",
-      "weights": {
-        "socialSpread": 0.3,
-        "growthVelocity": 0.25,
-        "searchFormation": 0.15,
-        "contentExpandability": 0.15,
-        "serpGap": 0.1,
-        "nameSafety": 0.05
-      },
-      "components": {
-        "socialSpread": 0,
-        "growthVelocity": 0,
-        "searchFormation": 15,
-        "contentExpandability": 0,
-        "serpGap": 25,
-        "nameSafety": 0
-      },
-      "hardGates": {
-        "externalSpillover": false,
-        "growthVelocity": false,
-        "searchFormation": false,
-        "contentDepth": false,
-        "competitionOpen": false,
-        "nameSafe": false
-      },
-      "testGates": {
-        "growthVelocity": false,
-        "searchFormation": false,
-        "contentDepth": false,
-        "competitionTestable": false,
-        "nameSafe": false
-      },
-      "testScore": 8,
-      "allowsTest": false,
-      "allowsIndependent": false,
-      "score": 5,
-      "reasons": [
-        "缺少多平台、多独立创作者的外溢传播",
-        "24–48小时平台扩散速度不足",
-        "搜索需求尚未形成",
-        "可扩展内容主题不足",
-        "SERP尚未确认是严格空白市场",
-        "名称歧义或实体冲突风险过高"
-      ]
-    },
-    "social": {
-      "modelVersion": 3,
-      "checkedAt": "2026-08-31T07:02:12.545Z",
-      "score": 0,
-      "classification": "pending",
-      "confidence": "low",
-      "providers": {
-        "youtube": {},
-        "reddit": {},
-        "x": {},
-        "tiktok": {}
-      },
-      "configuredProviders": [],
-      "checkedProviders": [],
-      "activeProviders": [],
-      "strongProviders": [],
-      "veryStrongProviders": [],
-      "independentProviders": [],
-      "independentCreatorCount": 0,
-      "freshProviders": [],
-      "crossPlatformCount": 0,
-      "hasExternalSpillover": false,
-      "hasSinglePlatformMomentum": false,
-      "singlePlatformMomentum": null,
-      "hasMeasuredEvidence": false,
-      "evidenceStatus": "unknown",
-      "allowsTest": true,
-      "allowsIndependent": false,
-      "reasons": [
-        "尚未完成社媒热度验证"
-      ],
-      "providerErrors": {}
-    },
-    "finalScore": 0,
-    "score": 0,
-    "level": "pending"
-  },
-  {
     "id": "auto-bmV4dXMgbW9kcw",
     "gameName": "nexus mods",
     "normalizedName": "nexus mods",
@@ -618,7 +433,7 @@
     },
     "siteType": {
       "modelVersion": 2,
-      "checkedAt": "2026-10-30T00:59:35.933Z",
+      "checkedAt": "2026-10-30T07:06:52.839Z",
       "type": "pending",
       "channel": "pending",
       "confidence": "low",
@@ -643,7 +458,7 @@
     },
     "marketFreshness": {
       "modelVersion": 1,
-      "checkedAt": "2026-10-30T00:59:35.933Z",
+      "checkedAt": "2026-10-30T07:06:52.839Z",
       "status": "unknown",
       "confidence": "low",
       "reason": "关键词历史或现有竞争站占位尚未完成确认",
@@ -657,7 +472,7 @@
     },
     "opportunity": {
       "modelVersion": 3,
-      "checkedAt": "2026-10-30T00:59:35.933Z",
+      "checkedAt": "2026-10-30T07:06:52.839Z",
       "weights": {
         "socialSpread": 0.3,
         "growthVelocity": 0.25,
@@ -787,7 +602,7 @@
     },
     "siteType": {
       "modelVersion": 2,
-      "checkedAt": "2026-10-30T00:59:35.933Z",
+      "checkedAt": "2026-10-30T07:06:52.839Z",
       "type": "pending",
       "channel": "pending",
       "confidence": "low",
@@ -812,7 +627,7 @@
     },
     "marketFreshness": {
       "modelVersion": 1,
-      "checkedAt": "2026-10-30T00:59:35.933Z",
+      "checkedAt": "2026-10-30T07:06:52.839Z",
       "status": "unknown",
       "confidence": "low",
       "reason": "关键词历史或现有竞争站占位尚未完成确认",
@@ -826,7 +641,7 @@
     },
     "opportunity": {
       "modelVersion": 3,
-      "checkedAt": "2026-10-30T00:59:35.933Z",
+      "checkedAt": "2026-10-30T07:06:52.839Z",
       "weights": {
         "socialSpread": 0.3,
         "growthVelocity": 0.25,

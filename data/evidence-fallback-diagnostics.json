@@ -1,39 +1,38 @@
 {
-  "generatedAt": "2026-10-30T00:59:31.806Z",
+  "generatedAt": "2026-10-30T07:06:48.483Z",
   "totalCandidates": 3000,
-  "pendingSeo": 2554,
+  "pendingSeo": 2547,
   "channelCounts": {
-    "pending": 424,
-    "online": 2120,
-    "wiki": 10
+    "pending": 423,
+    "online": 2118,
+    "wiki": 6
   },
   "fastClassCounts": {
-    "pending:pending": 424,
-    "online:pending": 2120,
-    "wiki:pending": 10
+    "pending:pending": 423,
+    "online:pending": 2118,
+    "wiki:pending": 6
   },
   "strategicCounts": {
-    "pending:0": 423,
+    "pending:0": 422,
     "online:3": 1,
     "wiki:0": 1,
     "online:2": 105,
-    "online:1": 2014,
-    "wiki:2": 1,
-    "wiki:1": 8,
+    "online:1": 2012,
+    "wiki:1": 5,
     "pending:1": 1
   },
   "topSources": [
     {
       "id": "itch-new",
-      "count": 2109
+      "count": 2107
     },
     {
       "id": "itch-newest-web",
-      "count": 2101
+      "count": 2099
     },
     {
       "id": "itch-new-feed",
-      "count": 2080
+      "count": 2078
     },
     {
       "id": "trends-rising-7d",
@@ -49,7 +48,7 @@
     },
     {
       "id": "trends-rising-30d-horror-game",
-      "count": 121
+      "count": 122
     },
     {
       "id": "itch-new-popular-web",
@@ -69,7 +68,7 @@
     },
     {
       "id": "trends-rising-30d-itch-io",
-      "count": 66
+      "count": 65
     },
     {
       "id": "trends-rising-30d-indie-game",
@@ -77,11 +76,11 @@
     },
     {
       "id": "steam-latest-indie",
-      "count": 14
+      "count": 13
     },
     {
       "id": "steam-new",
-      "count": 14
+      "count": 13
     },
     {
       "id": "itch-featured-feed",
@@ -93,7 +92,7 @@
     },
     {
       "id": "steam-popular-new",
-      "count": 10
+      "count": 6
     },
     {
       "id": "newgrounds-latest",
@@ -189,24 +188,6 @@
       ]
     },
     {
-      "name": "NOSFER-A-TOOTH",
-      "channel": "online",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 17,
-      "platforms": 1,
-      "browserPlayable": true,
-      "nameRisk": 6,
-      "strategicCount": 2,
-      "sourceCount": 4,
-      "sourceIds": [
-        "itch-new-popular-web",
-        "itch-popular",
-        "itch-featured-feed",
-        "itch-featured"
-      ]
-    },
-    {
       "name": "Dungeonbound (In Development)",
       "channel": "online",
       "fastClass": "pending",
@@ -220,25 +201,6 @@
       "sourceIds": [
         "itch-featured-feed",
         "itch-featured",
-        "itch-new-popular-web",
-        "itch-popular"
-      ]
-    },
-    {
-      "name": "Hoard Sweeper",
-      "channel": "online",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 17,
-      "platforms": 1,
-      "browserPlayable": true,
-      "nameRisk": 0,
-      "strategicCount": 2,
-      "sourceCount": 5,
-      "sourceIds": [
-        "itch-newest-web",
-        "itch-new",
-        "itch-new-feed",
         "itch-new-popular-web",
         "itch-popular"
       ]
@@ -262,6 +224,43 @@
         "itch-popular",
         "steam-latest-indie",
         "steam-new"
+      ]
+    },
+    {
+      "name": "NOSFER-A-TOOTH",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 15,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 6,
+      "strategicCount": 2,
+      "sourceCount": 4,
+      "sourceIds": [
+        "itch-new-popular-web",
+        "itch-popular",
+        "itch-featured-feed",
+        "itch-featured"
+      ]
+    },
+    {
+      "name": "Hoard Sweeper",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 15,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 0,
+      "strategicCount": 2,
+      "sourceCount": 5,
+      "sourceIds": [
+        "itch-newest-web",
+        "itch-new",
+        "itch-new-feed",
+        "itch-new-popular-web",
+        "itch-popular"
       ]
     },
     {
