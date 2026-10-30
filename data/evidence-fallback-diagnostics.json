@@ -1,38 +1,38 @@
 {
-  "generatedAt": "2026-10-30T14:08:42.606Z",
+  "generatedAt": "2026-10-30T19:22:47.272Z",
   "totalCandidates": 3000,
-  "pendingSeo": 2546,
+  "pendingSeo": 2545,
   "channelCounts": {
     "pending": 423,
-    "online": 2117,
-    "wiki": 6
+    "online": 2114,
+    "wiki": 8
   },
   "fastClassCounts": {
     "pending:pending": 423,
-    "online:pending": 2117,
-    "wiki:pending": 6
+    "online:pending": 2114,
+    "wiki:pending": 8
   },
   "strategicCounts": {
     "pending:0": 422,
     "online:3": 1,
     "wiki:0": 1,
-    "online:2": 105,
-    "online:1": 2011,
-    "wiki:1": 5,
+    "online:2": 106,
+    "online:1": 2007,
+    "wiki:1": 7,
     "pending:1": 1
   },
   "topSources": [
     {
       "id": "itch-new",
-      "count": 2106
+      "count": 2103
     },
     {
       "id": "itch-newest-web",
-      "count": 2098
+      "count": 2095
     },
     {
       "id": "itch-new-feed",
-      "count": 2077
+      "count": 2074
     },
     {
       "id": "trends-rising-7d",
@@ -52,11 +52,11 @@
     },
     {
       "id": "itch-new-popular-web",
-      "count": 106
+      "count": 107
     },
     {
       "id": "itch-popular",
-      "count": 106
+      "count": 107
     },
     {
       "id": "trends-rising-7d-indie-game",
@@ -92,7 +92,7 @@
     },
     {
       "id": "steam-popular-new",
-      "count": 6
+      "count": 8
     },
     {
       "id": "newgrounds-latest",
@@ -166,6 +166,25 @@
         "itch-new",
         "itch-featured-feed",
         "itch-featured"
+      ]
+    },
+    {
+      "name": "Incredig",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 17,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 5,
+      "strategicCount": 2,
+      "sourceCount": 5,
+      "sourceIds": [
+        "itch-newest-web",
+        "itch-new",
+        "itch-new-feed",
+        "itch-new-popular-web",
+        "itch-popular"
       ]
     },
     {
@@ -1040,25 +1059,6 @@
     },
     {
       "name": "Deep Time",
-      "channel": "online",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 15,
-      "platforms": 1,
-      "browserPlayable": true,
-      "nameRisk": 0,
-      "strategicCount": 2,
-      "sourceCount": 5,
-      "sourceIds": [
-        "itch-newest-web",
-        "itch-new",
-        "itch-new-feed",
-        "itch-new-popular-web",
-        "itch-popular"
-      ]
-    },
-    {
-      "name": "sweet instincts",
       "channel": "online",
       "fastClass": "pending",
       "fastScore": 0,
