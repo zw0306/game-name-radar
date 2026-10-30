@@ -1,42 +1,43 @@
 {
-  "generatedAt": "2026-10-30T19:22:47.272Z",
+  "generatedAt": "2026-10-30T23:47:06.015Z",
   "totalCandidates": 3000,
-  "pendingSeo": 2545,
+  "pendingSeo": 2543,
   "channelCounts": {
-    "pending": 423,
-    "online": 2114,
-    "wiki": 8
+    "pending": 426,
+    "online": 2108,
+    "wiki": 9
   },
   "fastClassCounts": {
-    "pending:pending": 423,
-    "online:pending": 2114,
-    "wiki:pending": 8
+    "pending:pending": 426,
+    "online:pending": 2108,
+    "wiki:pending": 9
   },
   "strategicCounts": {
-    "pending:0": 422,
+    "pending:0": 425,
     "online:3": 1,
     "wiki:0": 1,
-    "online:2": 106,
-    "online:1": 2007,
+    "online:2": 107,
+    "online:1": 2000,
+    "wiki:2": 1,
     "wiki:1": 7,
     "pending:1": 1
   },
   "topSources": [
     {
       "id": "itch-new",
-      "count": 2103
+      "count": 2097
     },
     {
       "id": "itch-newest-web",
-      "count": 2095
+      "count": 2089
     },
     {
       "id": "itch-new-feed",
-      "count": 2074
+      "count": 2068
     },
     {
       "id": "trends-rising-7d",
-      "count": 368
+      "count": 371
     },
     {
       "id": "trends-rising-30d",
@@ -44,7 +45,7 @@
     },
     {
       "id": "trends-rising-7d-horror-game",
-      "count": 181
+      "count": 182
     },
     {
       "id": "trends-rising-30d-horror-game",
@@ -52,15 +53,15 @@
     },
     {
       "id": "itch-new-popular-web",
-      "count": 107
+      "count": 108
     },
     {
       "id": "itch-popular",
-      "count": 107
+      "count": 108
     },
     {
       "id": "trends-rising-7d-indie-game",
-      "count": 101
+      "count": 103
     },
     {
       "id": "trends-rising-7d-itch-io",
@@ -76,11 +77,11 @@
     },
     {
       "id": "steam-latest-indie",
-      "count": 13
+      "count": 14
     },
     {
       "id": "steam-new",
-      "count": 13
+      "count": 14
     },
     {
       "id": "itch-featured-feed",
@@ -92,7 +93,7 @@
     },
     {
       "id": "steam-popular-new",
-      "count": 8
+      "count": 9
     },
     {
       "id": "newgrounds-latest",
@@ -225,6 +226,25 @@
         "itch-popular",
         "steam-latest-indie",
         "steam-new"
+      ]
+    },
+    {
+      "name": "OBSESSED With Fashion",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 15,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 6,
+      "strategicCount": 2,
+      "sourceCount": 5,
+      "sourceIds": [
+        "itch-newest-web",
+        "itch-new",
+        "itch-new-popular-web",
+        "itch-popular",
+        "itch-new-feed"
       ]
     },
     {
@@ -1055,25 +1075,6 @@
         "itch-new-popular-web",
         "itch-popular",
         "itch-new-feed"
-      ]
-    },
-    {
-      "name": "Deep Time",
-      "channel": "online",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 15,
-      "platforms": 1,
-      "browserPlayable": true,
-      "nameRisk": 0,
-      "strategicCount": 2,
-      "sourceCount": 5,
-      "sourceIds": [
-        "itch-newest-web",
-        "itch-new",
-        "itch-new-feed",
-        "itch-new-popular-web",
-        "itch-popular"
       ]
     }
   ]
