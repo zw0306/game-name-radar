@@ -1,42 +1,42 @@
 {
-  "generatedAt": "2026-10-31T21:34:22.278Z",
+  "generatedAt": "2026-11-01T01:10:10.928Z",
   "totalCandidates": 3000,
   "pendingSeo": 2540,
   "channelCounts": {
-    "pending": 428,
-    "online": 2107,
+    "pending": 434,
+    "online": 2101,
     "wiki": 5
   },
   "fastClassCounts": {
-    "pending:pending": 428,
-    "online:pending": 2107,
+    "pending:pending": 434,
+    "online:pending": 2101,
     "wiki:pending": 5
   },
   "strategicCounts": {
-    "pending:0": 426,
+    "pending:0": 432,
     "online:3": 1,
     "wiki:0": 2,
-    "online:2": 107,
-    "online:1": 1999,
-    "pending:1": 2,
-    "wiki:1": 3
+    "online:2": 102,
+    "online:1": 1998,
+    "wiki:1": 3,
+    "pending:1": 2
   },
   "topSources": [
     {
       "id": "itch-new",
-      "count": 2097
+      "count": 2091
     },
     {
       "id": "itch-newest-web",
-      "count": 2089
+      "count": 2083
     },
     {
       "id": "itch-new-feed",
-      "count": 2069
+      "count": 2064
     },
     {
       "id": "trends-rising-7d",
-      "count": 370
+      "count": 376
     },
     {
       "id": "trends-rising-30d",
@@ -44,27 +44,27 @@
     },
     {
       "id": "trends-rising-7d-horror-game",
-      "count": 181
+      "count": 183
     },
     {
       "id": "trends-rising-30d-horror-game",
       "count": 126
     },
     {
+      "id": "trends-rising-7d-indie-game",
+      "count": 108
+    },
+    {
       "id": "itch-new-popular-web",
-      "count": 106
+      "count": 102
     },
     {
       "id": "itch-popular",
-      "count": 106
-    },
-    {
-      "id": "trends-rising-7d-indie-game",
-      "count": 104
+      "count": 102
     },
     {
       "id": "trends-rising-7d-itch-io",
-      "count": 91
+      "count": 92
     },
     {
       "id": "trends-rising-30d-itch-io",
@@ -84,11 +84,11 @@
     },
     {
       "id": "steam-latest-indie",
-      "count": 12
+      "count": 11
     },
     {
       "id": "steam-new",
-      "count": 12
+      "count": 11
     },
     {
       "id": "steam-popular-new",
@@ -115,12 +115,12 @@
       "count": 3
     },
     {
-      "id": "crazygames-new",
+      "id": "y8-new",
       "count": 2
     },
     {
-      "id": "y8-new",
-      "count": 2
+      "id": "crazygames-new",
+      "count": 1
     },
     {
       "id": "poki-new",
@@ -146,24 +146,6 @@
         "itch-featured",
         "itch-new-popular-web",
         "itch-popular"
-      ]
-    },
-    {
-      "name": "Guess the Number",
-      "channel": "online",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 16,
-      "platforms": 2,
-      "browserPlayable": true,
-      "nameRisk": 6,
-      "strategicCount": 2,
-      "sourceCount": 4,
-      "sourceIds": [
-        "itch-newest-web",
-        "itch-new",
-        "itch-new-feed",
-        "crazygames-new"
       ]
     },
     {
@@ -195,25 +177,6 @@
       "platforms": 1,
       "browserPlayable": true,
       "nameRisk": 5,
-      "strategicCount": 2,
-      "sourceCount": 5,
-      "sourceIds": [
-        "itch-newest-web",
-        "itch-new",
-        "itch-new-feed",
-        "itch-new-popular-web",
-        "itch-popular"
-      ]
-    },
-    {
-      "name": "The Idle Countdown",
-      "channel": "online",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 17,
-      "platforms": 1,
-      "browserPlayable": true,
-      "nameRisk": 12,
       "strategicCount": 2,
       "sourceCount": 5,
       "sourceIds": [
@@ -262,6 +225,25 @@
         "itch-new-popular-web",
         "itch-popular",
         "itch-new-feed"
+      ]
+    },
+    {
+      "name": "The Idle Countdown",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 15,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 12,
+      "strategicCount": 2,
+      "sourceCount": 5,
+      "sourceIds": [
+        "itch-newest-web",
+        "itch-new",
+        "itch-new-feed",
+        "itch-new-popular-web",
+        "itch-popular"
       ]
     },
     {
@@ -1073,6 +1055,25 @@
         "itch-new-feed",
         "itch-new-popular-web",
         "itch-popular"
+      ]
+    },
+    {
+      "name": "Aura Farmer",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 15,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 0,
+      "strategicCount": 2,
+      "sourceCount": 5,
+      "sourceIds": [
+        "itch-newest-web",
+        "itch-new",
+        "itch-new-popular-web",
+        "itch-popular",
+        "itch-new-feed"
       ]
     }
   ]
