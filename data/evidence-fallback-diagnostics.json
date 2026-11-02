@@ -1,22 +1,22 @@
 {
-  "generatedAt": "2026-11-01T23:36:11.501Z",
+  "generatedAt": "2026-11-02T06:02:42.132Z",
   "totalCandidates": 3000,
-  "pendingSeo": 2548,
+  "pendingSeo": 2550,
   "channelCounts": {
-    "pending": 437,
-    "online": 2108,
+    "pending": 438,
+    "online": 2109,
     "wiki": 3
   },
   "fastClassCounts": {
-    "pending:pending": 437,
-    "online:pending": 2108,
+    "pending:pending": 438,
+    "online:pending": 2109,
     "wiki:pending": 3
   },
   "strategicCounts": {
-    "pending:0": 435,
+    "pending:0": 436,
     "online:3": 1,
     "wiki:0": 2,
-    "online:2": 103,
+    "online:2": 104,
     "online:1": 2004,
     "pending:1": 2,
     "wiki:1": 1
@@ -24,43 +24,43 @@
   "topSources": [
     {
       "id": "itch-new",
-      "count": 2098
+      "count": 2099
     },
     {
       "id": "itch-newest-web",
-      "count": 2090
+      "count": 2091
     },
     {
       "id": "itch-new-feed",
-      "count": 2071
+      "count": 2072
     },
     {
       "id": "trends-rising-7d",
-      "count": 379
+      "count": 381
     },
     {
       "id": "trends-rising-30d",
-      "count": 229
+      "count": 232
     },
     {
       "id": "trends-rising-7d-horror-game",
-      "count": 187
+      "count": 189
     },
     {
       "id": "trends-rising-30d-horror-game",
-      "count": 128
+      "count": 130
     },
     {
       "id": "trends-rising-7d-indie-game",
-      "count": 110
+      "count": 111
     },
     {
       "id": "itch-new-popular-web",
-      "count": 103
+      "count": 104
     },
     {
       "id": "itch-popular",
-      "count": 103
+      "count": 104
     },
     {
       "id": "trends-rising-7d-itch-io",
@@ -68,11 +68,19 @@
     },
     {
       "id": "trends-rising-30d-itch-io",
-      "count": 66
+      "count": 67
     },
     {
       "id": "trends-rising-30d-indie-game",
       "count": 37
+    },
+    {
+      "id": "steam-latest-indie",
+      "count": 13
+    },
+    {
+      "id": "steam-new",
+      "count": 13
     },
     {
       "id": "itch-featured-feed",
@@ -80,14 +88,6 @@
     },
     {
       "id": "itch-featured",
-      "count": 12
-    },
-    {
-      "id": "steam-latest-indie",
-      "count": 12
-    },
-    {
-      "id": "steam-new",
       "count": 12
     },
     {
@@ -225,6 +225,25 @@
         "itch-popular",
         "steam-latest-indie",
         "steam-new"
+      ]
+    },
+    {
+      "name": "House Edge",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 15,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 0,
+      "strategicCount": 2,
+      "sourceCount": 5,
+      "sourceIds": [
+        "itch-newest-web",
+        "itch-new",
+        "itch-new-feed",
+        "itch-new-popular-web",
+        "itch-popular"
       ]
     },
     {
@@ -1047,25 +1066,6 @@
       "platforms": 1,
       "browserPlayable": true,
       "nameRisk": 5,
-      "strategicCount": 2,
-      "sourceCount": 5,
-      "sourceIds": [
-        "itch-newest-web",
-        "itch-new",
-        "itch-new-feed",
-        "itch-new-popular-web",
-        "itch-popular"
-      ]
-    },
-    {
-      "name": "The Root Cause",
-      "channel": "online",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 15,
-      "platforms": 1,
-      "browserPlayable": true,
-      "nameRisk": 6,
       "strategicCount": 2,
       "sourceCount": 5,
       "sourceIds": [
