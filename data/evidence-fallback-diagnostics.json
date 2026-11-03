@@ -1,51 +1,50 @@
 {
-  "generatedAt": "2026-11-03T06:47:39.670Z",
+  "generatedAt": "2026-11-03T15:07:43.704Z",
   "totalCandidates": 3000,
-  "pendingSeo": 2548,
+  "pendingSeo": 2540,
   "channelCounts": {
-    "pending": 431,
-    "online": 2105,
-    "wiki": 12
+    "pending": 428,
+    "online": 2108,
+    "wiki": 4
   },
   "fastClassCounts": {
-    "pending:pending": 431,
-    "online:pending": 2105,
-    "wiki:pending": 12
+    "pending:pending": 428,
+    "online:pending": 2108,
+    "wiki:pending": 4
   },
   "strategicCounts": {
-    "pending:0": 429,
+    "pending:0": 426,
     "online:3": 1,
     "wiki:0": 2,
     "online:2": 102,
-    "online:1": 2002,
-    "wiki:2": 1,
-    "wiki:1": 9,
-    "pending:1": 2
+    "online:1": 2005,
+    "pending:1": 2,
+    "wiki:1": 2
   },
   "topSources": [
     {
       "id": "itch-new",
-      "count": 2094
+      "count": 2097
     },
     {
       "id": "itch-newest-web",
-      "count": 2086
+      "count": 2089
     },
     {
       "id": "itch-new-feed",
-      "count": 2070
+      "count": 2073
     },
     {
       "id": "trends-rising-7d",
-      "count": 374
+      "count": 372
     },
     {
       "id": "trends-rising-30d",
-      "count": 228
+      "count": 227
     },
     {
       "id": "trends-rising-7d-horror-game",
-      "count": 183
+      "count": 182
     },
     {
       "id": "trends-rising-30d-horror-game",
@@ -53,7 +52,7 @@
     },
     {
       "id": "trends-rising-7d-indie-game",
-      "count": 113
+      "count": 112
     },
     {
       "id": "itch-new-popular-web",
@@ -73,15 +72,7 @@
     },
     {
       "id": "trends-rising-30d-indie-game",
-      "count": 37
-    },
-    {
-      "id": "steam-latest-indie",
-      "count": 14
-    },
-    {
-      "id": "steam-new",
-      "count": 14
+      "count": 36
     },
     {
       "id": "itch-featured-feed",
@@ -92,8 +83,12 @@
       "count": 13
     },
     {
-      "id": "steam-popular-new",
-      "count": 11
+      "id": "steam-latest-indie",
+      "count": 13
+    },
+    {
+      "id": "steam-new",
+      "count": 13
     },
     {
       "id": "newgrounds-latest",
@@ -105,6 +100,10 @@
     },
     {
       "id": "steam-top-wishlist",
+      "count": 3
+    },
+    {
+      "id": "steam-popular-new",
       "count": 3
     },
     {
@@ -189,25 +188,6 @@
       ]
     },
     {
-      "name": "Terraform",
-      "channel": "online",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 17,
-      "platforms": 1,
-      "browserPlayable": true,
-      "nameRisk": 5,
-      "strategicCount": 2,
-      "sourceCount": 5,
-      "sourceIds": [
-        "itch-newest-web",
-        "itch-new",
-        "itch-new-feed",
-        "itch-new-popular-web",
-        "itch-popular"
-      ]
-    },
-    {
       "name": "Trolley Problem Is Not Problem",
       "channel": "online",
       "fastClass": "pending",
@@ -256,6 +236,25 @@
       "platforms": 1,
       "browserPlayable": true,
       "nameRisk": 0,
+      "strategicCount": 2,
+      "sourceCount": 5,
+      "sourceIds": [
+        "itch-newest-web",
+        "itch-new",
+        "itch-new-feed",
+        "itch-new-popular-web",
+        "itch-popular"
+      ]
+    },
+    {
+      "name": "Terraform",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 15,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 5,
       "strategicCount": 2,
       "sourceCount": 5,
       "sourceIds": [
