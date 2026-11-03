@@ -1,55 +1,55 @@
 {
-  "generatedAt": "2026-11-02T23:30:51.583Z",
+  "generatedAt": "2026-11-03T06:47:39.670Z",
   "totalCandidates": 3000,
-  "pendingSeo": 2551,
+  "pendingSeo": 2548,
   "channelCounts": {
-    "pending": 435,
-    "online": 2102,
-    "wiki": 14
+    "pending": 431,
+    "online": 2105,
+    "wiki": 12
   },
   "fastClassCounts": {
-    "pending:pending": 435,
-    "online:pending": 2102,
-    "wiki:pending": 14
+    "pending:pending": 431,
+    "online:pending": 2105,
+    "wiki:pending": 12
   },
   "strategicCounts": {
-    "pending:0": 432,
+    "pending:0": 429,
     "online:3": 1,
     "wiki:0": 2,
-    "online:2": 105,
-    "online:1": 1996,
+    "online:2": 102,
+    "online:1": 2002,
     "wiki:2": 1,
-    "wiki:1": 11,
-    "pending:1": 3
+    "wiki:1": 9,
+    "pending:1": 2
   },
   "topSources": [
     {
       "id": "itch-new",
-      "count": 2091
+      "count": 2094
     },
     {
       "id": "itch-newest-web",
-      "count": 2083
+      "count": 2086
     },
     {
       "id": "itch-new-feed",
-      "count": 2064
+      "count": 2070
     },
     {
       "id": "trends-rising-7d",
-      "count": 377
+      "count": 374
     },
     {
       "id": "trends-rising-30d",
-      "count": 229
+      "count": 228
     },
     {
       "id": "trends-rising-7d-horror-game",
-      "count": 185
+      "count": 183
     },
     {
       "id": "trends-rising-30d-horror-game",
-      "count": 127
+      "count": 125
     },
     {
       "id": "trends-rising-7d-indie-game",
@@ -57,19 +57,19 @@
     },
     {
       "id": "itch-new-popular-web",
-      "count": 104
+      "count": 101
     },
     {
       "id": "itch-popular",
-      "count": 104
+      "count": 101
     },
     {
       "id": "trends-rising-7d-itch-io",
-      "count": 90
+      "count": 89
     },
     {
       "id": "trends-rising-30d-itch-io",
-      "count": 67
+      "count": 68
     },
     {
       "id": "trends-rising-30d-indie-game",
@@ -93,22 +93,18 @@
     },
     {
       "id": "steam-popular-new",
-      "count": 13
-    },
-    {
-      "id": "steam-top-wishlist",
-      "count": 3
-    },
-    {
-      "id": "y8-new",
-      "count": 3
+      "count": 11
     },
     {
       "id": "newgrounds-latest",
-      "count": 3
+      "count": 4
     },
     {
       "id": "newgrounds-new",
+      "count": 4
+    },
+    {
+      "id": "steam-top-wishlist",
       "count": 3
     },
     {
@@ -120,8 +116,8 @@
       "count": 3
     },
     {
-      "id": "lagged-new",
-      "count": 1
+      "id": "y8-new",
+      "count": 2
     },
     {
       "id": "crazygames-new",
@@ -171,6 +167,25 @@
         "itch-new",
         "itch-featured-feed",
         "itch-featured"
+      ]
+    },
+    {
+      "name": "Tiny Ecosystem",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 17,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 0,
+      "strategicCount": 2,
+      "sourceCount": 5,
+      "sourceIds": [
+        "itch-newest-web",
+        "itch-new",
+        "itch-new-feed",
+        "itch-new-popular-web",
+        "itch-popular"
       ]
     },
     {
@@ -1045,25 +1060,6 @@
     },
     {
       "name": "WALL//KEEP",
-      "channel": "online",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 15,
-      "platforms": 1,
-      "browserPlayable": true,
-      "nameRisk": 0,
-      "strategicCount": 2,
-      "sourceCount": 5,
-      "sourceIds": [
-        "itch-newest-web",
-        "itch-new",
-        "itch-new-feed",
-        "itch-new-popular-web",
-        "itch-popular"
-      ]
-    },
-    {
-      "name": "Penguin Planet",
       "channel": "online",
       "fastClass": "pending",
       "fastScore": 0,
