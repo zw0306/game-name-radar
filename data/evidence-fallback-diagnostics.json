@@ -1,59 +1,58 @@
 {
-  "generatedAt": "2026-11-04T01:21:41.718Z",
+  "generatedAt": "2026-11-04T09:12:34.659Z",
   "totalCandidates": 3000,
-  "pendingSeo": 2540,
+  "pendingSeo": 2537,
   "channelCounts": {
     "pending": 431,
-    "online": 2095,
-    "wiki": 14
+    "online": 2094,
+    "wiki": 12
   },
   "fastClassCounts": {
     "pending:pending": 431,
-    "online:pending": 2095,
-    "wiki:pending": 14
+    "online:pending": 2094,
+    "wiki:pending": 12
   },
   "strategicCounts": {
     "pending:0": 429,
     "online:3": 1,
     "wiki:0": 2,
     "online:2": 101,
-    "online:1": 1993,
-    "wiki:2": 1,
-    "wiki:1": 11,
+    "online:1": 1992,
+    "wiki:1": 10,
     "pending:1": 2
   },
   "topSources": [
     {
       "id": "itch-new",
-      "count": 2084
+      "count": 2083
     },
     {
       "id": "itch-newest-web",
-      "count": 2076
+      "count": 2075
     },
     {
       "id": "itch-new-feed",
-      "count": 2061
+      "count": 2060
     },
     {
       "id": "trends-rising-7d",
-      "count": 376
+      "count": 377
     },
     {
       "id": "trends-rising-30d",
-      "count": 228
+      "count": 227
     },
     {
       "id": "trends-rising-7d-horror-game",
-      "count": 182
+      "count": 181
     },
     {
       "id": "trends-rising-30d-horror-game",
-      "count": 123
+      "count": 122
     },
     {
       "id": "trends-rising-7d-indie-game",
-      "count": 112
+      "count": 115
     },
     {
       "id": "itch-new-popular-web",
@@ -65,7 +64,7 @@
     },
     {
       "id": "trends-rising-7d-itch-io",
-      "count": 93
+      "count": 92
     },
     {
       "id": "trends-rising-30d-itch-io",
@@ -77,11 +76,11 @@
     },
     {
       "id": "steam-latest-indie",
-      "count": 15
+      "count": 14
     },
     {
       "id": "steam-new",
-      "count": 15
+      "count": 14
     },
     {
       "id": "itch-featured-feed",
@@ -93,7 +92,7 @@
     },
     {
       "id": "steam-popular-new",
-      "count": 13
+      "count": 11
     },
     {
       "id": "newgrounds-latest",
