@@ -1,38 +1,39 @@
 {
-  "generatedAt": "2026-11-04T09:12:34.659Z",
+  "generatedAt": "2026-11-04T17:20:21.201Z",
   "totalCandidates": 3000,
-  "pendingSeo": 2537,
+  "pendingSeo": 2532,
   "channelCounts": {
     "pending": 431,
-    "online": 2094,
-    "wiki": 12
+    "online": 2091,
+    "wiki": 10
   },
   "fastClassCounts": {
     "pending:pending": 431,
-    "online:pending": 2094,
-    "wiki:pending": 12
+    "online:pending": 2091,
+    "wiki:pending": 10
   },
   "strategicCounts": {
     "pending:0": 429,
     "online:3": 1,
     "wiki:0": 2,
-    "online:2": 101,
-    "online:1": 1992,
-    "wiki:1": 10,
+    "online:2": 102,
+    "online:1": 1988,
+    "wiki:2": 1,
+    "wiki:1": 7,
     "pending:1": 2
   },
   "topSources": [
     {
       "id": "itch-new",
-      "count": 2083
+      "count": 2080
     },
     {
       "id": "itch-newest-web",
-      "count": 2075
+      "count": 2072
     },
     {
       "id": "itch-new-feed",
-      "count": 2060
+      "count": 2057
     },
     {
       "id": "trends-rising-7d",
@@ -44,7 +45,7 @@
     },
     {
       "id": "trends-rising-7d-horror-game",
-      "count": 181
+      "count": 180
     },
     {
       "id": "trends-rising-30d-horror-game",
@@ -52,15 +53,15 @@
     },
     {
       "id": "trends-rising-7d-indie-game",
-      "count": 115
+      "count": 116
     },
     {
       "id": "itch-new-popular-web",
-      "count": 100
+      "count": 101
     },
     {
       "id": "itch-popular",
-      "count": 100
+      "count": 101
     },
     {
       "id": "trends-rising-7d-itch-io",
@@ -76,11 +77,11 @@
     },
     {
       "id": "steam-latest-indie",
-      "count": 14
+      "count": 15
     },
     {
       "id": "steam-new",
-      "count": 14
+      "count": 15
     },
     {
       "id": "itch-featured-feed",
@@ -92,7 +93,7 @@
     },
     {
       "id": "steam-popular-new",
-      "count": 11
+      "count": 9
     },
     {
       "id": "newgrounds-latest",
@@ -206,6 +207,25 @@
         "itch-popular",
         "steam-latest-indie",
         "steam-new"
+      ]
+    },
+    {
+      "name": "Metropolis: Ink Ridge",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 15,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 0,
+      "strategicCount": 2,
+      "sourceCount": 5,
+      "sourceIds": [
+        "itch-newest-web",
+        "itch-new",
+        "itch-new-feed",
+        "itch-new-popular-web",
+        "itch-popular"
       ]
     },
     {
@@ -1040,25 +1060,6 @@
     },
     {
       "name": "Praise Be Evangeline",
-      "channel": "online",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 15,
-      "platforms": 1,
-      "browserPlayable": true,
-      "nameRisk": 0,
-      "strategicCount": 2,
-      "sourceCount": 5,
-      "sourceIds": [
-        "itch-newest-web",
-        "itch-new",
-        "itch-new-feed",
-        "itch-new-popular-web",
-        "itch-popular"
-      ]
-    },
-    {
-      "name": "WALL//KEEP",
       "channel": "online",
       "fastClass": "pending",
       "fastScore": 0,
