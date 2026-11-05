@@ -1,47 +1,46 @@
 {
-  "generatedAt": "2026-11-04T23:40:09.073Z",
+  "generatedAt": "2026-11-05T06:46:09.335Z",
   "totalCandidates": 3000,
-  "pendingSeo": 2528,
+  "pendingSeo": 2527,
   "channelCounts": {
-    "pending": 431,
-    "online": 2086,
-    "wiki": 11
+    "pending": 433,
+    "online": 2084,
+    "wiki": 10
   },
   "fastClassCounts": {
-    "pending:pending": 431,
-    "online:pending": 2086,
-    "wiki:pending": 11
+    "pending:pending": 433,
+    "online:pending": 2084,
+    "wiki:pending": 10
   },
   "strategicCounts": {
-    "pending:0": 428,
+    "pending:0": 430,
     "online:3": 1,
     "wiki:0": 2,
     "online:2": 102,
-    "online:1": 1983,
+    "online:1": 1981,
     "pending:1": 3,
-    "wiki:2": 1,
     "wiki:1": 8
   },
   "topSources": [
     {
       "id": "itch-new",
-      "count": 2076
+      "count": 2074
     },
     {
       "id": "itch-newest-web",
-      "count": 2067
+      "count": 2065
     },
     {
       "id": "itch-new-feed",
-      "count": 2054
+      "count": 2053
     },
     {
       "id": "trends-rising-7d",
-      "count": 376
+      "count": 378
     },
     {
       "id": "trends-rising-30d",
-      "count": 229
+      "count": 232
     },
     {
       "id": "trends-rising-7d-horror-game",
@@ -49,11 +48,11 @@
     },
     {
       "id": "trends-rising-30d-horror-game",
-      "count": 124
+      "count": 125
     },
     {
       "id": "trends-rising-7d-indie-game",
-      "count": 116
+      "count": 118
     },
     {
       "id": "itch-new-popular-web",
@@ -69,19 +68,11 @@
     },
     {
       "id": "trends-rising-30d-itch-io",
-      "count": 70
+      "count": 72
     },
     {
       "id": "trends-rising-30d-indie-game",
       "count": 37
-    },
-    {
-      "id": "steam-latest-indie",
-      "count": 15
-    },
-    {
-      "id": "steam-new",
-      "count": 15
     },
     {
       "id": "itch-featured-feed",
@@ -92,8 +83,16 @@
       "count": 14
     },
     {
+      "id": "steam-latest-indie",
+      "count": 14
+    },
+    {
+      "id": "steam-new",
+      "count": 14
+    },
+    {
       "id": "steam-popular-new",
-      "count": 10
+      "count": 9
     },
     {
       "id": "newgrounds-latest",
@@ -167,6 +166,44 @@
         "itch-new",
         "itch-featured-feed",
         "itch-featured"
+      ]
+    },
+    {
+      "name": "Muertitos",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 17,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 5,
+      "strategicCount": 2,
+      "sourceCount": 5,
+      "sourceIds": [
+        "itch-newest-web",
+        "itch-new",
+        "itch-new-feed",
+        "itch-new-popular-web",
+        "itch-popular"
+      ]
+    },
+    {
+      "name": "Palabraz",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 17,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 5,
+      "strategicCount": 2,
+      "sourceCount": 5,
+      "sourceIds": [
+        "itch-newest-web",
+        "itch-new",
+        "itch-new-feed",
+        "itch-new-popular-web",
+        "itch-popular"
       ]
     },
     {
@@ -1022,44 +1059,6 @@
     },
     {
       "name": "FISH EATS EARTH",
-      "channel": "online",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 15,
-      "platforms": 1,
-      "browserPlayable": true,
-      "nameRisk": 0,
-      "strategicCount": 2,
-      "sourceCount": 5,
-      "sourceIds": [
-        "itch-newest-web",
-        "itch-new",
-        "itch-new-feed",
-        "itch-new-popular-web",
-        "itch-popular"
-      ]
-    },
-    {
-      "name": "Atom By Atom",
-      "channel": "online",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 15,
-      "platforms": 1,
-      "browserPlayable": true,
-      "nameRisk": 0,
-      "strategicCount": 2,
-      "sourceCount": 5,
-      "sourceIds": [
-        "itch-newest-web",
-        "itch-new",
-        "itch-new-feed",
-        "itch-new-popular-web",
-        "itch-popular"
-      ]
-    },
-    {
-      "name": "Frog Eats Flies!",
       "channel": "online",
       "fastClass": "pending",
       "fastScore": 0,
