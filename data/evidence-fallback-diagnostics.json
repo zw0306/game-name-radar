@@ -1,43 +1,42 @@
 {
-  "generatedAt": "2026-11-08T15:12:46.610Z",
+  "generatedAt": "2026-11-08T19:44:37.755Z",
   "totalCandidates": 3000,
-  "pendingSeo": 2508,
+  "pendingSeo": 2507,
   "channelCounts": {
-    "pending": 436,
-    "wiki": 5,
-    "online": 2067
+    "pending": 433,
+    "wiki": 3,
+    "online": 2071
   },
   "fastClassCounts": {
-    "pending:pending": 436,
-    "wiki:pending": 5,
-    "online:pending": 2067
+    "pending:pending": 433,
+    "wiki:pending": 3,
+    "online:pending": 2071
   },
   "strategicCounts": {
-    "pending:0": 432,
+    "pending:0": 430,
     "wiki:0": 2,
     "online:3": 1,
-    "online:2": 103,
-    "online:1": 1963,
-    "wiki:2": 1,
-    "wiki:1": 2,
-    "pending:1": 4
+    "online:2": 101,
+    "online:1": 1969,
+    "pending:1": 3,
+    "wiki:1": 1
   },
   "topSources": [
     {
       "id": "itch-new",
-      "count": 2058
+      "count": 2062
     },
     {
       "id": "itch-newest-web",
-      "count": 2048
+      "count": 2052
     },
     {
       "id": "itch-new-feed",
-      "count": 2041
+      "count": 2045
     },
     {
       "id": "trends-rising-7d",
-      "count": 378
+      "count": 376
     },
     {
       "id": "trends-rising-30d",
@@ -49,11 +48,11 @@
     },
     {
       "id": "trends-rising-30d-horror-game",
-      "count": 134
+      "count": 133
     },
     {
       "id": "trends-rising-7d-indie-game",
-      "count": 117
+      "count": 115
     },
     {
       "id": "itch-new-popular-web",
@@ -73,27 +72,23 @@
     },
     {
       "id": "trends-rising-30d-indie-game",
-      "count": 49
+      "count": 50
     },
     {
       "id": "itch-featured-feed",
-      "count": 16
+      "count": 15
     },
     {
       "id": "itch-featured",
-      "count": 16
+      "count": 15
     },
     {
       "id": "steam-latest-indie",
-      "count": 15
+      "count": 14
     },
     {
       "id": "steam-new",
-      "count": 15
-    },
-    {
-      "id": "steam-popular-new",
-      "count": 4
+      "count": 14
     },
     {
       "id": "newgrounds-latest",
@@ -108,10 +103,6 @@
       "count": 3
     },
     {
-      "id": "y8-new",
-      "count": 3
-    },
-    {
       "id": "newgrounds-daily-top",
       "count": 3
     },
@@ -120,11 +111,19 @@
       "count": 3
     },
     {
+      "id": "steam-popular-new",
+      "count": 2
+    },
+    {
       "id": "crazygames-new",
       "count": 1
     },
     {
       "id": "poki-new",
+      "count": 1
+    },
+    {
+      "id": "y8-new",
       "count": 1
     }
   ],
@@ -147,24 +146,6 @@
         "itch-featured",
         "itch-new-popular-web",
         "itch-popular"
-      ]
-    },
-    {
-      "name": "Hexa Drop",
-      "channel": "online",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 16,
-      "platforms": 2,
-      "browserPlayable": true,
-      "nameRisk": 0,
-      "strategicCount": 2,
-      "sourceCount": 4,
-      "sourceIds": [
-        "itch-newest-web",
-        "itch-new",
-        "itch-new-feed",
-        "y8-new"
       ]
     },
     {
@@ -225,25 +206,6 @@
       ]
     },
     {
-      "name": "Recall",
-      "channel": "online",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 17,
-      "platforms": 1,
-      "browserPlayable": true,
-      "nameRisk": 5,
-      "strategicCount": 2,
-      "sourceCount": 5,
-      "sourceIds": [
-        "itch-newest-web",
-        "itch-new",
-        "itch-new-feed",
-        "itch-new-popular-web",
-        "itch-popular"
-      ]
-    },
-    {
       "name": "Trolley Problem Is Not Problem",
       "channel": "online",
       "fastClass": "pending",
@@ -262,6 +224,25 @@
         "itch-popular",
         "steam-latest-indie",
         "steam-new"
+      ]
+    },
+    {
+      "name": "Recall",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 15,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 5,
+      "strategicCount": 2,
+      "sourceCount": 5,
+      "sourceIds": [
+        "itch-newest-web",
+        "itch-new",
+        "itch-new-feed",
+        "itch-new-popular-web",
+        "itch-popular"
       ]
     },
     {
@@ -1065,6 +1046,25 @@
       "platforms": 1,
       "browserPlayable": true,
       "nameRisk": 5,
+      "strategicCount": 2,
+      "sourceCount": 5,
+      "sourceIds": [
+        "itch-newest-web",
+        "itch-new",
+        "itch-new-feed",
+        "itch-new-popular-web",
+        "itch-popular"
+      ]
+    },
+    {
+      "name": "Stoneheart Archive",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 15,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 0,
       "strategicCount": 2,
       "sourceCount": 5,
       "sourceIds": [
