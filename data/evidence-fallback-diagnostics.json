@@ -1,38 +1,38 @@
 {
-  "generatedAt": "2026-11-08T00:36:15.327Z",
+  "generatedAt": "2026-11-08T07:20:40.732Z",
   "totalCandidates": 3000,
   "pendingSeo": 2509,
   "channelCounts": {
-    "pending": 439,
+    "pending": 440,
     "wiki": 4,
-    "online": 2066
+    "online": 2065
   },
   "fastClassCounts": {
-    "pending:pending": 439,
+    "pending:pending": 440,
     "wiki:pending": 4,
-    "online:pending": 2066
+    "online:pending": 2065
   },
   "strategicCounts": {
-    "pending:0": 434,
+    "pending:0": 435,
     "wiki:0": 2,
     "online:3": 1,
-    "online:2": 101,
-    "online:1": 1964,
+    "online:2": 102,
+    "online:1": 1962,
     "pending:1": 5,
     "wiki:1": 2
   },
   "topSources": [
     {
       "id": "itch-new",
-      "count": 2057
+      "count": 2055
     },
     {
       "id": "itch-newest-web",
-      "count": 2047
+      "count": 2045
     },
     {
       "id": "itch-new-feed",
-      "count": 2039
+      "count": 2038
     },
     {
       "id": "trends-rising-7d",
@@ -40,11 +40,11 @@
     },
     {
       "id": "trends-rising-30d",
-      "count": 249
+      "count": 251
     },
     {
       "id": "trends-rising-7d-horror-game",
-      "count": 187
+      "count": 186
     },
     {
       "id": "trends-rising-30d-horror-game",
@@ -52,7 +52,7 @@
     },
     {
       "id": "trends-rising-7d-indie-game",
-      "count": 118
+      "count": 120
     },
     {
       "id": "itch-new-popular-web",
@@ -64,7 +64,7 @@
     },
     {
       "id": "trends-rising-7d-itch-io",
-      "count": 90
+      "count": 89
     },
     {
       "id": "trends-rising-30d-itch-io",
@@ -72,7 +72,7 @@
     },
     {
       "id": "trends-rising-30d-indie-game",
-      "count": 50
+      "count": 52
     },
     {
       "id": "itch-featured-feed",
@@ -115,15 +115,19 @@
       "count": 3
     },
     {
+      "id": "y8-new",
+      "count": 2
+    },
+    {
+      "id": "lagged-new",
+      "count": 1
+    },
+    {
       "id": "crazygames-new",
       "count": 1
     },
     {
       "id": "poki-new",
-      "count": 1
-    },
-    {
-      "id": "y8-new",
       "count": 1
     }
   ],
