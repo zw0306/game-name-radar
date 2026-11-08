@@ -1,58 +1,59 @@
 {
-  "generatedAt": "2026-11-08T07:20:40.732Z",
+  "generatedAt": "2026-11-08T15:12:46.610Z",
   "totalCandidates": 3000,
-  "pendingSeo": 2509,
+  "pendingSeo": 2508,
   "channelCounts": {
-    "pending": 440,
-    "wiki": 4,
-    "online": 2065
+    "pending": 436,
+    "wiki": 5,
+    "online": 2067
   },
   "fastClassCounts": {
-    "pending:pending": 440,
-    "wiki:pending": 4,
-    "online:pending": 2065
+    "pending:pending": 436,
+    "wiki:pending": 5,
+    "online:pending": 2067
   },
   "strategicCounts": {
-    "pending:0": 435,
+    "pending:0": 432,
     "wiki:0": 2,
     "online:3": 1,
-    "online:2": 102,
-    "online:1": 1962,
-    "pending:1": 5,
-    "wiki:1": 2
+    "online:2": 103,
+    "online:1": 1963,
+    "wiki:2": 1,
+    "wiki:1": 2,
+    "pending:1": 4
   },
   "topSources": [
     {
       "id": "itch-new",
-      "count": 2055
+      "count": 2058
     },
     {
       "id": "itch-newest-web",
-      "count": 2045
+      "count": 2048
     },
     {
       "id": "itch-new-feed",
-      "count": 2038
+      "count": 2041
     },
     {
       "id": "trends-rising-7d",
-      "count": 382
+      "count": 378
     },
     {
       "id": "trends-rising-30d",
-      "count": 251
+      "count": 249
     },
     {
       "id": "trends-rising-7d-horror-game",
-      "count": 186
+      "count": 185
     },
     {
       "id": "trends-rising-30d-horror-game",
-      "count": 133
+      "count": 134
     },
     {
       "id": "trends-rising-7d-indie-game",
-      "count": 120
+      "count": 117
     },
     {
       "id": "itch-new-popular-web",
@@ -72,23 +73,27 @@
     },
     {
       "id": "trends-rising-30d-indie-game",
-      "count": 52
+      "count": 49
     },
     {
       "id": "itch-featured-feed",
-      "count": 17
+      "count": 16
     },
     {
       "id": "itch-featured",
-      "count": 17
+      "count": 16
     },
     {
       "id": "steam-latest-indie",
-      "count": 14
+      "count": 15
     },
     {
       "id": "steam-new",
-      "count": 14
+      "count": 15
+    },
+    {
+      "id": "steam-popular-new",
+      "count": 4
     },
     {
       "id": "newgrounds-latest",
@@ -103,7 +108,7 @@
       "count": 3
     },
     {
-      "id": "steam-popular-new",
+      "id": "y8-new",
       "count": 3
     },
     {
@@ -113,14 +118,6 @@
     {
       "id": "newgrounds-top",
       "count": 3
-    },
-    {
-      "id": "y8-new",
-      "count": 2
-    },
-    {
-      "id": "lagged-new",
-      "count": 1
     },
     {
       "id": "crazygames-new",
@@ -150,6 +147,24 @@
         "itch-featured",
         "itch-new-popular-web",
         "itch-popular"
+      ]
+    },
+    {
+      "name": "Hexa Drop",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 16,
+      "platforms": 2,
+      "browserPlayable": true,
+      "nameRisk": 0,
+      "strategicCount": 2,
+      "sourceCount": 4,
+      "sourceIds": [
+        "itch-newest-web",
+        "itch-new",
+        "itch-new-feed",
+        "y8-new"
       ]
     },
     {
@@ -1050,25 +1065,6 @@
       "platforms": 1,
       "browserPlayable": true,
       "nameRisk": 5,
-      "strategicCount": 2,
-      "sourceCount": 5,
-      "sourceIds": [
-        "itch-newest-web",
-        "itch-new",
-        "itch-new-feed",
-        "itch-new-popular-web",
-        "itch-popular"
-      ]
-    },
-    {
-      "name": "Stoneheart Archive",
-      "channel": "online",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 15,
-      "platforms": 1,
-      "browserPlayable": true,
-      "nameRisk": 0,
       "strategicCount": 2,
       "sourceCount": 5,
       "sourceIds": [
