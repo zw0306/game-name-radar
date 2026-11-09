@@ -1,49 +1,50 @@
 {
-  "generatedAt": "2026-11-09T06:28:07.604Z",
+  "generatedAt": "2026-11-09T17:29:22.212Z",
   "totalCandidates": 3000,
-  "pendingSeo": 2509,
+  "pendingSeo": 2508,
   "channelCounts": {
-    "pending": 436,
-    "wiki": 2,
-    "online": 2071
+    "pending": 434,
+    "wiki": 4,
+    "online": 2070
   },
   "fastClassCounts": {
-    "pending:pending": 436,
-    "wiki:pending": 2,
-    "online:pending": 2071
+    "pending:pending": 434,
+    "wiki:pending": 4,
+    "online:pending": 2070
   },
   "strategicCounts": {
-    "pending:0": 432,
+    "pending:0": 429,
     "wiki:0": 2,
     "online:3": 1,
-    "online:2": 103,
-    "online:1": 1967,
-    "pending:1": 4
+    "online:2": 104,
+    "online:1": 1965,
+    "pending:1": 5,
+    "wiki:1": 2
   },
   "topSources": [
     {
       "id": "itch-new",
-      "count": 2061
+      "count": 2059
     },
     {
       "id": "itch-newest-web",
-      "count": 2051
+      "count": 2050
     },
     {
       "id": "itch-new-feed",
-      "count": 2044
+      "count": 2042
     },
     {
       "id": "trends-rising-7d",
-      "count": 377
+      "count": 374
     },
     {
       "id": "trends-rising-30d",
-      "count": 253
+      "count": 255
     },
     {
       "id": "trends-rising-7d-horror-game",
-      "count": 185
+      "count": 180
     },
     {
       "id": "trends-rising-30d-horror-game",
@@ -51,35 +52,35 @@
     },
     {
       "id": "trends-rising-7d-indie-game",
-      "count": 116
+      "count": 117
     },
     {
       "id": "itch-new-popular-web",
-      "count": 101
+      "count": 102
     },
     {
       "id": "itch-popular",
-      "count": 101
+      "count": 102
     },
     {
       "id": "trends-rising-7d-itch-io",
-      "count": 89
+      "count": 90
     },
     {
       "id": "trends-rising-30d-itch-io",
-      "count": 71
+      "count": 72
     },
     {
       "id": "trends-rising-30d-indie-game",
-      "count": 53
+      "count": 54
     },
     {
       "id": "itch-featured-feed",
-      "count": 16
+      "count": 17
     },
     {
       "id": "itch-featured",
-      "count": 16
+      "count": 17
     },
     {
       "id": "steam-latest-indie",
@@ -102,6 +103,10 @@
       "count": 3
     },
     {
+      "id": "steam-popular-new",
+      "count": 3
+    },
+    {
       "id": "newgrounds-daily-top",
       "count": 3
     },
@@ -112,10 +117,6 @@
     {
       "id": "y8-new",
       "count": 2
-    },
-    {
-      "id": "steam-popular-new",
-      "count": 1
     },
     {
       "id": "lagged-new",
@@ -210,24 +211,6 @@
       ]
     },
     {
-      "name": "Sleigh the Spire 🎄🎁",
-      "channel": "online",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 17,
-      "platforms": 1,
-      "browserPlayable": true,
-      "nameRisk": 6,
-      "strategicCount": 2,
-      "sourceCount": 4,
-      "sourceIds": [
-        "itch-new-popular-web",
-        "itch-popular",
-        "itch-featured-feed",
-        "itch-featured"
-      ]
-    },
-    {
       "name": "Trolley Problem Is Not Problem",
       "channel": "online",
       "fastClass": "pending",
@@ -246,6 +229,43 @@
         "itch-popular",
         "steam-latest-indie",
         "steam-new"
+      ]
+    },
+    {
+      "name": "UNCLAIMED",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 15,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 5,
+      "strategicCount": 2,
+      "sourceCount": 5,
+      "sourceIds": [
+        "itch-newest-web",
+        "itch-new",
+        "itch-new-feed",
+        "itch-new-popular-web",
+        "itch-popular"
+      ]
+    },
+    {
+      "name": "Sleigh the Spire 🎄🎁",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 15,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 6,
+      "strategicCount": 2,
+      "sourceCount": 4,
+      "sourceIds": [
+        "itch-new-popular-web",
+        "itch-popular",
+        "itch-featured-feed",
+        "itch-featured"
       ]
     },
     {
@@ -1049,25 +1069,6 @@
       "platforms": 1,
       "browserPlayable": true,
       "nameRisk": 12,
-      "strategicCount": 2,
-      "sourceCount": 5,
-      "sourceIds": [
-        "itch-newest-web",
-        "itch-new",
-        "itch-new-feed",
-        "itch-new-popular-web",
-        "itch-popular"
-      ]
-    },
-    {
-      "name": "PlesentFlight",
-      "channel": "online",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 15,
-      "platforms": 1,
-      "browserPlayable": true,
-      "nameRisk": 5,
       "strategicCount": 2,
       "sourceCount": 5,
       "sourceIds": [
