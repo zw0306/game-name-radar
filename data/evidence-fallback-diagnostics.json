@@ -1,47 +1,46 @@
 {
-  "generatedAt": "2026-11-10T09:50:35.537Z",
+  "generatedAt": "2026-11-10T17:50:32.687Z",
   "totalCandidates": 3000,
-  "pendingSeo": 2508,
+  "pendingSeo": 2501,
   "channelCounts": {
-    "pending": 432,
-    "wiki": 10,
-    "online": 2066
+    "pending": 429,
+    "wiki": 14,
+    "online": 2058
   },
   "fastClassCounts": {
-    "pending:pending": 432,
-    "wiki:pending": 10,
-    "online:pending": 2066
+    "pending:pending": 429,
+    "wiki:pending": 14,
+    "online:pending": 2058
   },
   "strategicCounts": {
-    "pending:0": 423,
+    "pending:0": 425,
     "wiki:0": 2,
     "online:3": 1,
     "online:2": 103,
-    "online:1": 1962,
-    "wiki:2": 1,
-    "wiki:1": 7,
-    "pending:1": 9
+    "online:1": 1954,
+    "wiki:1": 12,
+    "pending:1": 4
   },
   "topSources": [
     {
       "id": "itch-new",
-      "count": 2055
+      "count": 2047
     },
     {
       "id": "itch-newest-web",
-      "count": 2046
+      "count": 2038
     },
     {
       "id": "itch-new-feed",
-      "count": 2039
+      "count": 2031
     },
     {
       "id": "trends-rising-7d",
-      "count": 369
+      "count": 372
     },
     {
       "id": "trends-rising-30d",
-      "count": 251
+      "count": 254
     },
     {
       "id": "trends-rising-7d-horror-game",
@@ -49,23 +48,23 @@
     },
     {
       "id": "trends-rising-30d-horror-game",
-      "count": 127
+      "count": 128
     },
     {
       "id": "trends-rising-7d-indie-game",
-      "count": 122
+      "count": 124
     },
     {
       "id": "itch-new-popular-web",
-      "count": 102
+      "count": 101
     },
     {
       "id": "itch-popular",
-      "count": 102
+      "count": 101
     },
     {
       "id": "trends-rising-7d-itch-io",
-      "count": 90
+      "count": 91
     },
     {
       "id": "trends-rising-30d-itch-io",
@@ -73,35 +72,27 @@
     },
     {
       "id": "trends-rising-30d-indie-game",
-      "count": 58
+      "count": 61
     },
     {
       "id": "itch-featured-feed",
-      "count": 21
+      "count": 16
     },
     {
       "id": "itch-featured",
-      "count": 21
+      "count": 16
     },
     {
       "id": "steam-latest-indie",
-      "count": 14
+      "count": 13
     },
     {
       "id": "steam-new",
-      "count": 14
+      "count": 13
     },
     {
       "id": "steam-popular-new",
-      "count": 9
-    },
-    {
-      "id": "newgrounds-daily-top",
-      "count": 4
-    },
-    {
-      "id": "newgrounds-top",
-      "count": 4
+      "count": 13
     },
     {
       "id": "newgrounds-latest",
@@ -116,15 +107,23 @@
       "count": 3
     },
     {
-      "id": "crazygames-new",
-      "count": 1
+      "id": "newgrounds-daily-top",
+      "count": 3
     },
     {
-      "id": "poki-new",
-      "count": 1
+      "id": "newgrounds-top",
+      "count": 3
+    },
+    {
+      "id": "crazygames-new",
+      "count": 2
     },
     {
       "id": "y8-new",
+      "count": 2
+    },
+    {
+      "id": "poki-new",
       "count": 1
     }
   ],
@@ -147,24 +146,6 @@
         "itch-featured",
         "itch-new-popular-web",
         "itch-popular"
-      ]
-    },
-    {
-      "name": "Season Shift",
-      "channel": "online",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 15,
-      "platforms": 2,
-      "browserPlayable": true,
-      "nameRisk": 0,
-      "strategicCount": 2,
-      "sourceCount": 4,
-      "sourceIds": [
-        "itch-new-popular-web",
-        "itch-popular",
-        "newgrounds-daily-top",
-        "newgrounds-top"
       ]
     },
     {
@@ -1071,6 +1052,25 @@
       "sourceIds": [
         "itch-featured-feed",
         "itch-featured",
+        "itch-new-popular-web",
+        "itch-popular"
+      ]
+    },
+    {
+      "name": "Bopp Clicker Web",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 15,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 12,
+      "strategicCount": 2,
+      "sourceCount": 5,
+      "sourceIds": [
+        "itch-newest-web",
+        "itch-new",
+        "itch-new-feed",
         "itch-new-popular-web",
         "itch-popular"
       ]
