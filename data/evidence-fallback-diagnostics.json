@@ -1,50 +1,51 @@
 {
-  "generatedAt": "2026-11-09T17:29:22.212Z",
+  "generatedAt": "2026-11-10T01:30:52.868Z",
   "totalCandidates": 3000,
   "pendingSeo": 2508,
   "channelCounts": {
-    "pending": 434,
-    "wiki": 4,
-    "online": 2070
+    "pending": 437,
+    "wiki": 10,
+    "online": 2061
   },
   "fastClassCounts": {
-    "pending:pending": 434,
-    "wiki:pending": 4,
-    "online:pending": 2070
+    "pending:pending": 437,
+    "wiki:pending": 10,
+    "online:pending": 2061
   },
   "strategicCounts": {
-    "pending:0": 429,
+    "pending:0": 433,
     "wiki:0": 2,
-    "online:3": 1,
-    "online:2": 104,
-    "online:1": 1965,
-    "pending:1": 5,
-    "wiki:1": 2
+    "online:3": 2,
+    "online:2": 102,
+    "online:1": 1957,
+    "wiki:2": 1,
+    "wiki:1": 7,
+    "pending:1": 4
   },
   "topSources": [
     {
       "id": "itch-new",
-      "count": 2059
+      "count": 2051
     },
     {
       "id": "itch-newest-web",
-      "count": 2050
-    },
-    {
-      "id": "itch-new-feed",
       "count": 2042
     },
     {
+      "id": "itch-new-feed",
+      "count": 2034
+    },
+    {
       "id": "trends-rising-7d",
-      "count": 374
+      "count": 379
     },
     {
       "id": "trends-rising-30d",
-      "count": 255
+      "count": 256
     },
     {
       "id": "trends-rising-7d-horror-game",
-      "count": 180
+      "count": 182
     },
     {
       "id": "trends-rising-30d-horror-game",
@@ -52,7 +53,7 @@
     },
     {
       "id": "trends-rising-7d-indie-game",
-      "count": 117
+      "count": 120
     },
     {
       "id": "itch-new-popular-web",
@@ -68,19 +69,19 @@
     },
     {
       "id": "trends-rising-30d-itch-io",
-      "count": 72
+      "count": 71
     },
     {
       "id": "trends-rising-30d-indie-game",
-      "count": 54
+      "count": 56
     },
     {
       "id": "itch-featured-feed",
-      "count": 17
+      "count": 16
     },
     {
       "id": "itch-featured",
-      "count": 17
+      "count": 16
     },
     {
       "id": "steam-latest-indie",
@@ -91,19 +92,19 @@
       "count": 14
     },
     {
+      "id": "steam-popular-new",
+      "count": 9
+    },
+    {
       "id": "newgrounds-latest",
-      "count": 4
+      "count": 5
     },
     {
       "id": "newgrounds-new",
-      "count": 4
+      "count": 5
     },
     {
       "id": "steam-top-wishlist",
-      "count": 3
-    },
-    {
-      "id": "steam-popular-new",
       "count": 3
     },
     {
@@ -115,23 +116,39 @@
       "count": 3
     },
     {
-      "id": "y8-new",
-      "count": 2
-    },
-    {
-      "id": "lagged-new",
-      "count": 1
-    },
-    {
       "id": "crazygames-new",
       "count": 1
     },
     {
       "id": "poki-new",
       "count": 1
+    },
+    {
+      "id": "y8-new",
+      "count": 1
     }
   ],
   "samples": [
+    {
+      "name": "Little legions",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 18,
+      "platforms": 2,
+      "browserPlayable": true,
+      "nameRisk": 0,
+      "strategicCount": 3,
+      "sourceCount": 6,
+      "sourceIds": [
+        "itch-newest-web",
+        "itch-new",
+        "itch-new-popular-web",
+        "itch-popular",
+        "newgrounds-latest",
+        "newgrounds-new"
+      ]
+    },
     {
       "name": "THRORBS",
       "channel": "online",
@@ -192,25 +209,6 @@
       ]
     },
     {
-      "name": "Symptoms of Devotion",
-      "channel": "online",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 17,
-      "platforms": 1,
-      "browserPlayable": true,
-      "nameRisk": 6,
-      "strategicCount": 2,
-      "sourceCount": 5,
-      "sourceIds": [
-        "itch-newest-web",
-        "itch-new",
-        "itch-new-feed",
-        "itch-new-popular-web",
-        "itch-popular"
-      ]
-    },
-    {
       "name": "Trolley Problem Is Not Problem",
       "channel": "online",
       "fastClass": "pending",
@@ -240,6 +238,25 @@
       "platforms": 1,
       "browserPlayable": true,
       "nameRisk": 5,
+      "strategicCount": 2,
+      "sourceCount": 5,
+      "sourceIds": [
+        "itch-newest-web",
+        "itch-new",
+        "itch-new-feed",
+        "itch-new-popular-web",
+        "itch-popular"
+      ]
+    },
+    {
+      "name": "Symptoms of Devotion",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 15,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 6,
       "strategicCount": 2,
       "sourceCount": 5,
       "sourceIds": [
@@ -1056,25 +1073,6 @@
       "sourceIds": [
         "itch-featured-feed",
         "itch-featured",
-        "itch-new-popular-web",
-        "itch-popular"
-      ]
-    },
-    {
-      "name": "Bopp Clicker Web",
-      "channel": "online",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 15,
-      "platforms": 1,
-      "browserPlayable": true,
-      "nameRisk": 12,
-      "strategicCount": 2,
-      "sourceCount": 5,
-      "sourceIds": [
-        "itch-newest-web",
-        "itch-new",
-        "itch-new-feed",
         "itch-new-popular-web",
         "itch-popular"
       ]
