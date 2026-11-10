@@ -1,50 +1,50 @@
 {
-  "generatedAt": "2026-11-10T17:50:32.687Z",
+  "generatedAt": "2026-11-10T23:22:16.262Z",
   "totalCandidates": 3000,
   "pendingSeo": 2501,
   "channelCounts": {
-    "pending": 429,
-    "wiki": 14,
-    "online": 2058
+    "pending": 426,
+    "wiki": 18,
+    "online": 2057
   },
   "fastClassCounts": {
-    "pending:pending": 429,
-    "wiki:pending": 14,
-    "online:pending": 2058
+    "pending:pending": 426,
+    "wiki:pending": 18,
+    "online:pending": 2057
   },
   "strategicCounts": {
-    "pending:0": 425,
+    "pending:0": 422,
     "wiki:0": 2,
     "online:3": 1,
     "online:2": 103,
-    "online:1": 1954,
-    "wiki:1": 12,
+    "online:1": 1953,
+    "wiki:1": 16,
     "pending:1": 4
   },
   "topSources": [
     {
       "id": "itch-new",
-      "count": 2047
+      "count": 2045
     },
     {
       "id": "itch-newest-web",
-      "count": 2038
+      "count": 2037
     },
     {
       "id": "itch-new-feed",
-      "count": 2031
+      "count": 2029
     },
     {
       "id": "trends-rising-7d",
-      "count": 372
+      "count": 369
     },
     {
       "id": "trends-rising-30d",
-      "count": 254
+      "count": 252
     },
     {
       "id": "trends-rising-7d-horror-game",
-      "count": 170
+      "count": 169
     },
     {
       "id": "trends-rising-30d-horror-game",
@@ -52,19 +52,19 @@
     },
     {
       "id": "trends-rising-7d-indie-game",
-      "count": 124
+      "count": 123
     },
     {
       "id": "itch-new-popular-web",
-      "count": 101
+      "count": 103
     },
     {
       "id": "itch-popular",
-      "count": 101
+      "count": 103
     },
     {
       "id": "trends-rising-7d-itch-io",
-      "count": 91
+      "count": 90
     },
     {
       "id": "trends-rising-30d-itch-io",
@@ -72,7 +72,11 @@
     },
     {
       "id": "trends-rising-30d-indie-game",
-      "count": 61
+      "count": 60
+    },
+    {
+      "id": "steam-popular-new",
+      "count": 17
     },
     {
       "id": "itch-featured-feed",
@@ -84,15 +88,11 @@
     },
     {
       "id": "steam-latest-indie",
-      "count": 13
+      "count": 14
     },
     {
       "id": "steam-new",
-      "count": 13
-    },
-    {
-      "id": "steam-popular-new",
-      "count": 13
+      "count": 14
     },
     {
       "id": "newgrounds-latest",
@@ -116,14 +116,14 @@
     },
     {
       "id": "crazygames-new",
-      "count": 2
-    },
-    {
-      "id": "y8-new",
-      "count": 2
+      "count": 1
     },
     {
       "id": "poki-new",
+      "count": 1
+    },
+    {
+      "id": "y8-new",
       "count": 1
     }
   ],
@@ -149,21 +149,19 @@
       ]
     },
     {
-      "name": "Swamp and Luig",
+      "name": "Idlecraft",
       "channel": "online",
       "fastClass": "pending",
       "fastScore": 0,
-      "discoveryScore": 20,
+      "discoveryScore": 17,
       "platforms": 1,
       "browserPlayable": true,
-      "nameRisk": 6,
+      "nameRisk": 5,
       "strategicCount": 2,
-      "sourceCount": 6,
+      "sourceCount": 4,
       "sourceIds": [
         "itch-new-popular-web",
         "itch-popular",
-        "itch-new-feed",
-        "itch-new",
         "itch-featured-feed",
         "itch-featured"
       ]
@@ -206,6 +204,25 @@
         "itch-popular",
         "steam-latest-indie",
         "steam-new"
+      ]
+    },
+    {
+      "name": "Eco Power Towns",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 15,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 0,
+      "strategicCount": 2,
+      "sourceCount": 5,
+      "sourceIds": [
+        "itch-newest-web",
+        "itch-new",
+        "itch-new-feed",
+        "itch-new-popular-web",
+        "itch-popular"
       ]
     },
     {
@@ -1052,25 +1069,6 @@
       "sourceIds": [
         "itch-featured-feed",
         "itch-featured",
-        "itch-new-popular-web",
-        "itch-popular"
-      ]
-    },
-    {
-      "name": "Bopp Clicker Web",
-      "channel": "online",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 15,
-      "platforms": 1,
-      "browserPlayable": true,
-      "nameRisk": 12,
-      "strategicCount": 2,
-      "sourceCount": 5,
-      "sourceIds": [
-        "itch-newest-web",
-        "itch-new",
-        "itch-new-feed",
         "itch-new-popular-web",
         "itch-popular"
       ]
