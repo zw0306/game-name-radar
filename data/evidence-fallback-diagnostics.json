@@ -1,46 +1,47 @@
 {
-  "generatedAt": "2026-11-10T23:22:16.262Z",
+  "generatedAt": "2026-11-11T06:19:52.810Z",
   "totalCandidates": 3000,
-  "pendingSeo": 2501,
+  "pendingSeo": 2494,
   "channelCounts": {
-    "pending": 426,
-    "wiki": 18,
-    "online": 2057
+    "pending": 429,
+    "wiki": 12,
+    "online": 2053
   },
   "fastClassCounts": {
-    "pending:pending": 426,
-    "wiki:pending": 18,
-    "online:pending": 2057
+    "pending:pending": 429,
+    "wiki:pending": 12,
+    "online:pending": 2053
   },
   "strategicCounts": {
-    "pending:0": 422,
+    "pending:0": 425,
     "wiki:0": 2,
     "online:3": 1,
     "online:2": 103,
-    "online:1": 1953,
-    "wiki:1": 16,
+    "online:1": 1949,
+    "wiki:1": 9,
+    "wiki:2": 1,
     "pending:1": 4
   },
   "topSources": [
     {
       "id": "itch-new",
-      "count": 2045
+      "count": 2041
     },
     {
       "id": "itch-newest-web",
-      "count": 2037
+      "count": 2033
     },
     {
       "id": "itch-new-feed",
-      "count": 2029
+      "count": 2025
     },
     {
       "id": "trends-rising-7d",
-      "count": 369
+      "count": 372
     },
     {
       "id": "trends-rising-30d",
-      "count": 252
+      "count": 253
     },
     {
       "id": "trends-rising-7d-horror-game",
@@ -52,7 +53,7 @@
     },
     {
       "id": "trends-rising-7d-indie-game",
-      "count": 123
+      "count": 125
     },
     {
       "id": "itch-new-popular-web",
@@ -64,7 +65,7 @@
     },
     {
       "id": "trends-rising-7d-itch-io",
-      "count": 90
+      "count": 91
     },
     {
       "id": "trends-rising-30d-itch-io",
@@ -72,11 +73,7 @@
     },
     {
       "id": "trends-rising-30d-indie-game",
-      "count": 60
-    },
-    {
-      "id": "steam-popular-new",
-      "count": 17
+      "count": 61
     },
     {
       "id": "itch-featured-feed",
@@ -88,11 +85,15 @@
     },
     {
       "id": "steam-latest-indie",
-      "count": 14
+      "count": 15
     },
     {
       "id": "steam-new",
-      "count": 14
+      "count": 15
+    },
+    {
+      "id": "steam-popular-new",
+      "count": 11
     },
     {
       "id": "newgrounds-latest",
@@ -164,6 +165,25 @@
         "itch-popular",
         "itch-featured-feed",
         "itch-featured"
+      ]
+    },
+    {
+      "name": "Siege Wing",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 17,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 0,
+      "strategicCount": 2,
+      "sourceCount": 5,
+      "sourceIds": [
+        "itch-newest-web",
+        "itch-new",
+        "itch-new-feed",
+        "itch-new-popular-web",
+        "itch-popular"
       ]
     },
     {
@@ -1051,24 +1071,6 @@
         "itch-newest-web",
         "itch-new",
         "itch-new-feed",
-        "itch-new-popular-web",
-        "itch-popular"
-      ]
-    },
-    {
-      "name": "Rulehouse",
-      "channel": "online",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 15,
-      "platforms": 1,
-      "browserPlayable": true,
-      "nameRisk": 5,
-      "strategicCount": 2,
-      "sourceCount": 4,
-      "sourceIds": [
-        "itch-featured-feed",
-        "itch-featured",
         "itch-new-popular-web",
         "itch-popular"
       ]
