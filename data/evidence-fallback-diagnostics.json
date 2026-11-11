@@ -1,55 +1,54 @@
 {
-  "generatedAt": "2026-11-11T06:19:52.810Z",
+  "generatedAt": "2026-11-11T15:12:07.940Z",
   "totalCandidates": 3000,
-  "pendingSeo": 2494,
+  "pendingSeo": 2489,
   "channelCounts": {
-    "pending": 429,
-    "wiki": 12,
-    "online": 2053
+    "pending": 432,
+    "wiki": 9,
+    "online": 2048
   },
   "fastClassCounts": {
-    "pending:pending": 429,
-    "wiki:pending": 12,
-    "online:pending": 2053
+    "pending:pending": 432,
+    "wiki:pending": 9,
+    "online:pending": 2048
   },
   "strategicCounts": {
-    "pending:0": 425,
+    "pending:0": 428,
     "wiki:0": 2,
     "online:3": 1,
-    "online:2": 103,
-    "online:1": 1949,
-    "wiki:1": 9,
-    "wiki:2": 1,
+    "online:2": 104,
+    "online:1": 1943,
+    "wiki:1": 7,
     "pending:1": 4
   },
   "topSources": [
     {
       "id": "itch-new",
-      "count": 2041
+      "count": 2036
     },
     {
       "id": "itch-newest-web",
-      "count": 2033
+      "count": 2028
     },
     {
       "id": "itch-new-feed",
-      "count": 2025
+      "count": 2020
     },
     {
       "id": "trends-rising-7d",
-      "count": 372
+      "count": 374
     },
     {
       "id": "trends-rising-30d",
-      "count": 253
+      "count": 257
     },
     {
       "id": "trends-rising-7d-horror-game",
-      "count": 169
+      "count": 171
     },
     {
       "id": "trends-rising-30d-horror-game",
-      "count": 128
+      "count": 130
     },
     {
       "id": "trends-rising-7d-indie-game",
@@ -57,11 +56,11 @@
     },
     {
       "id": "itch-new-popular-web",
-      "count": 103
+      "count": 104
     },
     {
       "id": "itch-popular",
-      "count": 103
+      "count": 104
     },
     {
       "id": "trends-rising-7d-itch-io",
@@ -73,7 +72,7 @@
     },
     {
       "id": "trends-rising-30d-indie-game",
-      "count": 61
+      "count": 63
     },
     {
       "id": "itch-featured-feed",
@@ -85,15 +84,15 @@
     },
     {
       "id": "steam-latest-indie",
-      "count": 15
+      "count": 14
     },
     {
       "id": "steam-new",
-      "count": 15
+      "count": 14
     },
     {
       "id": "steam-popular-new",
-      "count": 11
+      "count": 8
     },
     {
       "id": "newgrounds-latest",
@@ -224,6 +223,25 @@
         "itch-popular",
         "steam-latest-indie",
         "steam-new"
+      ]
+    },
+    {
+      "name": "Scrapyard Robot (Mobile)",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 15,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 0,
+      "strategicCount": 2,
+      "sourceCount": 5,
+      "sourceIds": [
+        "itch-newest-web",
+        "itch-new",
+        "itch-new-feed",
+        "itch-new-popular-web",
+        "itch-popular"
       ]
     },
     {
@@ -1046,25 +1064,6 @@
       "platforms": 1,
       "browserPlayable": true,
       "nameRisk": 0,
-      "strategicCount": 2,
-      "sourceCount": 5,
-      "sourceIds": [
-        "itch-newest-web",
-        "itch-new",
-        "itch-new-feed",
-        "itch-new-popular-web",
-        "itch-popular"
-      ]
-    },
-    {
-      "name": "Maybe... I'll go to the beach",
-      "channel": "online",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 15,
-      "platforms": 1,
-      "browserPlayable": true,
-      "nameRisk": 5,
       "strategicCount": 2,
       "sourceCount": 5,
       "sourceIds": [
