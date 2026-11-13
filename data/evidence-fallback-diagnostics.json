@@ -1,38 +1,39 @@
 {
-  "generatedAt": "2026-11-13T16:24:02.948Z",
+  "generatedAt": "2026-11-13T22:38:08.892Z",
   "totalCandidates": 3000,
-  "pendingSeo": 2454,
+  "pendingSeo": 2452,
   "channelCounts": {
-    "pending": 435,
-    "wiki": 8,
-    "online": 2011
+    "pending": 436,
+    "wiki": 14,
+    "online": 2002
   },
   "fastClassCounts": {
-    "pending:pending": 435,
-    "wiki:pending": 8,
-    "online:pending": 2011
+    "pending:pending": 436,
+    "wiki:pending": 14,
+    "online:pending": 2002
   },
   "strategicCounts": {
-    "pending:0": 431,
+    "pending:0": 432,
     "wiki:0": 2,
     "online:3": 1,
     "online:2": 105,
-    "online:1": 1905,
-    "wiki:1": 6,
+    "online:1": 1896,
+    "wiki:2": 1,
+    "wiki:1": 11,
     "pending:1": 4
   },
   "topSources": [
     {
       "id": "itch-new",
-      "count": 2000
-    },
-    {
-      "id": "itch-newest-web",
       "count": 1991
     },
     {
+      "id": "itch-newest-web",
+      "count": 1982
+    },
+    {
       "id": "itch-new-feed",
-      "count": 1986
+      "count": 1977
     },
     {
       "id": "trends-rising-7d",
@@ -40,7 +41,7 @@
     },
     {
       "id": "trends-rising-30d",
-      "count": 255
+      "count": 256
     },
     {
       "id": "trends-rising-7d-horror-game",
@@ -52,7 +53,7 @@
     },
     {
       "id": "trends-rising-30d-horror-game",
-      "count": 127
+      "count": 129
     },
     {
       "id": "itch-new-popular-web",
@@ -72,7 +73,7 @@
     },
     {
       "id": "trends-rising-30d-indie-game",
-      "count": 66
+      "count": 65
     },
     {
       "id": "itch-featured-feed",
@@ -84,15 +85,15 @@
     },
     {
       "id": "steam-latest-indie",
-      "count": 14
+      "count": 16
     },
     {
       "id": "steam-new",
-      "count": 14
+      "count": 16
     },
     {
       "id": "steam-popular-new",
-      "count": 7
+      "count": 13
     },
     {
       "id": "newgrounds-latest",
@@ -187,43 +188,6 @@
       ]
     },
     {
-      "name": "Idlecraft",
-      "channel": "online",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 17,
-      "platforms": 1,
-      "browserPlayable": true,
-      "nameRisk": 5,
-      "strategicCount": 2,
-      "sourceCount": 4,
-      "sourceIds": [
-        "itch-new-popular-web",
-        "itch-popular",
-        "itch-featured-feed",
-        "itch-featured"
-      ]
-    },
-    {
-      "name": "Siege Wing",
-      "channel": "online",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 17,
-      "platforms": 1,
-      "browserPlayable": true,
-      "nameRisk": 0,
-      "strategicCount": 2,
-      "sourceCount": 5,
-      "sourceIds": [
-        "itch-newest-web",
-        "itch-new",
-        "itch-new-feed",
-        "itch-new-popular-web",
-        "itch-popular"
-      ]
-    },
-    {
       "name": "Trolley Problem Is Not Problem",
       "channel": "online",
       "fastClass": "pending",
@@ -246,6 +210,43 @@
     },
     {
       "name": "Scrapyard Robot (Mobile)",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 15,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 0,
+      "strategicCount": 2,
+      "sourceCount": 5,
+      "sourceIds": [
+        "itch-newest-web",
+        "itch-new",
+        "itch-new-feed",
+        "itch-new-popular-web",
+        "itch-popular"
+      ]
+    },
+    {
+      "name": "Idlecraft",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 15,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 5,
+      "strategicCount": 2,
+      "sourceCount": 4,
+      "sourceIds": [
+        "itch-new-popular-web",
+        "itch-popular",
+        "itch-featured-feed",
+        "itch-featured"
+      ]
+    },
+    {
+      "name": "Siege Wing",
       "channel": "online",
       "fastClass": "pending",
       "fastScore": 0,
