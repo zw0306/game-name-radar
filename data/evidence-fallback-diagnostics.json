@@ -1,47 +1,46 @@
 {
-  "generatedAt": "2026-11-13T22:38:08.892Z",
+  "generatedAt": "2026-11-14T03:15:36.294Z",
   "totalCandidates": 3000,
-  "pendingSeo": 2452,
+  "pendingSeo": 2449,
   "channelCounts": {
-    "pending": 436,
+    "pending": 437,
     "wiki": 14,
-    "online": 2002
+    "online": 1998
   },
   "fastClassCounts": {
-    "pending:pending": 436,
+    "pending:pending": 437,
     "wiki:pending": 14,
-    "online:pending": 2002
+    "online:pending": 1998
   },
   "strategicCounts": {
     "pending:0": 432,
     "wiki:0": 2,
     "online:3": 1,
     "online:2": 105,
-    "online:1": 1896,
-    "wiki:2": 1,
-    "wiki:1": 11,
-    "pending:1": 4
+    "online:1": 1892,
+    "wiki:1": 12,
+    "pending:1": 5
   },
   "topSources": [
     {
       "id": "itch-new",
-      "count": 1991
+      "count": 1986
     },
     {
       "id": "itch-newest-web",
-      "count": 1982
-    },
-    {
-      "id": "itch-new-feed",
       "count": 1977
     },
     {
+      "id": "itch-new-feed",
+      "count": 1973
+    },
+    {
       "id": "trends-rising-7d",
-      "count": 374
+      "count": 375
     },
     {
       "id": "trends-rising-30d",
-      "count": 256
+      "count": 258
     },
     {
       "id": "trends-rising-7d-horror-game",
@@ -49,11 +48,11 @@
     },
     {
       "id": "trends-rising-7d-indie-game",
-      "count": 132
+      "count": 133
     },
     {
       "id": "trends-rising-30d-horror-game",
-      "count": 129
+      "count": 130
     },
     {
       "id": "itch-new-popular-web",
@@ -73,23 +72,23 @@
     },
     {
       "id": "trends-rising-30d-indie-game",
-      "count": 65
+      "count": 66
     },
     {
       "id": "itch-featured-feed",
-      "count": 16
+      "count": 18
     },
     {
       "id": "itch-featured",
-      "count": 16
+      "count": 18
     },
     {
       "id": "steam-latest-indie",
-      "count": 16
+      "count": 15
     },
     {
       "id": "steam-new",
-      "count": 16
+      "count": 15
     },
     {
       "id": "steam-popular-new",
@@ -147,6 +146,24 @@
         "itch-featured",
         "itch-new-popular-web",
         "itch-popular"
+      ]
+    },
+    {
+      "name": "[FULL] DECOGEAR DIMENSIONS",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 17,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 0,
+      "strategicCount": 2,
+      "sourceCount": 4,
+      "sourceIds": [
+        "itch-new-popular-web",
+        "itch-popular",
+        "itch-featured-feed",
+        "itch-featured"
       ]
     },
     {
@@ -1047,25 +1064,6 @@
       "platforms": 1,
       "browserPlayable": true,
       "nameRisk": 5,
-      "strategicCount": 2,
-      "sourceCount": 5,
-      "sourceIds": [
-        "itch-newest-web",
-        "itch-new",
-        "itch-new-feed",
-        "itch-new-popular-web",
-        "itch-popular"
-      ]
-    },
-    {
-      "name": "Stargate Legacy",
-      "channel": "online",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 15,
-      "platforms": 1,
-      "browserPlayable": true,
-      "nameRisk": 0,
       "strategicCount": 2,
       "sourceCount": 5,
       "sourceIds": [
