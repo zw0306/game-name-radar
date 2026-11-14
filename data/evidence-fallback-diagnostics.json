@@ -1,54 +1,54 @@
 {
-  "generatedAt": "2026-11-14T03:15:36.294Z",
+  "generatedAt": "2026-11-14T11:28:10.614Z",
   "totalCandidates": 3000,
-  "pendingSeo": 2449,
+  "pendingSeo": 2442,
   "channelCounts": {
-    "pending": 437,
-    "wiki": 14,
-    "online": 1998
+    "pending": 441,
+    "wiki": 7,
+    "online": 1994
   },
   "fastClassCounts": {
-    "pending:pending": 437,
-    "wiki:pending": 14,
-    "online:pending": 1998
+    "pending:pending": 441,
+    "wiki:pending": 7,
+    "online:pending": 1994
   },
   "strategicCounts": {
-    "pending:0": 432,
+    "pending:0": 436,
     "wiki:0": 2,
     "online:3": 1,
-    "online:2": 105,
-    "online:1": 1892,
-    "wiki:1": 12,
+    "online:2": 102,
+    "online:1": 1891,
+    "wiki:1": 5,
     "pending:1": 5
   },
   "topSources": [
     {
       "id": "itch-new",
-      "count": 1986
+      "count": 1982
     },
     {
       "id": "itch-newest-web",
-      "count": 1977
-    },
-    {
-      "id": "itch-new-feed",
       "count": 1973
     },
     {
+      "id": "itch-new-feed",
+      "count": 1971
+    },
+    {
       "id": "trends-rising-7d",
-      "count": 375
+      "count": 378
     },
     {
       "id": "trends-rising-30d",
-      "count": 258
+      "count": 260
     },
     {
       "id": "trends-rising-7d-horror-game",
-      "count": 167
+      "count": 168
     },
     {
       "id": "trends-rising-7d-indie-game",
-      "count": 133
+      "count": 134
     },
     {
       "id": "trends-rising-30d-horror-game",
@@ -56,15 +56,15 @@
     },
     {
       "id": "itch-new-popular-web",
-      "count": 105
+      "count": 102
     },
     {
       "id": "itch-popular",
-      "count": 105
+      "count": 102
     },
     {
       "id": "trends-rising-7d-itch-io",
-      "count": 90
+      "count": 91
     },
     {
       "id": "trends-rising-30d-itch-io",
@@ -72,7 +72,7 @@
     },
     {
       "id": "trends-rising-30d-indie-game",
-      "count": 66
+      "count": 68
     },
     {
       "id": "itch-featured-feed",
@@ -92,7 +92,7 @@
     },
     {
       "id": "steam-popular-new",
-      "count": 13
+      "count": 6
     },
     {
       "id": "newgrounds-latest",
