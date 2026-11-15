@@ -1,66 +1,66 @@
 {
-  "generatedAt": "2026-11-14T22:24:13.983Z",
+  "generatedAt": "2026-11-15T02:39:55.260Z",
   "totalCandidates": 3000,
-  "pendingSeo": 2442,
+  "pendingSeo": 2444,
   "channelCounts": {
     "pending": 442,
     "wiki": 6,
-    "online": 1994
+    "online": 1996
   },
   "fastClassCounts": {
     "pending:pending": 442,
     "wiki:pending": 6,
-    "online:pending": 1994
+    "online:pending": 1996
   },
   "strategicCounts": {
     "pending:0": 437,
     "wiki:0": 2,
     "online:3": 1,
-    "online:2": 101,
-    "online:1": 1892,
+    "online:2": 100,
+    "online:1": 1895,
     "wiki:1": 4,
     "pending:1": 5
   },
   "topSources": [
     {
       "id": "itch-new",
-      "count": 1982
+      "count": 1984
     },
     {
       "id": "itch-newest-web",
-      "count": 1973
+      "count": 1975
     },
     {
       "id": "itch-new-feed",
-      "count": 1971
+      "count": 1974
     },
     {
       "id": "trends-rising-7d",
-      "count": 379
+      "count": 381
     },
     {
       "id": "trends-rising-30d",
-      "count": 265
+      "count": 264
     },
     {
       "id": "trends-rising-7d-horror-game",
-      "count": 166
+      "count": 167
     },
     {
       "id": "trends-rising-7d-indie-game",
-      "count": 136
+      "count": 137
     },
     {
       "id": "trends-rising-30d-horror-game",
-      "count": 132
+      "count": 131
     },
     {
       "id": "itch-new-popular-web",
-      "count": 101
+      "count": 100
     },
     {
       "id": "itch-popular",
-      "count": 101
+      "count": 100
     },
     {
       "id": "trends-rising-7d-itch-io",
@@ -186,25 +186,6 @@
       ]
     },
     {
-      "name": "Birds Are Not Real",
-      "channel": "online",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 17,
-      "platforms": 1,
-      "browserPlayable": true,
-      "nameRisk": 0,
-      "strategicCount": 2,
-      "sourceCount": 5,
-      "sourceIds": [
-        "itch-newest-web",
-        "itch-new",
-        "itch-new-feed",
-        "itch-new-popular-web",
-        "itch-popular"
-      ]
-    },
-    {
       "name": "Trolley Problem Is Not Problem",
       "channel": "online",
       "fastClass": "pending",
@@ -223,6 +204,25 @@
         "itch-popular",
         "steam-latest-indie",
         "steam-new"
+      ]
+    },
+    {
+      "name": "Birds Are Not Real",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 15,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 0,
+      "strategicCount": 2,
+      "sourceCount": 5,
+      "sourceIds": [
+        "itch-newest-web",
+        "itch-new",
+        "itch-new-feed",
+        "itch-new-popular-web",
+        "itch-popular"
       ]
     },
     {
