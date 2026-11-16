@@ -1,54 +1,54 @@
 {
-  "generatedAt": "2026-11-16T02:43:57.337Z",
+  "generatedAt": "2026-11-16T11:17:24.406Z",
   "totalCandidates": 3000,
-  "pendingSeo": 2445,
+  "pendingSeo": 2446,
   "channelCounts": {
-    "pending": 443,
-    "wiki": 3,
-    "online": 1999
+    "pending": 446,
+    "wiki": 4,
+    "online": 1996
   },
   "fastClassCounts": {
-    "pending:pending": 443,
-    "wiki:pending": 3,
-    "online:pending": 1999
+    "pending:pending": 446,
+    "wiki:pending": 4,
+    "online:pending": 1996
   },
   "strategicCounts": {
-    "pending:0": 438,
+    "pending:0": 441,
     "wiki:0": 2,
-    "online:3": 1,
-    "online:2": 100,
-    "online:1": 1898,
-    "wiki:1": 1,
+    "online:3": 2,
+    "online:2": 99,
+    "online:1": 1895,
+    "wiki:1": 2,
     "pending:1": 5
   },
   "topSources": [
     {
       "id": "itch-new",
-      "count": 1987
+      "count": 1984
     },
     {
       "id": "itch-newest-web",
-      "count": 1978
+      "count": 1975
     },
     {
       "id": "itch-new-feed",
-      "count": 1978
+      "count": 1975
     },
     {
       "id": "trends-rising-7d",
-      "count": 382
+      "count": 384
     },
     {
       "id": "trends-rising-30d",
-      "count": 269
+      "count": 270
     },
     {
       "id": "trends-rising-7d-horror-game",
-      "count": 168
+      "count": 170
     },
     {
       "id": "trends-rising-7d-indie-game",
-      "count": 137
+      "count": 138
     },
     {
       "id": "trends-rising-30d-horror-game",
@@ -72,7 +72,7 @@
     },
     {
       "id": "trends-rising-30d-itch-io",
-      "count": 70
+      "count": 71
     },
     {
       "id": "itch-featured-feed",
@@ -111,12 +111,12 @@
       "count": 3
     },
     {
-      "id": "steam-popular-new",
-      "count": 1
+      "id": "crazygames-new",
+      "count": 2
     },
     {
-      "id": "crazygames-new",
-      "count": 1
+      "id": "steam-popular-new",
+      "count": 2
     },
     {
       "id": "poki-new",
@@ -128,6 +128,26 @@
     }
   ],
   "samples": [
+    {
+      "name": "Hoard Sweeper",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 18,
+      "platforms": 2,
+      "browserPlayable": true,
+      "nameRisk": 0,
+      "strategicCount": 3,
+      "sourceCount": 6,
+      "sourceIds": [
+        "itch-newest-web",
+        "itch-new",
+        "itch-new-feed",
+        "itch-new-popular-web",
+        "itch-popular",
+        "crazygames-new"
+      ]
+    },
     {
       "name": "THRORBS",
       "channel": "online",
@@ -637,25 +657,6 @@
         "itch-popular",
         "itch-featured-feed",
         "itch-featured"
-      ]
-    },
-    {
-      "name": "Hoard Sweeper",
-      "channel": "online",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 15,
-      "platforms": 1,
-      "browserPlayable": true,
-      "nameRisk": 0,
-      "strategicCount": 2,
-      "sourceCount": 5,
-      "sourceIds": [
-        "itch-newest-web",
-        "itch-new",
-        "itch-new-feed",
-        "itch-new-popular-web",
-        "itch-popular"
       ]
     },
     {
