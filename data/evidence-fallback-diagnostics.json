@@ -1,46 +1,46 @@
 {
-  "generatedAt": "2026-11-17T04:29:06.780Z",
+  "generatedAt": "2026-11-17T14:24:21.394Z",
   "totalCandidates": 3000,
-  "pendingSeo": 2455,
+  "pendingSeo": 2456,
   "channelCounts": {
-    "pending": 443,
+    "pending": 444,
     "wiki": 12,
     "online": 2000
   },
   "fastClassCounts": {
-    "pending:pending": 443,
+    "pending:pending": 444,
     "wiki:pending": 12,
     "online:pending": 2000
   },
   "strategicCounts": {
-    "pending:0": 438,
+    "pending:0": 439,
     "wiki:0": 2,
     "online:3": 1,
-    "online:1": 1900,
-    "online:2": 99,
+    "online:2": 100,
+    "online:1": 1899,
     "wiki:1": 10,
     "pending:1": 5
   },
   "topSources": [
     {
       "id": "itch-new",
-      "count": 1988
+      "count": 1987
     },
     {
       "id": "itch-newest-web",
-      "count": 1979
+      "count": 1978
     },
     {
       "id": "itch-new-feed",
-      "count": 1979
+      "count": 1978
     },
     {
       "id": "trends-rising-7d",
-      "count": 385
+      "count": 386
     },
     {
       "id": "trends-rising-30d",
-      "count": 270
+      "count": 271
     },
     {
       "id": "trends-rising-7d-horror-game",
@@ -52,7 +52,7 @@
     },
     {
       "id": "trends-rising-30d-horror-game",
-      "count": 132
+      "count": 133
     },
     {
       "id": "itch-new-popular-web",
@@ -64,11 +64,11 @@
     },
     {
       "id": "trends-rising-7d-itch-io",
-      "count": 95
+      "count": 96
     },
     {
       "id": "trends-rising-30d-indie-game",
-      "count": 76
+      "count": 77
     },
     {
       "id": "trends-rising-30d-itch-io",
@@ -84,11 +84,11 @@
     },
     {
       "id": "steam-latest-indie",
-      "count": 13
+      "count": 14
     },
     {
       "id": "steam-new",
-      "count": 13
+      "count": 14
     },
     {
       "id": "steam-popular-new",
@@ -115,15 +115,19 @@
       "count": 3
     },
     {
+      "id": "y8-new",
+      "count": 2
+    },
+    {
+      "id": "lagged-new",
+      "count": 1
+    },
+    {
       "id": "crazygames-new",
       "count": 1
     },
     {
       "id": "poki-new",
-      "count": 1
-    },
-    {
-      "id": "y8-new",
       "count": 1
     }
   ],
@@ -144,6 +148,25 @@
         "itch-new",
         "itch-featured-feed",
         "itch-featured",
+        "itch-new-popular-web",
+        "itch-popular"
+      ]
+    },
+    {
+      "name": "EMBERWATCH",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 17,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 5,
+      "strategicCount": 2,
+      "sourceCount": 5,
+      "sourceIds": [
+        "itch-newest-web",
+        "itch-new",
+        "itch-new-feed",
         "itch-new-popular-web",
         "itch-popular"
       ]
@@ -1045,25 +1068,6 @@
       "platforms": 1,
       "browserPlayable": true,
       "nameRisk": 7,
-      "strategicCount": 2,
-      "sourceCount": 5,
-      "sourceIds": [
-        "itch-newest-web",
-        "itch-new",
-        "itch-new-feed",
-        "itch-new-popular-web",
-        "itch-popular"
-      ]
-    },
-    {
-      "name": "Can’t Lose Hero",
-      "channel": "online",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 15,
-      "platforms": 1,
-      "browserPlayable": true,
-      "nameRisk": 5,
       "strategicCount": 2,
       "sourceCount": 5,
       "sourceIds": [
