@@ -1,43 +1,42 @@
 {
-  "generatedAt": "2026-11-16T22:02:17.559Z",
+  "generatedAt": "2026-11-17T04:29:06.780Z",
   "totalCandidates": 3000,
-  "pendingSeo": 2449,
+  "pendingSeo": 2455,
   "channelCounts": {
-    "pending": 449,
-    "wiki": 11,
-    "online": 1989
+    "pending": 443,
+    "wiki": 12,
+    "online": 2000
   },
   "fastClassCounts": {
-    "pending:pending": 449,
-    "wiki:pending": 11,
-    "online:pending": 1989
+    "pending:pending": 443,
+    "wiki:pending": 12,
+    "online:pending": 2000
   },
   "strategicCounts": {
-    "pending:0": 443,
+    "pending:0": 438,
     "wiki:0": 2,
     "online:3": 1,
+    "online:1": 1900,
     "online:2": 99,
-    "online:1": 1889,
-    "wiki:2": 1,
-    "wiki:1": 8,
-    "pending:1": 6
+    "wiki:1": 10,
+    "pending:1": 5
   },
   "topSources": [
     {
       "id": "itch-new",
-      "count": 1977
+      "count": 1988
     },
     {
       "id": "itch-newest-web",
-      "count": 1968
+      "count": 1979
     },
     {
       "id": "itch-new-feed",
-      "count": 1968
+      "count": 1979
     },
     {
       "id": "trends-rising-7d",
-      "count": 388
+      "count": 385
     },
     {
       "id": "trends-rising-30d",
@@ -45,7 +44,7 @@
     },
     {
       "id": "trends-rising-7d-horror-game",
-      "count": 172
+      "count": 168
     },
     {
       "id": "trends-rising-7d-indie-game",
@@ -65,7 +64,7 @@
     },
     {
       "id": "trends-rising-7d-itch-io",
-      "count": 94
+      "count": 95
     },
     {
       "id": "trends-rising-30d-indie-game",
@@ -77,23 +76,23 @@
     },
     {
       "id": "itch-featured-feed",
-      "count": 19
+      "count": 18
     },
     {
       "id": "itch-featured",
-      "count": 19
+      "count": 18
     },
     {
       "id": "steam-latest-indie",
-      "count": 14
+      "count": 13
     },
     {
       "id": "steam-new",
-      "count": 14
+      "count": 13
     },
     {
       "id": "steam-popular-new",
-      "count": 9
+      "count": 10
     },
     {
       "id": "newgrounds-latest",
@@ -150,24 +149,6 @@
       ]
     },
     {
-      "name": "[FULL] DECOGEAR DIMENSIONS",
-      "channel": "online",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 17,
-      "platforms": 1,
-      "browserPlayable": true,
-      "nameRisk": 0,
-      "strategicCount": 2,
-      "sourceCount": 4,
-      "sourceIds": [
-        "itch-new-popular-web",
-        "itch-popular",
-        "itch-featured-feed",
-        "itch-featured"
-      ]
-    },
-    {
       "name": "Trolley Problem Is Not Problem",
       "channel": "online",
       "fastClass": "pending",
@@ -186,6 +167,24 @@
         "itch-popular",
         "steam-latest-indie",
         "steam-new"
+      ]
+    },
+    {
+      "name": "[FULL] DECOGEAR DIMENSIONS",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 15,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 0,
+      "strategicCount": 2,
+      "sourceCount": 4,
+      "sourceIds": [
+        "itch-new-popular-web",
+        "itch-popular",
+        "itch-featured-feed",
+        "itch-featured"
       ]
     },
     {
