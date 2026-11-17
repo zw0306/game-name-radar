@@ -1,42 +1,42 @@
 {
-  "generatedAt": "2026-11-17T14:24:21.394Z",
+  "generatedAt": "2026-11-17T22:53:06.636Z",
   "totalCandidates": 3000,
-  "pendingSeo": 2456,
+  "pendingSeo": 2461,
   "channelCounts": {
-    "pending": 444,
-    "wiki": 12,
-    "online": 2000
+    "pending": 447,
+    "wiki": 13,
+    "online": 2001
   },
   "fastClassCounts": {
-    "pending:pending": 444,
-    "wiki:pending": 12,
-    "online:pending": 2000
+    "pending:pending": 447,
+    "wiki:pending": 13,
+    "online:pending": 2001
   },
   "strategicCounts": {
-    "pending:0": 439,
+    "pending:0": 442,
     "wiki:0": 2,
     "online:3": 1,
     "online:2": 100,
-    "online:1": 1899,
-    "wiki:1": 10,
+    "online:1": 1900,
+    "wiki:1": 11,
     "pending:1": 5
   },
   "topSources": [
     {
       "id": "itch-new",
-      "count": 1987
+      "count": 1989
     },
     {
       "id": "itch-newest-web",
-      "count": 1978
+      "count": 1980
     },
     {
       "id": "itch-new-feed",
-      "count": 1978
+      "count": 1980
     },
     {
       "id": "trends-rising-7d",
-      "count": 386
+      "count": 388
     },
     {
       "id": "trends-rising-30d",
@@ -44,23 +44,23 @@
     },
     {
       "id": "trends-rising-7d-horror-game",
-      "count": 168
+      "count": 167
     },
     {
       "id": "trends-rising-7d-indie-game",
-      "count": 140
+      "count": 143
     },
     {
       "id": "trends-rising-30d-horror-game",
-      "count": 133
+      "count": 132
     },
     {
       "id": "itch-new-popular-web",
-      "count": 99
+      "count": 100
     },
     {
       "id": "itch-popular",
-      "count": 99
+      "count": 100
     },
     {
       "id": "trends-rising-7d-itch-io",
@@ -72,7 +72,7 @@
     },
     {
       "id": "trends-rising-30d-itch-io",
-      "count": 71
+      "count": 72
     },
     {
       "id": "itch-featured-feed",
@@ -92,7 +92,7 @@
     },
     {
       "id": "steam-popular-new",
-      "count": 10
+      "count": 11
     },
     {
       "id": "newgrounds-latest",
@@ -115,19 +115,15 @@
       "count": 3
     },
     {
-      "id": "y8-new",
-      "count": 2
-    },
-    {
-      "id": "lagged-new",
-      "count": 1
-    },
-    {
       "id": "crazygames-new",
       "count": 1
     },
     {
       "id": "poki-new",
+      "count": 1
+    },
+    {
+      "id": "y8-new",
       "count": 1
     }
   ],
@@ -148,6 +144,25 @@
         "itch-new",
         "itch-featured-feed",
         "itch-featured",
+        "itch-new-popular-web",
+        "itch-popular"
+      ]
+    },
+    {
+      "name": "Kethra Idle",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 17,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 9,
+      "strategicCount": 2,
+      "sourceCount": 5,
+      "sourceIds": [
+        "itch-newest-web",
+        "itch-new",
+        "itch-new-feed",
         "itch-new-popular-web",
         "itch-popular"
       ]
@@ -1049,25 +1064,6 @@
       "platforms": 1,
       "browserPlayable": true,
       "nameRisk": 9,
-      "strategicCount": 2,
-      "sourceCount": 5,
-      "sourceIds": [
-        "itch-newest-web",
-        "itch-new",
-        "itch-new-feed",
-        "itch-new-popular-web",
-        "itch-popular"
-      ]
-    },
-    {
-      "name": "A Fortnight in Another World",
-      "channel": "online",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 15,
-      "platforms": 1,
-      "browserPlayable": true,
-      "nameRisk": 7,
       "strategicCount": 2,
       "sourceCount": 5,
       "sourceIds": [
