@@ -1,42 +1,43 @@
 {
-  "generatedAt": "2026-11-18T13:58:34.621Z",
+  "generatedAt": "2026-11-18T21:57:18.743Z",
   "totalCandidates": 3000,
-  "pendingSeo": 2460,
+  "pendingSeo": 2528,
   "channelCounts": {
-    "pending": 449,
-    "wiki": 6,
-    "online": 2005
+    "pending": 465,
+    "wiki": 8,
+    "online": 2055
   },
   "fastClassCounts": {
-    "pending:pending": 449,
-    "wiki:pending": 6,
-    "online:pending": 2005
+    "pending:pending": 465,
+    "wiki:pending": 8,
+    "online:pending": 2055
   },
   "strategicCounts": {
-    "pending:0": 444,
+    "pending:0": 455,
     "wiki:0": 2,
     "online:3": 1,
     "online:2": 100,
-    "online:1": 1904,
-    "wiki:1": 4,
-    "pending:1": 5
+    "online:1": 1954,
+    "wiki:2": 1,
+    "wiki:1": 5,
+    "pending:1": 10
   },
   "topSources": [
     {
       "id": "itch-new",
-      "count": 1993
-    },
-    {
-      "id": "itch-newest-web",
-      "count": 1984
+      "count": 2016
     },
     {
       "id": "itch-new-feed",
-      "count": 1984
+      "count": 2007
+    },
+    {
+      "id": "itch-newest-web",
+      "count": 1998
     },
     {
       "id": "trends-rising-7d",
-      "count": 391
+      "count": 392
     },
     {
       "id": "trends-rising-30d",
@@ -48,27 +49,27 @@
     },
     {
       "id": "trends-rising-7d-indie-game",
-      "count": 149
-    },
-    {
-      "id": "trends-rising-30d-horror-game",
-      "count": 131
+      "count": 151
     },
     {
       "id": "itch-new-popular-web",
-      "count": 100
+      "count": 132
     },
     {
       "id": "itch-popular",
-      "count": 100
+      "count": 132
+    },
+    {
+      "id": "trends-rising-30d-horror-game",
+      "count": 130
     },
     {
       "id": "trends-rising-7d-itch-io",
-      "count": 96
+      "count": 95
     },
     {
       "id": "trends-rising-30d-indie-game",
-      "count": 85
+      "count": 86
     },
     {
       "id": "trends-rising-30d-itch-io",
@@ -76,23 +77,31 @@
     },
     {
       "id": "itch-featured-feed",
-      "count": 18
+      "count": 22
     },
     {
       "id": "itch-featured",
-      "count": 18
+      "count": 22
     },
     {
       "id": "steam-latest-indie",
-      "count": 14
+      "count": 15
     },
     {
       "id": "steam-new",
-      "count": 14
+      "count": 15
+    },
+    {
+      "id": "newgrounds-daily-top",
+      "count": 7
+    },
+    {
+      "id": "newgrounds-top",
+      "count": 7
     },
     {
       "id": "steam-popular-new",
-      "count": 4
+      "count": 6
     },
     {
       "id": "newgrounds-latest",
@@ -107,12 +116,8 @@
       "count": 3
     },
     {
-      "id": "newgrounds-daily-top",
-      "count": 3
-    },
-    {
-      "id": "newgrounds-top",
-      "count": 3
+      "id": "y8-new",
+      "count": 2
     },
     {
       "id": "crazygames-new",
@@ -120,10 +125,6 @@
     },
     {
       "id": "poki-new",
-      "count": 1
-    },
-    {
-      "id": "y8-new",
       "count": 1
     }
   ],
