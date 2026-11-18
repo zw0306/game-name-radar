@@ -1,59 +1,58 @@
 {
-  "generatedAt": "2026-11-18T04:20:59.601Z",
+  "generatedAt": "2026-11-18T13:58:34.621Z",
   "totalCandidates": 3000,
-  "pendingSeo": 2462,
+  "pendingSeo": 2460,
   "channelCounts": {
-    "pending": 452,
-    "wiki": 12,
-    "online": 1998
+    "pending": 449,
+    "wiki": 6,
+    "online": 2005
   },
   "fastClassCounts": {
-    "pending:pending": 452,
-    "wiki:pending": 12,
-    "online:pending": 1998
+    "pending:pending": 449,
+    "wiki:pending": 6,
+    "online:pending": 2005
   },
   "strategicCounts": {
-    "pending:0": 447,
+    "pending:0": 444,
     "wiki:0": 2,
     "online:3": 1,
     "online:2": 100,
-    "online:1": 1897,
-    "wiki:1": 9,
-    "pending:1": 5,
-    "wiki:2": 1
+    "online:1": 1904,
+    "wiki:1": 4,
+    "pending:1": 5
   },
   "topSources": [
     {
       "id": "itch-new",
-      "count": 1986
+      "count": 1993
     },
     {
       "id": "itch-newest-web",
-      "count": 1977
+      "count": 1984
     },
     {
       "id": "itch-new-feed",
-      "count": 1977
+      "count": 1984
     },
     {
       "id": "trends-rising-7d",
-      "count": 393
+      "count": 391
     },
     {
       "id": "trends-rising-30d",
-      "count": 276
+      "count": 278
     },
     {
       "id": "trends-rising-7d-horror-game",
-      "count": 167
+      "count": 164
     },
     {
       "id": "trends-rising-7d-indie-game",
-      "count": 148
+      "count": 149
     },
     {
       "id": "trends-rising-30d-horror-game",
-      "count": 132
+      "count": 131
     },
     {
       "id": "itch-new-popular-web",
@@ -69,7 +68,7 @@
     },
     {
       "id": "trends-rising-30d-indie-game",
-      "count": 82
+      "count": 85
     },
     {
       "id": "trends-rising-30d-itch-io",
@@ -85,15 +84,15 @@
     },
     {
       "id": "steam-latest-indie",
-      "count": 15
+      "count": 14
     },
     {
       "id": "steam-new",
-      "count": 15
+      "count": 14
     },
     {
       "id": "steam-popular-new",
-      "count": 10
+      "count": 4
     },
     {
       "id": "newgrounds-latest",
