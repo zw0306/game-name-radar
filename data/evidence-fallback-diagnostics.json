@@ -1,39 +1,38 @@
 {
-  "generatedAt": "2026-11-19T03:27:48.793Z",
+  "generatedAt": "2026-11-19T13:06:30.072Z",
   "totalCandidates": 3000,
-  "pendingSeo": 2548,
+  "pendingSeo": 2595,
   "channelCounts": {
-    "pending": 467,
-    "wiki": 12,
-    "online": 2069
+    "pending": 477,
+    "wiki": 10,
+    "online": 2108
   },
   "fastClassCounts": {
-    "pending:pending": 467,
-    "wiki:pending": 12,
-    "online:pending": 2069
+    "pending:pending": 477,
+    "wiki:pending": 10,
+    "online:pending": 2108
   },
   "strategicCounts": {
-    "pending:0": 457,
+    "pending:0": 466,
     "wiki:0": 2,
-    "wiki:2": 1,
     "online:3": 1,
     "online:2": 100,
-    "online:1": 1968,
-    "wiki:1": 9,
-    "pending:1": 10
+    "online:1": 2007,
+    "wiki:1": 8,
+    "pending:1": 11
   },
   "topSources": [
     {
       "id": "itch-new",
-      "count": 2039
+      "count": 2072
     },
     {
       "id": "itch-new-feed",
-      "count": 2030
+      "count": 2063
     },
     {
       "id": "itch-newest-web",
-      "count": 2021
+      "count": 2045
     },
     {
       "id": "trends-rising-7d",
@@ -41,7 +40,7 @@
     },
     {
       "id": "trends-rising-30d",
-      "count": 278
+      "count": 277
     },
     {
       "id": "trends-rising-7d-horror-game",
@@ -52,16 +51,16 @@
       "count": 153
     },
     {
-      "id": "trends-rising-30d-horror-game",
-      "count": 130
-    },
-    {
       "id": "itch-new-popular-web",
-      "count": 123
+      "count": 134
     },
     {
       "id": "itch-popular",
-      "count": 123
+      "count": 134
+    },
+    {
+      "id": "trends-rising-30d-horror-game",
+      "count": 130
     },
     {
       "id": "trends-rising-7d-itch-io",
@@ -73,35 +72,35 @@
     },
     {
       "id": "trends-rising-30d-itch-io",
-      "count": 72
+      "count": 71
     },
     {
       "id": "itch-featured-feed",
-      "count": 22
+      "count": 23
     },
     {
       "id": "itch-featured",
-      "count": 22
+      "count": 23
     },
     {
       "id": "steam-latest-indie",
-      "count": 15
+      "count": 14
     },
     {
       "id": "steam-new",
-      "count": 15
-    },
-    {
-      "id": "steam-popular-new",
-      "count": 10
+      "count": 14
     },
     {
       "id": "newgrounds-daily-top",
-      "count": 7
+      "count": 12
     },
     {
       "id": "newgrounds-top",
-      "count": 7
+      "count": 12
+    },
+    {
+      "id": "steam-popular-new",
+      "count": 8
     },
     {
       "id": "newgrounds-latest",
@@ -116,15 +115,15 @@
       "count": 3
     },
     {
-      "id": "y8-new",
-      "count": 2
-    },
-    {
       "id": "crazygames-new",
       "count": 1
     },
     {
       "id": "poki-new",
+      "count": 1
+    },
+    {
+      "id": "y8-new",
       "count": 1
     }
   ],
@@ -145,6 +144,25 @@
         "itch-new",
         "itch-featured-feed",
         "itch-featured",
+        "itch-new-popular-web",
+        "itch-popular"
+      ]
+    },
+    {
+      "name": "Sweatermaker DELUXE",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 17,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 0,
+      "strategicCount": 2,
+      "sourceCount": 5,
+      "sourceIds": [
+        "itch-newest-web",
+        "itch-new",
+        "itch-new-feed",
         "itch-new-popular-web",
         "itch-popular"
       ]
@@ -1046,25 +1064,6 @@
       "platforms": 1,
       "browserPlayable": true,
       "nameRisk": 0,
-      "strategicCount": 2,
-      "sourceCount": 5,
-      "sourceIds": [
-        "itch-newest-web",
-        "itch-new",
-        "itch-new-feed",
-        "itch-new-popular-web",
-        "itch-popular"
-      ]
-    },
-    {
-      "name": "JANO ADVENTURE",
-      "channel": "online",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 15,
-      "platforms": 1,
-      "browserPlayable": true,
-      "nameRisk": 9,
       "strategicCount": 2,
       "sourceCount": 5,
       "sourceIds": [
