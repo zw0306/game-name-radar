@@ -1,38 +1,38 @@
 {
-  "generatedAt": "2026-11-20T03:15:33.280Z",
+  "generatedAt": "2026-11-20T12:53:47.429Z",
   "totalCandidates": 3000,
-  "pendingSeo": 2618,
+  "pendingSeo": 2620,
   "channelCounts": {
-    "pending": 488,
-    "wiki": 15,
-    "online": 2115
+    "pending": 480,
+    "wiki": 8,
+    "online": 2132
   },
   "fastClassCounts": {
-    "pending:pending": 488,
-    "wiki:pending": 15,
-    "online:pending": 2115
+    "pending:pending": 480,
+    "wiki:pending": 8,
+    "online:pending": 2132
   },
   "strategicCounts": {
-    "pending:0": 477,
-    "wiki:0": 10,
+    "pending:0": 469,
+    "wiki:0": 2,
     "online:3": 1,
-    "online:2": 102,
-    "online:1": 2012,
-    "wiki:1": 5,
+    "online:2": 99,
+    "online:1": 2032,
+    "wiki:1": 6,
     "pending:1": 11
   },
   "topSources": [
     {
       "id": "itch-new",
-      "count": 2098
+      "count": 2106
     },
     {
       "id": "itch-new-feed",
-      "count": 2088
+      "count": 2096
     },
     {
       "id": "itch-newest-web",
-      "count": 2060
+      "count": 2076
     },
     {
       "id": "trends-rising-7d",
@@ -51,16 +51,16 @@
       "count": 155
     },
     {
-      "id": "trends-rising-30d-horror-game",
-      "count": 129
-    },
-    {
       "id": "itch-new-popular-web",
-      "count": 128
+      "count": 131
     },
     {
       "id": "itch-popular",
-      "count": 128
+      "count": 131
+    },
+    {
+      "id": "trends-rising-30d-horror-game",
+      "count": 129
     },
     {
       "id": "trends-rising-7d-itch-io",
@@ -76,11 +76,11 @@
     },
     {
       "id": "itch-featured-feed",
-      "count": 23
+      "count": 22
     },
     {
       "id": "itch-featured",
-      "count": 23
+      "count": 22
     },
     {
       "id": "steam-latest-indie",
@@ -89,10 +89,6 @@
     {
       "id": "steam-new",
       "count": 14
-    },
-    {
-      "id": "steam-top-wishlist",
-      "count": 11
     },
     {
       "id": "newgrounds-daily-top",
@@ -104,26 +100,30 @@
     },
     {
       "id": "steam-popular-new",
-      "count": 5
+      "count": 6
     },
     {
-      "id": "newgrounds-latest",
-      "count": 4
-    },
-    {
-      "id": "newgrounds-new",
-      "count": 4
-    },
-    {
-      "id": "y8-new",
-      "count": 2
+      "id": "steam-top-wishlist",
+      "count": 3
     },
     {
       "id": "crazygames-new",
       "count": 1
     },
     {
+      "id": "newgrounds-latest",
+      "count": 1
+    },
+    {
+      "id": "newgrounds-new",
+      "count": 1
+    },
+    {
       "id": "poki-new",
+      "count": 1
+    },
+    {
+      "id": "y8-new",
       "count": 1
     }
   ],
@@ -144,6 +144,44 @@
         "itch-new",
         "itch-featured-feed",
         "itch-featured",
+        "itch-new-popular-web",
+        "itch-popular"
+      ]
+    },
+    {
+      "name": "Pan to Riches",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 17,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 6,
+      "strategicCount": 2,
+      "sourceCount": 5,
+      "sourceIds": [
+        "itch-newest-web",
+        "itch-new",
+        "itch-new-feed",
+        "itch-new-popular-web",
+        "itch-popular"
+      ]
+    },
+    {
+      "name": "Lift a House with Balloons",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 17,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 7,
+      "strategicCount": 2,
+      "sourceCount": 5,
+      "sourceIds": [
+        "itch-newest-web",
+        "itch-new",
+        "itch-new-feed",
         "itch-new-popular-web",
         "itch-popular"
       ]
@@ -1020,43 +1058,6 @@
     },
     {
       "name": "PokéSurvivor",
-      "channel": "online",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 15,
-      "platforms": 1,
-      "browserPlayable": true,
-      "nameRisk": 0,
-      "strategicCount": 2,
-      "sourceCount": 5,
-      "sourceIds": [
-        "itch-newest-web",
-        "itch-new",
-        "itch-new-feed",
-        "itch-new-popular-web",
-        "itch-popular"
-      ]
-    },
-    {
-      "name": "Battle Healer Hildegard",
-      "channel": "online",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 15,
-      "platforms": 1,
-      "browserPlayable": true,
-      "nameRisk": 6,
-      "strategicCount": 2,
-      "sourceCount": 4,
-      "sourceIds": [
-        "itch-new-popular-web",
-        "itch-popular",
-        "itch-featured-feed",
-        "itch-featured"
-      ]
-    },
-    {
-      "name": "diagnosis lovesick",
       "channel": "online",
       "fastClass": "pending",
       "fastScore": 0,
