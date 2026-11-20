@@ -1,24 +1,24 @@
 {
-  "generatedAt": "2026-11-19T21:34:03.015Z",
+  "generatedAt": "2026-11-20T03:15:33.280Z",
   "totalCandidates": 3000,
-  "pendingSeo": 2612,
+  "pendingSeo": 2618,
   "channelCounts": {
-    "pending": 487,
-    "wiki": 9,
-    "online": 2116
+    "pending": 488,
+    "wiki": 15,
+    "online": 2115
   },
   "fastClassCounts": {
-    "pending:pending": 487,
-    "wiki:pending": 9,
-    "online:pending": 2116
+    "pending:pending": 488,
+    "wiki:pending": 15,
+    "online:pending": 2115
   },
   "strategicCounts": {
-    "pending:0": 476,
-    "wiki:0": 2,
+    "pending:0": 477,
+    "wiki:0": 10,
     "online:3": 1,
-    "online:2": 101,
-    "online:1": 2014,
-    "wiki:1": 7,
+    "online:2": 102,
+    "online:1": 2012,
+    "wiki:1": 5,
     "pending:1": 11
   },
   "topSources": [
@@ -36,23 +36,23 @@
     },
     {
       "id": "trends-rising-7d",
-      "count": 394
+      "count": 395
     },
     {
       "id": "trends-rising-30d",
-      "count": 278
+      "count": 279
     },
     {
       "id": "trends-rising-7d-horror-game",
-      "count": 163
+      "count": 162
     },
     {
       "id": "trends-rising-7d-indie-game",
-      "count": 153
+      "count": 155
     },
     {
       "id": "trends-rising-30d-horror-game",
-      "count": 130
+      "count": 129
     },
     {
       "id": "itch-new-popular-web",
@@ -72,7 +72,7 @@
     },
     {
       "id": "trends-rising-30d-itch-io",
-      "count": 71
+      "count": 73
     },
     {
       "id": "itch-featured-feed",
@@ -91,16 +91,20 @@
       "count": 14
     },
     {
+      "id": "steam-top-wishlist",
+      "count": 11
+    },
+    {
       "id": "newgrounds-daily-top",
-      "count": 12
+      "count": 11
     },
     {
       "id": "newgrounds-top",
-      "count": 12
+      "count": 11
     },
     {
       "id": "steam-popular-new",
-      "count": 7
+      "count": 5
     },
     {
       "id": "newgrounds-latest",
@@ -111,8 +115,8 @@
       "count": 4
     },
     {
-      "id": "steam-top-wishlist",
-      "count": 3
+      "id": "y8-new",
+      "count": 2
     },
     {
       "id": "crazygames-new",
@@ -120,10 +124,6 @@
     },
     {
       "id": "poki-new",
-      "count": 1
-    },
-    {
-      "id": "y8-new",
       "count": 1
     }
   ],
