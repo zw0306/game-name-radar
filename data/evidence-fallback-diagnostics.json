@@ -1,46 +1,46 @@
 {
-  "generatedAt": "2026-11-20T12:53:47.429Z",
+  "generatedAt": "2026-11-20T21:05:35.103Z",
   "totalCandidates": 3000,
-  "pendingSeo": 2620,
+  "pendingSeo": 2617,
   "channelCounts": {
-    "pending": 480,
-    "wiki": 8,
-    "online": 2132
+    "pending": 475,
+    "wiki": 7,
+    "online": 2135
   },
   "fastClassCounts": {
-    "pending:pending": 480,
-    "wiki:pending": 8,
-    "online:pending": 2132
+    "pending:pending": 475,
+    "wiki:pending": 7,
+    "online:pending": 2135
   },
   "strategicCounts": {
-    "pending:0": 469,
+    "pending:0": 464,
     "wiki:0": 2,
-    "online:3": 1,
-    "online:2": 99,
-    "online:1": 2032,
-    "wiki:1": 6,
+    "online:3": 2,
+    "online:2": 97,
+    "online:1": 2036,
+    "wiki:1": 5,
     "pending:1": 11
   },
   "topSources": [
     {
       "id": "itch-new",
-      "count": 2106
+      "count": 2119
     },
     {
       "id": "itch-new-feed",
-      "count": 2096
+      "count": 2108
     },
     {
       "id": "itch-newest-web",
-      "count": 2076
+      "count": 2094
     },
     {
       "id": "trends-rising-7d",
-      "count": 395
+      "count": 394
     },
     {
       "id": "trends-rising-30d",
-      "count": 279
+      "count": 280
     },
     {
       "id": "trends-rising-7d-horror-game",
@@ -51,20 +51,20 @@
       "count": 155
     },
     {
-      "id": "itch-new-popular-web",
-      "count": 131
-    },
-    {
-      "id": "itch-popular",
-      "count": 131
-    },
-    {
       "id": "trends-rising-30d-horror-game",
       "count": 129
     },
     {
+      "id": "itch-new-popular-web",
+      "count": 119
+    },
+    {
+      "id": "itch-popular",
+      "count": 119
+    },
+    {
       "id": "trends-rising-7d-itch-io",
-      "count": 96
+      "count": 95
     },
     {
       "id": "trends-rising-30d-indie-game",
@@ -72,7 +72,7 @@
     },
     {
       "id": "trends-rising-30d-itch-io",
-      "count": 73
+      "count": 74
     },
     {
       "id": "itch-featured-feed",
@@ -92,23 +92,19 @@
     },
     {
       "id": "newgrounds-daily-top",
-      "count": 11
+      "count": 8
     },
     {
       "id": "newgrounds-top",
-      "count": 11
+      "count": 8
     },
     {
       "id": "steam-popular-new",
-      "count": 6
+      "count": 5
     },
     {
       "id": "steam-top-wishlist",
       "count": 3
-    },
-    {
-      "id": "crazygames-new",
-      "count": 1
     },
     {
       "id": "newgrounds-latest",
@@ -116,6 +112,10 @@
     },
     {
       "id": "newgrounds-new",
+      "count": 1
+    },
+    {
+      "id": "crazygames-new",
       "count": 1
     },
     {
@@ -128,6 +128,26 @@
     }
   ],
   "samples": [
+    {
+      "name": "walk",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 15,
+      "platforms": 2,
+      "browserPlayable": true,
+      "nameRisk": 5,
+      "strategicCount": 3,
+      "sourceCount": 6,
+      "sourceIds": [
+        "itch-featured-feed",
+        "itch-featured",
+        "newgrounds-latest",
+        "newgrounds-new",
+        "itch-newest-web",
+        "itch-new"
+      ]
+    },
     {
       "name": "THRORBS",
       "channel": "online",
@@ -206,44 +226,6 @@
       ]
     },
     {
-      "name": "Kethra Idle",
-      "channel": "online",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 17,
-      "platforms": 1,
-      "browserPlayable": true,
-      "nameRisk": 9,
-      "strategicCount": 2,
-      "sourceCount": 5,
-      "sourceIds": [
-        "itch-newest-web",
-        "itch-new",
-        "itch-new-feed",
-        "itch-new-popular-web",
-        "itch-popular"
-      ]
-    },
-    {
-      "name": "EMBERWATCH",
-      "channel": "online",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 17,
-      "platforms": 1,
-      "browserPlayable": true,
-      "nameRisk": 5,
-      "strategicCount": 2,
-      "sourceCount": 5,
-      "sourceIds": [
-        "itch-newest-web",
-        "itch-new",
-        "itch-new-feed",
-        "itch-new-popular-web",
-        "itch-popular"
-      ]
-    },
-    {
       "name": "Trolley Problem Is Not Problem",
       "channel": "online",
       "fastClass": "pending",
@@ -262,6 +244,25 @@
         "itch-popular",
         "steam-latest-indie",
         "steam-new"
+      ]
+    },
+    {
+      "name": "Kethra Idle",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 15,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 9,
+      "strategicCount": 2,
+      "sourceCount": 5,
+      "sourceIds": [
+        "itch-newest-web",
+        "itch-new",
+        "itch-new-feed",
+        "itch-new-popular-web",
+        "itch-popular"
       ]
     },
     {
