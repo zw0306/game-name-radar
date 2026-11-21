@@ -1,74 +1,74 @@
 {
-  "generatedAt": "2026-11-21T11:01:34.961Z",
+  "generatedAt": "2026-11-21T17:58:15.438Z",
   "totalCandidates": 3000,
-  "pendingSeo": 2618,
+  "pendingSeo": 2617,
   "channelCounts": {
-    "pending": 461,
-    "wiki": 5,
-    "online": 2152
+    "pending": 464,
+    "wiki": 4,
+    "online": 2149
   },
   "fastClassCounts": {
-    "pending:pending": 461,
-    "wiki:pending": 5,
-    "online:pending": 2152
+    "pending:pending": 464,
+    "wiki:pending": 4,
+    "online:pending": 2149
   },
   "strategicCounts": {
-    "pending:0": 450,
+    "pending:0": 453,
     "wiki:0": 1,
     "online:3": 1,
-    "online:2": 95,
-    "online:1": 2056,
-    "wiki:1": 4,
+    "online:2": 94,
+    "online:1": 2054,
+    "wiki:1": 3,
     "pending:1": 11
   },
   "topSources": [
     {
       "id": "itch-new",
-      "count": 2135
+      "count": 2134
     },
     {
       "id": "itch-newest-web",
-      "count": 2127
-    },
-    {
-      "id": "itch-new-feed",
       "count": 2126
     },
     {
+      "id": "itch-new-feed",
+      "count": 2125
+    },
+    {
       "id": "trends-rising-7d",
-      "count": 394
+      "count": 397
     },
     {
       "id": "trends-rising-30d",
-      "count": 282
+      "count": 284
     },
     {
       "id": "trends-rising-7d-horror-game",
-      "count": 163
+      "count": 164
     },
     {
       "id": "trends-rising-7d-indie-game",
-      "count": 156
+      "count": 157
     },
     {
       "id": "trends-rising-30d-horror-game",
-      "count": 129
+      "count": 130
     },
     {
       "id": "itch-new-popular-web",
-      "count": 101
+      "count": 98
     },
     {
       "id": "itch-popular",
-      "count": 101
+      "count": 98
     },
     {
       "id": "trends-rising-7d-itch-io",
-      "count": 92
+      "count": 93
     },
     {
       "id": "trends-rising-30d-indie-game",
-      "count": 90
+      "count": 91
     },
     {
       "id": "trends-rising-30d-itch-io",
@@ -100,7 +100,7 @@
     },
     {
       "id": "steam-popular-new",
-      "count": 4
+      "count": 3
     },
     {
       "id": "steam-top-wishlist",
