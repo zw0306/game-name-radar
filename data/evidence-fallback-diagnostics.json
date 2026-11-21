@@ -1,38 +1,38 @@
 {
-  "generatedAt": "2026-11-20T21:05:35.103Z",
+  "generatedAt": "2026-11-21T02:14:20.091Z",
   "totalCandidates": 3000,
-  "pendingSeo": 2617,
+  "pendingSeo": 2619,
   "channelCounts": {
-    "pending": 475,
+    "pending": 464,
     "wiki": 7,
-    "online": 2135
+    "online": 2148
   },
   "fastClassCounts": {
-    "pending:pending": 475,
+    "pending:pending": 464,
     "wiki:pending": 7,
-    "online:pending": 2135
+    "online:pending": 2148
   },
   "strategicCounts": {
-    "pending:0": 464,
+    "pending:0": 453,
     "wiki:0": 2,
-    "online:3": 2,
-    "online:2": 97,
-    "online:1": 2036,
+    "online:3": 1,
+    "online:2": 96,
+    "online:1": 2051,
     "wiki:1": 5,
     "pending:1": 11
   },
   "topSources": [
     {
       "id": "itch-new",
-      "count": 2119
+      "count": 2124
     },
     {
       "id": "itch-new-feed",
-      "count": 2108
+      "count": 2115
     },
     {
       "id": "itch-newest-web",
-      "count": 2094
+      "count": 2112
     },
     {
       "id": "trends-rising-7d",
@@ -40,15 +40,15 @@
     },
     {
       "id": "trends-rising-30d",
-      "count": 280
+      "count": 281
     },
     {
       "id": "trends-rising-7d-horror-game",
-      "count": 162
+      "count": 161
     },
     {
       "id": "trends-rising-7d-indie-game",
-      "count": 155
+      "count": 156
     },
     {
       "id": "trends-rising-30d-horror-game",
@@ -56,31 +56,31 @@
     },
     {
       "id": "itch-new-popular-web",
-      "count": 119
+      "count": 113
     },
     {
       "id": "itch-popular",
-      "count": 119
+      "count": 113
     },
     {
       "id": "trends-rising-7d-itch-io",
-      "count": 95
+      "count": 94
     },
     {
       "id": "trends-rising-30d-indie-game",
-      "count": 87
+      "count": 88
     },
     {
       "id": "trends-rising-30d-itch-io",
-      "count": 74
+      "count": 73
     },
     {
       "id": "itch-featured-feed",
-      "count": 22
+      "count": 21
     },
     {
       "id": "itch-featured",
-      "count": 22
+      "count": 21
     },
     {
       "id": "steam-latest-indie",
@@ -107,14 +107,6 @@
       "count": 3
     },
     {
-      "id": "newgrounds-latest",
-      "count": 1
-    },
-    {
-      "id": "newgrounds-new",
-      "count": 1
-    },
-    {
       "id": "crazygames-new",
       "count": 1
     },
@@ -128,26 +120,6 @@
     }
   ],
   "samples": [
-    {
-      "name": "walk",
-      "channel": "online",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 15,
-      "platforms": 2,
-      "browserPlayable": true,
-      "nameRisk": 5,
-      "strategicCount": 3,
-      "sourceCount": 6,
-      "sourceIds": [
-        "itch-featured-feed",
-        "itch-featured",
-        "newgrounds-latest",
-        "newgrounds-new",
-        "itch-newest-web",
-        "itch-new"
-      ]
-    },
     {
       "name": "THRORBS",
       "channel": "online",
@@ -1074,6 +1046,24 @@
         "itch-new-feed",
         "itch-new-popular-web",
         "itch-popular"
+      ]
+    },
+    {
+      "name": "Battle Healer Hildegard",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 15,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 6,
+      "strategicCount": 2,
+      "sourceCount": 4,
+      "sourceIds": [
+        "itch-new-popular-web",
+        "itch-popular",
+        "itch-featured-feed",
+        "itch-featured"
       ]
     }
   ]
