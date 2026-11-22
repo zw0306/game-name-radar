@@ -1,46 +1,46 @@
 {
-  "generatedAt": "2026-11-22T15:17:12.913Z",
+  "generatedAt": "2026-11-22T21:46:06.409Z",
   "totalCandidates": 3000,
-  "pendingSeo": 2621,
+  "pendingSeo": 2622,
   "channelCounts": {
-    "pending": 464,
+    "pending": 456,
     "wiki": 3,
-    "online": 2154
+    "online": 2163
   },
   "fastClassCounts": {
-    "pending:pending": 464,
+    "pending:pending": 456,
     "wiki:pending": 3,
-    "online:pending": 2154
+    "online:pending": 2163
   },
   "strategicCounts": {
-    "pending:0": 457,
+    "pending:0": 454,
     "wiki:0": 1,
     "online:3": 1,
     "online:2": 92,
-    "online:1": 2061,
+    "online:1": 2070,
     "wiki:1": 2,
-    "pending:1": 7
+    "pending:1": 2
   },
   "topSources": [
     {
       "id": "itch-new",
-      "count": 2138
+      "count": 2155
     },
     {
       "id": "itch-newest-web",
-      "count": 2130
+      "count": 2147
     },
     {
       "id": "itch-new-feed",
-      "count": 2129
+      "count": 2146
     },
     {
       "id": "trends-rising-7d",
-      "count": 401
+      "count": 399
     },
     {
       "id": "trends-rising-30d",
-      "count": 292
+      "count": 289
     },
     {
       "id": "trends-rising-7d-horror-game",
@@ -48,11 +48,11 @@
     },
     {
       "id": "trends-rising-7d-indie-game",
-      "count": 157
+      "count": 155
     },
     {
       "id": "trends-rising-30d-horror-game",
-      "count": 135
+      "count": 134
     },
     {
       "id": "trends-rising-7d-itch-io",
@@ -68,35 +68,27 @@
     },
     {
       "id": "trends-rising-30d-indie-game",
-      "count": 92
+      "count": 90
     },
     {
       "id": "trends-rising-30d-itch-io",
       "count": 74
     },
     {
-      "id": "itch-featured-feed",
-      "count": 17
-    },
-    {
-      "id": "itch-featured",
-      "count": 17
-    },
-    {
       "id": "steam-latest-indie",
-      "count": 15
+      "count": 14
     },
     {
       "id": "steam-new",
-      "count": 15
+      "count": 14
     },
     {
-      "id": "newgrounds-daily-top",
-      "count": 9
+      "id": "itch-featured-feed",
+      "count": 13
     },
     {
-      "id": "newgrounds-top",
-      "count": 9
+      "id": "itch-featured",
+      "count": 13
     },
     {
       "id": "steam-top-wishlist",
@@ -138,6 +130,24 @@
         "itch-featured",
         "itch-new-popular-web",
         "itch-popular"
+      ]
+    },
+    {
+      "name": "Of The World",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 17,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 12,
+      "strategicCount": 2,
+      "sourceCount": 4,
+      "sourceIds": [
+        "itch-new-popular-web",
+        "itch-popular",
+        "itch-featured-feed",
+        "itch-featured"
       ]
     },
     {
@@ -1031,25 +1041,6 @@
     },
     {
       "name": "KAIJU DISPOSAL",
-      "channel": "online",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 15,
-      "platforms": 1,
-      "browserPlayable": true,
-      "nameRisk": 0,
-      "strategicCount": 2,
-      "sourceCount": 5,
-      "sourceIds": [
-        "itch-newest-web",
-        "itch-new",
-        "itch-new-feed",
-        "itch-new-popular-web",
-        "itch-popular"
-      ]
-    },
-    {
-      "name": "PokéSurvivor",
       "channel": "online",
       "fastClass": "pending",
       "fastScore": 0,
