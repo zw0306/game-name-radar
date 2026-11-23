@@ -1,86 +1,78 @@
 {
-  "generatedAt": "2026-11-22T21:46:06.409Z",
+  "generatedAt": "2026-11-23T02:45:27.088Z",
   "totalCandidates": 3000,
-  "pendingSeo": 2622,
+  "pendingSeo": 2625,
   "channelCounts": {
-    "pending": 456,
-    "wiki": 3,
-    "online": 2163
+    "pending": 454,
+    "wiki": 2,
+    "online": 2169
   },
   "fastClassCounts": {
-    "pending:pending": 456,
-    "wiki:pending": 3,
-    "online:pending": 2163
+    "pending:pending": 454,
+    "wiki:pending": 2,
+    "online:pending": 2169
   },
   "strategicCounts": {
-    "pending:0": 454,
+    "pending:0": 452,
     "wiki:0": 1,
     "online:3": 1,
-    "online:2": 92,
-    "online:1": 2070,
-    "wiki:1": 2,
+    "online:2": 90,
+    "online:1": 2078,
+    "wiki:1": 1,
     "pending:1": 2
   },
   "topSources": [
     {
       "id": "itch-new",
-      "count": 2155
+      "count": 2160
     },
     {
       "id": "itch-newest-web",
-      "count": 2147
+      "count": 2153
     },
     {
       "id": "itch-new-feed",
-      "count": 2146
+      "count": 2152
     },
     {
       "id": "trends-rising-7d",
-      "count": 399
+      "count": 400
     },
     {
       "id": "trends-rising-30d",
-      "count": 289
+      "count": 285
     },
     {
       "id": "trends-rising-7d-horror-game",
-      "count": 165
+      "count": 167
     },
     {
       "id": "trends-rising-7d-indie-game",
-      "count": 155
+      "count": 154
     },
     {
       "id": "trends-rising-30d-horror-game",
-      "count": 134
+      "count": 133
     },
     {
       "id": "trends-rising-7d-itch-io",
-      "count": 97
+      "count": 96
     },
     {
       "id": "itch-new-popular-web",
-      "count": 96
+      "count": 94
     },
     {
       "id": "itch-popular",
-      "count": 96
+      "count": 94
     },
     {
       "id": "trends-rising-30d-indie-game",
-      "count": 90
+      "count": 88
     },
     {
       "id": "trends-rising-30d-itch-io",
-      "count": 74
-    },
-    {
-      "id": "steam-latest-indie",
-      "count": 14
-    },
-    {
-      "id": "steam-new",
-      "count": 14
+      "count": 73
     },
     {
       "id": "itch-featured-feed",
@@ -91,12 +83,20 @@
       "count": 13
     },
     {
+      "id": "steam-latest-indie",
+      "count": 13
+    },
+    {
+      "id": "steam-new",
+      "count": 13
+    },
+    {
       "id": "steam-top-wishlist",
       "count": 2
     },
     {
       "id": "steam-popular-new",
-      "count": 2
+      "count": 1
     },
     {
       "id": "crazygames-new",
@@ -167,27 +167,6 @@
         "itch-new-feed",
         "itch-new-popular-web",
         "itch-popular"
-      ]
-    },
-    {
-      "name": "Trolley Problem Is Not Problem",
-      "channel": "online",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 16,
-      "platforms": 1,
-      "browserPlayable": true,
-      "nameRisk": 0,
-      "strategicCount": 2,
-      "sourceCount": 7,
-      "sourceIds": [
-        "itch-newest-web",
-        "itch-new",
-        "itch-new-feed",
-        "itch-new-popular-web",
-        "itch-popular",
-        "steam-latest-indie",
-        "steam-new"
       ]
     },
     {
@@ -1041,6 +1020,25 @@
     },
     {
       "name": "KAIJU DISPOSAL",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 15,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 0,
+      "strategicCount": 2,
+      "sourceCount": 5,
+      "sourceIds": [
+        "itch-newest-web",
+        "itch-new",
+        "itch-new-feed",
+        "itch-new-popular-web",
+        "itch-popular"
+      ]
+    },
+    {
+      "name": "PokéSurvivor",
       "channel": "online",
       "fastClass": "pending",
       "fastScore": 0,
