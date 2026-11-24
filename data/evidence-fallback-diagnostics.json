@@ -1,38 +1,38 @@
 {
-  "generatedAt": "2026-11-23T12:39:56.922Z",
+  "generatedAt": "2026-11-24T00:51:06.722Z",
   "totalCandidates": 3000,
-  "pendingSeo": 2625,
+  "pendingSeo": 2628,
   "channelCounts": {
-    "pending": 456,
-    "online": 2167,
-    "wiki": 2
+    "pending": 455,
+    "wiki": 4,
+    "online": 2169
   },
   "fastClassCounts": {
-    "pending:pending": 456,
-    "online:pending": 2167,
-    "wiki:pending": 2
+    "pending:pending": 455,
+    "wiki:pending": 4,
+    "online:pending": 2169
   },
   "strategicCounts": {
-    "pending:0": 454,
-    "online:2": 90,
+    "pending:0": 453,
     "wiki:0": 1,
-    "online:3": 1,
-    "online:1": 2076,
-    "wiki:1": 1,
+    "online:2": 88,
+    "online:1": 2081,
+    "wiki:2": 1,
+    "wiki:1": 2,
     "pending:1": 2
   },
   "topSources": [
     {
       "id": "itch-new",
-      "count": 2158
-    },
-    {
-      "id": "itch-newest-web",
-      "count": 2151
+      "count": 2160
     },
     {
       "id": "itch-new-feed",
-      "count": 2150
+      "count": 2153
+    },
+    {
+      "id": "itch-newest-web",
+      "count": 2153
     },
     {
       "id": "trends-rising-7d",
@@ -40,19 +40,19 @@
     },
     {
       "id": "trends-rising-30d",
-      "count": 287
+      "count": 285
     },
     {
       "id": "trends-rising-7d-horror-game",
-      "count": 167
+      "count": 165
     },
     {
       "id": "trends-rising-7d-indie-game",
-      "count": 154
+      "count": 156
     },
     {
       "id": "trends-rising-30d-horror-game",
-      "count": 133
+      "count": 132
     },
     {
       "id": "trends-rising-7d-itch-io",
@@ -60,11 +60,11 @@
     },
     {
       "id": "itch-new-popular-web",
-      "count": 94
+      "count": 91
     },
     {
       "id": "itch-popular",
-      "count": 94
+      "count": 91
     },
     {
       "id": "trends-rising-30d-indie-game",
@@ -72,31 +72,31 @@
     },
     {
       "id": "trends-rising-30d-itch-io",
-      "count": 76
-    },
-    {
-      "id": "itch-featured-feed",
-      "count": 13
-    },
-    {
-      "id": "itch-featured",
-      "count": 13
+      "count": 75
     },
     {
       "id": "steam-latest-indie",
-      "count": 13
+      "count": 14
     },
     {
       "id": "steam-new",
-      "count": 13
+      "count": 14
+    },
+    {
+      "id": "itch-featured-feed",
+      "count": 12
+    },
+    {
+      "id": "itch-featured",
+      "count": 12
+    },
+    {
+      "id": "steam-popular-new",
+      "count": 3
     },
     {
       "id": "steam-top-wishlist",
       "count": 2
-    },
-    {
-      "id": "steam-popular-new",
-      "count": 1
     },
     {
       "id": "crazygames-new",
@@ -112,49 +112,6 @@
     }
   ],
   "samples": [
-    {
-      "name": "THRORBS",
-      "channel": "online",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 20,
-      "platforms": 1,
-      "browserPlayable": true,
-      "nameRisk": 5,
-      "strategicCount": 3,
-      "sourceCount": 6,
-      "sourceIds": [
-        "itch-newest-web",
-        "itch-new",
-        "itch-featured-feed",
-        "itch-featured",
-        "itch-new-popular-web",
-        "itch-popular"
-      ]
-    },
-    {
-      "name": "Symptoms of Devotion",
-      "channel": "online",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 20,
-      "platforms": 1,
-      "browserPlayable": true,
-      "nameRisk": 6,
-      "strategicCount": 2,
-      "sourceCount": 9,
-      "sourceIds": [
-        "itch-newest-web",
-        "itch-new",
-        "itch-new-feed",
-        "itch-new-popular-web",
-        "itch-popular",
-        "trends-rising-7d-itch-io",
-        "trends-rising-7d",
-        "trends-rising-30d-itch-io",
-        "trends-rising-30d"
-      ]
-    },
     {
       "name": "Of The World",
       "channel": "online",
@@ -178,7 +135,7 @@
       "channel": "online",
       "fastClass": "pending",
       "fastScore": 0,
-      "discoveryScore": 17,
+      "discoveryScore": 15,
       "platforms": 1,
       "browserPlayable": true,
       "nameRisk": 0,
@@ -1043,6 +1000,43 @@
     },
     {
       "name": "PokéSurvivor",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 15,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 0,
+      "strategicCount": 2,
+      "sourceCount": 5,
+      "sourceIds": [
+        "itch-newest-web",
+        "itch-new",
+        "itch-new-feed",
+        "itch-new-popular-web",
+        "itch-popular"
+      ]
+    },
+    {
+      "name": "Battle Healer Hildegard",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 15,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 6,
+      "strategicCount": 2,
+      "sourceCount": 4,
+      "sourceIds": [
+        "itch-new-popular-web",
+        "itch-popular",
+        "itch-featured-feed",
+        "itch-featured"
+      ]
+    },
+    {
+      "name": "diagnosis lovesick",
       "channel": "online",
       "fastClass": "pending",
       "fastScore": 0,
