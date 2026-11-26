@@ -1,53 +1,53 @@
 {
-  "generatedAt": "2026-11-26T09:31:23.332Z",
+  "generatedAt": "2026-11-26T19:37:32.733Z",
   "totalCandidates": 3000,
-  "pendingSeo": 2624,
+  "pendingSeo": 2625,
   "channelCounts": {
-    "pending": 464,
-    "wiki": 6,
-    "online": 2154
+    "pending": 466,
+    "wiki": 8,
+    "online": 2151
   },
   "fastClassCounts": {
-    "pending:pending": 464,
-    "wiki:pending": 6,
-    "online:pending": 2154
+    "pending:pending": 466,
+    "wiki:pending": 8,
+    "online:pending": 2151
   },
   "strategicCounts": {
-    "pending:0": 462,
+    "pending:0": 464,
     "wiki:0": 1,
-    "online:1": 2075,
+    "online:1": 2072,
     "online:2": 79,
-    "wiki:1": 5,
+    "wiki:1": 7,
     "pending:1": 2
   },
   "topSources": [
     {
       "id": "itch-new",
-      "count": 2144
+      "count": 2140
     },
     {
       "id": "itch-new-feed",
-      "count": 2139
+      "count": 2135
     },
     {
       "id": "itch-newest-web",
-      "count": 2138
+      "count": 2134
     },
     {
       "id": "trends-rising-7d",
-      "count": 411
+      "count": 413
     },
     {
       "id": "trends-rising-30d",
       "count": 291
     },
     {
-      "id": "trends-rising-7d-indie-game",
-      "count": 164
+      "id": "trends-rising-7d-horror-game",
+      "count": 165
     },
     {
-      "id": "trends-rising-7d-horror-game",
-      "count": 163
+      "id": "trends-rising-7d-indie-game",
+      "count": 164
     },
     {
       "id": "trends-rising-30d-horror-game",
@@ -63,11 +63,11 @@
     },
     {
       "id": "itch-new-popular-web",
-      "count": 82
+      "count": 81
     },
     {
       "id": "itch-popular",
-      "count": 82
+      "count": 81
     },
     {
       "id": "trends-rising-30d-itch-io",
@@ -91,7 +91,7 @@
     },
     {
       "id": "steam-popular-new",
-      "count": 5
+      "count": 7
     },
     {
       "id": "steam-top-wishlist",
@@ -99,14 +99,14 @@
     },
     {
       "id": "crazygames-new",
-      "count": 1
-    },
-    {
-      "id": "poki-new",
-      "count": 1
+      "count": 2
     },
     {
       "id": "y8-new",
+      "count": 2
+    },
+    {
+      "id": "poki-new",
       "count": 1
     }
   ],
