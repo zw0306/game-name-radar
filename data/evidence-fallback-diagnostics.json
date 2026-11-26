@@ -1,37 +1,37 @@
 {
-  "generatedAt": "2026-11-26T00:20:53.706Z",
+  "generatedAt": "2026-11-26T09:31:23.332Z",
   "totalCandidates": 3000,
   "pendingSeo": 2624,
   "channelCounts": {
     "pending": 464,
-    "wiki": 7,
-    "online": 2153
+    "wiki": 6,
+    "online": 2154
   },
   "fastClassCounts": {
     "pending:pending": 464,
-    "wiki:pending": 7,
-    "online:pending": 2153
+    "wiki:pending": 6,
+    "online:pending": 2154
   },
   "strategicCounts": {
     "pending:0": 462,
     "wiki:0": 1,
-    "online:1": 2072,
-    "online:2": 81,
-    "wiki:1": 6,
+    "online:1": 2075,
+    "online:2": 79,
+    "wiki:1": 5,
     "pending:1": 2
   },
   "topSources": [
     {
       "id": "itch-new",
-      "count": 2143
+      "count": 2144
     },
     {
       "id": "itch-new-feed",
-      "count": 2138
+      "count": 2139
     },
     {
       "id": "itch-newest-web",
-      "count": 2137
+      "count": 2138
     },
     {
       "id": "trends-rising-7d",
@@ -39,7 +39,7 @@
     },
     {
       "id": "trends-rising-30d",
-      "count": 290
+      "count": 291
     },
     {
       "id": "trends-rising-7d-indie-game",
@@ -47,7 +47,7 @@
     },
     {
       "id": "trends-rising-7d-horror-game",
-      "count": 164
+      "count": 163
     },
     {
       "id": "trends-rising-30d-horror-game",
@@ -55,19 +55,19 @@
     },
     {
       "id": "trends-rising-7d-itch-io",
-      "count": 101
+      "count": 102
     },
     {
       "id": "trends-rising-30d-indie-game",
-      "count": 92
+      "count": 93
     },
     {
       "id": "itch-new-popular-web",
-      "count": 84
+      "count": 82
     },
     {
       "id": "itch-popular",
-      "count": 84
+      "count": 82
     },
     {
       "id": "trends-rising-30d-itch-io",
@@ -91,7 +91,7 @@
     },
     {
       "id": "steam-popular-new",
-      "count": 6
+      "count": 5
     },
     {
       "id": "steam-top-wishlist",
@@ -214,6 +214,25 @@
       "platforms": 1,
       "browserPlayable": true,
       "nameRisk": 9,
+      "strategicCount": 2,
+      "sourceCount": 5,
+      "sourceIds": [
+        "itch-newest-web",
+        "itch-new",
+        "itch-new-feed",
+        "itch-new-popular-web",
+        "itch-popular"
+      ]
+    },
+    {
+      "name": "Pickfall",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 15,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 5,
       "strategicCount": 2,
       "sourceCount": 5,
       "sourceIds": [
@@ -1032,25 +1051,6 @@
         "itch-popular",
         "itch-featured-feed",
         "itch-featured"
-      ]
-    },
-    {
-      "name": "diagnosis lovesick",
-      "channel": "online",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 15,
-      "platforms": 1,
-      "browserPlayable": true,
-      "nameRisk": 0,
-      "strategicCount": 2,
-      "sourceCount": 5,
-      "sourceIds": [
-        "itch-newest-web",
-        "itch-new",
-        "itch-new-feed",
-        "itch-new-popular-web",
-        "itch-popular"
       ]
     }
   ]
