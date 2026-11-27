@@ -1,65 +1,65 @@
 {
-  "generatedAt": "2026-11-27T02:51:05.524Z",
+  "generatedAt": "2026-11-27T12:19:12.813Z",
   "totalCandidates": 3000,
-  "pendingSeo": 2625,
+  "pendingSeo": 2623,
   "channelCounts": {
-    "pending": 461,
-    "wiki": 7,
-    "online": 2157
+    "pending": 464,
+    "wiki": 5,
+    "online": 2154
   },
   "fastClassCounts": {
-    "pending:pending": 461,
-    "wiki:pending": 7,
-    "online:pending": 2157
+    "pending:pending": 464,
+    "wiki:pending": 5,
+    "online:pending": 2154
   },
   "strategicCounts": {
-    "pending:0": 459,
+    "pending:0": 462,
     "wiki:0": 1,
-    "online:2": 77,
-    "online:1": 2080,
-    "wiki:1": 6,
+    "online:2": 78,
+    "online:1": 2076,
+    "wiki:1": 4,
     "pending:1": 2
   },
   "topSources": [
     {
       "id": "itch-new",
-      "count": 2147
+      "count": 2145
     },
     {
       "id": "itch-new-feed",
-      "count": 2142
+      "count": 2140
     },
     {
       "id": "itch-newest-web",
-      "count": 2141
+      "count": 2139
     },
     {
       "id": "trends-rising-7d",
-      "count": 408
+      "count": 410
     },
     {
       "id": "trends-rising-30d",
-      "count": 287
+      "count": 295
     },
     {
       "id": "trends-rising-7d-indie-game",
-      "count": 165
+      "count": 166
     },
     {
       "id": "trends-rising-7d-horror-game",
-      "count": 160
+      "count": 161
     },
     {
       "id": "trends-rising-30d-horror-game",
-      "count": 128
+      "count": 131
     },
     {
       "id": "trends-rising-7d-itch-io",
-      "count": 101
+      "count": 102
     },
     {
       "id": "trends-rising-30d-indie-game",
-      "count": 95
+      "count": 97
     },
     {
       "id": "itch-new-popular-web",
@@ -71,7 +71,7 @@
     },
     {
       "id": "trends-rising-30d-itch-io",
-      "count": 75
+      "count": 78
     },
     {
       "id": "itch-featured-feed",
@@ -83,19 +83,19 @@
     },
     {
       "id": "steam-latest-indie",
-      "count": 12
+      "count": 11
     },
     {
       "id": "steam-new",
-      "count": 12
+      "count": 11
     },
     {
       "id": "steam-popular-new",
-      "count": 6
+      "count": 4
     },
     {
       "id": "steam-top-wishlist",
-      "count": 2
+      "count": 1
     },
     {
       "id": "crazygames-new",
@@ -111,6 +111,25 @@
     }
   ],
   "samples": [
+    {
+      "name": "Firefly: Little Island",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 17,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 0,
+      "strategicCount": 2,
+      "sourceCount": 5,
+      "sourceIds": [
+        "itch-newest-web",
+        "itch-new",
+        "itch-new-feed",
+        "itch-new-popular-web",
+        "itch-popular"
+      ]
+    },
     {
       "name": "G.T.A. — Grand Total Absurd",
       "channel": "online",
@@ -1018,25 +1037,6 @@
     },
     {
       "name": "KAIJU DISPOSAL",
-      "channel": "online",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 15,
-      "platforms": 1,
-      "browserPlayable": true,
-      "nameRisk": 0,
-      "strategicCount": 2,
-      "sourceCount": 5,
-      "sourceIds": [
-        "itch-newest-web",
-        "itch-new",
-        "itch-new-feed",
-        "itch-new-popular-web",
-        "itch-popular"
-      ]
-    },
-    {
-      "name": "PokéSurvivor",
       "channel": "online",
       "fastClass": "pending",
       "fastScore": 0,
