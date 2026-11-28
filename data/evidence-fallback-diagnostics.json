@@ -1,42 +1,41 @@
 {
-  "generatedAt": "2026-11-27T21:58:07.786Z",
+  "generatedAt": "2026-11-28T03:54:49.225Z",
   "totalCandidates": 3000,
-  "pendingSeo": 2624,
+  "pendingSeo": 2620,
   "channelCounts": {
-    "pending": 465,
-    "wiki": 7,
-    "online": 2152
+    "pending": 469,
+    "wiki": 4,
+    "online": 2147
   },
   "fastClassCounts": {
-    "pending:pending": 465,
-    "wiki:pending": 7,
-    "online:pending": 2152
+    "pending:pending": 469,
+    "wiki:pending": 4,
+    "online:pending": 2147
   },
   "strategicCounts": {
-    "pending:0": 463,
+    "pending:0": 467,
     "wiki:0": 1,
     "online:2": 78,
-    "wiki:2": 1,
-    "online:1": 2074,
-    "wiki:1": 5,
+    "online:1": 2069,
+    "wiki:1": 3,
     "pending:1": 2
   },
   "topSources": [
     {
       "id": "itch-new",
-      "count": 2143
-    },
-    {
-      "id": "itch-new-feed",
       "count": 2138
     },
     {
+      "id": "itch-new-feed",
+      "count": 2133
+    },
+    {
       "id": "itch-newest-web",
-      "count": 2137
+      "count": 2132
     },
     {
       "id": "trends-rising-7d",
-      "count": 412
+      "count": 416
     },
     {
       "id": "trends-rising-30d",
@@ -44,11 +43,11 @@
     },
     {
       "id": "trends-rising-7d-indie-game",
-      "count": 167
+      "count": 170
     },
     {
       "id": "trends-rising-7d-horror-game",
-      "count": 162
+      "count": 163
     },
     {
       "id": "trends-rising-30d-horror-game",
@@ -92,7 +91,7 @@
     },
     {
       "id": "steam-popular-new",
-      "count": 6
+      "count": 3
     },
     {
       "id": "steam-top-wishlist",
@@ -112,6 +111,25 @@
     }
   ],
   "samples": [
+    {
+      "name": "Mine and Refine Incremental",
+      "channel": "online",
+      "fastClass": "pending",
+      "fastScore": 0,
+      "discoveryScore": 17,
+      "platforms": 1,
+      "browserPlayable": true,
+      "nameRisk": 5,
+      "strategicCount": 2,
+      "sourceCount": 5,
+      "sourceIds": [
+        "itch-newest-web",
+        "itch-new",
+        "itch-new-feed",
+        "itch-new-popular-web",
+        "itch-popular"
+      ]
+    },
     {
       "name": "Firefly: Little Island",
       "channel": "online",
@@ -1019,25 +1037,6 @@
     },
     {
       "name": "Lab accident",
-      "channel": "online",
-      "fastClass": "pending",
-      "fastScore": 0,
-      "discoveryScore": 15,
-      "platforms": 1,
-      "browserPlayable": true,
-      "nameRisk": 0,
-      "strategicCount": 2,
-      "sourceCount": 5,
-      "sourceIds": [
-        "itch-newest-web",
-        "itch-new",
-        "itch-new-feed",
-        "itch-new-popular-web",
-        "itch-popular"
-      ]
-    },
-    {
-      "name": "KAIJU DISPOSAL",
       "channel": "online",
       "fastClass": "pending",
       "fastScore": 0,
